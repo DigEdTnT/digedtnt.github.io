@@ -6,8 +6,7 @@ categories: [Test1, test2]
 
 
 
-## <p style="text-align: right">
-Last Update: 2022-09-29</p>
+Last Update: 2022-09-29
 
 
 
