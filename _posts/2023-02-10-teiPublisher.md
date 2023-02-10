@@ -2,6 +2,7 @@
 layout: post
 title: teiPublisher
 categories: [Test1, test2]
+excerpt: Der teiPublisher hilft bei der Auswertung und Präsentation von Forschungsdaten.
 ---
 
 
