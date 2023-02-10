@@ -4,26 +4,7 @@ title: About
 permalink: /about/
 ---
 
-[Reverie](https://github.com/amitmerchant1990/reverie) is a Jekyll theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for [my blog](https://www.amitmerchant.com).
+Digitale Editionen sind ein Kernbereich der Digital Humanities; sie machen historische Quellen zugänglich. Dabei werden computergestützte Methoden zur Umsetzung, Verbreitung und Erforschung von wissenschaftlich fundierten Quellenveröffentlichungen herangezogen. Digitale Editionen umfassen dabei textuelle, visuelle und ggf. auch quantitative Daten und erfordern oft spezielle Benutzeroberflächen, um domänenspezifische Forschungsfragen zu bearbeiten. Obwohl jedes Editionsprojekt seine eigenen spezifischen Anforderungen hat, lassen sich einzelne Schritte identifizieren, die für Editionsvorhaben generell notwendig sind. Das ist im weitesten Sinne die Digitalisierung der Quelle mit der Verwaltung von Bildern und Text, die Transkription, Modellierung relevanter Textphänomene mittels adäquater Auszeichnungssprachen, Annotation semantischer Informationen und Named Entities, Erstellung von Indizes, sowie eine den FAIR-Kriterien entsprechende Publikation über das Web. In den letzten Jahren haben sich für alle diese Schritte eine Anzahl an Tools etabliert, die bevorzugt eingesetzt werden.
 
-This is a plug-and-play Jekyll theme which you can use on GitHub Pages without even setting up a local environment.
+Ziel des Projekts Digital Edition Creation Pipelines: Tools and Transitions (DigEdTnT), finanziert durch [Funding Call 2022: Interoperability and Reusability of DH Data and Tools von CLARIAH-AT](https://clariah.at/project-funding/), ist es, Best-Practice-Pipelines und Tutorials für ausgewählte Tools und deren Übergänge zu erstellen, die bei der Wahl der Tools und der Arbeit mit Tools zur Erstellung digitaler Editionen helfen sollen. Übergänge (=Transitions) beziehen sich dabei auf Herausforderungen, die entstehen, wenn beispielsweise Ergebnisse aus Transkribus nach ediarum zur weiteren Annotation überführt werden sollen.
 
-## Features
-
-- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
-- Fully responsive and mobile optimized base theme
-- Sass/Coffeescript support using Jekyll 2.0
-- Free hosting on your GitHub Pages user site
-- All the SEO goodies comes in-built
-- Markdown blogging
-- Syntax highlighting using Pygments
-    - [Dracula syntax theme](https://draculatheme.com/) included
-- Disqus commenting
-- Google Analytics integration
-- Fuzzy search across blog posts
-- Pagination of posts works out-of-the-box.
-- Categorize posts out-of-the box
-- RSS Feed
-- In-built sitemap
-
-Learn more about it [here](https://github.com/amitmerchant1990/reverie) on how to get started.
