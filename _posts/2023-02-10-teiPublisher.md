@@ -106,27 +106,21 @@ eXist-db (Open Source): [https://github.com/eXist-db/exist/releases/tag/eXist-6.
 * **Über eXide**: Neue XML-Datei [New → Type XML → Create] erstellen mit minimalen Anforderungen (TEI mit Namespace, teiHeader mit fileDesc und titleStmt und title, sowie text mit body und einem p mit beliebigen Inhalt) → Speichern [Save as] unter dem Pfad  db/apps/tei-publisher/data/playground als “example.xml” → Dokument sollte ebenfalls im teiPublisher im Playground/Spielwiese erscheinen und anklickbar sein
 
 4. **Textannotation über teiPublisher**
-
 * Auf Startseite unter Annotations bereits Beispiele, man kann aber rechts auch eigens XML hochladen
 * Man kann Wort markieren und rechts in Bearbeitungspanel bereits Referenzen von GND oder GeoNames auswählen und Wörter oder Passagen auszeichnen → momentan nur ein paar Standardelemente zum Tagging auswählbar (persName, orgName, placeName, Date, Sprache, Hervorhebungen usw.) 
 * Achtung: bereits zuvor im XML händisch annotierte Passagen werden überschrieben, wenn man sie auswählt (Änderungen erfolgen jedoch nur in eXist-db und nicht lokal auf Rechner)
 * Die im teiPublisher hinzugefügten Annotationen werden zusätzlich in einem standOff unter db/apps/tei-publisher/data in der register.xml gespeichert
 
 5. **Erstellung einer ODD** (TEI Processing Model für medienneutrale-übergreifende Beschreibung zur Verarbeitung von TEI-Daten)
-
 * Erzeugung über teiPublisher: Login → in der rechten Spalte unter ODD ganz unten: Dateinamen festlegen (ohne Leerzeichen, ohne Dateiendung → neue Datei erscheint in ODD Liste → Spalte links: neues Element hinzufügen → Element dann spezifizieren → im teiPublisher anschließend XML-Datei anzeigen lassen und in der zweiten Navigationsleiste das Sandwich-Symbol anklicken, wo man unter den Settings das abgespeicherte ODD auswählen kann
 * Erzeugung über eXide: neue Datei erstellen → ODD (Template: None) → speichern unter File - Manager unter dem Pfad db/apps/teipublisher/odd → am besten Code aus teipublisher.odd, die im gleichen Ordner liegt, in neu erstellte Datei kopieren und alle Models aus schemaSpec löschen → außerdem im titleStmt den title anpassen, um Datei später im teiPublisher zu finden →entweder direkt in der odd arbeiten, oder im teiPublisher rechts in der ODD Liste die soeben angelegte Datei aufrufen und die einzelnen Elemente bearbeiten
 * Bearbeitung in Exide: im teiPublisher ODD erzeugen → auf die spitzen Klammern neben der neu erstellten Datei klicken oder direkt in eXide über File - Manager über den Pfad db/apps/tei-publisher/odd entsprechende Datei öffnen → es folgt Wechsel in eXide, wo direkt im schemaSpec-Element gestartet wird (Default bei der Ausgabe ist immer die teipublisher.odd) → wichtig ist auch auf die Reihenfolge der Models zu achten: zuerst spezifischere Fälle, und nachgereiht die allgemeinen
 
 6. **Anpassung der Oberfläche** (HTML Templates)
-
 * Erzeugung über eXide: neues Dokument erstellen → HTML (Template:None) → Speichern unter db/apps/teipublisher/templates/pages, wo auch das Standard-HTML view.html zu finden ist → view.html öffnen und den gesamten Code herauskopieren und im neu angelegten html einfügen → im head noch unter dem title data-template im Element meta mit dem Attribut name=”description” die Dateibezeichnung in 
 * Bilder hochladen: in eXide unter File - Manage unter dem Pfad db/apps/teipublisher/data einen eigenen Ordner mit dem Namen “images” anlegen → ```<pb-facsimile>``` am besten aus Dokumentation unter der Demo in pb-facsimile kopieren und zusätzlich auch style-Anpassungen (kann aus einem der vorhandenen html-templates übernommen werden) vornehmen, damit Facsimile sichtbar wird → im HTML im Element pb-facsimile die base-uri anpassen (https:://localhost:8080/exist/apps/tei-publisher/”) → für die dynamische Ansicht muss im ODD ein neues Model für pb mit dem Attribut facs angelegt werden, das als behaviour eine webcomponent erzeugt (dieses Model muss ganz an den Anfang gestellt werden) → hier eine Verbindung zu Faksimiles erzeugen
 
 7. **Eigene Edition generieren**
-
-
-
 * Im teiPublisher unter Administration → App Generator → eigene ODD auswählen → URL einfügen sowie Short Name und Titel der App → eigenes HTML Template hinzufügen →User Account mit Passwort anlegen und generieren → in der eigenen App dann mit eigens generierten Daten einloggen → dort unter Upload noch das XML hochladen (Anzeige hat bei Test nicht funktioniert) 
 
 
