@@ -1,17 +1,14 @@
 ---
+
 layout: post
+
 title: teiPublisher
-categories: [Test1, test2]
+
+categories: [tool, teiPublisher, tei]
+
 excerpt: Der teiPublisher hilft bei der Auswertung und Präsentation von Forschungsdaten.
+
 ---
-
-
-
-Last Update: 2022-09-29
-
-
-
-## <span style="text-decoration:underline;">teiPublisher</span>
 
 
 ## Beschreibung
@@ -38,7 +35,7 @@ Erstellung einer einfachen digitalen Edition
 * benutzerdefiniertes Rendering des Texts
 * Anzeige von Informationen zu verschiedenen Szenarien
 
-Seit Version 6 gibt es auch Webcomponents, die typische Anwendungsfälle abdecken, um Programmieraufwand (z.B. Javascript) einzuschränken. Beispiele: &lt;pb-view/> = Anzeigeseite, &lt;pb-popover/> → Tooltip; &lt;pb-zoom/> → Zoom-Buttons; &lt;pb-search/> → Suchfeld; &lt;pb-lang/> → Sprachwauswahl;
+Seit Version 6 gibt es auch Webcomponents, die typische Anwendungsfälle abdecken, um Programmieraufwand (z.B. Javascript) einzuschränken. Beispiele: `&lt;pb-view/>` = Anzeigeseite, ```&lt;pb-popover/>``` → Tooltip; ```&lt;pb-zoom/>``` → Zoom-Buttons; ```&lt;pb-search/>``` → Suchfeld; ```&lt;pb-lang/>``` → Sprachwauswahl;
 
 
 ### Beispiele an teiPublisher-Editionen
@@ -65,7 +62,7 @@ ODD Editor:
 
 * Navigation links: Liste von Elementen, die im ODD modelliert werden
 * Kontrollpanel unterhalb der Navigationsleiste oben: ODD Quelldatei anzeigen, neu laden, speichern
-* Hauptteil: Bearbeitung der &lt;elementSpec> von Elementen
+* Hauptteil: Bearbeitung der ```&lt;elementSpec>``` von Elementen
 
 Annotationsmodul:
 
@@ -130,7 +127,7 @@ eXist-db (Open Source): [https://github.com/eXist-db/exist/releases/tag/eXist-6.
 
 
 * Erzeugung über eXide: neues Dokument erstellen → HTML (Template:None) → Speichern unter db/apps/teipublisher/templates/pages, wo auch das Standard-HTML view.html zu finden ist → view.html öffnen und den gesamten Code herauskopieren und im neu angelegten html einfügen → im head noch unter dem title data-template im Element meta mit dem Attribut name=”description” die Dateibezeichnung in 
-* Bilder hochladen: in eXide unter File - Manage unter dem Pfad db/apps/teipublisher/data einen eigenen Ordner mit dem Namen “images” anlegen → &lt;pb-facsimile> am besten aus Dokumentation unter der Demo in pb-facsimile kopieren und zusätzlich auch style-Anpassungen (kann aus einem der vorhandenen html-templates übernommen werden) vornehmen, damit Facsimile sichtbar wird → im HTML im Element pb-facsimile die base-uri anpassen (https:://localhost:8080/exist/apps/tei-publisher/”) → für die dynamische Ansicht muss im ODD ein neues Model für pb mit dem Attribut facs angelegt werden, das als behaviour eine webcomponent erzeugt (dieses Model muss ganz an den Anfang gestellt werden) → hier eine Verbindung zu Faksimiles erzeugen 
+* Bilder hochladen: in eXide unter File - Manage unter dem Pfad db/apps/teipublisher/data einen eigenen Ordner mit dem Namen “images” anlegen → ```&lt;pb-facsimile>``` am besten aus Dokumentation unter der Demo in pb-facsimile kopieren und zusätzlich auch style-Anpassungen (kann aus einem der vorhandenen html-templates übernommen werden) vornehmen, damit Facsimile sichtbar wird → im HTML im Element pb-facsimile die base-uri anpassen (https:://localhost:8080/exist/apps/tei-publisher/”) → für die dynamische Ansicht muss im ODD ein neues Model für pb mit dem Attribut facs angelegt werden, das als behaviour eine webcomponent erzeugt (dieses Model muss ganz an den Anfang gestellt werden) → hier eine Verbindung zu Faksimiles erzeugen
 
 **7. Eigene Edition generieren**
 
