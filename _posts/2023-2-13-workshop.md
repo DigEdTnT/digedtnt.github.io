@@ -1,8 +1,13 @@
 ---
+
 layout: post
+
 title: DigEdTnT: Workshop - Meet the Tools and Developers
-categories: [Test1, test2, workshop]
+
+categories: workshop
+
 excerpt: Sei dabei und lerne jede Menge Tools kennen, die die Gestaltung deiner Digitalen Edition erleichtern können!
+
 ---
 
 ## <span style="text-decoration:underline;"> DigEdTnT: Workshop - Meet the Tools and Developers</span>
