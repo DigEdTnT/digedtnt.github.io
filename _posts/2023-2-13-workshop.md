@@ -24,12 +24,13 @@ Ort: Elisabethstraße 59/III, 8010 Graz - Zentrum für Informationsmodellierung 
 
 ### Programm
 
+#### Donnerstag, 23.02.
 
-| **Tag 1 (23.02)**     | **Tool-Präsentationen**|
+| **Tag 1**     | **Tool-Präsentationen**|
 |-----------------------|----------------------------|
-| 09:00-09:15		| Eröffnung    |                                                                                                                                      | 
-| 09:15-10:15		| FromThePage, Ben Brumfield                                                                                        |
-| 10:15-10:30 	| Pause         |                                                                                                                                      |
+| 09:00-09:15		| Eröffnung    |                                                                                                                                       
+| 09:15-10:15		| FromThePage, Ben Brumfield                                                                                        
+| 10:15-10:30 	| Pause         |                                                                                                                                  
 | 10:30-11:30		| Transkribus, Matthias Sorg und Sebastian Colutto (READ-COOP)                                                                                        |
 | 11:30-11:45 	| Pause                                                                                                                                               |
 | 11:45-12:45		| LAKomp, Jörg Ritter (Universität Halle-Wittenberg)                                                                                                  |
@@ -42,9 +43,10 @@ Ort: Elisabethstraße 59/III, 8010 Graz - Zentrum für Informationsmodellierung 
 | 17:30-18:45		| Abend Keynote: “Tools für digitale Editionen als Helfer und Hürden: Wie nehmen wir die Werkzeuge in die Hand?”, Ulrike Henny (Universität Rostock)  |
 | 19:00			    | Gemeinsames Abendessen                                                                                                                              |
 
+#### Freitag, 24.02.
 
-| **Tag 2 (24.02)**     | **Tool-Dating**|
-|-----------------------|----------------------------|
+| **Tag 2**     | **Tool-Dating**|
+|-----------------------|----------------|
 | 09:00-09:15		| Einführung | 
 | 09:15-10:00 	| Slot 1 | 
 | 10:00-10:15		| Pause | 
@@ -58,5 +60,5 @@ Ort: Elisabethstraße 59/III, 8010 Graz - Zentrum für Informationsmodellierung 
 
 **Organisation:** Christopher Pollin, Sabrina Strutz, Helmut Klug
 
-**Anmeldung und Kontakt unter:**  christopher.pollin@uni-graz.at 
+**Anmeldung und Kontakt unter:**  [christopher.pollin@uni-graz.at](christopher.pollin@uni-graz.at)
 
