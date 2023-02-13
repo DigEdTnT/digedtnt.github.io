@@ -60,5 +60,5 @@ Ort: Elisabethstraße 59/III, 8010 Graz - Zentrum für Informationsmodellierung 
 
 **Organisation:** Christopher Pollin, Sabrina Strutz, Helmut Klug
 
-**Anmeldung und Kontakt unter:**  [christopher.pollin@uni-graz.at](christopher.pollin@uni-graz.at)
+**Anmeldung und Kontakt unter:**  <christopher.pollin@uni-graz.at>
 
