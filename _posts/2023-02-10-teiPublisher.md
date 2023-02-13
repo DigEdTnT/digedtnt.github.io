@@ -107,16 +107,12 @@ eXist-db (Open Source): [https://github.com/eXist-db/exist/releases/tag/eXist-6.
 
 4. **Textannotation über teiPublisher**
 
-
-
 * Auf Startseite unter Annotations bereits Beispiele, man kann aber rechts auch eigens XML hochladen
 * Man kann Wort markieren und rechts in Bearbeitungspanel bereits Referenzen von GND oder GeoNames auswählen und Wörter oder Passagen auszeichnen → momentan nur ein paar Standardelemente zum Tagging auswählbar (persName, orgName, placeName, Date, Sprache, Hervorhebungen usw.) 
 * Achtung: bereits zuvor im XML händisch annotierte Passagen werden überschrieben, wenn man sie auswählt (Änderungen erfolgen jedoch nur in eXist-db und nicht lokal auf Rechner)
-* Die im teiPublisher hinzugefügten Annotationen werden zusätzlich in einem standOff unter db/apps/tei-publisher/data in der register.xml gespeichert 
+* Die im teiPublisher hinzugefügten Annotationen werden zusätzlich in einem standOff unter db/apps/tei-publisher/data in der register.xml gespeichert
 
-5. **Erstellung einer ODD** (TEI Processing Model für medienneutrale/-übergreifende Beschreibung zur Verarbeitung von TEI-Daten)
-
-
+5. **Erstellung einer ODD** (TEI Processing Model für medienneutrale-übergreifende Beschreibung zur Verarbeitung von TEI-Daten)
 
 * Erzeugung über teiPublisher: Login → in der rechten Spalte unter ODD ganz unten: Dateinamen festlegen (ohne Leerzeichen, ohne Dateiendung → neue Datei erscheint in ODD Liste → Spalte links: neues Element hinzufügen → Element dann spezifizieren → im teiPublisher anschließend XML-Datei anzeigen lassen und in der zweiten Navigationsleiste das Sandwich-Symbol anklicken, wo man unter den Settings das abgespeicherte ODD auswählen kann
 * Erzeugung über eXide: neue Datei erstellen → ODD (Template: None) → speichern unter File - Manager unter dem Pfad db/apps/teipublisher/odd → am besten Code aus teipublisher.odd, die im gleichen Ordner liegt, in neu erstellte Datei kopieren und alle Models aus schemaSpec löschen → außerdem im titleStmt den title anpassen, um Datei später im teiPublisher zu finden →entweder direkt in der odd arbeiten, oder im teiPublisher rechts in der ODD Liste die soeben angelegte Datei aufrufen und die einzelnen Elemente bearbeiten
@@ -124,12 +120,10 @@ eXist-db (Open Source): [https://github.com/eXist-db/exist/releases/tag/eXist-6.
 
 6. **Anpassung der Oberfläche** (HTML Templates)
 
-
-
 * Erzeugung über eXide: neues Dokument erstellen → HTML (Template:None) → Speichern unter db/apps/teipublisher/templates/pages, wo auch das Standard-HTML view.html zu finden ist → view.html öffnen und den gesamten Code herauskopieren und im neu angelegten html einfügen → im head noch unter dem title data-template im Element meta mit dem Attribut name=”description” die Dateibezeichnung in 
 * Bilder hochladen: in eXide unter File - Manage unter dem Pfad db/apps/teipublisher/data einen eigenen Ordner mit dem Namen “images” anlegen → ```<pb-facsimile>``` am besten aus Dokumentation unter der Demo in pb-facsimile kopieren und zusätzlich auch style-Anpassungen (kann aus einem der vorhandenen html-templates übernommen werden) vornehmen, damit Facsimile sichtbar wird → im HTML im Element pb-facsimile die base-uri anpassen (https:://localhost:8080/exist/apps/tei-publisher/”) → für die dynamische Ansicht muss im ODD ein neues Model für pb mit dem Attribut facs angelegt werden, das als behaviour eine webcomponent erzeugt (dieses Model muss ganz an den Anfang gestellt werden) → hier eine Verbindung zu Faksimiles erzeugen
 
-**7. Eigene Edition generieren**
+7. **Eigene Edition generieren**
 
 
 
