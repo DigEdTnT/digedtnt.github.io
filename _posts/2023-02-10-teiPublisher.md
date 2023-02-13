@@ -15,7 +15,7 @@ excerpt: Der teiPublisher hilft bei der Auswertung und Präsentation von Forschu
 
 Der teiPublisher hilft bei der Auswertung und Präsentation von Forschungsdaten.
 
-Daten(-stand) → <span style="text-decoration:underline;">Datenbank → Abfrage → Prozessierung → Aufbereitung </span>→ Darstellung
+Daten(-stand) → Datenbank → Abfrage → Prozessierung → Aufbereitung → Darstellung
 
 Digitale Editionen basieren auf ODD
 
@@ -105,7 +105,7 @@ eXist-db (Open Source): [https://github.com/eXist-db/exist/releases/tag/eXist-6.
 * **Direkt über teiPublisher:** Über das Dashboard teiPublisher öffnen → Login mit user: tei und password: simple → Playground (dt. Spielwiese) öffnen →  rechts eine XML-Datei hochladen → sollte nun in dem Playground-Verzeichnis erscheinen und anklickbar sein
 * **Über eXide**: Neue XML-Datei [New → Type XML → Create] erstellen mit minimalen Anforderungen (TEI mit Namespace, teiHeader mit fileDesc und titleStmt und title, sowie text mit body und einem p mit beliebigen Inhalt) → Speichern [Save as] unter dem Pfad  db/apps/tei-publisher/data/playground als “example.xml” → Dokument sollte ebenfalls im teiPublisher im Playground/Spielwiese erscheinen und anklickbar sein
 
-4. **Textannotation über teiPublisher **
+4. **Textannotation über teiPublisher**
 
 
 
@@ -122,7 +122,7 @@ eXist-db (Open Source): [https://github.com/eXist-db/exist/releases/tag/eXist-6.
 * Erzeugung über eXide: neue Datei erstellen → ODD (Template: None) → speichern unter File - Manager unter dem Pfad db/apps/teipublisher/odd → am besten Code aus teipublisher.odd, die im gleichen Ordner liegt, in neu erstellte Datei kopieren und alle Models aus schemaSpec löschen → außerdem im titleStmt den title anpassen, um Datei später im teiPublisher zu finden →entweder direkt in der odd arbeiten, oder im teiPublisher rechts in der ODD Liste die soeben angelegte Datei aufrufen und die einzelnen Elemente bearbeiten
 * Bearbeitung in Exide: im teiPublisher ODD erzeugen → auf die spitzen Klammern neben der neu erstellten Datei klicken oder direkt in eXide über File - Manager über den Pfad db/apps/tei-publisher/odd entsprechende Datei öffnen → es folgt Wechsel in eXide, wo direkt im schemaSpec-Element gestartet wird (Default bei der Ausgabe ist immer die teipublisher.odd) → wichtig ist auch auf die Reihenfolge der Models zu achten: zuerst spezifischere Fälle, und nachgereiht die allgemeinen
 
-**6. Anpassung der Oberfläche **(HTML Templates)
+6. **Anpassung der Oberfläche** (HTML Templates)
 
 
 
