@@ -5,7 +5,7 @@ categories: workshop
 excerpt: Sei dabei und lerne jede Menge Tools kennen, die die Gestaltung deiner Digitalen Edition erleichtern können!
 ---
 
-## <span style="text-decoration:underline;"> DigEdTnT: Workshop - Meet the Tools and Developers</span>
+## <span style="text-decoration:underline;">Meet the Tools and Developers</span>
 
 ### 23.02.2023 - 24.02.2023, Graz und online
 
