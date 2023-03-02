@@ -137,10 +137,7 @@ Hier könnten eventuell mehrere Snippets (in Form von Bilddateien) von der Arbei
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+![test image](../images/testimg.png "image_tooltip")
 
 
 
@@ -166,93 +163,91 @@ Software Nr. 2: [Link zur nächsten Software](https://de.wikipedia.org/wiki/Soft
 
 
 
-1. **Installation der Software **
+1. **Installation der Software**
 * Installation der benötigten Software
+
 2. **Installation des Tools**
 * Installationsschritt 1 
 * Installationsschritt 2 mit einem Screenshot vielleicht: 
 
     
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+![test image](../images/testimg.png "image_tooltip")
 
 
 * Installationsschritt 3
 * Log In
 * Öffnen
+
 3. **Upload von Dokumenten**
-* **Variante 1: **Es könnte so gehen.
-* **Variante 2: **Oder aber auch so. 
+* **Variante 1:** Es könnte so gehen.
+* **Variante 2:** Oder aber auch so. 
 
 **4.** **Bearbeitung der Dokumente**
-
-
-
 * Man kann dies machen
 * oder dies: mit dem Attribut name=”description” 
-* oder das: mit dem Element `&lt;element>```(Beachte hier das Tags mit Apostrophen gekennzeichnet sein sollten) 
-* oder jenes: und dabei Codesnippets einfügen: ``` &lt;titlePage>
+* oder das: mit dem Element `<element>`(Beachte hier das Tags mit Apostrophen gekennzeichnet sein sollten) 
+* oder jenes: und dabei Codesnippets einfügen: 
+```xml
+<titlePage>
 
- &lt;docTitle>
+ <docTitle>
 
-  &lt;titlePart type="main">THE
+  <titlePart type="main">THE
 
-  &lt;lb/>Pilgrim's Progress
+  <lb/>Pilgrim's Progress
 
-  &lt;lb/>FROM
+  <lb/>FROM
 
-  &lt;lb/>THIS WORLD,
+  <lb/>THIS WORLD,
 
-  &lt;lb/>TO
+  <lb/>TO
 
-  &lt;lb/>That which is to come:&lt;/titlePart>
+  <lb/>That which is to come:</titlePart>
 
-  &lt;titlePart type="sub">Delivered under the Similitude of a
+  <titlePart type="sub">Delivered under the Similitude of a
 
-  &lt;lb/>DREAM&lt;/titlePart>
+  <lb/>DREAM</titlePart>
 
-  &lt;titlePart type="desc">Wherein is Discovered,
+  <titlePart type="desc">Wherein is Discovered,
 
-  &lt;lb/>The manner of his setting out,
+  <lb/>The manner of his setting out,
 
-  &lt;lb/>His Dangerous Journey; And safe
+  <lb/>His Dangerous Journey; And safe
 
-  &lt;lb/>Arrival at the Desired Countrey.&lt;/titlePart>
+  <lb/>Arrival at the Desired Countrey.</titlePart>
 
- &lt;/docTitle>
+ </docTitle>
 
- &lt;epigraph>
+ <epigraph>
 
-  &lt;cit>
+  <cit>
 
-   &lt;quote>I have used Similitudes,&lt;/quote>
+   <quote>I have used Similitudes,</quote>
 
-   &lt;bibl>Hos. 12.10&lt;/bibl>
+   <bibl>Hos. 12.10</bibl>
 
-  &lt;/cit>
+  </cit>
 
- &lt;/epigraph>
+ </epigraph>
 
- &lt;byline>By &lt;docAuthor>John Bunyan&lt;/docAuthor>.&lt;/byline>
+ <byline>By <docAuthor>John Bunyan</docAuthor>.</byline>
 
- &lt;imprimatur>Licensed and Entred according to Order.&lt;/imprimatur>
+ <imprimatur>Licensed and Entred according to Order.</imprimatur>
 
- &lt;docImprint>
+ <docImprint>
 
-  &lt;pubPlace>LONDON,&lt;/pubPlace>
+  <pubPlace>LONDON,</pubPlace>
 
-   Printed for &lt;name>Nath. Ponder&lt;/name>
+   Printed for <name>Nath. Ponder</name>
 
-  &lt;lb/>at the &lt;name>Peacock&lt;/name> in the &lt;name>Poultrey&lt;/name>
+  <lb/>at the <name>Peacock</name> in the <name>Poultrey</name>
 
-  &lt;lb/>near &lt;name>Cornhil&lt;/name>, &lt;docDate>1678&lt;/docDate>.
+  <lb/>near <name>Cornhil</name>, <docDate>1678</docDate>.
 
- &lt;/docImprint>
+ </docImprint>
 
-&lt;/titlePage>```
+</titlePage>
+```
 
 **5. Individuelle Einstellungen** (Customization)
 
