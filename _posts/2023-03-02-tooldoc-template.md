@@ -119,15 +119,11 @@ Möglicherweise → nutzen → wir → hier → Pfeile?
 
 ## Projekte, die dieses Tool genutzt haben
 
-
-
 * Escher Briefedition (briefedition.alfred-escher.ch)
 * Sammlung Schweizerischer Rechtsquellen online (editio.ssrq-online.ch)
 
 
 ## Funktionsübersicht
-
-
 
 * aslkdälsads
 * sdlfkaölkm
@@ -140,8 +136,6 @@ Hier könnten eventuell mehrere Snippets (in Form von Bilddateien) von der Arbei
 
 # Erforderliche Kenntnisse
 
-
-
 * Dies 
 * und 
 * das
@@ -152,7 +146,6 @@ Hier könnten eventuell mehrere Snippets (in Form von Bilddateien) von der Arbei
 # Benötigte Software
 
 Software Nr. 1: [Link zu Software](https://de.wikipedia.org/wiki/Software)
-
 Software Nr. 2: [Link zur nächsten Software](https://de.wikipedia.org/wiki/Software)
 
 
@@ -162,6 +155,7 @@ Software Nr. 2: [Link zur nächsten Software](https://de.wikipedia.org/wiki/Soft
 
 1. **Installation der Software**
 * Installation der benötigten Software
+
 2. **Installation des Tools**
 * Installationsschritt 1 
 * Installationsschritt 2 mit einem Screenshot vielleicht: 
@@ -173,86 +167,37 @@ Software Nr. 2: [Link zur nächsten Software](https://de.wikipedia.org/wiki/Soft
 * Installationsschritt 3
 * Log In
 * Öffnen
+
 3. **Upload von Dokumenten**
 * **Variante 1:** Es könnte so gehen.
 * **Variante 2:** Oder aber auch so. 
+
 4. **Bearbeitung der Dokumente**
 * Man kann dies machen
 * oder dies: mit dem Attribut name=”description” 
-* oder das: mit dem Element <element>` `(Beachte hier das Tags mit Apostrophen gekennzeichnet sein sollten) 
+* oder das: mit dem Element `<element>`(Beachte hier das Tags mit Apostrophen gekennzeichnet sein sollten) 
 * oder jenes: und dabei Codesnippets einfügen: 
 
 ``` xml
 
- <titlePage>
-
- <docTitle>
-
-  <titlePart type="main">THE
-
-  <lb/>Pilgrim's Progress
-
-  <lb/>FROM
-
-  <lb/>THIS WORLD,
-
-  <lb/>TO
-
-  <lb/>That which is to come:</titlePart>
-
-  <titlePart type="sub">Delivered under the Similitude of a
-
-  <lb/>DREAM</titlePart>
-
-  <titlePart type="desc">Wherein is Discovered,
-
-  <lb/>The manner of his setting out,
-
-  <lb/>His Dangerous Journey; And safe
-
-  <lb/>Arrival at the Desired Countrey.</titlePart>
-
- </docTitle>
-
- <epigraph>
-
-  <cit>
-
-   <quote>I have used Similitudes,</quote>
-
-   <bibl>Hos. 12.10</bibl>
-
-  </cit>
-
- </epigraph>
-
- <byline>By <docAuthor>John Bunyan</docAuthor>.</byline>
-
- <imprimatur>Licensed and Entred according to Order.</imprimatur>
-
- <docImprint>
-
-  <pubPlace>LONDON,</pubPlace>
-
-   Printed for <name>Nath. Ponder</name>
-
-  <lb/>at the <name>Peacock</name> in the <name>Poultrey</name>
-
-  <lb/>near <name>Cornhil</name>, <docDate>1678</docDate>.
-
- </docImprint>
-
-</titlePage>
+<fileDesc>
+ 	<titleStmt>
+  		<title>The shortest possible TEI document</title>
+ 	</titleStmt>
+ 	<publicationStmt>
+  		<p>Distributed as part of TEI P5</p>
+ 	</publicationStmt>
+ 	<sourceDesc>
+  		<p>No print source exists: this is an original digital text</p>
+ 	</sourceDesc>
+</fileDesc>
 
 ```
-
-
 
 5. **Individuelle Einstellungen**
 * Bli
 * Bla 
 * Blub
-
 
 6. **Export der Dokumente**
 * Und Ende Gelände. 
@@ -261,9 +206,6 @@ Software Nr. 2: [Link zur nächsten Software](https://de.wikipedia.org/wiki/Soft
 # Möglichkeiten & Stärken
 
 Für was kann es genutzt werden und wo liegen die Stärken des Tools:
-
-
-
 * Stärke 1
 * Stärke 2
 * Stärke 3
@@ -272,9 +214,6 @@ Für was kann es genutzt werden und wo liegen die Stärken des Tools:
 # Herausforderungen & Grenzen
 
 Wofür ist es weniger geeignet:
-
-
-
 * Problem 1
 * Problem 2
 * Problem 3
@@ -307,7 +246,6 @@ Wofür ist es weniger geeignet:
 
 
 # Ressourcen
-
 
 ## Dokumentation
 
