@@ -135,7 +135,7 @@ Möglicherweise → nutzen → wir → hier → Pfeile?
 
 Hier könnten eventuell mehrere Snippets (in Form von Bilddateien) von der Arbeit mit dem Tool eingefügt werden:
 
-![test image](../images/testimg.png “hellohello”)
+![test image](../images/testimg.png)
 
 
 # Erforderliche Kenntnisse
@@ -165,9 +165,7 @@ Hier könnten eventuell mehrere Snippets (in Form von Bilddateien) von der Arbei
 2. **Installation des Tools**
     * Installationsschritt 1 
     * Installationsschritt 2 mit einem Screenshot vielleicht: 
-
-        ![test image](../images/testimg.png “hellohello1”)
-
+    ![test image](../images/testimg.png)
     * Installationsschritt 3
     * Log In
     * Öffnen
@@ -179,7 +177,6 @@ Hier könnten eventuell mehrere Snippets (in Form von Bilddateien) von der Arbei
     * oder dies: mit dem Attribut name=”description”
     * oder das: mit dem Element `<element>`(Beachte hier das Tags mit Apostrophen gekennzeichnet sein sollten)
     * oder jenes: und dabei Codesnippets einfügen: 
-
         ``` xml
         <fileDesc>
  				<titleStmt>
@@ -193,8 +190,6 @@ Hier könnten eventuell mehrere Snippets (in Form von Bilddateien) von der Arbei
              	</sourceDesc>
             </fileDesc>
          ```
-
-
 
 5. **Individuelle Einstellungen**
     * Bli
