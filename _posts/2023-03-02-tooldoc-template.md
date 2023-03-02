@@ -2,7 +2,7 @@
 
 layout: post
 
-title: TOOLDOC TEST
+title: TOOLNAME
 
 categories: [tool, TOOLNAME, STICHWORTE]
 
@@ -135,10 +135,7 @@ Möglicherweise → nutzen → wir → hier → Pfeile?
 
 Hier könnten eventuell mehrere Snippets (in Form von Bilddateien) von der Arbeit mit dem Tool eingefügt werden:
 
-
-
-![test image](../images/testimg.png "image_tooltip")
-
+![test image](../images/testimg.png “hellohello”)
 
 
 # Erforderliche Kenntnisse
@@ -165,30 +162,29 @@ Software Nr. 2: [Link zur nächsten Software](https://de.wikipedia.org/wiki/Soft
 
 1. **Installation der Software**
 * Installation der benötigten Software
-
 2. **Installation des Tools**
 * Installationsschritt 1 
 * Installationsschritt 2 mit einem Screenshot vielleicht: 
 
-    
-![test image](../images/testimg.png "image_tooltip")
+![test image](../images/testimg.png “hellohello1”)
+
 
 
 * Installationsschritt 3
 * Log In
 * Öffnen
-
 3. **Upload von Dokumenten**
 * **Variante 1:** Es könnte so gehen.
 * **Variante 2:** Oder aber auch so. 
-
-**4.** **Bearbeitung der Dokumente**
+4. **Bearbeitung der Dokumente**
 * Man kann dies machen
 * oder dies: mit dem Attribut name=”description” 
-* oder das: mit dem Element `<element>`(Beachte hier das Tags mit Apostrophen gekennzeichnet sein sollten) 
+* oder das: mit dem Element <element>` `(Beachte hier das Tags mit Apostrophen gekennzeichnet sein sollten) 
 * oder jenes: und dabei Codesnippets einfügen: 
-```xml
-<titlePage>
+
+``` xml
+
+ <titlePage>
 
  <docTitle>
 
@@ -247,22 +243,19 @@ Software Nr. 2: [Link zur nächsten Software](https://de.wikipedia.org/wiki/Soft
  </docImprint>
 
 </titlePage>
+
 ```
 
-**5. Individuelle Einstellungen** (Customization)
 
 
-
+5. **Individuelle Einstellungen**
 * Bli
 * Bla 
 * Blub
 
-**6. Export der Dokumente**
 
-
-
-* Und Ende Gelände. db/apps/teipublisher/data einen eigenen Ordner mit dem Namen 
-
+6. **Export der Dokumente**
+* Und Ende Gelände. 
 
 
 # Möglichkeiten & Stärken
@@ -278,7 +271,7 @@ Für was kann es genutzt werden und wo liegen die Stärken des Tools:
 
 # Herausforderungen & Grenzen
 
-Wofür ist es weniger geeignet
+Wofür ist es weniger geeignet:
 
 
 
@@ -289,26 +282,28 @@ Wofür ist es weniger geeignet
 
 # Kontakt
 
+**Unternehmensgröße:** 123 (Stand 2023)
 
-### Unternehmensgröße
+**Weblink:** [www.weblink.com](www.weblink.com) 
 
-
-
-* blabla Personen (Stand 2023)
-
-
-### Web 
+**Mail:**
 
 
+<table>
+  <tr>
+   <td>Allgemeiner Support
+   </td>
+   <td><a href="mailto:office@mails.com">office@mails.com</a> 
+   </td>
+  </tr>
+  <tr>
+   <td>MisterSowieso (Chefe)
+   </td>
+   <td><a href="mailto:mailadresse@mails.com">mailadresse@mails.com</a> 
+   </td>
+  </tr>
+</table>
 
-* Weblink
-
-
-### Mail
-
-
-
-* Maillinks
 
 
 # Ressourcen
@@ -316,12 +311,12 @@ Wofür ist es weniger geeignet
 
 ## Dokumentation
 
-Link zur projektinternen Doku
+Link zur Tool-Doku
 
 
 ## Tutorials
 
-Yotube?
+Youtube?
 
 
 ## Literatur
