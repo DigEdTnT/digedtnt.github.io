@@ -7,9 +7,9 @@ permalink: /workshop1/
 # Workshop - Meet the Tools and Developers
 ### 23.02.2023 - 24.02.2023 
 
-Vielen Dank noch einmal allen Tool-Expert*innen für die spannenden und lehrreichen Vorträge an Tag 1 sowie die Beantwortung der zahlreichen (An-)Fragen bei der Tool-Dating-Veranstaltung an Tag 2. 
+Vielen Dank noch einmal allen Tool-Expert*innen für die spannenden und lehrreichen Vorträge an Tag 1 sowie die Beantwortung der zahlreichen (An-)Fragen bei der Tool-Dating-Veranstaltung an Tag 2 unseres ersten DigEdTnT-Workshops. 
 
-Wir hatten den Eindruck, in der DH-Community nicht nur zu ein paar Flirts verholfen zu haben, sondern unter anderem auch einen kleinen Anstoß zu längeren Partnerschaften geleistet zu haben. 
+Wir hatten den Eindruck, in der DH-Community nicht nur einen kleinen Beitrag zu ein paar Flirts, sondern unter anderem auch zu längeren Partnerschaften geleistet zu haben. 
 
 ## Tool-Präsentationen
 
@@ -40,5 +40,5 @@ Wir hatten den Eindruck, in der DH-Community nicht nur zu ein paar Flirts verhol
 
 ### Keynote: “Tools für digitale Editionen als Helfer und Hürden: Wie nehmen wir die Werkzeuge in die Hand?”
 <div align="center">Ulrike Henny (Universität Rostock)</div>
-<iframe src="../data/workshop/slides/Keynote_Vortrag_DigEdTnT" width="100%" height="480px"></iframe>
+<iframe src="../data/workshop/slides/Keynote_Vortrag_DigEdTnT.pdf" width="100%" height="480px"></iframe>
 
