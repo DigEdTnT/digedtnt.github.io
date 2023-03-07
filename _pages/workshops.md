@@ -18,7 +18,7 @@ Wir hatten den Eindruck, in der DH-Community nicht nur einen kleinen Beitrag zu 
 <iframe src="../data/workshop/slides/FromThePage_Workshop_Graz_2023.pdf" width="100%" height="480px"></iframe>
 
 ### Transkribus 
-<div align="center">Matthias Sorg und Sebastian Colutto(READ-COOP)</div>
+<div align="center">Matthias Sorg und Sebastian Colutto (READ-COOP)</div>
 <iframe src="../data/workshop/slides/Transkribus_Workshop_Graz_2023_full.pdf" width="100%" height="480px"></iframe>
 
 ### LAKomp
