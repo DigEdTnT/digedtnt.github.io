@@ -10,30 +10,24 @@ permalink: /workshop1/
 Vielen Dank noch einmal allen Tool-Expert*innen für die spannenden und lehrreichen Präsentationen an Tag 1 sowie die Beantwortung der zahlreichen (An-)Fragen bei der Tool-Dating-Veranstaltung an Tag 2. 
 Wir hatten jedenfalls den Eindruck, dass wir in der DH-Community nicht nur zu ein paar Flirts, sondern unter anderem auch zu längeren Partnerschaften beitragen konnten. 
 
-## Tool-Präsentationen unserer Workshop-Vortragenden
+## Tool-Präsentationen
 
-### FromThePage
-Experte: Ben Brumfield (Brumfield Labs, Englisch)
+### FromThePage - Ben Brumfield (Brumfield Labs)
 
-<iframe src="https://github.com/DigEdTnT/digedtnt.github.io/blob/master/images/digedtntlogo.png" max-width="100%"></iframe>
+<iframe src="https://drive.google.com/drive/folders/1t_ppFUj6f_pgUBM4PjS193T6AgSim_Q8" width="100%"></iframe>
 
-### Transkribus
-Experten: Matthias Sorg und Sebastian Colutto(READ-COOP)
-<iframe src="../data/workshops/slides/FromThePage_Workshop_Graz_2023.pdf" max-width="100%"></iframe>
+### Transkribus - Matthias Sorg und Sebastian Colutto(READ-COOP)
+<object data="../data/workshops/slides/Transkribus_Workshop_Graz_2023_full.pdf" type='application/pdf'></object>
 
-### LAKomp 
-Experte: Jörg Ritter (Universität Halle-Wittenberg)
+### LAKomp - Jörg Ritter (Universität Halle-Wittenberg)
 
 
-### IIIF
-Experte: Glen Robson (IIIF Consortium, Englisch)
+### IIIF - Glen Robson (IIIF Consortium)
 
 
-### ediarum
-Expertin:  Nadine Arndt (TELOTA, Berlin-Brandenburgische Akademie der Wissenschaften)
+### ediarum - Nadine Arndt (TELOTA, Berlin-Brandenburgische Akademie der Wissenschaften)
 
-### FairCopy
-Experte: Nicholas Laiacona (Performant Software Solutions, Englisch)
+### FairCopy - Nicholas Laiacona (Performant Software Solutions)
 
 
 ### Keynote: “Tools für digitale Editionen als Helfer und Hürden: Wie nehmen wir die Werkzeuge in die Hand?”
