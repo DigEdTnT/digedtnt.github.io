@@ -12,12 +12,14 @@ Wir hatten jedenfalls den Eindruck, dass wir in der DH-Community nicht nur zu ei
 
 ## Tool-Präsentationen
 
-### FromThePage - Ben Brumfield (Brumfield Labs)
+### FromThePage
+<div align="center">Ben Brumfield (Brumfield Labs)</div>
 
-<iframe src="https://drive.google.com/drive/folders/1t_ppFUj6f_pgUBM4PjS193T6AgSim_Q8" width="100%"></iframe>
+<iframe src="https://github.com/DigEdTnT/digedtnt.github.io/blob/2a674d55ff8018f345cc538265e6c26242c5a246/data/workshop/slides/FromThePage_Workshop_Graz_2023.pdf" width="100%"></iframe>
 
 ### Transkribus - Matthias Sorg und Sebastian Colutto(READ-COOP)
-<object data="../data/workshops/slides/Transkribus_Workshop_Graz_2023_full.pdf" type='application/pdf'></object>
+
+<iframe src="../data/workshop/slides/Transkribus_Workshop_Graz_2023_full.pdf"></iframe>
 
 ### LAKomp - Jörg Ritter (Universität Halle-Wittenberg)
 
