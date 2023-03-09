@@ -39,6 +39,6 @@ Wir hatten den Eindruck, in der DH-Community nicht nur einen kleinen Beitrag zu 
 
 
 ### Keynote: “Tools für digitale Editionen als Helfer und Hürden: Wie nehmen wir die Werkzeuge in die Hand?”
-<div align="center">Ulrike Henny (Universität Rostock)</div>
+<div align="center">Ulrike Henny-Kramer (Universität Rostock)</div>
 <iframe src="../data/workshop/slides/Keynote_Vortrag_DigEdTnT.pdf" width="100%" height="480px"></iframe>
 
