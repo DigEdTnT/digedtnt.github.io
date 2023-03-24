@@ -1,33 +1,21 @@
 # Title of a work -- this brief string is displayed prominently to end users
 title: 'MS Solothurn, Zentralbibliothek, Cod. S 490 (So1'
 # Description -- a block of HTML describing the work
-description: Manuscript in the project https://gams.uni-graz.at/corema
+description: 'Dieses Manuskript beinhaltet mittelalterlich Kochrezepte in gotischer Bastarda. Kenntnisse des (ost-)oberdeutschen von Vorteil.'
 # Physical Description -- raw HTML is accepted
-physical_description: 'Drei Lagen. Auf einigen Blättern sind am oberen Rand Buchstaben verzeichnet
->Die Handschrift weist Schäden auf und ist nicht vollständig. Sie setzt erst mitten in Rezept 32 des ersten Teils ein, was einem Fehlbestand von circa acht Blatt entspricht. 
-Zwischen Blatt 22 und 23 fehlt ein Blatt, das den Beginn einer neuen Lage hätte bilden müssen; es ist zu vermuten, daß auch nach Bl. 30 ein Blatt ausgefallen ist. 
-Auf Bl. 23r-24v haben Wasserflecken die Schrift in einigen Partien nahezu unlesbar werden lassen.
-Die Handschrift ist in einer gut lesbaren gotischen Bastarda beschrieben.
-Moderner Pappeinband. '
+physical_description: 'Drei Lagen. Auf einigen Blättern sind am oberen Rand Buchstaben verzeichnet. Die Handschrift weist Schäden auf und ist nicht vollständig. Sie setzt erst mitten in Rezept 32 des ersten Teils ein, was einem Fehlbestand von circa acht Blatt entspricht. Zwischen Blatt 22 und 23 fehlt ein Blatt, das den Beginn einer neuen Lage hätte bilden müssen; es ist zu vermuten, daß auch nach Bl. 30 ein Blatt ausgefallen ist. Auf Bl. 23r-24v haben Wasserflecken die Schrift in einigen Partien nahezu unlesbar werden lassen. Die Handschrift ist in einer gut lesbaren gotischen Bastarda beschrieben. Moderner Pappeinband.'
 # Document History -- raw HTML is accepted
-document_history: 'Frühestens um 1487
-Heiles geht davon aus, dass es sich bei der Handschrift um die Abschrift eines Druckes handelt und nimmt als terminus post quem den Druck Peter Schöffers an (ca. 1487) (vgl. Heiles, Küchenmeisterei, S. 32-34.)
-Entstehungsort unbekannt
-Auf dem ersten Blatt befinden sich der Bibliotheksstempel der Zentralbibliothek Solothurn und der Bleistifteintrag'
+document_history: 'Frühestens um 1487. Heiles geht davon aus, dass es sich bei der Handschrift um die Abschrift eines Druckes handelt und nimmt als terminus post quem den Druck Peter Schöffers an (ca. 1487) (vgl. Heiles, Küchenmeisterei, S. 32-34.). Entstehungsort unbekannt. Auf dem ersten Blatt befinden sich der Bibliotheksstempel der Zentralbibliothek Solothurn und der Bleistifteintrag'
 # Permission Description -- raw HTML is accepted
-permission_description: 'Text: <a href="https://creativecommons.org/licenses/by/4.0">Creative Commons BY 4.0</a>
-Faksimiles: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0 </a>'
+permission_description: 'Text: <a href="https://creativecommons.org/licenses/by/4.0">Creative Commons BY 4.0</a> Faksimiles: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0 </a>'
 # location of composition (brief string)
-location_of_composition: Unknown
+location_of_composition: 'Unknown'
 # author or creator (brief string)
-author: Unknown
+author: 'Unknown'
 # Recipient -- the recipient of the document, i.e. for a letter or other targeted document
 recipient: ''
 # HTML transcription conventions.  Only specified to override the transcription conventions for the collection
-transcription_conventions: "<p><b>Transkriptionsanleitung</b>
-<ul><li><i>Konsontanten mit Reduplikationsstrich (waagrechter Strich über Buchstabe): </i>Immer Doppelkonsonanten ausschreiben, z.B. nn oder mm.</li>
- <li><i>Unsicherheiten aufgrund Unleserlichkeit: </i>Gesamtes Wort mit dem Button "unclear" markieren und unleserliche Zeichen mit Fragezeichen ersetzen. Die Leerzeichen vor und nach dem Wort müssen außerhalb des Tags stehen; z. B. <unclear>n?m</unclear> </li>
-<li><i>Zeilenumbrüche:</i>Drücke nach jeder Zeile <code>Enter</code>, um das Zeilenende zu markieren. Zwei mal Enter bzw. eine Leerzeile wird als Absatz dargestellt. Bitte nur verwenden, wenn ein großer Abstand zu sehen ist. </li></ul>"
+transcription_conventions: '<p><b>Transkriptionsanleitung</b> <ul><li><i>Konsontanten mit Reduplikationsstrich (waagrechter Strich über Buchstabe): </i>Immer Doppelkonsonanten ausschreiben, z.B. nn oder mm.</li> <li><i>Unsicherheiten aufgrund Unleserlichkeit: </i>Gesamtes Wort mit dem Button "unclear" markieren und unleserliche Zeichen mit Fragezeichen ersetzen. Die Leerzeichen vor und nach dem Wort müssen außerhalb des Tags stehen; z. B. <unclear>n?m</unclear> </li> <li><i>Zeilenumbrüche:</i>Drücke nach jeder Zeile <code>Enter</code>, um das Zeilenende zu markieren. Zwei mal Enter bzw. eine Leerzeile wird als Absatz dargestellt. Bitte nur verwenden, wenn ein großer Abstand zu sehen ist. </li></ul>'
 # Boolean allowing collaborators to change page titles.  Set to true if you request users to catalog each page
 scribes_can_edit_titles: false
 # Boolean enabling translation as a step following transcription
