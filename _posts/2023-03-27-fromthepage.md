@@ -54,7 +54,7 @@ FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins 
 * Direkte Verknüpfung zu Voyant, Verbatim, IIIF
 * API für die automatisierte Veröffentlichung bei Fertigstellung einer Transkription
 
-[Detaillierter Fact Sheet](data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf)
+[Detaillierter Fact Sheet](../data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf)
 
 
 ## Tool-Kompatibilität
@@ -146,13 +146,13 @@ In der Dashboard-Ansicht ist es sinnvoll, zu Beginn eine Sammlung (“create a c
 3. **Vorbereitung und Konfiguration des Projektes**
     * **_<span style="text-decoration:underline;">Einstellungen im Projekt-Dashboard</span>_**
         * **Allgemeine Einstellungen:** In den Einstellungen am Projekt-Dashboard konfigurieren wir schließlich die Ansicht, die den Transkriptoren zur Verfügung steht. Wir können unserer Projektseite zum Beispiel eine eigene URL zuweisen, einen eigenen Einladungslink zum Transkriptionsprojekt erstellen, ein Projektbild sowie einen eigenen Footer gestalten (um z. B. direkten Kontakt zur Projektleitung zu ermöglichen). Die Beschreibung, die wir beim Anlegen der Sammlung eingefügt haben, scheint hier bereits auf und kann noch weiter adaptiert werden.  \
-![Konfiguration des Projekts ](../data/pipelines/pipeline_1/fromthepage/img/project-setup1.PNG)
+![Konfiguration des Projekts ](../data/pipelines/pipeline_1/fromthepage/img/project-setup1.PNG) \
+→ Mit dem Aktivieren von unterschiedlichen Funktionalitäten erweitert sich im Übrigen zunehmend auch das Menü im Dashboard.
         * **Einschränkung der Projektmitarbeitenden:** Da wir unser Projekt nur einem eingeschränkten Kreis an Mitarbeitenden zur Verfügung stellen wollen, nutzen wir außerdem die Möglichkeit, unsere Sammlung auf privat zu stellen sowie den Transkriptor:innenkreis einzuschränken und nur bestimmte registrierte Mitarbeitende über ihre Mailadresse hinzuzufügen.  \
 → Das Hinzufügen von neuen Personen erfolgt für gewöhnlich während eines allgemeinen System-Updates  über Nacht.
         * **Erweiterung der Projektleitung:** Nachdem wir in unserem Projekt zwei Projektleiter:innen haben, fügen wir außerdem noch einen zweiten Projektleiter hinzu. Hierzu muss die zweite Person ebenfalls registriert sein und die Mailadresse muss bekannt sein.
         * **Adaptierung der Hilfestellungen für das Projektteam:** FromThePage ermöglicht uns nun auch diverse Hilfestellungen für unsere Transkriptor:innen anzupassen. Es können hier also noch mal Transkriptionsrichtlinien festgelegt werden, die für alle Werke dieser Sammlung gelten. In unserem Fall haben wir mit der YML-Datei bereits Die englischen Vorlagen für den allgemeinen Hilfetext sowie für das Subject Linking ändern wir vorerst nichts.
         * **Einrichtung eines Forums:** Um auch eine aktive Diskussion zwischen den Mitarbeitenden in unserem Projekt zu ermöglichen, eröffnen wir zudem ein Forum.  \
-→ Mit dem Aktivieren von unterschiedlichen Funktionalitäten erweitert sich im Übrigen zunehmend auch das Menü im Dashboard.  \
 ![Weitere Projektkonfigurationen](../data/pipelines/pipeline_1/fromthepage/img/project-setup2.PNG)
         * **Anpassungen des Transkriptionseditors**: Damit unsere Transkriptior:innen sich nicht mit spitzen Klammern herumärgern müssen, nutzen wir die Möglichkeit, die vordefinierten(!) Editor-Buttons (derzeit sind 21[ Tags ](https://content.fromthepage.com/project-owner-documentation/advanced-editor/)verfügbar) zu aktivieren. \
 ![Editor-Buttons](../data/pipelines/pipeline_1/fromthepage/img/editor-buttons.PNG)
@@ -166,7 +166,7 @@ Es ist auch möglich, die Entitäten (in einem CSV) hochzuladen, wobei sich dies
         * **Einstellung des Revisionstyps**: Da wir in unserem Editionsprojekt nach dem 4-Augen-Prinzip arbeiten, stellen wir den Review type auf “restricted”, so dass alle fertiggestellten Transkriptionen unbedingt von einem autorisierten Reviewer noch einmal gelesen und gegebenenfalls korrigiert werden.
         * **Erstellung von Metadaten für einzelne Werke**: Damit unsere Transkriptor:innen uns auch mit den Metadaten helfen können, aktivieren wir die Metadaten-Beschreibung in den Einstellungen. Auch hierfür erscheint in der Navigation erscheint nun ein neuer Tab (Metadata Fields).  \
 ![Metadaten-Felder](../data/pipelines/pipeline_1/fromthepage/img/metadata-fields.PNG)
-        * **API-Aktivierung: **Die Zugänglichkeit des Projekts über eine API lassen wir für unser Projekt vorerst deaktiviert.
+        * **API-Aktivierung:** Die Zugänglichkeit des Projekts über eine API lassen wir für unser Projekt vorerst deaktiviert.
     * **_<span style="text-decoration:underline;">Einstellungen für das jeweilige Werk</span>_**
         * **Allgemeine Einstellungen**: Auch für jedes Werk - also in unserem Fall für jedes Manuskript selbst - können wir diverse Voreinstellungen vornehmen. Darunter fallen die Vergabe eines Titels, die Zuordnung zu einer Sammlung bzw. einem Projekt, die Anpassung der URL sowie die Vergabe eines Identifiers von einem externen System.  \
 ![Werkkonfigurationen](../data/pipelines/pipeline_1/fromthepage/img/work-setup.PNG) \
@@ -205,7 +205,7 @@ Die Transkriptor:innen können in ihrem Projekt-Dashboard die von der Projektlei
         * **Metadaten-Anreicherung:** Nachdem wir für unser Projekt festgelegt haben, dass zu jedem Werk auch Metadaten angelegt werden können, steht unseren Transkriptor:innen ein Button zur Erstellung von Metadaten zur Verfügung.  \
 ![Metadaten-Button für Bearbeitende](../data/pipelines/pipeline_1/fromthepage/img/create-metadata-button.PNG) \
 Über die damit aufgerufene Ansicht können schließlich die zuvor von der Projektleitung angelegten Felder (siehe Punkt Metadaten-Erstellung für einzelne Werke) befüllt werden.  \
-!](../data/pipelines/pipeline_1/fromthepage/img/metadata-creation-editor.PNG) \
+![Anreicherung von Metadaten durch Bearbeitende](../data/pipelines/pipeline_1/fromthepage/img/metadata-creation-editor.PNG) \
 Auch bei den Metadaten gibt es wieder die Option zwischenzuspeichern (“Save”), die Daten als vollständig zu markieren (“Done”) und am Ende muss wieder ein Reviewer die eingegebenen Daten bestätigen (“Approve”).
     * **Versionsansicht:** Im Tab “Versions” können wir nachverfolgen, wer wann welche Änderungen vorgenommen hat. \
 ![Versionsansicht](../data/pipelines/pipeline_1/fromthepage/img/versions-revisions.PNG)
@@ -317,7 +317,7 @@ Mögliche Transitions/Integrationen:
 
 
 * [Dokumentation für Projektleitung](https://content.fromthepage.com/project-owner-documentation/)
-* [Neues Projekt anlegen](https://content.fromthepage.com/project-owner-documentation/new-project-checklist/)
+* [Checkliste für das Anlegen eines neuen Projekts](https://content.fromthepage.com/project-owner-documentation/new-project-checklist/)
 * [Integrationsanleitungen (CONTENTdm, Internet Archive, OmekaS)](https://content.fromthepage.com/project-owner-documentation/integrations/)
 
 
