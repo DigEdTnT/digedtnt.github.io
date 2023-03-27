@@ -1,13 +1,7 @@
 ---
-
-layout: post
-
-title: FromThePage
-
-categories: [tool, transcription, FromThePage, tei, opensource]
-
-excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
-
+layout: page
+title: Tools
+permalink: /tools/
 ---
 
 
