@@ -115,7 +115,7 @@ FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins 
 
 
 1. **Registrierung**
-    * Um in FTP ein Projekt anzulegen, muss man sich jedenfalls registrieren. Für unsere Testzwecke haben wir ein zweiwöchiges Probe-Benutzerkonto eingerichtet, in dem es uns möglich ist, bis zu 200 Seiten zur Transkription hochzuladen. \
+    * Um in FTP ein Projekt anzulegen, muss man sich jedenfalls registrieren. Für unsere Testzwecke haben wir ein zweiwöchiges Probe-Benutzerkonto eingerichtet, in dem es uns möglich ist, bis zu 200 Seiten zur Transkription hochzuladen.
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/registration.PNG" description="Test einer Bildunterschrift" %}
     * Erforderlich ist dafür lediglich eine E-Mail-Adresse
 2. **Einrichtung eines Projekts**
