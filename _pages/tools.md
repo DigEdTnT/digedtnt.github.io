@@ -119,8 +119,7 @@ FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins 
 ![Registrierung](../data/pipelines/pipeline_1/fromthepage/img/registration.PNG) 
     * Erforderlich ist dafür lediglich eine E-Mail-Adresse
 2. **Einrichtung eines Projekts**
-    *  \
-In der Dashboard-Ansicht ist es sinnvoll, zu Beginn eine Sammlung (“create a collection”) anzulegen, indem ein Titel sowie eine Beschreibung der Sammlung erstellt wird.  \
+    *  In der Dashboard-Ansicht ist es sinnvoll, zu Beginn eine Sammlung (“create a collection”) anzulegen, indem ein Titel sowie eine Beschreibung der Sammlung erstellt wird.  \
 ![Projekt-Dashboard](../data/pipelines/pipeline_1/fromthepage/img/owner-dashboard.PNG)
     * In unserem Fall legen wir eine Sammlung mit Kochrezepten aus dem Mittelalter an. \
 ![Anlegen einer Sammlung](../data/pipelines/pipeline_1/fromthepage/img/create-collection.PNG)
@@ -334,4 +333,4 @@ Literaturliste von Zotero
 
 Fact Sheet zum Tool
 
-&lt;iframe src=”../data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf” width=”100%” height=”480px”>&lt;/iframe>
+<iframe src=”../data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf” width=”100%” height=”480px”></iframe>
