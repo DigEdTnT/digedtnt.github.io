@@ -337,6 +337,6 @@ Mögliche Transitions/Integrationen:
 
 Literaturliste von Zotero
 
-Fact Sheet zum Tool
+## Fact Sheet zum Tool
 
-<iframe src=”../data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf” width=”100%” height=”480px”></iframe>
+<iframe src="../data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf" width="100%" height="480px"></iframe>
