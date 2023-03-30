@@ -37,31 +37,36 @@
                   Tools
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item link-dark" href="{{ site.baseurl }}/tools">FromThePage</a></li>
+                  <li><a class="dropdown-item link-dark" href="{{ site.baseurl }}/fromthepage">FromThePage</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link link-dark" href="#">Transitions</a>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link link-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Workshops
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item link-dark" href="{{ site.baseurl }}/workshop1">Workshop 1</a></li>
+                </ul>
+              </li>
               <li class="nav-item">
                 <a class="nav-link link-dark" href="{{ site.baseurl }}/search">Search</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-dark" href="{{ site.baseurl }}/workshop1">Workshops</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link link-dark" href="{{ site.baseurl }}/categories">Categories</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link link-dark" href="{{ site.baseurl }}/archive">Archive</a>
-              </li>
+              </li> -->
             </ul>
           </header>
         </div>
       </div>
 
       <div class="wrapper-main">
-        <div id="main" role="main" class="container">
+        <div id="main" role="main" class="container-fluid">
           {{ content }}
         </div>
       </div>
