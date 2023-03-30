@@ -20,52 +20,42 @@
     <div class="wrapper-container">
       <div class="wrapper-masthead">
         <div class="container">
-          <header class="masthead clearfix">
+          <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
-
             <div class="site-info">
               <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
               <p class="site-description">{{ site.description }}</p>
             </div>
 
-            <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="{{ site.baseurl }}/about">About</a>
-                    </li>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link link-dark" aria-current="page" href="{{ site.baseurl }}/about">About</a>
+              </li>
 
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Tools
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ site.baseurl }}/tools">FromThePage</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Transitions</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{{ site.baseurl }}/search">Search</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{{ site.baseurl }}/workshop1">Workshops</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{{ site.baseurl }}/categories">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{{ site.baseurl }}/archive">Archive</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
+              <li class="nav-item dropdown">
+                <a class="nav-link link-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tools
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item link-dark" href="{{ site.baseurl }}/tools">FromThePage</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#">Transitions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="{{ site.baseurl }}/search">Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="{{ site.baseurl }}/workshop1">Workshops</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="{{ site.baseurl }}/categories">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="{{ site.baseurl }}/archive">Archive</a>
+              </li>
+            </ul>
           </header>
         </div>
       </div>
