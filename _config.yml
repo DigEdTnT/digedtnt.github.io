@@ -6,7 +6,7 @@
 name: DigEdTnT
 
 # Name of the author
-author: DH Craft
+author: DigEdTnT
 
 # Short bio or description (displayed in the header)
 description: "Digital Edition Creation Pipelines: Tools and Transitions"
@@ -59,6 +59,7 @@ version: v1.2.0
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
+  # parse_block_html: true
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
