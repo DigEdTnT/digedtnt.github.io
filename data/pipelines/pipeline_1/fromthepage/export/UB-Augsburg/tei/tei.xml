@@ -36,9 +36,9 @@ Kenntnis des Bayrischen und mittelalterlichen Lateins von Vorteil.</title>
             ZIM-DigEdTnT
             </persName>
             <resp>
-              made 34 edits between
+              made 40 edits between
               <date type="first_edit" when="2023-03-24T12:00:58Z">March 24, 2023</date> and
-              <date type="last_edit" when="2023-04-12T13:08:20Z">April 12, 2023</date>.
+              <date type="last_edit" when="2023-04-13T11:10:05Z">April 13, 2023</date>.
             </resp>
         </respStmt>
         <respStmt xml:id="U32014447">
@@ -70,7 +70,7 @@ Kenntnis des Bayrischen und mittelalterlichen Lateins von Vorteil.</title>
       <availability>
         <p>Text: &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0&quot;&gt;Creative Commons BY 4.0&lt;/a&gt; Faksimiles: &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;Creative Commons BY-NC-SA 4.0 &lt;/a&gt;</p>
       </availability>
-      <date when="2023-04-13T07:54:08+00:00">April 13, 2023</date>
+      <date when="2023-04-13T11:27:04+00:00">April 13, 2023</date>
     </publicationStmt>
 
     <sourceDesc>
@@ -113,13 +113,6 @@ Kenntnis des Bayrischen und mittelalterlichen Lateins von Vorteil.</title>
 </category>
 <category xml:id='C32001130'>
 <catDesc>Zutaten</catDesc>
-          <category xml:id='S32081200'>
-            <catDesc>
-              <term> Apfel </term>
-              <note type='categorization'>Categories:<ab><ptr ana='#category #leaf #root' target='#C32001130'>Zutaten</ptr></ab>
-              </note>
-            </catDesc>
-          </category>
           <category xml:id='S32080908'>
             <catDesc>
               <term>Honig </term>
@@ -176,6 +169,30 @@ Kenntnis des Bayrischen und mittelalterlichen Lateins von Vorteil.</title>
 
   <revisionDesc>
     <listChange ordered="true">
+        <change xml:id="CHG49" who="U32014648" when="2023-04-13T11:10:05Z" target="#P33038495">
+          Version 9 of page "UB_Augsburg_Cod_III_1_2_43_059v":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG48" who="U32014648" when="2023-04-13T11:10:01Z" target="#P33038495">
+          Version 8 of page "UB_Augsburg_Cod_III_1_2_43_059v":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG47" who="U32014648" when="2023-04-13T11:09:22Z" target="#P33038493">
+          Version 21 of page "UB_Augsburg_Cod_III_1_2_43_002r":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG46" who="U32014648" when="2023-04-13T11:09:19Z" target="#P33038493">
+          Version 20 of page "UB_Augsburg_Cod_III_1_2_43_002r":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG45" who="U32014648" when="2023-04-13T08:32:08Z" target="#P33038493">
+          Version 19 of page "UB_Augsburg_Cod_III_1_2_43_002r":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG44" who="U32014648" when="2023-04-13T08:32:05Z" target="#P33038493">
+          Version 18 of page "UB_Augsburg_Cod_III_1_2_43_002r":
+            Changes to page transcript.
+        </change>
         <change xml:id="CHG43" who="U32014648" when="2023-04-12T13:08:20Z" target="#P33038497">
           Version 5 of page "UB_Augsburg_Cod_III_1_2_43_060v":
             Changes to page transcript.
@@ -403,6 +420,7 @@ geschmacks ist Et mala atra et malignata similer aerea Vnd die do sein in den<lb
 </p>
 
 
+            <note resp="#U32014648">Darstellungsproblem bei v mit Trema darüber!</note>
         </div>
         <pb xml:id="F33038494" n="2" facs="http://fromthepage.com/image-service/33038494/full/full/0/default.jpg"/>
         <div xml:id="OTP33038494">
@@ -465,7 +483,7 @@ vber das fewrr vnd zeuch es eÿ dar mit auff das es slecht werr vnd<lb/>
 richte es an vnd versaltz es nicht<lb/>
 Item einen fladenn zu machenn von fischenn velcherlej sie sind So<lb/>
 nÿm ein dicke mandelmilch wol gemengt mit reiß mel vnd thue<lb/>
-dar ein einen <rs ref='#S32081200'> apffel </rs> oderr zwenn vnd ein wenig wurtz vnd seud<lb/>
+dar ein einen apffel oderr zwenn vnd ein wenig wurtz vnd seud<lb/>
 es in einem ofen vnd laß es pachenn vnd versalcz es nit<lb/>
 Wiltu machen morchen vmb weihennachtenn So nÿm ein teick<lb/>
 auß weissem brot vnd auß ein wenig melbs vnd schla eÿer dar an<lb/>

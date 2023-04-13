@@ -36,9 +36,9 @@ Kenntnisse des (ost-)oberdeutschen von Vorteil. </title>
             ZIM-DigEdTnT
             </persName>
             <resp>
-              made 26 edits between
+              made 35 edits between
               <date type="first_edit" when="2023-03-27T07:30:53Z">March 27, 2023</date> and
-              <date type="last_edit" when="2023-04-12T13:07:48Z">April 12, 2023</date>.
+              <date type="last_edit" when="2023-04-13T11:08:10Z">April 13, 2023</date>.
             </resp>
         </respStmt>
         <respStmt xml:id="U32014447">
@@ -78,7 +78,7 @@ Kenntnisse des (ost-)oberdeutschen von Vorteil. </title>
       <availability>
         <p>Text: &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0&quot;&gt;Creative Commons BY 4.0&lt;/a&gt; Faksimiles: &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;Creative Commons BY-NC-SA 4.0 &lt;/a&gt;</p>
       </availability>
-      <date when="2023-04-13T07:54:09+00:00">April 13, 2023</date>
+      <date when="2023-04-13T11:27:04+00:00">April 13, 2023</date>
     </publicationStmt>
 
     <sourceDesc>
@@ -117,6 +117,13 @@ Kenntnisse des (ost-)oberdeutschen von Vorteil. </title>
               </note>
             </catDesc>
           </category>
+          <category xml:id='S32080911'>
+            <catDesc>
+              <term>Ingwer </term>
+              <note type='categorization'>Categories:<ab><ptr ana='#category #leaf #root' target='#C32001130'>Zutaten</ptr></ab>
+              </note>
+            </catDesc>
+          </category>
 </category>
 </taxonomy>
 
@@ -138,6 +145,42 @@ Kenntnisse des (ost-)oberdeutschen von Vorteil. </title>
 
   <revisionDesc>
     <listChange ordered="true">
+        <change xml:id="CHG50" who="U32014648" when="2023-04-13T11:08:10Z" target="#P33038499">
+          Version 12 of page "ZB_Solothurn_Cod_S_490_002r":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG49" who="U32014648" when="2023-04-13T11:08:07Z" target="#P33038499">
+          Version 11 of page "ZB_Solothurn_Cod_S_490_002r":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG48" who="U32014648" when="2023-04-13T11:07:17Z" target="#P33038500">
+          Version 7 of page "ZB_Solothurn_Cod_S_490_002v":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG47" who="U32014648" when="2023-04-13T11:07:13Z" target="#P33038500">
+          Version 6 of page "ZB_Solothurn_Cod_S_490_002v":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG46" who="U32014648" when="2023-04-13T08:40:44Z" target="#P33038502">
+          Version 10 of page "ZB_Solothurn_Cod_S_490_001r":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG45" who="U32014648" when="2023-04-13T08:37:40Z" target="#P33038502">
+          Version 9 of page "ZB_Solothurn_Cod_S_490_001r":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG44" who="U32014648" when="2023-04-13T08:36:45Z" target="#P33038499">
+          Version 10 of page "ZB_Solothurn_Cod_S_490_002r":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG43" who="U32014648" when="2023-04-13T08:36:41Z" target="#P33038499">
+          Version 9 of page "ZB_Solothurn_Cod_S_490_002r":
+            Changes to page transcript.
+        </change>
+        <change xml:id="CHG42" who="U32014648" when="2023-04-13T08:28:28Z" target="#P33038502">
+          Version 8 of page "ZB_Solothurn_Cod_S_490_001r":
+            Changes to page transcript.
+        </change>
         <change xml:id="CHG41" who="U32014648" when="2023-04-12T13:07:48Z" target="#P33038502">
           Version 7 of page "ZB_Solothurn_Cod_S_490_001r":
             Changes to page transcript.
@@ -354,7 +397,6 @@ in ein witen schafft vnd stos <add>die</add> hengel darin <choice><expan>daz</ex
 </p>
 
 
-            <note resp="#U32014648">testnotiz</note>
         </div>
         <pb xml:id="F33038499" n="2" facs="http://fromthepage.com/image-service/33038499/full/full/0/default.jpg"/>
         <div xml:id="OTP33038499">
@@ -366,7 +408,7 @@ füll ein becke mit gutem brun wasser henck sie dar in<lb/>
 als lang bis das der cleim erweichett vnd flös in ab<lb/>
 dar nach begüs si mit andrem frischem wasser schon las dr=<lb/>
 ucken vnd trag sie dan für § xxx<lb/>
-Item Sangenn <note n='*v mit Trema darüber' type='footnote'>vber</note> iar <note n='*u mit Ring darüber' type='footnote'>zu</note> behaltenn als kern oder<lb/>
+Item Sangenn v̈ber  iar zuͦ behaltenn als kern oder<lb/>
 weitzen So nim sie in der grüne abb so sie seng sin vnd derr si<lb/>
 in einem bach offenn oder an der sunen Behalte sie ambor<lb/>
 als die kirssenn vnd wen du die haben wilt so leg sie in<lb/>
@@ -381,7 +423,7 @@ darunnder südt vnd mit milch schmaltz vnd saltz ab<lb/>
 gemacht das ist recht § xlv<lb/>
 Item gereücht<lb/>
 Mit neslenn vmb leit das selbe wirt nit fol würmen<lb/>
-<note n='*v mit Trema darüber' type='footnote'>vber</note> iar<lb/>
+v̈ber iar<lb/>
 von <choice><reg>müssern</reg><orig>drüssern</orig></choice> zuͦ machen<lb/>
 § xlvii holdermuͦs zuͦ machennd Nim holder Bluͦst <choice><expan>vnd</expan><abbr>vn</abbr></choice><lb/>
 Brocke sie in ein Siedige guͦte milch ein guͦten teil las <choice><expan>sieden</expan><abbr>siede</abbr></choice><lb/>
@@ -404,7 +446,7 @@ N
 </p>
 
 
-            <note resp="#U32014648">Es fehlen hier einige Abkürzungen/Erweiterungen: vnd, von, behaltenn etc.</note>
+            <note resp="#U32014648">v mit Trema nicht richtig dargestellt (Zeile 8 und 23).</note>
         </div>
         <pb xml:id="F33038500" n="3" facs="http://fromthepage.com/image-service/33038500/full/full/0/default.jpg"/>
         <div xml:id="OTP33038500">
@@ -415,7 +457,7 @@ N
 <p xml:id='OTP33038500P1'>Nim ein wit kurtz heffellin Schnid birn darin die guͦt sin<lb/>
 schell zübellenn vnd tuͦ win saltz vnd schmalt daran<lb/>
 decke es wol vnd setz es in dier gluͦtt Es verzert sich <choice><expan>vnd</expan><abbr>vn</abbr></choice><lb/>
-muͦsset sich selber richt es an vnd see ingwer daruff<lb/>
+muͦsset sich selber richt es an vnd see <rs ref='#S32080911'>ingwer </rs>daruff<lb/>
 § xxxxviiij<lb/>
 Item ein öppffel muͦs on zwübellen mach auch allso sch=<lb/>
 nid klein schnitzlin ein wenig milch oder wins auch wu=<lb/>
@@ -523,7 +565,7 @@ woll vnd ab mit gewürtz oder gantz ane gewürtz<lb/>
 mit wasser das sig ab tuͦ die brü hin stos <del>f</del> die fisch gar<lb/>
 wol mandel milch vnd mit wisem brott ge[weich]t<lb/>
 in mandel milch tribe es durch mit gesottem ris tuͦ<lb/>
-es in ein pfanen mit einandren v̈*Darstellungsproblember ein für las es erhe=<lb/>
+es in ein pfanen mit einandren v̈ber ein für las es erhe=<lb/>
 issenn rür es wol vnd versaltz sie nicht [ist] es zuͦ d=<lb/>
 ick so tuͦ mer mandel milch dar [an] Mach es ab mit zucker<lb/>
 vnd setz es ab<lb/>
@@ -534,6 +576,7 @@ sern das magstu mit korn bluͦmenn saft vermischenn
 
 
             <note resp="#U32014648">Vom Editor hinzugefügte Wörter stehen in eckiger Klammer.</note>
+            <note resp="#U32014648">Fehlerhaft dargestellte v mit Trema darüber in Zeile 29</note>
         </div>
   </body>
 </text>
