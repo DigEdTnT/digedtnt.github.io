@@ -239,6 +239,11 @@ img {
   max-width: 100%;
 }
 
+img+em {
+  text-align: center;
+  color: violet;
+}
+
 p>img {
   text-align: center;
   display: block;
