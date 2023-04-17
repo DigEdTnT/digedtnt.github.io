@@ -239,6 +239,11 @@ img {
   max-width: 100%;
 }
 
+img + figcaption {
+  text-align: center;
+  font-size: smaller;
+}
+
 p>img {
   text-align: center;
   display: block;
