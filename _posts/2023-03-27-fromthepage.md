@@ -36,10 +36,10 @@ FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins 
 * Versionskontrolle (Tracking bei jedem Abspeichern, Versionen öffentlich einsehbar) \
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/versions.PNG" description="Abb. 2: Versionskontrolle" %}
 * Textuelles Mark-up (auf 3 Arten) \
-{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Abb. 3: Mark-Up-Möglichkeiten" %}
     * Silent Mark-up → Zeilenumbrüche, Absatzmarkierungen bedürfen keiner zusätzlichen Auszeichnung, sondern werden direkt übernommen und in entsprechende Codes umgewandelt 
     * Tags (inklusive farblicher Kennzeichnung) → hierfür gibt es eine Auswahl an unterstützten Mark-up-Tags (vorwiegend entsprechend TEI-Standard)
     * Buttons → die Auswahl der Buttons kann von den Projektinhaber:innen konfiguriert werden (es können jedoch keine eigenen Buttons kreiert werden)
+{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Abb. 3: Mark-Up-Möglichkeiten" %}
 * Editorkonfigurationen 
     * projektspezifische Auswahl an unterstützten Tag-Buttons kann durch Projektinhaber:in zur Verfügung gestellt werden 
     * projektspezifische Transkriptionsrichtlinien können festgelegt werden
