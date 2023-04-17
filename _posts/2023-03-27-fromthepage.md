@@ -30,31 +30,40 @@ FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins 
 
 
 
-* Transkription in Editoransicht mit Bild-Text-Synopse
+* Transkription in Editoransicht mit Bild-Text-Synopse \
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/image-text-synopsis.PNG" description="Abb. 1: Bild-Text-Synopse" %}
 * Multilinguales Interface (DE momentan in Arbeit)
-* Versionskontrolle (Tracking bei jedem Abspeichern, Versionen öffentlich einsehbar)
-* Textuelles Mark-Up (auf 3 Arten)
-    * Silent Mark-Up → Zeilenumbrüche, Absatzmarkierungen bedürfen keiner zusätzlichen Auszeichnung, sondern werden direkt übernommen und in entsprechende Codes umgewandelt 
-    * Tags (inklusive farblicher Kennzeichnung) → hierfür gibt es eine Auswahl an unterstützten Mark-Up Tags (vorwiegend entsprechend TEI-Standard)
+* Versionskontrolle (Tracking bei jedem Abspeichern, Versionen öffentlich einsehbar) \
+{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/versions.PNG" description="Abb. 2: Versionskontrolle" %}
+* Textuelles Mark-up (auf 3 Arten) \
+{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Abb. 3: Mark-Up-Möglichkeiten" %}
+    * Silent Mark-up → Zeilenumbrüche, Absatzmarkierungen bedürfen keiner zusätzlichen Auszeichnung, sondern werden direkt übernommen und in entsprechende Codes umgewandelt 
+    * Tags (inklusive farblicher Kennzeichnung) → hierfür gibt es eine Auswahl an unterstützten Mark-up-Tags (vorwiegend entsprechend TEI-Standard)
     * Buttons → die Auswahl der Buttons kann von den Projektinhaber:innen konfiguriert werden (es können jedoch keine eigenen Buttons kreiert werden)
 * Editorkonfigurationen 
     * projektspezifische Auswahl an unterstützten Tag-Buttons kann durch Projektinhaber:in zur Verfügung gestellt werden 
     * projektspezifische Transkriptionsrichtlinien können festgelegt werden
-* Indexierung und spätere Indexansicht kanonischer Namen mittels Mouseover 
+* Indexierung und spätere Indexansicht kanonischer Namen mittels Mouseover \
+{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/indexing.PNG" description="Abb. 4: Indexierung" %}
 * Data Mining über Referenzierungen für Suchbegriffe/Stichworte
 * Metadaten-Anreicherung zur Beschreibung des gesamten Projektmaterials und einzelner Werke
-* Sprachenunterstützung → alle nach Unicode-Standard unterstützten Zeichensätze
+* Sprachunterstützung → alle nach Unicode-Standard unterstützten Zeichensätze
 * Eigene Übersetzungseditoransicht
-* Unterstützung von Texttypen wie Formulare, Karteikarten und Bestandsbücher
-* Übersicht über Projektfortschritt durch die Möglichkeit Bearbeitungsstati für einzelne Dokumente und Werke zu setzen (z.B. “Needs Review”) 
-* Diskussionsmöglichkeit für Mitarbeitende am Ende jeder Transkription 
-* Export: TEI, PDF, DOCX, Plain Text, etc.
+* Unterstützung von Texttypen wie Formulare, Karteikarten und Bestandsbücher mit Tabellenformatierung über [Markdown-Tabellensyntax](https://content.fromthepage.com/project-owner-documentation/table-encoding/)
+* [LaTex-Kodierung](https://content.fromthepage.com/project-owner-documentation/encoding-formula-with-latex/) für wissenschaftliche und mathematische Formeln möglich
+* Unterschiedliche Darstellung des Mark-ups je nach Umgebung: 
+    * _Single-Page-Darstellung: _1:1-Darstellung (Zeilenumbrüche werden beibehalten)
+    * _Multi-Page-Darstellung: _nur Thumbnail-Bilder für die Faksimiles, zur Darstellung von Suchergebnissen (Absatzumbrüche werden beibehalten)
+* Übersicht über Projektfortschritt durch die Möglichkeit Bearbeitungsstati für einzelne Dokumente und Werke zu setzen (z.B. “Needs Review”)  \
+{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/progress.PNG" description="Abb. 5: Statusübersicht" %}
+* Diskussionsmöglichkeit für Mitarbeitende am Ende jeder Transkription \
+{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/notes-and-questions.PNG" description="Abb. 6: Austausch mit und zwischen Projektmitarbeitenden" %} 
+* Diverse Exportformate: TEI, PDF, DOCX, Plain Text, HTML etc.
 * Integrative Workflows mit Transkribus, Omeka-S und FairCopy
 * Direkte Verknüpfung zu Voyant, Verbatim, IIIF
 * API für die automatisierte Veröffentlichung bei Fertigstellung einer Transkription
 
-[Detaillierter Fact Sheet](http://../data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf)
+[Detailliertes Fact Sheet](http://../data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf)
 
 
 ## Tool-Kompatibilität

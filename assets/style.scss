@@ -239,9 +239,14 @@ img {
   max-width: 100%;
 }
 
+figure {
+  padding: 0rem 2rem;
+}
+
 figcaption {
   text-align: center;
-  font-size: smaller;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 p>img {
