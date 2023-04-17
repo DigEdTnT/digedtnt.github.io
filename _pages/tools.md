@@ -26,7 +26,7 @@ FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins 
 
 
 * Transkription in Editoransicht mit Bild-Text-Synopse
-![Bild-Text-Synopse](../data/pipelines/pipeline_1/image-text-synopsis.PNG) 
+![Bild-Text-Synopse](../data/pipelines/pipeline_1/fromthepage/img/image-text-synopsis.PNG) 
 *Abb. 1: Bild-Text-Synopse*
 * Multilinguales Interface (DE momentan in Arbeit)
 * Versionskontrolle (Tracking bei jedem Abspeichern, Versionen öffentlich einsehbar)
