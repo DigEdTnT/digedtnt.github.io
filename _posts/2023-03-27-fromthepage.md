@@ -58,7 +58,8 @@ FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins 
 * Direkte Verknüpfung zu Voyant, Verbatim, IIIF
 * API für die automatisierte Veröffentlichung bei Fertigstellung einer Transkription
 
-[Detailliertes Fact Sheet](http://../data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf)
+
+Weitere und technische Übersicht: siehe [Fact Sheet zum Tool](#fact-sheet-zum-tool)
 
 
 ## Voraussetzungen
@@ -178,7 +179,7 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 * Tabellarische Darstellungen nur über Mark-Down (Pipes und Dashes) möglich
 * Metadaten-Beschreibung in den Projekt-Einstellungen teilweise unklar - aus den Bezeichnungen im Eingabeformular geht nicht klar hervor, welchen TEI-Header-Elementen diese im Output entsprechen könnten
 * Metadaten aus den Werk-Einstellungen werden nicht in den TEI-Export integriert
-* Exportiertes TEI ist nicht valide, da xml:ids mehrfach vergeben wurden, in der Taxonomie innerhalb der &lt;catDesc>-Elemente &lt;notes>-Elemente erzeugt wurden, die dort nicht zugelassen sind und außerdem die mit einem &lt;head>-Element ausgezeichnete Überschrift von einem der Faksimiles unzulässigerweise innerhalb eines &lt;p>-Elementes steht
+* Exportiertes TEI ist nicht valide (siehe unter [Export der Dokumente](#))
 * Keine XSL-Transformationen  innerhalb des Systems möglich oder durchführbar
 
 
@@ -348,8 +349,8 @@ Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüc
 
 
 
-* [Wilford Woodruff Papers](https://wilfordwoodruffpapers.org/): Transkription durch Freiwillige, Revision und Annotation durch Projektmitarbeiter, Publikation der annotierten Dokumente via API
-* [Civil War and Reconstruction Governors of Mississippi](https://cwrgm.org/): Bilder & Metadaten sind in Mississippi Digital Library gespeichert, Transkription und Annotation erfolgen ohne zusätzlichen Export/Import auf FromThePage; Publikation über Server des Projekts (CWRGM.org), wiederum ohne Import/Export-Aufwand(?)
+* [Wilford Woodruff Papers](https://wilfordwoodruffpapers.org/): In diesem Projekt wurde die Transkription durch Freiwillige vorgenommen, die Revision und Annotation durch Projektmitarbeiter:innen, und die Publikation der annotierten Dokumente letztlich via API.
+* [Civil War and Reconstruction Governors of Mississippi](https://cwrgm.org/): Die Bilder & Metadaten bei diesem Projekt sind im Mississippi Digital Library gespeichert, während Transkription und Annotation ohne zusätzlichen Export/Import auf FromThePage erfolgen und die  Publikation schließlich - ohne zusätzlichen Import/Export-Aufwand - über Server des Projekts (CWRGM.org) erfolgt.
 
 
 ## Literatur
@@ -363,7 +364,7 @@ Literaturliste von Zotero
 <table>
   <tr>
    <td colspan="2" >
-<h3>System</h3>
+<h2>System</h2>
    </td>
   </tr>
   <tr>
