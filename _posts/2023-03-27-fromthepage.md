@@ -173,13 +173,13 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 
 
 * Eingeschränkte Mark-up-Möglichkeiten durch Beschränkung auf unterstützte Tags (derzeit 30 Tags)
-* Für detaillierte Annotationen entsprechend TEI-Konventionen eher weniger praktisch, da es keine Möglichkeit einer TEI-Validierung innerhalb des Transkriptionseditors gibt - im Rahmen unseres Beispielsprojekts war es beispielsweise nicht auf einfache Weise möglich, farbliche Hervorhebungen, Hinzufügungen durch den Editor oder die Gründe für eine unleserliche Stelle zu annotieren
-* Farbliche Markierungen, Ergänzungen durch Transkribierende und viele weitere Merkmale werden nicht mit eigenen Tag-Buttons unterstützt. Die Tags dafür können zwar dennoch entsprechend des TEI-Standards gesetzt werden, sie werden aber in der Transkriptionsansicht nicht validiert → somit besteht grundsätzlich immer das Risiko, dass eine intensive Nachbearbeitung im TEI/XML erfolgen muss (z.B. wenn Tippfehler in den Tags vorkommen oder wenn die Tags an Stellen gesetzt wurden, wo sie nicht stehen dürfen)
+* Für detaillierte Annotationen entsprechend TEI-Konventionen eher weniger praktisch, da es keine Möglichkeit einer TEI-Validierung innerhalb des Transkriptionseditors gibt
+* Farbliche Markierungen, Ergänzungen durch Transkribierende und einige andere Textmerkmale, die selbst von editionswissenschaftlich ungeschulten Transkribierenden einfach ausgezeichnet werden könnten, werden nicht mit eigenen Tag-Buttons unterstützt. Auch wenn ein Workaround möglich ist und Tags entsprechend des TEI-Standards verwendet werden könnten, werden diese aber in der Transkriptionsansicht nicht validiert. Dadurch besteht grundsätzlich immer das Risiko einer intensiven Nachbearbeitung im TEI/XML-Export (z.B. bei Tippfehlern in den Tags oder Positionierung der Tags an unzulässigen Stellen)
 * Probleme mit der Zeichenkodierung beim Export: Buchstaben mit Diakritika werden im TEI nicht korrekt dargestellt
 * Tabellarische Darstellungen nur über Mark-Down (Pipes und Dashes) möglich
-* Metadaten-Beschreibung in den Projekt-Einstellungen teilweise unklar - aus den Bezeichnungen im Eingabeformular geht nicht klar hervor, welchen TEI-Header-Elementen diese im Output entsprechen könnten
+* Metadaten-Beschreibung in den Projekt-Einstellungen teilweise unklar - aus den Bezeichnungen im Eingabeformular geht nicht klar hervor, welchen TEI-Header-Elementen diese im Output entsprechen könnten (siehe Export)
 * Metadaten aus den Werk-Einstellungen werden nicht in den TEI-Export integriert
-* Exportiertes TEI ist nicht valide (siehe unter [Export der Dokumente](#))
+* Exportiertes TEI ist nicht valide (siehe unter Export der Dokumente)
 * Keine XSL-Transformationen  innerhalb des Systems möglich oder durchführbar
 
 
@@ -256,7 +256,8 @@ Wir können hier also direkt mit der zeilenweisen Transkription beginnen und die
 Sollte es unter unseren Transkribierenden Personen geben, die Tags lieber ausschreiben statt Textbereiche mittels Klick auf Button zu markieren, ist dies ebenfalls möglich. Strukturierungen wie Zeilenumbrüche oder Absätze werden automatisch übernommen. Wenn wir die Möglichkeiten der TEI nutzen wollen, haben wir dafür zwar keine Buttons, wir können aber z. B. editorische Eingriffe - in der Abbildung durch das Element &lt;supplied> realisiert - trotzdem mit dem entsprechenden Tag auszeichnen. \
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Abb. x: Mark-Up-Möglichkeiten" %} \
 Das Element wird zwar in der allgemeinen Darstellung auf FromThePage nicht unterstützt, es befindet sich aber am Ende in unserem TEI-Export. Ein Nachteil dieses Workarounds ist aber, dass auf diese Weise angelegte Tags nicht validiert werden und wir bei einer falschen Schreibweise oder unzulässigen Positionierung des Elements keinen Hinweis darauf bekommen. Da wir FromThePage aber ohnehin nur für unsere Transkription und nicht für die Annotation verwenden wollen, setzen wir uns mit dieser Form der Auszeichnung nicht weiter auseinander. \
-{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-overview.PNG" description="Abb. x: Allgemeine Ansicht" %}
+{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-overview.PNG" description="Abb. x: Allgemeine Ansicht" %} \
+→ An dieser Stelle hervorzuheben ist auch, dass es im Rahmen unseres Beispielsprojekts es leider nicht auf sichere und einfache Weise möglich war, farbliche Hervorhebungen, Hinzufügungen durch den/die Editor:in (und nicht den/die Autor:in) oder die Gründe für eine unleserliche Stelle zu annotieren.
         * **Anmerkungen und Fragen:** Sollten Mitarbeitende auf Probleme stoßen, die in den Transkriptionsrichtlinien nicht erläutert sind, so haben sie die Möglichkeit, für jedes Faksimile und die dazugehörige Transkription eine Anmerkung zu hinterlassen oder Fragen zu stellen. Diese Notizen werden auch in den TEI-Export übernommen und können somit nützlich sein, um damit Problemstellen zu kennzeichnen oder Kommentare für die spätere Annotation einzufügen. In unserem Beispiel wurde diese Funktion genutzt, um jene Transkriptionen zu markieren, in denen es Probleme mit der Darstellung von diakritischen Zeichen gab. \
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/notes-and-questions.PNG" description="Abb. x: Austausch mit und zwischen Projektmitarbeitenden" %}
         * **Subject Linking:** Während der Transkription eines Dokumentes können auch Entitäten wie Personen, Orte oder eigens angelegte Kategorien (inklusive Unterkategorien) - in unserem Beispiel Zutaten und Speisen - ausgezeichnet werden.  \
@@ -302,7 +303,7 @@ Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüc
 
 # Kontakt
 
-**Unternehmensgröße:** 3 Software-Developer (Stand 2023)
+**Unternehmensgröße:** 3 Software-Developer (Stand März 2023)
 
 **Weblink:** [https://fromthepage.com/](https://fromthepage.com/)
 
@@ -363,8 +364,7 @@ Literaturliste von Zotero
 
 <table>
   <tr>
-   <td colspan="2" >
-<h2>System</h2>
+   <td colspan="2" ><strong>System</strong>
    </td>
   </tr>
   <tr>
@@ -417,10 +417,7 @@ Betreuung von Institutionen: bis zu 50.000 Seiten - ca. 3600 Dollar/Jahr
    </td>
   </tr>
   <tr>
-   <td colspan="2" >
-<h3>Anforderungen & Methoden</h3>
-
-
+   <td colspan="2" ><strong>Anforderungen & Methoden</strong>
    </td>
   </tr>
   <tr>
@@ -463,10 +460,7 @@ Betreuung von Institutionen: bis zu 50.000 Seiten - ca. 3600 Dollar/Jahr
    </td>
   </tr>
   <tr>
-   <td colspan="2" >
-<h3>Dokumentation & Support</h3>
-
-
+   <td colspan="2" ><strong>Dokumentation & Support</strong>
    </td>
   </tr>
   <tr>
@@ -521,10 +515,7 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td colspan="2" >
-<h3>Nutzbarkeit & Nachhaltigkeit</h3>
-
-
+   <td colspan="2" ><strong>Nutzbarkeit & Nachhaltigkeit</strong>
    </td>
   </tr>
   <tr>
@@ -560,10 +551,7 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td colspan="2" >
-<h3>Benutzerinteraktion & Benutzeroberfläche</h3>
-
-
+   <td colspan="2" ><strong>Benutzerinteraktion & Benutzeroberfläche</strong>
    </td>
   </tr>
   <tr>
@@ -595,10 +583,7 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td colspan="2" >
-<h3>Benutzerverwaltung</h3>
-
-
+   <td colspan="2" ><strong>Benutzerverwaltung</strong>
    </td>
   </tr>
   <tr>
@@ -615,10 +600,7 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td colspan="2" >
-<h3>Daten- und Toolverwaltung</h3>
-
-
+   <td colspan="2" ><strong>Daten- und Toolverwaltung</strong>
    </td>
   </tr>
   <tr>
@@ -652,10 +634,7 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td colspan="2" >
-<h3>Datenupload</h3>
-
-
+   <td colspan="2" ><strong>Datenupload</strong>
    </td>
   </tr>
   <tr>
@@ -697,10 +676,7 @@ Zusätzlich: Import von CONTENTdm, Internet Archive
    </td>
   </tr>
   <tr>
-   <td colspan="2" >
-<h3>Datenbearbeitung (Transkriptionstool)</h3>
-
-
+   <td colspan="2" ><strong>Datenbearbeitung (Transkriptionstool)</strong>
    </td>
   </tr>
   <tr>
@@ -773,10 +749,7 @@ Tags & Buttons
    </td>
   </tr>
   <tr>
-   <td colspan="2" >
-<h3>Datenexport</h3>
-
-
+   <td colspan="2" ><strong>Datenexport</strong>
    </td>
   </tr>
   <tr>
