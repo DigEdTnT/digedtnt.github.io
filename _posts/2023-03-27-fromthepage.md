@@ -211,8 +211,8 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    * Nach erfolgreichem Upload kann man die Werke in der “Works List” einsehen und für die einzelnen Werke noch weitere Einstellungen vornehmen.  \
 Auf unserem Dashboard sollten wir nun unsere Werke einsehen können - so wie sie auch andere Personen, die in diesem Werk mithelfen, in ihrem Dashboard vorfinden. \
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-dashboard.PNG" description="Abb. x: Dashboard-Ansicht der Werke einer Sammlung" %}
-## 3.  Vorbereitung und Konfiguration des Projektes
-### 3.1. <u>**Einstellungen im Projekt-Dashboard**</u>
+## 3.  Vorbereitung & Konfiguration des Projektes
+### 3.1. Einstellungen im Projekt-Dashboard
    * **Allgemeine Einstellungen:** In den Einstellungen am Projekt-Dashboard konfigurieren wir schließlich die Ansicht, die den Transkribierenden zur Verfügung steht. Wir können unserer Projektseite zum Beispiel eine eigene URL zuweisen, einen eigenen Einladungslink zum Transkriptionsprojekt erstellen, ein Projektbild sowie einen eigenen Footer gestalten (um z. B. direkten Kontakt zur Projektleitung zu ermöglichen). Die Beschreibung, die wir beim Anlegen der Sammlung eingefügt haben, scheint hier bereits auf und kann noch weiter adaptiert werden.  \
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup1.PNG" description="Abb. x: Konfiguration des Projekts " %} \
 Durch das An- oder Abwählen von diversen Funktionalitäten in den Projekteinstellungen erweitert sich übrigens das Navigationsmenü um entsprechende Tabs (z. B. das Aktivieren des Buttons “Enable Forum” führt dazu, dass im Projekt-Dashboard der Reiter “Forum” zur Verfügung steht. \
@@ -234,7 +234,7 @@ Es ist auch möglich, die Entitäten (in einem CSV) hochzuladen, wobei sich dies
    * **Erstellung von Metadaten für einzelne Werke**: Damit unsere Transkribierenden uns auch bei der Anreicherung mit Metadaten helfen können, aktivieren wir die Metadaten-Beschreibung in den Einstellungen. Auch hierfür erscheint in der Navigation nun ein neuer Tab (Metadata Fields).  \
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/metadata-fields.PNG" description="Abb. x: Metadaten-Felder" %}
    * **API-Aktivierung:** Die Zugänglichkeit des Projekts über eine API lassen wir für unser Projekt vorerst deaktiviert.
-### 3.2. <u>**Einstellungen für das jeweilige Werk**</u>
+### 3.2. Einstellungen für das jeweilige Werk
    * **Allgemeine Einstellungen**: Auch für jedes Werk - also in unserem Fall für jedes Manuskript selbst - können wir diverse Voreinstellungen vornehmen. Darunter fallen die Vergabe eines Titels, die Zuordnung zu einer Sammlung bzw. einem Projekt, die Anpassung der URL sowie die Vergabe eines Identifiers von einem externen System.  \
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/work-setup.PNG" description="Abb. x: Konfigurationen in den Einstellungen zu den einzelnen Werken" %} \
 Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobei in unserem Fall unsere Seiten weder als semantische Einheiten zu betrachten sind, noch eine [OCR](https://de.wikipedia.org/wiki/Texterkennung)-Korrektur anwendbar ist, und wir diese Optionen daher deaktiviert lassen.
