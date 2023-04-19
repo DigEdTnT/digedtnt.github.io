@@ -205,7 +205,38 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    * Da uns von den Bibliotheken, die über die Originale verfügen, bereits ein paar Metadaten bekannt sind, legen wir in jedem unserer Manuskript-Ordner auch eine [YAML-Datei](https://de.wikipedia.org/wiki/YAML) mit den bereits vorhandenen Metadaten ab. Um zu vermeiden, dass es mit dem Upload Probleme gibt (wie es bei unserem ersten Versuch der Fall war), überprüft man am besten mit dem [YAML-Checker](https://yamlchecker.com/), ob die Syntax korrekt ist.
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/zip-with-metadata.PNG" description="Abb. x: Metadaten-Upload" %}
    * Eine Vorlage für den Aufbau der Metadaten-Datei steht unter der Upload-Möglichkeit zur Verfügung und kann einfach mit den entsprechenden Inhalten gefüllt werden.
-{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/metadata-yml.PNG" description="Abb. x: YML-Vorlage für Metadaten-Upload" %}
+   ```yml
+   # Title of a work -- this brief string is displayed prominently to end users
+   title: 'MS Augsburg, Universitätsbibl., Cod.III.1.2°43 (A1)'
+   # Description -- a block of HTML describing the work
+   description: 'Dieses Manuskript beinhaltet mittelalterliche Rezepte in Bastarda. Kenntnis des Bayrischen und mittelalterlichen Lateins von Vorteil.'
+   # Physical Description -- raw HTML is accepted
+   physical_description: 'Neue Blattzählung 1-84. Wortreklamanten meist abgeschnitten.Textverlust: 1 Blatt fehlt zwischen fol. 59-60. Bastarda -durchgehend von einer Hand; Nachträge einiger jüngerer Hände, um 1500/Anfang 16. Jh.: 23r, 35r, 73r-79r an den Rändern; geübte Hand, sauberes Schriftbild, Oberlängen orientieren sich am Mittelband. Alter Einband: starker Pergamentumschlag mit übergreifendem Rückendeckel.'
+   # Document History -- raw HTML is accepted
+   document_history: '4. Viertel 15. Jh. Entstehungsort unbekannt. Alter Besitzvermerk fol. 1r durch Übermalen völlig getilgt; Erwerbung des Fürsten Ludwig, vgl. 1r. Oettingisches Wappen und Erwerbsjahr: 1813. Bibliothekssignatur des 19. Jhs.'
+   # Permission Description -- raw HTML is accepted
+   permission_description: 'Text: <a href="https://creativecommons.org/licenses/by/4.0">Creative Commons BY 4.0</a> Faksimiles: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0 </a>'
+   # location of composition (brief string)
+   location_of_composition: 'Unknown'
+   # author or creator (brief string)
+   author: 'Unknown'
+   # Recipient -- the recipient of the document, i.e. for a letter or other targeted document
+   recipient: ''
+   # HTML transcription conventions.  Only specified to override the transcription conventions for the collection
+   transcription_conventions: '<p><b>Transkriptionsanleitung</b><ul><li><i>Konsontanten mit Reduplikationsstrich (waagrechter Strich über Buchstabe): </i>Immer Doppelkonsonanten ausschreiben, z.B. nn oder mm.</li> <li><i>Unsicherheiten aufgrund Unleserlichkeit: </i>Gesamtes Wort mit dem Button "unclear" markieren und unleserliche Zeichen mit Fragezeichen ersetzen. Die Leerzeichen vor und nach dem Wort müssen außerhalb des Tags stehen; z. B. <unclear>n?m</unclear> </li> <li><i>Zeilenumbrüche:</i>Drücke nach jeder Zeile <code>Enter</code>, um das Zeilenende zu markieren. Zwei mal Enter bzw. eine Leerzeile wird als Absatz dargestellt. Bitte nur verwenden, wenn ein großer Abstand zu sehen ist. </li></ul>'
+   # Boolean allowing collaborators to change page titles.  Set to true if you request users to catalog each page
+   scribes_can_edit_titles: false
+   # Boolean enabling translation as a step following transcription
+   supports_translation: true
+   # HTML block to be displayed to collaborators as they translate this work
+   translation_instructions: '<p><b>Translationsrichtlinien für das Projekt Mittelalterlicher Kochrezepte:</b> Übersetzung ins Englische optional.</p>'
+   # Boolean for how prominently to display a page.  Setting to false will suppress page title displays.
+   pages_are_meaningful: true
+   # Slug to be used for URL permalink
+   slug: 'ms-augsburg'
+   document_set: ''
+   #you can also put multiple document sets in arrays like ['Diaries', 'Public']
+   ```
 → Leider sind wir hier hinsichtlich unserer Metadaten etwas eingeschränkt und können den Werken nur jene Metadaten mitgeben, für die es in der Vorlage auch eine entsprechende Vorgabe gibt. Sollten die Metadaten erst im Zuge des Projekts erforscht werden, können diese auch erst später in den allgemeinen Einstellungen zur Sammlung sowie in den Einstellungen zum Werk ergänzt werden. Für Nutzer:innen, die lieber mit einer grafischen Oberfläche arbeiten, empfiehlt sich ebenfalls die Metadaten in den allgemeinen Einstellungen einzutragen (siehe Punkt “Metadaten-Anreicherung” unter dem Punkt “Einstellungen für das jeweilige Werk”).
    * Nach erfolgreichem Upload kann man die Werke in der “Works List” einsehen und für die einzelnen Werke noch weitere Einstellungen vornehmen.
 Auf unserem Dashboard sollten wir nun unsere Werke einsehen können - so wie sie auch andere Personen, die in diesem Werk mithelfen, in ihrem Dashboard vorfinden.
