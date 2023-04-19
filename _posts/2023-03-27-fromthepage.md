@@ -11,6 +11,7 @@ excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
 ---
 
 
+
 # Allgemeine Beschreibung
 
 FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins Leben gerufen wurde, um die Arbeit bei der Transkription von Textsammlungen zu erleichtern. Die Software wurde 2009 unter einen Open-Source-Lizenz veröffentlicht und wird seit 2010 für die Transkription nach dem Crowdsourcing-Prinzip von Bibliotheken, Archiven und Museen genutzt. Durch die Anpassung an die besonderen Bedürfnisse der verschiedenen Institutionen wird die Software ständig weiterentwickelt. Seit 2014 liegt der Fokus vor allem auf wissenschaftlichen digitalen Editionen.
@@ -183,7 +184,7 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 * Keine XSL-Transformationen  innerhalb des Systems möglich oder durchführbar
 
 
-# Einrichtung & Erste Schritte (Beispielprojekt)
+# Einrichtung & Erste Schritte
 
 Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf mit dem Transkriptions- und Annotationstool FromThePage beschrieben werden.
 
@@ -202,7 +203,7 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    * Für einen möglichst schnellen Upload mit wenigen Klicks wählen wir die Möglichkeit, eine ZIP-Datei mit den gesammelten Bilddateien von zwei Manuskripten hochzuladen. Wichtig dabei ist, die Manuskripte in separaten Ordnern abzuspeichern, damit diese direkt als eigenständige Werke erkannt werden.
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/zip-folder.PNG" description="Abb. x: ZIP-Upload" %} \
 → Sollten später noch Faksimiles zu einem Werk hinzukommen, können diese übrigens jederzeit noch nachträglich zu einem Werk hinzugefügt werden.
-   * Da uns von den Bibliotheken, die über die Originale verfügen, bereits ein paar Metadaten bekannt sind, legen wir in jedem unserer Manuskript-Ordner auch eine [YAML-Datei](https://de.wikipedia.org/wiki/YAML) mit den bereits vorhandenen Metadaten ab. Um zu vermeiden, dass es mit dem Upload Probleme gibt (wie es bei unserem ersten Versuch der Fall war), überprüft man am besten mit dem [YAML-Checker](https://yamlchecker.com/), ob die Syntax korrekt ist.
+   * Da uns von den Bibliotheken, die über die Originale verfügen, bereits ein paar Metadaten bekannt sind, legen wir in jedem unserer Manuskript-Ordner auch eine [YAML-Datei](https://de.wikipedia.org/wiki/YAML) mit den bereits vorhandenen Metadaten ab. Um zu vermeiden, dass es mit dem Upload Probleme gibt, überprüft man am besten mit dem [YAML-Checker](https://yamlchecker.com/), ob die Syntax korrekt ist.
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/zip-with-metadata.PNG" description="Abb. x: Metadaten-Upload" %}
    * Eine Vorlage für den Aufbau der Metadaten-Datei steht unter der Upload-Möglichkeit zur Verfügung und kann einfach mit den entsprechenden Inhalten gefüllt werden.
    ```yml
@@ -241,7 +242,7 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    * Nach erfolgreichem Upload kann man die Werke in der “Works List” einsehen und für die einzelnen Werke noch weitere Einstellungen vornehmen.
 Auf unserem Dashboard sollten wir nun unsere Werke einsehen können - so wie sie auch andere Personen, die in diesem Werk mithelfen, in ihrem Dashboard vorfinden.
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-dashboard.PNG" description="Abb. x: Dashboard-Ansicht der Werke einer Sammlung" %}
-## 3.  Vorbereitung & Konfiguration des Projektes
+## 3.  Projektvorbereitung & -konfiguration
 ### 3.1. Einstellungen im Projekt-Dashboard
    * **Allgemeine Einstellungen:** In den Einstellungen am Projekt-Dashboard konfigurieren wir schließlich die Ansicht, die den Transkribierenden zur Verfügung steht. Wir können unserer Projektseite zum Beispiel eine eigene URL zuweisen, einen eigenen Einladungslink zum Transkriptionsprojekt erstellen, ein Projektbild sowie einen eigenen Footer gestalten (um z. B. direkten Kontakt zur Projektleitung zu ermöglichen). Die Beschreibung, die wir beim Anlegen der Sammlung eingefügt haben, scheint hier bereits auf und kann noch weiter adaptiert werden.
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup1.PNG" description="Abb. x: Konfiguration des Projekts " %}
@@ -293,7 +294,7 @@ Das Element wird zwar in der allgemeinen Darstellung auf FromThePage nicht unter
       * **Subject Linking:** Während der Transkription eines Dokumentes können auch Entitäten wie Personen, Orte oder eigens angelegte Kategorien (inklusive Unterkategorien) - in unserem Beispiel Zutaten und Speisen - ausgezeichnet werden.
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking.PNG" description="Abb. x: Subject Linking" %}
 Projektinhaber:innen können dafür im Projekt-Dashboard die nötigen Vorbereitungen treffen, indem sie die entsprechenden Kategorien erstellen.
-{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-overview.PNG" description="Abb. x: Subject Linking Übersicht" %}
+{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-overview.png" description="Abb. x: Subject Linking Übersicht" %}
 Die einzelnen Entitäten können schließlich diesen Kategorien zugeordnet und mit einer URI sowie einer Beschreibung angereichert werden.
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-categorization.PNG" description="Abb. x: Kategorisierung von Entitäten" %}
 Diese Daten sowie die Verknüpfungen von Entitäten und ihr Auftreten bzw. ihre Häufigkeit in den Manuskripten kann schließlich eingesehen werden.
@@ -312,9 +313,9 @@ Die Transkribierenden können in ihrem Projekt-Dashboard die von der Projektleit
 Auch bei den Metadaten gibt es wieder die Option zwischenzuspeichern (“Save”), die Daten als vollständig zu markieren (“Done”) bzw. sie am Ende durch eine:n Reviewer:in zu bestätigen (“Approve”).
    * **Versionsansicht:** Im Tab “Versions” können wir nachverfolgen, wer wann welche Änderungen vorgenommen hat.
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/versions.PNG" description="Abb. x: Versionskontrolle" %}
-## 5.  Export der Dokumente (nur für Projektleitung)
+## 5.  Export der Dokumente
 Alle nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten des Downloadbereiches im Projekt-Dashboard: Da wir unsere Daten in anderen Tools weiter annotieren und mit Normalisierungen anreichern wollen, soll der Output in einer XML/TEI-Datei exportiert werden. Dafür bietet uns FromThePage die Möglichkeit, entweder jedes Projekt einzeln oder die einzelnen Werke als Sammelexport in einer gewissen Ordnerstruktur herunterzuladen.
-{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export.PNG" description="Abb. x: Exportmöglichkeiten" %}
+{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export.png" description="Abb. x: Exportmöglichkeiten" %}
    * **Export der Werke:** Über den Button “Export All Works” können wir nun verschiedene Formate und Einstellungen wählen und unsere gesamte Sammlung als ZIP-Datei exportieren.
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export-all-works.PNG" description="Abb. x: Export aller Werke in ZIP-Datei" %}
 Wir wählen dabei einen Ordner pro Werk und stellen ein, dass unsere Export-Ordner den Namen der Import-Ordner übernehmen bzw. beibehalten sollen. Bei den Exportformaten wählen wir nur TEI/XML aus. In den exportierten TEI-Dateien (siehe hier für vollständige XML-Dateien) finden unsere Bearbeitungsschritte nun folgende Form:

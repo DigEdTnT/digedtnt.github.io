@@ -255,6 +255,11 @@ p>img {
   margin: 0 auto;
 }
 
+
+pre {
+  max-height: 300px;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -410,6 +415,7 @@ p>img {
 //
 // .main
 //
+
 
 .posts>.post {
   padding-bottom: 2em;
