@@ -364,7 +364,10 @@ Literaturliste von Zotero
 
 <table>
   <tr>
-   <td colspan="2" ><strong>System</strong>
+   <td colspan="2" >
+<h3>System</h3>
+
+
    </td>
   </tr>
   <tr>
@@ -417,7 +420,10 @@ Betreuung von Institutionen: bis zu 50.000 Seiten - ca. 3600 Dollar/Jahr
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Anforderungen & Methoden</strong>
+   <td colspan="2" >
+<h3>Anforderungen & Methoden</h3>
+
+
    </td>
   </tr>
   <tr>
@@ -460,7 +466,10 @@ Betreuung von Institutionen: bis zu 50.000 Seiten - ca. 3600 Dollar/Jahr
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Dokumentation & Support</strong>
+   <td colspan="2" >
+<h3>Dokumentation & Support</h3>
+
+
    </td>
   </tr>
   <tr>
@@ -515,7 +524,10 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Nutzbarkeit & Nachhaltigkeit</strong>
+   <td colspan="2" >
+<h3>Nutzbarkeit & Nachhaltigkeit</h3>
+
+
    </td>
   </tr>
   <tr>
@@ -551,7 +563,10 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Benutzerinteraktion & Benutzeroberfläche</strong>
+   <td colspan="2" >
+<h3>Benutzerinteraktion & Benutzeroberfläche</h3>
+
+
    </td>
   </tr>
   <tr>
@@ -583,7 +598,10 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Benutzerverwaltung</strong>
+   <td colspan="2" >
+<h3>Benutzerverwaltung</h3>
+
+
    </td>
   </tr>
   <tr>
@@ -600,7 +618,10 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Daten- und Toolverwaltung</strong>
+   <td colspan="2" >
+<h3>Daten- und Toolverwaltung</h3>
+
+
    </td>
   </tr>
   <tr>
@@ -634,7 +655,10 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Datenupload</strong>
+   <td colspan="2" >
+<h3>Datenupload</h3>
+
+
    </td>
   </tr>
   <tr>
@@ -676,7 +700,10 @@ Zusätzlich: Import von CONTENTdm, Internet Archive
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Datenbearbeitung (Transkriptionstool)</strong>
+   <td colspan="2" >
+<h3>Datenbearbeitung (Transkriptionstool)</h3>
+
+
    </td>
   </tr>
   <tr>
@@ -749,7 +776,10 @@ Tags & Buttons
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Datenexport</strong>
+   <td colspan="2" >
+<h3>Datenexport</h3>
+
+
    </td>
   </tr>
   <tr>
