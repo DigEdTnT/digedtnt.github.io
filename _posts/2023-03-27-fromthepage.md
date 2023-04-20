@@ -317,7 +317,8 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export-all-works.PNG" description="Abb. x: Export aller Werke in ZIP-Datei" %}
    Wir wählen dabei einen Ordner pro Werk und stellen ein, dass unsere Export-Ordner den Namen der Import-Ordner übernehmen bzw. beibehalten sollen. Bei den Exportformaten wählen wir nur TEI/XML aus. In den exportierten TEI-Dateien ([Link zum vollständigen Export](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/fromthepage/export)) finden unsere Bearbeitungsschritte nun folgende Form:
    * **- Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, Informationen zu den Versionen sind im TEI Header wiederzufinden.
-   ~~~ xml
+   CODE BLOCK COMING SOON
+   <!--~~~ xml
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -407,10 +408,11 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
       </profileDesc>
       ...
    </teiHeader>
-   ~~~
+   ~~~ -->
    → Die einzelnen Werk-Metadaten (Material, Sprache usw.), die wir für jedes Manuskript einzeln angelegt haben, sind hier aber leider nicht abgebildet (nur im CSV-Metadaten-Export). Außerdem müssen wir an dieser Stelle feststellen, dass unser TEI nicht valide ist, da in den Metadaten eine xml:id an zwei Stellen vergeben wurde.
    * **- Entitäten & Kategorien:** Unsere Taxonomie für Zutaten und Gerichte wird in ein &lt;taxonomy>-Element verpackt, wo wir all unsere angelegten Daten und Kategoriezuordnungen wiederfinden.
-   ~~~xml
+   CODE BLOCK COMING SOON
+   <!--~~~xml
    <encodingDesc>
       <classDecl>
       <taxonomy>
@@ -476,10 +478,11 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
       </taxonomy>
       </classDecl>
    </encodingDesc>
-   ~~~
+   ~~~-->
    → Auch hier treffen wir auf ein Problem hinsichtlich der Validität unseres TEI/XML-Dokuments, da in der Taxonomie innerhalb der <catDesc>-Elemente <notes>-Elemente erzeugt wurden, die dort nicht zugelassen sind und außerdem die mit einem <head>-Element ausgezeichnete Überschrift von einem der Faksimiles unzulässigerweise innerhalb eines <p>-Elementes steht.
    * **- Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem &lt;div>-Element wiedergegeben, wobei das vorangehende  &lt;pb>-Element einen Link zur Bilddatei im IIIF-Format beinhaltet.
-   ~~~xml
+   CODE BLOCK COMING SOON
+   <!--```xml
    <text>
       <body>
          <pb xml:id="F33038493" n="1"
@@ -674,7 +677,7 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
 
       </body>
    </text>
-   ~~~
+   ~~~-->
    Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüchen, unklaren Stellen, Erweiterungen von Abkürzungen sowie Referenzen zu unserer Taxonomie wiederfinden. Außerdem finden wir auch die Anmerkungen der Transkribierenden in einem &lt;note>-Element am Ende des lt;div>-Elements.
    * **Export der Metadaten**: Viele der Metadaten, die wir auch im Header des XML/TEIs finden, können wir auch per CSV exportieren ([Link zum CSV-Export](https://github.com/DigEdTnT/digedtnt.github.io/blob/95d465f768eff02fdcd74f8e5248d8eea9e94586/data/pipelines/pipeline_1/fromthepage/export/fromthepage_work_metadata_export_32000501_2023-04-13T11_28_04Z.csv)).
    → Man beachte jedoch, dass bei diesem Export allgemeine Projekt-Metadaten und Statistiken wiederzufinden sind, sowie die eigens angelegten Metadaten (Material, Sprache & zeitliche Einordnung), nicht aber die von uns per YAML-Datei importierten Metadaten.
