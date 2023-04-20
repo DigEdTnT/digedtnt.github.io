@@ -224,7 +224,7 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    # Recipient -- the recipient of the document, i.e. for a letter or other targeted document
    recipient: ''
    # HTML transcription conventions.  Only specified to override the transcription conventions for the collection
-   transcription_conventions: '<p><b>Transkriptionsanleitung</b><ul><li><i>Konsontanten mit Reduplikationsstrich (waagrechter Strich über Buchstabe): </i>Immer Doppelkonsonanten ausschreiben, z.B. nn oder mm. <li><i>Unsicherheiten aufgrund Unleserlichkeit: </i>Gesamtes Wort mit dem Button "unclear" markieren und unleserliche Zeichen mit Fragezeichen ersetzen. Die Leerzeichen vor und nach dem Wort müssen außerhalb des Tags stehen; z. B. <unclear>n?m</unclear>  <li><i>Zeilenumbrüche:</i>Drücke nach jeder Zeile <code>Enter</code>, um das Zeilenende zu markieren. Zwei mal Enter bzw. eine Leerzeile wird als Absatz dargestellt. Bitte nur verwenden, wenn ein großer Abstand zu sehen ist. </ul>'
+   transcription_conventions: '<p><b>Transkriptionsanleitung</b><ul><li><i>Konsontanten mit Reduplikationsstrich (waagrechter Strich über Buchstabe): </i>Immer Doppelkonsonanten ausschreiben, z.B. nn oder mm.</li> <li><i>Unsicherheiten aufgrund Unleserlichkeit: </i>Gesamtes Wort mit dem Button "unclear" markieren und unleserliche Zeichen mit Fragezeichen ersetzen. Die Leerzeichen vor und nach dem Wort müssen außerhalb des Tags stehen; z. B. <unclear>n?m</unclear> </li> <li><i>Zeilenumbrüche:</i>Drücke nach jeder Zeile <code>Enter</code>, um das Zeilenende zu markieren. Zwei mal Enter bzw. eine Leerzeile wird als Absatz dargestellt. Bitte nur verwenden, wenn ein großer Abstand zu sehen ist. </li></ul>'
    # Boolean allowing collaborators to change page titles.  Set to true if you request users to catalog each page
    scribes_can_edit_titles: false
    # Boolean enabling translation as a step following transcription
@@ -241,7 +241,7 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    → Leider sind wir hier hinsichtlich unserer Metadaten etwas eingeschränkt und können den Werken nur jene Metadaten mitgeben, für die es in der Vorlage auch eine entsprechende Vorgabe gibt. Sollten die Metadaten erst im Zuge des Projekts erforscht werden, können diese auch erst später in den allgemeinen Einstellungen zur Sammlung sowie in den Einstellungen zum Werk ergänzt werden. Für Nutzer:innen, die lieber mit einer grafischen Oberfläche arbeiten, empfiehlt sich ebenfalls die Metadaten in den allgemeinen Einstellungen einzutragen (siehe Punkt “Metadaten-Anreicherung” unter dem Punkt “Einstellungen für das jeweilige Werk”).
    * Nach erfolgreichem Upload kann man die Werke in der “Works List” einsehen und für die einzelnen Werke noch weitere Einstellungen vornehmen. Auf unserem Dashboard sollten wir nun unsere Werke einsehen können.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-dashboard.PNG" description="Abb. x: Dashboard-Ansicht der Werke einer Sammlung" %}
-## 3.  Projektkonfigurationen
+## 3.  Projektvorbereitung & -konfiguration
 ### 3.1. Einstellungen im Projekt-Dashboard
    * **Allgemeine Einstellungen:** In den Einstellungen am Projekt-Dashboard konfigurieren wir schließlich die Ansicht, die den Transkribierenden zur Verfügung steht. Wir können unserer Projektseite zum Beispiel eine eigene URL zuweisen (Abb. x - a), einen eigenen Einladungslink zum Transkriptionsprojekt erstellen (Abb. x - f), ein Projektbild (Abb. x - e) sowie einen eigenen Footer gestalten (Abb. x - c), um z. B. direkten Kontakt zur Projektleitung zu ermöglichen. Die Beschreibung, die wir beim Anlegen der Sammlung eingefügt haben, scheint hier bereits auf und kann noch weiter adaptiert werden (Abb. x - b).
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup1.PNG" description="Abb. x: Konfiguration des Projekts " %}
@@ -279,35 +279,37 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    * **Transkriptionsansicht:** Im Transkriptionseditor wird uns eine synoptische Ansicht unseres Faksimiles und des Bearbeitungsbereiches geboten.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/image-text-synopsis.PNG" description="Abb. x: Bild-Text-Synopse" %}
    Wir können hier also direkt mit der zeilenweisen Transkription beginnen und die verschiedenen Funktionen von FromThePage nutzen:
-   * **- Auszeichnung unserer Transkription**: FromThePage ermöglicht es, unsere Auszeichnungen mittels Markdown entsprechend [Wiki-Text-Konventionen](https://www.mediawiki.org/wiki/Wikitext/de) zu gestalten sowie außerdem all jene Mark-up-Buttons zu verwenden, deren Anzeige wir zuvor in den Projekt-Einstellungen aktiviert haben.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-view.PNG" description="Abb. x: Transkriptionsarbeit" %}
-   Sollte es unter unseren Transkribierenden Personen geben, die Tags lieber ausschreiben statt Textbereiche mittels Klick auf Button zu markieren, ist dies ebenfalls möglich. Strukturierungen wie Zeilenumbrüche oder Absätze werden automatisch übernommen. Wenn wir die Möglichkeiten der TEI nutzen wollen, haben wir dafür zwar keine Buttons, wir können aber z. B. editorische Eingriffe - in der Abbildung durch das Element &lt;supplied> realisiert - trotzdem mit dem entsprechenden Tag auszeichnen.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Abb. x: Mark-Up-Möglichkeiten" %}
-   Das Element wird zwar in der allgemeinen Darstellung auf FromThePage nicht unterstützt, es befindet sich aber am Ende in unserem TEI-Export. Ein Nachteil dieses Workarounds ist aber, dass auf diese Weise angelegte Tags nicht validiert werden und wir bei einer falschen Schreibweise oder unzulässigen Positionierung des Elements keinen Hinweis darauf bekommen. Da wir FromThePage aber ohnehin nur für unsere Transkription und nicht für die Annotation verwenden wollen, setzen wir uns mit dieser Form der Auszeichnung nicht weiter auseinander.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-overview.PNG" description="Abb. x: Allgemeine Ansicht" %}
-   → An dieser Stelle hervorzuheben ist auch, dass es im Rahmen unseres Beispielsprojekts es leider nicht auf sichere und einfache Weise möglich war, farbliche Hervorhebungen, Hinzufügungen durch den/die Editor:in (und nicht den/die Autor:in) oder die Gründe für eine unleserliche Stelle zu annotieren.
-   * **- Anmerkungen und Fragen:** Sollten Mitarbeitende auf Probleme stoßen, die in den Transkriptionsrichtlinien nicht erläutert sind, so haben sie die Möglichkeit, für jedes Faksimile und die dazugehörige Transkription eine Anmerkung zu hinterlassen oder Fragen zu stellen. Diese Notizen werden auch in den TEI-Export übernommen und können somit nützlich sein, um damit Problemstellen zu kennzeichnen oder Kommentare für die spätere Annotation einzufügen. In unserem Beispiel wurde diese Funktion genutzt, um jene Transkriptionen zu markieren, in denen es Probleme mit der Darstellung von diakritischen Zeichen gab.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/notes-and-questions.PNG" description="Abb. x: Austausch mit und zwischen Projektmitarbeitenden" %}
-   * **- Subject Linking:** Während der Transkription eines Dokumentes können auch Entitäten wie Personen, Orte oder eigens angelegte Kategorien (inklusive Unterkategorien) - in unserem Beispiel Zutaten und Speisen - ausgezeichnet werden.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking.PNG" description="Abb. x: Subject Linking" %}
-   Projektinhaber:innen können dafür im Projekt-Dashboard die nötigen Vorbereitungen treffen, indem sie die entsprechenden Kategorien erstellen.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-overview.png" description="Abb. x: Subject Linking Übersicht" %}
-   Die einzelnen Entitäten können schließlich diesen Kategorien zugeordnet und mit einer URI sowie einer Beschreibung angereichert werden.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-categorization.PNG" description="Abb. x: Kategorisierung von Entitäten" %}
-   Diese Daten sowie die Verknüpfungen von Entitäten und ihr Auftreten bzw. ihre Häufigkeit in den Manuskripten kann schließlich eingesehen werden.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-description.PNG" description="Abb. x: Bearbeitung von Entitäten" %}
-   In den einzelnen Dokumenten ist es den Mitarbeitenden möglich, neue Entitäten händisch während der Transkription (gemäß Anleitung) auszuzeichnen, oder über Autolink in einem bereits transkribierten Dokument gleichlautende Entitäten automatisch zu verlinken.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-autolink.PNG" description="Abb. x: Automatische Verlinkung von Entitäten" %}
-   Beim Hinzufügen neuer Entitäten können diese danach direkt einer Kategorie zugeordnet werden.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-categorization-transcription.PNG" description="Abb. x: Zuordnung von Entitäten zu Kategorien" %}
-   Die Transkribierenden können in ihrem Projekt-Dashboard die von der Projektleitung angelegten Entitäten einsehen und auch bearbeiten. Sie können jedoch keine weiteren Kategorien anlegen. Auch hier gilt wieder, dass FromThePage für unser Projekt nur als Transkriptionstool genutzt wird, weshalb wir versuchsweise nur auf der ersten Seite ein paar Entitäten verlinkt und innerhalb aller weiteren Transkriptionen die Auto-Link-Funktion ausprobiert, die auch tatsächlich zu ein paar Treffern führte.
-   Zwischenspeichern oder Abschließen: Wenn wir ein paar Zeilen transkribiert haben und zwischenspeichern wollen, klicken wir auf “Save”. Wenn die Transkription vollständig abgeschlossen ist, klicken wir auf “Done”. Danach wird aus dem “Done”-Button ein “Approve”-Button gemäß unserer zuvor festgelegten Einstellung, dass jedes Dokument einer Revision unterzogen werden muss.
-   → Achtung: Sobald man den Tab mit der Transkriptionsansicht verlässt, verliert man ohne Vorwarnung seinen Arbeitsfortschritt - daher nicht vergessen, regelmäßig abzuspeichern.
-   * **- Metadaten-Anreicherung:** Nachdem wir für unser Projekt festgelegt haben, dass zu jedem Werk auch Metadaten angelegt werden können, steht unseren Transkribierenden ein Button zur Erstellung von Metadaten zur Verfügung.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/create-metadata-button.PNG" description="Abb. x: Metadaten-Button für Bearbeitende" %}
-   Über die damit aufgerufene Ansicht können schließlich die zuvor von der Projektleitung angelegten Felder (siehe unter Metadaten-Erstellung für einzelne Werke) befüllt werden.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/metadata-creation-editor.PNG" description="Abb. x: Anreicherung von Metadaten durch Bearbeitende" %}
-   Auch bei den Metadaten gibt es wieder die Option zwischenzuspeichern (“Save”), die Daten als vollständig zu markieren (“Done”) bzw. sie am Ende durch eine:n Reviewer:in zu bestätigen (“Approve”).
+      <ul>
+      <li><strong>Auszeichnung unserer Transkription:</strong> FromThePage ermöglicht es, unsere Auszeichnungen mittels Markdown entsprechend [Wiki-Text-Konventionen](https://www.mediawiki.org/wiki/Wikitext/de) zu gestalten sowie außerdem all jene Mark-up-Buttons zu verwenden, deren Anzeige wir zuvor in den Projekt-Einstellungen aktiviert haben.
+      {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-view.PNG" description="Abb. x: Transkriptionsarbeit" %}
+      Sollte es unter unseren Transkribierenden Personen geben, die Tags lieber ausschreiben statt Textbereiche mittels Klick auf Button zu markieren, ist dies ebenfalls möglich. Strukturierungen wie Zeilenumbrüche oder Absätze werden automatisch übernommen. Wenn wir die Möglichkeiten der TEI nutzen wollen, haben wir dafür zwar keine Buttons, wir können aber z. B. editorische Eingriffe - in der Abbildung durch das Element &lt;supplied> realisiert - trotzdem mit dem entsprechenden Tag auszeichnen.
+      {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Abb. x: Mark-Up-Möglichkeiten" %}
+      Das Element wird zwar in der allgemeinen Darstellung auf FromThePage nicht unterstützt, es befindet sich aber am Ende in unserem TEI-Export. Ein Nachteil dieses Workarounds ist aber, dass auf diese Weise angelegte Tags nicht validiert werden und wir bei einer falschen Schreibweise oder unzulässigen Positionierung des Elements keinen Hinweis darauf bekommen. Da wir FromThePage aber ohnehin nur für unsere Transkription und nicht für die Annotation verwenden wollen, setzen wir uns mit dieser Form der Auszeichnung nicht weiter auseinander.
+      {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-overview.PNG" description="Abb. x: Allgemeine Ansicht" %}
+      → An dieser Stelle hervorzuheben ist auch, dass es im Rahmen unseres Beispielsprojekts es leider nicht auf sichere und einfache Weise möglich war, farbliche Hervorhebungen, Hinzufügungen durch den/die Editor:in (und nicht den/die Autor:in) oder die Gründe für eine unleserliche Stelle zu annotieren.</li>
+      <li><strong>Anmerkungen und Fragen:</strong> Sollten Mitarbeitende auf Probleme stoßen, die in den Transkriptionsrichtlinien nicht erläutert sind, so haben sie die Möglichkeit, für jedes Faksimile und die dazugehörige Transkription eine Anmerkung zu hinterlassen oder Fragen zu stellen. Diese Notizen werden auch in den TEI-Export übernommen und können somit nützlich sein, um damit Problemstellen zu kennzeichnen oder Kommentare für die spätere Annotation einzufügen. In unserem Beispiel wurde diese Funktion genutzt, um jene Transkriptionen zu markieren, in denen es Probleme mit der Darstellung von diakritischen Zeichen gab.
+      {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/notes-and-questions.PNG" description="Abb. x: Austausch mit und zwischen Projektmitarbeitenden" %}</li>
+      <li><strong>Subject Linking:</strong> Während der Transkription eines Dokumentes können auch Entitäten wie Personen, Orte oder eigens angelegte Kategorien (inklusive Unterkategorien) - in unserem Beispiel Zutaten und Speisen - ausgezeichnet werden.
+      {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking.PNG" description="Abb. x: Subject Linking" %}
+      Projektinhaber:innen können dafür im Projekt-Dashboard die nötigen Vorbereitungen treffen, indem sie die entsprechenden Kategorien erstellen.
+      {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-overview.png" description="Abb. x: Subject Linking Übersicht" %}
+      Die einzelnen Entitäten können schließlich diesen Kategorien zugeordnet und mit einer URI sowie einer Beschreibung angereichert werden.
+      {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-categorization.PNG" description="Abb. x: Kategorisierung von Entitäten" %}
+      Diese Daten sowie die Verknüpfungen von Entitäten und ihr Auftreten bzw. ihre Häufigkeit in den Manuskripten kann schließlich eingesehen werden.
+      {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-description.PNG" description="Abb. x: Bearbeitung von Entitäten" %}
+      In den einzelnen Dokumenten ist es den Mitarbeitenden möglich, neue Entitäten händisch während der Transkription (gemäß Anleitung) auszuzeichnen, oder über Autolink in einem bereits transkribierten Dokument gleichlautende Entitäten automatisch zu verlinken.
+      {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-autolink.PNG" description="Abb. x: Automatische Verlinkung von Entitäten" %}
+      Beim Hinzufügen neuer Entitäten können diese danach direkt einer Kategorie zugeordnet werden.
+      {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-categorization-transcription.PNG" description="Abb. x: Zuordnung von Entitäten zu Kategorien" %}
+      Die Transkribierenden können in ihrem Projekt-Dashboard die von der Projektleitung angelegten Entitäten einsehen und auch bearbeiten. Sie können jedoch keine weiteren Kategorien anlegen. Auch hier gilt wieder, dass FromThePage für unser Projekt nur als Transkriptionstool genutzt wird, weshalb wir versuchsweise nur auf der ersten Seite ein paar Entitäten verlinkt und innerhalb aller weiteren Transkriptionen die Auto-Link-Funktion ausprobiert, die auch tatsächlich zu ein paar Treffern führte.</li>
+      <li><strong>Zwischenspeichern oder Abschließen:</strong> Wenn wir ein paar Zeilen transkribiert haben und zwischenspeichern wollen, klicken wir auf “Save”. Wenn die Transkription vollständig abgeschlossen ist, klicken wir auf “Done”. Danach wird aus dem “Done”-Button ein “Approve”-Button gemäß unserer zuvor festgelegten Einstellung, dass jedes Dokument einer Revision unterzogen werden muss.
+      → Achtung: Sobald man den Tab mit der Transkriptionsansicht verlässt, verliert man ohne Vorwarnung seinen Arbeitsfortschritt - daher nicht vergessen, regelmäßig abzuspeichern.</li>
+      <li><strong>Metadaten-Anreicherung:</strong> Nachdem wir für unser Projekt festgelegt haben, dass zu jedem Werk auch Metadaten angelegt werden können, steht unseren Transkribierenden ein Button zur Erstellung von Metadaten zur Verfügung.
+      {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/create-metadata-button.PNG" description="Abb. x: Metadaten-Button für Bearbeitende" %}
+      Über die damit aufgerufene Ansicht können schließlich die zuvor von der Projektleitung angelegten Felder (siehe unter Metadaten-Erstellung für einzelne Werke) befüllt werden.
+      {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/metadata-creation-editor.PNG" description="Abb. x: Anreicherung von Metadaten durch Bearbeitende" %}
+      Auch bei den Metadaten gibt es wieder die Option zwischenzuspeichern (“Save”), die Daten als vollständig zu markieren (“Done”) bzw. sie am Ende durch eine:n Reviewer:in zu bestätigen (“Approve”).</li>
+      </ul>
    * **Versionsansicht:** Im Tab “Versions” können wir nachverfolgen, wer wann welche Änderungen vorgenommen hat.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/versions.PNG" description="Abb. x: Versionskontrolle" %}
 ## 5.  Export der Dokumente
@@ -316,100 +318,91 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    * **Export der Werke:** Über den Button “Export All Works” können wir nun verschiedene Formate und Einstellungen wählen und unsere gesamte Sammlung als ZIP-Datei exportieren.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export-all-works.PNG" description="Abb. x: Export aller Werke in ZIP-Datei" %}
    Wir wählen dabei einen Ordner pro Werk und stellen ein, dass unsere Export-Ordner den Namen der Import-Ordner übernehmen bzw. beibehalten sollen. Bei den Exportformaten wählen wir nur TEI/XML aus. In den exportierten TEI-Dateien (siehe hier für vollständige XML-Dateien) finden unsere Bearbeitungsschritte nun folgende Form:
-   * **- Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, Informationen zu den Versionen sind im TEI Header wiederzufinden.
-   ```xml
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-         <title type="full">
-            <title type="main">MS Augsburg, Universitätsbibl., Cod.III.1.2°43 (A1)</title>
-            <title type="desc">Dieses Manuskript beinhaltet mittelalterliche Rezepte in Bastarda.
-               Kenntnis des Bayrischen und mittelalterlichen Lateins von Vorteil.</title>
-         </title>
-         <author>
-            <persName>Unknown</persName>
-         </author>
-         </titleStmt>
-         <editionStmt>
-         <edition>Edition created from new transcripts of this manuscript.</edition>
-         <respStmt xml:id="AU32014648">
-            <resp>Initial upload of this work&#39;s facsimile images and metadata to FromThePage for
-               editing</resp>
-            <persName>ZIM-DigEdTnT</persName>
-         </respStmt>
-         <respStmt xml:id="OU32014648">
-            <resp>Administrator of the Mittelalterliche Kochrezepte transcription project on
-               FromThePage</resp>
-            <persName>ZIM-DigEdTnT</persName>
-         </respStmt>
-         <respStmt xml:id="U32014648">
-            <persName> ZIM-DigEdTnT </persName>
-            <resp> made 40 edits between <date type="first_edit" when="2023-03-24T12:00:58Z">March 24,
-               2023</date> and <date type="last_edit" when="2023-04-13T11:10:05Z">April 13,
-               2023</date>. </resp>
-         </respStmt>
-         <respStmt xml:id="U32014447">
-            <persName> ZIM-student </persName>
-            <resp> made 5 edits between <date type="first_edit" when="2023-03-28T06:46:46Z">March 28,
-               2023</date> and <date type="last_edit" when="2023-03-28T06:49:26Z">March 28,
-               2023</date>. </resp>
-         </respStmt>
-         <respStmt xml:id="U32014648">
-            <resp n="proof_1">Single Proof by:</resp>
-            <name>ZIM-DigEdTnT</name>
-         </respStmt>
-         <respStmt xml:id="U32014447">
-            <resp n="proof_1">Single Proof by:</resp>
-            <name>ZIM-student</name>
-         </respStmt>
-         </editionStmt>
-         <publicationStmt>
-         <publisher>Dynamic TEI export from FromThePage (version 22.10)</publisher>
-         <availability>
-            <p>Text: &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0&quot;&gt;Creative
-               Commons BY 4.0&lt;/a&gt; Faksimiles: &lt;a
-               href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;Creative Commons
-               BY-NC-SA 4.0 &lt;/a&gt;</p>
-         </availability>
-         <date when="2023-04-13T11:27:04+00:00">April 13, 2023</date>
-         </publicationStmt>
-         <sourceDesc>
-         <msDesc>
-            <msIdentifier>
-               <collection>Mittelalterliche Kochrezepte</collection>
-            </msIdentifier>
-            <physDesc>
-               <p>Neue Blattzählung 1-84. Wortreklamanten meist abgeschnitten.Textverlust: 1 Blatt
-               fehlt zwischen fol. 59-60. Bastarda -durchgehend von einer Hand; Nachträge einiger
-               jüngerer Hände, um 1500/Anfang 16. Jh.: 23r, 35r, 73r-79r an den Rändern; geübte Hand,
-               sauberes Schriftbild, Oberlängen orientieren sich am Mittelband. Alter Einband:
-               starker Pergamentumschlag mit übergreifendem Rückendeckel.</p>
-            </physDesc>
-            <history>
-               <origin>
-               <placeName>Unknown</placeName>
-               </origin>
-               <provenance>4. Viertel 15. Jh. Entstehungsort unbekannt. Alter Besitzvermerk fol. 1r
-               durch Übermalen völlig getilgt; Erwerbung des Fürsten Ludwig, vgl. 1r. Oettingisches
-               Wappen und Erwerbsjahr: 1813. Bibliothekssignatur des 19. Jhs.</provenance>
-            </history>
-         </msDesc>
-      </sourceDesc>
-      </fileDesc>
+      * **Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, Informationen zu den Versionen sind im TEI Header wiederzufinden.
+      ```xml
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+            <title type="full">
+               <title type="main">MS Augsburg, Universitätsbibl., Cod.III.1.2°43 (A1)</title>
+               <title type="desc">Dieses Manuskript beinhaltet mittelalterliche Rezepte in Bastarda.
+                  Kenntnis des Bayrischen und mittelalterlichen Lateins von Vorteil.</title>
+            </title>
+            <author>
+               <persName>Unknown</persName>
+            </author>
+            </titleStmt>
+            <editionStmt>
+            <edition>Edition created from new transcripts of this manuscript.</edition>
+            <respStmt xml:id="AU32014648">
+               <resp>Initial upload of this work&#39;s facsimile images and metadata to FromThePage for
+                  editing</resp>
+               <persName>ZIM-DigEdTnT</persName>
+            </respStmt>
+            <respStmt xml:id="OU32014648">
+               <resp>Administrator of the Mittelalterliche Kochrezepte transcription project on
+                  FromThePage</resp>
+               <persName>ZIM-DigEdTnT</persName>
+            </respStmt>
+            <respStmt xml:id="U32014648">
+               <persName> ZIM-DigEdTnT </persName>
+               <resp> made 40 edits between <date type="first_edit" when="2023-03-24T12:00:58Z">March 24,
+                  2023</date> and <date type="last_edit" when="2023-04-13T11:10:05Z">April 13,
+                  2023</date>. </resp>
+            </respStmt>
+            <respStmt xml:id="U32014447">
+               <persName> ZIM-student </persName>
+               <resp> made 5 edits between <date type="first_edit" when="2023-03-28T06:46:46Z">March 28,
+                  2023</date> and <date type="last_edit" when="2023-03-28T06:49:26Z">March 28,
+                  2023</date>. </resp>
+            </respStmt>
+            <respStmt xml:id="U32014648">
+               <resp n="proof_1">Single Proof by:</resp>
+               <name>ZIM-DigEdTnT</name>
+            </respStmt>
+            <respStmt xml:id="U32014447">
+               <resp n="proof_1">Single Proof by:</resp>
+               <name>ZIM-student</name>
+            </respStmt>
+            </editionStmt>
+            <publicationStmt>
+            <publisher>Dynamic TEI export from FromThePage (version 22.10)</publisher>
+            <availability>
+               <p>Text: &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0&quot;&gt;Creative
+                  Commons BY 4.0&lt;/a&gt; Faksimiles: &lt;a
+                  href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;Creative Commons
+                  BY-NC-SA 4.0 &lt;/a&gt;</p>
+            </availability>
+            <date when="2023-04-13T11:27:04+00:00">April 13, 2023</date>
+            </publicationStmt>
+            <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <collection>Mittelalterliche Kochrezepte</collection>
+               </msIdentifier>
+               <physDesc>
+                  <p>Neue Blattzählung 1-84. Wortreklamanten meist abgeschnitten.Textverlust: 1 Blatt
+                  fehlt zwischen fol. 59-60. Bastarda -durchgehend von einer Hand; Nachträge einiger
+                  jüngerer Hände, um 1500/Anfang 16. Jh.: 23r, 35r, 73r-79r an den Rändern; geübte Hand,
+                  sauberes Schriftbild, Oberlängen orientieren sich am Mittelband. Alter Einband:
+                  starker Pergamentumschlag mit übergreifendem Rückendeckel.</p>
+               </physDesc>
+               <history>
+                  <origin>
+                  <placeName>Unknown</placeName>
+                  </origin>
+                  <provenance>4. Viertel 15. Jh. Entstehungsort unbekannt. Alter Besitzvermerk fol. 1r
+                  durch Übermalen völlig getilgt; Erwerbung des Fürsten Ludwig, vgl. 1r. Oettingisches
+                  Wappen und Erwerbsjahr: 1813. Bibliothekssignatur des 19. Jhs.</provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+         </fileDesc>
       ...
-      <profileDesc>
-         <creation>
-            <placeName>Unknown</placeName>
-         </creation>
-         <langUsage>
-            <language ident="gem">Germanic languages</language>
-         </langUsage>
-      </profileDesc>
-      ...
-   </teiHeader>
-   ```
-   → Die einzelnen Werk-Metadaten (Material, Sprache usw.), die wir für jedes Manuskript einzeln angelegt haben, sind hier aber leider nicht abgebildet (nur im CSV-Metadaten-Export). Außerdem müssen wir an dieser Stelle feststellen, dass unser TEI nicht valide ist, da in den Metadaten eine xml:id an zwei Stellen vergeben wurde.
-   * **- Entitäten & Kategorien:** Unsere Taxonomie für Zutaten und Gerichte wird in ein &lt;taxonomy>-Element verpackt, wo wir all unsere angelegten Daten und Kategoriezuordnungen wiederfinden.
+      </teiHeader>
+      ```
+      → Die einzelnen Werk-Metadaten (Material, Sprache usw.), die wir für jedes Manuskript einzeln angelegt haben, sind hier aber leider nicht abgebildet (nur im CSV-Metadaten-Export). Außerdem müssen wir an dieser Stelle feststellen, dass unser TEI nicht valide ist, da in den Metadaten eine xml:id an zwei Stellen vergeben wurde.
+   * **Entitäten & Kategorien:** Unsere Taxonomie für Zutaten und Gerichte wird in ein &lt;taxonomy>-Element verpackt, wo wir all unsere angelegten Daten und Kategoriezuordnungen wiederfinden.
    ```xml
    <encodingDesc>
       <classDecl>
@@ -478,204 +471,8 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    </encodingDesc>
    ```
    → Auch hier treffen wir auf ein Problem hinsichtlich der Validität unseres TEI/XML-Dokuments, da in der Taxonomie innerhalb der <catDesc>-Elemente <notes>-Elemente erzeugt wurden, die dort nicht zugelassen sind und außerdem die mit einem <head>-Element ausgezeichnete Überschrift von einem der Faksimiles unzulässigerweise innerhalb eines <p>-Elementes steht.
-   * **- Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem &lt;div>-Element wiedergegeben, wobei das vorangehende  &lt;pb>-Element einen Link zur Bilddatei im IIIF-Format beinhaltet.
-   ```xml
-   <text>
-      <body>
-         <pb xml:id="F33038493" n="1"
-         facs="http://fromthepage.com/image-service/33038493/full/full/0/default.jpg"/>
-         <div xml:id="OTP33038493">
-            <fw type="pageNum">UB_Augsburg_Cod_III_1_2_43_002r</fw>
-            <p xml:id="OTP33038493P0">Hienach volgenn Etlich ertzneÿ vonn mangerlaÿ dingenn zu sammenn
-               gesammet<lb/> Als du danne hernach wol vindenn wurdest<lb/> Ein purgatz Zu der zeÿtt des
-               herbstes furr allenn gebrechenn <unclear>:</unclear><lb/>
-               <supplied>N</supplied>ym hieffenn die zeÿttig sein vnd mit dem reÿff wol
-               beczwungenn<lb/> vnd nÿm die mit kernn vnd mit all vnd derre die in eynem ofenn vnd<lb/>
-               lege sie danne herauß vnd laß den windt dar durch genn vnd<lb/> nÿm dann einen moerserr
-               vnd stoß die hieffenn vnd misch die mit honig<lb/> vnd das isse das des morgens
-               nüchternn<lb/> Meßigkeit Ist ein aufenthaltung des ganntzen leichnams . Vnd ein
-               starck<lb/> aller gelider . Vnd ein außderung aller boesenn duenst Wann meßigkeit ist<lb/>
-               ein zustoerung aller lasterr<lb/> Wiltu gut <rs ref="#S32080907"> lekuchenn</rs> machenn <choice>
-                  <expan>Recipe</expan>
-                  <abbr>R</abbr>
-               </choice> zu einem seÿdlein <rs ref="#S32080908">hönigs</rs> 1/2 lot <rs
-                  ref="#S32080909"> negelleyn</rs><lb/> 1/2 lot <rs ref="#S32080910"> muscat</rs> 1/2 lot
-                  <rs ref="#S32080911"> Ingwerr</rs> 1/2 lot <rs ref="#S32080912"> pfeffers</rs> vnd stoß
-               das zu sammenn vnd dar<lb/> auß mach einen teig vnd zu einer moß honigs nÿm zwirr souil
-               als vor be=<lb/> zeichent stett<lb/> Wiltu ein gutte salsen machen in der fastenn Nÿm
-               merrech vnd mandel<lb/> kernn vnd stoß die in einem moerserr vnd thue wein dar zu das ist
-               gut<lb/> Die vier kunigreich der werlt <lb/> Orientalis [que est] Calida et humida<lb/>
-               Meridionalis [que est] Calida et sicca<lb/> Occidentalis que est frigida et humida<lb/>
-               Septembrionalis [que est] Frigida et sicca<lb/> Der lentz ist hitzig vnd feucht Die Zeit
-               ist gemischet vnd dem lufft<lb/> geleich . Vnd in der Zeit so wirt bewegt das plut . Vnd
-               in der Zeit ist<lb/> gesund alles das einen linden Complexion vnd naturr ist Als Iunge
-               hunerr<lb/> vnd eÿerr doch soltu ir auch nit zu vil niessenn Vnd lactuken vnd
-               agreste<lb/> vnd geÿß milch Es ist kein zeit des ganntzen Iars die nutzerr ist dem<lb/>
-               aderlassenn danne dise zeit vnd ist nutz die bewegung des leÿbes<lb/> vnd die
-               entschliessung des leÿbs vnd padenn Auch ist in diser Zeit<lb/> gut Ertzneÿ vnd getranck
-               zu nemmen<lb/> Der Summer Ist hitzig vnd durrr In der Zeit wirt verzert das plut<lb/> vnd
-               wechst in dem menschen die rot Colera . Vnd in der Zeit soll man<lb/> sich huttenn vor
-               allenn dingenn die hitzig vnd durr sein Auch sol man<lb/> sich huttenn vor v̈brigem essenn
-               vnd trinckenn das nit auß geleschet werd<lb/> die naturlich hitze . Inn der zeÿt des
-               Summers soll man sich gerbrauchen<lb/> aller ding die kalter naturr sein Als kalb fleÿsch
-               vnd essig et cucurbite<lb/> et pulli saginati ex farina ordeacea Vnd von der frucht die
-               eins guttenn<lb/> geschmacks ist Et mala atra et malignata similer aerea Vnd die do sein
-               in den<lb/>
-            </p>
-            <note resp="#U32014648">Darstellungsproblem bei v mit Trema darüber!</note>
-         </div>
-
-         <pb xml:id="F33038494" n="2"
-         facs="http://fromthepage.com/image-service/33038494/full/full/0/default.jpg"/>
-         <div xml:id="OTP33038494">
-            <fw type="pageNum">UB_Augsburg_Cod_III_1_2_43_059r</fw>
-            <p xml:id="OTP33038494P0">Hienach volgt vonn dem kochenn vnd hat gemacht meyster Eberhart
-               Ein koch<lb/> herczog heinrichs zu lands hut Zum Ein salsenn von weichselnn zu machen<lb/>
-               Item Wiltu machen ein gutte salsenn von weichselnn So <unclear>?</unclear> thue die
-               weich=<lb/> sell in einen hafen vnd setz die auff ein glut vnd laß sie siedenn vnd<lb/>
-               laß dann wider erkaltenn vnd streich sie durch ein tuch vnd thue sie<lb/> dann wider in
-               den hafenn vnd setz sie auff ein glut vnd laß sie wol sieden<lb/> vnd rurr sie piß sie
-               dick wirt vnd thue dann <rs ref="#S32080908">honig </rs>dar an vnd geribens<lb/> prot vnd
-               negellein vnd gut gestüp vnd thue sie in ein feßlein sie pleibt<lb/> dir gut drew oder
-               vier iarr<lb/> Ein gutte salsen zu machen in der fastenn<lb/> Item Nÿm merrich vnd zustoß
-               den in einem moerserr vnd nÿm mandelkernn<lb/> oder nuß vnd zustoß die auch vnd geuß ein
-               wein dar an Merrich<lb/> bricht den stein garr serr wenn man in isset in der kost<lb/>
-               Item Ein andre salsenn Saluia petrocilius menta vnd <rs ref="#S32080912"> pfefferr</rs>
-               das soll<lb/> man zustossenn mit essig das ist ein salsen die macht lustig zu essenn<lb/>
-               Item Ein essenn von gebratenn arbeissenn Nÿm gesotenn arbeÿß vnd<lb/> slach sie durch
-               ein tuch oder durch ein sib vnd slach vil eÿerr<lb/> darzu als vil der arbeiß sein vnd
-               seud es in putternn vnd steck es<lb/> an einen spiß vnd brot sie wol vnd beslach sie mit
-               eÿernn vnd mit<lb/> kraut vnd gib es hin versaltz es nit<lb/> Ein holder muß zu machenn
-               Nÿm holderplut vnd zureib die in kuee<lb/> milch vnd nÿm mel vnd mach ein mus dar auß
-               das ist gut zu<lb/> dem haubt vnd den sÿnnenn<lb/> Ein gut mus zu machenn So nÿm nuß
-               kernn vnd stoß die clein vnd<lb/> streich die durch mit einerr sussenn milch vnd mit
-               susser semell<lb/> brosem die wol gesotenn sein vnd thue schmaltz dar an genug vnd<lb/>
-               rurr es ab mit eÿer totternn vnd wurtz es wol vnd versaltz es nit<lb/> Wiltu machen ein
-               gebraten muß vonn vischennn So nÿm per visch<lb/> die peÿß in essig vnd wurff die in ein
-               mandel milch die mit reÿß<lb/> sein wol gemengt vnd ein wenig schmaltz dar an das wellig
-               sej<lb/> versaltz es nit<lb/> Item Ein essenn vonn einer lebernn eins kalbs Nÿm ein
-               lebernn von einem<lb/> kalb vnd hack sie clein vnd würtz sie wol vnd nÿm dann einen<lb/>
-               hewrigenn speck vnd weinperr vnd leg das netz furr dich vnd be=<lb/> streich es wol mit
-               totternn vnd nÿm dann die lebernn vnd slach<lb/> ein netz dar veberr vnd verspeil das wol
-               vnd leg sie auff ein rost<lb/> vnd laß sie pratenn vnd beslach sie halb mit totternn die
-               rot sein dar </p>
-         </div>
-
-         <pb xml:id="F33038495" n="3"
-         facs="http://fromthepage.com/image-service/33038495/full/full/0/default.jpg"/>
-         <div xml:id="OTP33038495">
-            <fw type="pageNum">UB_Augsburg_Cod_III_1_2_43_059v</fw>
-            <p xml:id="OTP33038495P0">nach an der andernn seittenn mit grunen totternn vnd peterlein vnd
-               versaltz es nit<lb/> Wiltu machen ein meyschen kuchenn So nÿm auff zehen eÿer vnd
-               zuslach<lb/> sie wol vnd nÿm darzu peterlein vnd rurr es vndereinander vnd nÿm
-               einen<lb/> morserr vnd setz auff ein kolenn vnd thue dar ein einen loeffel vol
-               schmaltz<lb/> vnd laß es heÿß werdenn vnd geuß die eÿerr darein vnd laß es kul
-               pachen<lb/> vnd thu es also gantz auff ein schussel versaltz es nit<lb/> Item Wiltu machen
-               ein essen in dem meÿen das heÿßt ein gespoet So nym<lb/> einen fliessendenn keß vnd
-               schneid den in vil schnittenn die duenn sein<lb/> vnd nÿm darzu sechs eÿer vnd slach die
-               auff den keß vnd nÿm<lb/> meichßige putternn in ein pfannen vnd thue den keß mit den
-               eÿernn<lb/> vber das fewrr vnd zeuch es eÿ dar mit auff das es slecht werr vnd<lb/>
-               richte es an vnd versaltz es nicht<lb/> Item einen fladenn zu machenn von fischenn
-               velcherlej sie sind So<lb/> nÿm ein dicke mandelmilch wol gemengt mit reiß mel vnd
-               thue<lb/> dar ein einen apffel oderr zwenn vnd ein wenig wurtz vnd seud<lb/> es in einem
-               ofen vnd laß es pachenn vnd versalcz es nit<lb/> Wiltu machen morchen vmb weihennachtenn
-               So nÿm ein teick<lb/> auß weissem brot vnd auß ein wenig melbs vnd schla eÿer dar
-               an<lb/> vnd mach zwen knebel vnd wurff die in den teick vnd zeuch<lb/> sie darInnen vmb
-               vnd leg sie in ein schmaltz das nit zu heÿß<lb/> sej vnd wenn es ein wenig gepack So nÿm
-               es her wider auß<lb/> vnd schneÿd es dann mitten auff dem knebel auff von einander<lb/>
-               vnd full es danne mit ein geruntenn eÿernn vnd zeuch es durch<lb/> einen lindenn
-               straubenn teick leg es in ein schmaltz vnd laß es<lb/> pachenn vnd setz die morchen dar
-               ein vnd laß sie pachenn<lb/> Wiltu machen ein gestrocztes gepachens So mach ein teÿck
-               von<lb/> eÿtell eÿernn vnd wurtz in wol vnd mach in gel vnd warmm
-                  <unclear>du</unclear><note n="*" type="footnote">Lesart nach Feyl: dutzend</note><lb/>
-               gutter holmm in den teick das sie naß werdenn vnd nÿm sie dann<lb/> her auß vnd pack es
-               in einem schmaltz vnd versaltz nit<lb/> Wiltu machen gut kuchenn vonn eÿernn So nÿm
-               eÿer wie vil<lb/> du wilt vnd zu slach die wol vnd schneid semel funf lot dar<lb/> vnter
-               vnd thue dar ein weinperr vnd schmaltz in ein pfannen des<lb/> genug sej vnd geuß die
-               eÿer dar ein vnd laß es packenn ÿnnenn<lb/> vnd aussenn do mit slach es auff ein panck
-               vnd hack dar vnter<lb/> gut wurtz vnd schneid es zu scheubenn vnd richt es an<lb/> Item
-               Ein essenn von milch kuchenn So soltu sie clein schnëyden<note n="*" type="footnote"
-                  >Rezept endet hier</note>
-            </p>
-         </div>
-
-         <pb xml:id="F33038496" n="4"
-         facs="http://fromthepage.com/image-service/33038496/full/full/0/default.jpg"/>
-         <div xml:id="OTP33038496">
-            <fw type="pageNum">UB_Augsburg_Cod_III_1_2_43_060r</fw>
-            <p xml:id="OTP33038496P0"><note n="*" type="footnote">Rezept beginnt inmitten des
-                  Textes</note>hafen vnd geuß ein wasserr dar an vnd deck es zu vnd laß siedenn so
-               wirt<lb/> es sich strecken in dem glaß das man sicht sein fuß vnd flügel vnd<lb/> den
-               ganntzen pöttich so ist es gerecht<lb/> Wiltu machenn dreÿerlej essens an einem visch So
-               nÿm ein hecht vnd<lb/> slach vmb das mittel teÿl ein naß tuch vnd leg in auff ein rost
-               vnd<lb/> saltz in vnd laß in pratenn vnd das foderr teil bespreng mit melb<lb/> vnd begeuß
-               mit schmaltz das heÿß sej vnd das tuch begeuß mit<lb/> heissem wein vnd das hinder teÿl
-               prett sich selbs auff dem rost<lb/> Item vt scito coquantur carnes Recipe aliquas pecias
-               de <note n="*Laut Feyl hier: vino" type="footnote"><unclear>vitro</unclear></note> Et pone
-               in ollam<lb/> ad carnes crudas et sic coquantur<lb/> Item ad extrahendum sal de cibo nimis
-               salsato Recipe de farina frumenti in vna<lb/> pecia lini panni et dimitte bulire
-               intus<lb/> Item Ad appetitum comedendi valet illa salsa facta cum aleo Et appone
-               piper<lb/> ad triginta grana et hoc simul tunde Et Ieiunus per duos dies comede<lb/> etiam
-               appone de saluia tria folia cum sale modico Vel accipe aleum cum<lb/> bibenella et fac
-               succum<lb/> Item Wiltu swartz fisch machenn So laß die visch siedenn an die<lb/> stat vnd
-               nÿm dann gestossenn negellein vnd thue die dar an <unclear>?</unclear><lb/> vnd laß sie
-               dann noch ein guttenn wal thun<lb/> Item Vonn hechtenn wirt garr schoenns vnd lawters
-               gestanndenn<lb/> also das es durchsichtig wirt<lb/> Wiltu einen gutten stockfisch machenn
-               So laß in siedenn als ein kalb<lb/> fleisch vnd laß in ein siedenn auff halben <choice>
-                  <reg>wegk</reg>
-                  <orig>wogk</orig>
-               </choice> vnd seig dann die<lb/> brue dar vonn vnd schuet den stockvisch herauß vnd
-               erclaub in<lb/> wol vnd nÿm dann ein pfannen vnd thue smaltz dar ein vnd laß<lb/> es
-               warmm werdenn vnd leg dann den stockvisch in die putternn<lb/> vnd laß sie dar ÿnnen
-               erhitzenn vnd nÿm dann Ingwerr vnd saffran<lb/> mit des visch brue vnd ferb das do mit
-               ein vnd geuß es veber<lb/> den stock <del>in die</del> visch in die pfannen vnd laß es ein
-               wal oder<lb/> drej thun so ist er gerecht<lb/> Item Hienach volgt wie man ein ganß pratenn
-               soll So laß sie<lb/> vor zwenn oder drej tag wol hungernn das die bösen predenn<lb/> die
-               in ir sein her auß genn vnd soll sie dann nernn mit kornn vnd dar<lb/> nach tötte sie vnd
-               prate sie pej dem fewerr vnd du solt dar ein<lb/> stossen saluia vnd ander gut wuertz das
-               der safft dardurch gee<lb/> vnd man soll sie besprengenn mit wein oder mit essigk das daz
-               schmaltz </p>
-         </div>
-
-         <pb xml:id="F33038497" n="5"
-         facs="http://fromthepage.com/image-service/33038497/full/full/0/default.jpg"/>
-         <div xml:id="OTP33038497">
-            <fw type="pageNum">UB_Augsburg_Cod_III_1_2_43_060v</fw>
-            <p xml:id="OTP33038497P0">do vonn trieff Wann das genß schmaltz soll man nit essenn wann es
-               macht<lb/> den menschen krannck wann die feistenn kumbt vonn boeser feuchtigkeit<lb/> vnd
-               wer gesund ist der soll die gans also gebratenn essenn so schadt<lb/> sie dester mÿnderr
-               Wer aber krannck ist der soll wenig do von essenn<lb/> Wenn man sie kocht vnd seudt in
-               wasser so ist sie vngesund wann dann<lb/> so mügenn die boesen preden nit herauß genn von
-               verhinderung wegen<lb/> des wassers<lb/> Hienach volgt vonn den kuchenspeisen warr zu sie
-               gut sein<lb/> Item Reÿß kelt vnd hitzigt nit vnd speißt serr vnd wenn mans wol seudt<lb/>
-               mit milch so macht es vil plutz vnd doch so schadt es den lewten<lb/> die den grymmenn in
-               dem leib habenn vnd stupfft vnd wirt nit<lb/> schier verdewt<lb/> Hirß zu essenn kelt vnd
-               derrt vnd stopffet vnd speist nit wol<lb/> vnd das selb thut auch der habernn vnd
-               spelt<lb/> Gerstenn Blewet vnd keltet vnd speist nit wol vnd schadt allen<lb/> den lewtenn
-               die geprestenn habenn vnd von kalter natur kumbt oder<lb/> das grymmenn in dem leib hat
-               Aber hitzigenn lewtenn vnd die do gern<lb/> cleiner wurdenn den ist sie gut vnd wenn man
-               sie isset oderr trincket<lb/> mit venchel samenn so ist sie gut furr etlichenn gebresten
-               an der<lb/> brust vnd spricht Auicenna das gerstenn wasserr schadet dem magen<lb/> der do
-               kalt ist Es ist auch Rittigenn lewtenn garr nuetz<lb/> Linßenn Sein bescheidenlich heÿß
-               vnd derren vnd machenn vil plutz<lb/> vnd so man sie seudt mit essig so erleschenn sie die
-               enzuendung des<lb/> plutz Vnd wer sie dick isset dem machen sie vinsterr awgenn do<lb/>
-               vonn sie vast derrent Auicenna spricht das sie schadenn dem magenn<lb/> vnd blewend vnd
-               stopffend<lb/> Die kichernn Hitzenn vnd plewend vnd machenn pruntzen vnd machenn<lb/> den
-               frawenn ire Recht zu vier wochenn einß komenn als es sein soll<lb/> vnd spricht Auerrois
-               das sie prechenn den stein der do leÿt in den<lb/> lendenn oder der do leit in der
-               blosenn vnd auch die brüe mit<lb/> der sie gesotenn werdenn vnd darczu sein die swartzen
-               kichernn pesserr<lb/> dann die weissenn Vnd Galienus spricht das bru von kichernn so<lb/>
-               man sie seudt die ist der lebernn gut wann es reinigt sie vnd die<lb/> nÿren do der stein
-               wechst den schleim vnd treibt vil vnflatz<lb/> vonn dem menschenn<lb/> Arbeißenn Brüe hat
-               die selben krafft aber nit als krefftigklichenn<lb/> do vonn so man kichernn nit hat so
-               seudt man arbeiß kichernn<lb/> oder arbeiß die grun sein so soll man <add>nit</add> essenn
-               wann sie machenn<lb/> em menschenn boese feuchtigkeit </p>
-         </div>
-
-      </body>
-   </text>
-   ```
-   Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüchen, unklaren Stellen, Erweiterungen von Abkürzungen sowie Referenzen zu unserer Taxonomie wiederfinden. Außerdem finden wir auch die Anmerkungen der Transkribierenden in einem &lt;note>-Element am Ende des lt;div>-Elements.
+      * **Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem &lt;div>-Element wiedergegeben, wobei das vorangehende  &lt;pb>-Element einen Link zur Bilddatei im IIIF-Format beinhaltet.
+        Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüchen, unklaren Stellen, Erweiterungen von Abkürzungen sowie Referenzen zu unserer Taxonomie wiederfinden.
    * **Export der Metadaten**: Viele der Metadaten, die wir auch im Header des XML/TEIs finden, können wir auch per CSV exportieren ([Link zum CSV-Export](https://github.com/DigEdTnT/digedtnt.github.io/blob/95d465f768eff02fdcd74f8e5248d8eea9e94586/data/pipelines/pipeline_1/fromthepage/export/fromthepage_work_metadata_export_32000501_2023-04-13T11_28_04Z.csv)).
    → Man beachte jedoch, dass bei diesem Export allgemeine Projekt-Metadaten und Statistiken wiederzufinden sind, sowie die eigens angelegten Metadaten (Material, Sprache & zeitliche Einordnung), nicht aber die von uns per YAML-Datei importierten Metadaten.
 
@@ -750,14 +547,14 @@ Literaturliste von Zotero
    </td>
   </tr>
   <tr>
-   <td><strong>Scope des Tools
+   <td><strong>Scope des Tools</strong>
    </td>
    <td>Transkription
    </td>
   </tr>
   <tr>
    <td><strong>Softwareumgebung/Softwaretyp
-(Remotesystem im Browser / Lokaler Client)
+</strong>(Remotesystem im Browser / Lokaler Client)
    </td>
    <td>Browser-Anwendung/
 <p>
@@ -765,32 +562,32 @@ web-basiert
    </td>
   </tr>
   <tr>
-   <td><strong>Unterstützte Plattformen
+   <td><strong>Unterstützte Plattformen</strong>
    </td>
    <td>Linux & Windows
    </td>
   </tr>
   <tr>
-   <td><strong>Geräte
+   <td><strong>Geräte</strong>
    </td>
    <td>Desktop & mobil
    </td>
   </tr>
   <tr>
-   <td><strong>Einbindung anderer Systeme (Interoperabilität)
+   <td><strong>Einbindung anderer Systeme (Interoperabilität)</strong>
    </td>
    <td>✅ (IIIF)
    </td>
   </tr>
   <tr>
-   <td><strong>Accountsystem
+   <td><strong>Accountsystem</strong>
    </td>
    <td>✅
    </td>
   </tr>
   <tr>
    <td><strong>Kostenmodell
-(Kostenübersicht / Open Source)
+</strong>(Kostenübersicht / Open Source)
    </td>
    <td>Kleinprojekte:
 bis zu 200 Seiten - kostenlos
@@ -806,25 +603,25 @@ Betreuung von Institutionen: bis zu 50.000 Seiten - ca. 3600 Dollar/Jahr
    </td>
   </tr>
   <tr>
-   <td><strong>Erforderte Code Literacy
+   <td><strong>Erforderte Code Literacy</strong>
    </td>
    <td>sehr gering
    </td>
   </tr>
   <tr>
-   <td><strong>Interface-Sprachen (ISO 639-1)
+   <td><strong>Interface-Sprachen (ISO 639-1)</strong>
    </td>
    <td>en, es, fr, pt, de (in Arbeit)
    </td>
   </tr>
   <tr>
-   <td><strong>Unterstützte Zeichenkodierung
+   <td><strong>Unterstützte Zeichenkodierung</strong>
    </td>
    <td>UTF-8
    </td>
   </tr>
   <tr>
-   <td><strong>Inkludierte Datenkonvertierung
+   <td><strong>Inkludierte Datenkonvertierung</strong>
 <p>
 (Im Pre-Processing mögliche Anpassung der Daten an für die Software erforderliches Format )
    </td>
@@ -833,13 +630,13 @@ Betreuung von Institutionen: bis zu 50.000 Seiten - ca. 3600 Dollar/Jahr
   </tr>
   <tr>
    <td><strong>Abhängigkeit von anderer Software
-(Falls ja, wird diese Software automatisch mitinstalliert?)
+</strong>(Falls ja, wird diese Software automatisch mitinstalliert?)
    </td>
    <td>❌
    </td>
   </tr>
   <tr>
-   <td><strong>Erforderliche Plug-Ins (bei web-basierten Anwendungen)
+   <td><strong>Erforderliche Plug-Ins </strong>(bei web-basierten Anwendungen)
    </td>
    <td>❌
    </td>
@@ -852,43 +649,43 @@ Betreuung von Institutionen: bis zu 50.000 Seiten - ca. 3600 Dollar/Jahr
    </td>
   </tr>
   <tr>
-   <td><strong>Wartung und ständige Erweiterung
+   <td><strong>Wartung und ständige Erweiterung</strong>
    </td>
    <td>✅ (solange Institutionen Projekte über FTP abwickeln)
    </td>
   </tr>
   <tr>
-   <td><strong>Einbindung der Community
+   <td><strong>Einbindung der Community</strong>
    </td>
    <td>✅via Github
    </td>
   </tr>
   <tr>
-   <td><strong>Dokumentation
+   <td><strong>Dokumentation</strong>
    </td>
    <td>✅ Dokumentation (für Projektleitung)
    </td>
   </tr>
   <tr>
-   <td><strong>Dokumentationssprache
+   <td><strong>Dokumentationssprache</strong>
    </td>
    <td>Englisch
    </td>
   </tr>
   <tr>
-   <td><strong>Dokumentationsformat
+   <td><strong>Dokumentationsformat</strong>
    </td>
    <td>HTML
    </td>
   </tr>
   <tr>
-   <td><strong>Dokumentationsabschnitte
+   <td><strong>Dokumentationsabschnitte</strong>
    </td>
    <td>Project Owner Documentation, FAQ, Descriptions of functionalities (Upload, Transcription, User Management, Project Configuration, Subject Linking, Export), verschiedene How-Tos (inkl. Videomaterial), Installationsanleitung
    </td>
   </tr>
   <tr>
-   <td><strong>Verfügbarkeit von Tutorials
+   <td><strong>Verfügbarkeit von Tutorials</strong>
    </td>
    <td>✅keine Schritt-für-Schritt-
 <p>
@@ -897,7 +694,7 @@ Anleitungen, aber Videomaterial zu Features und Projekten
   </tr>
   <tr>
    <td><strong>Aktiver Support/Community
-(Forum, Slack, Issue Tracker etc.)
+</strong>(Forum, Slack, Issue Tracker etc.)
    </td>
    <td>✅ E-Mail- & Chat-Support, Telefonische Beratung (für Institutionen), Slack Channel, Chat Option, Google Group (für Bug Fixes und Releases), Github-Issue-Mechanismus
    </td>
@@ -910,13 +707,13 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td><strong>Installationsablauf
+   <td><strong>Installationsablauf </strong>
    </td>
    <td>sehr einfach
    </td>
   </tr>
   <tr>
-   <td><strong>Test
+   <td><strong>Test</strong>
 <p>
 (Gibt es ein Test Suite, um zu überprüfen, ob die Installation erfolgreich war?)
    </td>
@@ -924,19 +721,19 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td><strong>Lizenz, unter der das Tool veröffentlicht wurde
+   <td><strong>Lizenz, unter der das Tool veröffentlicht wurde</strong>
    </td>
    <td><a href="https://www.gnu.org/licenses/agpl-3.0.de.html">Affero GP</a><span style="text-decoration:underline;">L</span>
    </td>
   </tr>
   <tr>
-   <td><strong>Registrierung in einem Repository
+   <td><strong>Registrierung in einem Repository</strong>
    </td>
    <td>✅ Github
    </td>
   </tr>
   <tr>
-   <td><strong>Möglichkeit zur Software-Entwicklung beizutragen
+   <td><strong>Möglichkeit zur Software-Entwicklung beizutragen</strong>
    </td>
    <td>✅
    </td>
@@ -950,26 +747,26 @@ Anleitungen, aber Videomaterial zu Features und Projekten
   </tr>
   <tr>
    <td><strong>Benutzerprofil
-(erwartete Nutzer:innen)
+</strong>(erwartete Nutzer:innen)
    </td>
    <td>GeWi-Forschungsinstitutionen und Forschende als Tool-Nutzende
    </td>
   </tr>
   <tr>
    <td><strong>Benutzerinteraktion
-(erwartete Nutzung)
+</strong>(erwartete Nutzung)
    </td>
    <td>Projektkonfiguration und -bearbeitung
    </td>
   </tr>
   <tr>
-   <td><strong>Benutzeroberfläche
+   <td><strong>Benutzeroberfläche</strong>
    </td>
    <td>webbasiertes GUI
    </td>
   </tr>
   <tr>
-   <td><strong>Visualisierungen
+   <td><strong>Visualisierungen </strong>
 <p>
 (Analyse-, Input-, Outputkonfigurationen)
    </td>
@@ -984,14 +781,14 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td><strong>Personenverwaltung
+   <td><strong>Personenverwaltung</strong>
    </td>
    <td>✅Hinzufügen/Einschränkung von Mitarbeitenden möglich
    </td>
   </tr>
   <tr>
    <td><strong>Interne Kommunikationsmöglichkeiten
-(z. B. Annotationsrichtlinien, Kommentarfunktionen, …)
+</strong>(z. B. Annotationsrichtlinien, Kommentarfunktionen, …)
    </td>
    <td>✅ Anlegen von eigenen Hilfstexten, Transkriptionsrichtlinien, Anleitung zum Subject Linking, Forum für Projektdiskussionen, Kommentarfunktion für jede Transkription
    </td>
@@ -1004,31 +801,31 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td><strong>Zentrale/dezentrale Verwaltungsmöglichkeit
+   <td><strong>Zentrale/dezentrale Verwaltungsmöglichkeit</strong>
    </td>
    <td>✅ mehrere Project Owner möglich
    </td>
   </tr>
   <tr>
-   <td><strong>Versionskontrolle
+   <td><strong>Versionskontrolle</strong>
    </td>
    <td>✅ im Interface integriert
    </td>
   </tr>
   <tr>
-   <td><strong>Projektspezifische Einstellungen
+   <td><strong>Projektspezifische Einstellungen</strong>
    </td>
    <td>✅
    </td>
   </tr>
   <tr>
-   <td><strong>API
+   <td><strong>API</strong>
    </td>
    <td>✅
    </td>
   </tr>
   <tr>
-   <td><strong>Möglichkeit auf simultanes Arbeiten
+   <td><strong>Möglichkeit auf simultanes Arbeiten </strong>
    </td>
    <td>❌ Während Bearbeitung der Transkription einer Bilddatei, ist diese gesperrt
    </td>
@@ -1041,7 +838,7 @@ Anleitungen, aber Videomaterial zu Features und Projekten
    </td>
   </tr>
   <tr>
-   <td><strong>Unterstützte Dateiformate
+   <td><strong>Unterstützte Dateiformate</strong>
    </td>
    <td>JPG, PNG, GIF, PDF, ZIP, IIIF (Manifest + Collection)
 <p>
@@ -1049,31 +846,31 @@ Zusätzlich: Import von CONTENTdm, Internet Archive
    </td>
   </tr>
   <tr>
-   <td><strong>Informationen zur Datensicherheit
+   <td><strong>Informationen zur Datensicherheit</strong>
    </td>
    <td>FromThePage erhebt keinen Anspruch auf geistiges Eigentum an Bildern, Transkripten, Annotationen oder Kommentaren, die auf FromThePage gepostet werden; Transkriptionen und Übersetzungen, die auf FromThePage gepostet werden, unterliegen dem Urheberrecht der Originale. FromThePage behält sich das Recht vor, jeglichen Inhalt, der von Nutzer:innen veröffentlicht wird, aus beliebigen Gründen zu entfernen.. FromThePage bewahrt Sicherungskopien von gelöschten Beiträgen oder Konten bis zu 14 Tage nach der Löschung auf den Servern auf.
    </td>
   </tr>
   <tr>
-   <td><strong>Zugänglichkeit von verschiedenen Standorten/Geräten
+   <td><strong>Zugänglichkeit von verschiedenen Standorten/Geräten</strong>
    </td>
    <td> ✅
    </td>
   </tr>
   <tr>
-   <td><strong>Einschränkungen hinsichtlich der Datenmenge
+   <td><strong>Einschränkungen hinsichtlich der Datenmenge</strong>
    </td>
    <td>❌
    </td>
   </tr>
   <tr>
-   <td><strong>Verlustfreier Upload von bereits bearbeiteten Dokumenten
+   <td><strong>Verlustfreier Upload von bereits bearbeiteten Dokumenten </strong>
    </td>
    <td>[nicht anwendbar, da noch keine Annotation stattgefunden hat]
    </td>
   </tr>
   <tr>
-   <td><strong>Unterstützung von IIIF-Import
+   <td><strong>Unterstützung von IIIF-Import</strong>
    </td>
    <td>✅
    </td>
@@ -1087,7 +884,7 @@ Zusätzlich: Import von CONTENTdm, Internet Archive
   </tr>
   <tr>
    <td><strong>Komplexitätsgrad beim Mark-up
-(z. B. Verfügbarkeit von Buttons, Drag&Drop-Funktion, …)
+</strong>(z. B. Verfügbarkeit von Buttons, Drag&Drop-Funktion, …)
    </td>
    <td>Silent Mark-Up
 <p>
@@ -1095,51 +892,51 @@ Tags & Buttons
    </td>
   </tr>
   <tr>
-   <td><strong>Standardeinstellungen entsprechend bestimmten Standard für digitale Editionen
+   <td><strong>Standardeinstellungen entsprechend bestimmten Standard für digitale Editionen </strong>
    </td>
    <td>✅ HTML, TEI
    </td>
   </tr>
   <tr>
-   <td><strong>Anpassungsmöglichkeit und Validierung entsprechend projektspezifischen Konventionen/Schemata
+   <td><strong>Anpassungsmöglichkeit und Validierung entsprechend projektspezifischen Konventionen/Schemata</strong>
    </td>
    <td>Subject Linking - Erweiterung um eigene Kategorien
    </td>
   </tr>
   <tr>
-   <td><strong>Definition eigener/projektspezifischer Tags
+   <td><strong>Definition eigener/projektspezifischer Tags</strong>
    </td>
    <td>❌
    </td>
   </tr>
   <tr>
-   <td><strong>Metadaten-Anreicherung
+   <td><strong>Metadaten-Anreicherung</strong>
    </td>
    <td>✅ Allgemeine Projektmetadaten sowie Metadaten zu einzelnen Werken
    </td>
   </tr>
   <tr>
    <td><strong>Layoutmöglichkeiten
-(z.B. Tabellendarstellung, Spalten wie in Zeitschriften, …)
+</strong>(z.B. Tabellendarstellung, Spalten wie in Zeitschriften, …)
    </td>
    <td>Tabellendarstellung über Markdown, Formularlayout für Werk konfigurierbar
    </td>
   </tr>
   <tr>
-   <td><strong>Eigene Indexierung
+   <td><strong>Eigene Indexierung </strong>
    </td>
    <td>✅ Taxonomie über Subject Index
    </td>
   </tr>
   <tr>
-   <td><strong>Möglichkeit von Textvergleich bzw. Arbeit an Variantenapparat
+   <td><strong>Möglichkeit von Textvergleich bzw. Arbeit an Variantenapparat</strong>
    </td>
    <td>❌
    </td>
   </tr>
   <tr>
    <td><strong>Ansichtsmöglichkeiten
-(z. B. Bearbeitungsansicht, Synopsen-Ansicht, Vorschauansicht, …)
+</strong>(z. B. Bearbeitungsansicht, Synopsen-Ansicht, Vorschauansicht, …)
    </td>
    <td>Bearbeitungsansicht, Bild-Text-Editor-Synopse, Vorschauansicht
 <p>
@@ -1149,7 +946,7 @@ Tags & Buttons
    </td>
   </tr>
   <tr>
-   <td><strong>Verlinkung von Entitäten, NER
+   <td><strong>Verlinkung von Entitäten, NER</strong>
    </td>
    <td>✅ Subject Linking (Personen, Orte und eigene Kategorien)
    </td>
@@ -1162,26 +959,26 @@ Tags & Buttons
    </td>
   </tr>
   <tr>
-   <td><strong>Unterstützte Dateiformate
+   <td><strong>Unterstützte Dateiformate</strong>
    </td>
    <td>HTML, Plain Text (Verbatim, Searchable, Expanded), TEI, IIIF, PDF, DOCX, CSV, ZIP (nur für Projektleitung)
    </td>
   </tr>
   <tr>
    <td><strong>Datenverlust
-(nicht vollständiger Erhalt von Annotationen, die bereits vor Verwendung des Tools gemacht wurden)
+</strong>(nicht vollständiger Erhalt von Annotationen, die bereits vor Verwendung des Tools gemacht wurden)
    </td>
    <td>[nicht anwendbar]
    </td>
   </tr>
   <tr>
-   <td><strong>Validierungsmöglichkeit für TEI-XML vor Export
+   <td><strong>Validierungsmöglichkeit für TEI-XML vor Export</strong>
    </td>
    <td>❌
    </td>
   </tr>
   <tr>
-   <td><strong>Datenaufbewahrung nach Export
+   <td><strong>Datenaufbewahrung nach Export</strong>
    </td>
    <td>Solange das Konto bestehen bleibt, und nach Löschung des Projekts oder des Kontos noch weitere 14 Tage.
    </td>
