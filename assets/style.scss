@@ -237,7 +237,10 @@ b {
 
 img {
   max-width: 100%;
-  padding: 0rem 2rem;
+}
+
+figure img {
+  padding: 0rem 0rem 0rem 2rem;
 }
 
 figcaption {
@@ -250,6 +253,11 @@ p>img {
   text-align: center;
   display: block;
   margin: 0 auto;
+}
+
+
+pre {
+  max-height: 300px;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -407,6 +415,7 @@ p>img {
 //
 // .main
 //
+
 
 .posts>.post {
   padding-bottom: 2em;
