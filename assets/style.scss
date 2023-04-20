@@ -249,6 +249,10 @@ figcaption {
   font-weight: 600;
 }
 
+figure + p {
+  padding: 0rem 0rem 0rem 2rem;
+}
+
 p>img {
   text-align: center;
   display: block;
