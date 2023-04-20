@@ -1,0 +1,363 @@
+
+ METADATEN
+ <!--- ~~~ xml
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+         <title type="full">
+            <title type="main">MS Augsburg, Universitätsbibl., Cod.III.1.2°43 (A1)</title>
+            <title type="desc">Dieses Manuskript beinhaltet mittelalterliche Rezepte in Bastarda.
+               Kenntnis des Bayrischen und mittelalterlichen Lateins von Vorteil.</title>
+         </title>
+         <author>
+            <persName>Unknown</persName>
+         </author>
+         </titleStmt>
+         <editionStmt>
+         <edition>Edition created from new transcripts of this manuscript.</edition>
+         <respStmt xml:id="AU32014648">
+            <resp>Initial upload of this work&#39;s facsimile images and metadata to FromThePage for
+               editing</resp>
+            <persName>ZIM-DigEdTnT</persName>
+         </respStmt>
+         <respStmt xml:id="OU32014648">
+            <resp>Administrator of the Mittelalterliche Kochrezepte transcription project on
+               FromThePage</resp>
+            <persName>ZIM-DigEdTnT</persName>
+         </respStmt>
+         <respStmt xml:id="U32014648">
+            <persName> ZIM-DigEdTnT </persName>
+            <resp> made 40 edits between <date type="first_edit" when="2023-03-24T12:00:58Z">March 24,
+               2023</date> and <date type="last_edit" when="2023-04-13T11:10:05Z">April 13,
+               2023</date>. </resp>
+         </respStmt>
+         <respStmt xml:id="U32014447">
+            <persName> ZIM-student </persName>
+            <resp> made 5 edits between <date type="first_edit" when="2023-03-28T06:46:46Z">March 28,
+               2023</date> and <date type="last_edit" when="2023-03-28T06:49:26Z">March 28,
+               2023</date>. </resp>
+         </respStmt>
+         <respStmt xml:id="U32014648">
+            <resp n="proof_1">Single Proof by:</resp>
+            <name>ZIM-DigEdTnT</name>
+         </respStmt>
+         <respStmt xml:id="U32014447">
+            <resp n="proof_1">Single Proof by:</resp>
+            <name>ZIM-student</name>
+         </respStmt>
+         </editionStmt>
+         <publicationStmt>
+         <publisher>Dynamic TEI export from FromThePage (version 22.10)</publisher>
+         <availability>
+            <p>Text: &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0&quot;&gt;Creative
+               Commons BY 4.0&lt;/a&gt; Faksimiles: &lt;a
+               href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;Creative Commons
+               BY-NC-SA 4.0 &lt;/a&gt;</p>
+         </availability>
+         <date when="2023-04-13T11:27:04+00:00">April 13, 2023</date>
+         </publicationStmt>
+         <sourceDesc>
+         <msDesc>
+            <msIdentifier>
+               <collection>Mittelalterliche Kochrezepte</collection>
+            </msIdentifier>
+            <physDesc>
+               <p>Neue Blattzählung 1-84. Wortreklamanten meist abgeschnitten.Textverlust: 1 Blatt
+               fehlt zwischen fol. 59-60. Bastarda -durchgehend von einer Hand; Nachträge einiger
+               jüngerer Hände, um 1500/Anfang 16. Jh.: 23r, 35r, 73r-79r an den Rändern; geübte Hand,
+               sauberes Schriftbild, Oberlängen orientieren sich am Mittelband. Alter Einband:
+               starker Pergamentumschlag mit übergreifendem Rückendeckel.</p>
+            </physDesc>
+            <history>
+               <origin>
+               <placeName>Unknown</placeName>
+               </origin>
+               <provenance>4. Viertel 15. Jh. Entstehungsort unbekannt. Alter Besitzvermerk fol. 1r
+               durch Übermalen völlig getilgt; Erwerbung des Fürsten Ludwig, vgl. 1r. Oettingisches
+               Wappen und Erwerbsjahr: 1813. Bibliothekssignatur des 19. Jhs.</provenance>
+            </history>
+         </msDesc>
+      </sourceDesc>
+      </fileDesc>
+      ...
+      <profileDesc>
+         <creation>
+            <placeName>Unknown</placeName>
+         </creation>
+         <langUsage>
+            <language ident="gem">Germanic languages</language>
+         </langUsage>
+      </profileDesc>
+      ...
+   </teiHeader>
+   ~~~ --->
+
+
+   ENTITÄTEN:
+
+   <!---~~~xml
+   <encodingDesc>
+      <classDecl>
+      <taxonomy>
+         <category xml:id="C32001131">
+            <catDesc>Gericht</catDesc>
+            <category xml:id="C32001132">
+            <catDesc>Süßspeise</catDesc>
+            <category xml:id="S32080907">
+               <catDesc>
+                  <term>Lebkuchen </term>
+                  <idno>https://www.wikidata.org/wiki/Q2740122</idno>
+                  <note type="categorization">Categories:<ab><ptr ana="#category #root"
+                        target="#C32001131">Gericht</ptr> -- <ptr ana="#category #leaf"
+                        target="#C32001132">Süßspeise</ptr></ab>
+                  </note>
+               </catDesc>
+            </category>
+            </category>
+         </category>
+         <category xml:id="C32001130">
+            <catDesc>Zutaten</catDesc>
+            <category xml:id="S32080908">
+            <catDesc>
+               <term>Honig </term>
+               <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
+                     target="#C32001130">Zutaten</ptr></ab>
+               </note>
+            </catDesc>
+            </category>
+            <category xml:id="S32080911">
+            <catDesc>
+               <term>Ingwer </term>
+               <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
+                     target="#C32001130">Zutaten</ptr></ab>
+               </note>
+            </catDesc>
+            </category>
+            <category xml:id="S32080910">
+            <catDesc>
+               <term>Muskatnuss </term>
+               <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
+                     target="#C32001130">Zutaten</ptr></ab>
+               </note>
+            </catDesc>
+            </category>
+            <category xml:id="S32080909">
+            <catDesc>
+               <term>Nelken </term>
+               <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
+                     target="#C32001130">Zutaten</ptr></ab>
+               </note>
+            </catDesc>
+            </category>
+            <category xml:id="S32080912">
+            <catDesc>
+               <term>Pfeffer </term>
+               <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
+                     target="#C32001130">Zutaten</ptr></ab>
+               </note>
+            </catDesc>
+            </category>
+         </category>
+      </taxonomy>
+      </classDecl>
+   </encodingDesc>
+   ~~~--->
+
+
+TRANSKRIPTION
+   <!---```xml
+   <text>
+      <body>
+         <pb xml:id="F33038493" n="1"
+         facs="http://fromthepage.com/image-service/33038493/full/full/0/default.jpg"/>
+         <div xml:id="OTP33038493">
+            <fw type="pageNum">UB_Augsburg_Cod_III_1_2_43_002r</fw>
+            <p xml:id="OTP33038493P0">Hienach volgenn Etlich ertzneÿ vonn mangerlaÿ dingenn zu sammenn
+               gesammet<lb/> Als du danne hernach wol vindenn wurdest<lb/> Ein purgatz Zu der zeÿtt des
+               herbstes furr allenn gebrechenn <unclear>:</unclear><lb/>
+               <supplied>N</supplied>ym hieffenn die zeÿttig sein vnd mit dem reÿff wol
+               beczwungenn<lb/> vnd nÿm die mit kernn vnd mit all vnd derre die in eynem ofenn vnd<lb/>
+               lege sie danne herauß vnd laß den windt dar durch genn vnd<lb/> nÿm dann einen moerserr
+               vnd stoß die hieffenn vnd misch die mit honig<lb/> vnd das isse das des morgens
+               nüchternn<lb/> Meßigkeit Ist ein aufenthaltung des ganntzen leichnams . Vnd ein
+               starck<lb/> aller gelider . Vnd ein außderung aller boesenn duenst Wann meßigkeit ist<lb/>
+               ein zustoerung aller lasterr<lb/> Wiltu gut <rs ref="#S32080907"> lekuchenn</rs> machenn <choice>
+                  <expan>Recipe</expan>
+                  <abbr>R</abbr>
+               </choice> zu einem seÿdlein <rs ref="#S32080908">hönigs</rs> 1/2 lot <rs
+                  ref="#S32080909"> negelleyn</rs><lb/> 1/2 lot <rs ref="#S32080910"> muscat</rs> 1/2 lot
+                  <rs ref="#S32080911"> Ingwerr</rs> 1/2 lot <rs ref="#S32080912"> pfeffers</rs> vnd stoß
+               das zu sammenn vnd dar<lb/> auß mach einen teig vnd zu einer moß honigs nÿm zwirr souil
+               als vor be=<lb/> zeichent stett<lb/> Wiltu ein gutte salsen machen in der fastenn Nÿm
+               merrech vnd mandel<lb/> kernn vnd stoß die in einem moerserr vnd thue wein dar zu das ist
+               gut<lb/> Die vier kunigreich der werlt <lb/> Orientalis [que est] Calida et humida<lb/>
+               Meridionalis [que est] Calida et sicca<lb/> Occidentalis que est frigida et humida<lb/>
+               Septembrionalis [que est] Frigida et sicca<lb/> Der lentz ist hitzig vnd feucht Die Zeit
+               ist gemischet vnd dem lufft<lb/> geleich . Vnd in der Zeit so wirt bewegt das plut . Vnd
+               in der Zeit ist<lb/> gesund alles das einen linden Complexion vnd naturr ist Als Iunge
+               hunerr<lb/> vnd eÿerr doch soltu ir auch nit zu vil niessenn Vnd lactuken vnd
+               agreste<lb/> vnd geÿß milch Es ist kein zeit des ganntzen Iars die nutzerr ist dem<lb/>
+               aderlassenn danne dise zeit vnd ist nutz die bewegung des leÿbes<lb/> vnd die
+               entschliessung des leÿbs vnd padenn Auch ist in diser Zeit<lb/> gut Ertzneÿ vnd getranck
+               zu nemmen<lb/> Der Summer Ist hitzig vnd durrr In der Zeit wirt verzert das plut<lb/> vnd
+               wechst in dem menschen die rot Colera . Vnd in der Zeit soll man<lb/> sich huttenn vor
+               allenn dingenn die hitzig vnd durr sein Auch sol man<lb/> sich huttenn vor v̈brigem essenn
+               vnd trinckenn das nit auß geleschet werd<lb/> die naturlich hitze . Inn der zeÿt des
+               Summers soll man sich gerbrauchen<lb/> aller ding die kalter naturr sein Als kalb fleÿsch
+               vnd essig et cucurbite<lb/> et pulli saginati ex farina ordeacea Vnd von der frucht die
+               eins guttenn<lb/> geschmacks ist Et mala atra et malignata similer aerea Vnd die do sein
+               in den<lb/>
+            </p>
+            <note resp="#U32014648">Darstellungsproblem bei v mit Trema darüber!</note>
+         </div>
+
+         <pb xml:id="F33038494" n="2"
+         facs="http://fromthepage.com/image-service/33038494/full/full/0/default.jpg"/>
+         <div xml:id="OTP33038494">
+            <fw type="pageNum">UB_Augsburg_Cod_III_1_2_43_059r</fw>
+            <p xml:id="OTP33038494P0">Hienach volgt vonn dem kochenn vnd hat gemacht meyster Eberhart
+               Ein koch<lb/> herczog heinrichs zu lands hut Zum Ein salsenn von weichselnn zu machen<lb/>
+               Item Wiltu machen ein gutte salsenn von weichselnn So <unclear>?</unclear> thue die
+               weich=<lb/> sell in einen hafen vnd setz die auff ein glut vnd laß sie siedenn vnd<lb/>
+               laß dann wider erkaltenn vnd streich sie durch ein tuch vnd thue sie<lb/> dann wider in
+               den hafenn vnd setz sie auff ein glut vnd laß sie wol sieden<lb/> vnd rurr sie piß sie
+               dick wirt vnd thue dann <rs ref="#S32080908">honig </rs>dar an vnd geribens<lb/> prot vnd
+               negellein vnd gut gestüp vnd thue sie in ein feßlein sie pleibt<lb/> dir gut drew oder
+               vier iarr<lb/> Ein gutte salsen zu machen in der fastenn<lb/> Item Nÿm merrich vnd zustoß
+               den in einem moerserr vnd nÿm mandelkernn<lb/> oder nuß vnd zustoß die auch vnd geuß ein
+               wein dar an Merrich<lb/> bricht den stein garr serr wenn man in isset in der kost<lb/>
+               Item Ein andre salsenn Saluia petrocilius menta vnd <rs ref="#S32080912"> pfefferr</rs>
+               das soll<lb/> man zustossenn mit essig das ist ein salsen die macht lustig zu essenn<lb/>
+               Item Ein essenn von gebratenn arbeissenn Nÿm gesotenn arbeÿß vnd<lb/> slach sie durch
+               ein tuch oder durch ein sib vnd slach vil eÿerr<lb/> darzu als vil der arbeiß sein vnd
+               seud es in putternn vnd steck es<lb/> an einen spiß vnd brot sie wol vnd beslach sie mit
+               eÿernn vnd mit<lb/> kraut vnd gib es hin versaltz es nit<lb/> Ein holder muß zu machenn
+               Nÿm holderplut vnd zureib die in kuee<lb/> milch vnd nÿm mel vnd mach ein mus dar auß
+               das ist gut zu<lb/> dem haubt vnd den sÿnnenn<lb/> Ein gut mus zu machenn So nÿm nuß
+               kernn vnd stoß die clein vnd<lb/> streich die durch mit einerr sussenn milch vnd mit
+               susser semell<lb/> brosem die wol gesotenn sein vnd thue schmaltz dar an genug vnd<lb/>
+               rurr es ab mit eÿer totternn vnd wurtz es wol vnd versaltz es nit<lb/> Wiltu machen ein
+               gebraten muß vonn vischennn So nÿm per visch<lb/> die peÿß in essig vnd wurff die in ein
+               mandel milch die mit reÿß<lb/> sein wol gemengt vnd ein wenig schmaltz dar an das wellig
+               sej<lb/> versaltz es nit<lb/> Item Ein essenn vonn einer lebernn eins kalbs Nÿm ein
+               lebernn von einem<lb/> kalb vnd hack sie clein vnd würtz sie wol vnd nÿm dann einen<lb/>
+               hewrigenn speck vnd weinperr vnd leg das netz furr dich vnd be=<lb/> streich es wol mit
+               totternn vnd nÿm dann die lebernn vnd slach<lb/> ein netz dar veberr vnd verspeil das wol
+               vnd leg sie auff ein rost<lb/> vnd laß sie pratenn vnd beslach sie halb mit totternn die
+               rot sein dar </p>
+         </div>
+
+         <pb xml:id="F33038495" n="3"
+         facs="http://fromthepage.com/image-service/33038495/full/full/0/default.jpg"/>
+         <div xml:id="OTP33038495">
+            <fw type="pageNum">UB_Augsburg_Cod_III_1_2_43_059v</fw>
+            <p xml:id="OTP33038495P0">nach an der andernn seittenn mit grunen totternn vnd peterlein vnd
+               versaltz es nit<lb/> Wiltu machen ein meyschen kuchenn So nÿm auff zehen eÿer vnd
+               zuslach<lb/> sie wol vnd nÿm darzu peterlein vnd rurr es vndereinander vnd nÿm
+               einen<lb/> morserr vnd setz auff ein kolenn vnd thue dar ein einen loeffel vol
+               schmaltz<lb/> vnd laß es heÿß werdenn vnd geuß die eÿerr darein vnd laß es kul
+               pachen<lb/> vnd thu es also gantz auff ein schussel versaltz es nit<lb/> Item Wiltu machen
+               ein essen in dem meÿen das heÿßt ein gespoet So nym<lb/> einen fliessendenn keß vnd
+               schneid den in vil schnittenn die duenn sein<lb/> vnd nÿm darzu sechs eÿer vnd slach die
+               auff den keß vnd nÿm<lb/> meichßige putternn in ein pfannen vnd thue den keß mit den
+               eÿernn<lb/> vber das fewrr vnd zeuch es eÿ dar mit auff das es slecht werr vnd<lb/>
+               richte es an vnd versaltz es nicht<lb/> Item einen fladenn zu machenn von fischenn
+               velcherlej sie sind So<lb/> nÿm ein dicke mandelmilch wol gemengt mit reiß mel vnd
+               thue<lb/> dar ein einen apffel oderr zwenn vnd ein wenig wurtz vnd seud<lb/> es in einem
+               ofen vnd laß es pachenn vnd versalcz es nit<lb/> Wiltu machen morchen vmb weihennachtenn
+               So nÿm ein teick<lb/> auß weissem brot vnd auß ein wenig melbs vnd schla eÿer dar
+               an<lb/> vnd mach zwen knebel vnd wurff die in den teick vnd zeuch<lb/> sie darInnen vmb
+               vnd leg sie in ein schmaltz das nit zu heÿß<lb/> sej vnd wenn es ein wenig gepack So nÿm
+               es her wider auß<lb/> vnd schneÿd es dann mitten auff dem knebel auff von einander<lb/>
+               vnd full es danne mit ein geruntenn eÿernn vnd zeuch es durch<lb/> einen lindenn
+               straubenn teick leg es in ein schmaltz vnd laß es<lb/> pachenn vnd setz die morchen dar
+               ein vnd laß sie pachenn<lb/> Wiltu machen ein gestrocztes gepachens So mach ein teÿck
+               von<lb/> eÿtell eÿernn vnd wurtz in wol vnd mach in gel vnd warmm
+                  <unclear>du</unclear><note n="*" type="footnote">Lesart nach Feyl: dutzend</note><lb/>
+               gutter holmm in den teick das sie naß werdenn vnd nÿm sie dann<lb/> her auß vnd pack es
+               in einem schmaltz vnd versaltz nit<lb/> Wiltu machen gut kuchenn vonn eÿernn So nÿm
+               eÿer wie vil<lb/> du wilt vnd zu slach die wol vnd schneid semel funf lot dar<lb/> vnter
+               vnd thue dar ein weinperr vnd schmaltz in ein pfannen des<lb/> genug sej vnd geuß die
+               eÿer dar ein vnd laß es packenn ÿnnenn<lb/> vnd aussenn do mit slach es auff ein panck
+               vnd hack dar vnter<lb/> gut wurtz vnd schneid es zu scheubenn vnd richt es an<lb/> Item
+               Ein essenn von milch kuchenn So soltu sie clein schnëyden<note n="*" type="footnote"
+                  >Rezept endet hier</note>
+            </p>
+         </div>
+
+         <pb xml:id="F33038496" n="4"
+         facs="http://fromthepage.com/image-service/33038496/full/full/0/default.jpg"/>
+         <div xml:id="OTP33038496">
+            <fw type="pageNum">UB_Augsburg_Cod_III_1_2_43_060r</fw>
+            <p xml:id="OTP33038496P0"><note n="*" type="footnote">Rezept beginnt inmitten des
+                  Textes</note>hafen vnd geuß ein wasserr dar an vnd deck es zu vnd laß siedenn so
+               wirt<lb/> es sich strecken in dem glaß das man sicht sein fuß vnd flügel vnd<lb/> den
+               ganntzen pöttich so ist es gerecht<lb/> Wiltu machenn dreÿerlej essens an einem visch So
+               nÿm ein hecht vnd<lb/> slach vmb das mittel teÿl ein naß tuch vnd leg in auff ein rost
+               vnd<lb/> saltz in vnd laß in pratenn vnd das foderr teil bespreng mit melb<lb/> vnd begeuß
+               mit schmaltz das heÿß sej vnd das tuch begeuß mit<lb/> heissem wein vnd das hinder teÿl
+               prett sich selbs auff dem rost<lb/> Item vt scito coquantur carnes Recipe aliquas pecias
+               de <note n="*Laut Feyl hier: vino" type="footnote"><unclear>vitro</unclear></note> Et pone
+               in ollam<lb/> ad carnes crudas et sic coquantur<lb/> Item ad extrahendum sal de cibo nimis
+               salsato Recipe de farina frumenti in vna<lb/> pecia lini panni et dimitte bulire
+               intus<lb/> Item Ad appetitum comedendi valet illa salsa facta cum aleo Et appone
+               piper<lb/> ad triginta grana et hoc simul tunde Et Ieiunus per duos dies comede<lb/> etiam
+               appone de saluia tria folia cum sale modico Vel accipe aleum cum<lb/> bibenella et fac
+               succum<lb/> Item Wiltu swartz fisch machenn So laß die visch siedenn an die<lb/> stat vnd
+               nÿm dann gestossenn negellein vnd thue die dar an <unclear>?</unclear><lb/> vnd laß sie
+               dann noch ein guttenn wal thun<lb/> Item Vonn hechtenn wirt garr schoenns vnd lawters
+               gestanndenn<lb/> also das es durchsichtig wirt<lb/> Wiltu einen gutten stockfisch machenn
+               So laß in siedenn als ein kalb<lb/> fleisch vnd laß in ein siedenn auff halben <choice>
+                  <reg>wegk</reg>
+                  <orig>wogk</orig>
+               </choice> vnd seig dann die<lb/> brue dar vonn vnd schuet den stockvisch herauß vnd
+               erclaub in<lb/> wol vnd nÿm dann ein pfannen vnd thue smaltz dar ein vnd laß<lb/> es
+               warmm werdenn vnd leg dann den stockvisch in die putternn<lb/> vnd laß sie dar ÿnnen
+               erhitzenn vnd nÿm dann Ingwerr vnd saffran<lb/> mit des visch brue vnd ferb das do mit
+               ein vnd geuß es veber<lb/> den stock <del>in die</del> visch in die pfannen vnd laß es ein
+               wal oder<lb/> drej thun so ist er gerecht<lb/> Item Hienach volgt wie man ein ganß pratenn
+               soll So laß sie<lb/> vor zwenn oder drej tag wol hungernn das die bösen predenn<lb/> die
+               in ir sein her auß genn vnd soll sie dann nernn mit kornn vnd dar<lb/> nach tötte sie vnd
+               prate sie pej dem fewerr vnd du solt dar ein<lb/> stossen saluia vnd ander gut wuertz das
+               der safft dardurch gee<lb/> vnd man soll sie besprengenn mit wein oder mit essigk das daz
+               schmaltz </p>
+         </div>
+
+         <pb xml:id="F33038497" n="5"
+         facs="http://fromthepage.com/image-service/33038497/full/full/0/default.jpg"/>
+         <div xml:id="OTP33038497">
+            <fw type="pageNum">UB_Augsburg_Cod_III_1_2_43_060v</fw>
+            <p xml:id="OTP33038497P0">do vonn trieff Wann das genß schmaltz soll man nit essenn wann es
+               macht<lb/> den menschen krannck wann die feistenn kumbt vonn boeser feuchtigkeit<lb/> vnd
+               wer gesund ist der soll die gans also gebratenn essenn so schadt<lb/> sie dester mÿnderr
+               Wer aber krannck ist der soll wenig do von essenn<lb/> Wenn man sie kocht vnd seudt in
+               wasser so ist sie vngesund wann dann<lb/> so mügenn die boesen preden nit herauß genn von
+               verhinderung wegen<lb/> des wassers<lb/> Hienach volgt vonn den kuchenspeisen warr zu sie
+               gut sein<lb/> Item Reÿß kelt vnd hitzigt nit vnd speißt serr vnd wenn mans wol seudt<lb/>
+               mit milch so macht es vil plutz vnd doch so schadt es den lewten<lb/> die den grymmenn in
+               dem leib habenn vnd stupfft vnd wirt nit<lb/> schier verdewt<lb/> Hirß zu essenn kelt vnd
+               derrt vnd stopffet vnd speist nit wol<lb/> vnd das selb thut auch der habernn vnd
+               spelt<lb/> Gerstenn Blewet vnd keltet vnd speist nit wol vnd schadt allen<lb/> den lewtenn
+               die geprestenn habenn vnd von kalter natur kumbt oder<lb/> das grymmenn in dem leib hat
+               Aber hitzigenn lewtenn vnd die do gern<lb/> cleiner wurdenn den ist sie gut vnd wenn man
+               sie isset oderr trincket<lb/> mit venchel samenn so ist sie gut furr etlichenn gebresten
+               an der<lb/> brust vnd spricht Auicenna das gerstenn wasserr schadet dem magen<lb/> der do
+               kalt ist Es ist auch Rittigenn lewtenn garr nuetz<lb/> Linßenn Sein bescheidenlich heÿß
+               vnd derren vnd machenn vil plutz<lb/> vnd so man sie seudt mit essig so erleschenn sie die
+               enzuendung des<lb/> plutz Vnd wer sie dick isset dem machen sie vinsterr awgenn do<lb/>
+               vonn sie vast derrent Auicenna spricht das sie schadenn dem magenn<lb/> vnd blewend vnd
+               stopffend<lb/> Die kichernn Hitzenn vnd plewend vnd machenn pruntzen vnd machenn<lb/> den
+               frawenn ire Recht zu vier wochenn einß komenn als es sein soll<lb/> vnd spricht Auerrois
+               das sie prechenn den stein der do leÿt in den<lb/> lendenn oder der do leit in der
+               blosenn vnd auch die brüe mit<lb/> der sie gesotenn werdenn vnd darczu sein die swartzen
+               kichernn pesserr<lb/> dann die weissenn Vnd Galienus spricht das bru von kichernn so<lb/>
+               man sie seudt die ist der lebernn gut wann es reinigt sie vnd die<lb/> nÿren do der stein
+               wechst den schleim vnd treibt vil vnflatz<lb/> vonn dem menschenn<lb/> Arbeißenn Brüe hat
+               die selben krafft aber nit als krefftigklichenn<lb/> do vonn so man kichernn nit hat so
+               seudt man arbeiß kichernn<lb/> oder arbeiß die grun sein so soll man <add>nit</add> essenn
+               wann sie machenn<lb/> em menschenn boese feuchtigkeit </p>
+         </div>
+
+      </body>
+   </text>
+   ~~~--->
