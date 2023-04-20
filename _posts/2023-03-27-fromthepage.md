@@ -238,7 +238,11 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    document_set: ''
    #you can also put multiple document sets in arrays like ['Diaries', 'Public']
    ```
-   → Leider sind wir hier hinsichtlich unserer Metadaten etwas eingeschränkt und können den Werken nur jene Metadaten mitgeben, für die es in der Vorlage auch eine entsprechende Vorgabe gibt. Sollten die Metadaten erst im Zuge des Projekts erforscht werden, können diese auch erst später in den allgemeinen Einstellungen zur Sammlung sowie in den Einstellungen zum Werk ergänzt werden. Für Nutzer:innen, die lieber mit einer grafischen Oberfläche arbeiten, empfiehlt sich ebenfalls die Metadaten in den allgemeinen Einstellungen einzutragen (siehe Punkt “Metadaten-Anreicherung” unter dem Punkt “Einstellungen für das jeweilige Werk”).
+   → Leider sind wir hier hinsichtlich unserer Metadaten etwas eingeschränkt und können den Werken nur jene Metadaten mitgeben, für die es in der Vorlage auch eine entsprechende Vorgabe gibt. Sollten die Metadaten erst im Zuge des Projekts erforscht werden, können diese auch erst später in den allgemeinen Einstellungen zur Sammlung sowie in den Einstellungen zum Werk ergänzt werden.
+   ```xml
+   <test></test>
+   ```
+   Für Nutzer:innen, die lieber mit einer grafischen Oberfläche arbeiten, empfiehlt sich ebenfalls die Metadaten in den allgemeinen Einstellungen einzutragen (siehe Punkt “Metadaten-Anreicherung” unter dem Punkt “Einstellungen für das jeweilige Werk”).
    * Nach erfolgreichem Upload kann man die Werke in der “Works List” einsehen und für die einzelnen Werke noch weitere Einstellungen vornehmen. Auf unserem Dashboard sollten wir nun unsere Werke einsehen können.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-dashboard.PNG" description="Abb. x: Dashboard-Ansicht der Werke einer Sammlung" %}
 ## 3.  Projektkonfigurationen
@@ -259,7 +263,7 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    * **Erstellung von Metadaten für einzelne Werke**: Damit unsere Transkribierenden uns auch bei der Anreicherung mit Metadaten helfen können, aktivieren wir die Metadaten-Beschreibung in den Einstellungen (Abb. z - d). Auch hierfür erscheint in der Navigation nun ein neuer Reiter (Metadata Fields), in dem die entsprechenden Voreinstellungen getroffen werden können.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/metadata-fields.PNG" description="Abb. x: Metadaten-Felder" %}
    * **Einrichtung eines Forums:** Um auch eine aktive Diskussion zwischen den Mitarbeitenden in unserem Projekt zu ermöglichen, eröffnen wir zudem ein Forum (Abb. z - e).
-   → Durch das An- oder Abwählen von diversen Funktionalitäten in den Projekteinstellungen erweitert sich übrigens das Navigationsmenü um entsprechende Tabs (z. B. das Aktivieren des Buttons “Enable Forum” führt dazu, dass im Projekt-Dashboard der Reiter “Forum” zur Verfügung steht.
+   → Durch das An- oder Abwählen von diversen Funktionalitäten in den Projekteinstellungen erweitert sich übrigens das Navigationsmenü um entsprechende Tabs. Das Aktivieren des Buttons “Enable Forum” führt also dazu, dass im Projekt-Dashboard der Reiter “Forum” zur Verfügung steht.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-dashboard-tabs.PNG" description="Abb. x: Tab-Erweiterung im Projektdashboard" %}
    * **Anpassungen des Transkriptionseditors**: Um auch für Transkribierende, die bisher noch nie oder nur wenig mit spitzen Klammern gearbeitet haben, die Transkriptionsarbeit möglichst einfach zu gestalten, nutzen wir die Möglichkeit, die vordefinierten Editor-Buttons (derzeit sind 21[ Tags ](https://content.fromthepage.com/project-owner-documentation/advanced-editor/)verfügbar) zu aktivieren (Abb. z - f).
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/editor-buttons.PNG" description="Abb. x: Editor-Buttons" %}
