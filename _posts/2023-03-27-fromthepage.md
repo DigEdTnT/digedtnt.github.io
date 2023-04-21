@@ -182,18 +182,11 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 * Metadaten aus den Werk-Einstellungen werden nicht in den TEI-Export integriert
 * Exportiertes TEI ist nicht valide (siehe unter Export der Dokumente)
 * Keine XSL-Transformationen  innerhalb des Systems möglich oder durchführbar
-~~~xml
-<test></test>
-~~~
 
 
 # Einrichtung & Erste Schritte
 
 Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf mit dem Transkriptions- und Annotationstool FromThePage beschrieben werden.
-```xml
-<test></test>
-```
-
 
 
 ## 1.  Registrierung
@@ -205,6 +198,9 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    * Für unser Projekt legen wir eine Sammlung mit Kochrezepten aus dem Mittelalter an.
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/create-collection.PNG" description="Abb. x: Anlegen einer Sammlung" %}
    * In unserem Beispielprojekt handelt es sich um verschiedene Manuskripte aus unterschiedlichen Regionen und mit unterschiedlichen Handschriften, die zu unterschiedlichen Zeiten erstellt wurden. Im nächsten Schritt legen wir also in unserer Sammlung für jedes Manuskript ein eigenes Werk an.
+   ```xml
+   <test></test>
+   ```
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/create-work.PNG" description="Abb. x: Werke erstellen" %}
    * Für einen möglichst schnellen Upload mit wenigen Klicks wählen wir die Möglichkeit, eine ZIP-Datei mit den gesammelten Bilddateien von zwei Manuskripten hochzuladen. Wichtig dabei ist, die Manuskripte in separaten Ordnern abzuspeichern, damit diese direkt als eigenständige Werke erkannt werden.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/zip-folder.PNG" description="Abb. x: ZIP-Upload" %}
@@ -249,25 +245,25 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-dashboard.PNG" description="Abb. x: Dashboard-Ansicht der Werke einer Sammlung" %}
 ## 3.  Projektkonfigurationen
 ### 3.1. Einstellungen im Projekt-Dashboard
-   * **Allgemeine Einstellungen:** In den Einstellungen am Projekt-Dashboard konfigurieren wir schließlich die Ansicht, die den Transkribierenden zur Verfügung steht. Wir können unserer Projektseite zum Beispiel eine eigene URL zuweisen (Abb. x - a), einen eigenen Einladungslink zum Transkriptionsprojekt erstellen (Abb. x - f), ein Projektbild (Abb. x - e) sowie einen eigenen Footer gestalten (Abb. x - c), um z. B. direkten Kontakt zur Projektleitung zu ermöglichen. Die Beschreibung, die wir beim Anlegen der Sammlung eingefügt haben, scheint hier bereits auf und kann noch weiter adaptiert werden (Abb. x - b).
+   * **Allgemeine Einstellungen:** In den Einstellungen am Projekt-Dashboard konfigurieren wir schließlich die Ansicht, die den Transkribierenden zur Verfügung steht. Wir können unserer Projektseite zum Beispiel eine eigene URL zuweisen (Abb. x: a), einen eigenen Einladungslink zum Transkriptionsprojekt erstellen (Abb. x: f), ein Projektbild (Abb. x: e) sowie einen eigenen Footer gestalten (Abb. x: c), um z. B. direkten Kontakt zur Projektleitung zu ermöglichen. Die Beschreibung, die wir beim Anlegen der Sammlung eingefügt haben, scheint hier bereits auf und kann noch weiter adaptiert werden (Abb. x: b).
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup1.PNG" description="Abb. x: Konfiguration des Projekts " %}
-   * **Einschränkung der Projektmitarbeitenden:** Da wir unser Projekt nur einem eingeschränkten Kreis an Mitarbeitenden zur Verfügung stellen wollen, nutzen wir außerdem die Möglichkeit, unsere Sammlung auf privat zu stellen (Abb. x - g) sowie den Transkribierendenkreis einzuschränken (Abb. x - h) und nur bestimmte registrierte Mitarbeitende über ihre E-Mail-Adresse hinzuzufügen.
-   * **Adaptierung der Hilfestellungen für das Projektteam:** FromThePage ermöglicht uns, auch diverse Hilfestellungen für unsere Transkribierenden anzupassen. Es können hier also noch mal Transkriptionsrichtlinien festgelegt werden (Abb. x - d), die für alle Werke dieser Sammlung gelten. In unserem Fall haben wir mit der YAML-Datei bereits unsere Richtlinien hochgeladen und finden diese nun in den entsprechenden Feldern. Die englischen Vorlagen für den allgemeinen Hilfetext sowie für das Subject Linking ändern wir vorerst nichts (Abb. y - a).
-   * **API-Aktivierung:** Die Zugänglichkeit des Projekts über eine API lassen wir für unser Projekt vorerst deaktiviert (Abb. y - b).
-   * **Erweiterung der Projektleitung:** Nachdem wir in unserem Projekt zwei Projektleiter:innen haben, fügen wir außerdem noch einen zweiten Projektleiter hinzu (Abb. y - c). Hierzu muss die zweite Person ebenfalls registriert sein und die Mailadresse muss bekannt sein.
+   * **Einschränkung der Projektmitarbeitenden:** Da wir unser Projekt nur einem eingeschränkten Kreis an Mitarbeitenden zur Verfügung stellen wollen, nutzen wir außerdem die Möglichkeit, unsere Sammlung auf privat zu stellen (Abb. x: g) sowie den Transkribierendenkreis einzuschränken (Abb. x: h) und nur bestimmte registrierte Mitarbeitende über ihre E-Mail-Adresse hinzuzufügen.
+   * **Adaptierung der Hilfestellungen für das Projektteam:** FromThePage ermöglicht uns, auch diverse Hilfestellungen für unsere Transkribierenden anzupassen. Es können hier also noch mal Transkriptionsrichtlinien festgelegt werden (Abb. x: d), die für alle Werke dieser Sammlung gelten. In unserem Fall haben wir mit der YAML-Datei bereits unsere Richtlinien hochgeladen und finden diese nun in den entsprechenden Feldern. Die englischen Vorlagen für den allgemeinen Hilfetext sowie für das Subject Linking ändern wir vorerst nichts (Abb. y: a).
+   * **API-Aktivierung:** Die Zugänglichkeit des Projekts über eine API lassen wir für unser Projekt vorerst deaktiviert (Abb. y: b).
+   * **Erweiterung der Projektleitung:** Nachdem wir in unserem Projekt zwei Projektleiter:innen haben, fügen wir außerdem noch einen zweiten Projektleiter hinzu (Abb. y: c). Hierzu muss die zweite Person ebenfalls registriert sein und die Mailadresse muss bekannt sein.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup2.PNG" description="Abb. x: Weitere Projektkonfigurationen" %}
-   * **Aktivierung der Indexierung (Subject Indexing):** Wir möchten unser Team außerdem motivieren, in den Rezepten Zutaten und Speisen zu annotieren und aktivieren daher die Möglichkeit der Indexierung von Entitäten (Abb. z - a). Die Kategorien und Entitäten können nur von Projektinhaber:innen angelegt werden. Die Transkribierenden können dann in ihrem Projekt-Dashboard die Entitäten einsehen und bearbeiten, nicht aber neue Entitäten anlegen.
+   * **Aktivierung der Indexierung (Subject Indexing):** Wir möchten unser Team außerdem motivieren, in den Rezepten Zutaten und Speisen zu annotieren und aktivieren daher die Möglichkeit der Indexierung von Entitäten (Abb. z: a). Die Kategorien und Entitäten können nur von Projektinhaber:innen angelegt werden. Die Transkribierenden können dann in ihrem Projekt-Dashboard die Entitäten einsehen und bearbeiten, nicht aber neue Entitäten anlegen.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup3.PNG" description="Abb. x: Weitere Projektkonfigurationen" %}
    Es ist auch möglich, die Entitäten (in einem CSV) hochzuladen, wobei sich diese in unserem Projekt erst im Laufe der Transkription ergeben werden.
-   * **Sprachauswahl:** In den Projekteinstellungen lässt sich außerdem die Sprache und für Transkriptionen in Standardsprache auch eine Rechtschreibprüfung einstellen. Da wir es in unserem Projekt bei jedem Manuskript bzw. Werk mit diversen mittelalterlichen Varianten der deutschen Sprache zu tun haben, wählen wir hier “Germanic languages” (Abb. z - b). Auf eine Aktivierung der Speech-to-text-Funktion verzichten wir vorerst, da wir nicht davon ausgehen, dass unsere Mitarbeitenden fließend Frühneuhochdeutsch sprechen; und auch die Rechtschreibprüfung wird nicht aktiviert, da diese für unsere Texte mit großer Wahrscheinlichkeit wenig hilfreich ist.
+   * **Sprachauswahl:** In den Projekteinstellungen lässt sich außerdem die Sprache und für Transkriptionen in Standardsprache auch eine Rechtschreibprüfung einstellen. Da wir es in unserem Projekt bei jedem Manuskript bzw. Werk mit diversen mittelalterlichen Varianten der deutschen Sprache zu tun haben, wählen wir hier “Germanic languages” (Abb. z: b). Auf eine Aktivierung der Speech-to-text-Funktion verzichten wir vorerst, da wir nicht davon ausgehen, dass unsere Mitarbeitenden fließend Frühneuhochdeutsch sprechen; und auch die Rechtschreibprüfung wird nicht aktiviert, da diese für unsere Texte mit großer Wahrscheinlichkeit wenig hilfreich ist.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/language-options-ger.PNG" description="Abb. x: Sprachauswahl" %}
-   * **Einstellung des Revisionstyps**: Da wir in unserem Editionsprojekt nach dem 4-Augen-Prinzip arbeiten, stellen wir den Review type auf “restricted”, so dass alle fertiggestellten Transkriptionen unbedingt von einem autorisierten Reviewer noch einmal gelesen und gegebenenfalls korrigiert werden (Abb. z - c).
-   * **Erstellung von Metadaten für einzelne Werke**: Damit unsere Transkribierenden uns auch bei der Anreicherung mit Metadaten helfen können, aktivieren wir die Metadaten-Beschreibung in den Einstellungen (Abb. z - d). Auch hierfür erscheint in der Navigation nun ein neuer Reiter (Metadata Fields), in dem die entsprechenden Voreinstellungen getroffen werden können.
+   * **Einstellung des Revisionstyps**: Da wir in unserem Editionsprojekt nach dem 4-Augen-Prinzip arbeiten, stellen wir den Review type auf “restricted”, so dass alle fertiggestellten Transkriptionen unbedingt von einem autorisierten Reviewer noch einmal gelesen und gegebenenfalls korrigiert werden (Abb. z: c).
+   * **Erstellung von Metadaten für einzelne Werke**: Damit unsere Transkribierenden uns auch bei der Anreicherung mit Metadaten helfen können, aktivieren wir die Metadaten-Beschreibung in den Einstellungen (Abb. z: d). Auch hierfür erscheint in der Navigation nun ein neuer Reiter (Metadata Fields), in dem die entsprechenden Voreinstellungen getroffen werden können.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/metadata-fields.PNG" description="Abb. x: Metadaten-Felder" %}
-   * **Einrichtung eines Forums:** Um auch eine aktive Diskussion zwischen den Mitarbeitenden in unserem Projekt zu ermöglichen, eröffnen wir zudem ein Forum (Abb. z - e).
+   * **Einrichtung eines Forums:** Um auch eine aktive Diskussion zwischen den Mitarbeitenden in unserem Projekt zu ermöglichen, eröffnen wir zudem ein Forum (Abb. z: e).
    → Durch das An- oder Abwählen von diversen Funktionalitäten in den Projekteinstellungen erweitert sich übrigens das Navigationsmenü um entsprechende Tabs. Das Aktivieren des Buttons “Enable Forum” führt also dazu, dass im Projekt-Dashboard der Reiter “Forum” zur Verfügung steht.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-dashboard-tabs.PNG" description="Abb. x: Tab-Erweiterung im Projektdashboard" %}
-   * **Anpassungen des Transkriptionseditors**: Um auch für Transkribierende, die bisher noch nie oder nur wenig mit spitzen Klammern gearbeitet haben, die Transkriptionsarbeit möglichst einfach zu gestalten, nutzen wir die Möglichkeit, die vordefinierten Editor-Buttons (derzeit sind 21[ Tags ](https://content.fromthepage.com/project-owner-documentation/advanced-editor/)verfügbar) zu aktivieren (Abb. z - f).
+   * **Anpassungen des Transkriptionseditors**: Um auch für Transkribierende, die bisher noch nie oder nur wenig mit spitzen Klammern gearbeitet haben, die Transkriptionsarbeit möglichst einfach zu gestalten, nutzen wir die Möglichkeit, die vordefinierten Editor-Buttons (derzeit sind 21[ Tags ](https://content.fromthepage.com/project-owner-documentation/advanced-editor/)verfügbar) zu aktivieren (Abb. z: f).
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/editor-buttons.PNG" description="Abb. x: Editor-Buttons" %}
 ### 3.2. Einstellungen für das jeweilige Werk
    * **Allgemeine Einstellungen**: Auch für jedes Werk - also in unserem Fall für jedes Manuskript selbst - können wir diverse Voreinstellungen vornehmen. Darunter fallen die Vergabe eines Titels, die Zuordnung zu einer Sammlung bzw. einem Projekt, die Anpassung der URL sowie die Vergabe eines Identifiers von einem externen System (Abb. i: a).
@@ -275,8 +271,8 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobei in unserem Fall unsere Seiten weder als semantische Einheiten zu betrachten sind, noch eine [OCR](https://de.wikipedia.org/wiki/Texterkennung)-Korrektur anwendbar ist, und wir diese Optionen daher deaktiviert lassen.
    * **Beschreibung des Werkes:** Um unseren Transkribierenden einen Anhaltspunkt zu bieten, mit welcher Hand und welcher Sprache bzw. welchem Dialekt sie konfrontiert werden, halten wir diese Informationen bereits in den jeweiligen Werkbeschreibungen bereit (Abb. i: b).
    * **Transkriptionsrichtlinien:** Diese werden grundsätzlich von den Projekt-Einstellungen übernommen, können aber hier noch weiter angepasst werden. In unserem Fall verzichten wir auf Änderungen, da für alle Manuskripte die gleichen Richtlinien gelten sollen (Abb. i: c).
-   * **Einschränkung der Mitarbeitenden:** Auch für die einzelnen Werke ist es möglich, den Personenkreis (nur registrierte Nutzer:innen) einzuschränken.
-   → Dabei ist zu beachten, dass Personen, die als Mitarbeitende zu einem Werk hinzugefügt werden, zuvor auch in den übergeordneten Projekteinstellungen als Mitarbeitende hinzugefügt werden müssen (Abb. i: d).
+   * **Einschränkung der Mitarbeitenden:** Auch für die einzelnen Werke ist es möglich, den Personenkreis (nur registrierte Nutzer:innen) einzuschränken (Abb. i: d).
+   → Dabei ist zu beachten, dass Personen, die als Mitarbeitende zu einem Werk hinzugefügt werden, zuvor auch in den übergeordneten Projekteinstellungen als Mitarbeitende hinzugefügt werden müssen.
    * **Metadaten-Anreicherung:** In diesem Bereich sollten unsere zuvor mit der YAML-Datei hochgeladenen Metadaten ersichtlich sein. Diese können hier aber auch noch erweitert oder angepasst werden.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/work-metadata.PNG" description="Abb. x: Werk-Metadaten" %}
 ## 4.  Bearbeitung der Dokumente
