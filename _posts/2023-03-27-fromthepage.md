@@ -392,428 +392,413 @@ Literaturliste von Zotero
 
 
 <table>
-  <tr>
-   <td colspan="2" >
-<h3>System</h3>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Scope des Tools</strong>
-   </td>
-   <td>Transkription
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Softwareumgebung/Softwaretyp \
-</strong>(Remotesystem im Browser / Lokaler Client)
-   </td>
-   <td>Browser-Anwendung/
-<p>
-web-basiert
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Unterstützte Plattformen</strong>
-   </td>
-   <td>Linux & Windows
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Geräte</strong>
-   </td>
-   <td>Desktop & mobil
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Einbindung anderer Systeme (Interoperabilität)</strong>
-   </td>
-   <td>✅ (IIIF)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Accountsystem</strong>
-   </td>
-   <td>✅
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Kostenmodell  \
-</strong>(Kostenübersicht / Open Source)
-   </td>
-   <td>Kleinprojekte:  \
-bis zu 200 Seiten - kostenlos
-<p>
-Betreuung von Institutionen: bis zu 50.000 Seiten - ca. 3600 Dollar/Jahr
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" >
-<h3>Anforderungen & Methoden</h3>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Erforderte Code Literacy</strong>
-   </td>
-   <td>sehr gering
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Interface-Sprachen (ISO 639-1)</strong>
-   </td>
-   <td>en, es, fr, pt, de (in Arbeit)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Unterstützte Zeichenkodierung</strong>
-   </td>
-   <td>UTF-8
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Inkludierte Datenkonvertierung</strong>
-<p>
-(Im Pre-Processing mögliche Anpassung der Daten an für die Software erforderliches Format )
-   </td>
-   <td>❌
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Abhängigkeit von anderer Software \
-</strong>(Falls ja, wird diese Software automatisch mitinstalliert?)
-   </td>
-   <td>❌
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Erforderliche Plug-Ins </strong>(bei web-basierten Anwendungen)
-   </td>
-   <td>❌
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" >
-<h3>Dokumentation & Support</h3>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Wartung und ständige Erweiterung</strong>
-   </td>
-   <td>✅ (solange Institutionen Projekte über FTP abwickeln)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Einbindung der Community</strong>
-   </td>
-   <td>✅via Github
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Dokumentation</strong>
-   </td>
-   <td>✅ Dokumentation (für Projektleitung) 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Dokumentationssprache</strong>
-   </td>
-   <td>Englisch
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Dokumentationsformat</strong>
-   </td>
-   <td>HTML
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Dokumentationsabschnitte</strong>
-   </td>
-   <td>Project Owner Documentation, FAQ, Descriptions of functionalities (Upload, Transcription, User Management, Project Configuration, Subject Linking, Export), verschiedene How-Tos (inkl. Videomaterial), Installationsanleitung
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Verfügbarkeit von Tutorials</strong>
-   </td>
-   <td>✅keine Schritt-für-Schritt-
-<p>
-Anleitungen, aber Videomaterial zu Features und Projekten
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Aktiver Support/Community  \
-</strong>(Forum, Slack, Issue Tracker etc.) 
-   </td>
-   <td>✅ E-Mail- & Chat-Support, Telefonische Beratung (für Institutionen), Slack Channel, Chat Option, Google Group (für Bug Fixes und Releases), Github-Issue-Mechanismus
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" >
-<h3>Nutzbarkeit & Nachhaltigkeit</h3>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Installationsablauf </strong>
-   </td>
-   <td>sehr einfach
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Test</strong>
-<p>
-(Gibt es ein Test Suite, um zu überprüfen, ob die Installation erfolgreich war?)
-   </td>
-   <td>✅
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Lizenz, unter der das Tool veröffentlicht wurde</strong>
-   </td>
-   <td><a href="https://www.gnu.org/licenses/agpl-3.0.de.html">Affero GP</a><span style="text-decoration:underline;">L</span>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Registrierung in einem Repository</strong>
-   </td>
-   <td>✅ Github
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Möglichkeit zur Software-Entwicklung beizutragen</strong>
-   </td>
-   <td>✅
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" >
-<h3>Benutzerinteraktion & Benutzeroberfläche</h3>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Benutzerprofil  \
-</strong>(erwartete Nutzer:innen)
-   </td>
-   <td>GeWi-Forschungsinstitutionen und Forschende als Tool-Nutzende
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Benutzerinteraktion  \
-</strong>(erwartete Nutzung)
-   </td>
-   <td>Projektkonfiguration und -bearbeitung 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Benutzeroberfläche</strong>
-   </td>
-   <td>webbasiertes GUI
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Visualisierungen </strong>
-<p>
-(Analyse-, Input-, Outputkonfigurationen)
-   </td>
-   <td>✅Projektstati, Vorschauansichten
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" >
-<h3>Benutzerverwaltung</h3>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Personenverwaltung</strong>
-   </td>
-   <td>✅Hinzufügen/Einschränkung von Mitarbeitenden möglich
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Interne Kommunikationsmöglichkeiten  \
-</strong>(z. B. Annotationsrichtlinien, Kommentarfunktionen, …) 
-   </td>
-   <td>✅ Anlegen von eigenen Hilfstexten, Transkriptionsrichtlinien, Anleitung zum Subject Linking, Forum für Projektdiskussionen, Kommentarfunktion für jede Transkription
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" >
-<h3>Daten- und Toolverwaltung</h3>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Zentrale/dezentrale Verwaltungsmöglichkeit</strong>
-   </td>
-   <td>✅ mehrere Project Owner möglich
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Versionskontrolle</strong>
-   </td>
-   <td>✅ im Interface integriert
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Projektspezifische Einstellungen</strong>
-   </td>
-   <td>✅
-   </td>
-  </tr>
-  <tr>
-   <td><strong>API</strong>
-   </td>
-   <td>✅
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Möglichkeit auf simultanes Arbeiten </strong>
-   </td>
-   <td>❌ Während Bearbeitung der Transkription einer Bilddatei, ist diese gesperrt
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" >
-<h3>Datenupload</h3>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Unterstützte Dateiformate</strong>
-   </td>
-   <td>JPG, PNG, GIF, PDF, ZIP, IIIF (Manifest + Collection)
-<p>
-Zusätzlich: Import von CONTENTdm, Internet Archive
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Informationen zur Datensicherheit</strong>
-   </td>
-   <td>FromThePage erhebt keinen Anspruch auf geistiges Eigentum an Bildern, Transkripten, Annotationen oder Kommentaren, die auf FromThePage gepostet werden; Transkriptionen und Übersetzungen, die auf FromThePage gepostet werden, unterliegen dem Urheberrecht der Originale. FromThePage behält sich das Recht vor, jeglichen Inhalt, der von Nutzer:innen veröffentlicht wird, aus beliebigen Gründen zu entfernen.. FromThePage bewahrt Sicherungskopien von gelöschten Beiträgen oder Konten bis zu 14 Tage nach der Löschung auf den Servern auf.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Zugänglichkeit von verschiedenen Standorten/Geräten</strong>
-   </td>
-   <td> ✅ 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Einschränkungen hinsichtlich der Datenmenge</strong>
-   </td>
-   <td>❌
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Verlustfreier Upload von bereits bearbeiteten Dokumenten </strong>
-   </td>
-   <td>[nicht anwendbar, da noch keine Annotation stattgefunden hat]
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Unterstützung von IIIF-Import</strong>
-   </td>
-   <td>✅
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" >
-<h3>Datenbearbeitung (Transkriptionstool)</h3>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Komplexitätsgrad beim Mark-up  \
-</strong>(z. B. Verfügbarkeit von Buttons, Drag-and-Drop-Funktion, …)
-   </td>
-   <td>Silent Mark-Up
-<p>
-Tags & Buttons
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Standardeinstellungen entsprechend bestimmten Standard für digitale Editionen </strong>
-   </td>
-   <td>✅ HTML, TEI
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Anpassungsmöglichkeit und Validierung entsprechend projektspezifischen Konventionen/Schemata</strong>
-   </td>
-   <td>Subject Linking - Erweiterung um eigene Kategorien
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Definition eigener/projektspezifischer Tags</strong>
-   </td>
-   <td>❌
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Metadaten-Anreicherung</strong>
-   </td>
-   <td>✅ Allgemeine Projektmetadaten sowie Metadaten zu einzelnen Werken
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Layoutmöglichkeiten \
-</strong>(z.B. Tabellendarstellung, Spalten wie in Zeitschriften, …)
-   </td>
-   <td>Tabellendarstellung über Markdown, Formularlayout für Werk konfigurierbar
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Eigene Indexierung </strong>
-   </td>
-   <td>✅ Taxonomie über Subject Index 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Möglichkeit von Textvergleich bzw. Arbeit an Variantenapparat</strong>
-   </td>
-   <td>❌
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Ansichtsmöglichkeiten  \
-</strong>(z. B. Bearbeitungsansicht, Synopsen-Ansicht, Vorschauansicht, …)
-   </td>
-   <td>Bearbeitungsansicht, Bild-Text-Editor-Synopse, Vorschauansicht
-<p>
-<em>Single-Page-Darstellung: </em>1:1-Darstellung (Zeilenumbrüche werden beibehalten)
-<p>
-<em>Multi-Page-Darstellung: </em>nur Thumbnail-Bilder für die Faksimiles, zur Darstellung von Suchergebnissen (Absatzumbrüche werden beibehalten)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Verlinkung von Entitäten, NER</strong>
-   </td>
-   <td>✅ Subject Linking (Personen, Orte und eigene Kategorien)
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" >
-<h3>Datenexport</h3>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Unterstützte Dateiformate</strong>
-   </td>
-   <td>HTML, Plain Text (Verbatim, Searchable, Expanded), TEI, IIIF, PDF, DOCX, CSV, ZIP (nur für Projektleitung)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Datenverlust  \
-</strong>(nicht vollständiger Erhalt von Annotationen, die bereits vor Verwendung des Tools gemacht wurden)
-   </td>
-   <td>[nicht anwendbar]
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Validierungsmöglichkeit für TEI-XML vor Export</strong>
-   </td>
-   <td>❌ 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Datenaufbewahrung nach Export</strong>
-   </td>
-   <td>Solange das Konto bestehen bleibt, und nach Löschung des Projekts oder des Kontos noch weitere 14 Tage.
-   </td>
-  </tr>
-</table>
+            <tr>
+                <td colspan="2">
+                    <h3>System</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Scope des Tools</strong>
+                </td>
+                <td>Transkription </td>
+            </tr>
+            <tr>
+                <td><strong>Softwareumgebung/Softwaretyp \ </strong>(Remotesystem im Browser /
+                    Lokaler Client) </td>
+                <td>Browser-Anwendung/ <br /> web-basiert </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Unterstützte Plattformen</strong>
+                </td>
+                <td>Linux & Windows </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Geräte</strong>
+                </td>
+                <td>Desktop & mobil </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Einbindung anderer Systeme (Interoperabilität)</strong>
+                </td>
+                <td>✅ (IIIF) </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Accountsystem</strong>
+                </td>
+                <td>✅ </td>
+            </tr>
+            <tr>
+                <td><strong>Kostenmodell \ </strong>(Kostenübersicht / Open Source) </td>
+                <td>Kleinprojekte: \ bis zu 200 Seiten - kostenlos <br /> Betreuung von Institutionen:
+                        bis zu 50.000 Seiten - ca. 3600 Dollar/Jahr </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Anforderungen & Methoden</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Erforderte Code Literacy</strong>
+                </td>
+                <td>sehr gering </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Interface-Sprachen (ISO 639-1)</strong>
+                </td>
+                <td>en, es, fr, pt, de (in Arbeit) </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Unterstützte Zeichenkodierung</strong>
+                </td>
+                <td>UTF-8 </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Inkludierte Datenkonvertierung</strong>
+                    <br /> (Im Pre-Processing mögliche Anpassung der Daten an für die Software
+                        erforderliches Format ) 
+                </td>
+                <td>❌ </td>
+            </tr>
+            <tr>
+                <td><strong>Abhängigkeit von anderer Software \ </strong>(Falls ja, wird diese
+                    Software automatisch mitinstalliert?) </td>
+                <td>❌ </td>
+            </tr>
+            <tr>
+                <td><strong>Erforderliche Plug-Ins </strong>(bei web-basierten Anwendungen) </td>
+                <td>❌ </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Dokumentation & Support</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Wartung und ständige Erweiterung</strong>
+                </td>
+                <td>✅ (solange Institutionen Projekte über FTP abwickeln) </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Einbindung der Community</strong>
+                </td>
+                <td>✅via Github </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Dokumentation</strong>
+                </td>
+                <td>✅ Dokumentation (für Projektleitung) </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Dokumentationssprache</strong>
+                </td>
+                <td>Englisch </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Dokumentationsformat</strong>
+                </td>
+                <td>HTML </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Dokumentationsabschnitte</strong>
+                </td>
+                <td>Project Owner Documentation, FAQ, Descriptions of functionalities (Upload,
+                    Transcription, User Management, Project Configuration, Subject Linking, Export),
+                    verschiedene How-Tos (inkl. Videomaterial), Installationsanleitung </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Verfügbarkeit von Tutorials</strong>
+                </td>
+                <td>✅keine Schritt-für-Schritt- <br /> Anleitungen, aber Videomaterial zu Features und
+                        Projekten </td>
+            </tr>
+            <tr>
+                <td><strong>Aktiver Support/Community \ </strong>(Forum, Slack, Issue Tracker etc.) </td>
+                <td>✅ E-Mail- & Chat-Support, Telefonische Beratung (für Institutionen), Slack
+                    Channel, Chat Option, Google Group (für Bug Fixes und Releases),
+                    Github-Issue-Mechanismus </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Nutzbarkeit & Nachhaltigkeit</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Installationsablauf </strong>
+                </td>
+                <td>sehr einfach </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Test</strong>
+                    <br /> (Gibt es ein Test Suite, um zu überprüfen, ob die Installation erfolgreich
+                        war?) 
+                </td>
+                <td>✅ </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Lizenz, unter der das Tool veröffentlicht wurde</strong>
+                </td>
+                <td>
+                    <a href="https://www.gnu.org/licenses/agpl-3.0.de.html">Affero GP</a>
+                    <span style="text-decoration:underline;">L</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Registrierung in einem Repository</strong>
+                </td>
+                <td>✅ Github </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Möglichkeit zur Software-Entwicklung beizutragen</strong>
+                </td>
+                <td>✅ </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Benutzerinteraktion & Benutzeroberfläche</h3>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Benutzerprofil \ </strong>(erwartete Nutzer:innen) </td>
+                <td>GeWi-Forschungsinstitutionen und Forschende als Tool-Nutzende </td>
+            </tr>
+            <tr>
+                <td><strong>Benutzerinteraktion \ </strong>(erwartete Nutzung) </td>
+                <td>Projektkonfiguration und -bearbeitung </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Benutzeroberfläche</strong>
+                </td>
+                <td>webbasiertes GUI </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Visualisierungen </strong>
+                    <br /> (Analyse-, Input-, Outputkonfigurationen) 
+                </td>
+                <td>✅Projektstati, Vorschauansichten </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Benutzerverwaltung</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Personenverwaltung</strong>
+                </td>
+                <td>✅Hinzufügen/Einschränkung von Mitarbeitenden möglich </td>
+            </tr>
+            <tr>
+                <td><strong>Interne Kommunikationsmöglichkeiten \ </strong>(z. B.
+                    Annotationsrichtlinien, Kommentarfunktionen, …) </td>
+                <td>✅ Anlegen von eigenen Hilfstexten, Transkriptionsrichtlinien, Anleitung zum
+                    Subject Linking, Forum für Projektdiskussionen, Kommentarfunktion für jede
+                    Transkription </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Daten- und Toolverwaltung</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Zentrale/dezentrale Verwaltungsmöglichkeit</strong>
+                </td>
+                <td>✅ mehrere Project Owner möglich </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Versionskontrolle</strong>
+                </td>
+                <td>✅ im Interface integriert </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Projektspezifische Einstellungen</strong>
+                </td>
+                <td>✅ </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>API</strong>
+                </td>
+                <td>✅ </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Möglichkeit auf simultanes Arbeiten </strong>
+                </td>
+                <td>❌ Während Bearbeitung der Transkription einer Bilddatei, ist diese gesperrt
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Datenupload</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Unterstützte Dateiformate</strong>
+                </td>
+                <td>JPG, PNG, GIF, PDF, ZIP, IIIF (Manifest + Collection) <br /> Zusätzlich: Import von
+                        CONTENTdm, Internet Archive </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Informationen zur Datensicherheit</strong>
+                </td>
+                <td>FromThePage erhebt keinen Anspruch auf geistiges Eigentum an Bildern,
+                    Transkripten, Annotationen oder Kommentaren, die auf FromThePage gepostet
+                    werden; Transkriptionen und Übersetzungen, die auf FromThePage gepostet werden,
+                    unterliegen dem Urheberrecht der Originale. FromThePage behält sich das Recht
+                    vor, jeglichen Inhalt, der von Nutzer:innen veröffentlicht wird, aus beliebigen
+                    Gründen zu entfernen.. FromThePage bewahrt Sicherungskopien von gelöschten
+                    Beiträgen oder Konten bis zu 14 Tage nach der Löschung auf den Servern auf.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Zugänglichkeit von verschiedenen Standorten/Geräten</strong>
+                </td>
+                <td> ✅ </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Einschränkungen hinsichtlich der Datenmenge</strong>
+                </td>
+                <td>❌ </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Verlustfreier Upload von bereits bearbeiteten Dokumenten </strong>
+                </td>
+                <td>[nicht anwendbar, da noch keine Annotation stattgefunden hat] </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Unterstützung von IIIF-Import</strong>
+                </td>
+                <td>✅ </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Datenbearbeitung (Transkriptionstool)</h3>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Komplexitätsgrad beim Mark-up \ </strong>(z. B. Verfügbarkeit von
+                    Buttons, Drag-and-Drop-Funktion, …) </td>
+                <td>Silent Mark-Up <br /> Tags & Buttons </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Standardeinstellungen entsprechend bestimmten Standard für digitale
+                        Editionen </strong>
+                </td>
+                <td>✅ HTML, TEI </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Anpassungsmöglichkeit und Validierung entsprechend projektspezifischen
+                        Konventionen/Schemata</strong>
+                </td>
+                <td>Subject Linking - Erweiterung um eigene Kategorien </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Definition eigener/projektspezifischer Tags</strong>
+                </td>
+                <td>❌ </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Metadaten-Anreicherung</strong>
+                </td>
+                <td>✅ Allgemeine Projektmetadaten sowie Metadaten zu einzelnen Werken </td>
+            </tr>
+            <tr>
+                <td><strong>Layoutmöglichkeiten \ </strong>(z.B. Tabellendarstellung, Spalten wie in
+                    Zeitschriften, …) </td>
+                <td>Tabellendarstellung über Markdown, Formularlayout für Werk konfigurierbar </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Eigene Indexierung </strong>
+                </td>
+                <td>✅ Taxonomie über Subject Index </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Möglichkeit von Textvergleich bzw. Arbeit an Variantenapparat</strong>
+                </td>
+                <td>❌ </td>
+            </tr>
+            <tr>
+                <td><strong>Ansichtsmöglichkeiten \ </strong>(z. B. Bearbeitungsansicht,
+                    Synopsen-Ansicht, Vorschauansicht, …) </td>
+                <td>Bearbeitungsansicht, Bild-Text-Editor-Synopse, Vorschauansicht <br />
+                        <em>Single-Page-Darstellung: </em>1:1-Darstellung (Zeilenumbrüche werden
+                        beibehalten) <br />
+                        <em>Multi-Page-Darstellung: </em>nur Thumbnail-Bilder für die Faksimiles,
+                        zur Darstellung von Suchergebnissen (Absatzumbrüche werden beibehalten)
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Verlinkung von Entitäten, NER</strong>
+                </td>
+                <td>✅ Subject Linking (Personen, Orte und eigene Kategorien) </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Datenexport</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Unterstützte Dateiformate</strong>
+                </td>
+                <td>HTML, Plain Text (Verbatim, Searchable, Expanded), TEI, IIIF, PDF, DOCX, CSV,
+                    ZIP (nur für Projektleitung) </td>
+            </tr>
+            <tr>
+                <td><strong>Datenverlust \ </strong>(nicht vollständiger Erhalt von Annotationen,
+                    die bereits vor Verwendung des Tools gemacht wurden) </td>
+                <td>[nicht anwendbar] </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Validierungsmöglichkeit für TEI-XML vor Export</strong>
+                </td>
+                <td>❌ </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Datenaufbewahrung nach Export</strong>
+                </td>
+                <td>Solange das Konto bestehen bleibt, und nach Löschung des Projekts oder des
+                    Kontos noch weitere 14 Tage. </td>
+            </tr>
+        </table>
