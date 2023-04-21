@@ -150,7 +150,7 @@ Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolg
 * Remote Kollaboration möglich
 * Subject-Tagging zur Erstellung von Registern und nach einem gewissen Projektfortschritt auch automatische Verlinkungen
 * User- bzw. Projekt-Management: Überblick über Statistiken (Dauer, Umfang, etc.)
-* Schneller und hilfreicher Support über Chat-Interface (Erreichbarkeit zu Arbeitszeiten in anderer Zeitzone - CST/CDT)
+* Schneller und hilfreicher Support über Chat-Interface (Reaktion meist spätestens innerhalb von 24h)
 * Vielzahl an qualitätssichernden Maßnahmen:
     * Schutz vor Vandalismus durch Registrierungserfordernis
     * Einschränkung auf bestimmten Kreis an Mitarbeitende möglich
@@ -310,12 +310,13 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    * **Versionsansicht:** Im Tab “Versions” können wir nachverfolgen, wer wann welche Änderungen vorgenommen hat.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/versions.PNG" description="Abb. x: Versionskontrolle" %}
 ## 5.  Export der Dokumente
-→ Alle nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten des Downloadbereiches im Projekt-Dashboard: Da wir unsere Daten in anderen Tools weiter annotieren und mit Normalisierungen anreichern wollen, soll der Output in einer XML/TEI-Datei exportiert werden. Dafür bietet uns FromThePage die Möglichkeit, entweder jedes Projekt einzeln oder die einzelnen Werke als Sammelexport in einer gewissen Ordnerstruktur herunterzuladen.
+Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf FromThePage im Downloadbereich des Projekt-Dashboards (und nicht in den Werkübersichten) zu finden sind: Da wir unsere Daten in anderen Tools weiter annotieren und mit Normalisierungen anreichern wollen, soll der Output in einer XML/TEI-Datei exportiert werden. Dafür bietet uns FromThePage die Möglichkeit, entweder jedes Projekt einzeln oder die einzelnen Werke als Sammelexport in einer gewissen Ordnerstruktur herunterzuladen.
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export.png" description="Abb. x: Exportmöglichkeiten" %}
+→ Wir sehen hier für all unsere Werke den Bearbeitungsfortschritt und haben direkt die Möglichkeit, unsere Arbeit als TEI zu exportieren. Für etwas feinere Einstellungen nutzen wir jedoch die erste Option für einen Sammelexport ("Export All Works").
    * **Export der Werke:** Über den Button “Export All Works” können wir nun verschiedene Formate und Einstellungen wählen und unsere gesamte Sammlung als ZIP-Datei exportieren.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export-all-works.PNG" description="Abb. x: Export aller Werke in ZIP-Datei" %}
-   Wir wählen dabei einen Ordner pro Werk und stellen ein, dass unsere Export-Ordner den Namen der Import-Ordner übernehmen bzw. beibehalten sollen. Bei den Exportformaten wählen wir nur TEI/XML aus. In den exportierten TEI-Dateien ([Link zum vollständigen Export](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/fromthepage/export)) finden unsere Bearbeitungsschritte nun folgende Form:
-   * **- Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, Informationen zu den Versionen sind im TEI Header wiederzufinden.
+   Wir wählen dabei einen Ordner pro Werk und stellen ein, dass unsere Export-Ordner den Namen der Import-Ordner übernehmen bzw. beibehalten sollen. Bei den Exportformaten wählen wir nur TEI/XML aus. In den exportierten TEI-Dateien ([Link zum vollständigen Export](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/fromthepage/export)) finden wir für jedes Werk einen Ordner mit je einer Readme-Datei, in der die verschiedenen Exportformate beschrieben sind, und für jedes Werk einen weiteren Ordner, in dem unsere TEI-Dateien enthalten sind, in denen unsere Bearbeitungsschritte des vorangegangenen Abschnittes nun folgende Form angenommen haben:
+   * **- Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, Informationen zu den Versionen sind - wie hier auszugsweise dargestellt - im TEI Header wiederzufinden.
       ```xml
       <teiHeader>
          <fileDesc>
@@ -407,7 +408,7 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
          ...
       </teiHeader>
       ```
-   → Die einzelnen Werk-Metadaten (Material, Sprache usw.), die wir für jedes Manuskript einzeln angelegt haben, sind hier aber leider nicht abgebildet (nur im CSV-Metadaten-Export). Außerdem müssen wir an dieser Stelle feststellen, dass unser TEI nicht valide ist, da in den Metadaten eine xml:id an zwei Stellen vergeben wurde.
+   → Die individuellen Werk-Metadaten (Material, Sprache usw.), die wir für jedes Manuskript einzeln angelegt haben, sind hier aber leider nicht abgebildet - diese befinden sich aber später im CSV-Metadaten-Export. Leider müssen wir an dieser Stelle außerdem feststellen, dass unser TEI nicht valide ist, da in den Metadaten eine xml:id an zwei Stellen vergeben wurde.
    * **- Entitäten & Kategorien:** Unsere Taxonomie für Zutaten und Gerichte wird in ein &lt;taxonomy>-Element verpackt, wo wir all unsere angelegten Daten und Kategoriezuordnungen wiederfinden. 
       ```xml
       <encodingDesc>
@@ -476,8 +477,8 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
          </classDecl>
       </encodingDesc>
       ```
-   → Auch hier treffen wir auf ein Problem hinsichtlich der Validität unseres TEI/XML-Dokuments, da in der Taxonomie innerhalb der <catDesc>-Elemente <notes>-Elemente erzeugt wurden, die dort nicht zugelassen sind und außerdem die mit einem <head>-Element ausgezeichnete Überschrift von einem der Faksimiles unzulässigerweise innerhalb eines <p>-Elementes steht.
-   * **- Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem &lt;div>-Element wiedergegeben, wobei das vorangehende  &lt;pb>-Element einen Link zur Bilddatei im IIIF-Format beinhaltet. 
+   → Auch hier treffen wir auf ein Problem hinsichtlich der Validität unseres TEI-Dokuments, da in der Taxonomie innerhalb der &lt;catDesc>-Elemente &lt;notes>-Elemente erzeugt wurden, die dort nicht zugelassen sind. Zudem steht die mit einem &lt;head>-Element ausgezeichnete Überschrift von einem der Faksimiles unzulässigerweise innerhalb eines &lt;p>-Elementes.
+   * **- Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem &lt;div>-Element wiedergegeben, wobei das vorangehende &lt;pb>-Element einen Link zur Bilddatei im IIIF-Format beinhaltet. 
       ```xml
       <text>
          <body>
@@ -674,9 +675,9 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
          </body>
       </text>
       ```
-   Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüchen, unklaren Stellen, Erweiterungen von Abkürzungen sowie Referenzen zu unserer Taxonomie wiederfinden. Außerdem finden wir auch die Anmerkungen der Transkribierenden in einem &lt;note>-Element am Ende des lt;div>-Elements.
-   * **Export der Metadaten**: Viele der Metadaten, die wir auch im Header des XML/TEIs finden, können wir auch per CSV exportieren ([Link zum CSV-Export](https://github.com/DigEdTnT/digedtnt.github.io/blob/95d465f768eff02fdcd74f8e5248d8eea9e94586/data/pipelines/pipeline_1/fromthepage/export/fromthepage_work_metadata_export_32000501_2023-04-13T11_28_04Z.csv)).
-   → Man beachte jedoch, dass bei diesem Export allgemeine Projekt-Metadaten und Statistiken wiederzufinden sind, sowie die eigens angelegten Metadaten (Material, Sprache & zeitliche Einordnung), nicht aber die von uns per YAML-Datei importierten Metadaten.
+   Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüchen, unklaren Stellen, Erweiterungen von Abkürzungen sowie Referenzen zu unserer Taxonomie wiederfinden. Außerdem finden wir auch die Anmerkungen der Transkribierenden in einem &lt;note>-Element am Ende des &lt;div>-Elements.
+   * **Export der Metadaten**: Viele der Metadaten, die wir im Header des XML/TEIs finden, sowie zusätzlich die eigens für jedes Projekt angelegten Metadaten (Material, Sprache & zeitliche Einordnung) können wir auch per CSV exportieren ([Link zum CSV-Export](https://github.com/DigEdTnT/digedtnt.github.io/blob/95d465f768eff02fdcd74f8e5248d8eea9e94586/data/pipelines/pipeline_1/fromthepage/export/fromthepage_work_metadata_export_32000501_2023-04-13T11_28_04Z.csv)).
+   → Man beachte jedoch, dass bei diesem Export nur die allgemeinen Projekt-Metadaten und Statistiken wiederzufinden sind, nicht aber die von uns per YAML-Datei importierten Metadaten wie beispielsweise die physische Beschreibung oder historische Dokumenation der Manuskripte.
 
 
 # Kontakt
@@ -753,7 +754,7 @@ Literaturliste von Zotero
                 <td>Transkription </td>
             </tr>
             <tr>
-                <td><strong>Softwareumgebung/Softwaretyp  </strong>(Remotesystem im Browser /
+                <td><strong>Softwareumgebung/Softwaretyp</strong><br/>(Remotesystem im Browser /
                     Lokaler Client) </td>
                 <td>Browser-Anwendung/ <br /> web-basiert </td>
             </tr>
@@ -782,7 +783,7 @@ Literaturliste von Zotero
                 <td>✅ </td>
             </tr>
             <tr>
-                <td><strong>Kostenmodell  </strong>(Kostenübersicht / Open Source) </td>
+                <td><strong>Kostenmodell  </strong><br/>(Kostenübersicht / Open Source) </td>
                 <td>Kleinprojekte:  bis zu 200 Seiten - kostenlos <br /> Betreuung von Institutionen:
                         bis zu 50.000 Seiten - ca. 3600 Dollar/Jahr </td>
             </tr>
@@ -906,8 +907,7 @@ Literaturliste von Zotero
                     <strong>Lizenz, unter der das Tool veröffentlicht wurde</strong>
                 </td>
                 <td>
-                    <a href="https://www.gnu.org/licenses/agpl-3.0.de.html">Affero GP</a>
-                    <span style="text-decoration:underline;">L</span>
+                    <a href="https://www.gnu.org/licenses/agpl-3.0.de.html">Affero GPL</a>
                 </td>
             </tr>
             <tr>
@@ -928,11 +928,11 @@ Literaturliste von Zotero
                 </td>
             </tr>
             <tr>
-                <td><strong>Benutzerprofil  </strong>(erwartete Nutzer:innen) </td>
+                <td><strong>Benutzerprofil  </strong><br/>(erwartete Nutzer:innen) </td>
                 <td>GeWi-Forschungsinstitutionen und Forschende als Tool-Nutzende </td>
             </tr>
             <tr>
-                <td><strong>Benutzerinteraktion  </strong>(erwartete Nutzung) </td>
+                <td><strong>Benutzerinteraktion  </strong><br/>(erwartete Nutzung) </td>
                 <td>Projektkonfiguration und -bearbeitung </td>
             </tr>
             <tr>
@@ -960,7 +960,7 @@ Literaturliste von Zotero
                 <td>✅Hinzufügen/Einschränkung von Mitarbeitenden möglich </td>
             </tr>
             <tr>
-                <td><strong>Interne Kommunikationsmöglichkeiten  </strong>(z. B.
+                <td><strong>Interne Kommunikationsmöglichkeiten  </strong><br/>(z. B.
                     Annotationsrichtlinien, Kommentarfunktionen, …) </td>
                 <td>✅ Anlegen von eigenen Hilfstexten, Transkriptionsrichtlinien, Anleitung zum
                     Subject Linking, Forum für Projektdiskussionen, Kommentarfunktion für jede
@@ -1057,7 +1057,7 @@ Literaturliste von Zotero
                 </td>
             </tr>
             <tr>
-                <td><strong>Komplexitätsgrad beim Mark-up  </strong>(z. B. Verfügbarkeit von
+                <td><strong>Komplexitätsgrad beim Mark-up  </strong><br/>(z. B. Verfügbarkeit von
                     Buttons, Drag-and-Drop-Funktion, …) </td>
                 <td>Silent Mark-Up <br /> Tags & Buttons </td>
             </tr>
@@ -1088,7 +1088,7 @@ Literaturliste von Zotero
                 <td>✅ Allgemeine Projektmetadaten sowie Metadaten zu einzelnen Werken </td>
             </tr>
             <tr>
-                <td><strong>Layoutmöglichkeiten  </strong>(z.B. Tabellendarstellung, Spalten wie in
+                <td><strong>Layoutmöglichkeiten  </strong><br/>(z.B. Tabellendarstellung, Spalten wie in
                     Zeitschriften, …) </td>
                 <td>Tabellendarstellung über Markdown, Formularlayout für Werk konfigurierbar </td>
             </tr>
@@ -1105,7 +1105,7 @@ Literaturliste von Zotero
                 <td>❌ </td>
             </tr>
             <tr>
-                <td><strong>Ansichtsmöglichkeiten  </strong>(z. B. Bearbeitungsansicht,
+                <td><strong>Ansichtsmöglichkeiten  </strong><br/>(z. B. Bearbeitungsansicht,
                     Synopsen-Ansicht, Vorschauansicht, …) </td>
                 <td>Bearbeitungsansicht, Bild-Text-Editor-Synopse, Vorschauansicht <br />
                         <em>Single-Page-Darstellung: </em>1:1-Darstellung (Zeilenumbrüche werden
@@ -1133,7 +1133,7 @@ Literaturliste von Zotero
                     ZIP (nur für Projektleitung) </td>
             </tr>
             <tr>
-                <td><strong>Datenverlust  </strong>(nicht vollständiger Erhalt von Annotationen,
+                <td><strong>Datenverlust  </strong><br/>(nicht vollständiger Erhalt von Annotationen,
                     die bereits vor Verwendung des Tools gemacht wurden) </td>
                 <td>[nicht anwendbar] </td>
             </tr>
