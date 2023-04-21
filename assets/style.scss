@@ -270,6 +270,7 @@ p>img {
 // Code block size limitation
 pre {
   max-height: 300px;
+  overflow: scroll;
 }
 
 // Fixes images in popup boxes from Google Translate
