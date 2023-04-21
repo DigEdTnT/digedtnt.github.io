@@ -239,6 +239,7 @@ img {
   max-width: 100%;
 }
 
+// To have the same indent as the list points images are indented
 figure img {
   padding: 0rem 0rem 0rem 2rem;
 }
@@ -249,17 +250,24 @@ figcaption {
   font-weight: 600;
 }
 
+// When there is an image after a paragraph that is not indented (because it isn't a list point)
+h2 + p + figure>img {
+  padding: 0rem;
+} 
+
+// Paragraphs after an image should have the same indention as the list
 figure + p {
   padding: 0rem 0rem 0rem 2rem;
 }
 
+// Centering images
 p>img {
   text-align: center;
   display: block;
   margin: 0 auto;
 }
 
-
+// Code block size limitation
 pre {
   max-height: 300px;
 }

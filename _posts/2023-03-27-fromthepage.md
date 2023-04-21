@@ -182,11 +182,17 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 * Metadaten aus den Werk-Einstellungen werden nicht in den TEI-Export integriert
 * Exportiertes TEI ist nicht valide (siehe unter Export der Dokumente)
 * Keine XSL-Transformationen  innerhalb des Systems möglich oder durchführbar
+~~~xml
+<test></test>
+~~~
 
 
 # Einrichtung & Erste Schritte
 
 Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf mit dem Transkriptions- und Annotationstool FromThePage beschrieben werden.
+```xml
+<test></test>
+```
 
 
 
@@ -286,7 +292,7 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    Das Element wird zwar in der allgemeinen Darstellung auf FromThePage nicht unterstützt, es befindet sich aber am Ende in unserem TEI-Export. Ein Nachteil dieses Workarounds ist aber, dass auf diese Weise angelegte Tags nicht validiert werden und wir bei einer falschen Schreibweise oder unzulässigen Positionierung des Elements keinen Hinweis darauf bekommen. Da wir FromThePage aber ohnehin nur für unsere Transkription und nicht für die Annotation verwenden wollen, setzen wir uns mit dieser Form der Auszeichnung nicht weiter auseinander.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-overview.PNG" description="Abb. x: Allgemeine Ansicht" %}
    → An dieser Stelle hervorzuheben ist auch, dass es im Rahmen unseres Beispielsprojekts es leider nicht auf sichere und einfache Weise möglich war, farbliche Hervorhebungen, Hinzufügungen durch den/die Editor:in (und nicht den/die Autor:in) oder die Gründe für eine unleserliche Stelle zu annotieren.
-   * **- Anmerkungen und Fragen:** Sollten Mitarbeitende auf Probleme stoßen, die in den Transkriptionsrichtlinien nicht erläutert sind, so haben sie die Möglichkeit, für jedes Faksimile und die dazugehörige Transkription eine Anmerkung zu hinterlassen oder Fragen zu stellen. Diese Notizen werden auch in den TEI-Export übernommen und können somit nützlich sein, um damit Problemstellen zu kennzeichnen oder Kommentare für die spätere Annotation einzufügen. In unserem Beispiel wurde diese Funktion genutzt, um jene Transkriptionen zu markieren, in denen es Probleme mit der Darstellung von diakritischen Zeichen gab.
+   * **- Anmerkungen und Fragen:** Sollten Mitarbeitende auf Probleme stoßen, zu denen es in den Transkriptionsrichtlinien keine Anhaltspunkte gibt, so haben sie die Möglichkeit, für jedes Faksimile und die dazugehörige Transkription eine Anmerkung zu hinterlassen oder Fragen zu stellen. Diese Notizen werden auch in den TEI-Export übernommen und können somit nützlich sein, um damit Problemstellen zu kennzeichnen oder Kommentare für die spätere Annotation einzufügen. In unserem Beispiel wurde diese Funktion genutzt, um jene Transkriptionen zu markieren, in denen es Probleme mit der Darstellung von diakritischen Zeichen gab.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/notes-and-questions.PNG" description="Abb. x: Austausch mit und zwischen Projektmitarbeitenden" %}
    * **- Subject Linking:** Während der Transkription eines Dokumentes können auch Entitäten wie Personen, Orte oder eigens angelegte Kategorien (inklusive Unterkategorien) - in unserem Beispiel Zutaten und Speisen - ausgezeichnet werden.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking.PNG" description="Abb. x: Subject Linking" %}
@@ -316,14 +322,14 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    * **Export der Werke:** Über den Button “Export All Works” können wir nun verschiedene Formate und Einstellungen wählen und unsere gesamte Sammlung als ZIP-Datei exportieren.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export-all-works.PNG" description="Abb. x: Export aller Werke in ZIP-Datei" %}
    Wir wählen dabei einen Ordner pro Werk und stellen ein, dass unsere Export-Ordner den Namen der Import-Ordner übernehmen bzw. beibehalten sollen. Bei den Exportformaten wählen wir nur TEI/XML aus. In den exportierten TEI-Dateien ([Link zum vollständigen Export](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/fromthepage/export)) finden unsere Bearbeitungsschritte nun folgende Form:
-   * **- Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, Informationen zu den Versionen sind im TEI Header wiederzufinden.
-   CODE BLOCK COMING SOON
+   * **- Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, Informationen zu den Versionen sind im TEI Header wiederzufinden. \
+   [CODE BLOCK COMING SOON] \
    → Die einzelnen Werk-Metadaten (Material, Sprache usw.), die wir für jedes Manuskript einzeln angelegt haben, sind hier aber leider nicht abgebildet (nur im CSV-Metadaten-Export). Außerdem müssen wir an dieser Stelle feststellen, dass unser TEI nicht valide ist, da in den Metadaten eine xml:id an zwei Stellen vergeben wurde.
-   * **- Entitäten & Kategorien:** Unsere Taxonomie für Zutaten und Gerichte wird in ein &lt;taxonomy>-Element verpackt, wo wir all unsere angelegten Daten und Kategoriezuordnungen wiederfinden.
-   CODE BLOCK COMING SOON
+   * **- Entitäten & Kategorien:** Unsere Taxonomie für Zutaten und Gerichte wird in ein &lt;taxonomy>-Element verpackt, wo wir all unsere angelegten Daten und Kategoriezuordnungen wiederfinden. \
+   [CODE BLOCK COMING SOON] \
    → Auch hier treffen wir auf ein Problem hinsichtlich der Validität unseres TEI/XML-Dokuments, da in der Taxonomie innerhalb der <catDesc>-Elemente <notes>-Elemente erzeugt wurden, die dort nicht zugelassen sind und außerdem die mit einem <head>-Element ausgezeichnete Überschrift von einem der Faksimiles unzulässigerweise innerhalb eines <p>-Elementes steht.
-   * **- Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem &lt;div>-Element wiedergegeben, wobei das vorangehende  &lt;pb>-Element einen Link zur Bilddatei im IIIF-Format beinhaltet.
-   CODE BLOCK COMING SOON
+   * **- Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem &lt;div>-Element wiedergegeben, wobei das vorangehende  &lt;pb>-Element einen Link zur Bilddatei im IIIF-Format beinhaltet. \
+   [CODE BLOCK COMING SOON] \
    Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüchen, unklaren Stellen, Erweiterungen von Abkürzungen sowie Referenzen zu unserer Taxonomie wiederfinden. Außerdem finden wir auch die Anmerkungen der Transkribierenden in einem &lt;note>-Element am Ende des lt;div>-Elements.
    * **Export der Metadaten**: Viele der Metadaten, die wir auch im Header des XML/TEIs finden, können wir auch per CSV exportieren ([Link zum CSV-Export](https://github.com/DigEdTnT/digedtnt.github.io/blob/95d465f768eff02fdcd74f8e5248d8eea9e94586/data/pipelines/pipeline_1/fromthepage/export/fromthepage_work_metadata_export_32000501_2023-04-13T11_28_04Z.csv)).
    → Man beachte jedoch, dass bei diesem Export allgemeine Projekt-Metadaten und Statistiken wiederzufinden sind, sowie die eigens angelegten Metadaten (Material, Sprache & zeitliche Einordnung), nicht aber die von uns per YAML-Datei importierten Metadaten.
