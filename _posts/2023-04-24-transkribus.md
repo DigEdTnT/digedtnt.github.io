@@ -11,11 +11,6 @@ excerpt: Transkribus Lite ist eine Plattform für KI-gestützte Layout- und Text
 ---
 
 
-# <p style="text-align: right">
-Last Update: 2023-04-21</p>
-
-
-
 # Beschreibung
 
 Transkribus Lite ist eine Plattform primär für die KI-gestützte Layout- und Texterkennung von gedruckten oder handgeschriebenen Dokumenten, ermöglicht aber auch die Annotation von Struktur und Inhalt. Die Plattform geht auf das 2016 ins Leben gerufene READ-Projekt zurück und wird von der 2019 gegründeten Europäischen Genossenschaft READ-COOP SCE zur Verfügung gestellt und beständig weiterentwickelt. Die Genossenschaft hat mittlerweile mehr als 130 Mitglieder (Institutionen und Privatpersonen) in 30 Ländern (Stand April 2023).
