@@ -57,7 +57,7 @@ Transkribus Lite ist eine Plattform primär für die KI-gestützte Layout- und T
     * Smart Search: Damit diese Art von Suche möglich ist, muss sie vor dem Durchführen der Texterkennung ausgewählt werden. Es werden dann hierbei nicht nur die automatisch erkannten Wörter gespeichert, sondern auch deren mögliche Varianten, was bedeutet, dass auch vom Texterkennungsmodell falsch transkribierte Wörter gefunden werden können. Die Smart Search ist mit 50 % höheren Kosten für die Texterkennung verbunden, da sie speicher- und rechenintensiver ist
 * Export der Dokumente in verschiedenen Formaten: PAGE XML, ALTO XML, TEI XML, PDF (Bild- und Transkriptionslayer), Docx, Tags XLSX, Table XLSX 
 
-Derzeitige Versionen
+### Derzeitige Versionen
 
 
 
@@ -205,7 +205,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 
 * Die Angabe von Name und E-Mail-Adresse ist zur Registrierung erforderlich.
-2. Transkribus Lite - Benutzeroberfläche
+## 2. Transkribus Lite - Benutzeroberfläche
 * **Dashboard:** Nach dem Einloggen findet man sich im Transkribus-Lite-Dashboard wieder. Hier können die Tabs “Workdesk” und Training ausgewählt werden, wobei per default “Workdesk” selektiert ist.
     * **“Workdesk” (Abb. X  - a):** Der Workdesk ist die Arbeitsumgebung, die Zugang zu den elementaren Funktionen von Transkribus bietet: 
         * Linke Menüleiste: “Tools” (Abb. X - c) (“Text-Erkennung”, “Sammlung erstellen”, “Hochladen”, “Hilfe”) und “Transkribus Organizer” (Abb. X - d) (“Sammlungen”, “Jobs”, “Tag Manager”, “Aktuelle Dokumente”) 
@@ -216,7 +216,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 
 
-3.  Projekteinrichtung
+## 3.  Projekteinrichtung
 * **Sammlungen:** Das Anlegen einer Sammlung ist nötig, um die Layout und/oder Texterkennung durchführen zu können. Eine Sammlung ist in Transkribus ein Ordner, der alle Dokumente eines bestimmten Projekts enthält. 
 * **Anlegen einer Sammlung:** Eine Sammlung wird im Workdesk über die Schaltfläche “Sammlung erstellen” in der linken Menüleiste angelegt. Wir legen nun eine Sammlung mit dem Namen “Briefe Schuchardt” an. Eine angelegte Sammlung kann unter der Schaltfläche “Sammlungen” wieder gelöscht oder bearbeitet werden (Änderung der Metadaten wie dem Namen der Sammlung oder einer kurzen Beschreibung)
 
@@ -224,7 +224,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 
 
-4.  Erste Aktionen innerhalb einer Sammlung
+## 4.  Erste Aktionen innerhalb einer Sammlung
 * **Upload von Dokumenten:** Wir navigieren nun über die linke Toolbar, bei der wir auf “Sammlungen” klicken, zur neu angelegten Sammlung. Die erste Aktion innerhalb einer Sammlung ist das Hochladen von Dokumenten, die in weiterer Folge transkribiert oder auf die die Layout- und Texterkennung angewandt werden. Ein Dokument ist in Transkribus Lite eine Menge an Bildern, die in einem bestimmten Zusammenhang stehen (z. B. ein Manuskript, ein Vertrag, ein Brief). Möglich ist der Upload von Bildern (JPEG/PNG) oder PDFs. Alle gemeinsam hochgeladenen Dateien werden als ein einzelnes Dokument angesehen, jedes einzelne Bild bzw. jede Seite eines PDFs wird zu einer Seite des Dokuments. Für unsere Zwecke ist jeder Brief Schuchardts, der aus mehreren Bildern besteht, ein Dokument, deshalb laden wir die jeweils zusammengehörigen Bilddateien separat hoch (“H1_1” bis “H1_4”, “H2_1 bis “H2_6” usw.). Wir geben den einzelnen Dokumenten die Namen “Brief 1”, “Brief 2” usw. Durch einen Klick auf die drei Punkte kann der Dokumentname nachträglich geändert werden, ebenso können Metadaten wie etwa “Autor” hinzugefügt werden.
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/upload_documents.jpg" description="Abb. 5: Hochladen von Dokumenten" %}
@@ -237,7 +237,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 
 
-5. Durchführen von Texterkennung
+## 5. Durchführen von Texterkennung
 * Will man Text von Transkribus Lite transkribieren lassen, ist es am sinnvollsten, zunächst zu überprüfen, ob bereits eines der öffentlich verfügbaren Modelle für die eigenen Zwecke geeignet ist und eine tolerierbare Zeichenfehlerrate aufweist, sodass nur geringe Nachkorrekturen des Textmaterials notwendig sind. Nur falls dies nicht der Fall ist, ist das Trainieren eines eigenen Modells notwendig.
 * Wir wollen also nun feststellen, wie gut die Texterkennung der öffentlichen Modelle, angewandt auf die Handschrift Hugo Schuchardts, funktioniert. Dazu wählen wir nun in der Sammlungsübersicht das Dokument “Brief 1” aus und klicken in der linken Menüleiste auf “Texterkennung”. Nun werden wir auf eine neue Seite weitergeleitet, auf der wir das Modell, das zur Texterkennung verwendet werden soll, auswählen müssen. 
 
@@ -264,7 +264,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 
 * Da es also kein geeignetes öffentliches Modell gibt, das mit einer für uns annehmbaren CER die Briefe Hugo Schuchardts transkribiert, werden wir ein eigenes Modell trainieren, um seine Briefe optimal transkribieren zu können.
-6. Training eines Texterkennungsmodells
+## 6. Training eines Texterkennungsmodells
 * Allgemein kann der Workflow für das Training eines Texterkennungsmodells wie folgt visualisiert werden.
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/flowchart_texterkennung.jpg
@@ -311,7 +311,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
     * **Auswahl eines Basismodells:** Wir können auch ein Basismodell auswählen, das als Ausgangspunkt für das Training verwendet werden soll, was bedeuten würde, dass das Modell nicht von Grund auf lernen muss. 
     * **“Reverse Text (RTL)”:** Zuletzt könnten wir noch wir noch “Reverse Text (RTL)” auswählen, falls die Schreibrichtung unseres Materials von rechts nach links ist.
 * Wir behalten also alle erweiterten Einstellungen bei und klicken auf “Training starten".
-7. Die Texteditoransicht
+## 7. Die Texteditoransicht
 * Zum Texteditor gelangen wir, indem wir über die linke Menüleiste “Sammlungen” auswählen, in unsere Sammlung navigieren, ein Dokument (z. B. “Brief 1”) öffnen und dann eine Seite des Dokuments anklicken. Nun öffnet sich der Editor mit Bild-Text-Synopse. 
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor.jpg
@@ -328,7 +328,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
     * **Konfiguration:** Über das Zahnradsymbol (Abb. x - d) können verschiedene Einstellungen vorgenommen werden und so z. B. das Verhalten und Layout des Editors an die eigenen Bedürfnisse angepasst werden. Es ist aber hier auch möglich, eigene Texttags hinzuzufügen oder bereits vorhandene zu entfernen. Ebenso kann die Sichtbarkeit der Strukturtags gesteuert werden.
     * **Virtuelles Keyboard:**  Das Keyboardsymbol (Abb. x - e) blendet das Virtuelle Keyboard ein, über das Unicode-Zeichen eingefügt werden können . Dazu müssen die gewünschten Unicode-Bereiche zunächst über die Konfigurationsschaltfläche (Zahnradsymbol) ausgewählt werden.
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_options.PNG
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_options.png
 
 " description="Abb. X: Optionen im Texteditor-Fenster" %}
 
@@ -342,7 +342,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 
 
-    * **Hinzufügen von Zeilenlinien:** Über das Füllfedersymbol (Abb. x - a) können Zeilenlinien hinzugefügt werden. Wird eine Linie hinzugefügt, erscheint die mit ihr korrespondierende Zeile rechts im Editorfenster. Ausgewählte Zeilen können auch über die Entfernen-Taste auf der Tastatur gelöscht werden.
+* **Hinzufügen von Zeilenlinien:** Über das Füllfedersymbol (Abb. x - a) können Zeilenlinien hinzugefügt werden. Wird eine Linie hinzugefügt, erscheint die mit ihr korrespondierende Zeile rechts im Editorfenster. Ausgewählte Zeilen können auch über die Entfernen-Taste auf der Tastatur gelöscht werden.
     * **Aktionen mit Regionen:**
         * Mittels Button (Abb. x -b) können Regionen hinzugefügt werden
         * Bereits bestehende Regionen können geteilt werden: Dazu muss die Region mittels Klick ausgewählt werden, nach einem Rechtsklick erscheinen können dann die Teilungsoptionen ausgewählt werden: Horizontal, vertikal oder benutzerdefiniert (Im letzten Fall kann mittels Pfeiltasten die Teilungslinie gedreht werden).
@@ -355,7 +355,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 
 
-8.  Anreicherung von Struktur und Inhalt der Texte über den Editor
+## 8.  Anreicherung von Struktur und Inhalt der Texte über den Editor
 * **Auszeichnen von Text**
     * Markieren wir im Texteditor eine Textpassage, öffnet sich ein Popup-Fenster, das Möglichkeiten zur Textauszeichnung anbietet.
         * **Format:** fett, kursiv, durchgestrichen, unterstrichen, hochgestellt und tiefgestellt
@@ -399,7 +399,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 
 
-9. Export der Dokumente
+## 9. Export der Dokumente
 * **Downloadfunktion in der Sammlungsübersicht:** Da wir unsere Daten noch weiter annotieren und anreichern wollen, ist es für uns am sinnvollsten, sie als TEI-XML zu exportieren. Innerhalb unserer Sammlung können wir die Dokumente selektieren, die wir herunterladen wollen. Wir selektieren unseren bereits testweise annotierten ersten Brief und klicken auf “Download”. Im Popup wählen wir bei den unterschiedlichen Exportformaten lediglich “TEI” aus. Wir bekommen nun auf unsere E-Mail-Adresse einen Downloadlink zugeschickt, mit dem wir eine ZIP-Datei herunterladen können.
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/download_options.PNG
