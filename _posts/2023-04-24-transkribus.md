@@ -238,7 +238,11 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 
 ## 5. Durchführen von Texterkennung
-* Will man Text von Transkribus Lite transkribieren lassen, ist es am sinnvollsten, zunächst zu überprüfen, ob bereits eines der öffentlich verfügbaren Modelle für die eigenen Zwecke geeignet ist und eine tolerierbare Zeichenfehlerrate aufweist, sodass nur geringe Nachkorrekturen des Textmaterials notwendig sind. Nur falls dies nicht der Fall ist, ist das Trainieren eines eigenen Modells notwendig.
+* Will man Text von Transkribus Lite transkribieren lassen, ist es am sinnvollsten, zunächst zu überprüfen, ob bereits eines der öffentlich verfügbaren Modelle für die eigenen Zwecke geeignet ist und eine tolerierbare Zeichenfehlerrate aufweist, sodass nur geringe Nachkorrekturen des Textmaterials notwendig sind. Nur falls dies nicht der Fall ist, ist das Trainieren eines eigenen Modells notwendig. Allgemein kann der Workflow für das Training eines Texterkennungsmodells wie folgt visualisiert werden:
+
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/flowchart_texterkennung.jpg
+
+" description="Abb. 11: Workflow für das Training eines Texterkennungsmodells" %}
 * Wir wollen also nun feststellen, wie gut die Texterkennung der öffentlichen Modelle, angewandt auf die Handschrift Hugo Schuchardts, funktioniert. Dazu wählen wir nun in der Sammlungsübersicht das Dokument “Brief 1” aus und klicken in der linken Menüleiste auf “Texterkennung”. Nun werden wir auf eine neue Seite weitergeleitet, auf der wir das Modell, das zur Texterkennung verwendet werden soll, auswählen müssen. 
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_recognition.PNG" description="Abb. 7: Starten der Texterkennung" %}
@@ -251,7 +255,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 
 
-* Um zu sehen, wie gut die Texterkennung funktioniert hat, navigieren wir nun, nachdem der Job abgeschlossen ist, in das Dokument und klicken auf die erste Seite. Dabei öffnet sich der Editor mit Bild-Text-Synopse, wobei links das Faksimile angezeigt wird und rechts die automatisch erstellte Transkription. Wie zu erkennen ist, liegt die CER in unserem Fall augenfällig deutlich bei über 5 %. Wie sich außerdem auf der ersten und besonders auf den weiteren Seiten des Dokuments zeigt, hat auch die Layouterkennung bei unserem Material nicht optimal funktioniert. So wurde z. B. die zweite Seite des Briefes ohne erkennbaren Grund in 4 Zonen unterteilt.
+* Um zu sehen, wie gut die Texterkennung funktioniert hat, navigieren wir nun, nachdem der Job abgeschlossen ist, in das Dokument und klicken auf die erste Seite. Dabei öffnet sich der Editor mit Bild-Text-Synopse, wobei links das Faksimile angezeigt wird und rechts die automatisch erstellte Transkription. Wie zu erkennen ist, liegt die CER in unserem Fall augenfällig deutlich bei über 5 %. Wie sich außerdem auf der ersten und besonders auf den weiteren Seiten des Dokuments zeigt, hat auch die Layouterkennung bei unserem Material nicht optimal funktioniert. So wurde z. B. die zweite Seite des Briefes ohne erkennbaren Grund in 3 Zonen unterteilt.
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_recognition_test.PNG
 
@@ -265,13 +269,6 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 * Da es also kein geeignetes öffentliches Modell gibt, das mit einer für uns annehmbaren CER die Briefe Hugo Schuchardts transkribiert, werden wir ein eigenes Modell trainieren, um seine Briefe optimal transkribieren zu können.
 ## 6. Training eines Texterkennungsmodells
-* Allgemein kann der Workflow für das Training eines Texterkennungsmodells wie folgt visualisiert werden.
-
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/flowchart_texterkennung.jpg
-
-" description="Abb. 11: Workflow für das Training eines Texterkennungsmodells" %}
-
-
 
 * Zum Erstellen von Trainingsdaten gibt es, wie es im Flowchart ersichtlich ist, also 2 Wege:
     * **Händisch:** Zunächst wird eine Layouterkennung durchgeführt, danach der Text Zeile für Zeile transkribiert. Zuletzt werden die Transkripte als Trainingsdaten gespeichert und ein eigenes Texterkennungsmodell trainiert.
