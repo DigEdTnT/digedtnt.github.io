@@ -273,11 +273,8 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    * **Metadaten-Anreicherung:** In diesem Bereich sollten unsere zuvor mit der YAML-Datei hochgeladenen Metadaten ersichtlich sein. Diese können hier aber auch noch erweitert oder angepasst werden.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/work-metadata.PNG" description="Abb. x: Werk-Metadaten" %}
 ## 4.  Bearbeitung der Dokumente
-   * **Transkriptionsstatus**: Je nach Arbeitsfortschritt werden die einzelnen Dokumente in einem Werk als "Not Started", "Incomplete", "Needs Review" oder "Complete" ausgewiesen. Diese Einstellung ermöglicht eine Statusübersicht über einzelne Werke bzw. den Projektfortschritt.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/progress.PNG" description="Abb. x: Statusübersicht" %}
-   * **Transkriptionsansicht:** Im Transkriptionseditor wird uns eine synoptische Ansicht unseres Faksimiles und des Bearbeitungsbereiches geboten.
-   {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/image-text-synopsis.PNG" description="Abb. x: Bild-Text-Synopse" %}
-   Wir können hier also direkt mit der zeilenweisen Transkription beginnen und die verschiedenen Funktionen von FromThePage nutzen:
+   * **Transkriptionsstatus**: Je nach Arbeitsfortschritt werden die einzelnen Dokumente in einem Werk als "Not Started", "Incomplete", "Needs Review" oder "Complete" ausgewiesen. Diese Einstellung ermöglicht eine Statusübersicht über einzelne Werke bzw. den Projektfortschritt. {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/progress.PNG" description="Abb. x: Statusübersicht" %}
+   * **Transkriptionsansicht:** Im Transkriptionseditor wird uns eine synoptische Ansicht unseres Faksimiles und des Bearbeitungsbereiches geboten. {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/image-text-synopsis.PNG" description="Abb. x: Bild-Text-Synopse" %} Wir können hier also direkt mit der zeilenweisen Transkription beginnen und die verschiedenen Funktionen von FromThePage nutzen:
    * **- Auszeichnung unserer Transkription**: FromThePage ermöglicht es, unsere Auszeichnungen mittels Markdown entsprechend [Wiki-Text-Konventionen](https://www.mediawiki.org/wiki/Wikitext/de) zu gestalten sowie außerdem all jene Mark-up-Buttons zu verwenden, deren Anzeige wir zuvor in den Projekt-Einstellungen aktiviert haben.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-view.PNG" description="Abb. x: Transkriptionsarbeit" %}
    Sollte es unter unseren Transkribierenden Personen geben, die Tags lieber ausschreiben statt Textbereiche mittels Klick auf Button zu markieren, ist dies ebenfalls möglich. Strukturierungen wie Zeilenumbrüche oder Absätze werden automatisch übernommen. Wenn wir die Möglichkeiten der TEI nutzen wollen, haben wir dafür zwar keine Buttons, wir können aber z. B. editorische Eingriffe - in der Abbildung durch das Element &lt;supplied> realisiert - trotzdem mit dem entsprechenden Tag auszeichnen.
@@ -409,7 +406,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
       </teiHeader>
       ```
    → Die individuellen Werk-Metadaten (Material, Sprache usw.), die wir für jedes Manuskript einzeln angelegt haben, sind hier aber leider nicht abgebildet - diese befinden sich aber später im CSV-Metadaten-Export. Leider müssen wir an dieser Stelle außerdem feststellen, dass unser TEI nicht valide ist, da in den Metadaten eine xml:id an zwei Stellen vergeben wurde.
-   * **- Entitäten & Kategorien:** Unsere Taxonomie für Zutaten und Gerichte wird in ein &lt;taxonomy>-Element verpackt, wo wir all unsere angelegten Daten und Kategoriezuordnungen wiederfinden. 
+   * **- Entitäten & Kategorien:** Unsere Taxonomie für Zutaten und Gerichte wird in ein &lt;taxonomy>-Element verpackt, wo wir all unsere angelegten Daten und Kategoriezuordnungen wiederfinden.
       ```xml
       <encodingDesc>
          <classDecl>
@@ -478,7 +475,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
       </encodingDesc>
       ```
    → Auch hier treffen wir auf ein Problem hinsichtlich der Validität unseres TEI-Dokuments, da in der Taxonomie innerhalb der &lt;catDesc>-Elemente &lt;notes>-Elemente erzeugt wurden, die dort nicht zugelassen sind. Zudem steht die mit einem &lt;head>-Element ausgezeichnete Überschrift von einem der Faksimiles unzulässigerweise innerhalb eines &lt;p>-Elementes.
-   * **- Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem &lt;div>-Element wiedergegeben, wobei das vorangehende &lt;pb>-Element einen Link zur Bilddatei im IIIF-Format beinhaltet. 
+   * **- Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem &lt;div>-Element wiedergegeben, wobei das vorangehende &lt;pb>-Element einen Link zur Bilddatei im IIIF-Format beinhaltet.
       ```xml
       <text>
          <body>
@@ -814,7 +811,7 @@ Literaturliste von Zotero
                 <td>
                     <strong>Inkludierte Datenkonvertierung</strong>
                     <br /> (Im Pre-Processing mögliche Anpassung der Daten an für die Software
-                        erforderliches Format ) 
+                        erforderliches Format )
                 </td>
                 <td>❌ </td>
             </tr>
@@ -898,7 +895,7 @@ Literaturliste von Zotero
                 <td>
                     <strong>Test</strong>
                     <br /> (Gibt es ein Test Suite, um zu überprüfen, ob die Installation erfolgreich
-                        war?) 
+                        war?)
                 </td>
                 <td>✅ </td>
             </tr>
@@ -944,7 +941,7 @@ Literaturliste von Zotero
             <tr>
                 <td>
                     <strong>Visualisierungen </strong>
-                    <br /> (Analyse-, Input-, Outputkonfigurationen) 
+                    <br /> (Analyse-, Input-, Outputkonfigurationen)
                 </td>
                 <td>✅Projektstati, Vorschauansichten </td>
             </tr>
