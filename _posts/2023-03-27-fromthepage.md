@@ -180,7 +180,7 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 * Tabellarische Darstellungen nur über Mark-Down (Pipes und Dashes) möglich
 * Metadaten-Beschreibung in den Projekt-Einstellungen teilweise unklar - aus den Bezeichnungen im Eingabeformular geht nicht klar hervor, welchen TEI-Header-Elementen diese im Output entsprechen könnten (siehe Export)
 * Metadaten aus den Werk-Einstellungen werden nicht in den TEI-Export integriert
-* Exportiertes TEI ist nicht valide (siehe unter [Export der Dokumente](#5-export-der-dokumente))
+* Exportiertes TEI ist nicht valide (siehe unter [Export der Dokumente](#5--export-der-dokumente))
 * Keine XSL-Transformationen  innerhalb des Systems möglich oder durchführbar
 
 
