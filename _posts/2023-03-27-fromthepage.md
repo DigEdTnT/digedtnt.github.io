@@ -180,7 +180,7 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 * Tabellarische Darstellungen nur über Mark-Down (Pipes und Dashes) möglich
 * Metadaten-Beschreibung in den Projekt-Einstellungen teilweise unklar - aus den Bezeichnungen im Eingabeformular geht nicht klar hervor, welchen TEI-Header-Elementen diese im Output entsprechen könnten (siehe Export)
 * Metadaten aus den Werk-Einstellungen werden nicht in den TEI-Export integriert
-* Exportiertes TEI ist nicht valide (siehe unter Export der Dokumente)
+* Exportiertes TEI ist nicht valide (siehe unter [Export der Dokumente](#5-export-der-dokumente))
 * Keine XSL-Transformationen  innerhalb des Systems möglich oder durchführbar
 
 
@@ -237,7 +237,7 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    document_set: ''
    #you can also put multiple document sets in arrays like ['Diaries', 'Public']
    ```
-   → Leider sind wir hier hinsichtlich unserer Metadaten etwas eingeschränkt und können den Werken nur jene Metadaten mitgeben, für die es in der Vorlage auch eine entsprechende Vorgabe gibt. Sollten die Metadaten erst im Zuge des Projekts erforscht werden, können diese auch erst später in den allgemeinen Einstellungen zur Sammlung sowie in den Einstellungen zum Werk ergänzt werden. Für Nutzer:innen, die lieber mit einer grafischen Oberfläche arbeiten, empfiehlt sich ebenfalls die Metadaten in den allgemeinen Einstellungen einzutragen (siehe Punkt “Metadaten-Anreicherung” unter dem Punkt “Einstellungen für das jeweilige Werk”).
+   → Leider sind wir hier hinsichtlich unserer Metadaten etwas eingeschränkt und können den Werken nur jene Metadaten mitgeben, für die es in der Vorlage auch eine entsprechende Vorgabe gibt. Sollten die Metadaten erst im Zuge des Projekts erforscht werden, können diese auch erst später in den allgemeinen Einstellungen zur Sammlung sowie in den Einstellungen zum Werk ergänzt werden. Für Nutzer:innen, die lieber mit einer grafischen Oberfläche arbeiten, empfiehlt sich ebenfalls die Metadaten in den allgemeinen Einstellungen einzutragen (siehe unter [Metadaten-Anreicherung](#32-einstellungen-für-das-jeweilige-werk)).
    * Nach erfolgreichem Upload kann man die Werke in der “Works List” einsehen und für die einzelnen Werke noch weitere Einstellungen vornehmen. Auf unserem Dashboard sollten wir nun unsere Werke einsehen können.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-dashboard.PNG" description="Abb. x: Dashboard-Ansicht der Werke einer Sammlung" %}
 ## 3.  Projektkonfigurationen
@@ -304,7 +304,7 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    → Achtung: Sobald man den Tab mit der Transkriptionsansicht verlässt, verliert man ohne Vorwarnung seinen Arbeitsfortschritt - daher nicht vergessen, regelmäßig abzuspeichern.
    * **- Metadaten-Anreicherung:** Nachdem wir für unser Projekt festgelegt haben, dass zu jedem Werk auch Metadaten angelegt werden können, steht unseren Transkribierenden ein Button zur Erstellung von Metadaten zur Verfügung.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/create-metadata-button.PNG" description="Abb. x: Metadaten-Button für Bearbeitende" %}
-   Über die damit aufgerufene Ansicht können schließlich die zuvor von der Projektleitung angelegten Felder (siehe unter Metadaten-Erstellung für einzelne Werke) befüllt werden.
+   Über die damit aufgerufene Ansicht können schließlich die zuvor von der Projektleitung angelegten Felder (siehe [Metadaten-Erstellung für einzelne Werke](#32-einstellungen-für-das-jeweilige-werk)) befüllt werden.
    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/metadata-creation-editor.PNG" description="Abb. x: Anreicherung von Metadaten durch Bearbeitende" %}
    Auch bei den Metadaten gibt es wieder die Option zwischenzuspeichern (“Save”), die Daten als vollständig zu markieren (“Done”) bzw. sie am Ende durch eine:n Reviewer:in zu bestätigen (“Approve”).
    * **Versionsansicht:** Im Tab “Versions” können wir nachverfolgen, wer wann welche Änderungen vorgenommen hat.
