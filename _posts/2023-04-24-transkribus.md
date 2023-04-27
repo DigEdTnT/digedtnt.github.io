@@ -13,7 +13,7 @@ excerpt: Transkribus Lite ist eine Plattform für KI-gestützte Layout- und Text
 
 # Beschreibung
 
-Transkribus Lite ist eine Plattform primär für die KI-gestützte Layout- und Texterkennung von gedruckten oder handgeschriebenen Dokumenten, ermöglicht aber auch die Annotation von Struktur und Inhalt. Die Plattform geht auf das 2016 ins Leben gerufene READ-Projekt zurück und wird von der 2019 gegründeten Europäischen Genossenschaft READ-COOP SCE zur Verfügung gestellt und beständig weiterentwickelt. Die Genossenschaft hat mittlerweile mehr als 130 Mitglieder (Institutionen und Privatpersonen) in 30 Ländern (Stand April 2023).
+Transkribus Lite ist eine Plattform primär für die KI-gestützte Layout- und Texterkennung von gedruckten oder handgeschriebenen Dokumenten, ermöglicht aber auch - mit Grenzen - die Annotation von Struktur und Inhalt. Die Plattform geht auf das 2016 ins Leben gerufene READ-Projekt zurück und wird von der 2019 gegründeten Europäischen Genossenschaft READ-COOP SCE zur Verfügung gestellt und beständig weiterentwickelt. Die Genossenschaft hat mittlerweile mehr als 130 Mitglieder (Institutionen und Privatpersonen) in 30 Ländern (Stand April 2023).
 
 
 ## Anwendungsbereiche
@@ -40,14 +40,14 @@ Transkribus Lite ist eine Plattform primär für die KI-gestützte Layout- und T
 
 
 
-* Automatische Transkription handgeschriebener oder gedruckter Dokumente mittels öffentlicher Modelle oder selbst trainierter Modelle
+* Automatische Transkription handgeschriebener oder gedruckter Dokumente mittels öffentlicher oder selbst trainierter Modelle
 * Separat oder gemeinsam mit Texterkennung ausführbare Layouterkennung
 * Training von KI-Modellen zur Layout- und Texterkennung
 * Editor mit Bild-Text-Synopse zur
     * Korrektur von automatisch erkanntem Text oder manuellen Transkriptionen
     * Anreicherung der Dokumentstruktur und des Inhalts (Markieren, Taggen, Annotieren):
         * Struktur: Auf dem Faksimile können Regionen ausgezeichnet und diesen ein Strukturtyp (z. B. “paragraph”) zugewiesen werden
-        * Inhalt: Auszeichnung des Textformats (fett, kursiv, hochgestellt usw.) und Tagging von Textpassagen 
+        * Inhalt: Auszeichnung des Textformats (fett, kursiv, hochgestellt usw.) und Tagging von Textpassagen (z. B. “date”)
     * Es lassen sich allerdings nur einfache und keine komplexen Strukturen annotieren (z. B. überschneidende oder seitenübergreifende Annotationen)
 * Selbst definierbare Struktur- und Texttags mit optionalen Attributen
 * Kollaborative Zusammenarbeit: Nutzer:innen können mit verschiedenen Rollen (“owner”, “editor” und “transcriber”) zu Sammlungen hinzugefügt werden und gemeinsam an Projekten arbeiten. 
@@ -64,7 +64,7 @@ Transkribus Lite ist eine Plattform primär für die KI-gestützte Layout- und T
 * Transkribus eXpert (Standalone-Version, Java-basiert) 
 * Transkribus Lite (Webversion) 
 
-Aufgrund der großen Annahme der Webversion wird nur mehr diese weiterentwickelt, Transkribus eXpert steht zwar weiterhin zur Verfügung, allerdings werden keine neuen Features mehr hinzugefügt. Alle Dokumente, die in Transkribus Lite hochgeladen werden, stehen aufgrund der Speicherung auf den Servern der READ COOP SCE auch in Transkribus eXpert zur Verfügung. Transkribus Lite wird laufend um neue Funktionalitäten erweitert.
+Aufgrund der großen Annahme der Webversion wird nur mehr diese weiterentwickelt, Transkribus eXpert steht zwar weiterhin zur Verfügung, allerdings werden keine neuen Features mehr hinzugefügt. Alle Dokumente, die in Transkribus Lite hochgeladen werden, stehen aufgrund der Speicherung auf den Servern der READ COOP SCE auch in Transkribus eXpert zur Verfügung. Transkribus Lite wird laufend um neue Funktionalitäten erweitert und ist zur Zeit nicht so mächtig wie die Standalone-Version.
 
 
 ## Tool-Kompatibilität
@@ -119,7 +119,7 @@ Aufgrund der großen Annahme der Webversion wird nur mehr diese weiterentwickelt
 
 
 
-* Erstellen von Sammlungen, Upload von Dokumenten, manuelle Transkription, Layouterkennung, Training von Modellen zur Layout- und Texterkennung kostenlos
+* Kostenlos: Erstellen von Sammlungen, Upload von Dokumenten, manuelle Transkription, Layouterkennung, Training von Modellen zur Layout- und Texterkennung
 * Nur automatische Texterkennung mit Kosten verbunden
 * Creditsystem (Stand April 2023): 
     * 1 Credit transkribiert 1 handgeschriebene oder 6 gedruckte Seiten
@@ -135,20 +135,19 @@ Aufgrund der großen Annahme der Webversion wird nur mehr diese weiterentwickelt
 
 
 * Kein Software-Download oder Installation nötig - nur ein Webbrowser wird benötigt
-* Keine Hardwareanforderungen, da Text- und Layouterkennung sowie das Trainieren von Modellen auf den Servern der READ COOP SCE in Innsbruck durchgeführt wird
-* Intuitive und schnelle Handhabung
-* Mehrsprachige Benutzeroberfläche (de, en, es, et, fi, fr, it, nl, pl, pt, sl, sv)
+* Keine Hardwareanforderungen, da Text- und Layouterkennung sowie das Trainieren von Modellen auf den Servern der READ COOP SCE in Innsbruck (Österreich) durchgeführt wird
 * Da die Daten auf europäischen Servern gespeichert werden, ist gesichert, dass die Bestimmungen der DSGVO eingehalten werden
+* Mehrsprachige Benutzeroberfläche (de, en, es, et, fi, fr, it, nl, pl, pt, sl, sv)
 * Gute Anpassung der Layout- und Texterkennung an die jeweilige Dokumentenstruktur und Hand bzw. Hände über das Training eigener Modelle gegeben
 * Für kollaborative Arbeit an Transkriptionen mit anderen Transkribus-Nutzer:innen geeignet
 * Eigene Struktur- und Texttags definierbar, sodass Konformität mit den TEI-Guidelines erreicht werden kann
     * Einbindung von Normdaten möglich (Wikidata ID) 
-* Schreibrichtung rechts-links wird ebenfalls unterstützt
-* Smart Search: Suche nach Alternativen für (falsch) erkannte Wörter während der automatischen Transkription
-* Nur Creditverbrauch bei Texterkennung, alle anderen Funktionalitäten (z. B. Upload, Transkription, Anreicherung, Modelltraining) sind kostenfrei
+* Schreibrichtung rechts-links wird unterstützt
+* Smart Search (höherer Creditverbrauch): Es wird nicht nur ein erkanntes Wort, sondern auch Alternativen gespeichert, sodass nach gut nach (falsch) erkannten Wörtern gesucht werden kann
+* Nur Creditverbrauch bei Texterkennung, alle anderen Funktionalitäten (siehe "Kostenübersicht") sind kostenfrei
 * 10 % Discount beim Kauf von Credits als READ-COOP-SCE-Mitglied
 * Erhalt von kostenfreien Credits für Studierende und Lehrende durch das Transkribus-Scholarship-Programm möglich 
-* Teilen von Dokumenten mit Personen möglich, die nicht registriert sind
+* Teilen von Seiten mit Personen möglich, die nicht registriert sind
 
 
 ## Herausforderungen & Probleme
@@ -157,7 +156,7 @@ Aufgrund der großen Annahme der Webversion wird nur mehr diese weiterentwickelt
 
 * Transkribus Lite ist (derzeit noch) nicht so mächtig wie das auslaufende, aber immer noch nutzbare Transkribus eXpert
 * Um ein eigenes Texterkennungsmodell zu trainieren, werden zwischen 25-75 transkribierte Seiten (5.000-15.000 Wörter) als Trainingsdaten (“Ground Truth”) benötigt, in denen sehr unterschiedliche Fälle vorkommen sollten. 5.000 werden für gedruckte Texte benötigt, bei handgeschriebenen sollten es mindestens 10.000 für jede vorkommende Hand sein. Generell gilt: Je mehr transkribierte Seiten, desto besser die Ergebnisse
-* Training von HTR-Modellen kann sehr zeitintensiv sein und bei sehr heterogenen Handschriften eine hohe Fehlerrate aufweisen
+* Training von HTR-Modellen kann zeitintensiv sein und bei sehr heterogenen Handschriften eine hohe Fehlerrate aufweisen
 * Es können zwar Annotationen vorgenommen werden und eigene Tags erstellt werden, allerdings ist der Editor kein vollwertiger Ersatz für ein eigenständiges Annotationstool
 * Kein internes Kommunikationstool, um sich mit anderen, gemeinsam an einer Sammlung arbeitenden Nutzer:innen koordinieren zu können (keine Kommentarfunktion, kein Ort, an dem Guidelines für die Transkription abgelegt werden können, usw.) 
 * Texterkennung mit kostenfreien Credits hat geringere Priorität als mit gekauften
@@ -184,23 +183,26 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 # Einrichtung & Erste Schritte (Beispielprojekt)
 
-Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwissenschaftlers Hugo Schuchardt (1842-1927) aus dem 19. Jahrhundert gearbeitet wird, soll nachfolgend ein möglicher Arbeitsablauf mit dem OCR- bzw. HTR-Tool Transkribus Lite beschrieben werden. In einem ersten Schritt soll überprüft werden, ob es ein öffentliches HTR-Modell gibt, mit dem die Briefe Schuchardts mit einer für uns annehmbaren Zeichenfehlerrate (Character Error Rate, CER) transkribiert werden können. Da sich zeigen wird, dass dies nicht der Fall ist, werden wir unser eigenes Modell trainieren. In einem letzten Schritt werden wir das Textmaterial mittels Transkribus-Lite-Editor noch ansatzweise mittels TEI-konformer Tags annotieren und letztlich als TEI-XML-Dateien exportieren, um diese dann mittels anderer Tools weiter bearbeiten zu können.
+Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwissenschaftlers Hugo Schuchardt (1842-1927) aus dem 19. Jahrhundert gearbeitet wird, soll nachfolgend ein möglicher Arbeitsablauf mit dem OCR- bzw. HTR-Tool Transkribus Lite beschrieben werden. In einem ersten Schritt soll überprüft werden, ob es ein öffentliches HTR-Modell gibt, mit dem die Briefe Schuchardts mit einer für uns annehmbaren Zeichenfehlerrate ("Character Error Rate", CER) transkribiert werden können. Da sich zeigen wird, dass dies nicht der Fall ist, werden wir unser eigenes Modell trainieren. In einem letzten Schritt werden wir das Textmaterial mittels Transkribus-Lite-Editor noch ansatzweise mittels TEI-konformer Tags annotieren und letztlich als TEI-XML-Dateien exportieren, um diese dann mittels anderer Tools weiter bearbeiten zu können.
 
 
 ## Allgemeiner Transkribus-Workflow
 
+Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/flowchart_workflow.jpg" description="Abb. 1: Allgemeiner Transkribus-Workflow" %}
 
-**Upload der Dokumente** **+ Überprüfung, ob eines der öffentlichen Modelle für die automatische Transkription geeignet ist:**
+**Start**: Upload der Dokumente → Überprüfung, ob eines der öffentlichen Modelle für die automatische Transkription geeignet ist:
 
 
 
 * **JA:** Texterkennung → Tagging des erkannten Textes → Download
 * **NEIN:** Layouterkennung → Trainingsdaten (“Ground Truth”) mittels Transkriptionen erzeugen→ Training eines Texterkennungsmodells → Texterkennung → Tagging des erkannten Textes → Download
-1. Registrierung
-* Um Transkribus Lite nutzen zu können, ist eine Registrierung erforderlich. Bei Registrierung erhält man 500 nicht teilbare Credits zur Verfügung gestellt, mit denen 500 handgeschriebene oder 3000 gedruckte Seiten automatisch transkribiert werden können. Nur die automatische Texterkennung verbraucht Credits, alle anderen Funktionen (etwa Layouterkennung, Trainieren von Modellen zur Texterkennung, händische Transkription zur Bildung von Trainingsdaten (“Ground Truth”, siehe unten) oder Annotation) ist kostenfrei.
+## 1. Registrierung
+* Um Transkribus Lite nutzen zu können, ist eine Registrierung erforderlich, wobei Namen und E-Mail-Adresse angegeben werden müssen.
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/registration.jpg" description="Abb. 2: Registrierung" %}
+
+* Bei Registrierung erhält man 500 nicht teilbare Credits zur Verfügung gestellt, mit denen 500 handgeschriebene oder 3000 gedruckte Seiten automatisch transkribiert werden können.
 
 
 
@@ -238,7 +240,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 
 ## 5. Durchführen von Texterkennung
-* Will man Text von Transkribus Lite transkribieren lassen, ist es am sinnvollsten, zunächst zu überprüfen, ob bereits eines der öffentlich verfügbaren Modelle für die eigenen Zwecke geeignet ist und eine tolerierbare Zeichenfehlerrate aufweist, sodass nur geringe Nachkorrekturen des Textmaterials notwendig sind. Nur falls dies nicht der Fall ist, ist das Trainieren eines eigenen Modells notwendig. Allgemein kann der Workflow für das Training eines Texterkennungsmodells wie folgt visualisiert werden:
+* Will man Text von Transkribus Lite transkribieren lassen, ist es am sinnvollsten, zunächst zu überprüfen, ob bereits eines der öffentlich verfügbaren Modelle für die eigenen Zwecke geeignet ist und eine tolerierbare Zeichenfehlerrate (“Character Error Rate”, CER) aufweist, sodass nur geringe Nachkorrekturen des Textmaterials notwendig sind. Nur falls dies nicht der Fall ist, ist das Trainieren eines eigenen Modells notwendig. Allgemein kann der Workflow für das Training eines Texterkennungsmodells wie folgt visualisiert werden:
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/flowchart_texterkennung.jpg
 
@@ -272,7 +274,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 * Zum Erstellen von Trainingsdaten gibt es, wie es im Flowchart ersichtlich ist, also 2 Wege:
     * **Händisch:** Zunächst wird eine Layouterkennung durchgeführt, danach der Text Zeile für Zeile transkribiert. Zuletzt werden die Transkripte als Trainingsdaten gespeichert und ein eigenes Texterkennungsmodell trainiert.
-    * **Halb automatisch, halb händisch:** Hier wird zunächst ein öffentliches Modell verwendet und festgestellt, ob die automatische Transkription zu einigermaßen korrekten Ergebnissen führt. Im nächsten Schritt werden die automatischen Transkriptionen händisch korrigiert und dann als Trainingsdaten gespeichert. Zuletzt wird auf Basis dieser Trainingsdaten ein eigenes Texterkennungsmodell trainiert.
+    * **Halb automatisch, halb händisch:** Hier wird zunächst ein öffentliches Modell verwendet und überprüft, ob die automatische Transkription zu einigermaßen korrekten Ergebnissen führt. Im nächsten Schritt werden die automatischen Transkriptionen händisch korrigiert und dann als Trainingsdaten gespeichert. Zuletzt wird auf Basis dieser Trainingsdaten ein eigenes Texterkennungsmodell trainiert.
 * Für das Training eines Texterkennungsmodells werden von Transkribus 25-75 Seiten (5.000-15.000 Wörter) als Trainingsdaten (“Ground Truth”) benötigt bzw. empfohlen, bei handgeschriebenen Texten sollten es mindestens 10.000 Wörter pro Hand sein. Als Trainingsdaten werden in Transkribus die Faksimiles und die mit ihnen korrespondierenden fehlerfreien und genauen Transkriptionen bezeichnet, die in weiterer Folge für das Training der Texterkennungsmodelle verwendet werden. Generell gilt: Je mehr Trainingsdaten vorhanden sind, desto erfolgreicher verläuft das Modelltraining. 
 * Momentan ist es in Transkribus Lite leider noch nicht möglich, bereits außerhalb transkribierten Text einzufügen. Es können bisher immer nur einzelne Zeile angewählt und befüllt werden, nicht aber ganze Textblöcke zeilenübergreifend eingefügt werden. 
 
@@ -303,13 +305,13 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 * Zunächst wählen wir die Trainingsdaten aus. Hier können wir die Dokumente gesamt auswählen oder uns für einzelne Seiten innerhalb der Dokumente entscheiden. Wir wählen Brief 1 bis 6 aus, da wir so die von Transkribus empfohlene Anforderung von mindestens 10.000 transkribierten Wörtern bei handgeschriebenen Texten erreichen und klicken auf “Weiter”.
 * Im nächsten Schritt wählen wir die Validierungsdaten aus. Die Validierungsdaten sollten nach Empfehlungen von Transkribus 10 % der Trainingsdaten umfassen und repräsentativ für die Dokumente in unserer Sammlung sein, denn sonst könnte es zu einem Bias bei der Messung der Performance des Modells kommen. Die Dokumente bzw. Seiten für die Validierungsdaten können händisch ausgewählt oder automatisch (2 %, 5 % oder 10 %) zugewiesen werden. Nur Seiten, die nicht bereits den Trainingsdaten zugewiesen wurden, können ausgewählt werden. Wir folgen den Empfehlungen von Transkribus und entscheiden uns für eine automatische Zuweisung von 10 % und klicken auf “Weiter”.
 * **Erweiterte Einstellungen:** In der letzten Ansicht vor dem Start des Trainings sehen auf einer Seite nochmals die Metadaten unseres Modells und können sie gegebenenfalls ändern, ebenso werden die ausgewählten Trainings- und Validierungsdaten nochmals gegenübergestellt angezeigt. Darunter findet sich ein mit “Erweitert” betitelter Reiter, der noch einige Einstellungen verbirgt:
-    * **Anzahl an “Epochs”:** Zunächst können wir die Anzahl an ‘Epochen’ (“Epochs”) verändern, die standardmäßig auf 250 eingestellt ist. Diese Zahl gibt an, wie oft Trainings- und Validierungsset maximal evaluiert werden. Das Training wird automatisch gestoppt, wenn die niedrigstmögliche Character Error Rate (CER) erreicht wurde. Transkribus empfiehlt, zunächst den Wert auf 250 zu belassen.
-    * **Early Stopping:** Weiters können wir den “Early Stopping”-Parameter modifizieren, der standardmäßig auf 20 eingestellt ist. Ein Wert von 20 bedeutet, dass, falls nach 20 Epochen die CER nicht mehr sinkt, das Training beendet wird. Transkribus empfiehlt an diesem Punkt ein heterogenes Validierungsset, das repräsentativ für das Trainingsset ist, da sonst das Training zu früh abbrechen könnte. Transkribus empfiehlt außerdem, diesen Wert nur dann zu erhöhen, wenn das Validierungsset klein ist, um zu verhindern, dass das Training abgebrochen wird, bevor das Modell alle Trainingsdaten verarbeitet hat. Auch hier empfiehlt Transkribus, ihn zunächst einmal beizubehalten.
-    * **Auswahl eines Basismodells:** Wir können auch ein Basismodell auswählen, das als Ausgangspunkt für das Training verwendet werden soll, was bedeuten würde, dass das Modell nicht von Grund auf lernen muss. 
+    * **Anzahl an “Epochs”:** Zunächst können wir die Anzahl an ‘Epochen’ (“Epochs”) verändern, die standardmäßig auf 250 eingestellt ist. Diese Zahl gibt an, wie oft Trainings- und Validierungsset maximal evaluiert werden. Das Training wird automatisch gestoppt, wenn die niedrigstmögliche Zeichenfehlerrate (“Character Error Rate” (CER)) erreicht wurde. Transkribus empfiehlt, zunächst den Wert auf 250 zu belassen.
+    * **Early Stopping:** Weiters können wir den “Early Stopping”-Parameter modifizieren, der standardmäßig auf 20 eingestellt ist. Ein Wert von 20 bedeutet, dass, falls nach 20 Epochen die CER nicht mehr sinkt, das Training beendet wird. Transkribus empfiehlt an diesem Punkt ein heterogenes Validierungsset, das repräsentativ für das Trainingsset ist, da sonst das Training zu früh abbrechen könnte. Außerdem wird empfohlen, diesen Wert nur dann zu erhöhen, wenn das Validierungsset klein ist, um zu verhindern, dass das Training abgebrochen wird, bevor das Modell alle Trainingsdaten verarbeitet hat. Auch hier empfiehlt Transkribus, den Wert zunächst einmal beizubehalten.
+    * **Auswahl eines Basismodells:** Wir können auch ein Basismodell auswählen, das als Ausgangspunkt für das Training verwendet werden soll, was bedeuten würde, dass das Modell nicht von Grund auf lernen muss. Wird mit einem Basismodell trainiert, genügen möglicherweise weniger Trainingsdaten. Es ist allerdings nicht immer garantiert, dass die Verwendung eines Basismodells zu besseren Ergebnissen führt, sondern es muss im spezifischen Fall getestet werden. 
     * **“Reverse Text (RTL)”:** Zuletzt könnten wir noch wir noch “Reverse Text (RTL)” auswählen, falls die Schreibrichtung unseres Materials von rechts nach links ist.
 * Wir behalten also alle erweiterten Einstellungen bei und klicken auf “Training starten".
 ## 7. Die Texteditoransicht
-* Zum Texteditor gelangen wir, indem wir über die linke Menüleiste “Sammlungen” auswählen, in unsere Sammlung navigieren, ein Dokument (z. B. “Brief 1”) öffnen und dann eine Seite des Dokuments anklicken. Nun öffnet sich der Editor mit Bild-Text-Synopse. 
+* Nachdem wir unser Modell trainiert, wollen wir zunächst noch den Texteditor von Transkribus erproben und unsere Dokumente annotieren. Zum Texteditor gelangen wir, indem wir über die linke Menüleiste “Sammlungen” auswählen, in unsere Sammlung navigieren, ein Dokument (z. B. “Brief 1”) öffnen und dann eine Seite des Dokuments anklicken. Nun öffnet sich der Editor mit Bild-Text-Synopse. 
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor.jpg
 
@@ -319,16 +321,15 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 
 * In der Defaultansicht findet sich links im Bild das Faksimile und rechts der Texteditor. Die Ansicht kann über die untere Menüleiste umgestellt werden, sodass sich oben das Faksimile und unten der Texteditor findet.
 * **Wichtige Optionen im Editorfenster** (rechts):
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_options.png
+
+" description="Abb. X: Optionen im Texteditor-Fenster" %}
+
     * **Festlegen des Bearbeitungsstatus:** Im rechten oberen Eck kann Bearbeitungsstatus der Seite festgelegt werden (Abb. x - a): “In Bearbeitung”, “Erledigt” (die Seite wurde transkribiert), “Final” (die Seite wurde transkribiert und einem Review unterzogen) und “Trainingsdaten” (die Transkription ist so korrekt wie möglich und wird zum Modelltraining verwendet).
     * **Speichern:** Mit dem dem Diskettensymbol (Abb. x - b) kann gespeichert werden 	
     * **Versionskontrolle:** Die Schaltfläche mit Datums- und Zeitangabe (Abb. x -c) dient der Versionskontrolle. Mittels ‘Speicherständen’ kann zwischen auf frühere und von dort aus dann spätere Versionen zugegriffen werden werden.
     * **Konfiguration:** Über das Zahnradsymbol (Abb. x - d) können verschiedene Einstellungen vorgenommen werden und so z. B. das Verhalten und Layout des Editors an die eigenen Bedürfnisse angepasst werden. Es ist aber hier auch möglich, eigene Texttags hinzuzufügen oder bereits vorhandene zu entfernen. Ebenso kann die Sichtbarkeit der Strukturtags gesteuert werden.
     * **Virtuelles Keyboard:**  Das Keyboardsymbol (Abb. x - e) blendet das Virtuelle Keyboard ein, über das Unicode-Zeichen eingefügt werden können . Dazu müssen die gewünschten Unicode-Bereiche zunächst über die Konfigurationsschaltfläche (Zahnradsymbol) ausgewählt werden.
-
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_options.png
-
-" description="Abb. X: Optionen im Texteditor-Fenster" %}
-
 
 
 * **Wichtige Optionen im Faksimilefenster** (links):
