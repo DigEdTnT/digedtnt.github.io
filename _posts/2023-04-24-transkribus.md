@@ -191,12 +191,9 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/flowchart_workflow.jpg" description="Abb. 1: Allgemeiner Transkribus-Workflow" %}
 
-**Start**: Upload der Dokumente → Überprüfung, ob eines der öffentlichen Modelle für die automatische Transkription geeignet ist:
-
-
-
-* **JA:** Texterkennung → Tagging des erkannten Textes → Download
-* **NEIN:** Layouterkennung → Trainingsdaten (“Ground Truth”) mittels Transkriptionen erzeugen→ Training eines Texterkennungsmodells → Texterkennung → Tagging des erkannten Textes → Download
+* **Start**: Upload der Dokumente → Überprüfung, ob eines der öffentlichen Modelle für die automatische Transkription geeignet ist:
+    * **JA:** Texterkennung → Tagging des erkannten Textes → Download
+    * **NEIN:** Layouterkennung → Trainingsdaten (“Ground Truth”) mittels Transkriptionen erzeugen→ Training eines Texterkennungsmodells → Texterkennung → Tagging des erkannten Textes → Download
 ## 1. Registrierung
 * Um Transkribus Lite nutzen zu können, ist eine Registrierung erforderlich, wobei Namen und E-Mail-Adresse angegeben werden müssen.
 
@@ -205,8 +202,6 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 * Bei Registrierung erhält man 500 nicht teilbare Credits zur Verfügung gestellt, mit denen 500 handgeschriebene oder 3000 gedruckte Seiten automatisch transkribiert werden können.
 
 
-
-* Die Angabe von Name und E-Mail-Adresse ist zur Registrierung erforderlich.
 ## 2. Transkribus Lite - Benutzeroberfläche
 * **Dashboard:** Nach dem Einloggen findet man sich im Transkribus-Lite-Dashboard wieder. Hier können die Tabs “Workdesk” und Training ausgewählt werden, wobei per default “Workdesk” selektiert ist.
     * **“Workdesk” (Abb. X  - a):** Der Workdesk ist die Arbeitsumgebung, die Zugang zu den elementaren Funktionen von Transkribus bietet: 
@@ -324,7 +319,6 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_options.png
 
 " description="Abb. X: Optionen im Texteditor-Fenster" %}
-
     * **Festlegen des Bearbeitungsstatus:** Im rechten oberen Eck kann Bearbeitungsstatus der Seite festgelegt werden (Abb. x - a): “In Bearbeitung”, “Erledigt” (die Seite wurde transkribiert), “Final” (die Seite wurde transkribiert und einem Review unterzogen) und “Trainingsdaten” (die Transkription ist so korrekt wie möglich und wird zum Modelltraining verwendet).
     * **Speichern:** Mit dem dem Diskettensymbol (Abb. x - b) kann gespeichert werden 	
     * **Versionskontrolle:** Die Schaltfläche mit Datums- und Zeitangabe (Abb. x -c) dient der Versionskontrolle. Mittels ‘Speicherständen’ kann zwischen auf frühere und von dort aus dann spätere Versionen zugegriffen werden werden.
