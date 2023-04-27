@@ -316,15 +316,14 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 * In der Defaultansicht findet sich links im Bild das Faksimile und rechts der Texteditor. Die Ansicht kann über die untere Menüleiste umgestellt werden, sodass sich oben das Faksimile und unten der Texteditor findet.
 * **Wichtige Optionen im Editorfenster** (rechts):
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_options.png
-
-" description="Abb. X: Optionen im Texteditor-Fenster" %}
     * **Festlegen des Bearbeitungsstatus:** Im rechten oberen Eck kann Bearbeitungsstatus der Seite festgelegt werden (Abb. x - a): “In Bearbeitung”, “Erledigt” (die Seite wurde transkribiert), “Final” (die Seite wurde transkribiert und einem Review unterzogen) und “Trainingsdaten” (die Transkription ist so korrekt wie möglich und wird zum Modelltraining verwendet).
     * **Speichern:** Mit dem dem Diskettensymbol (Abb. x - b) kann gespeichert werden 	
     * **Versionskontrolle:** Die Schaltfläche mit Datums- und Zeitangabe (Abb. x -c) dient der Versionskontrolle. Mittels ‘Speicherständen’ kann zwischen auf frühere und von dort aus dann spätere Versionen zugegriffen werden werden.
     * **Konfiguration:** Über das Zahnradsymbol (Abb. x - d) können verschiedene Einstellungen vorgenommen werden und so z. B. das Verhalten und Layout des Editors an die eigenen Bedürfnisse angepasst werden. Es ist aber hier auch möglich, eigene Texttags hinzuzufügen oder bereits vorhandene zu entfernen. Ebenso kann die Sichtbarkeit der Strukturtags gesteuert werden.
     * **Virtuelles Keyboard:**  Das Keyboardsymbol (Abb. x - e) blendet das Virtuelle Keyboard ein, über das Unicode-Zeichen eingefügt werden können . Dazu müssen die gewünschten Unicode-Bereiche zunächst über die Konfigurationsschaltfläche (Zahnradsymbol) ausgewählt werden.
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_options.png
 
+" description="Abb. X: Optionen im Texteditor-Fenster" %}
 
 * **Wichtige Optionen im Faksimilefenster** (links):
 
