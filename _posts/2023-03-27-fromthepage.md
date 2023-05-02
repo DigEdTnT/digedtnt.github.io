@@ -6,7 +6,7 @@ title: FromThePage
 
 categories: [tool, transkription, FromThePage, opensource]
 
-excerpt: Die größte Stärke von FromThePage liegt darin, die kollaborative Transkription von großen Sammlungen mit bereits minimalen Computerkenntnissen zu ermöglichen. Für umfassende Annotationen von Textsammlungen empfiehlt es sich jedoch aufgrund der eingeschränkten Möglichkeiten eher nicht. 
+excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
 
 ---
 
