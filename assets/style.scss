@@ -271,6 +271,7 @@ p>img {
 pre {
   max-height: 300px;
   overflow: scroll;
+  white-space: pre-wrap;
 }
 
 // Clipboard button for code blocks

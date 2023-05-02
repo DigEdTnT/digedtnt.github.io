@@ -4,7 +4,7 @@ layout: post
 
 title: FromThePage
 
-categories: [tool, transcription, FromThePage, opensource]
+categories: [tool, transkription, FromThePage, opensource]
 
 excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
 
@@ -71,15 +71,21 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 ### Erforderliche Kenntnisse
 
 
+* EDV-Grundkenntnisse
+    * Kenntnis des lokalen Datei-/Ordnersystems
+    * Bedienung eines Webbrowsers
 
-* Keine
-* Grundkenntnisse zu Markup-Sprachen (HTML, TEI, MediaWiki) von Vorteil
+Nicht unbedingt erforderlich, aber von Vorteil:
+* Grundkenntnisse von Markup-Sprachen
+    * HTML
+    * TEI 
+    * MediaWiki
 
 
-### Benötigte Software
+### Benötigte Software & technische Voraussetzungen
 
 
-
+* Stabile Internetverbindung
 * Webbrowser
 
 
