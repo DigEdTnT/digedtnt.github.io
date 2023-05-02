@@ -6,7 +6,7 @@ title: FromThePage
 
 categories: [tool, transkription, FromThePage, opensource]
 
-excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
+excerpt: Die größte Stärke von FromThePage liegt darin, die kollaborative Transkription von großen Sammlungen mit bereits minimalen Computerkenntnissen zu ermöglichen. Für umfassende Annotationen von Textsammlungen empfiehlt es sich jedoch aufgrund der eingeschränkten Möglichkeiten eher nicht. 
 
 ---
 
@@ -14,7 +14,7 @@ excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
 
 # Allgemeine Beschreibung
 
-FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins Leben gerufen wurde, um die Arbeit bei der Transkription von Textsammlungen zu erleichtern. Die Software wurde 2009 unter einen Open-Source-Lizenz veröffentlicht und wird seit 2010 für die Transkription nach dem Crowdsourcing-Prinzip von Bibliotheken, Archiven und Museen genutzt. Durch die Anpassung an die besonderen Bedürfnisse der verschiedenen Institutionen wird die Software ständig weiterentwickelt. Seit 2014 liegt der Fokus vor allem auf wissenschaftlichen digitalen Editionen.
+FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins Leben gerufen wurde, um die Arbeit bei der Transkription von Textsammlungen zu erleichtern. Die Software wurde 2009 unter einen Open-Source-Lizenz veröffentlicht und wird seit 2010 für die Transkription nach dem Crowdsourcing-Prinzip von Bibliotheken, Archiven und Museen genutzt. {% include pullquote.html quote="Die größte Stärke von FromThePage liegt darin, die kollaborative Transkription von großen Sammlungen mit bereits minimalen Computerkenntnissen zu ermöglichen. Für umfassende Annotationen von Textsammlungen empfiehlt es sich jedoch aufgrund der eingeschränkten Möglichkeiten eher nicht." %}Durch die Anpassung an die besonderen Bedürfnisse der verschiedenen Institutionen wird die Software ständig weiterentwickelt. Seit 2014 liegt der Fokus vor allem auf wissenschaftlichen digitalen Editionen.
 
 
 ## Anwendungsbereiche
@@ -75,11 +75,8 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
     * Kenntnis des lokalen Datei-/Ordnersystems
     * Bedienung eines Webbrowsers
 
-Nicht unbedingt erforderlich, aber von Vorteil:
-* Grundkenntnisse von Markup-Sprachen
-    * HTML
-    * TEI 
-    * MediaWiki
+* Nicht unbedingt erforderlich, aber von Vorteil:
+    * Grundkenntnisse von Markup-Sprachen (HTML, TEI, MediaWiki)
 
 
 ### Benötigte Software & technische Voraussetzungen
