@@ -22,10 +22,11 @@ layout: default
       {% endfor %}
     </div>
   </div>
-  <div class="row">
-    <aside class="col-md-3 ms-4">
-      {% include toc.html html=content class="sticky-top overflow-auto pt-5" %}
-    </aside>
+  <div class="row" >
+    <nav class="col-md-3 ms-4 bg-light">
+      <h3>Inhalt:</h3>
+      {% include toc.html html=content anchor_class="nav-link" id="toc" class="sticky-top overflow-auto pt-5"  %}
+    </nav>
     <div class="entry col-md-6">
       {{ content }}
     </div>
