@@ -90,8 +90,8 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 ## Tool-Kompatibilität
 
-
-<table>
+<div class="table-responsive">
+<table class="table">
   <tr>
    <td>
    </td>
@@ -129,6 +129,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    </td>
   </tr>
 </table>
+</div>
 
 
 
