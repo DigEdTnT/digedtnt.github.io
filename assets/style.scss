@@ -147,11 +147,21 @@ table tr td :last-child {
     line-height: 0.75em;
 }*/
 
-.active{
-  background:yellow;
-}
+
 #toc{
   max-height:99vh;
+  font-size: .875rem;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+#toc a:hover, #toc a.active{
+  color: #4CAF50;
+  border-right-color: #4CAF50;
+  border-right: 0.125rem solid;
+}
+
+#toc, #toc ul, #toc ul ul {
+  list-style: none;
 }
 
 #search-container {
