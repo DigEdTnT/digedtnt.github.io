@@ -8,7 +8,7 @@ categories: [tool, transkription, FromThePage, opensource]
 
 excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
 
-factsheet: https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf
+factsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf
 
 last_modified_at:   2023-05-03
 
