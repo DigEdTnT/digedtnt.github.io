@@ -68,7 +68,7 @@ FromThePage zeichnet sich nicht nur darin aus, dass man bereits mit minimalen Co
 * API für die automatisierte Veröffentlichung bei Fertigstellung einer Transkription
 
 
-Weitere und technische Übersicht: siehe [Factsheet zum Tool](#fact-sheet-zum-tool)
+Weitere und technische Übersicht: siehe [Factsheet zum Tool](#factsheet-zum-tool)
 
 
 ## Voraussetzungen
@@ -282,7 +282,7 @@ Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobe
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/image-text-synopsis.PNG" description="Abb. x: Bild-Text-Synopse" %}
     Wir können hier also direkt mit der zeilenweisen Transkription beginnen und die verschiedenen Funktionen von FromThePage nutzen:
     * **Auszeichnung unserer Transkription**: FromThePage ermöglicht es, unsere Auszeichnungen mittels Markdown entsprechend [Wiki-Text-Konventionen](https://www.mediawiki.org/wiki/Wikitext/de) zu gestalten sowie außerdem all jene Mark-up-Buttons zu verwenden, deren Anzeige wir zuvor in den Projekt-Einstellungen aktiviert haben.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-view.PNG" description="Abb. x: Transkriptionsarbeit" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-view.PNG" description="Abb. x: Transkriptionsarbeit" %}
         Sollte es unter unseren Transkribierenden Personen geben, die Tags lieber ausschreiben statt Textbereiche mittels Klick auf Button zu markieren, ist dies ebenfalls möglich. Strukturierungen wie Zeilenumbrüche oder Absätze werden automatisch übernommen. Wenn wir die Möglichkeiten der TEI nutzen wollen, haben wir dafür zwar keine Buttons, wir können aber z. B. editorische Eingriffe - in der Abbildung durch das Element &lt;supplied> realisiert - trotzdem mit dem entsprechenden Tag auszeichnen.
         {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Abb. x: Mark-Up-Möglichkeiten" %}
         Das Element wird zwar in der allgemeinen Darstellung auf FromThePage nicht unterstützt, es befindet sich aber am Ende in unserem TEI-Export. Ein Nachteil dieses Workarounds ist aber, dass auf diese Weise angelegte Tags nicht validiert werden und wir bei einer falschen Schreibweise oder unzulässigen Positionierung des Elements keinen Hinweis darauf bekommen. Da wir FromThePage aber ohnehin nur für unsere Transkription und nicht für die Annotation verwenden wollen, setzen wir uns mit dieser Form der Auszeichnung nicht weiter auseinander.
