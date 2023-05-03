@@ -8,6 +8,8 @@ categories: [tool, transkription, FromThePage, opensource]
 
 excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
 
+last_modified_at:   2023-05-03
+
 ---
 
 
