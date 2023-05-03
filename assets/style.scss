@@ -262,7 +262,10 @@ b {
 .essence {
   font-style: italic;
   font-weight: bold;
-  background-color: #73c277;
+  background-color: #4caf50;
+  padding: 1rem;
+  border-radius: 25px;
+  color: white;
 }
 
 img {
@@ -270,9 +273,9 @@ img {
 }
 
 // To have the same indent as the list points images are indented
-figure img {
+/*figure img {
   padding: 0rem 0rem 0rem 2rem;
-}
+}*/
 
 figcaption {
   text-align: center;
@@ -281,14 +284,14 @@ figcaption {
 }
 
 // When there is an image after a paragraph that is not indented (because it isn't a list point)
-h2 + p + figure>img {
+/*h2 + p + figure>img {
   padding: 0rem;
-}
+}*/
 
 // Paragraphs after an image should have the same indention as the list
-figure + p {
+/*figure + p {
   padding: 0rem 0rem 0rem 2rem;
-}
+}*/
 
 // Centering images
 p>img {
