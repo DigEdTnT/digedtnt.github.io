@@ -17,54 +17,56 @@
 
   <body >
     <div class="wrapper-container">
-      <div class="wrapper-masthead">
+
         <div class="container">
-          <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <header class="d-flex flex-wrap justify-content-center py-3 mb-2">
             <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
             <div class="site-info">
               <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
               <p class="site-description">{{ site.description }}</p>
             </div>
 
-            <ul class="nav nav-pills">
-              <li class="nav-item">
-                <a class="nav-link link-dark" aria-current="page" href="{{ site.baseurl }}/about">About</a>
-              </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link link-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tools
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item link-dark" href="{{ site.baseurl }}/fromthepage">FromThePage</a></li>
-                  <li><a class="dropdown-item link-dark" href="{{ site.baseurl }}/transkribus">Transkribus</a></li>
-                  <!--<li><a class="dropdown-item link-dark" href="{{ site.baseurl }}/ediarum">ediarum</a></li>-->
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-dark" href="#">Transitions</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link link-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Workshops
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item link-dark" href="{{ site.baseurl }}/workshop1">Workshop 1</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-dark" href="{{ site.baseurl }}/search">Search</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-dark" href="{{ site.baseurl }}/categories">Categories</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link link-dark" href="{{ site.baseurl }}/archive">Archive</a>
-              </li> -->
-            </ul>
           </header>
         </div>
-      </div>
+        <ul class="nav nav-pills sticky-md-top justify-content-center bg-white mt-0" style="z-index:1201">
+          <li class="nav-item">
+            <a class="nav-link link-dark" aria-current="page" href="{{ site.baseurl }}/about">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link link-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tools
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item link-dark" href="{{ site.baseurl }}/fromthepage">FromThePage</a></li>
+              <li><a class="dropdown-item link-dark" href="{{ site.baseurl }}/transkribus">Transkribus</a></li>
+              <!--<li><a class="dropdown-item link-dark" href="{{ site.baseurl }}/ediarum">ediarum</a></li>-->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-dark" href="#">Transitions</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link link-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Workshops
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item link-dark" href="{{ site.baseurl }}/workshop1">Workshop 1</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-dark" href="{{ site.baseurl }}/search">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-dark" href="{{ site.baseurl }}/categories">Categories</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link link-dark" href="{{ site.baseurl }}/archive">Archive</a>
+          </li> -->
+        </ul>
+        <hr class="container">
+
 
       <div class="wrapper-main">
         <div id="main" role="main" class="container-fluid">
