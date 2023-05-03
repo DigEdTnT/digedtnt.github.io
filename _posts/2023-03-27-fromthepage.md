@@ -16,7 +16,7 @@ excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
 
 FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins Leben gerufen wurde, um die Arbeit bei der Transkription von Textsammlungen zu erleichtern. Die Software wurde 2009 unter einen Open-Source-Lizenz veröffentlicht und wird seit 2010 für die Transkription nach dem Crowdsourcing-Prinzip von Bibliotheken, Archiven und Museen genutzt. Durch die Anpassung an die besonderen Bedürfnisse der verschiedenen Institutionen wird die Software ständig weiterentwickelt. Seit 2014 liegt der Fokus vor allem auf wissenschaftlichen digitalen Editionen.
 
-<div class="highlight">
+<div class="essence">
 FromThePage zeichnet sich nicht nur darin aus, dass man bereits mit minimalen Computerkenntnissen bei der Transkription von Manuskripten mithelfen kann, sondern vor allem auch durch den Zugriff auf eine große transkriptionsfreudige Community sowie die Möglichkeit der Kollaboration bei umfangreichen Sammlungen. Für umfassende und tiefergehende Annotationen nach den in der DH gültigen Standards empfiehlt es sich jedoch aufgrund der eingeschränkten Annotations- und Validierungsmöglichkeiten auf andere Tools zurückzugreifen.
 </div>
 
