@@ -16,7 +16,9 @@ excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
 
 FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins Leben gerufen wurde, um die Arbeit bei der Transkription von Textsammlungen zu erleichtern. Die Software wurde 2009 unter einen Open-Source-Lizenz veröffentlicht und wird seit 2010 für die Transkription nach dem Crowdsourcing-Prinzip von Bibliotheken, Archiven und Museen genutzt. Durch die Anpassung an die besonderen Bedürfnisse der verschiedenen Institutionen wird die Software ständig weiterentwickelt. Seit 2014 liegt der Fokus vor allem auf wissenschaftlichen digitalen Editionen.
 
-**Die größte Stärke von FromThePage liegt darin, die kollaborative Transkription von großen Sammlungen mit bereits minimalen Computerkenntnissen zu ermöglichen. Für umfassende Annotationen von Textsammlungen empfiehlt es sich jedoch aufgrund der eingeschränkten Möglichkeiten eher nicht.**
+<div class="highlight">
+FromThePage zeichnet sich nicht nur darin aus, dass man bereits mit minimalen Computerkenntnissen bei der Transkription von Manuskripten mithelfen kann, sondern vor allem auch durch den Zugriff auf eine große transkriptionsfreudige Community sowie die Möglichkeit der Kollaboration bei umfangreichen Sammlungen. Für umfassende und tiefergehende Annotationen nach den in der DH gültigen Standards empfiehlt es sich jedoch aufgrund der eingeschränkten Annotations- und Validierungsmöglichkeiten auf andere Tools zurückzugreifen.
+</div>
 
 
 ## Anwendungsbereiche
@@ -282,7 +284,7 @@ Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobe
 * **Transkriptionsstatus**: Je nach Arbeitsfortschritt werden die einzelnen Dokumente in einem Werk als "Not Started", "Incomplete", "Needs Review" oder "Complete" ausgewiesen. Diese Einstellung ermöglicht eine Statusübersicht über einzelne Werke bzw. den Projektfortschritt.
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/progress.PNG" description="Abb. x: Statusübersicht" %}
 * **Transkriptionsansicht:** Im Transkriptionseditor wird uns eine synoptische Ansicht unseres Faksimiles und des Bearbeitungsbereiches geboten.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/image-text-synopsis.PNG" description="Abb. x: Bild-Text-Synopse" %}
+{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/image-text-synopsis.PNG" description="Abb. x: Bild-Text-Synopse" %}
     Wir können hier also direkt mit der zeilenweisen Transkription beginnen und die verschiedenen Funktionen von FromThePage nutzen:
     * **Auszeichnung unserer Transkription**: FromThePage ermöglicht es, unsere Auszeichnungen mittels Markdown entsprechend [Wiki-Text-Konventionen](https://www.mediawiki.org/wiki/Wikitext/de) zu gestalten sowie außerdem all jene Mark-up-Buttons zu verwenden, deren Anzeige wir zuvor in den Projekt-Einstellungen aktiviert haben.
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-view.PNG" description="Abb. x: Transkriptionsarbeit" %}
@@ -320,7 +322,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
 {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export.png" description="Abb. x: Exportmöglichkeiten" %}
 → Wir sehen hier für all unsere Werke den Bearbeitungsfortschritt und haben direkt die Möglichkeit, unsere Arbeit als TEI zu exportieren. Für etwas feinere Einstellungen nutzen wir jedoch die erste Option für einen Sammelexport ("Export All Works").
 * **Export der Werke:** Über den Button “Export All Works” können wir nun verschiedene Formate und Einstellungen wählen und unsere gesamte Sammlung als ZIP-Datei exportieren.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export-all-works.PNG" description="Abb. x: Export aller Werke in ZIP-Datei" %}
+{% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export-all-works.PNG" description="Abb. x: Export aller Werke in ZIP-Datei" %}
     Wir wählen dabei einen Ordner pro Werk und stellen ein, dass unsere Export-Ordner den Namen der Import-Ordner übernehmen bzw. beibehalten sollen. Bei den Exportformaten wählen wir nur TEI/XML aus. In den exportierten TEI-Dateien ([Link zum vollständigen Export](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/fromthepage/export)) finden wir für jedes Werk einen Ordner mit je einer Readme-Datei, in der die verschiedenen Exportformate beschrieben sind, und für jedes Werk einen weiteren Ordner, in dem unsere TEI-Dateien enthalten sind, in denen unsere Bearbeitungsschritte des vorangegangenen Abschnittes nun folgende Form angenommen haben:
     * **Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, Informationen zu den Versionen sind - wie hier auszugsweise dargestellt - im TEI Header wiederzufinden.
         ```xml
@@ -728,7 +730,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
 
 ## Tutorials
 
-[Youtube Channel](https://www.youtube.com/@fromthepage)
+[FromThePage Youtube Channel](https://www.youtube.com/@fromthepage)
 
 
 ## Projekte, die dieses Tool genutzt haben
@@ -741,12 +743,12 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
 
 ## Literatur
 
-Literaturliste von Zotero
+Coming soon
 
 
 # Fact Sheet zum Tool
 
-
+<div class="table-responsive">
 <table>
             <tr>
                 <td colspan="2">
@@ -768,7 +770,7 @@ Literaturliste von Zotero
                 <td>
                     <strong>Unterstützte Plattformen</strong>
                 </td>
-                <td>Linux & Windows </td>
+                <td>Linux, Windows & macOS</td>
             </tr>
             <tr>
                 <td>
@@ -880,7 +882,7 @@ Literaturliste von Zotero
                 <td>
                     <strong>Verfügbarkeit von Tutorials</strong>
                 </td>
-                <td>✅keine Schritt-für-Schritt- <br /> Anleitungen, aber Videomaterial zu Features und
+                <td>✅Keine Schritt-für-Schritt- <br /> Anleitungen, aber Videomaterial zu Features und
                         Projekten </td>
             </tr>
             <tr>
@@ -939,7 +941,9 @@ Literaturliste von Zotero
             </tr>
             <tr>
                 <td><strong>Benutzerinteraktion  </strong><br/>(erwartete Nutzung) </td>
-                <td>Projektkonfiguration und -bearbeitung </td>
+                <td>Hochladen von Dateien, Projektmanagement, Metadatenbeschreibung,
+Transkription sowie Bearbeitung und Korrektur von Transkriptionen, schriftlicher Austausch über Transkriptionsarbeit, Export
+</td>
             </tr>
             <tr>
                 <td>
@@ -1157,3 +1161,4 @@ Literaturliste von Zotero
                     Kontos noch weitere 14 Tage. </td>
             </tr>
         </table>
+        </div>
