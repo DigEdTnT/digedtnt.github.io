@@ -76,17 +76,16 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 ### Erforderliche Kenntnisse
 
-
 * EDV-Grundkenntnisse
     * Kenntnis des lokalen Datei-/Ordnersystems
     * Bedienung eines Webbrowsers
+
 
 * Nicht unbedingt erforderlich, aber von Vorteil:
     * Grundkenntnisse von Markup-Sprachen (HTML, TEI, MediaWiki)
 
 
-### Benötigte Software & technische Voraussetzungen
-
+### Technische Voraussetzungen (Software)
 
 * Stabile Internetverbindung
 * Webbrowser
@@ -139,8 +138,6 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 ## Kostenübersicht
 
-
-
 * Klein- oder Testprojekte: 200 Seiten - kostenlos
 * Einzelforschende: bis zu 10.000 Seiten - 1200 Dollar/Jahr
 * Betreuung von Institutionen: bis zu 50.000 Seiten - ca. 3600 Dollar/Jahr
@@ -155,8 +152,6 @@ Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolg
 
 ## Stärken
 
-
-
 * Remote Kollaboration möglich
 * Subject-Tagging zur Erstellung von Registern und nach einem gewissen Projektfortschritt auch automatische Verlinkungen
 * User- bzw. Projekt-Management: Überblick über Statistiken (Dauer, Umfang, etc.)
@@ -169,10 +164,8 @@ Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolg
     * Textpassagen können vor Webcrawlern oder Eingriffen von unregistrierten Nutzer:innen geschützt werden (nur Transkribierenden mit entsprechender Erlaubnis - über &lt;sensitive>-Tag - dürfen markierte Textpassage bearbeiten)
 * Community für Transkription: Bewerbung des Projekts über den Newsletter von FromThePage oder über Social Media (z. B. Twitter)
 
+
 Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integrationen:
-
-
-
 * FromThePage → IIIF → TEI-XML → FairCopy
 * Transkribus (HTR) → Plain Text → FromThePage
 * FromThePage → Plain Text → Transkribus (Ground Truth/Training)
@@ -180,8 +173,6 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 
 
 ## Herausforderungen & Probleme
-
-
 
 * Eingeschränkte Mark-up-Möglichkeiten durch Beschränkung auf unterstützte Tags (derzeit 30 Tags)
 * Für detaillierte Annotationen entsprechend TEI-Konventionen eher weniger praktisch, da es keine Möglichkeit einer TEI-Validierung innerhalb des Transkriptionseditors gibt
