@@ -8,12 +8,18 @@ categories: [tool, text recognition, layout recognition, transcription, annotati
 
 excerpt: Transkribus Lite ist eine Plattform für KI-gestützte Layout- und Texterkennung
 
+last_modified_at:   2023-05-03
+
 ---
 
 
 # Beschreibung
 
 Transkribus Lite ist eine Plattform primär für die KI-gestützte Layout- und Texterkennung von gedruckten oder handgeschriebenen Dokumenten, ermöglicht aber auch - mit Grenzen - die Annotation von Struktur und Inhalt. Die Plattform geht auf das 2016 ins Leben gerufene READ-Projekt zurück und wird von der 2019 gegründeten Europäischen Genossenschaft READ-COOP SCE zur Verfügung gestellt und beständig weiterentwickelt. Die Genossenschaft hat mittlerweile mehr als 130 Mitglieder (Institutionen und Privatpersonen) in 30 Ländern (Stand April 2023).
+
+<div class="essence">
+Transkribus Lite ist durch die Möglichkeit des Trainings eigener KI-Modelle zur Layout- und Handschriftenerkennung sehr gut an unterschiedliche Handschriften anpassbar. Basale Textauszeichnungen können zwar ebenfalls vorgenommen werden, für umfassendere und komplexere Annotationen nach den in der DH gültigen Standards empfiehlt es sich jedoch aufgrund der eingeschränkten Annotations- und Validierungsmöglichkeiten auf andere Tools zurückzugreifen.
+</div>
 
 
 ## Anwendungsbereiche
@@ -70,7 +76,7 @@ Aufgrund der großen Annahme der Webversion wird nur mehr diese weiterentwickelt
 ## Tool-Kompatibilität
 
 
-<table>
+<table class="table-responsive">
   <tr>
    <td>
    </td>
@@ -157,7 +163,7 @@ Aufgrund der großen Annahme der Webversion wird nur mehr diese weiterentwickelt
 * Transkribus Lite ist (derzeit noch) nicht so mächtig wie das auslaufende, aber immer noch nutzbare Transkribus eXpert
 * Um ein eigenes Texterkennungsmodell zu trainieren, werden zwischen 25-75 transkribierte Seiten (5.000-15.000 Wörter) als Trainingsdaten (“Ground Truth”) benötigt, in denen sehr unterschiedliche Fälle vorkommen sollten. 5.000 werden für gedruckte Texte benötigt, bei handgeschriebenen sollten es mindestens 10.000 für jede vorkommende Hand sein. Generell gilt: Je mehr transkribierte Seiten, desto besser die Ergebnisse
 * Training von HTR-Modellen kann zeitintensiv sein und bei sehr heterogenen Handschriften eine hohe Fehlerrate aufweisen
-* Es können zwar Annotationen vorgenommen werden und eigene Tags erstellt werden, allerdings ist der Editor kein vollwertiger Ersatz für ein eigenständiges Annotationstool
+* Es können zwar (einfache) Annotationen vorgenommen werden und eigene Tags erstellt werden, allerdings ist der Editor kein vollwertiger Ersatz für ein eigenständiges Annotationstool
 * Kein internes Kommunikationstool, um sich mit anderen, gemeinsam an einer Sammlung arbeitenden Nutzer:innen koordinieren zu können (keine Kommentarfunktion, kein Ort, an dem Guidelines für die Transkription abgelegt werden können, usw.) 
 * Texterkennung mit kostenfreien Credits hat geringere Priorität als mit gekauften
 
@@ -189,7 +195,7 @@ Anhand eines Beispielprojekts, in dem mit handgeschriebenen Briefen des Sprachwi
 ## Allgemeiner Transkribus-Workflow
 
 Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/flowchart_workflow.jpg" description="Abb. 1: Allgemeiner Transkribus-Workflow" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/flowchart_workflow.jpg" description="Allgemeiner Transkribus-Workflow" %}
 
 * **Start**: Upload der Dokumente → Überprüfung, ob eines der öffentlichen Modelle für die automatische Transkription geeignet ist:
     * **JA:** Texterkennung → Tagging des erkannten Textes → Download
@@ -197,7 +203,7 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 ## 1. Registrierung
 * Um Transkribus Lite nutzen zu können, ist eine Registrierung erforderlich, wobei Namen und E-Mail-Adresse angegeben werden müssen.
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/registration.jpg" description="Abb. 2: Registrierung" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/registration.jpg" description="Registrierung" %}
 
 * Bei Registrierung erhält man 500 nicht teilbare Credits zur Verfügung gestellt, mit denen 500 handgeschriebene oder 3000 gedruckte Seiten automatisch transkribiert werden können.
 
@@ -209,7 +215,7 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
         * Rechte Menüleiste: Schnelle Texterkennung und Übersicht über das Creditsaldo (Abb. X. - e)
     * **“Training” (Abb. X - b):** Hier können Modelle für die Layout- und Texterkennung trainiert werden
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/dashboard.PNG" description="Abb. 4: Transkribus-Dashboard" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/dashboard.PNG" description="Transkribus-Dashboard" %}
 
 
 
@@ -217,20 +223,20 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 * **Sammlungen:** Das Anlegen einer Sammlung ist nötig, um die Layout und/oder Texterkennung durchführen zu können. Eine Sammlung ist in Transkribus ein Ordner, der alle Dokumente eines bestimmten Projekts enthält. 
 * **Anlegen einer Sammlung:** Eine Sammlung wird im Workdesk über die Schaltfläche “Sammlung erstellen” in der linken Menüleiste angelegt. Wir legen nun eine Sammlung mit dem Namen “Briefe Schuchardt” an. Eine angelegte Sammlung kann unter der Schaltfläche “Sammlungen” wieder gelöscht oder bearbeitet werden (Änderung der Metadaten wie dem Namen der Sammlung oder einer kurzen Beschreibung)
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/create_collection.jpg" description="Abb. 5: Erstellen einer Sammlung" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/create_collection.jpg" description="Erstellen einer Sammlung" %}
 
 
 
 ## 4.  Erste Aktionen innerhalb einer Sammlung
 * **Upload von Dokumenten:** Wir navigieren nun über die linke Toolbar, bei der wir auf “Sammlungen” klicken, zur neu angelegten Sammlung. Die erste Aktion innerhalb einer Sammlung ist das Hochladen von Dokumenten, die in weiterer Folge transkribiert oder auf die die Layout- und Texterkennung angewandt werden. Ein Dokument ist in Transkribus Lite eine Menge an Bildern, die in einem bestimmten Zusammenhang stehen (z. B. ein Manuskript, ein Vertrag, ein Brief). Möglich ist der Upload von Bildern (JPEG/PNG) oder PDFs. Alle gemeinsam hochgeladenen Dateien werden als ein einzelnes Dokument angesehen, jedes einzelne Bild bzw. jede Seite eines PDFs wird zu einer Seite des Dokuments. Für unsere Zwecke ist jeder Brief Schuchardts, der aus mehreren Bildern besteht, ein Dokument, deshalb laden wir die jeweils zusammengehörigen Bilddateien separat hoch (“H1_1” bis “H1_4”, “H2_1 bis “H2_6” usw.). Wir geben den einzelnen Dokumenten die Namen “Brief 1”, “Brief 2” usw. Durch einen Klick auf die drei Punkte kann der Dokumentname nachträglich geändert werden, ebenso können Metadaten wie etwa “Autor” hinzugefügt werden.
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/upload_documents.jpg" description="Abb. 5: Hochladen von Dokumenten" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/upload_documents.jpg" description="Hochladen von Dokumenten" %}
 
 
 
 * **Hinzufügen von Nutzer:innen:** Im Transkribus Organizer in der linken Menüleiste können unter der Schaltfläche “User-Manager” andere Nutzer:innen zur Sammlung hinzugefügt werden, sodass gemeinschaftlich an einer Sammlung gearbeitet werden kann. Die möglichen Rollen sind “Owner”, “Editor” und “Transcriber”, wobei in absteigender Reihenfolge der “Owner” einer Sammlung über die meisten Rechte verfügt. Die Berechtigungen und ihre Abstufungen können [hier](https://help.transkribus.com/managing-users) eingesehen werden. Damit das Hinzufügen möglich ist, müssen die anderen Nutzer:innen bereits registriert sein und bei der Suche muss deren exakte E-Mail-Adresse angegeben werden. Wir fügen nun eine:n Nutzer:in hinzu und vergeben die Rolle “Transcribe”, sodass uns diese Person bei der Transkription behilflich sein kann.
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/add_user.PNG" description="Abb. 6: Hinzufügen von Nutzer:innen" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/add_user.PNG" description="Hinzufügen von Nutzer:innen" %}
 
 
 
@@ -239,16 +245,16 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/flowchart_texterkennung.jpg
 
-" description="Abb. 11: Workflow für das Training eines Texterkennungsmodells" %}
+" description="Workflow für das Training eines Texterkennungsmodells" %}
 * Wir wollen also nun feststellen, wie gut die Texterkennung der öffentlichen Modelle, angewandt auf die Handschrift Hugo Schuchardts, funktioniert. Dazu wählen wir nun in der Sammlungsübersicht das Dokument “Brief 1” aus und klicken in der linken Menüleiste auf “Texterkennung”. Nun werden wir auf eine neue Seite weitergeleitet, auf der wir das Modell, das zur Texterkennung verwendet werden soll, auswählen müssen. 
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_recognition.PNG" description="Abb. 7: Starten der Texterkennung" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_recognition.PNG" description="Starten der Texterkennung" %}
 
 
 
 * Da über 100 öffentliche Modelle zur Auswahl stehen, wenden wir die links selektierbaren Filterkriterien an, um die Anzahl an potentiell applikablen Modellen einzuschränken. Bei “Sprache” wählen wir “Deutsch”, bei “Typ” “Handschriftlich” und bei “Jahrhunderte” den Zeitraum 19. bis 20. Jahrhundert. Es ist wichtig, dass diese auf das jeweilige Textmaterial zugeschnittene Auswahl getroffen wird, damit die Auswahl auf die möglichst am besten geeigneten Modelle eingeschränkt wird. Nun werden nur mehr wenige Modelle angezeigt, wir entscheiden uns für das Modell “Transkribus German handwriting M1”, da die anderen Modelle primär für Kurrentschrift ausgelegt zu sein scheinen (Weiterführende Informationen zu den Modellen erhält man durch einen Klick auf “Beschreibung). Das Modell weist eine Zeichenfehlerrate (Character Error Rate (CER)) von 4,7 % auf, d. h. es würden von 100 Zeichen ca. 5 falsch erkannt werden. Nach dem Klick auf “Start” wird der Job ausgeführt und wir können unter der Schaltfläche “Jobs” seinen Fortschritt verfolgen.
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/recognition_model_selection.PNG" description="Abb. 8: Auswahl eines Texterkennungsmodells" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/recognition_model_selection.PNG" description="Auswahl eines Texterkennungsmodells" %}
 
 
 
@@ -256,11 +262,11 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_recognition_test.PNG
 
-" description="Abb. 9: Test der Texterkennung mit einem öffentlichen Modell" %}
+" description="Test der Texterkennung mit einem öffentlichen Modell" %}
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/layout_recognition_different_zones.PNG
 
-" description="Abb. 10: Fehler bei der Layouterkennung" %}
+" description="Fehler bei der Layouterkennung" %}
 
 
 
@@ -273,26 +279,20 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 * Für das Training eines Texterkennungsmodells werden von Transkribus 25-75 Seiten (5.000-15.000 Wörter) als Trainingsdaten (“Ground Truth”) benötigt bzw. empfohlen, bei handgeschriebenen Texten sollten es mindestens 10.000 Wörter pro Hand sein. Als Trainingsdaten werden in Transkribus die Faksimiles und die mit ihnen korrespondierenden fehlerfreien und genauen Transkriptionen bezeichnet, die in weiterer Folge für das Training der Texterkennungsmodelle verwendet werden. Generell gilt: Je mehr Trainingsdaten vorhanden sind, desto erfolgreicher verläuft das Modelltraining. 
 * Momentan ist es in Transkribus Lite leider noch nicht möglich, bereits außerhalb transkribierten Text einzufügen. Es können bisher immer nur einzelne Zeile angewählt und befüllt werden, nicht aber ganze Textblöcke zeilenübergreifend eingefügt werden. 
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/pasting_lines.PNG
-
-" description="Abb. 11: Das Befüllen einzelner Zeilen" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/pasting_lines.PNG" description="Das Befüllen einzelner Zeilen" %}
 
 
 
 * Wir befinden uns also in einer etwas misslichen Lage und entscheiden uns, da die Texterkennung mit dem von uns gewählten öffentlichen Modell zumindest einigermaßen brauchbare Ergebnisse liefert, für den halb automatischen, halb händischen Zugang, da die Korrektur von falsch erkanntem Text in unserem Fall weniger Zeit in Anspruch nimmt, als ihn händisch von Grund auf zu transkribieren. Dazu müssen wir noch die automatische Texterkennung auf die Dokumente Brief 2 bis 6 anwenden. Nachdem dies erledigt ist, gleichen wir die automatisch transkribierten Texte mit unserer bereits vorhandenen Transkription ab und bessern die falsch erkannten Zeichen bzw. Wörter aus. Nach dem Abschluss der Korrekturen können wir uns nun dem Training eines auf Hugo Schuchardts Handschrift zugeschnittenen Texterkennungsmodells widmen.
 * Um ein Texterkennungsmodell zu trainieren, wählen wir das Tab “Training” und klicken auf “Text-Erkennung”. Danach wählen wir die Sammlung “Briefe Schuchardt” aus.
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_recognition_choose_collection.jpg
-
-" description="Abb. X: Auswahl einer Sammlung für die Texterkennung" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_recognition_choose_collection.jpg" description="Auswahl einer Sammlung für die Texterkennung" %}
 
 
 
 * Nun werden wir weitergeleitet und müssen nun zunächst einige Metadaten für unser Modell eingeben: Modellnamen, Beschreibung, Sprache(n) und Zeitspanne, die unsere Daten umfassen. Zuletzt müssen wir noch die Transkriptversion auswählen. Hier können wir uns zwischen “Latest Transcript” und “Nur Ground Truth” entscheiden. Entscheiden wir uns für “Ground Truth” sind im nächsten Schritt nur die Seiten, deren Status wir als “Trainingsdaten” festgelegt haben, anwählbar, bei “Latest Transkript” können alle Seiten, egal welchen Transkriptionsstatus wir ihnen früher zugewiesen haben, ausgewählt werden.
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_recognition_model_metadata.jpg
-
-" description="Abb. 12: Eingabe der Metadaten des Texterkennungsmodells" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_recognition_model_metadata.jpg" description="Eingabe der Metadaten des Texterkennungsmodells" %}
 
 
 
@@ -308,9 +308,7 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 ## 7. Die Texteditoransicht
 * Nachdem wir unser Modell trainiert, wollen wir zunächst noch den Texteditor von Transkribus erproben und unsere Dokumente annotieren. Zum Texteditor gelangen wir, indem wir über die linke Menüleiste “Sammlungen” auswählen, in unsere Sammlung navigieren, ein Dokument (z. B. “Brief 1”) öffnen und dann eine Seite des Dokuments anklicken. Nun öffnet sich der Editor mit Bild-Text-Synopse. 
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor.jpg
-
-" description="Abb. X: Der Texteditor" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor.jpg" description="Der Texteditor" %}
 
 
 
@@ -321,15 +319,11 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
     * **Versionskontrolle:** Die Schaltfläche mit Datums- und Zeitangabe (Abb. x -c) dient der Versionskontrolle. Mittels ‘Speicherständen’ kann zwischen auf frühere und von dort aus dann spätere Versionen zugegriffen werden werden.
     * **Konfiguration:** Über das Zahnradsymbol (Abb. x - d) können verschiedene Einstellungen vorgenommen werden und so z. B. das Verhalten und Layout des Editors an die eigenen Bedürfnisse angepasst werden. Es ist aber hier auch möglich, eigene Texttags hinzuzufügen oder bereits vorhandene zu entfernen. Ebenso kann die Sichtbarkeit der Strukturtags gesteuert werden.
     * **Virtuelles Keyboard:**  Das Keyboardsymbol (Abb. x - e) blendet das Virtuelle Keyboard ein, über das Unicode-Zeichen eingefügt werden können . Dazu müssen die gewünschten Unicode-Bereiche zunächst über die Konfigurationsschaltfläche (Zahnradsymbol) ausgewählt werden.
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_options.png
-
-" description="Abb. X: Optionen im Texteditor-Fenster" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_options.png" description="Optionen im Texteditor-Fenster" %}
 
 * **Wichtige Optionen im Faksimilefenster** (links):
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_facsimile.jpg
-
-" description="Abb. X: Wichtige Optionen im Faksimilefenster" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_facsimile.jpg" description="Wichtige Optionen im Faksimilefenster" %}
 
 
 
@@ -340,9 +334,7 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
         * Zusammenfügen von Regionen: Dazu werden mit Strg und Mausklick mehrere Regionen markiert, nach einem Rechtsklick können sie mit “Merge shapes” zusammengeführt werden.
     * **Layoutbutton:** Nach einem Klick auf den Layoutbutton (Abb. x - c) öffnet sich ein Fenster, in dem die Struktur des Dokuments (Regionen und Zeilen) angezeigt wird. Hier können - was durchaus wichtig sein kann - Regionen und Zeilen miteinander ausgetauscht werden.
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/layout_regions_lines.PNG
-
-" description="Abb. X: Optionen zum Verschieben von Regionen und Zeilen" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/layout_regions_lines.PNG" description="Optionen zum Verschieben von Regionen und Zeilen" %}
 
 
 
@@ -352,50 +344,38 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
         * **Format:** fett, kursiv, durchgestrichen, unterstrichen, hochgestellt und tiefgestellt
         * **Tagging:** Textpassagen können mittels der von Transkribus vorkonfigurierten oder eigenen Tags ausgezeichnet werden. Über die “Configure”-Schaltfläche im Popup kann gesteuert werden, welche Tags zur Auswahl angezeigt werden, wenn eine Textpassage markiert wird. 
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/tagging_popup.PNG
-
-" description="Abb. X: Das Popup-Fenster zur Textauszeichnung" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/tagging_popup.PNG" description="Das Popup-Fenster zur Textauszeichnung" %}
 
 
 
 * **Anlegen eigener Texttags:** Da wir eigene und TEI-konforme Tags verwenden wollen, müssen wir diese zuerst anlegen. Dazu navigieren wir zurück in unsere Sammlung und klicken links im Transkribus Organizer auf “Tag Manager” (Tags werden in Transkribus immer für eine Sammlung konfiguriert). Da unsere Briefe über Datumszeilen verfügen, das TEI-konforme Tag “dateline” aber noch nicht in Transkribus vorkonfiguriert ist, erstellen wir es. Optional könnten wir dem Tag auch ein oder mehrere Attribute hinzufügen.
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/tag_manager.PNG
-
-" description="Abb. X: Das Anlegen von Texttags" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/tag_manager.PNG" description="Das Anlegen von Texttags" %}
 
 
 
 * **Auszeichnen unsere Transkription:** Wir wollen nun den Text unseres ersten Briefes annotieren und die Funktionalitäten des Editors testen. Da es sich bei Transkribus Lite um keinen vollwertigen Ersatz für ein TEI-konformes Annotationswerkzeug handelt, werden wir nicht versuchen, eine bestmögliche Annotation anzufertigen, sondern lediglich einige der Möglichkeiten erproben. Dazu navigieren wir in der Sammlungsübersicht in das Dokument “Brief 1” und öffnen die erste Seite des Briefes. Wir wollen die Datumszeile unseres Briefes auszeichnen und markieren sie, nun öffnet sich ein Popup. Damit wir unser neues Tag auch auswählen können, müssen wir es zuerst über “Configure” sichtbar schalten. 
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/tags_configure.PNG
-
-" description="Abb. X: Das Sichtbarschalten von Tags" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/tags_configure.PNG" description="Das Sichtbarschalten von Tags" %}
 
 
 
 * Nachdem wir das erledigt haben, können wir die Datumszeilen taggen. Tags können auch verschachtelt werden. Wir wählen die Datumsangabe innerhalb der Datumszeile an und weisen ihr das Tag “date” zu und geben in dessen Attribut “when” das normalisierte Datum “1893-10-13” an. 
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/tags_date.PNG
-
-" description="Abb. X: Verschachtelte Tags" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/tags_date.PNG" description="Verschachtelte Tags" %}
 
 
 
 * Nun legen wir noch die neuen Tags “opener” an “salute” und taggen damit die Datumszeile und die Grußformel. Zuletzt taggen wir noch die sich weiter unten befindliche, zweite Datumsangabe auf der ersten Seite des Briefs. Auf den nächsten beiden Seiten zeichnen wir mit den Formatoptionen die unterstrichenen und höhergestellten Wörter aus, während wir auf der letzten Seite für die Passage am Briefende noch die Tags “closer” und “name” anlegen und die Verabschiedung samt Grußformel und Namen des Briefschreibers taggen.
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/tags_nested.PNG
-
-" description="Abb. X: Die getaggte erste Seite des ersten Briefs" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/tags_nested.PNG" description="Die getaggte erste Seite des ersten Briefs" %}
 
 
 
 ## 9. Export der Dokumente
 * **Downloadfunktion in der Sammlungsübersicht:** Da wir unsere Daten noch weiter annotieren und anreichern wollen, ist es für uns am sinnvollsten, sie als TEI-XML zu exportieren. Innerhalb unserer Sammlung können wir die Dokumente selektieren, die wir herunterladen wollen. Wir selektieren unseren bereits testweise annotierten ersten Brief und klicken auf “Download”. Im Popup wählen wir bei den unterschiedlichen Exportformaten lediglich “TEI” aus. Wir bekommen nun auf unsere E-Mail-Adresse einen Downloadlink zugeschickt, mit dem wir eine ZIP-Datei herunterladen können.
 
-{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/download_options.PNG
-
-" description="Abb. X: Das Herunterladen von Dokumenten" %}
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/download_options.PNG" description="Das Herunterladen von Dokumenten" %}
 
 **Überprüfung und Validierung der TEI-Datei**:  
 
@@ -407,14 +387,6 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 **Weblink:** [https://lite.transkribus.eu/](https://lite.transkribus.eu/) 
 
 **Mailkontakt:** [Kontaktformular](https://readcoop.eu/contact/) bzw. Allgemeine Kontakt-E-Mail-Adresse: [info@readcoop.eu](mailto:info@readcoop.eu) 
-
-**Webinar-Kontaktangaben:** 
-
-
-
-* Mirjam El Attal
-* Sara Mansutti
-* Florian Stauder 
 
 
 # Ressourcen
