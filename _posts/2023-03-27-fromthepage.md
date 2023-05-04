@@ -178,7 +178,7 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 
 * Eingeschränkte Mark-up-Möglichkeiten durch Beschränkung auf unterstützte Tags (derzeit 30 Tags)
 * Für detaillierte Annotationen entsprechend TEI-Konventionen eher weniger praktisch, da es keine Möglichkeit einer TEI-Validierung innerhalb des Transkriptionseditors gibt
-* Farbliche Markierungen, Ergänzungen durch Transkribierende und einige andere Textmerkmale, die selbst von editionswissenschaftlich ungeschulten Transkribierenden einfach ausgezeichnet werden könnten, werden nicht mit eigenen Tag-Buttons unterstützt. Auch wenn ein Workaround möglich ist und Tags entsprechend des TEI-Standards verwendet werden könnten, werden diese aber in der Transkriptionsansicht nicht validiert. Dadurch besteht grundsätzlich immer das Risiko einer intensiven Nachbearbeitung im TEI/XML-Export (z.B. bei Tippfehlern in den Tags oder Positionierung der Tags an unzulässigen Stellen)
+* Farbliche Markierungen, Ergänzungen durch Transkribierende und einige andere Textmerkmale, die selbst von editionswissenschaftlich ungeschulten Transkribierenden einfach ausgezeichnet werden könnten, werden nicht mit eigenen Tag-Buttons unterstützt. Auch wenn ein Workaround möglich ist und Tags entsprechend den TEI-Standards verwendet werden könnten, werden diese aber in der Transkriptionsansicht nicht validiert. Dadurch besteht grundsätzlich immer das Risiko einer intensiven Nachbearbeitung im TEI/XML-Export (z.B. bei Tippfehlern in den Tags oder Positionierung der Tags an unzulässigen Stellen)
 * Probleme mit der Zeichenkodierung beim Export: Buchstaben mit Diakritika werden im TEI nicht korrekt dargestellt
 * Tabellarische Darstellungen nur über Mark-Down (Pipes und Dashes) möglich
 * Metadaten-Beschreibung in den Projekt-Einstellungen teilweise unklar - aus den Bezeichnungen im Eingabeformular geht nicht klar hervor, welchen TEI-Header-Elementen diese im Output entsprechen könnten (siehe Export)
@@ -275,6 +275,7 @@ Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobe
 → Dabei ist zu beachten, dass Personen, die als Mitarbeitende zu einem Werk hinzugefügt werden, zuvor auch in den übergeordneten Projekteinstellungen als Mitarbeitende hinzugefügt werden müssen.
 * **Metadaten-Anreicherung:** In diesem Bereich sollten unsere zuvor mit der YAML-Datei hochgeladenen Metadaten ersichtlich sein. Diese können hier aber auch noch erweitert oder angepasst werden.
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/work-metadata.PNG" description="Werk-Metadaten" %}
+    → Leider sind wir hier hinsichtlich der Genauigkeit unserer Angaben etwas eingeschränkt, da wir beispielsweise in Bezug auf das Entstehungsdatum nur wissen, dass unsere Dokumente im letzten Viertel des 15. Jahrhunderts entstanden sind, die Eingabemaske aber ein genaues Datum erfordert und keinen Zeitrahmen zulässt. Sollte man bereits Erfahrungen mit Metadaten-Angaben im TEI-Header haben, kann man sich vorstellen, in welchen entsprechenden Elementen die hier getätigten Eingaben im Export wiederzufinden sein werden, aber ebenso wird hier auch ersichtlich, dass wir nicht für alle Metadaten, über die wir grundsätzlich verfügen, ein entsprechendes Feld haben.
 ## 4.  Bearbeitung der Dokumente
 * **Transkriptionsstatus**: Je nach Arbeitsfortschritt werden die einzelnen Dokumente in einem Werk als "Not Started", "Incomplete", "Needs Review" oder "Complete" ausgewiesen. Diese Einstellung ermöglicht eine Statusübersicht über einzelne Werke bzw. den Projektfortschritt.
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/progress.PNG" description="Statusübersicht" %}
@@ -284,7 +285,7 @@ Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobe
     * **Auszeichnung unserer Transkription**: FromThePage ermöglicht es, unsere Auszeichnungen mittels Markdown entsprechend [Wiki-Text-Konventionen](https://www.mediawiki.org/wiki/Wikitext/de) zu gestalten sowie außerdem all jene Mark-up-Buttons zu verwenden, deren Anzeige wir zuvor in den Projekt-Einstellungen aktiviert haben.
         {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-view.PNG" description="Transkriptionsarbeit" %}
         Sollte es unter unseren Transkribierenden Personen geben, die Tags lieber ausschreiben statt Textbereiche mittels Klick auf Button zu markieren, ist dies ebenfalls möglich. Strukturierungen wie Zeilenumbrüche oder Absätze werden automatisch übernommen. Wenn wir die Möglichkeiten der TEI nutzen wollen, haben wir dafür zwar keine Buttons, wir können aber z. B. editorische Eingriffe - in der Abbildung durch das Element &lt;supplied> realisiert - trotzdem mit dem entsprechenden Tag auszeichnen.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Mark-Up-Möglichkeiten" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Mark-up-Möglichkeiten" %}
         Das Element wird zwar in der allgemeinen Darstellung auf FromThePage nicht unterstützt, es befindet sich aber am Ende in unserem TEI-Export. Ein Nachteil dieses Workarounds ist aber, dass auf diese Weise angelegte Tags nicht validiert werden und wir bei einer falschen Schreibweise oder unzulässigen Positionierung des Elements keinen Hinweis darauf bekommen. Da wir FromThePage aber ohnehin nur für unsere Transkription und nicht für die Annotation verwenden wollen, setzen wir uns mit dieser Form der Auszeichnung nicht weiter auseinander.
         {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-overview.PNG" description="Allgemeine Ansicht" %}
         → An dieser Stelle hervorzuheben ist auch, dass es im Rahmen unseres Beispielsprojekts es leider nicht auf sichere und einfache Weise möglich war, farbliche Hervorhebungen, Hinzufügungen durch den/die Editor:in (und nicht den/die Autor:in) oder die Gründe für eine unleserliche Stelle zu annotieren.
@@ -682,7 +683,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
         ```
     Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüchen, unklaren Stellen, Erweiterungen von Abkürzungen sowie Referenzen zu unserer Taxonomie wiederfinden. Außerdem finden wir auch die Anmerkungen der Transkribierenden in einem &lt;note>-Element am Ende des &lt;div>-Elements.
 * **Export der Metadaten**: Viele der Metadaten, die wir im Header des XML/TEIs finden, sowie zusätzlich die eigens für jedes Projekt angelegten Metadaten (Material, Sprache & zeitliche Einordnung) können wir auch per CSV exportieren ([Link zum CSV-Export](https://github.com/DigEdTnT/digedtnt.github.io/blob/95d465f768eff02fdcd74f8e5248d8eea9e94586/data/pipelines/pipeline_1/fromthepage/export/fromthepage_work_metadata_export_32000501_2023-04-13T11_28_04Z.csv)).
-→ Man beachte jedoch, dass bei diesem Export nur die allgemeinen Projekt-Metadaten und Statistiken wiederzufinden sind, nicht aber die von uns per YAML-Datei importierten Metadaten wie beispielsweise die physische Beschreibung oder historische Dokumenation der Manuskripte.
+→ Man beachte jedoch, dass bei diesem Export nur die allgemeinen Projekt-Metadaten und Statistiken wiederzufinden sind, nicht aber die von uns per YAML-Datei importierten Metadaten wie beispielsweise die physische Beschreibung oder historische Dokumentation der Manuskripte.
 
 
 # Kontakt
@@ -1066,7 +1067,7 @@ Transkription sowie Bearbeitung und Korrektur von Transkriptionen, schriftlicher
             <tr>
                 <td><strong>Komplexitätsgrad beim Mark-up  </strong><br/>(z. B. Verfügbarkeit von
                     Buttons, Drag-and-Drop-Funktion, …) </td>
-                <td>Silent Mark-Up <br /> Tags & Buttons </td>
+                <td>Silent Mark-up <br /> Tags & Buttons </td>
             </tr>
             <tr>
                 <td>
