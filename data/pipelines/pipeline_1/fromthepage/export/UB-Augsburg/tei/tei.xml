@@ -76,7 +76,9 @@ Kenntnis des Bayrischen und mittelalterlichen Lateins von Vorteil.</title>
     <sourceDesc>
       <msDesc>
         <msIdentifier>
-            <collection>Mittelalterliche Kochrezepte</collection>
+          <repository>Universitätsbibliothek Augsburg</repository>
+          <collection>Mittelalterliche Kochrezepte</collection>
+          <idno>Cod.III.1.2°43</idno>
         </msIdentifier>
         <physDesc>
           <p>Neue Blattzählung 1-84. Wortreklamanten meist abgeschnitten.Textverlust: 1 Blatt fehlt zwischen fol. 59-60. Bastarda -durchgehend von einer Hand; Nachträge einiger jüngerer Hände, um 1500/Anfang 16. Jh.: 23r, 35r, 73r-79r an den Rändern; geübte Hand, sauberes Schriftbild, Oberlängen orientieren sich am Mittelband. Alter Einband: starker Pergamentumschlag mit übergreifendem Rückendeckel.</p>
@@ -157,10 +159,16 @@ Kenntnis des Bayrischen und mittelalterlichen Lateins von Vorteil.</title>
 
   <profileDesc>
   
-      <creation>
-          <placeName>Unknown</placeName>
-      </creation>
-
+    <creation>
+      <placeName>Unbekannt</placeName>
+      <date when="1475-01-01">1475-01-01</date>
+    </creation>
+    
+    <textClass>
+      <keywords>
+        <term type="genre">Rezepte</term>
+      </keywords>
+    </textClass>
 
       <langUsage>
         <language ident="gem">Germanic languages</language>

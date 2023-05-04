@@ -84,7 +84,9 @@ Kenntnisse des (ost-)oberdeutschen von Vorteil. </title>
     <sourceDesc>
       <msDesc>
         <msIdentifier>
+          <repository>Zentralbibliothek Solothurn</repository>
             <collection>Mittelalterliche Kochrezepte</collection>
+          <idno>Cod. S 490</idno>
         </msIdentifier>
         <physDesc>
           <p>Drei Lagen. Auf einigen Blättern sind am oberen Rand Buchstaben verzeichnet &gt;Die Handschrift weist Schäden auf und ist nicht vollständig. Sie setzt erst mitten in Rezept 32 des ersten Teils ein, was einem Fehlbestand von circa acht Blatt entspricht. Zwischen Blatt 22 und 23 fehlt ein Blatt, das den Beginn einer neuen Lage hätte bilden müssen; es ist zu vermuten, daß auch nach Bl. 30 ein Blatt ausgefallen ist. Auf Bl. 23r-24v haben Wasserflecken die Schrift in einigen Partien nahezu unlesbar werden lassen. Die Handschrift ist in einer gut lesbaren gotischen Bastarda beschrieben. Moderner Pappeinband.</p>
@@ -133,10 +135,16 @@ Kenntnisse des (ost-)oberdeutschen von Vorteil. </title>
 
   <profileDesc>
   
-      <creation>
-          <placeName>Unknown</placeName>
-      </creation>
-
+    <creation>
+      <placeName>Unbekannt</placeName>
+      <date when="1487-01-01">1487-01-01</date>
+    </creation>
+    
+    <textClass>
+      <keywords>
+        <term type="genre">Rezepte</term>
+      </keywords>
+    </textClass>
 
       <langUsage>
         <language ident="gem">Germanic languages</language>

@@ -194,19 +194,19 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
 
 ## 1.  Registrierung
 * Um in FromThePage ein Projekt anzulegen, muss man sich jedenfalls registrieren. Für unsere Testzwecke haben wir ein zweiwöchiges Probe-Benutzerkonto eingerichtet, das uns ermöglicht, bis zu 200 Seiten zur Transkription hochzuladen. Erforderlich ist dafür lediglich eine E-Mail-Adresse.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/registration.PNG" description="Abb. x: Registrierung" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/registration.PNG" description="Registrierung" %}
 ## 2.  Projekteinrichtung
 * In der Dashboard-Ansicht ist es sinnvoll, zu Beginn eine Sammlung (“create a collection”) anzulegen, indem ein Titel sowie eine Beschreibung der Sammlung erstellt wird.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/owner-dashboard.PNG" description="Abb. x: Projekt-Dashboard" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/owner-dashboard.PNG" description="Projekt-Dashboard" %}
 * Für unser Projekt legen wir eine Sammlung mit Kochrezepten aus dem Mittelalter an.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/create-collection.PNG" description="Abb. x: Anlegen einer Sammlung" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/create-collection.PNG" description="Anlegen einer Sammlung" %}
 * In unserem Beispielprojekt handelt es sich um verschiedene Manuskripte aus unterschiedlichen Regionen und mit unterschiedlichen Handschriften, die zu unterschiedlichen Zeiten erstellt wurden. Im nächsten Schritt legen wir also in unserer Sammlung für jedes Manuskript ein eigenes Werk an.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/create-work.PNG" description="Abb. x: Werke erstellen" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/create-work.PNG" description="Werke erstellen" %}
 * Für einen möglichst schnellen Upload mit wenigen Klicks wählen wir die Möglichkeit, eine ZIP-Datei mit den gesammelten Bilddateien von zwei Manuskripten hochzuladen. Wichtig dabei ist, die Manuskripte in separaten Ordnern abzuspeichern, damit diese direkt als eigenständige Werke erkannt werden.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/zip-folder.PNG" description="Abb. x: ZIP-Upload" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/zip-folder.PNG" description="ZIP-Upload" %}
     → Sollten später noch Faksimiles zu einem Werk hinzukommen, können diese übrigens jederzeit noch nachträglich zu einem Werk hinzugefügt werden.
 * Da uns von den Bibliotheken, die über die Originale verfügen, bereits ein paar Metadaten bekannt sind, legen wir in jedem unserer Manuskript-Ordner auch eine [YAML-Datei](https://de.wikipedia.org/wiki/YAML) mit den bereits vorhandenen Metadaten ab. Um zu vermeiden, dass es mit dem Upload Probleme gibt, überprüft man am besten mit dem [YAML-Checker](https://yamlchecker.com/), ob die Syntax korrekt ist.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/zip-with-metadata.PNG" description="Abb. x: Metadaten-Upload" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/zip-with-metadata.PNG" description="Metadaten-Upload" %}
 * Eine Vorlage für den Aufbau der Metadaten-Datei steht unter der Upload-Möglichkeit zur Verfügung und kann einfach mit den entsprechenden Inhalten gefüllt werden.
    ```yml
    # Title of a work -- this brief string is displayed prominently to end users
@@ -242,82 +242,82 @@ Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter
    ```
     → Leider sind wir hier hinsichtlich unserer Metadaten etwas eingeschränkt und können den Werken nur jene Metadaten mitgeben, für die es in der Vorlage auch eine entsprechende Vorgabe gibt. Sollten die Metadaten erst im Zuge des Projekts erforscht werden, können diese auch erst später in den allgemeinen Einstellungen zur Sammlung sowie in den Einstellungen zum Werk ergänzt werden. Für Nutzer:innen, die lieber mit einer grafischen Oberfläche arbeiten, empfiehlt sich ebenfalls die Metadaten in den allgemeinen Einstellungen einzutragen (siehe unter [Metadaten-Anreicherung](#32-einstellungen-für-das-jeweilige-werk)).
 * Nach erfolgreichem Upload kann man die Werke in der “Works List” einsehen und für die einzelnen Werke noch weitere Einstellungen vornehmen. Auf unserem Dashboard sollten wir nun unsere Werke einsehen können.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-dashboard.PNG" description="Abb. x: Dashboard-Ansicht der Werke einer Sammlung" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-dashboard.PNG" description="Dashboard-Ansicht der Werke einer Sammlung" %}
 ## 3.  Projektkonfigurationen
 ### 3.1. Einstellungen im Projekt-Dashboard
-* **Allgemeine Einstellungen:** In den Einstellungen am Projekt-Dashboard konfigurieren wir schließlich die Ansicht, die den Transkribierenden zur Verfügung steht. Wir können unserer Projektseite zum Beispiel eine eigene URL zuweisen (Abb. x: a), einen eigenen Einladungslink zum Transkriptionsprojekt erstellen (Abb. x: f), ein Projektbild (Abb. x: e) sowie einen eigenen Footer gestalten (Abb. x: c), um z. B. direkten Kontakt zur Projektleitung zu ermöglichen. Die Beschreibung, die wir beim Anlegen der Sammlung eingefügt haben, scheint hier bereits auf und kann noch weiter adaptiert werden (Abb. x: b).
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup1.PNG" description="Abb. x: Konfiguration des Projekts " %}
-* **Einschränkung der Projektmitarbeitenden:** Da wir unser Projekt nur einem eingeschränkten Kreis an Mitarbeitenden zur Verfügung stellen wollen, nutzen wir außerdem die Möglichkeit, unsere Sammlung auf privat zu stellen (Abb. x: g) sowie den Transkribierendenkreis einzuschränken (Abb. x: h) und nur bestimmte registrierte Mitarbeitende über ihre E-Mail-Adresse hinzuzufügen.
-* **Adaptierung der Hilfestellungen für das Projektteam:** FromThePage ermöglicht uns, auch diverse Hilfestellungen für unsere Transkribierenden anzupassen. Es können hier also noch mal Transkriptionsrichtlinien festgelegt werden (Abb. x: d), die für alle Werke dieser Sammlung gelten. In unserem Fall haben wir mit der YAML-Datei bereits unsere Richtlinien hochgeladen und finden diese nun in den entsprechenden Feldern. Die englischen Vorlagen für den allgemeinen Hilfetext sowie für das Subject Linking ändern wir vorerst nichts (Abb. y: a).
-* **API-Aktivierung:** Die Zugänglichkeit des Projekts über eine API lassen wir für unser Projekt vorerst deaktiviert (Abb. y: b).
-* **Erweiterung der Projektleitung:** Nachdem wir in unserem Projekt zwei Projektleiter:innen haben, fügen wir außerdem noch einen zweiten Projektleiter hinzu (Abb. y: c). Hierzu muss die zweite Person ebenfalls registriert sein und die Mailadresse muss bekannt sein.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup2.PNG" description="Abb. x: Weitere Projektkonfigurationen" %}
-* **Aktivierung der Indexierung (Subject Indexing):** Wir möchten unser Team außerdem motivieren, in den Rezepten Zutaten und Speisen zu annotieren und aktivieren daher die Möglichkeit der Indexierung von Entitäten (Abb. z: a). Die Kategorien und Entitäten können nur von Projektinhaber:innen angelegt werden. Die Transkribierenden können dann in ihrem Projekt-Dashboard die Entitäten einsehen und bearbeiten, nicht aber neue Entitäten anlegen.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup3.PNG" description="Abb. x: Weitere Projektkonfigurationen" %}
+* **Allgemeine Einstellungen:** In den Einstellungen am Projekt-Dashboard konfigurieren wir schließlich die Ansicht, die den Transkribierenden zur Verfügung steht. Wir können unserer Projektseite zum Beispiel eine eigene URL zuweisen (Abb. 8: a), einen eigenen Einladungslink zum Transkriptionsprojekt erstellen (Abb. 8: f), ein Projektbild (Abb. 8: e) sowie einen eigenen Footer gestalten (Abb. 8: c), um z. B. direkten Kontakt zur Projektleitung zu ermöglichen. Die Beschreibung, die wir beim Anlegen der Sammlung eingefügt haben, scheint hier bereits auf und kann noch weiter adaptiert werden (Abb. 8: b).
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup1.PNG" description="Konfiguration des Projekts " %}
+* **Einschränkung der Projektmitarbeitenden:** Da wir unser Projekt nur einem eingeschränkten Kreis an Mitarbeitenden zur Verfügung stellen wollen, nutzen wir außerdem die Möglichkeit, unsere Sammlung auf privat zu stellen (Abb. 8: g) sowie den Transkribierendenkreis einzuschränken (Abb. 8: h) und nur bestimmte registrierte Mitarbeitende über ihre E-Mail-Adresse hinzuzufügen.
+* **Adaptierung der Hilfestellungen für das Projektteam:** FromThePage ermöglicht uns, auch diverse Hilfestellungen für unsere Transkribierenden anzupassen. Es können hier also noch mal Transkriptionsrichtlinien festgelegt werden (Abb. 8: d), die für alle Werke dieser Sammlung gelten. In unserem Fall haben wir mit der YAML-Datei bereits unsere Richtlinien hochgeladen und finden diese nun in den entsprechenden Feldern. Die englischen Vorlagen für den allgemeinen Hilfetext sowie für das Subject Linking ändern wir vorerst nichts (Abb. 9: a).
+* **API-Aktivierung:** Die Zugänglichkeit des Projekts über eine API lassen wir für unser Projekt vorerst deaktiviert (Abb. 9: b).
+* **Erweiterung der Projektleitung:** Nachdem wir in unserem Projekt zwei Projektleiter:innen haben, fügen wir außerdem noch einen zweiten Projektleiter hinzu (Abb. 9: c). Hierzu muss die zweite Person ebenfalls registriert sein und die Mailadresse muss bekannt sein.
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup2.PNG" description="Weitere Projektkonfigurationen" %}
+* **Aktivierung der Indexierung (Subject Indexing):** Wir möchten unser Team außerdem motivieren, in den Rezepten Zutaten und Speisen zu annotieren und aktivieren daher die Möglichkeit der Indexierung von Entitäten (Abb. 10: a). Die Kategorien und Entitäten können nur von Projektinhaber:innen angelegt werden. Die Transkribierenden können dann in ihrem Projekt-Dashboard die Entitäten einsehen und bearbeiten, nicht aber neue Entitäten anlegen.
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup3.PNG" description="Weitere Projektkonfigurationen" %}
 Es ist auch möglich, die Entitäten (in einem CSV) hochzuladen, wobei sich diese in unserem Projekt erst im Laufe der Transkription ergeben werden.
-* **Sprachauswahl:** In den Projekteinstellungen lässt sich außerdem die Sprache und für Transkriptionen in Standardsprache auch eine Rechtschreibprüfung einstellen. Da wir es in unserem Projekt bei jedem Manuskript bzw. Werk mit diversen mittelalterlichen Varianten der deutschen Sprache zu tun haben, wählen wir hier “Germanic languages” (Abb. z: b). Auf eine Aktivierung der Speech-to-text-Funktion verzichten wir vorerst, da wir nicht davon ausgehen, dass unsere Mitarbeitenden fließend Frühneuhochdeutsch sprechen; und auch die Rechtschreibprüfung wird nicht aktiviert, da diese für unsere Texte mit großer Wahrscheinlichkeit wenig hilfreich ist.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/language-options-ger.PNG" description="Abb. x: Sprachauswahl" %}
-* **Einstellung des Revisionstyps**: Da wir in unserem Editionsprojekt nach dem 4-Augen-Prinzip arbeiten, stellen wir den Review type auf “restricted”, so dass alle fertiggestellten Transkriptionen unbedingt von einem autorisierten Reviewer noch einmal gelesen und gegebenenfalls korrigiert werden (Abb. z: c).
-* **Erstellung von Metadaten für einzelne Werke**: Damit unsere Transkribierenden uns auch bei der Anreicherung mit Metadaten helfen können, aktivieren wir die Metadaten-Beschreibung in den Einstellungen (Abb. z: d). Auch hierfür erscheint in der Navigation nun ein neuer Reiter (Metadata Fields), in dem die entsprechenden Voreinstellungen getroffen werden können.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/metadata-fields.PNG" description="Abb. x: Metadaten-Felder" %}
-* **Einrichtung eines Forums:** Um auch eine aktive Diskussion zwischen den Mitarbeitenden in unserem Projekt zu ermöglichen, eröffnen wir zudem ein Forum (Abb. z: e).
+* **Sprachauswahl:** In den Projekteinstellungen lässt sich außerdem die Sprache und für Transkriptionen in Standardsprache auch eine Rechtschreibprüfung einstellen. Da wir es in unserem Projekt bei jedem Manuskript bzw. Werk mit diversen mittelalterlichen Varianten der deutschen Sprache zu tun haben, wählen wir hier “Germanic languages” (Abb. 10: b). Auf eine Aktivierung der Speech-to-text-Funktion verzichten wir vorerst, da wir nicht davon ausgehen, dass unsere Mitarbeitenden fließend Frühneuhochdeutsch sprechen; und auch die Rechtschreibprüfung wird nicht aktiviert, da diese für unsere Texte mit großer Wahrscheinlichkeit wenig hilfreich ist.
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/language-options-ger.PNG" description="Sprachauswahl" %}
+* **Einstellung des Revisionstyps**: Da wir in unserem Editionsprojekt nach dem 4-Augen-Prinzip arbeiten, stellen wir den Review type auf “restricted”, so dass alle fertiggestellten Transkriptionen unbedingt von einem autorisierten Reviewer noch einmal gelesen und gegebenenfalls korrigiert werden (Abb. 10: c).
+* **Erstellung von Metadaten für einzelne Werke**: Damit unsere Transkribierenden uns auch bei der Anreicherung mit Metadaten helfen können, aktivieren wir die Metadaten-Beschreibung in den Einstellungen (Abb. 10: d). Auch hierfür erscheint in der Navigation nun ein neuer Reiter (Metadata Fields), in dem die entsprechenden Voreinstellungen getroffen werden können.
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/metadata-fields.PNG" description="Metadaten-Felder" %}
+* **Einrichtung eines Forums:** Um auch eine aktive Diskussion zwischen den Mitarbeitenden in unserem Projekt zu ermöglichen, eröffnen wir zudem ein Forum (Abb. 10: e).
 → Durch das An- oder Abwählen von diversen Funktionalitäten in den Projekteinstellungen erweitert sich übrigens das Navigationsmenü um entsprechende Tabs. Das Aktivieren des Buttons “Enable Forum” führt also dazu, dass im Projekt-Dashboard der Reiter “Forum” zur Verfügung steht.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-dashboard-tabs.PNG" description="Abb. x: Tab-Erweiterung im Projektdashboard" %}
-* **Anpassungen des Transkriptionseditors**: Um auch für Transkribierende, die bisher noch nie oder nur wenig mit spitzen Klammern gearbeitet haben, die Transkriptionsarbeit möglichst einfach zu gestalten, nutzen wir die Möglichkeit, die vordefinierten Editor-Buttons (derzeit sind 21[ Tags ](https://content.fromthepage.com/project-owner-documentation/advanced-editor/)verfügbar) zu aktivieren (Abb. z: f).
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/editor-buttons.PNG" description="Abb. x: Editor-Buttons" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-dashboard-tabs.PNG" description="Tab-Erweiterung im Projektdashboard" %}
+* **Anpassungen des Transkriptionseditors**: Um auch für Transkribierende, die bisher noch nie oder nur wenig mit spitzen Klammern gearbeitet haben, die Transkriptionsarbeit möglichst einfach zu gestalten, nutzen wir die Möglichkeit, die vordefinierten Editor-Buttons (derzeit sind 21[ Tags ](https://content.fromthepage.com/project-owner-documentation/advanced-editor/)verfügbar) zu aktivieren (Abb. 10: f).
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/editor-buttons.PNG" description="Editor-Buttons" %}
 ### 3.2. Einstellungen für das jeweilige Werk
 * **Allgemeine Einstellungen**: Auch für jedes Werk - also in unserem Fall für jedes Manuskript selbst - können wir diverse Voreinstellungen vornehmen. Darunter fallen die Vergabe eines Titels, die Zuordnung zu einer Sammlung bzw. einem Projekt, die Anpassung der URL sowie die Vergabe eines Identifiers von einem externen System (Abb. i: a).
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/work-setup.PNG" description="Abb. x: Konfigurationen in den Einstellungen zu den einzelnen Werken" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/work-setup.PNG" description="Konfigurationen in den Einstellungen zu den einzelnen Werken" %}
 Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobei in unserem Fall unsere Seiten weder als semantische Einheiten zu betrachten sind, noch eine [OCR](https://de.wikipedia.org/wiki/Texterkennung)-Korrektur anwendbar ist, und wir diese Optionen daher deaktiviert lassen.
 * **Beschreibung des Werkes:** Um unseren Transkribierenden einen Anhaltspunkt zu bieten, mit welcher Hand und welcher Sprache bzw. welchem Dialekt sie konfrontiert werden, halten wir diese Informationen bereits in den jeweiligen Werkbeschreibungen bereit (Abb. i: b).
 * **Transkriptionsrichtlinien:** Diese werden grundsätzlich von den Projekt-Einstellungen übernommen, können aber hier noch weiter angepasst werden. In unserem Fall verzichten wir auf Änderungen, da für alle Manuskripte die gleichen Richtlinien gelten sollen (Abb. i: c).
 * **Einschränkung der Mitarbeitenden:** Auch für die einzelnen Werke ist es möglich, den Personenkreis (nur registrierte Nutzer:innen) einzuschränken (Abb. i: d).
 → Dabei ist zu beachten, dass Personen, die als Mitarbeitende zu einem Werk hinzugefügt werden, zuvor auch in den übergeordneten Projekteinstellungen als Mitarbeitende hinzugefügt werden müssen.
 * **Metadaten-Anreicherung:** In diesem Bereich sollten unsere zuvor mit der YAML-Datei hochgeladenen Metadaten ersichtlich sein. Diese können hier aber auch noch erweitert oder angepasst werden.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/work-metadata.PNG" description="Abb. x: Werk-Metadaten" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/work-metadata.PNG" description="Werk-Metadaten" %}
 ## 4.  Bearbeitung der Dokumente
 * **Transkriptionsstatus**: Je nach Arbeitsfortschritt werden die einzelnen Dokumente in einem Werk als "Not Started", "Incomplete", "Needs Review" oder "Complete" ausgewiesen. Diese Einstellung ermöglicht eine Statusübersicht über einzelne Werke bzw. den Projektfortschritt.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/progress.PNG" description="Abb. x: Statusübersicht" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/progress.PNG" description="Statusübersicht" %}
 * **Transkriptionsansicht:** Im Transkriptionseditor wird uns eine synoptische Ansicht unseres Faksimiles und des Bearbeitungsbereiches geboten.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/image-text-synopsis.PNG" description="Abb. x: Bild-Text-Synopse" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/image-text-synopsis.PNG" description="Bild-Text-Synopse" %}
     Wir können hier also direkt mit der zeilenweisen Transkription beginnen und die verschiedenen Funktionen von FromThePage nutzen:
     * **Auszeichnung unserer Transkription**: FromThePage ermöglicht es, unsere Auszeichnungen mittels Markdown entsprechend [Wiki-Text-Konventionen](https://www.mediawiki.org/wiki/Wikitext/de) zu gestalten sowie außerdem all jene Mark-up-Buttons zu verwenden, deren Anzeige wir zuvor in den Projekt-Einstellungen aktiviert haben.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-view.PNG" description="Abb. x: Transkriptionsarbeit" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-view.PNG" description="Transkriptionsarbeit" %}
         Sollte es unter unseren Transkribierenden Personen geben, die Tags lieber ausschreiben statt Textbereiche mittels Klick auf Button zu markieren, ist dies ebenfalls möglich. Strukturierungen wie Zeilenumbrüche oder Absätze werden automatisch übernommen. Wenn wir die Möglichkeiten der TEI nutzen wollen, haben wir dafür zwar keine Buttons, wir können aber z. B. editorische Eingriffe - in der Abbildung durch das Element &lt;supplied> realisiert - trotzdem mit dem entsprechenden Tag auszeichnen.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Abb. x: Mark-Up-Möglichkeiten" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Mark-Up-Möglichkeiten" %}
         Das Element wird zwar in der allgemeinen Darstellung auf FromThePage nicht unterstützt, es befindet sich aber am Ende in unserem TEI-Export. Ein Nachteil dieses Workarounds ist aber, dass auf diese Weise angelegte Tags nicht validiert werden und wir bei einer falschen Schreibweise oder unzulässigen Positionierung des Elements keinen Hinweis darauf bekommen. Da wir FromThePage aber ohnehin nur für unsere Transkription und nicht für die Annotation verwenden wollen, setzen wir uns mit dieser Form der Auszeichnung nicht weiter auseinander.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-overview.PNG" description="Abb. x: Allgemeine Ansicht" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-overview.PNG" description="Allgemeine Ansicht" %}
         → An dieser Stelle hervorzuheben ist auch, dass es im Rahmen unseres Beispielsprojekts es leider nicht auf sichere und einfache Weise möglich war, farbliche Hervorhebungen, Hinzufügungen durch den/die Editor:in (und nicht den/die Autor:in) oder die Gründe für eine unleserliche Stelle zu annotieren.
     * **Anmerkungen und Fragen:** Sollten Mitarbeitende auf Probleme stoßen, zu denen es in den Transkriptionsrichtlinien keine Anhaltspunkte gibt, so haben sie die Möglichkeit, für jedes Faksimile und die dazugehörige Transkription eine Anmerkung zu hinterlassen oder Fragen zu stellen. Diese Notizen werden auch in den TEI-Export übernommen und können somit nützlich sein, um damit Problemstellen zu kennzeichnen oder Kommentare für die spätere Annotation einzufügen. In unserem Beispiel wurde diese Funktion genutzt, um jene Transkriptionen zu markieren, in denen es Probleme mit der Darstellung von diakritischen Zeichen gab.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/notes-and-questions.PNG" description="Abb. x: Austausch mit und zwischen Projektmitarbeitenden" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/notes-and-questions.PNG" description="Austausch mit und zwischen Projektmitarbeitenden" %}
     * **Subject Linking:** Während der Transkription eines Dokumentes können auch Entitäten wie Personen, Orte oder eigens angelegte Kategorien (inklusive Unterkategorien) - in unserem Beispiel Zutaten und Speisen - ausgezeichnet werden.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking.PNG" description="Abb. x: Subject Linking" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking.PNG" description="Subject Linking" %}
         Projektinhaber:innen können dafür im Projekt-Dashboard die nötigen Vorbereitungen treffen, indem sie die entsprechenden Kategorien erstellen.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-overview.png" description="Abb. x: Subject Linking Übersicht" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-overview.png" description="Subject Linking Übersicht" %}
         Die einzelnen Entitäten können schließlich diesen Kategorien zugeordnet und mit einer URI sowie einer Beschreibung angereichert werden.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-categorization.PNG" description="Abb. x: Kategorisierung von Entitäten" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-categorization.PNG" description="Kategorisierung von Entitäten" %}
         Diese Daten sowie die Verknüpfungen von Entitäten und ihr Auftreten bzw. ihre Häufigkeit in den Manuskripten kann schließlich eingesehen werden.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-description.PNG" description="Abb. x: Bearbeitung von Entitäten" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-description.PNG" description="Bearbeitung von Entitäten" %}
         In den einzelnen Dokumenten ist es den Mitarbeitenden möglich, neue Entitäten händisch während der Transkription (gemäß Anleitung) auszuzeichnen, oder über Autolink in einem bereits transkribierten Dokument gleichlautende Entitäten automatisch zu verlinken.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-autolink.PNG" description="Abb. x: Automatische Verlinkung von Entitäten" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-autolink.PNG" description="Automatische Verlinkung von Entitäten" %}
         Beim Hinzufügen neuer Entitäten können diese danach direkt einer Kategorie zugeordnet werden.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-categorization-transcription.PNG" description="Abb. x: Zuordnung von Entitäten zu Kategorien" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-categorization-transcription.PNG" description="Zuordnung von Entitäten zu Kategorien" %}
         Die Transkribierenden können in ihrem Projekt-Dashboard die von der Projektleitung angelegten Entitäten einsehen und auch bearbeiten. Sie können jedoch keine weiteren Kategorien anlegen. Auch hier gilt wieder, dass FromThePage für unser Projekt nur als Transkriptionstool genutzt wird, weshalb wir versuchsweise nur auf der ersten Seite ein paar Entitäten verlinkt und innerhalb aller weiteren Transkriptionen die Auto-Link-Funktion ausprobiert, die auch tatsächlich zu ein paar Treffern führte.
     * **Zwischenspeichern oder Abschließen**: Wenn wir ein paar Zeilen transkribiert haben und zwischenspeichern wollen, klicken wir auf “Save”. Wenn die Transkription vollständig abgeschlossen ist, klicken wir auf “Done”. Danach wird aus dem “Done”-Button ein “Approve”-Button gemäß unserer zuvor festgelegten Einstellung, dass jedes Dokument einer Revision unterzogen werden muss.
     → Achtung: Sobald man den Tab mit der Transkriptionsansicht verlässt, verliert man ohne Vorwarnung seinen Arbeitsfortschritt - daher nicht vergessen, regelmäßig abzuspeichern.
     * **Metadaten-Anreicherung:** Nachdem wir für unser Projekt festgelegt haben, dass zu jedem Werk auch Metadaten angelegt werden können, steht unseren Transkribierenden ein Button zur Erstellung von Metadaten zur Verfügung.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/create-metadata-button.PNG" description="Abb. x: Metadaten-Button für Bearbeitende" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/create-metadata-button.PNG" description="Metadaten-Button für Bearbeitende" %}
         Über die damit aufgerufene Ansicht können schließlich die zuvor von der Projektleitung angelegten Felder (siehe [Metadaten-Erstellung für einzelne Werke](#32-einstellungen-für-das-jeweilige-werk)) befüllt werden.
-        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/metadata-creation-editor.PNG" description="Abb. x: Anreicherung von Metadaten durch Bearbeitende" %}
+        {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/metadata-creation-editor.PNG" description="Anreicherung von Metadaten durch Bearbeitende" %}
         Auch bei den Metadaten gibt es wieder die Option zwischenzuspeichern (“Save”), die Daten als vollständig zu markieren (“Done”) bzw. sie am Ende durch eine:n Reviewer:in zu bestätigen (“Approve”).
 * **Versionsansicht:** Im Tab “Versions” können wir nachverfolgen, wer wann welche Änderungen vorgenommen hat.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/versions.PNG" description="Abb. x: Versionskontrolle" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/versions.PNG" description="Versionskontrolle" %}
 ## 5.  Export der Dokumente
 Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf FromThePage im Downloadbereich des Projekt-Dashboards (und nicht in den Werkübersichten) zu finden sind: Da wir unsere Daten in anderen Tools weiter annotieren und mit Normalisierungen anreichern wollen, soll der Output in einer XML/TEI-Datei exportiert werden. Dafür bietet uns FromThePage die Möglichkeit, entweder jedes Projekt einzeln oder die einzelnen Werke als Sammelexport in einer gewissen Ordnerstruktur herunterzuladen.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export.png" description="Abb. x: Exportmöglichkeiten" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export.png" description="Exportmöglichkeiten" %}
     → Wir sehen hier für all unsere Werke den Bearbeitungsfortschritt und haben direkt die Möglichkeit, unsere Arbeit als TEI zu exportieren. Für etwas feinere Einstellungen nutzen wir jedoch die erste Option für einen Sammelexport ("Export All Works").
 * **Export der Werke:** Über den Button “Export All Works” können wir nun verschiedene Formate und Einstellungen wählen und unsere gesamte Sammlung als ZIP-Datei exportieren.
-    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export-all-works.PNG" description="Abb. x: Export aller Werke in ZIP-Datei" %}
+    {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export-all-works.PNG" description="Export aller Werke in ZIP-Datei" %}
     Wir wählen dabei einen Ordner pro Werk und stellen ein, dass unsere Export-Ordner den Namen der Import-Ordner übernehmen bzw. beibehalten sollen. Bei den Exportformaten wählen wir nur TEI/XML aus. In den exportierten TEI-Dateien ([Link zum vollständigen Export](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/fromthepage/export)) finden wir für jedes Werk einen Ordner mit je einer Readme-Datei, in der die verschiedenen Exportformate beschrieben sind, und für jedes Werk einen weiteren Ordner, in dem unsere TEI-Dateien enthalten sind, in denen unsere Bearbeitungsschritte des vorangegangenen Abschnittes nun folgende Form angenommen haben:
     * **Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, Informationen zu den Versionen sind - wie hier auszugsweise dargestellt - im TEI Header wiederzufinden.
         ```xml
@@ -379,22 +379,18 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
+                        <repository>Universitätsbibliothek Augsburg</repository>
                         <collection>Mittelalterliche Kochrezepte</collection>
+                        <idno>Cod.III.1.2°43</idno>
                     </msIdentifier>
                     <physDesc>
-                        <p>Neue Blattzählung 1-84. Wortreklamanten meist abgeschnitten.Textverlust: 1 Blatt
-                        fehlt zwischen fol. 59-60. Bastarda -durchgehend von einer Hand; Nachträge einiger
-                        jüngerer Hände, um 1500/Anfang 16. Jh.: 23r, 35r, 73r-79r an den Rändern; geübte Hand,
-                        sauberes Schriftbild, Oberlängen orientieren sich am Mittelband. Alter Einband:
-                        starker Pergamentumschlag mit übergreifendem Rückendeckel.</p>
+                        <p>Neue Blattzählung 1-84. Wortreklamanten meist abgeschnitten.Textverlust: 1 Blatt fehlt zwischen fol. 59-60. Bastarda -durchgehend von einer Hand; Nachträge einiger jüngerer Hände, um 1500/Anfang 16. Jh.: 23r, 35r, 73r-79r an den Rändern; geübte Hand, sauberes Schriftbild, Oberlängen orientieren sich am Mittelband. Alter Einband: starker Pergamentumschlag mit übergreifendem Rückendeckel.</p>
                     </physDesc>
                     <history>
                         <origin>
                         <placeName>Unknown</placeName>
                         </origin>
-                        <provenance>4. Viertel 15. Jh. Entstehungsort unbekannt. Alter Besitzvermerk fol. 1r
-                        durch Übermalen völlig getilgt; Erwerbung des Fürsten Ludwig, vgl. 1r. Oettingisches
-                        Wappen und Erwerbsjahr: 1813. Bibliothekssignatur des 19. Jhs.</provenance>
+                        <provenance>4. Viertel 15. Jh. Entstehungsort unbekannt. Alter Besitzvermerk fol. 1r durch Übermalen völlig getilgt; Erwerbung des Fürsten Ludwig, vgl. 1r. Oettingisches Wappen und Erwerbsjahr: 1813. Bibliothekssignatur des 19. Jhs.</provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -403,7 +399,13 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
             <profileDesc>
             <creation>
                 <placeName>Unknown</placeName>
+                <date when="1475-01-01">1475-01-01</date>
             </creation>
+            <textClass>
+                <keywords>
+                    <term type="genre">Rezepte</term>
+                </keywords>
+            </textClass>
             <langUsage>
                 <language ident="gem">Germanic languages</language>
             </langUsage>
