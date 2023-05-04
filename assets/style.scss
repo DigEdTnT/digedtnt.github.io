@@ -31,6 +31,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   height: 100%;
+  counter-reset: figureCounter;
 }
 
 .container {
@@ -274,6 +275,7 @@ img {
 
 figure {
   text-align: center;
+  counter-increment: figureCounter;
 }
 
 
@@ -281,6 +283,12 @@ figcaption {
   text-align: center;
   font-size: 0.7rem;
   font-weight: 600;
+}
+
+
+// prepend the figure counter to the figcaption content
+figure figcaption:before {
+    content: "Abb. " counter(figureCounter) ": "
 }
 
 
