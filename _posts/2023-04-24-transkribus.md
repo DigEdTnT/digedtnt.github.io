@@ -75,8 +75,8 @@ Aufgrund der großen Annahme der Webversion wird nur mehr diese weiterentwickelt
 
 ## Tool-Kompatibilität
 
-
-<table class="table-responsive">
+<div class="table-responsive">
+<table class="table">
   <tr>
    <td>
    </td>
@@ -118,6 +118,7 @@ Aufgrund der großen Annahme der Webversion wird nur mehr diese weiterentwickelt
    </td>
   </tr>
 </table>
+</div>
 
 
 
@@ -210,10 +211,10 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 ## 2. Transkribus Lite - Benutzeroberfläche
 * **Dashboard:** Nach dem Einloggen findet man sich im Transkribus-Lite-Dashboard wieder. Hier können die Tabs “Workdesk” und Training ausgewählt werden, wobei per default “Workdesk” selektiert ist.
-    * **“Workdesk” (Abb. X  - a):** Der Workdesk ist die Arbeitsumgebung, die Zugang zu den elementaren Funktionen von Transkribus bietet: 
-        * Linke Menüleiste: “Tools” (Abb. X - c) (“Text-Erkennung”, “Sammlung erstellen”, “Hochladen”, “Hilfe”) und “Transkribus Organizer” (Abb. X - d) (“Sammlungen”, “Jobs”, “Tag Manager”, “Aktuelle Dokumente”) 
-        * Rechte Menüleiste: Schnelle Texterkennung und Übersicht über das Creditsaldo (Abb. X. - e)
-    * **“Training” (Abb. X - b):** Hier können Modelle für die Layout- und Texterkennung trainiert werden
+    * **“Workdesk” (Abb. 3: a):** Der Workdesk ist die Arbeitsumgebung, die Zugang zu den elementaren Funktionen von Transkribus bietet: 
+        * Linke Menüleiste: “Tools” (Abb. X - c) (“Text-Erkennung”, “Sammlung erstellen”, “Hochladen”, “Hilfe”) und “Transkribus Organizer” (Abb. 3: d) (“Sammlungen”, “Jobs”, “Tag Manager”, “Aktuelle Dokumente”) 
+        * Rechte Menüleiste: Schnelle Texterkennung und Übersicht über das Creditsaldo (Abb. 3: e)
+    * **“Training” (Abb. 3: b):** Hier können Modelle für die Layout- und Texterkennung trainiert werden
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/dashboard.PNG" description="Transkribus-Dashboard" %}
 
@@ -314,11 +315,11 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 * In der Defaultansicht findet sich links im Bild das Faksimile und rechts der Texteditor. Die Ansicht kann über die untere Menüleiste umgestellt werden, sodass sich oben das Faksimile und unten der Texteditor findet.
 * **Wichtige Optionen im Editorfenster** (rechts):
-    * **Festlegen des Bearbeitungsstatus:** Im rechten oberen Eck kann Bearbeitungsstatus der Seite festgelegt werden (Abb. x - a): “In Bearbeitung”, “Erledigt” (die Seite wurde transkribiert), “Final” (die Seite wurde transkribiert und einem Review unterzogen) und “Trainingsdaten” (die Transkription ist so korrekt wie möglich und wird zum Modelltraining verwendet).
-    * **Speichern:** Mit dem dem Diskettensymbol (Abb. x - b) kann gespeichert werden 	
-    * **Versionskontrolle:** Die Schaltfläche mit Datums- und Zeitangabe (Abb. x -c) dient der Versionskontrolle. Mittels ‘Speicherständen’ kann zwischen auf frühere und von dort aus dann spätere Versionen zugegriffen werden werden.
-    * **Konfiguration:** Über das Zahnradsymbol (Abb. x - d) können verschiedene Einstellungen vorgenommen werden und so z. B. das Verhalten und Layout des Editors an die eigenen Bedürfnisse angepasst werden. Es ist aber hier auch möglich, eigene Texttags hinzuzufügen oder bereits vorhandene zu entfernen. Ebenso kann die Sichtbarkeit der Strukturtags gesteuert werden.
-    * **Virtuelles Keyboard:**  Das Keyboardsymbol (Abb. x - e) blendet das Virtuelle Keyboard ein, über das Unicode-Zeichen eingefügt werden können . Dazu müssen die gewünschten Unicode-Bereiche zunächst über die Konfigurationsschaltfläche (Zahnradsymbol) ausgewählt werden.
+    * **Festlegen des Bearbeitungsstatus:** Im rechten oberen Eck kann Bearbeitungsstatus der Seite festgelegt werden (Abb. 16: a): “In Bearbeitung”, “Erledigt” (die Seite wurde transkribiert), “Final” (die Seite wurde transkribiert und einem Review unterzogen) und “Trainingsdaten” (die Transkription ist so korrekt wie möglich und wird zum Modelltraining verwendet).
+    * **Speichern:** Mit dem dem Diskettensymbol (Abb. 16: b) kann gespeichert werden 	
+    * **Versionskontrolle:** Die Schaltfläche mit Datums- und Zeitangabe (Abb. 16: c) dient der Versionskontrolle. Mittels ‘Speicherständen’ kann zwischen auf frühere und von dort aus dann spätere Versionen zugegriffen werden werden.
+    * **Konfiguration:** Über das Zahnradsymbol (Abb. 16: d) können verschiedene Einstellungen vorgenommen werden und so z. B. das Verhalten und Layout des Editors an die eigenen Bedürfnisse angepasst werden. Es ist aber hier auch möglich, eigene Texttags hinzuzufügen oder bereits vorhandene zu entfernen. Ebenso kann die Sichtbarkeit der Strukturtags gesteuert werden.
+    * **Virtuelles Keyboard:**  Das Keyboardsymbol (Abb. 16: e) blendet das Virtuelle Keyboard ein, über das Unicode-Zeichen eingefügt werden können . Dazu müssen die gewünschten Unicode-Bereiche zunächst über die Konfigurationsschaltfläche (Zahnradsymbol) ausgewählt werden.
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_options.png" description="Optionen im Texteditor-Fenster" %}
 
 * **Wichtige Optionen im Faksimilefenster** (links):
@@ -327,12 +328,12 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 
 
-* **Hinzufügen von Zeilenlinien:** Über das Füllfedersymbol (Abb. x - a) können Zeilenlinien hinzugefügt werden. Wird eine Linie hinzugefügt, erscheint die mit ihr korrespondierende Zeile rechts im Editorfenster. Ausgewählte Zeilen können auch über die Entfernen-Taste auf der Tastatur gelöscht werden.
+* **Hinzufügen von Zeilenlinien:** Über das Füllfedersymbol (Abb. 17: a) können Zeilenlinien hinzugefügt werden. Wird eine Linie hinzugefügt, erscheint die mit ihr korrespondierende Zeile rechts im Editorfenster. Ausgewählte Zeilen können auch über die Entfernen-Taste auf der Tastatur gelöscht werden.
     * **Aktionen mit Regionen:**
-        * Mittels Button (Abb. x -b) können Regionen hinzugefügt werden
+        * Mittels Button (Abb. 17: b) können Regionen hinzugefügt werden
         * Bereits bestehende Regionen können geteilt werden: Dazu muss die Region mittels Klick ausgewählt werden, nach einem Rechtsklick erscheinen können dann die Teilungsoptionen ausgewählt werden: Horizontal, vertikal oder benutzerdefiniert (Im letzten Fall kann mittels Pfeiltasten die Teilungslinie gedreht werden).
         * Zusammenfügen von Regionen: Dazu werden mit Strg und Mausklick mehrere Regionen markiert, nach einem Rechtsklick können sie mit “Merge shapes” zusammengeführt werden.
-    * **Layoutbutton:** Nach einem Klick auf den Layoutbutton (Abb. x - c) öffnet sich ein Fenster, in dem die Struktur des Dokuments (Regionen und Zeilen) angezeigt wird. Hier können - was durchaus wichtig sein kann - Regionen und Zeilen miteinander ausgetauscht werden.
+    * **Layoutbutton:** Nach einem Klick auf den Layoutbutton (Abb. 17: c) öffnet sich ein Fenster, in dem die Struktur des Dokuments (Regionen und Zeilen) angezeigt wird. Hier können - was durchaus wichtig sein kann - Regionen und Zeilen miteinander ausgetauscht werden.
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/layout_regions_lines.PNG" description="Optionen zum Verschieben von Regionen und Zeilen" %}
 
