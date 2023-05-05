@@ -169,22 +169,20 @@ Aufgrund der großen Annahme der Webversion wird nur mehr diese weiterentwickelt
 * Texterkennung mit kostenfreien Credits hat geringere Priorität als mit gekauften
 
 
-# Voraussetzungen
+## Voraussetzungen
 
 Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetzen und andererseits auch hinsichtlich der Software-Umgebung gewisse Anforderungen stellen.
 
 
-## Erforderliche Kenntnisse
+### Erforderliche Kenntnisse
+
+* EDV-Grundkenntnisse
+    * Bedienung eines Webbrowsers
 
 
+### Technische Voraussetzungen (Software)
 
-* Keine
-
-
-## Benötigte Software
-
-
-
+* Stabile Internetverbindung
 * Webbrowser
 
 
