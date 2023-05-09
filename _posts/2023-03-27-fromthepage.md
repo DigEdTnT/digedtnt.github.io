@@ -779,7 +779,7 @@ Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Va
             </strong>(Remotesystem im Browser / Lokaler Client)
         </td>
         <td>Browser-Anwendung/
-            <p>
+            <br/>
                 web-basiert
         </td>
     </tr>
@@ -813,7 +813,7 @@ Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Va
         </td>
         <td>Kleinprojekte: <br />
             bis zu 200 Seiten - kostenlos
-            <p>
+            <br/>
                 Betreuung von Institutionen: bis zu 50.000 Seiten - ca. 3600 Dollar/Jahr
         </td>
     </tr>
@@ -841,7 +841,7 @@ Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Va
     </tr>
     <tr>
         <td><strong>Inkludierte Datenkonvertierung</strong>
-            <p>
+            <br/>
                 (Im Preprocessing mögliche Anpassung der Daten an für die Software erforderliches Format )
         </td>
         <td>❌
@@ -905,9 +905,7 @@ Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Va
     <tr>
         <td><strong>Verfügbarkeit von Tutorials</strong>
         </td>
-        <td>✅Keine Schritt-für-Schritt-
-            <p>
-                Anleitungen, aber Videomaterial zu Features und Projekten
+        <td>✅Keine Schritt-für-Schritt-Anleitungen, aber Videomaterial zu Features und Projekten
         </td>
     </tr>
     <tr>
@@ -930,7 +928,7 @@ Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Va
     </tr>
     <tr>
         <td><strong>Test</strong>
-            <p>
+            <br/>
                 (Gibt es ein Test Suite, um zu überprüfen, ob die Installation erfolgreich war?)
         </td>
         <td>✅
@@ -972,7 +970,6 @@ Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Va
             </strong>(erwartete Nutzung)
         </td>
         <td>Hochladen von Dateien, Projektmanagement, Metadatenbeschreibung,
-            <p>
                 Transkription sowie Bearbeitung und Korrektur von Transkriptionen, schriftlicher Austausch über
                 Transkriptionsarbeit, Export
         </td>
@@ -985,7 +982,7 @@ Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Va
     </tr>
     <tr>
         <td><strong>Visualisierungen </strong>
-            <p>
+            <br/>
                 (Analyse-, Input-, Outputkonfigurationen)
         </td>
         <td>✅Projektstatistik, Vorschau-Ansichten
@@ -1051,7 +1048,7 @@ Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Va
         <td><strong>Unterstützte Dateiformate</strong>
         </td>
         <td>JPG, PNG, GIF, PDF, ZIP, IIIF (Manifest + Collection)
-            <p>
+            <br/>
                 Zusätzlich: Import von CONTENTdm, Internet Archive
         </td>
     </tr>
@@ -1100,8 +1097,7 @@ Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Va
             </strong>(z. B. Verfügbarkeit von Buttons, Drag&Drop-Funktion, …)
         </td>
         <td>Silent Mark-Up
-            <p>
-                Tags & Buttons
+            <br/>Tags & Buttons
         </td>
     </tr>
     <tr>
@@ -1153,9 +1149,9 @@ Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Va
             </strong>(z. B. Bearbeitungsansicht, Synopsen-Ansicht, Vorschauansicht …)
         </td>
         <td>Bearbeitungsansicht, Bild-Text-Editor-Synopse, Vorschauansicht
-            <p>
+            <br/>
                 <em>Single-Page-Darstellung: </em>1:1-Darstellung (Zeilenumbrüche werden beibehalten)
-                <p>
+                <br/>
                     <em>Multi-Page-Darstellung: </em>nur Thumbnail-Bilder für die Faksimiles, zur Darstellung von
                     Suchergebnissen (Absatzumbrüche werden beibehalten)
         </td>
