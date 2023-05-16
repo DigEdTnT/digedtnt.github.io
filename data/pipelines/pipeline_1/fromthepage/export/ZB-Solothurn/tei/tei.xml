@@ -1,591 +1,538 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd"
-xml:lang="EN"
-xml:id="export">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd"
+  xml:lang="EN" xml:id="export">
 
-<teiHeader>
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">MS Solothurn, Zentralbibliothek, Cod. S 490 (So1</title>
-        <title type="desc">Dieses Manuskript beinhaltet mittelalterlich Kochrezepte in gotischer Bastarda.
-Kenntnisse des (ost-)oberdeutschen von Vorteil. </title>
-      </title>
-      <author>
-        <persName>Unknown</persName>
-      </author>
-    </titleStmt>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full">
+          <title type="main">MS Solothurn, Zentralbibliothek, Cod. S 490 (So1</title>
+          <title type="desc">Dieses Manuskript beinhaltet mittelalterlich Kochrezepte in gotischer
+            Bastarda. Kenntnisse des (ost-)oberdeutschen von Vorteil. </title>
+        </title>
+        <author>
+          <persName>Unknown</persName>
+        </author>
+      </titleStmt>
 
-    <editionStmt>
-      <edition>Edition created from new transcripts of this manuscript.</edition>
-      <respStmt xml:id="AU32014648">
-        <resp>Initial upload of this work&#39;s facsimile images and metadata to FromThePage for editing</resp>
-        <persName>ZIM-DigEdTnT</persName>
-      </respStmt>
+      <editionStmt>
+        <edition>Edition created from new transcripts of this manuscript.</edition>
+        <respStmt xml:id="AU32014648">
+          <resp>Initial upload of this work&#39;s facsimile images and metadata to FromThePage for
+            editing</resp>
+          <persName>ZIM-DigEdTnT</persName>
+        </respStmt>
 
-      <respStmt xml:id="OU32014648">
-        <resp>Administrator of the Mittelalterliche Kochrezepte transcription project on FromThePage</resp>
-        <persName>ZIM-DigEdTnT</persName>
-      </respStmt>
+        <respStmt xml:id="OU32014648">
+          <resp>Administrator of the Mittelalterliche Kochrezepte transcription project on
+            FromThePage</resp>
+          <persName>ZIM-DigEdTnT</persName>
+        </respStmt>
 
         <respStmt xml:id="U32014648">
-          <persName
-            >
-            ZIM-DigEdTnT
-            </persName>
-            <resp>
-              made 35 edits between
-              <date type="first_edit" when="2023-03-27T07:30:53Z">March 27, 2023</date> and
-              <date type="last_edit" when="2023-04-13T11:08:10Z">April 13, 2023</date>.
-            </resp>
+          <persName> ZIM-DigEdTnT </persName>
+          <resp> made 35 edits between <date type="first_edit" when="2023-03-27T07:30:53Z">March 27,
+              2023</date> and <date type="last_edit" when="2023-04-13T11:08:10Z">April 13,
+              2023</date>. </resp>
         </respStmt>
         <respStmt xml:id="U32014447">
-          <persName
-            >
-            ZIM-student
-            </persName>
-            <resp>
-              made 6 edits between
-              <date type="first_edit" when="2023-04-12T08:46:37Z">April 12, 2023</date> and
-              <date type="last_edit" when="2023-04-12T09:02:58Z">April 12, 2023</date>.
-            </resp>
+          <persName> ZIM-student </persName>
+          <resp> made 6 edits between <date type="first_edit" when="2023-04-12T08:46:37Z">April 12,
+              2023</date> and <date type="last_edit" when="2023-04-12T09:02:58Z">April 12,
+              2023</date>. </resp>
         </respStmt>
         <respStmt xml:id="U32014120">
-          <persName
-              type="pseudonym"
-            >
-            strubrina
-            </persName>
-            <resp>
-              made 4 edits between
-              <date type="first_edit" when="2023-04-12T08:50:19Z">April 12, 2023</date> and
-              <date type="last_edit" when="2023-04-12T09:00:01Z">April 12, 2023</date>.
-            </resp>
+          <persName type="pseudonym"> strubrina </persName>
+          <resp> made 4 edits between <date type="first_edit" when="2023-04-12T08:50:19Z">April 12,
+              2023</date> and <date type="last_edit" when="2023-04-12T09:00:01Z">April 12,
+              2023</date>. </resp>
         </respStmt>
 
-          <respStmt xml:id="U32014648">
-            <resp n="proof_1">Single Proof by:</resp>
-            <name>ZIM-DigEdTnT</name>
-          </respStmt>
+        <respStmt xml:id="U32014648">
+          <resp n="proof_1">Single Proof by:</resp>
+          <name>ZIM-DigEdTnT</name>
+        </respStmt>
 
 
-    </editionStmt>
+      </editionStmt>
 
-    <publicationStmt>
-    <publisher>Dynamic TEI export from FromThePage (version 22.10)</publisher>
-      <availability>
-        <p>Text: &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0&quot;&gt;Creative Commons BY 4.0&lt;/a&gt; Faksimiles: &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;Creative Commons BY-NC-SA 4.0 &lt;/a&gt;</p>
-      </availability>
-      <date when="2023-04-13T11:27:04+00:00">April 13, 2023</date>
-    </publicationStmt>
+      <publicationStmt>
+        <publisher>Dynamic TEI export from FromThePage (version 22.10)</publisher>
+        <availability>
+          <p>Text: &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0&quot;&gt;Creative
+            Commons BY 4.0&lt;/a&gt; Faksimiles: &lt;a
+            href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot;&gt;Creative Commons
+            BY-NC-SA 4.0 &lt;/a&gt;</p>
+        </availability>
+        <date when="2023-04-13T11:27:04+00:00">April 13, 2023</date>
+      </publicationStmt>
 
-    <sourceDesc>
-      <msDesc>
-        <msIdentifier>
-          <repository>Zentralbibliothek Solothurn</repository>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <repository>Zentralbibliothek Solothurn</repository>
             <collection>Mittelalterliche Kochrezepte</collection>
-          <idno>Cod. S 490</idno>
-        </msIdentifier>
-        <physDesc>
-          <p>Drei Lagen. Auf einigen Blättern sind am oberen Rand Buchstaben verzeichnet &gt;Die Handschrift weist Schäden auf und ist nicht vollständig. Sie setzt erst mitten in Rezept 32 des ersten Teils ein, was einem Fehlbestand von circa acht Blatt entspricht. Zwischen Blatt 22 und 23 fehlt ein Blatt, das den Beginn einer neuen Lage hätte bilden müssen; es ist zu vermuten, daß auch nach Bl. 30 ein Blatt ausgefallen ist. Auf Bl. 23r-24v haben Wasserflecken die Schrift in einigen Partien nahezu unlesbar werden lassen. Die Handschrift ist in einer gut lesbaren gotischen Bastarda beschrieben. Moderner Pappeinband.</p>
-        </physDesc>
-        <history>
-          <origin>
-            <placeName>Unknown</placeName>
-          </origin>
-          <provenance>Frühestens um 1487 Heiles geht davon aus, dass es sich bei der Handschrift um die Abschrift eines Druckes handelt und nimmt als terminus post quem den Druck Peter Schöffers an (ca. 1487) (vgl. Heiles, Küchenmeisterei, S. 32-34.) Entstehungsort unbekannt Auf dem ersten Blatt befinden sich der Bibliotheksstempel der Zentralbibliothek Solothurn und der Bleistifteintrag</provenance>
-        </history>
-      </msDesc>
+            <idno>Cod. S 490</idno>
+          </msIdentifier>
+          <physDesc>
+            <p>Drei Lagen. Auf einigen Blättern sind am oberen Rand Buchstaben verzeichnet &gt;Die
+              Handschrift weist Schäden auf und ist nicht vollständig. Sie setzt erst mitten in
+              Rezept 32 des ersten Teils ein, was einem Fehlbestand von circa acht Blatt entspricht.
+              Zwischen Blatt 22 und 23 fehlt ein Blatt, das den Beginn einer neuen Lage hätte bilden
+              müssen; es ist zu vermuten, daß auch nach Bl. 30 ein Blatt ausgefallen ist. Auf Bl.
+              23r-24v haben Wasserflecken die Schrift in einigen Partien nahezu unlesbar werden
+              lassen. Die Handschrift ist in einer gut lesbaren gotischen Bastarda beschrieben.
+              Moderner Pappeinband.</p>
+          </physDesc>
+          <history>
+            <origin>
+              <placeName>Unknown</placeName>
+            </origin>
+            <provenance>Frühestens um 1487 Heiles geht davon aus, dass es sich bei der Handschrift
+              um die Abschrift eines Druckes handelt und nimmt als terminus post quem den Druck
+              Peter Schöffers an (ca. 1487) (vgl. Heiles, Küchenmeisterei, S. 32-34.) Entstehungsort
+              unbekannt Auf dem ersten Blatt befinden sich der Bibliotheksstempel der
+              Zentralbibliothek Solothurn und der Bleistifteintrag</provenance>
+          </history>
+        </msDesc>
 
 
-    </sourceDesc>
+      </sourceDesc>
 
-  </fileDesc>
+    </fileDesc>
 
     <encodingDesc>
       <classDecl>
         <taxonomy>
-<category xml:id='C32001131'>
-<catDesc>Gericht</catDesc>
-</category>
-<category xml:id='C32001130'>
-<catDesc>Zutaten</catDesc>
-          <category xml:id='S32081199'>
-            <catDesc>
-              <term> Mandeln </term>
-              <note type='categorization'>Categories:<ab><ptr ana='#category #leaf #root' target='#C32001130'>Zutaten</ptr></ab>
-              </note>
-            </catDesc>
+          <category xml:id="C32001131">
+            <catDesc>Gericht</catDesc>
           </category>
-          <category xml:id='S32080911'>
-            <catDesc>
-              <term>Ingwer </term>
-              <note type='categorization'>Categories:<ab><ptr ana='#category #leaf #root' target='#C32001130'>Zutaten</ptr></ab>
-              </note>
-            </catDesc>
+          <category xml:id="C32001130">
+            <catDesc>Zutaten</catDesc>
+            <category xml:id="S32081199">
+              <catDesc>
+                <term> Mandeln </term>
+                <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
+                      target="#C32001130">Zutaten</ptr></ab>
+                </note>
+              </catDesc>
+            </category>
+            <category xml:id="S32080911">
+              <catDesc>
+                <term>Ingwer </term>
+                <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
+                      target="#C32001130">Zutaten</ptr></ab>
+                </note>
+              </catDesc>
+            </category>
           </category>
-</category>
-</taxonomy>
+        </taxonomy>
 
       </classDecl>
     </encodingDesc>
 
 
-  <profileDesc>
-  
-    <creation>
-      <placeName>Unbekannt</placeName>
-      <date when="1487-01-01">1487-01-01</date>
-    </creation>
-    
-    <textClass>
-      <keywords>
-        <term type="genre">Rezepte</term>
-      </keywords>
-    </textClass>
+    <profileDesc>
+
+      <creation>
+        <placeName>Unbekannt</placeName>
+        <date when="1487-01-01">1487-01-01</date>
+      </creation>
+
+      <textClass>
+        <keywords>
+          <term type="genre">Rezepte</term>
+        </keywords>
+      </textClass>
 
       <langUsage>
         <language ident="gem">Germanic languages</language>
       </langUsage>
-  </profileDesc>
+    </profileDesc>
 
-  <revisionDesc>
-    <listChange ordered="true">
+    <revisionDesc>
+      <listChange ordered="true">
         <change xml:id="CHG50" who="U32014648" when="2023-04-13T11:08:10Z" target="#P33038499">
-          Version 12 of page "ZB_Solothurn_Cod_S_490_002r":
-            Changes to page transcript.
-        </change>
+          Version 12 of page "ZB_Solothurn_Cod_S_490_002r": Changes to page transcript. </change>
         <change xml:id="CHG49" who="U32014648" when="2023-04-13T11:08:07Z" target="#P33038499">
-          Version 11 of page "ZB_Solothurn_Cod_S_490_002r":
-            Changes to page transcript.
-        </change>
+          Version 11 of page "ZB_Solothurn_Cod_S_490_002r": Changes to page transcript. </change>
         <change xml:id="CHG48" who="U32014648" when="2023-04-13T11:07:17Z" target="#P33038500">
-          Version 7 of page "ZB_Solothurn_Cod_S_490_002v":
-            Changes to page transcript.
-        </change>
+          Version 7 of page "ZB_Solothurn_Cod_S_490_002v": Changes to page transcript. </change>
         <change xml:id="CHG47" who="U32014648" when="2023-04-13T11:07:13Z" target="#P33038500">
-          Version 6 of page "ZB_Solothurn_Cod_S_490_002v":
-            Changes to page transcript.
-        </change>
+          Version 6 of page "ZB_Solothurn_Cod_S_490_002v": Changes to page transcript. </change>
         <change xml:id="CHG46" who="U32014648" when="2023-04-13T08:40:44Z" target="#P33038502">
-          Version 10 of page "ZB_Solothurn_Cod_S_490_001r":
-            Changes to page transcript.
-        </change>
+          Version 10 of page "ZB_Solothurn_Cod_S_490_001r": Changes to page transcript. </change>
         <change xml:id="CHG45" who="U32014648" when="2023-04-13T08:37:40Z" target="#P33038502">
-          Version 9 of page "ZB_Solothurn_Cod_S_490_001r":
-            Changes to page transcript.
-        </change>
+          Version 9 of page "ZB_Solothurn_Cod_S_490_001r": Changes to page transcript. </change>
         <change xml:id="CHG44" who="U32014648" when="2023-04-13T08:36:45Z" target="#P33038499">
-          Version 10 of page "ZB_Solothurn_Cod_S_490_002r":
-            Changes to page transcript.
-        </change>
+          Version 10 of page "ZB_Solothurn_Cod_S_490_002r": Changes to page transcript. </change>
         <change xml:id="CHG43" who="U32014648" when="2023-04-13T08:36:41Z" target="#P33038499">
-          Version 9 of page "ZB_Solothurn_Cod_S_490_002r":
-            Changes to page transcript.
-        </change>
+          Version 9 of page "ZB_Solothurn_Cod_S_490_002r": Changes to page transcript. </change>
         <change xml:id="CHG42" who="U32014648" when="2023-04-13T08:28:28Z" target="#P33038502">
-          Version 8 of page "ZB_Solothurn_Cod_S_490_001r":
-            Changes to page transcript.
-        </change>
+          Version 8 of page "ZB_Solothurn_Cod_S_490_001r": Changes to page transcript. </change>
         <change xml:id="CHG41" who="U32014648" when="2023-04-12T13:07:48Z" target="#P33038502">
-          Version 7 of page "ZB_Solothurn_Cod_S_490_001r":
-            Changes to page transcript.
-        </change>
+          Version 7 of page "ZB_Solothurn_Cod_S_490_001r": Changes to page transcript. </change>
         <change xml:id="CHG40" who="U32014648" when="2023-04-12T13:07:44Z" target="#P33038501">
-          Version 4 of page "ZB_Solothurn_Cod_S_490_003r":
-            Changes to page transcript.
-        </change>
+          Version 4 of page "ZB_Solothurn_Cod_S_490_003r": Changes to page transcript. </change>
         <change xml:id="CHG39" who="U32014648" when="2023-04-12T13:07:34Z" target="#P33038500">
-          Version 5 of page "ZB_Solothurn_Cod_S_490_002v":
-            Changes to page transcript.
-        </change>
+          Version 5 of page "ZB_Solothurn_Cod_S_490_002v": Changes to page transcript. </change>
         <change xml:id="CHG38" who="U32014648" when="2023-04-12T13:07:30Z" target="#P33038499">
-          Version 8 of page "ZB_Solothurn_Cod_S_490_002r":
-            Changes to page transcript.
-        </change>
+          Version 8 of page "ZB_Solothurn_Cod_S_490_002r": Changes to page transcript. </change>
         <change xml:id="CHG37" who="U32014648" when="2023-04-12T13:07:26Z" target="#P33038498">
-          Version 13 of page "ZB_Solothurn_Cod_S_490_001v":
-            Changes to page transcript.
-        </change>
+          Version 13 of page "ZB_Solothurn_Cod_S_490_001v": Changes to page transcript. </change>
         <change xml:id="CHG36" who="U32014648" when="2023-04-12T13:07:18Z" target="#P33038499">
-          Version 7 of page "ZB_Solothurn_Cod_S_490_002r":
-            Changes to page transcript.
-        </change>
+          Version 7 of page "ZB_Solothurn_Cod_S_490_002r": Changes to page transcript. </change>
         <change xml:id="CHG35" who="U32014648" when="2023-04-12T12:40:37Z" target="#P33038502">
-          Version 6 of page "ZB_Solothurn_Cod_S_490_001r":
-            Changes to page transcript.
-        </change>
+          Version 6 of page "ZB_Solothurn_Cod_S_490_001r": Changes to page transcript. </change>
         <change xml:id="CHG34" who="U32014648" when="2023-04-12T12:39:05Z" target="#P33038502">
-          Version 5 of page "ZB_Solothurn_Cod_S_490_001r":
-            Changes to page transcript.
-        </change>
+          Version 5 of page "ZB_Solothurn_Cod_S_490_001r": Changes to page transcript. </change>
         <change xml:id="CHG33" who="U32014648" when="2023-04-12T12:37:03Z" target="#P33038501">
-          Version 3 of page "ZB_Solothurn_Cod_S_490_003r":
-            Changes to page transcript.
-        </change>
+          Version 3 of page "ZB_Solothurn_Cod_S_490_003r": Changes to page transcript. </change>
         <change xml:id="CHG32" who="U32014648" when="2023-04-12T12:35:59Z" target="#P33038500">
-          Version 4 of page "ZB_Solothurn_Cod_S_490_002v":
-            Changes to page transcript.
-        </change>
+          Version 4 of page "ZB_Solothurn_Cod_S_490_002v": Changes to page transcript. </change>
         <change xml:id="CHG31" who="U32014648" when="2023-04-12T12:30:16Z" target="#P33038499">
-          Version 6 of page "ZB_Solothurn_Cod_S_490_002r":
-            Changes to page transcript.
-        </change>
+          Version 6 of page "ZB_Solothurn_Cod_S_490_002r": Changes to page transcript. </change>
         <change xml:id="CHG30" who="U32014648" when="2023-04-12T12:28:06Z" target="#P33038498">
-          Version 12 of page "ZB_Solothurn_Cod_S_490_001v":
-            Changes to page transcript.
-        </change>
+          Version 12 of page "ZB_Solothurn_Cod_S_490_001v": Changes to page transcript. </change>
         <change xml:id="CHG29" who="U32014648" when="2023-04-12T12:24:54Z" target="#P33038502">
-          Version 4 of page "ZB_Solothurn_Cod_S_490_001r":
-            Changes to page transcript.
-        </change>
+          Version 4 of page "ZB_Solothurn_Cod_S_490_001r": Changes to page transcript. </change>
         <change xml:id="CHG28" who="U32014648" when="2023-04-12T10:09:11Z" target="#P33038501">
-          Version 2 of page "ZB_Solothurn_Cod_S_490_003r":
-            Changes to page transcript.
-        </change>
+          Version 2 of page "ZB_Solothurn_Cod_S_490_003r": Changes to page transcript. </change>
         <change xml:id="CHG27" who="U32014648" when="2023-04-12T10:06:30Z" target="#P33038501">
-          Version 1 of page "ZB_Solothurn_Cod_S_490_003r":
-            Changes to page transcript.
-        </change>
+          Version 1 of page "ZB_Solothurn_Cod_S_490_003r": Changes to page transcript. </change>
         <change xml:id="CHG26" who="U32014648" when="2023-04-12T10:02:51Z" target="#P33038500">
-          Version 3 of page "ZB_Solothurn_Cod_S_490_002v":
-            Changes to page transcript.
-        </change>
+          Version 3 of page "ZB_Solothurn_Cod_S_490_002v": Changes to page transcript. </change>
         <change xml:id="CHG25" who="U32014648" when="2023-04-12T09:41:49Z" target="#P33038498">
-          Version 11 of page "ZB_Solothurn_Cod_S_490_001v":
-            Changes to page transcript.
-        </change>
+          Version 11 of page "ZB_Solothurn_Cod_S_490_001v": Changes to page transcript. </change>
         <change xml:id="CHG24" who="U32014648" when="2023-04-12T09:41:18Z" target="#P33038499">
-          Version 5 of page "ZB_Solothurn_Cod_S_490_002r":
-            Changes to page transcript.
-        </change>
+          Version 5 of page "ZB_Solothurn_Cod_S_490_002r": Changes to page transcript. </change>
         <change xml:id="CHG23" who="U32014648" when="2023-04-12T09:40:53Z" target="#P33038498">
-          Version 10 of page "ZB_Solothurn_Cod_S_490_001v":
-            Changes to page transcript.
-        </change>
+          Version 10 of page "ZB_Solothurn_Cod_S_490_001v": Changes to page transcript. </change>
         <change xml:id="CHG22" who="U32014648" when="2023-04-12T09:14:26Z" target="#P33038498">
-          Version 9 of page "ZB_Solothurn_Cod_S_490_001v":
-            Changes to page transcript.
-        </change>
+          Version 9 of page "ZB_Solothurn_Cod_S_490_001v": Changes to page transcript. </change>
         <change xml:id="CHG21" who="U32014447" when="2023-04-12T09:02:58Z" target="#P33038499">
-          Version 4 of page "ZB_Solothurn_Cod_S_490_002r":
-            Changes to page transcript.
-        </change>
+          Version 4 of page "ZB_Solothurn_Cod_S_490_002r": Changes to page transcript. </change>
         <change xml:id="CHG20" who="U32014120" when="2023-04-12T09:00:01Z" target="#P33038499">
-          Version 3 of page "ZB_Solothurn_Cod_S_490_002r":
-            Changes to page transcript.
-        </change>
+          Version 3 of page "ZB_Solothurn_Cod_S_490_002r": Changes to page transcript. </change>
         <change xml:id="CHG19" who="U32014120" when="2023-04-12T08:52:46Z" target="#P33038498">
-          Version 8 of page "ZB_Solothurn_Cod_S_490_001v":
-            Changes to page transcript.
-        </change>
+          Version 8 of page "ZB_Solothurn_Cod_S_490_001v": Changes to page transcript. </change>
         <change xml:id="CHG18" who="U32014120" when="2023-04-12T08:52:14Z" target="#P33038498">
-          Version 7 of page "ZB_Solothurn_Cod_S_490_001v":
-            Changes to page transcript.
-        </change>
+          Version 7 of page "ZB_Solothurn_Cod_S_490_001v": Changes to page transcript. </change>
         <change xml:id="CHG17" who="U32014120" when="2023-04-12T08:50:19Z" target="#P33038498">
-          Version 6 of page "ZB_Solothurn_Cod_S_490_001v":
-            Changes to page transcript.
-        </change>
+          Version 6 of page "ZB_Solothurn_Cod_S_490_001v": Changes to page transcript. </change>
         <change xml:id="CHG16" who="U32014447" when="2023-04-12T08:48:10Z" target="#P33038498">
-          Version 5 of page "ZB_Solothurn_Cod_S_490_001v":
-            Changes to page transcript.
-        </change>
+          Version 5 of page "ZB_Solothurn_Cod_S_490_001v": Changes to page transcript. </change>
         <change xml:id="CHG15" who="U32014447" when="2023-04-12T08:47:46Z" target="#P33038498">
-          Version 4 of page "ZB_Solothurn_Cod_S_490_001v":
-            Changes to page transcript.
-        </change>
+          Version 4 of page "ZB_Solothurn_Cod_S_490_001v": Changes to page transcript. </change>
         <change xml:id="CHG14" who="U32014447" when="2023-04-12T08:47:09Z" target="#P33038498">
-          Version 3 of page "ZB_Solothurn_Cod_S_490_001v":
-            Empty transcript -- probably initial upload of page facsimile.
-        </change>
+          Version 3 of page "ZB_Solothurn_Cod_S_490_001v": Empty transcript -- probably initial
+          upload of page facsimile. </change>
         <change xml:id="CHG13" who="U32014447" when="2023-04-12T08:46:52Z" target="#P33038500">
-          Version 2 of page "ZB_Solothurn_Cod_S_490_002v":
-            Empty transcript -- probably initial upload of page facsimile.
-        </change>
+          Version 2 of page "ZB_Solothurn_Cod_S_490_002v": Empty transcript -- probably initial
+          upload of page facsimile. </change>
         <change xml:id="CHG12" who="U32014447" when="2023-04-12T08:46:37Z" target="#P33038500">
-          Version 1 of page "ZB_Solothurn_Cod_S_490_002v":
-            Changes to page transcript.
-        </change>
+          Version 1 of page "ZB_Solothurn_Cod_S_490_002v": Changes to page transcript. </change>
         <change xml:id="CHG11" who="U32014648" when="2023-04-06T08:12:46Z" target="#P33038499">
-          Version 2 of page "ZB_Solothurn_Cod_S_490_002r":
-            Empty transcript -- probably initial upload of page facsimile.
-        </change>
+          Version 2 of page "ZB_Solothurn_Cod_S_490_002r": Empty transcript -- probably initial
+          upload of page facsimile. </change>
         <change xml:id="CHG10" who="U32014648" when="2023-04-06T08:12:34Z" target="#P33038499">
-          Version 1 of page "ZB_Solothurn_Cod_S_490_002r":
-            Empty transcript -- probably initial upload of page facsimile.
-        </change>
+          Version 1 of page "ZB_Solothurn_Cod_S_490_002r": Empty transcript -- probably initial
+          upload of page facsimile. </change>
         <change xml:id="CHG9" who="U32014648" when="2023-04-04T11:13:24Z" target="#P33038498">
-          Version 2 of page "ZB_Solothurn_Cod_S_490_001v":
-            Empty transcript -- probably initial upload of page facsimile.
-        </change>
+          Version 2 of page "ZB_Solothurn_Cod_S_490_001v": Empty transcript -- probably initial
+          upload of page facsimile. </change>
         <change xml:id="CHG8" who="U32014648" when="2023-04-04T11:12:59Z" target="#P33038498">
-          Version 1 of page "ZB_Solothurn_Cod_S_490_001v":
-            Empty transcript -- probably initial upload of page facsimile.
-        </change>
+          Version 1 of page "ZB_Solothurn_Cod_S_490_001v": Empty transcript -- probably initial
+          upload of page facsimile. </change>
         <change xml:id="CHG7" who="U32014648" when="2023-03-27T07:32:45Z" target="#P33038502">
-          Version 3 of page "ZB_Solothurn_Cod_S_490_001r":
-            Changes to page transcript.
-        </change>
+          Version 3 of page "ZB_Solothurn_Cod_S_490_001r": Changes to page transcript. </change>
         <change xml:id="CHG6" who="U32014648" when="2023-03-27T07:32:06Z" target="#P33038502">
-          Version 2 of page "ZB_Solothurn_Cod_S_490_001r":
-            Changes to page transcript.
-        </change>
+          Version 2 of page "ZB_Solothurn_Cod_S_490_001r": Changes to page transcript. </change>
         <change xml:id="CHG5" who="U32014648" when="2023-03-27T07:30:53Z" target="#P33038502">
-          Version 1 of page "ZB_Solothurn_Cod_S_490_001r":
-            Changes to page transcript.
-        </change>
+          Version 1 of page "ZB_Solothurn_Cod_S_490_001r": Changes to page transcript. </change>
         <change xml:id="CHG4" who="U32014648" when="2023-03-24T11:25:12Z" target="#P33038502">
-          Version 0 of page "ZB_Solothurn_Cod_S_490_001r":
-            Empty transcript -- probably initial upload of page facsimile.
-        </change>
+          Version 0 of page "ZB_Solothurn_Cod_S_490_001r": Empty transcript -- probably initial
+          upload of page facsimile. </change>
         <change xml:id="CHG3" who="U32014648" when="2023-03-24T11:25:12Z" target="#P33038501">
-          Version 0 of page "ZB_Solothurn_Cod_S_490_003r":
-            Empty transcript -- probably initial upload of page facsimile.
-        </change>
+          Version 0 of page "ZB_Solothurn_Cod_S_490_003r": Empty transcript -- probably initial
+          upload of page facsimile. </change>
         <change xml:id="CHG2" who="U32014648" when="2023-03-24T11:25:12Z" target="#P33038500">
-          Version 0 of page "ZB_Solothurn_Cod_S_490_002v":
-            Empty transcript -- probably initial upload of page facsimile.
-        </change>
+          Version 0 of page "ZB_Solothurn_Cod_S_490_002v": Empty transcript -- probably initial
+          upload of page facsimile. </change>
         <change xml:id="CHG1" who="U32014648" when="2023-03-24T11:25:11Z" target="#P33038499">
-          Version 0 of page "ZB_Solothurn_Cod_S_490_002r":
-            Empty transcript -- probably initial upload of page facsimile.
-        </change>
+          Version 0 of page "ZB_Solothurn_Cod_S_490_002r": Empty transcript -- probably initial
+          upload of page facsimile. </change>
         <change xml:id="CHG0" who="U32014648" when="2023-03-24T11:25:11Z" target="#P33038498">
-          Version 0 of page "ZB_Solothurn_Cod_S_490_001v":
-            Empty transcript -- probably initial upload of page facsimile.
-        </change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+          Version 0 of page "ZB_Solothurn_Cod_S_490_001v": Empty transcript -- probably initial
+          upload of page facsimile. </change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
 
-<text>
-  <body>
-        <pb xml:id="F33038498" n="1" facs="http://fromthepage.com/image-service/33038498/full/full/0/default.jpg"/>
-        <div xml:id="OTP33038498">
+  <text>
+    <body>
+      <pb xml:id="F33038498" n="1"
+        facs="http://fromthepage.com/image-service/33038498/full/full/0/default.jpg"/>
+      <div xml:id="OTP33038498">
         <fw type="pageNum">ZB_Solothurn_Cod_S_490_001v</fw>
-        <p xml:id='OTP33038498P0'><head>Von opps lang zu Behalten</head>
-</p>
-
-<p xml:id='OTP33038498P1'>Oder mit einer lutern milch<lb/>
-§ xxxvij<lb/>
-wer aber die grünnen farbe habenn will der stos<lb/>
-peterling zu allen sach als es vor verhört ist<lb/>
-§ xxxviij Hier nach volget wie man obs lang<lb/>
-behept Wiltu öpffel lang frisch vnd über iare<lb/>
-behaltenn die lege in ein trucknen keller uff ein<lb/>
-hurde hoch von der erden vff frisches streu vnd<lb/>
-das wol geraümet ligen Wa einer mallig wirt<lb/>
-denn würff vsß dem allem obs ist nit anders<lb/>
-dan die rüdigenn schaffenn<lb/>
-§ xxxviiij Wiltu welssche nus oder hassel nus<lb/>
-frisch behalten so leg si in frisch sannd in ein eckenn<lb/>
-eines trucknen kellers vnd nicht in die häffenn <choice><expan>wan</expan><abbr>wa</abbr></choice><lb/>
-sie belibenn dar in nicht<lb/>
-§ xxxx Item was man die lenge behalten wil<lb/>
-von fischenn vnd wilt prät das muͦs man<lb/>
-<choice><expan>saltzenn</expan><abbr>saltzen</abbr></choice> vnd deren vnd druckenn <choice><expan>behalten</expan><abbr>behalte</abbr></choice> Also ist es<lb/>
-auch eingestalt vmb allesß fleisch<lb/>
-§ xli Item frucht die man vber jar behaltenn mag<lb/>
-zuͦ kochenn Der wieg sellen oder kirssen in dem<lb/>
-bach offenn behalte sie in einem keskorb der do luftig<lb/>
-sie obnen in einem haus wen du ir bedarfft zuͦr sel=<lb/>
-tzame in der fastenn oder zuͦ andren zitten wen du es<lb/>
-habenn wilt So lege si in ein schone schüslenn vnd<lb/>
-güs frisch brun wasser dar uf so kumen si wider in<lb/>
-die rechte alte craft die mag man für gest tragen<lb/>
-vnd siech lüt damit erfermenn vnd aller leu müsser<lb/>
-dauon machenn als vor statt § xlii<lb/>
-Item wiltu fränckisch win behalten Nim<lb/>
-ein hengel als daran x oder zwölff truben an <choice><expan>hangen</expan><abbr>hange</abbr></choice><lb/>
-mach ein guͦtenn laimenn dün mit brun wasser<lb/>
-in ein witen schafft vnd stos <add>die</add> hengel darin <choice><expan>daz</expan><abbr>dz</abbr></choice> si nit an 
-</p>
+        <p xml:id="OTP33038498P0"><head>Von opps lang zu Behalten</head><lb/> Oder mit einer lutern
+          milch<lb/> § xxxvij<lb/> wer aber die grünnen farbe habenn will der stos<lb/> peterling
+          zu allen sach als es vor verhört ist<lb/> § xxxviij Hier nach volget wie man obs
+          lang<lb/> behept Wiltu öpffel lang frisch vnd über iare<lb/> behaltenn die lege in ein
+          trucknen keller uff ein<lb/> hurde hoch von der erden vff frisches streu vnd<lb/> das wol
+          geraümet ligen Wa einer mallig wirt<lb/> denn würff vsß dem allem obs ist nit
+          anders<lb/> dan die rüdigenn schaffenn<lb/> § xxxviiij Wiltu welssche nus oder hassel
+          nus<lb/> frisch behalten so leg si in frisch sannd in ein eckenn<lb/> eines trucknen
+          kellers vnd nicht in die häffenn wa<lb/> sie belibenn dar in nicht<lb/> § xxxx Item was
+          man die lenge behalten wil<lb/> von fischenn vnd wilt prät das muͦs man<lb/> saltzen vnd
+          deren vnd druckenn behalte Also ist es<lb/> auch eingestalt vmb allesß fleisch<lb/> § xli
+          Item frucht die man vber jar behaltenn mag<lb/> zuͦ kochenn Der wieg sellen oder kirssen
+          in dem<lb/> bach offenn behalte sie in einem keskorb der do luftig<lb/> sie obnen in einem
+          haus wen du ir bedarfft zuͦr sel=<lb/> tzame in der fastenn oder zuͦ andren zitten wen du
+          es<lb/> habenn wilt So lege si in ein schone schüslenn vnd<lb/> güs frisch brun wasser
+          dar uf so kumen si wider in<lb/> die rechte alte craft die mag man für gest tragen<lb/>
+          vnd siech lüt damit erfermenn vnd aller leu müsser<lb/> dauon machenn als vor statt §
+          xlii<lb/> Item wiltu fränckisch win behalten Nim<lb/> ein hengel als daran x oder zwölff
+          truben an hange<lb/> mach ein guͦtenn laimenn dün mit brun wasser<lb/> in ein witen
+          schafft vnd stos <add>die</add> hengel darin <choice>
+            <expan>daz</expan>
+            <abbr>dz</abbr>
+          </choice> si nit an </p>
 
 
-        </div>
-        <pb xml:id="F33038499" n="2" facs="http://fromthepage.com/image-service/33038499/full/full/0/default.jpg"/>
-        <div xml:id="OTP33038499">
+      </div>
+      <pb xml:id="F33038499" n="2"
+        facs="http://fromthepage.com/image-service/33038499/full/full/0/default.jpg"/>
+      <div xml:id="OTP33038499">
         <fw type="pageNum">ZB_Solothurn_Cod_S_490_002r</fw>
-        <p xml:id='OTP33038499P0'>Von m<add>i</add>üssern<lb/>
-Rürend vnd henck si in ein keller bis du ire bedarfft der<lb/>
-mach also vil oder wenig vnd wen du ir bedörffest so<lb/>
-füll ein becke mit gutem brun wasser henck sie dar in<lb/>
-als lang bis das der cleim erweichett vnd flös in ab<lb/>
-dar nach begüs si mit andrem frischem wasser schon las dr=<lb/>
-ucken vnd trag sie dan für § xxx<lb/>
-Item Sangenn v̈ber  iar zuͦ behaltenn als kern oder<lb/>
-weitzen So nim sie in der grüne abb so sie seng sin vnd derr si<lb/>
-in einem bach offenn oder an der sunen Behalte sie ambor<lb/>
-als die kirssenn vnd wen du die haben wilt so leg sie in<lb/>
-frisch brunn wasser So kumen si in ire krafft damit süd<lb/>
-<choice><expan>iunge</expan><abbr>iuge</abbr></choice> hünner oder mach si ab mit einem kleinen specklin<lb/>
-<choice><expan>vnd</expan><abbr>vn</abbr></choice> saltz oder mit milch schmaltz Auch sind die wilden <choice><expan>vogel</expan><abbr>foge</abbr></choice>'?<lb/>
-guͦt dar in gesottenn vnd dewig Item düre birn <choice><expan>von</expan><abbr>vo</abbr></choice> <choice><expan>allen</expan><abbr>alle</abbr></choice><lb/>
-geschlechtenn sind guͦtt also <choice><expan>behaltenn</expan><abbr>behalten</abbr></choice> § xliiij Item von<lb/>
-steck ruͦbenn vnd von düren ruͦbenn doch steck rüben<lb/>
-die aller Bestenn so man iungen gereüchten pruling<lb/>
-darunnder südt vnd mit milch schmaltz vnd saltz ab<lb/>
-gemacht das ist recht § xlv<lb/>
-Item gereücht<lb/>
-Mit neslenn vmb leit das selbe wirt nit fol würmen<lb/>
-v̈ber iar<lb/>
-von <choice><reg>müssern</reg><orig>drüssern</orig></choice> zuͦ machen<lb/>
-§ xlvii holdermuͦs zuͦ machennd Nim holder Bluͦst <choice><expan>vnd</expan><abbr>vn</abbr></choice><lb/>
-Brocke sie in ein Siedige guͦte milch ein guͦten teil las <choice><expan>sieden</expan><abbr>siede</abbr></choice><lb/>
-tribe es durch ein duͦch mach einen herten teig der dick<lb/>
-sige von eigern vnd wele daruß düne pleter schnid <choice><expan>den</expan><abbr>de</abbr></choice><lb/>
-teig klein in wurmleins wiß thuͦ in in die Siedige<lb/>
-milch <choice><expan>daz</expan><abbr>dz</abbr></choice> sie imertz in siede vnd rür das gar wol das<lb/>
-es sich vernische Saltz es vnd mach es ab Mit milch<lb/>
-vnd schmaltz<lb/>
-§ xlviii Item ein ander holder muͦs von beren Nim die ho=<lb/>
-lder bere wesche sie schonn nim den wiss brot stos die bere<lb/>
-vnd <choice><expan>daz</expan><abbr>dz</abbr></choice> brott mit guͦtem win oder hüner brü thuͦ grie=<lb/>
-benn leckkuͦchenn dar zuͦ mach es ab mit würtzenn<lb/>
-tribe es durch ein tüch in ein haffen oder in ein <choice><expan>pfannen</expan><abbr>pfanne</abbr></choice><lb/>
-las wallenn vnd seige gewürtz daruff<lb/>
-Wiltu<lb/>
-mach ein muͦs von muͦs Birnn So thuͦ im also den<lb/>
-holder <choice><expan>berrien</expan><abbr>berrien</abbr></choice> Beren § xlviij <choice><expan>Item</expan><abbr>Ite</abbr></choice> ein ander muͦs von bir=<lb/>
-N 
-</p>
+        <p xml:id="OTP33038499P0"><head>Von m<add>i</add>üssern</head><lb/> Rürend vnd henck si in
+          ein keller bis du ire bedarfft der<lb/> mach also vil oder wenig vnd wen du ir bedörffest
+          so<lb/> füll ein becke mit gutem brun wasser henck sie dar in<lb/> als lang bis das der
+          cleim erweichett vnd flös in ab<lb/> dar nach begüs si mit andrem frischem wasser schon
+          las dr=<lb/> ucken vnd trag sie dan für § xxx<lb/> Item Sangenn v̈ber iar zuͦ behaltenn
+          als kern oder<lb/> weitzen So nim sie in der grüne abb so sie seng sin vnd derr si<lb/>
+          in einem bach offenn oder an der sunen Behalte sie ambor<lb/> als die kirssenn vnd wen du
+          die haben wilt so leg sie in<lb/> frisch brunn wasser So kumen si in ire krafft damit süd<lb/>
+          <choice>
+            <expan>iunge</expan>
+            <abbr>iuge</abbr>
+          </choice> hünner oder mach si ab mit einem kleinen specklin<lb/>
+          <choice>
+            <expan>vnd</expan>
+            <abbr>vn</abbr>
+          </choice> saltz oder mit milch schmaltz Auch sind die wilden <choice>
+            <expan>vogel</expan>
+            <abbr>foge</abbr>
+          </choice>'?<lb/> guͦt dar in gesottenn vnd dewig Item düre birn <choice>
+            <expan>von</expan>
+            <abbr>vo</abbr>
+          </choice>
+          <choice>
+            <expan>allen</expan>
+            <abbr>alle</abbr>
+          </choice><lb/> geschlechtenn sind guͦtt also <choice>
+            <expan>behaltenn</expan>
+            <abbr>behalten</abbr>
+          </choice> § xliiij Item von<lb/> steck ruͦbenn vnd von düren ruͦbenn doch steck
+          rüben<lb/> die aller Bestenn so man iungen gereüchten pruling<lb/> darunnder südt vnd
+          mit milch schmaltz vnd saltz ab<lb/> gemacht das ist recht § xlv<lb/> Item gereücht<lb/>
+          Mit neslenn vmb leit das selbe wirt nit fol würmen<lb/> v̈ber iar<lb/> von <choice>
+            <reg>müssern</reg>
+            <orig>drüssern</orig>
+          </choice> zuͦ machen<lb/> § xlvii holdermuͦs zuͦ machennd Nim holder Bluͦst <choice>
+            <expan>vnd</expan>
+            <abbr>vn</abbr>
+          </choice><lb/> Brocke sie in ein Siedige guͦte milch ein guͦten teil las <choice>
+            <expan>sieden</expan>
+            <abbr>siede</abbr>
+          </choice><lb/> tribe es durch ein duͦch mach einen herten teig der dick<lb/> sige von
+          eigern vnd wele daruß düne pleter schnid <choice>
+            <expan>den</expan>
+            <abbr>de</abbr>
+          </choice><lb/> teig klein in wurmleins wiß thuͦ in in die Siedige<lb/> milch <choice>
+            <expan>daz</expan>
+            <abbr>dz</abbr>
+          </choice> sie imertz in siede vnd rür das gar wol das<lb/> es sich vernische Saltz es vnd
+          mach es ab Mit milch<lb/> vnd schmaltz<lb/> § xlviii Item ein ander holder muͦs von beren
+          Nim die ho=<lb/> lder bere wesche sie schonn nim den wiss brot stos die bere<lb/> vnd <choice>
+            <expan>daz</expan>
+            <abbr>dz</abbr>
+          </choice> brott mit guͦtem win oder hüner brü thuͦ grie=<lb/> benn leckkuͦchenn dar zuͦ
+          mach es ab mit würtzenn<lb/> tribe es durch ein tüch in ein haffen oder in ein <choice>
+            <expan>pfannen</expan>
+            <abbr>pfanne</abbr>
+          </choice><lb/> las wallenn vnd seige gewürtz daruff<lb/> Wiltu<lb/> mach ein muͦs von
+          muͦs Birnn So thuͦ im also den<lb/> holder <choice>
+            <expan>berrien</expan>
+            <abbr>berrien</abbr>
+          </choice> Beren § xlviij <choice>
+            <expan>Item</expan>
+            <abbr>Ite</abbr>
+          </choice> ein ander muͦs von bir=<lb/> N </p>
 
 
-            <note resp="#U32014648">v mit Trema nicht richtig dargestellt (Zeile 8 und 23).</note>
-        </div>
-        <pb xml:id="F33038500" n="3" facs="http://fromthepage.com/image-service/33038500/full/full/0/default.jpg"/>
-        <div xml:id="OTP33038500">
+        <note resp="#U32014648">v mit Trema nicht richtig dargestellt (Zeile 8 und 23).</note>
+      </div>
+      <pb xml:id="F33038500" n="3"
+        facs="http://fromthepage.com/image-service/33038500/full/full/0/default.jpg"/>
+      <div xml:id="OTP33038500">
         <fw type="pageNum">ZB_Solothurn_Cod_S_490_002v</fw>
-        <p xml:id='OTP33038500P0'><head>Von müssern</head>
-</p>
+        <p xml:id="OTP33038500P0"><head>Von müssern</head><lb/> Nim ein wit kurtz heffellin Schnid
+          birn darin die guͦt sin<lb/> schell zübellenn vnd tuͦ win saltz vnd schmalt daran<lb/>
+          decke es wol vnd setz es in dier gluͦtt Es verzert sich <choice>
+            <expan>vnd</expan>
+            <abbr>vn</abbr>
+          </choice><lb/> muͦsset sich selber richt es an vnd see <rs ref="#S32080911">ingwer
+          </rs>daruff<lb/> § xxxxviiij<lb/> Item ein öppffel muͦs on zwübellen mach auch allso
+          sch=<lb/> nid klein schnitzlin ein wenig milch oder wins auch wu=<lb/> rtz saltz vnd
+          schmaltz vnd verdecke es wol las es siedenn<lb/> bi kleinem für § xlx<lb/> Item ein
+          bramber muͦs oder ein wiegssel muͦs mach al=<lb/> so stos die bramber oder wiegsseln in <choice>
+            <expan>einem</expan>
+            <abbr>eine</abbr>
+          </choice> mürssel tuͦ wis<lb/> brott darzuͦ vnd strichs durch ein tuͦch nim dan mel<lb/>
+          vnd milch zwir gar wol tuͦ es vnder ein andern in ein pfa=<lb/> nen über das für rüre
+          es vnd versaltz es nitt das wirt<lb/> ein bram muͦs richt es an vnd see yngwer daruff
+          Die<lb/> pfan sol sin schmaltzig oder tuͦ schmaltz daran das nit an<lb/> brüne Ist es zuͦ
+          dick So mers mit milch § lj<lb/> Item Mulbere muͦs mach auch also in ein reie <choice>
+            <expan>pfan</expan>
+            <abbr>pfa</abbr>
+          </choice><lb/> oder haffen § lij<lb/> kressenn ameren muͦs mach auch also an <choice>
+            <expan>daz</expan>
+            <abbr>dz</abbr>
+          </choice> man die<lb/> mit kern vnd über all stossenn muͦs durch getribenn mit<lb/> win
+          oder fleisch brü<lb/> § liij Wiltu machenn ein grün mandel blau oder gel so acht<lb/>
+          vmb mangolt oder tateln kern oder <choice>
+            <expan>blumen</expan>
+            <abbr>blume</abbr>
+          </choice> oder vmb ander<lb/> grün krutt das nit schmecke als <choice>
+            <expan>ruten</expan>
+            <abbr>rute</abbr>
+          </choice> vnd ander schmeck<lb/> krut Wan es nem dem mandel sin krafft So entauͦg
+          kein<lb/> ander krut oder farb von Blossen krütern <choice>
+            <expan>haben</expan>
+            <abbr>habe</abbr>
+          </choice> so stös den<lb/> mandel vil oder wenig Mach ein milch als si ist dar zuͦ<lb/>
+          mach guͦte fisch brü Da bersig in gesotten sig <choice>
+            <expan>vermisch</expan>
+            <abbr>vmisch</abbr>
+          </choice> es<lb/> wol vnd las es so stann So ist es schönn vnd grünn das<lb/> ist ein
+          grüne milch Also magstu si von saffran<lb/> gll machenn von korn <choice>
+            <expan>blumen</expan>
+            <abbr>bluͦme</abbr>
+          </choice> Blauw <choice>
+            <expan>machen</expan>
+            <abbr>mache</abbr>
+          </choice><lb/> vnd rotem Win vermischen rott wie du wilt so du si wi=<lb/> lt für tragenn
+          so brich si uff ein schüssel als glas milch<lb/>
+          <choice>
+            <expan>vermisch</expan>
+            <abbr>vemisch</abbr>
+          </choice> denn zucker vnd saltz mit ein andren <choice>
+            <expan>daz</expan>
+            <abbr>dz</abbr>
+          </choice> trag </p>
 
-<p xml:id='OTP33038500P1'>Nim ein wit kurtz heffellin Schnid birn darin die guͦt sin<lb/>
-schell zübellenn vnd tuͦ win saltz vnd schmalt daran<lb/>
-decke es wol vnd setz es in dier gluͦtt Es verzert sich <choice><expan>vnd</expan><abbr>vn</abbr></choice><lb/>
-muͦsset sich selber richt es an vnd see <rs ref='#S32080911'>ingwer </rs>daruff<lb/>
-§ xxxxviiij<lb/>
-Item ein öppffel muͦs on zwübellen mach auch allso sch=<lb/>
-nid klein schnitzlin ein wenig milch oder wins auch wu=<lb/>
-rtz saltz vnd schmaltz vnd verdecke es wol las es siedenn<lb/>
-bi kleinem für § xlx<lb/>
-Item ein bramber muͦs oder ein wiegssel muͦs mach al=<lb/>
-so stos die bramber oder wiegsseln in <choice><expan>einem</expan><abbr>eine</abbr></choice> mürssel tuͦ wis<lb/>
-brott darzuͦ vnd strichs durch ein tuͦch nim dan mel<lb/>
-vnd milch zwir gar wol tuͦ es vnder ein andern in ein pfa=<lb/>
-nen über das für rüre es vnd versaltz es nitt das wirt<lb/>
-ein bram muͦs richt es an vnd see yngwer daruff Die<lb/>
-pfan sol sin schmaltzig oder tuͦ schmaltz daran das nit an<lb/>
-brüne Ist es zuͦ dick So mers mit milch § lj<lb/>
-Item Mulbere muͦs mach auch also in ein reie <choice><expan>pfan</expan><abbr>pfa</abbr></choice><lb/>
-oder haffen § lij<lb/>
-kressenn ameren muͦs mach auch also an <choice><expan>daz</expan><abbr>dz</abbr></choice> man die<lb/>
-mit kern vnd über all stossenn muͦs durch getribenn mit<lb/>
-win oder fleisch brü<lb/>
-§ liij Wiltu machenn ein grün mandel blau oder gel so acht<lb/>
-vmb mangolt oder tateln kern oder <choice><expan>blumen</expan><abbr>blume</abbr></choice> oder vmb ander<lb/>
-grün krutt das nit schmecke als <choice><expan>ruten</expan><abbr>rute</abbr></choice> vnd ander schmeck<lb/>
-krut Wan es nem dem mandel sin krafft So entauͦg kein<lb/>
-ander krut oder farb von Blossen krütern <choice><expan>haben</expan><abbr>habe</abbr></choice> so stös den<lb/>
-mandel vil oder wenig Mach ein milch als si ist dar zuͦ<lb/>
-mach guͦte fisch brü Da bersig in gesotten sig vermisch es<lb/>
-wol vnd las es so stann So ist es schönn vnd grünn das<lb/>
-ist ein grüne milch Also magstu si von saffran<lb/>
-gll machenn von korn <choice><expan>blumen</expan><abbr>bluͦme</abbr></choice> Blauw <choice><expan>machen</expan><abbr>mache</abbr></choice><lb/>
-vnd rotem Win vermischen rott wie du wilt so du si wi=<lb/>
-lt für tragenn so brich si uff ein schüssel als glas milch<lb/>
-<choice><expan>vermisch</expan><abbr>vemisch</abbr></choice> denn zucker vnd saltz mit ein andren <choice><expan>daz</expan><abbr>dz</abbr></choice> trag 
-</p>
 
-
-        </div>
-        <pb xml:id="F33038501" n="4" facs="http://fromthepage.com/image-service/33038501/full/full/0/default.jpg"/>
-        <div xml:id="OTP33038501">
+      </div>
+      <pb xml:id="F33038501" n="4"
+        facs="http://fromthepage.com/image-service/33038501/full/full/0/default.jpg"/>
+      <div xml:id="OTP33038501">
         <fw type="pageNum">ZB_Solothurn_Cod_S_490_003r</fw>
-        <p xml:id='OTP33038501P0'>Von müssern<lb/>
-Daruff nit zeuil vnd setz es für Wiltu gulden man<lb/>
-del kernen oder wiß <choice><expan>vnuergult</expan><abbr>vnugult </abbr></choice>Darin stossenn vor<lb/>
-erbern gestenn <choice><expan>daz</expan><abbr>dz</abbr></choice> ist guͦt vnd gerecht vnd ein<lb/>
-hofflich essenn<lb/>
-§ liiij Item wiltu machen ein hofflich tziger von<lb/>
-mandel So nim mandel als uil du wilt stos denn klein<lb/>
-vnd strich in durch ein tuͦch mit wasser und mach die<lb/>
-milch warm in einem haffenn Brü si gar wol nün<lb/>
-ein gelepte brü von fischenn vnd bersig oder <choice><expan>von</expan><abbr>vo</abbr></choice> <choice><expan>kelbren</expan><abbr>kelbre</abbr></choice><lb/>
-oder schaff füssen gesoten wol luter gestanden ab ge<lb/>
-saltzenn vnd die <choice><expan>mandel</expan><abbr>madel</abbr></choice> milch damit verstrickt las er<lb/>
-kaltenn vnd gestann Als ein sultz brich si damit uff<lb/>
-in ein schüslen vnd Besee es mit zucker vnd setz es für<lb/>
-§ lv Item wiltu <choice><expan>machen</expan><abbr>mache</abbr></choice> ein käs von mandel milch<lb/>
-Nim eÿer schlach si in die mandel milch gar wol <choice><expan>getempper</expan><abbr>getemppe</abbr></choice><lb/>
-iertt Süd die wol saltz si ab wiltu gewürtz darin tuͦn<lb/>
-oder wiltu si gell machenn das magstu tuͦn vnd wen<lb/>
-er gesotten ist vnd von sinen krefften natülich hert wirtt<lb/>
-so trücke sie mit einem löffel ze samen tuͦ dan ein serch<lb/>
-tuͦch in ein pffeffer pfannen das ist ein durch schlag das<lb/>
-bereitt wol vnd schüt den käß daruff vnd las das mo=<lb/>
-lchenn gar wol ab gan Wiltu ij iij oder fier Schüssel<lb/>
-<choice><expan>machen</expan><abbr>mache</abbr></choice> oder so uil du wilt richt si an vnd bessee si mit zu=<lb/>
-cker vnd gib si für<lb/>
-§ lvi Item gebaches von oblaten mach also Nim figen<lb/>
-vnd winber erwell si vnd hack si klein mach es mit wur=<lb/>
-tzen vnd saffran ab vnd saltz darzuͦ tertemperier es wol<lb/>
-nim ein oblatt vnd züch die figenn daruff vnd setz<lb/>
-ein ander oblatt darüber züch das durch ein teiglin <choice><expan>von</expan><abbr>vo</abbr></choice><lb/>
-wissem mell vnd hack si schonn wiltu machen ein<lb/>
-baches von mandel vnd von Ris Stos denn mandel mit<lb/>
-wasser vnd ouch mit dicker milch vnd stos denn ris dru=<lb/>
-cken vnd schlach in durch ein siblin las die milch erwa 
-</p>
+        <p xml:id="OTP33038501P0"><head>Von müssern</head><lb/> Daruff nit zeuil vnd setz es für
+          Wiltu gulden man<lb/> del kernen oder wiß <choice>
+            <expan>vnuergult</expan>
+            <abbr>vnugult </abbr>
+          </choice>Darin stossenn vor<lb/> erbern gestenn <choice>
+            <expan>daz</expan>
+            <abbr>dz</abbr>
+          </choice> ist guͦt vnd gerecht vnd ein<lb/> hofflich essenn<lb/> § liiij Item wiltu machen
+          ein hofflich tziger von<lb/> mandel So nim mandel als uil du wilt stos denn klein<lb/> vnd
+          strich in durch ein tuͦch mit wasser und mach die<lb/> milch warm in einem haffenn Brü si
+          gar wol nün<lb/> ein gelepte brü von fischenn vnd bersig oder von kelbren<lb/> oder
+          schaff füssen gesoten wol luter gestanden ab ge<lb/> saltzenn vnd die mandel milch damit
+          verstrickt las er<lb/> kaltenn vnd gestann Als ein sultz brich si damit uff<lb/> in ein
+          schüslen vnd Besee es mit zucker vnd setz es für<lb/> § lv Item wiltu machen ein käs
+          von mandel milch<lb/> Nim eÿer schlach si in die mandel milch gar wol getempper<lb/>
+          iertt Süd die wol saltz si ab wiltu gewürtz darin tuͦn<lb/> oder wiltu si gell machenn
+          das magstu tuͦn vnd wen<lb/> er gesotten ist vnd von sinen krefften natülich hert
+          wirtt<lb/> so trücke sie mit einem löffel ze samen tuͦ dan ein serch<lb/> tuͦch in ein
+          pffeffer pfannen das ist ein durch schlag das<lb/> bereitt wol vnd schüt den käß daruff
+          vnd las das mo=<lb/> lchenn gar wol ab gan Wiltu ij iij oder fier Schüssel<lb/> machen
+          oder so uil du wilt richt si an vnd bessee si mit zu=<lb/> cker vnd gib si für<lb/> § lvi
+          Item gebaches von oblaten mach also Nim figen<lb/> vnd winber erwell si vnd hack si klein
+          mach es mit wur=<lb/> tzen vnd saffran ab vnd saltz darzuͦ tertemperier es wol<lb/> nim
+          ein oblatt vnd züch die figenn daruff vnd setz<lb/> ein ander oblatt darüber züch das
+          durch ein teiglin von<lb/> wissem mell vnd hack si schonn wiltu machen ein<lb/> baches von
+          mandel vnd von Ris Stos denn mandel mit<lb/> wasser vnd ouch mit dicker milch vnd stos
+          denn ris dru=<lb/> cken vnd schlach in durch ein siblin las die milch erwa </p>
 
 
-        </div>
-        <pb xml:id="F33038502" n="5" facs="http://fromthepage.com/image-service/33038502/full/full/0/default.jpg"/>
-        <div xml:id="OTP33038502">
+      </div>
+      <pb xml:id="F33038502" n="5"
+        facs="http://fromthepage.com/image-service/33038502/full/full/0/default.jpg"/>
+      <div xml:id="OTP33038502">
         <fw type="pageNum">ZB_Solothurn_Cod_S_490_001r</fw>
-        <p xml:id='OTP33038502P0'><note type='marginalia'><unclear/></note><lb/>
-fon<gap/>er spis<lb/>
-Holltzin scher damit du <choice><expan>daz</expan><abbr>dz</abbr></choice> golt hebst vnd rure <choice><expan>daz</expan><abbr>dz</abbr></choice><lb/>
-mit blosser hand nit ann öch dehein attem es flige<lb/>
-sunst hin weg<lb/>
-§ xxxiij<lb/>
-Item ein blawes muͦß mach also <choice><expan>von</expan><abbr>vo</abbr></choice> <rs ref='#S32081199'> mandel </rs> <choice><expan>vnd</expan><abbr>vn</abbr></choice><lb/>
-vonn Ris stos kornbluͦmen gar wol mit wasser dr=<lb/>
-ucks ein tuͦch <gap/> behalte Stos mandel mit dem sel=<lb/>
-ben wasser vnd zwing es durch so hastu ein blawe<lb/>
-milch dauon mach das muͦsß mit riss oder mit we=<lb/>
-itzen wiltu gern so beströw es mit imber vnd versa=<lb/>
-ltz es nit vnd las es nit <choice><expan>anbrinnen</expan><abbr>anbrinne</abbr></choice> die müslin stann<lb/>
-gar wol in niwen zin<gap/>en schüslen <choice><expan>schüselinen</expan><abbr>schüseline</abbr></choice> <choice><expan>oder</expan><abbr>ode</abbr></choice><lb/>
-in wissen holtzinen schüsselinen<lb/>
-§ xxxiij wiltu machen ein schwartz gem<lb/>
-üsß So nim winber öpfel birn gebratten oder geso<lb/>
-tenn vnd zucker ein wenig mels gewurtz vnd saltz<lb/>
-das zertrib mit guͦttem win gar wol Tu es in ein<lb/>
-<choice><expan>pfann</expan><abbr>pfan</abbr></choice> las dän win in siedenn rür es wol versuͦch es <choice><expan>vnd</expan><abbr>vn</abbr></choice><lb/>
-gib es dar<lb/>
-§ xxx Item ein guͦtt gemüs <choice><expan>von</expan><abbr>vo</abbr></choice> mandel vnd von <choice><expan>fischen</expan><abbr>fische</abbr></choice><lb/>
-tuͦ das ingeweid vs reinig das <choice><expan>vnd</expan><abbr>vn</abbr></choice> hack das wol wart<lb/>
-uff die gallenn Nim das brett der fischenn süd es gar<lb/>
-woll vnd ab mit gewürtz oder gantz ane gewürtz<lb/>
-mit wasser das sig ab tuͦ die brü hin stos <del>f</del> die fisch gar<lb/>
-wol mandel milch vnd mit wisem brott ge[weich]t<lb/>
-in mandel milch tribe es durch mit gesottem ris tuͦ<lb/>
-es in ein pfanen mit einandren v̈ber ein für las es erhe=<lb/>
-issenn rür es wol vnd versaltz sie nicht [ist] es zuͦ d=<lb/>
-ick so tuͦ mer mandel milch dar [an] Mach es ab mit zucker<lb/>
-vnd setz es ab<lb/>
-§ xxxvij<lb/>
-Item wiltu blaw win oder waser habenn schönen gle=<lb/>
-sern das magstu mit korn bluͦmenn saft vermischenn
-</p>
+        <p xml:id="OTP33038502P0"><head>fon <unclear/>er spis</head><lb/> Holltzin scher damit du <choice>
+            <expan>daz</expan>
+            <abbr>dz</abbr>
+          </choice> golt hebst vnd rure <choice>
+            <expan>daz</expan>
+            <abbr>dz</abbr>
+          </choice><lb/> mit blosser hand nit ann öch dehein attem es flige<lb/> sunst hin weg<lb/>
+          § xxxiij<lb/> Item ein blawes muͦß mach also <choice>
+            <expan>von</expan>
+            <abbr>vo</abbr>
+          </choice>
+          <rs ref="#S32081199"> mandel </rs>
+          <choice>
+            <expan>vnd</expan>
+            <abbr>vn</abbr>
+          </choice><lb/> vonn Ris stos kornbluͦmen gar wol mit wasser dr=<lb/> ucks ein tuͦch <gap/>
+          behalte Stos mandel mit dem sel=<lb/> ben wasser vnd zwing es durch so hastu ein
+          blawe<lb/> milch dauon mach das muͦsß mit riss oder mit we=<lb/> itzen wiltu gern so
+          beströw es mit imber vnd versa=<lb/> ltz es nit vnd las es nit <choice>
+            <expan>anbrinnen</expan>
+            <abbr>anbrinne</abbr>
+          </choice> die müslin stann<lb/> gar wol in niwen zin<gap/>en schüslen <choice>
+            <expan>schüselinen</expan>
+            <abbr>schüseline</abbr>
+          </choice>
+          <choice>
+            <expan>oder</expan>
+            <abbr>ode</abbr>
+          </choice><lb/> in wissen holtzinen schüsselinen<lb/> § xxxiij wiltu machen ein schwartz
+          gem<lb/> üsß So nim winber öpfel birn gebratten oder geso<lb/> tenn vnd zucker ein wenig
+          mels gewurtz vnd saltz<lb/> das zertrib mit guͦttem win gar wol Tu es in ein<lb/>
+          <choice>
+            <expan>pfann</expan>
+            <abbr>pfan</abbr>
+          </choice> las dän win in siedenn rür es wol versuͦch es <choice>
+            <expan>vnd</expan>
+            <abbr>vn</abbr>
+          </choice><lb/> gib es dar<lb/> § xxx Item ein guͦtt gemüs <choice>
+            <expan>von</expan>
+            <abbr>vo</abbr>
+          </choice> mandel vnd von <choice>
+            <expan>fischen</expan>
+            <abbr>fische</abbr>
+          </choice><lb/> tuͦ das ingeweid vs reinig das <choice>
+            <expan>vnd</expan>
+            <abbr>vn</abbr>
+          </choice> hack das wol wart<lb/> uff die gallenn Nim das brett der fischenn süd es
+          gar<lb/> woll vnd ab mit gewürtz oder gantz ane gewürtz<lb/> mit wasser das sig ab tuͦ
+          die brü hin stos <del>f</del> die fisch gar<lb/> wol mandel milch vnd mit wisem brott
+          ge[weich]t<lb/> in mandel milch tribe es durch mit gesottem ris tuͦ<lb/> es in ein pfanen
+          mit einandren v̈ber ein für las es erhe=<lb/> issenn rür es wol vnd versaltz sie nicht
+          [ist] es zuͦ d=<lb/> ick so tuͦ mer mandel milch dar [an] Mach es ab mit zucker<lb/> vnd
+          setz es ab<lb/> § xxxvij<lb/> Item wiltu blaw win oder waser habenn schönen gle=<lb/>
+          sern das magstu mit korn bluͦmenn saft vermischenn<lb/>
+        </p>
 
 
-            <note resp="#U32014648">Vom Editor hinzugefügte Wörter stehen in eckiger Klammer.</note>
-            <note resp="#U32014648">Fehlerhaft dargestellte v mit Trema darüber in Zeile 29</note>
-        </div>
-  </body>
-</text>
+        <note resp="#U32014648">Vom Editor hinzugefügte Wörter stehen in eckiger Klammer.</note>
+        <note resp="#U32014648">Fehlerhaft dargestellte v mit Trema darüber in Zeile 29</note>
+      </div>
+    </body>
+  </text>
 </TEI>
