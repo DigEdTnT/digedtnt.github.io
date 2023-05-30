@@ -81,15 +81,7 @@
 	<!-- adapt <editionStmt> and insert <extent> -->
 	<xsl:template match="tei:editionStmt">
 		<editionStmt>
-			<edition>Transkription via FromThePage + Annotation mit Ediarum</edition>
-				<respStmt>
-					<resp>Annotation (in Ediarum)</resp>
-			<xsl:comment> Hinweis: hier sollte ergänzt werden, welche Personen für die Bearbeitung in Ediarum verantwortlich sind. </xsl:comment>
-				<persName>[Verantwortliche Person für Annotation]</persName>
-				</respStmt>
-				<!-- TODO: for-each Schleife für alle respStmts aus FTP-Export ? mit excl -->
-				<!--<xsl:copy-of select="./tei:respStmt except @xml:id"></xsl:copy-of>-->
-			
+			<edition>Weiterverarbeitung des FromThePageExports mit Ediarum</edition>
 		</editionStmt>
 		<extent>
 			<measure type="images">

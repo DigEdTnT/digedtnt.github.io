@@ -15,46 +15,6 @@
           <persName>Unknown</persName>
         </author>
       </titleStmt>
-
-      <editionStmt>
-        <edition>Edition created from new transcripts of this manuscript.</edition>
-        <respStmt xml:id="AU32014648">
-          <resp>Initial upload of this work&#39;s facsimile images and metadata to FromThePage for
-            editing</resp>
-          <persName>ZIM-DigEdTnT</persName>
-        </respStmt>
-
-        <respStmt xml:id="OU32014648">
-          <resp>Administrator of the Mittelalterliche Kochrezepte transcription project on
-            FromThePage</resp>
-          <persName>ZIM-DigEdTnT</persName>
-        </respStmt>
-
-        <respStmt xml:id="U32014648">
-          <persName> ZIM-DigEdTnT </persName>
-          <resp> made 40 edits between <date type="first_edit" when="2023-03-24T12:00:58Z">March 24,
-              2023</date> and <date type="last_edit" when="2023-04-13T11:10:05Z">April 13,
-              2023</date>. </resp>
-        </respStmt>
-        <respStmt xml:id="U32014447">
-          <persName> ZIM-student </persName>
-          <resp> made 5 edits between <date type="first_edit" when="2023-03-28T06:46:46Z">March 28,
-              2023</date> and <date type="last_edit" when="2023-03-28T06:49:26Z">March 28,
-              2023</date>. </resp>
-        </respStmt>
-
-        <respStmt xml:id="U32014648">
-          <resp n="proof_1">Single Proof by:</resp>
-          <name>ZIM-DigEdTnT</name>
-        </respStmt>
-        <respStmt xml:id="U32014447">
-          <resp n="proof_1">Single Proof by:</resp>
-          <name>ZIM-student</name>
-        </respStmt>
-
-
-      </editionStmt>
-
       <publicationStmt>
         <publisher>Dynamic TEI export from FromThePage (version 22.10)</publisher>
         <availability>
@@ -65,7 +25,6 @@
         </availability>
         <date when="2023-04-13T11:27:04+00:00">April 13, 2023</date>
       </publicationStmt>
-
       <sourceDesc>
         <msDesc>
           <msIdentifier>
@@ -89,12 +48,8 @@
               Wappen und Erwerbsjahr: 1813. Bibliothekssignatur des 19. Jhs.</provenance>
           </history>
         </msDesc>
-
-
       </sourceDesc>
-
     </fileDesc>
-
     <encodingDesc>
       <classDecl>
         <taxonomy>
@@ -292,7 +247,6 @@
       </listChange>
     </revisionDesc>
   </teiHeader>
-
   <text>
     <body>
       <pb xml:id="F33038493" n="1"
@@ -337,8 +291,6 @@
           farina ordeacea Vnd von der frucht die eins guttenn<lb/> geschmacks ist Et mala atra et
           malignata similer aerea Vnd die do sein in den<lb/>
         </p>
-
-
         <note resp="#U32014648">Darstellungsproblem bei v mit Trema darüber!</note>
       </div>
       <pb xml:id="F33038494" n="2"
@@ -347,13 +299,13 @@
         <fw type="pageNum">UB_Augsburg_Cod_III_1_2_43_059r</fw>
         <p xml:id="OTP33038494P0">Hienach volgt vonn dem kochenn vnd hat gemacht meyster Eberhart
           Ein koch<lb/> herczog heinrichs zu lands hut Zum Ein salsenn von weichselnn zu machen<lb/>
-          Item Wiltu machen ein gutte salsenn von weichselnn So <del>?</del> thue die
-          weich=<lb/> sell in einen hafen vnd setz die auff ein glut vnd laß sie siedenn vnd<lb/>
-          laß dann wider erkaltenn vnd streich sie durch ein tuch vnd thue sie<lb/> dann wider in
-          den hafenn vnd setz sie auff ein glut vnd laß sie wol sieden<lb/> vnd rurr sie piß sie
-          dick wirt vnd thue dann <rs ref="#S32080908">honig </rs>dar an vnd geribens<lb/> prot vnd
-          negellein vnd gut gestüp vnd thue sie in ein feßlein sie pleibt<lb/> dir gut drew oder
-          vier iarr<lb/> Ein gutte salsen zu machen in der fastenn<lb/>
+          Item Wiltu machen ein gutte salsenn von weichselnn So <del>?</del> thue die weich=<lb/>
+          sell in einen hafen vnd setz die auff ein glut vnd laß sie siedenn vnd<lb/> laß dann wider
+          erkaltenn vnd streich sie durch ein tuch vnd thue sie<lb/> dann wider in den hafenn vnd
+          setz sie auff ein glut vnd laß sie wol sieden<lb/> vnd rurr sie piß sie dick wirt vnd thue
+          dann <rs ref="#S32080908">honig </rs>dar an vnd geribens<lb/> prot vnd negellein vnd gut
+          gestüp vnd thue sie in ein feßlein sie pleibt<lb/> dir gut drew oder vier iarr<lb/> Ein
+          gutte salsen zu machen in der fastenn<lb/>
           <choice>
             <expan>Item</expan>
             <abbr>It</abbr>
