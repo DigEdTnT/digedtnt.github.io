@@ -157,7 +157,7 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
    </td>
   </tr>
   <tr>
-   <td>Abkürzung  \
+   <td>Abkürzung </br>
 (durch Verfasser:in des Originals)
    </td>
    <td><strong>abbr:</strong>
@@ -198,7 +198,7 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
    </td>
   </tr>
   <tr>
-   <td>Tilgung (durch Verfasser:in des Originals
+   <td>Tilgung (durch Verfasser:in des Originals)
    </td>
    <td><strong>del:</strong>
 <p>
