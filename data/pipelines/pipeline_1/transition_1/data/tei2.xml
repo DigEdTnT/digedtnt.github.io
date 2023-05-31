@@ -2,7 +2,6 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd"
   xml:lang="EN" xml:id="export">
-
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -15,7 +14,6 @@
           <persName>Unknown</persName>
         </author>
       </titleStmt>
-
       <editionStmt>
         <edition>Edition created from new transcripts of this manuscript.</edition>
         <respStmt xml:id="AU32014648">
@@ -23,13 +21,11 @@
             editing</resp>
           <persName>ZIM-DigEdTnT</persName>
         </respStmt>
-
         <respStmt xml:id="OU32014648">
           <resp>Administrator of the Mittelalterliche Kochrezepte transcription project on
             FromThePage</resp>
           <persName>ZIM-DigEdTnT</persName>
         </respStmt>
-
         <respStmt xml:id="U32014648">
           <persName> ZIM-DigEdTnT </persName>
           <resp> made 35 edits between <date type="first_edit" when="2023-03-27T07:30:53Z">March 27,
@@ -48,15 +44,11 @@
               2023</date> and <date type="last_edit" when="2023-04-12T09:00:01Z">April 12,
               2023</date>. </resp>
         </respStmt>
-
         <respStmt xml:id="U32014648">
           <resp n="proof_1">Single Proof by:</resp>
           <name>ZIM-DigEdTnT</name>
         </respStmt>
-
-
       </editionStmt>
-
       <publicationStmt>
         <publisher>Dynamic TEI export from FromThePage (version 22.10)</publisher>
         <availability>
@@ -67,7 +59,6 @@
         </availability>
         <date when="2023-04-13T11:27:04+00:00">April 13, 2023</date>
       </publicationStmt>
-
       <sourceDesc>
         <msDesc>
           <msIdentifier>
@@ -96,12 +87,8 @@
               Zentralbibliothek Solothurn und der Bleistifteintrag</provenance>
           </history>
         </msDesc>
-
-
       </sourceDesc>
-
     </fileDesc>
-
     <encodingDesc>
       <classDecl>
         <taxonomy>
@@ -128,29 +115,22 @@
             </category>
           </category>
         </taxonomy>
-
       </classDecl>
     </encodingDesc>
-
-
     <profileDesc>
-
       <creation>
         <placeName>Unbekannt</placeName>
         <date when="1487-01-01">1487-01-01</date>
       </creation>
-
       <textClass>
         <keywords>
           <term type="genre">Rezepte</term>
         </keywords>
       </textClass>
-
       <langUsage>
         <language ident="gem">Germanic languages</language>
       </langUsage>
     </profileDesc>
-
     <revisionDesc>
       <listChange ordered="true">
         <change xml:id="CHG50" who="U32014648" when="2023-04-13T11:08:10Z" target="#P33038499">
@@ -269,7 +249,6 @@
       </listChange>
     </revisionDesc>
   </teiHeader>
-
   <text>
     <body>
       <pb xml:id="F33038498" n="1"
@@ -299,8 +278,6 @@
             <expan>daz</expan>
             <abbr>dz</abbr>
           </choice> si nit an </p>
-
-
       </div>
       <pb xml:id="F33038499" n="2"
         facs="http://fromthepage.com/image-service/33038499/full/full/0/default.jpg"/>
@@ -370,8 +347,6 @@
             <expan>Item</expan>
             <abbr>Ite</abbr>
           </choice> ein ander muͦs von bir=<lb/> N </p>
-
-
         <note resp="#U32014648">v mit Trema nicht richtig dargestellt (Zeile 8 und 23).</note>
       </div>
       <pb xml:id="F33038500" n="3"
@@ -432,8 +407,6 @@
             <expan>daz</expan>
             <abbr>dz</abbr>
           </choice> trag </p>
-
-
       </div>
       <pb xml:id="F33038501" n="4"
         facs="http://fromthepage.com/image-service/33038501/full/full/0/default.jpg"/>
@@ -466,8 +439,6 @@
           durch ein teiglin von<lb/> wissem mell vnd hack si schonn wiltu machen ein<lb/> baches von
           mandel vnd von Ris Stos denn mandel mit<lb/> wasser vnd ouch mit dicker milch vnd stos
           denn ris dru=<lb/> cken vnd schlach in durch ein siblin las die milch erwa </p>
-
-
       </div>
       <pb xml:id="F33038502" n="5"
         facs="http://fromthepage.com/image-service/33038502/full/full/0/default.jpg"/>
@@ -529,8 +500,6 @@
           setz es ab<lb/> § xxxvij<lb/> Item wiltu blaw win oder waser habenn schönen gle=<lb/>
           sern das magstu mit korn bluͦmenn saft vermischenn<lb/>
         </p>
-
-
         <note resp="#U32014648">Vom Editor hinzugefügte Wörter stehen in eckiger Klammer.</note>
         <note resp="#U32014648">Fehlerhaft dargestellte v mit Trema darüber in Zeile 29</note>
       </div>

@@ -67,7 +67,7 @@
 	<xsl:template match="tei:titleStmt/tei:author">
 		<xsl:copy-of select="."> </xsl:copy-of>
 		<respStmt>
-			<xsl:comment> HINWEIS: Das nachfolfende Element ist obligatorisch und sollte daher ausgefüllt werden! </xsl:comment>
+			<xsl:comment> HINWEIS: Das nachfolgende Element ist obligatorisch und sollte daher ausgefüllt werden! </xsl:comment>
 			<orgName>[Name der herausgebenden Organisation]</orgName>
 			<resp>
 				<note type="remarkResponsibility">Erstellung der Transkription nach
@@ -95,7 +95,7 @@
 	<xsl:template match="tei:publicationStmt">
 		<publicationStmt>
 			<publisher>
-				<xsl:comment> HINWEIS: Das nachfolfende Element ist obligatorisch und sollte daher ausgefüllt werden! </xsl:comment>
+				<xsl:comment> HINWEIS: Das nachfolgende Element ist obligatorisch und sollte daher ausgefüllt werden! </xsl:comment>
 				<orgName>[Name der publizierenden Institution]</orgName>
 			</publisher>
 			<pubPlace>Graz</pubPlace>
@@ -195,7 +195,7 @@
 	<!-- TODO: what to do with the taxonomy in classDesc = not allowed anywhere!? -->
 	<xsl:template match="tei:encodingDesc">
 		<encodingDesc>
-			<xsl:comment> HINWEIS: Das nachfolfende Element ist obligatorisch und sollte daher ausgefüllt werden! </xsl:comment>
+			<xsl:comment> HINWEIS: Das nachfolgende Element ist obligatorisch und sollte daher ausgefüllt werden! </xsl:comment>
 			<p>[Hinweise zu den Transkriptions- und Annotationsrichtlinien]</p>
 		</encodingDesc>
 	</xsl:template>

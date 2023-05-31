@@ -2,7 +2,6 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd"
   xml:lang="EN" xml:id="export">
-
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -113,29 +112,22 @@
             </category>
           </category>
         </taxonomy>
-
       </classDecl>
     </encodingDesc>
-
-
     <profileDesc>
-
       <creation>
         <placeName>Unbekannt</placeName>
         <date when="1475-01-01">1475-01-01</date>
       </creation>
-
       <textClass>
         <keywords>
           <term type="genre">Rezepte</term>
         </keywords>
       </textClass>
-
       <langUsage>
         <language ident="gem">Germanic languages</language>
       </langUsage>
     </profileDesc>
-
     <revisionDesc>
       <listChange ordered="true">
         <change xml:id="CHG49" who="U32014648" when="2023-04-13T11:10:05Z" target="#P33038495">
@@ -345,8 +337,6 @@
             <abbr>vspeil</abbr>
           </choice> das wol vnd leg sie auff ein rost<lb/> vnd laß sie pratenn vnd beslach sie halb
           mit totternn die rot sein dar </p>
-
-
       </div>
       <pb xml:id="F33038495" n="3"
         facs="http://fromthepage.com/image-service/33038495/full/full/0/default.jpg"/>
@@ -412,8 +402,6 @@
             <abbr>schnëy</abbr>
           </choice><note n="*" type="footnote">Rezept endet hier</note>
         </p>
-
-
       </div>
       <pb xml:id="F33038496" n="4"
         facs="http://fromthepage.com/image-service/33038496/full/full/0/default.jpg"/>
@@ -463,8 +451,6 @@
             <expan>daz</expan>
             <abbr>dz</abbr>
           </choice> schmaltz </p>
-
-
       </div>
       <pb xml:id="F33038497" n="5"
         facs="http://fromthepage.com/image-service/33038497/full/full/0/default.jpg"/>
@@ -513,8 +499,6 @@
           krefftigklichenn<lb/> do vonn so man kichernn nit hat so seudt man arbeiß kichernn<lb/>
           oder arbeiß die grun sein so soll man <add>nit</add> essenn wann sie machenn<lb/> em
           menschenn boese feuchtigkeit </p>
-
-
       </div>
     </body>
   </text>
