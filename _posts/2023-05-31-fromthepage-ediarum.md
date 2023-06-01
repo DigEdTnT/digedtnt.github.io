@@ -4,9 +4,9 @@ layout: post
 
 title: FromThePage → ediarum
 
-categories: [transition, fromthepage, ediarum, xslt]
+categories: [transition, fromthepage, ediarum, xslt, dta-basisformat]
 
-excerpt: Die Transition von FromThePage zu Ediarum beinhaltet die Anpassung des TEI/XML-Exports von FromThePage an das DTA-Basisformat, das in Ediarum als Standard verwendet wird.
+excerpt: Die Transition von FromThePage zu ediarum beinhaltet die Anpassung des TEI/XML-Exports von FromThePage an das DTA-Basisformat, das in ediarum als Standard verwendet wird.
 
 transitiondoc: .
 
@@ -67,9 +67,9 @@ Der Übergang von einem Tool zu einem anderen lässt sich verschieden gestalten.
 # XSL Transformation
 
 
-Für eine Transformation des aus FromThePage exportierten TEIs in ein für Ediarum weiterverarbeitbares Dokument, haben wir für unser Beispielprojekt die Daten transformiert. Wie unser Transformationsszenario genau funktioniert, ist dem Punkt [XSLT Dokumentation](#xslt-dokumentation) zu entnehmen. Dieses kann für andere Projekte angepasst und weiterverwendet werden.
+Für eine Transformation des aus FromThePage exportierten TEIs in ein für ediarum weiterverarbeitbares Dokument, haben wir für unser Beispielprojekt die Daten transformiert. Wie unser Transformationsszenario genau funktioniert, ist dem Punkt [XSLT Dokumentation](#xslt-dokumentation) zu entnehmen. Dieses kann für andere Projekte angepasst und weiterverwendet werden.
 
-Hier ist die [XSLT-Ressource](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/ftp_export_to_dta.xsl) für unsere FromThePage-Ediarum-Transformation.
+Hier ist die [XSLT-Ressource](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/ftp_export_to_dta.xsl) für unsere FromThePage-ediarum-Transformation.
 
 
 
@@ -157,28 +157,28 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
    </td>
   </tr>
   <tr>
-   <td>Abkürzung </br>
-(durch Verfasser:in des Originals)
+   <td>Abkürzung <br/>
+    (durch Verfasser:in des Originals)
    </td>
    <td><strong>abbr:</strong>
 <p>
-&lt;abbr expan=””>&lt;/abbr>
+&lt;abbr expan=””&gt;&lt;/abbr&gt;
    </td>
-   <td>&lt;choice>
+   <td>&lt;choice&gt;
 <p>
-&lt;expan>&lt;/expan>
+&lt;expan&gt;&lt;/expan&gt;
 <p>
-&lt;abbr>&lt;/abbr>
+&lt;abbr&gt;&lt;/abbr&gt;
 <p>
-&lt;/choice>
+&lt;/choice&gt;
    </td>
-   <td>&lt;choice>
+   <td>&lt;choice&gt;
 <p>
-&lt;expan>&lt;/expan>
+&lt;expan&gt;&lt;/expan&gt;
 <p>
-&lt;abbr>&lt;/abbr>
+&lt;abbr&gt;&lt;/abbr&gt;
 <p>
-&lt;/choice>
+&lt;/choice&gt;
    </td>
    <td>Keine Anpassungen nötig
    </td>
@@ -188,11 +188,11 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
    </td>
    <td><strong>add: </strong>
 <p>
-&lt;add>&lt;/add>
+&lt;add&gt;&lt;/add&gt;
    </td>
-   <td>&lt;add>&lt;/add>
+   <td>&lt;add&gt;&lt;/add&gt;
    </td>
-   <td>&lt;add place=”XXX”>&lt;/add>
+   <td>&lt;add place=”XXX”&gt;&lt;/add&gt;
    </td>
    <td>Obligatorisches Attribut: @place 
    </td>
@@ -202,11 +202,11 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
    </td>
    <td><strong>del:</strong>
 <p>
-&lt;del>&lt;/del>
+&lt;del&gt;&lt;/del&gt;
    </td>
-   <td>&lt;del>&lt;/del>
+   <td>&lt;del&gt;&lt;/del&gt;
    </td>
-   <td>&lt;del rendition=”XXX”>&lt;/del>
+   <td>&lt;del rendition=”XXX”&gt;&lt;/del&gt;
    </td>
    <td>Obligatorisches Attribut: @rendition
    </td>
@@ -216,11 +216,11 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
    </td>
    <td><strong>footnote:</strong>
 <p>
-&lt;footnote marker=”*”>&lt;/footnote>
+&lt;footnote marker=”*”&gt;&lt;/footnote&gt;
    </td>
-   <td>&lt;note n=”*” type=”footnote”>&lt;/note>
+   <td>&lt;note n=”*” type=”footnote”&gt;&lt;/note&gt;
    </td>
-   <td>&lt;note n=”*” place=”foot”>&lt;/note>
+   <td>&lt;note n=”*” place=”foot”&gt;&lt;/note&gt;
    </td>
    <td>Anpassung unproblematisch
    </td>
@@ -230,11 +230,11 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
    </td>
    <td><strong>gap:</strong>
 <p>
-&lt;gap>&lt;/gap>
+&lt;gap&gt;&lt;/gap&gt;
    </td>
-   <td>&lt;gap>&lt;/gap>
+   <td>&lt;gap&gt;&lt;/gap&gt;
    </td>
-   <td>&lt;gap>&lt;/gap>
+   <td>&lt;gap&gt;&lt;/gap&gt;
    </td>
    <td>Keine Anpassungen nötig
    </td>
@@ -244,15 +244,15 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
    </td>
    <td><strong>head:</strong>
 <p>
-&lt;head>&lt;/head>
+&lt;head&gt;&lt;/head&gt;
    </td>
-   <td>&lt;head>&lt;/head>
+   <td>&lt;head&gt;&lt;/head&gt;
    </td>
-   <td>&lt;fw>&lt;/fw>
+   <td>&lt;fw&gt;&lt;/fw&gt;
    </td>
    <td>Anpassung unproblematisch 
 <p>
-Hinweis: Das &lt;head>-Element wurde in unserem Beispielprojekt zweckentfremdet und für eine laufende Kopfzeile verwendet.
+Hinweis: Das &lt;head&gt;-Element wurde in unserem Beispielprojekt zweckentfremdet und für eine laufende Kopfzeile verwendet.
    </td>
   </tr>
   <tr>
@@ -260,11 +260,11 @@ Hinweis: Das &lt;head>-Element wurde in unserem Beispielprojekt zweckentfremdet 
    </td>
    <td><strong>lb:</strong>
 <p>
-&lt;lb>&lt;/lb>
+&lt;lb&gt;&lt;/lb&gt;
    </td>
-   <td>&lt;lb>&lt;/lb>
+   <td>&lt;lb&gt;&lt;/lb&gt;
    </td>
-   <td>&lt;lb>&lt;/lb>
+   <td>&lt;lb&gt;&lt;/lb&gt;
    </td>
    <td>Keine Anpassungen nötig
    </td>
@@ -274,23 +274,23 @@ Hinweis: Das &lt;head>-Element wurde in unserem Beispielprojekt zweckentfremdet 
    </td>
    <td><strong>reg:</strong>
 <p>
-&lt;reg orig=””>&lt;/reg>
+&lt;reg orig=””&gt;&lt;/reg&gt;
    </td>
-   <td>&lt;choice>
+   <td>&lt;choice&gt;
 <p>
-&lt;reg>&lt;/reg>
+&lt;reg&gt;&lt;/reg&gt;
 <p>
-&lt;orig>&lt;/orig>
+&lt;orig&gt;&lt;/orig&gt;
 <p>
-&lt;/choice>
+&lt;/choice&gt;
    </td>
-   <td>&lt;choice>
+   <td>&lt;choice&gt;
 <p>
-&lt;reg>&lt;/reg>
+&lt;reg&gt;&lt;/reg&gt;
 <p>
-&lt;orig>&lt;/orig>
+&lt;orig&gt;&lt;/orig&gt;
 <p>
-&lt;/choice>
+&lt;/choice&gt;
    </td>
    <td>Keine Anpassungen nötig
    </td>
@@ -300,11 +300,11 @@ Hinweis: Das &lt;head>-Element wurde in unserem Beispielprojekt zweckentfremdet 
    </td>
    <td><strong>unclear:</strong>
 <p>
-&lt;unclear>&lt;/unclear>
+&lt;unclear&gt;&lt;/unclear&gt;
    </td>
-   <td>&lt;unclear>&lt;/unclear>
+   <td>&lt;unclear&gt;&lt;/unclear&gt;
    </td>
-   <td>&lt;supplied cert=”low”>&lt;/supplied>
+   <td>&lt;supplied cert=”low”&gt;&lt;/supplied&gt;
    </td>
    <td>Anpassung unproblematisch 
    </td>
@@ -456,5 +456,5 @@ Bei der Transformation können einige Elemente in ihrer ursprünglichen Form erh
 
 Die einzigen beiden Elemente, die in unserem Projekt für Probleme sorgen, sind Hinzufügungen (&lt;add>) sowie Tilgungen (&lt;del>) durch den/die ursprüngliche:n Verfasser:in. Denn während diese bei der Transkription in FromThePage keine Attribute erhalten haben, sind für das DTA-Basisformat Angaben zur Lokalisierung der Hinzufügung bzw. zur Art der Tilgung (Durchstreichen, Überschreiben, Radieren oder Auskratzen etc.) obligatorisch. 
 {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/del-add.png" description="Probleme bei der Überführung einzelner Elemente ins DTA-Basisformat" %}
-Da wir über diese Informationen aber nicht verfügen und daher die Manuskripte erneut durchgehen müssten, belassen wir das transformierte XML vorerst ohne Attribute und widmen uns diesem Problem bei der Annotation in Ediarum. 
+Da wir über diese Informationen aber nicht verfügen und daher die Manuskripte erneut durchgehen müssten, belassen wir das transformierte XML vorerst ohne Attribute und widmen uns diesem Problem bei der Annotation in ediarum. 
 
