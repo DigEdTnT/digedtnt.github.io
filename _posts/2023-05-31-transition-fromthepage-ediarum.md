@@ -110,7 +110,7 @@ Dies erzeugt im transformierten XML die entsprechende Einbindung der XML-Modelle
 
 Auf Grundlage eines als gültig validierten [DTA-Metadatenbeispiels](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/dta_example.xml) wurden schließlich die Metadaten des FromThePage-Exports in eine DTABf-konforme Struktur übertragen. 
 
-### Transformationsarten
+**Transformationsarten**
 
 Bei der Übertragung der Metadaten wurden verschiedene Maßnahmen gesetzt:
 
@@ -120,7 +120,7 @@ Bei der Übertragung der Metadaten wurden verschiedene Maßnahmen gesetzt:
     {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/placeholder.png" description="Einsatz von Platzhaltern, die nach der Transformation angepasst werden müssen" %}
 * **Entfernen von (vorerst) irrelevanten Elementen:** Einige der Elemente im FromThePage-Export wurden außerdem ignoriert und nicht in das neue DTA-XML überführt, da diese im Zuge der Edition eine unwesentliche Rolle spielen oder ohnehin am Ende des Projekts noch ergänzt werden müssen. Als nicht weiter relevante Information im TEI-Export von FromThePage wurden zum Beispiel Angaben zu Änderungen während der Transkription identifiziert. Aber auch die in den &lt;respStmt> enthaltenen Mitarbeitenden wurden nicht übernommen, da der teiHeader ohnehin am Ende des Projektes noch einmal überarbeitet werden muss.
 
-### Einschränkungen
+**Einschränkungen**
 
 Die Überführung der Metadaten in das Schema des DTA-Basisformat ergab außerdem Schwierigkeiten, deren Lösung nicht zu einem validen Output führt. Diesen Kompromiss muss man aber mitunter eingehen, um keine bereits vorhandenen Metadaten zu verlieren. 
 
