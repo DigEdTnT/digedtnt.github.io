@@ -176,7 +176,7 @@
 			<!-- NICHT DTA_BF-KONFORM, ABER WICHTIG FÜR WEITERE EDITION -->
 			<!-- Include adapted <history> -->
 				<xsl:if test="./tei:history">
-					<xsl:comment> Faksimiles sind im DTA-Basisformat nicht vorgesehen, sollen aber dennoch erhalten bleiben. </xsl:comment>
+					<xsl:comment> Das history-Element ist im DTA-Basisformat nicht vorgesehen, soll aber dennoch erhalten bleiben. </xsl:comment>
 				<history>
 					<origin>
 						<xsl:copy-of select="./tei:history/tei:origin/tei:placeName"></xsl:copy-of>

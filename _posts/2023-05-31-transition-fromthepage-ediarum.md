@@ -132,8 +132,8 @@ Die Einschränkungen, die sich aus der Überführung der Metadaten in das Schema
 
 Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in FromThePage teilweise ausgezeichneten Manuskript-Transkriptionen in eine DTABf-konforme Struktur zu übertragen. Dafür soll nun zuerst eine kurze Übersicht darüber gegeben werden, welche Annotationen bei unserem Beispielprojekt bei der Transkription über FromThePage bereits erfolgt sind, ob bzw. welche Entsprechung es dafür im DTA-Basisformat gibt, und mit welchen Problemen man bei der Transformation konfrontiert ist. 
 
-
-<table>
+<div class="table-responsive">
+<table class="table">
   <tr>
    <td><strong>Annotation</strong>
    </td>
@@ -145,7 +145,7 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
    </td>
   </tr>
   <tr>
-   <td>
+   <td>\
    </td>
    <td><strong>Button und Darstellung in Webeditor</strong>
    </td>
@@ -153,7 +153,7 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
    </td>
    <td><strong>Zulässiges Äquivalent</strong>
    </td>
-   <td>
+   <td>\
    </td>
   </tr>
   <tr>
@@ -310,6 +310,7 @@ Hinweis: Das &lt;head&gt;-Element wurde in unserem Beispielprojekt zweckentfremd
    </td>
   </tr>
 </table>
+</div>
 
 
 Wie aus der Tabelle ersichtlich wird, können die meisten Elemente entweder ohne weitere Bearbeitung übernommen werden oder benötigen nur geringe Anpassungen, um dem DTA-Basisformat zu entsprechen.

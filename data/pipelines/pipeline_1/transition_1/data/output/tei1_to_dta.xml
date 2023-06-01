@@ -72,7 +72,7 @@
               sauberes Schriftbild, Oberlängen orientieren sich am Mittelband. Alter Einband:
               starker Pergamentumschlag mit übergreifendem Rückendeckel.</p>
                </physDesc>
-               <!-- Faksimiles sind im DTA-Basisformat nicht vorgesehen, sollen aber dennoch erhalten bleiben. -->
+               <!-- Das history-Element ist im DTA-Basisformat nicht vorgesehen, soll aber dennoch erhalten bleiben. -->
                <history>
                   <origin>
                      <placeName>Unknown</placeName>

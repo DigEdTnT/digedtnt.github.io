@@ -81,7 +81,7 @@
               lassen. Die Handschrift ist in einer gut lesbaren gotischen Bastarda beschrieben.
               Moderner Pappeinband.</p>
                </physDesc>
-               <!-- Faksimiles sind im DTA-Basisformat nicht vorgesehen, sollen aber dennoch erhalten bleiben. -->
+               <!-- Das history-Element ist im DTA-Basisformat nicht vorgesehen, soll aber dennoch erhalten bleiben. -->
                <history>
                   <origin>
                      <placeName>Unknown</placeName>
