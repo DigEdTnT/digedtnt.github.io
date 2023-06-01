@@ -135,179 +135,177 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
 <div class="table-responsive">
 <table class="table">
   <tr>
-   <td><strong>Annotation</strong>
-   </td>
-   <td colspan="2" ><strong>FromThePage Export</strong>
-   </td>
-   <td><strong>DTA-Bf</strong>
-   </td>
-   <td><strong>Transformation & Probleme</strong>
-   </td>
+    <td><strong>Annotation</strong>
+    </td>
+    <td colspan="2" ><strong>FromThePage Export</strong>
+    </td>
+    <td><strong>DTA-Bf</strong>
+    </td>
+    <td><strong>Transformation & Probleme</strong>
+    </td>
   </tr>
   <tr>
-   <td>\
-   </td>
-   <td><strong>Button und Darstellung in Webeditor</strong>
-   </td>
-   <td><strong>Element in TEI-Export</strong>
-   </td>
-   <td><strong>Zulässiges Äquivalent</strong>
-   </td>
-   <td>\
-   </td>
+    <td>\
+    </td>
+    <td><strong>Button und Darstellung in Webeditor</strong>
+    </td>
+    <td><strong>Element in TEI-Export</strong>
+    </td>
+    <td><strong>Zulässiges Äquivalent</strong>
+    </td>
+    <td>\
+    </td>
   </tr>
   <tr>
-   <td>Abkürzung <br/>
-    (durch Verfasser:in des Originals)
-   </td>
-   <td><strong>abbr:</strong>
-<p>
-&lt;abbr expan=””&gt;&lt;/abbr&gt;
+    <td>Abkürzung <br/>(durch Verfasser:in des Originals)
+    </td>
+    <td><strong>abbr:</strong><br/>
+    &lt;abbr expan=””&gt;&lt;/abbr&gt;
    </td>
    <td>&lt;choice&gt;
-<p>
-&lt;expan&gt;&lt;/expan&gt;
-<p>
-&lt;abbr&gt;&lt;/abbr&gt;
-<p>
-&lt;/choice&gt;
+    <br/>
+    &lt;expan&gt;&lt;/expan&gt;
+    <br/>
+    &lt;abbr&gt;&lt;/abbr&gt;
+    <br/>
+    &lt;/choice&gt;
    </td>
    <td>&lt;choice&gt;
-<p>
-&lt;expan&gt;&lt;/expan&gt;
-<p>
-&lt;abbr&gt;&lt;/abbr&gt;
-<p>
-&lt;/choice&gt;
+    <br/>
+    &lt;expan&gt;&lt;/expan&gt;
+    <br/>
+    &lt;abbr&gt;&lt;/abbr&gt;
+    <br/>
+    &lt;/choice&gt;
    </td>
    <td>Keine Anpassungen nötig
    </td>
   </tr>
   <tr>
-   <td>Ergänzung (durch Verfasser:in des Originals)
-   </td>
-   <td><strong>add: </strong>
-<p>
-&lt;add&gt;&lt;/add&gt;
-   </td>
-   <td>&lt;add&gt;&lt;/add&gt;
-   </td>
-   <td>&lt;add place=”XXX”&gt;&lt;/add&gt;
-   </td>
-   <td>Obligatorisches Attribut: @place 
-   </td>
+    <td>Ergänzung (durch Verfasser:in des Originals)
+    </td>
+    <td><strong>add: </strong>
+        <br/>
+        &lt;add&gt;&lt;/add&gt;
+    </td>
+    <td>&lt;add&gt;&lt;/add&gt;
+    </td>
+    <td>&lt;add place=”XXX”&gt;&lt;/add&gt;
+    </td>
+    <td>Obligatorisches Attribut: @place 
+    </td>
   </tr>
   <tr>
-   <td>Tilgung (durch Verfasser:in des Originals)
-   </td>
-   <td><strong>del:</strong>
-<p>
-&lt;del&gt;&lt;/del&gt;
-   </td>
-   <td>&lt;del&gt;&lt;/del&gt;
-   </td>
-   <td>&lt;del rendition=”XXX”&gt;&lt;/del&gt;
-   </td>
-   <td>Obligatorisches Attribut: @rendition
-   </td>
+    <td>Tilgung (durch Verfasser:in des Originals)
+    </td>
+    <td><strong>del:</strong>
+    <br/>
+    &lt;del&gt;&lt;/del&gt;
+    </td>
+    <td>&lt;del&gt;&lt;/del&gt;
+    </td>
+    <td>&lt;del rendition=”XXX”&gt;&lt;/del&gt;
+    </td>
+    <td>Obligatorisches Attribut: @rendition
+    </td>
   </tr>
   <tr>
-   <td>Fußnote (durch Editor:in)
-   </td>
-   <td><strong>footnote:</strong>
-<p>
-&lt;footnote marker=”*”&gt;&lt;/footnote&gt;
-   </td>
-   <td>&lt;note n=”*” type=”footnote”&gt;&lt;/note&gt;
-   </td>
-   <td>&lt;note n=”*” place=”foot”&gt;&lt;/note&gt;
-   </td>
-   <td>Anpassung unproblematisch
-   </td>
+    <td>Fußnote (durch Editor:in)
+    </td>
+    <td><strong>footnote:</strong>
+    <br/>
+    &lt;footnote marker=”*”&gt;&lt;/footnote&gt;
+    </td>
+    <td>&lt;note n=”*” type=”footnote”&gt;&lt;/note&gt;
+    </td>
+    <td>&lt;note n=”*” place=”foot”&gt;&lt;/note&gt;
+    </td>
+    <td>Anpassung unproblematisch
+    </td>
   </tr>
   <tr>
-   <td>Auslassung (durch Editor:in)
-   </td>
-   <td><strong>gap:</strong>
-<p>
-&lt;gap&gt;&lt;/gap&gt;
-   </td>
-   <td>&lt;gap&gt;&lt;/gap&gt;
-   </td>
-   <td>&lt;gap&gt;&lt;/gap&gt;
-   </td>
-   <td>Keine Anpassungen nötig
-   </td>
+    <td>Auslassung (durch Editor:in)
+    </td>
+    <td><strong>gap:</strong>
+    <br/>
+    &lt;gap&gt;&lt;/gap&gt;
+    </td>
+    <td>&lt;gap&gt;&lt;/gap&gt;
+    </td>
+    <td>&lt;gap&gt;&lt;/gap&gt;
+    </td>
+    <td>Keine Anpassungen nötig
+    </td>
   </tr>
   <tr>
-   <td>Überschrift
-   </td>
-   <td><strong>head:</strong>
-<p>
-&lt;head&gt;&lt;/head&gt;
-   </td>
-   <td>&lt;head&gt;&lt;/head&gt;
-   </td>
-   <td>&lt;fw&gt;&lt;/fw&gt;
-   </td>
-   <td>Anpassung unproblematisch 
-<p>
-Hinweis: Das &lt;head&gt;-Element wurde in unserem Beispielprojekt zweckentfremdet und für eine laufende Kopfzeile verwendet.
-   </td>
+    <td>Überschrift
+    </td>
+    <td><strong>head:</strong>
+    <br/>
+    &lt;head&gt;&lt;/head&gt;
+    </td>
+    <td>&lt;head&gt;&lt;/head&gt;
+    </td>
+    <td>&lt;fw&gt;&lt;/fw&gt;
+    </td>
+    <td>Anpassung unproblematisch 
+    <br/>
+    Hinweis: Das &lt;head&gt;-Element wurde in unserem Beispielprojekt zweckentfremdet und für eine laufende Kopfzeile verwendet.
+    </td>
   </tr>
   <tr>
-   <td>Zeilenumbruch
-   </td>
-   <td><strong>lb:</strong>
-<p>
-&lt;lb&gt;&lt;/lb&gt;
-   </td>
-   <td>&lt;lb&gt;&lt;/lb&gt;
-   </td>
-   <td>&lt;lb&gt;&lt;/lb&gt;
-   </td>
-   <td>Keine Anpassungen nötig
-   </td>
+    <td>Zeilenumbruch
+    </td>
+    <td><strong>lb:</strong>
+    <br/>
+    &lt;lb&gt;&lt;/lb&gt;
+    </td>
+    <td>&lt;lb&gt;&lt;/lb&gt;
+    </td>
+    <td>&lt;lb&gt;&lt;/lb&gt;
+    </td>
+    <td>Keine Anpassungen nötig
+    </td>
   </tr>
   <tr>
-   <td>Regularisierte Form
-   </td>
-   <td><strong>reg:</strong>
-<p>
-&lt;reg orig=””&gt;&lt;/reg&gt;
-   </td>
-   <td>&lt;choice&gt;
-<p>
-&lt;reg&gt;&lt;/reg&gt;
-<p>
-&lt;orig&gt;&lt;/orig&gt;
-<p>
-&lt;/choice&gt;
-   </td>
-   <td>&lt;choice&gt;
-<p>
-&lt;reg&gt;&lt;/reg&gt;
-<p>
-&lt;orig&gt;&lt;/orig&gt;
-<p>
-&lt;/choice&gt;
-   </td>
-   <td>Keine Anpassungen nötig
-   </td>
+    <td>Regularisierte Form
+    </td>
+    <td><strong>reg:</strong>
+    <br/>
+    &lt;reg orig=””&gt;&lt;/reg&gt;
+    </td>
+    <td>&lt;choice&gt;
+    <br/>
+    &lt;reg&gt;&lt;/reg&gt;
+    <br/>
+    &lt;orig&gt;&lt;/orig&gt;
+    <br/>
+    &lt;/choice&gt;
+    </td>
+    <td>&lt;choice&gt;
+    <br/>
+    &lt;reg&gt;&lt;/reg&gt;
+    <br/>
+    &lt;orig&gt;&lt;/orig&gt;
+    <br/>
+    &lt;/choice&gt;
+    </td>
+    <td>Keine Anpassungen nötig
+    </td>
   </tr>
   <tr>
-   <td>Unklare Stelle
-   </td>
-   <td><strong>unclear:</strong>
-<p>
-&lt;unclear&gt;&lt;/unclear&gt;
-   </td>
-   <td>&lt;unclear&gt;&lt;/unclear&gt;
-   </td>
-   <td>&lt;supplied cert=”low”&gt;&lt;/supplied&gt;
-   </td>
-   <td>Anpassung unproblematisch 
-   </td>
+    <td>Unklare Stelle
+    </td>
+    <td><strong>unclear:</strong>
+    <br/>
+    &lt;unclear&gt;&lt;/unclear&gt;
+    </td>
+    <td>&lt;unclear&gt;&lt;/unclear&gt;
+    </td>
+    <td>&lt;supplied cert=”low”&gt;&lt;/supplied&gt;
+    </td>
+    <td>Anpassung unproblematisch 
+    </td>
   </tr>
 </table>
 </div>
