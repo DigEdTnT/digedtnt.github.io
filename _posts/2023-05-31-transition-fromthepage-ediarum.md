@@ -145,7 +145,7 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
     </td>
   </tr>
   <tr>
-    <td>\
+    <td>
     </td>
     <td><strong>Button und Darstellung in Webeditor</strong>
     </td>
@@ -153,7 +153,7 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
     </td>
     <td><strong>Zulässiges Äquivalent</strong>
     </td>
-    <td>\
+    <td>
     </td>
   </tr>
   <tr>
