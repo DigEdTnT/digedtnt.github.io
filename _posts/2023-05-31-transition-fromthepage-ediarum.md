@@ -26,7 +26,7 @@ Die von FromThePage exportierten TEI/XML-Dokumente sollen nun für die weitere B
 Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kompetenzen der Benutzer:innen voraus, sondern stellen auch hinsichtlich der Software-Umgebung gewisse Anforderungen.
 
 
-### **Erforderliche Kenntnisse**
+### Erforderliche Kenntnisse
 
 
 
@@ -34,7 +34,7 @@ Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kom
 * Grundlegende XSLT-Kenntnisse (für erweiterte Anpassungen)
 
 
-### **Benötigte Software**
+### Benötigte Software
 
 
 
@@ -108,9 +108,11 @@ Dies erzeugt im transformierten XML die entsprechende Einbindung der XML-Modelle
 
 ## 2. Transformation der Metadaten
 
-Auf Grundlage eines als gültig validierten [DTA-Metadatenbeispiels](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/dta_example.xml) wurden schließlich die Metadaten des FromThePage-Exports in eine DTABf-konforme Struktur übertragen. Dabei wurden verschiedene Maßnahmen angewendet: 
+Auf Grundlage eines als gültig validierten [DTA-Metadatenbeispiels](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/dta_example.xml) wurden schließlich die Metadaten des FromThePage-Exports in eine DTABf-konforme Struktur übertragen. 
 
+### Transformationsarten
 
+Bei der Übertragung der Metadaten wurden verschiedene Maßnahmen gesetzt:
 
 * **Übertragung von Inhalten:** Nach einer Gegenüberstellung des exportierten TEIs und dem DTABf-Beispiel wurden zuerst Inhalte wie Titel, Autor, Lizenzen sowie die Beschreibung des Manuskripts übernommen und in entsprechende zulässige bzw. obligatorische [Elemente im Header-Bereich](https://www.deutschestextarchiv.de/doku/basisformat/uebersichtHeader.html) des überführt.  \
     {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/ftp-to-dta.png" description="Übertragung von Elementen in die DTABf-Struktur" %}
@@ -118,9 +120,9 @@ Auf Grundlage eines als gültig validierten [DTA-Metadatenbeispiels](https://git
     {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/placeholder.png" description="Einsatz von Platzhaltern, die nach der Transformation angepasst werden müssen" %}
 * **Entfernen von (vorerst) irrelevanten Elementen:** Einige der Elemente im FromThePage-Export wurden außerdem ignoriert und nicht in das neue DTA-XML überführt, da diese im Zuge der Edition eine unwesentliche Rolle spielen oder ohnehin am Ende des Projekts noch ergänzt werden müssen. Als nicht weiter relevante Information im TEI-Export von FromThePage wurden zum Beispiel Angaben zu Änderungen während der Transkription identifiziert. Aber auch die in den &lt;respStmt> enthaltenen Mitarbeitenden wurden nicht übernommen, da der teiHeader ohnehin am Ende des Projektes noch einmal überarbeitet werden muss.
 
-Die Einschränkungen, die sich aus der Überführung der Metadaten in das Schema des DTA-Basisformat ergeben, warfen außerdem noch folgendes Problem auf:
+### Einschränkungen
 
-
+Die Überführung der Metadaten in das Schema des DTA-Basisformat ergab außerdem Schwierigkeiten, deren Lösung nicht zu einem validen Output führt. Diesen Kompromiss muss man aber mitunter eingehen, um keine bereits vorhandenen Metadaten zu verlieren. 
 
 * **Fehlende Elemente:** Würde man sich strikt an das DTABf-Schema halten, müsste man auf bereits in FromThePage hinzugefügte Metadaten verzichten. was zu einem Datenverlust führen würde. So gibt es beispielsweise weder das &lt;history>-Element zur Beschreibung der geschichtlichen Hintergründe wie Herkunft und Entstehung eines Manuskripts im DTA-Basisformat, noch gibt es ein anderes passendes Element, in das die historischen Metadaten übertragen werden können. Im Rahmen dieses Projekts wurde daher entschieden, das &lt;history>-Element dennoch beizubehalten, auch wenn dies zu einem nicht validen Output führt. \
     {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/history-metadata.png" description="Beibehalten von Elementen, die im DTA-Basisformat unzulässig sind" %}
@@ -139,7 +141,7 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
     </td>
     <td colspan="2" ><strong>FromThePage Export</strong>
     </td>
-    <td><strong>DTA-Bf</strong>
+    <td><strong>DTABf</strong>
     </td>
     <td><strong>Transformation & Probleme</strong>
     </td>
@@ -453,7 +455,7 @@ Bei der Transformation können einige Elemente in ihrer ursprünglichen Form erh
 </div>
 ```
 
-Die einzigen beiden Elemente, die in unserem Projekt für Probleme sorgen, sind Hinzufügungen (&lt;add>) sowie Tilgungen (&lt;del>) durch den/die ursprüngliche:n Verfasser:in. Denn während diese bei der Transkription in FromThePage keine Attribute erhalten haben, sind für das DTA-Basisformat Angaben zur Lokalisierung der Hinzufügung bzw. zur Art der Tilgung (Durchstreichen, Überschreiben, Radieren oder Auskratzen etc.) obligatorisch. 
+Die einzigen beiden Elemente, die in unserem Projekt im Textbereich für Probleme sorgen, sind Hinzufügungen (&lt;add>) sowie Tilgungen (&lt;del>) durch den/die ursprüngliche:n Verfasser:in. Denn während diese bei der Transkription in FromThePage keine Attribute erhalten haben, sind für das DTA-Basisformat Angaben zur Lokalisierung der Hinzufügung bzw. zur Art der Tilgung (Durchstreichen, Überschreiben, Radieren oder Auskratzen etc.) obligatorisch. 
 {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/del-add.png" description="Probleme bei der Überführung einzelner Elemente ins DTA-Basisformat" %}
 Da wir über diese Informationen aber nicht verfügen und daher die Manuskripte erneut durchgehen müssten, belassen wir das transformierte XML vorerst ohne Attribute und widmen uns diesem Problem bei der Annotation in ediarum. 
 
