@@ -3,6 +3,7 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:telota="http://www.telota.de"
 	version="2.0" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="tei xsi">
 	
 	<xsl:output method="xml" indent="yes" />
@@ -30,6 +31,9 @@
 		<xsl:template match="tei:TEI/@xml:id">
 			<xsl:attribute name="xml:id">
 				<xsl:text>dtabf</xsl:text>
+			</xsl:attribute>
+			<xsl:attribute name="telota:doctype">
+				<xsl:text>document</xsl:text>
 			</xsl:attribute>
 		</xsl:template>
 
