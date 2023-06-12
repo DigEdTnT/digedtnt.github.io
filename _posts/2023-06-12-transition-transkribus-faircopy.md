@@ -8,11 +8,15 @@ categories: [transition, transkribus, faircopy, xslt]
 
 excerpt: Die Transition von Transkribus zu FairCopy umfasst die Transforamtion des TEI/XML-Exports von Transkribus mittels XSLT
 
+transitiondoc: .
+
+last_modified_at: 2023-06-12
+
 ---
 
 # Allgemeine Beschreibung
 
-In dieser Transition wird beschrieben, wie die von Transkribus exportierten TEI/XML-Dokumente mittels einer XSL-Transformation vorverarbeitet werden, um ein gutes Ausgangsdokument für die weitere Bearbeitung im TEI-Editor FairCopy zu erstellen. Dies ist vor allem aus mehreren Gründen notwendig: Beim Export aus Transkribus werden nicht valide TEI-Dokumenten erzeugt, außerdem werden für unsere Zwecke nicht notwendige TEI-Elemente bzw. -Attribute im Export, die wir entfernen möchten. Zuletzt wollen wir auch einige TEI-Elemente und -Attribute modifizieren, um sie unseren Wünschen entsprechend anzupassen. 
+In dieser Transition wird beschrieben, wie die von Transkribus exportierten TEI/XML-Dokumente mittels einer XSL-Transformation vorverarbeitet werden, um ein  für die weitere Bearbeitung im TEI-Editor FairCopy gut geeignetes Ausgangsdokument zu erstellen. Dies ist vor allem aus mehreren Gründen notwendig: Beim Export aus Transkribus werden nicht valide TEI-Dokumenten erzeugt, außerdem finden sich für unsere Zwecke nicht notwendige TEI-Elemente bzw. -Attribute im Export, die wir entfernen möchten. Zuletzt wollen wir auch einige Elemente und -Attribute modifizieren, um sie unseren Wünschen entsprechend anzupassen. 
 
 
 ## Voraussetzungen
@@ -25,7 +29,7 @@ Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kom
 
 
 * Einrichten einer Oxygen-Transformation (in dieser Transition erklärt)
-* Grundlegende XSLT-Kenntnisse (für erweiterte Anpassungen)
+* Grundlegende XSLT-Kenntnisse
 
 
 ### Benötigte Software
@@ -59,10 +63,7 @@ Der Übergang von einem Tool zu einem anderen lässt sich verschieden gestalten.
 # XSL-Transformation
 
 
-Für eine Transformation des ausTranskribus exportierten TEIs in ein für FairCopy weiterverarbeitbares Dokument, haben wir für unser Beispielprojekt die Daten transformiert. Wie unser Transformationsszenario genau funktioniert, ist dem Punkt XSLT Dokumentation zu entnehmen. Dieses kann für andere Projekte angepasst und weiterverwendet werden.
-
-Hier ist die XSLT-Ressource für unsere Transkribus-FairCopy-Transformation.
-
+Für eine Transformation des ausTranskribus exportierten TEIs in ein für FairCopy weiterverarbeitbares Dokument, haben wir für unser Beispielprojekt die Daten transformiert. Wie unser Transformationsszenario genau funktioniert, ist dem Punkt [XSLT Dokumentation](#xslt-dokumentation) zu entnehmen. Dieses kann für andere Projekte angepasst und weiterverwendet werden.
 
 
 * Für die Transformation öffnen wir zuerst die zu transformierende XML-Datei, wählen dann den Button “Transformationsszenarios konfigurieren”, klicken auf Neu und wählen die Option “XML Transformation with XSLT”. 
@@ -106,7 +107,7 @@ Weiters fügen wir das sogenannte “identity transform”-Template ein, um - zu
 ```
 
 ## 2. Transformation der Metadaten
-* **Anlegen eines validen und minimalen TEI-Headers:** Bei dem automatisch beim TEI-Export aus Transkribus generierten TEI-Header fehlt das obligatorische `publicationStatement`, dafür ist ein `seriesStatement`, das aufgrund des fehlenend `publicationStatement` an dieser Stelle noch nicht erlaubt ist. Da wir den TEI-Header erst später mit Metadaten befüllen werden, fügen wir zunächst einen minimalen, aber validen Header ein.
+* **Anlegen eines validen und minimalen TEI-Headers:** Bei dem automatisch beim TEI-Export aus Transkribus generierten TEI-Header fehlt das obligatorische `publicationStatement`, dafür ist ein `seriesStatement`, das aufgrund des fehlenden `publicationStatement` an dieser Stelle noch nicht erlaubt ist, vorhanden. Da wir den TEI-Header erst später mit Metadaten befüllen werden, fügen wir zunächst einen minimalen, aber validen Header ein.
 
 ```xml
 <xsl:template match="teiHeader">
@@ -126,7 +127,7 @@ Weiters fügen wir das sogenannte “identity transform”-Template ein, um - zu
 </xsl:template>
 ```
 
-* **Anpassung des `facsimile`-Elements:** Im Transkribus-Export enthält das `facsimile`-Element 4 `surface`-Elemente, die jeweils einer Seite der in Transkribus importierten Faksimileseiten entsprechen. Diese haben `graphic`- und `zone`-Kindelemente, von denen wir nur erstere beibehalten wollen. Als Attribute fügen wir den `graphic`-Elementen noch einen Mime-Typ (“image/jpeg”) hinzu und eine XML-ID, die wir aus der Position der Elemente generieren lassen. 
+* **Anpassung des `facsimile`-Elements:** Im Transkribus-Export enthält das `facsimile`-Element vier `surface`-Elemente, die jeweils einer Seite der in Transkribus importierten Faksimileseiten unseres vierseitigen Briefes entsprechen. Diese haben wiederum `graphic`- und `zone`-Kindelemente, von denen wir nur erstere beibehalten wollen. Weiters verfügen die `surface`- und `graphic`-Elemente über eine Reihe von Attributen (wie z. B. die Angabe der Höhe und Breite der importierten Bilder), die wir nicht weiter benötigen und die durch unser Template entfernt werden. Als neue Attribute fügen wir den `graphic`-Elementen einen Mime-Typ (“image/jpeg”) hinzu und eine XML-ID, die wir mittels `position()` generieren lassen. 
 
 ```xml
 <xsl:template match="//facsimile">
@@ -141,10 +142,12 @@ Weiters fügen wir das sogenannte “identity transform”-Template ein, um - zu
             </surface>
         </xsl:for-each>
     </facsimile>
-</xsl:template
+</xsl:template>
 ```
 
-* **Bearbeitung der `ab`-Elemente:** Wir wollen die `ab`-Elemente durch `p`-Elemente ersetzen und auch deren `facs`- und alle im Dokument vorkommenden `type`-Attribute entfernen, da wir sie nicht benötigen und letztere außerdem, da sie leer sind, unser Dokument invalide machen.
+## 3. Transformation des transkribierten Briefs
+
+* **Bearbeitung der `ab`-Elemente:** Wir wollen die `ab`-Elemente durch `p`-Elemente ersetzen und auch deren `facs`- und ihre (bzw. alle im Dokument vorkommenden) `type`-Attribute entfernen, da wir sie hier nicht benötigen und letztere außerdem, da sie leer sind, dazu führen, dass unser Dokument nicht valide ist.
 
 ```xml
 <xsl:template match="ab">
@@ -154,26 +157,23 @@ Weiters fügen wir das sogenannte “identity transform”-Template ein, um - zu
 </xsl:template>
 	
 <xsl:template match="@type"/>
-
-<xsl:template match="lb/@facs"/>
 ```
 
-## Transformation des transkribierten Briefs
-
-* **Bearbeitung der `lb`-Elemente:** Auch bei den `lb`-Elementen möchten wir die `facs`-Attribute entfernen, zusätzlich wollen wir die Zählung der Zeilen im `n`-Attribut geringfügig anpassen (von n=”N001” → n=”1”)
+* **Bearbeitung der `lb`-Elemente:** Auch bei den `lb`-Elementen möchten wir die `facs`-Attribute entfernen, zusätzlich wollen wir die Zählung der Zeilen im `n`-Attribut geringfügig anpassen (von n=”N001” → n=”1”).
 
 ```xml
 <xsl:template match="lb/@facs"/>
-	<xsl:template match="lb">
-    	<xsl:copy>
-        	<xsl:attribute name="n">
-            	<xsl:value-of select="count(preceding-sibling::lb) + 1"/>
-        	</xsl:attribute>
-    	</xsl:copy>
+	
+<xsl:template match="lb">
+    <xsl:copy>
+        <xsl:attribute name="n">
+            <xsl:value-of select="count(preceding-sibling::lb) + 1"/>
+        	<xsl:attribute>
+    </xsl:copy>
 </xsl:template>
 ```
 
-* **Bearbeitung der `pb`-Elemente:** Hier passen wir zunächst das `facs`-Attribut an, sodass ein richtiger Verweis auf die Faksimiles gesichert ist. Dann kopieren wir alle weiteren Attribute außer dem `facs`-Element (in diesem Fall nur das `n`-Attribut) und entfernen in einem letzten Schritt noch alle `xml:id`-Attribute.
+* **Bearbeitung der `pb`-Elemente:** Hier passen wir zunächst das `facs`-Attribut an, sodass ein richtiger Verweis auf die Faksimiles gesichert ist. Dann kopieren wir alle weiteren Attribute außer dem neu erstellten `facs`-Element (in diesem Fall nur das `n`-Attribut) und entfernen in einem letzten Schritt noch alle `xml:id`-Attribute.
 
 ```xml
 <xsl:template match="pb">
@@ -189,9 +189,3 @@ Weiters fügen wir das sogenannte “identity transform”-Template ein, um - zu
 
 ```
 
-
-# Fazit
-
-
-
-* 
