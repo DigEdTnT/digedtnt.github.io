@@ -121,7 +121,7 @@ Bei der Übertragung der Metadaten wurden verschiedene Maßnahmen gesetzt:
 * **Entfernen von (vorerst) irrelevanten Elementen:** Einige der Elemente im FromThePage-Export wurden außerdem ignoriert und nicht in das neue DTA-XML überführt, da diese im Zuge der Edition eine unwesentliche Rolle spielen oder ohnehin am Ende des Projekts noch ergänzt werden müssen. Als nicht weiter relevante Information im TEI-Export von FromThePage wurden zum Beispiel Angaben zu Änderungen während der Transkription identifiziert. Aber auch die in den &lt;respStmt> enthaltenen Mitarbeitenden wurden nicht übernommen, da der teiHeader ohnehin am Ende des Projektes noch einmal überarbeitet werden muss.
 * **Hinzufügen von speziellen Inhalten für ediarum:** Damit es beim Importieren der XML-Dokumente in ediarum zu keinen Schwierigkeiten kommt, ist es außerdem notwendig, dass mit dem XSLT im &lt;TEI>-Element ein Attribut zur Namespace-Deklaration von telota sowie ein weiteres Attribut zur Dokumententypbestimmung eingefügt werden. In den für den ediarum-Import transformierten XML-Dokumenten sieht das &lt;TEI>-Element letztlich folgend aus: 
     ```xml 
-    <TEI xmlns="[http://www.tei-c.org/ns/1.0](http://www.tei-c.org/ns/1.0)" xmlns:xsi="[http://www.w3.org/2001/XMLSchema-instance](http://www.w3.org/2001/XMLSchema-instance)" xmlns:telota="[http://www.telota.de](http://www.telota.de)" xml:id="dtabf" telota:doctype="document"> 
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:telota="http://www.telota.de" xml:id="dtabf" telota:doctype="document"> 
     ```
     Dass das Attribut @telota:doctype einen Validierungsfehler hervorruft, muss vorerst ignoriert werden. 
 
