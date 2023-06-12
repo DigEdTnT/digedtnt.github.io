@@ -6,7 +6,7 @@ title: Transkribus → FairCopy
 
 categories: [transition, transkribus, faircopy, xslt]
 
-excerpt: Die Transition von Transkribus zu FairCopy umfasst die Transforamtion des TEI/XML-Exports von Transkribus mittels XSLT
+excerpt: Die Transition von Transkribus zu FairCopy umfasst die Transformation des TEI/XML-Exports von Transkribus mittels XSLT
 
 transitiondoc: .
 
