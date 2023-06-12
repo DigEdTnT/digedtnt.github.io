@@ -114,11 +114,16 @@ Auf Grundlage eines als gültig validierten [DTA-Metadatenbeispiels](https://git
 
 Bei der Übertragung der Metadaten wurden verschiedene Maßnahmen gesetzt:
 
-* **Übertragung von Inhalten:** Nach einer Gegenüberstellung des exportierten TEIs und dem DTABf-Beispiel wurden zuerst Inhalte wie Titel, Autor, Lizenzen sowie die Beschreibung des Manuskripts übernommen und in entsprechende zulässige bzw. obligatorische [Elemente im Header-Bereich](https://www.deutschestextarchiv.de/doku/basisformat/uebersichtHeader.html) des überführt.  \
+* **Übertragung von Inhalten:** Nach einer Gegenüberstellung des exportierten TEIs und dem DTABf-Beispiel wurden zuerst Inhalte wie Titel, Autor, Lizenzen sowie die Beschreibung des Manuskripts übernommen und in entsprechende zulässige bzw. obligatorische [Elemente im Header-Bereich](https://www.deutschestextarchiv.de/doku/basisformat/uebersichtHeader.html) des überführt.  
     {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/ftp-to-dta.png" description="Übertragung von Elementen in die DTABf-Struktur" %}
-* **Einfügen von Platzhaltern:** Einige obligatorische Felder im DTABf-XML, für die es keine entsprechenden Metadatenbeschreibungen im TEI-Export von FromThePage gibt, wurden schließlich mit beschreibenden Platzhaltern in eckigen Klammern gefüllt. Diese erfordern noch eine projektspezifische Anpassung.  \
+* **Einfügen von Platzhaltern:** Einige obligatorische Felder im DTABf-XML, für die es keine entsprechenden Metadatenbeschreibungen im TEI-Export von FromThePage gibt, wurden schließlich mit beschreibenden Platzhaltern in eckigen Klammern gefüllt. Diese erfordern noch eine projektspezifische Anpassung.  
     {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/placeholder.png" description="Einsatz von Platzhaltern, die nach der Transformation angepasst werden müssen" %}
 * **Entfernen von (vorerst) irrelevanten Elementen:** Einige der Elemente im FromThePage-Export wurden außerdem ignoriert und nicht in das neue DTA-XML überführt, da diese im Zuge der Edition eine unwesentliche Rolle spielen oder ohnehin am Ende des Projekts noch ergänzt werden müssen. Als nicht weiter relevante Information im TEI-Export von FromThePage wurden zum Beispiel Angaben zu Änderungen während der Transkription identifiziert. Aber auch die in den &lt;respStmt> enthaltenen Mitarbeitenden wurden nicht übernommen, da der teiHeader ohnehin am Ende des Projektes noch einmal überarbeitet werden muss.
+* **Hinzufügen von speziellen Inhalten für ediarum:** Damit es beim Importieren der XML-Dokumente in ediarum zu keinen Schwierigkeiten kommt, ist es außerdem notwendig, dass mit dem XSLT im &lt;TEI>-Element ein Attribut zur Namespace-Deklaration von telota sowie ein weiteres Attribut zur Dokumententypbestimmung eingefügt werden. In den für den ediarum-Import transformierten XML-Dokumenten sieht das &lt;TEI>-Element letztlich folgend aus: 
+    ```xml 
+    <TEI xmlns="[http://www.tei-c.org/ns/1.0](http://www.tei-c.org/ns/1.0)" xmlns:xsi="[http://www.w3.org/2001/XMLSchema-instance](http://www.w3.org/2001/XMLSchema-instance)" xmlns:telota="[http://www.telota.de](http://www.telota.de)" xml:id="dtabf" telota:doctype="document"> 
+    ```
+    Dass das Attribut @telota:doctype einen Validierungsfehler hervorruft, muss vorerst ignoriert werden. 
 
 **Einschränkungen**
 
