@@ -164,7 +164,7 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
     </td>
   </tr>
   <tr>
-    <td>Abkürzung <br/>(durch Verfasser:in des Originals)
+    <td>Abkürzung <br/>(durch Schreiber:in des Originals)
     </td>
     <td><strong>abbr:</strong><br/>
     &lt;abbr expan=””&gt;&lt;/abbr&gt;
@@ -189,7 +189,7 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
    </td>
   </tr>
   <tr>
-    <td>Ergänzung (durch Verfasser:in des Originals)
+    <td>Ergänzung (durch Schreiber:in des Originals)
     </td>
     <td><strong>add: </strong>
         <br/>
@@ -203,7 +203,7 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
     </td>
   </tr>
   <tr>
-    <td>Tilgung (durch Verfasser:in des Originals)
+    <td>Tilgung (durch Schreiber:in des Originals)
     </td>
     <td><strong>del:</strong>
     <br/>
