@@ -460,7 +460,7 @@ Bei der Transformation können einige Elemente in ihrer ursprünglichen Form erh
 </div>
 ```
 
-Die einzigen beiden Elemente, die in unserem Projekt im Textbereich für Probleme sorgen, sind Hinzufügungen (&lt;add>) sowie Tilgungen (&lt;del>) durch den/die ursprüngliche:n Verfasser:in. Denn während diese bei der Transkription in FromThePage keine Attribute erhalten haben, sind für das DTA-Basisformat Angaben zur Lokalisierung der Hinzufügung bzw. zur Art der Tilgung (Durchstreichen, Überschreiben, Radieren oder Auskratzen etc.) obligatorisch. 
+Die einzigen beiden Elemente, die in unserem Projekt im Textbereich für Probleme sorgen, sind Hinzufügungen (&lt;add>) sowie Tilgungen (&lt;del>) durch den/die ursprüngliche:n Schreiber:in. Denn während diese bei der Transkription in FromThePage keine Attribute erhalten haben, sind für das DTA-Basisformat Angaben zur Lokalisierung der Hinzufügung bzw. zur Art der Tilgung (Durchstreichen, Überschreiben, Radieren oder Auskratzen etc.) obligatorisch. 
 {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/del-add.png" description="Probleme bei der Überführung einzelner Elemente ins DTA-Basisformat" %}
 Da wir über diese Informationen aber nicht verfügen und daher die Manuskripte erneut durchgehen müssten, belassen wir das transformierte XML vorerst ohne Attribute und widmen uns diesem Problem bei der Annotation in ediarum. 
 
