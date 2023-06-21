@@ -70,7 +70,7 @@ FromThePage zeichnet sich nicht nur darin aus, dass man bereits mit minimalen Co
 * API für die automatisierte Veröffentlichung bei Fertigstellung einer Transkription
 
 
-Weitere und technische Übersicht: siehe [Factsheet zum Tool](#factsheet-zum-tool)
+Weitere Details und technische Übersicht: siehe [Factsheet zum Tool](#factsheet-zum-tool)
 
 
 ## Voraussetzungen
