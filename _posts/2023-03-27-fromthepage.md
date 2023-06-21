@@ -89,7 +89,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
     * Grundkenntnisse von Markup-Sprachen (HTML, TEI, MediaWiki)
 
 
-### Technische Voraussetzungen (Software)
+### Benötigte Software
 
 * Stabile Internetverbindung
 * Webbrowser
@@ -815,9 +815,9 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
 * Blickhan, S., Krawczyk, C., Hanson, D., Boyer, A., Simenstad, A., & Hyning, V. van. (2019). Individual vs. Collaborative Methods of Crowdsourced Transcription. Journal of Data Mining and Digital Humanities, Special Issue on Collecting, Preserving, and Disseminating Endangered Cultural Heritage for New Understandings through Multilingual Approaches. https://doi.org/10.46298/jdmdh.5759
 * Brumfield, B. (o. J.). Collaborative Manuscript Transcription [Blog]. Collaborative Manuscript Transcription. Abgerufen 3. Mai 2023, von http://manuscripttranscription.blogspot.com/
 * Brumfield, B. (2012, Januar 7). FromThePage: A Web-Based Tool for Transcribing, Indexing, and Annotating Handwritten Material. 126th Annual Meeting American Historical Association, Chicago.
-* Brumfield, B. (2020, Januar 9). The Decade in Crowdsourcing Transcription | FromThePage Blog. From the Page. https://content.fromthepage.com/decade-in-crowdsourcing/
+* Brumfield, B. (2020, Januar 9). The Decade in Crowdsourcing Transcription. FromThePage Blog. From the Page. https://content.fromthepage.com/decade-in-crowdsourcing/
 * Causer, T., Tonra, J., & Wallace, V. (2012). Transcription maximized; expense minimized? Crowdsourcing and editing The Collected Works of Jeremy Bentham. Literary and Linguistic Computing, 27(2), 119–137. https://doi.org/10.1093/llc/fqs004
-Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Value of Crowdsourced, User-Generated Metadata [DHQ: Digital Humanities Quarterly:]. Abgerufen 24. September 2015, von http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html
+* Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Value of Crowdsourced, User-Generated Metadata [DHQ: Digital Humanities Quarterly:]. Abgerufen 24. September 2015, von http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html
 * del Rio Riande, G., Hernández, N., & De León, R. (2018, November). Manos en la masa (textual): Introducción al editatón colaborativo con FromThePage. III Congreso Internacional de la Asociación de Humanidades Digitales (AAHD). La cultura de los datos, Rosario, Santa Fe. http://hdl.handle.net/2133/13460
 * Finke, P., & Laszlo, E. (2014). Citizen Science: Das unterschätzte Wissen der Laien. oekom verlag.
 * Guzman, A. (2019, September 27). Challenges in Multilingual Transcription: An Overview of FromThePage and This Panel. Digital Frontiers Anual Conference, Austin, Texas. https://digital.library.txstate.edu/handle/10877/9479
