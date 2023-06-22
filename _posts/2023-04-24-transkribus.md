@@ -451,41 +451,7 @@ Siehe Slides Workshop vom 23./24. Februar
 
 <table>
   <tr>
-   <td colspan="2" ><strong>Tool</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Tool-Name</strong>
-   </td>
-   <td>Transkribus Lite
-   </td>
-  </tr>
-  <tr>
-   <td><strong>URI</strong>
-   </td>
-   <td><a href="https://app.transkribus.eu/">https://app.transkribus.eu/</a>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Letzter Zugriff</strong>
-   </td>
-   <td>22.06.2023
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Reviewer:in</strong>
-   </td>
-   <td>Georg Maximilian Reiter
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Scope</strong>
-   </td>
-   <td>Review als Tool-Nutzer
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>System</strong>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>System</strong>
    </td>
   </tr>
   <tr>
@@ -496,7 +462,6 @@ Siehe Slides Workshop vom 23./24. Februar
   </tr>
   <tr>
    <td><strong>Softwareumgebung/Softwaretyp</strong> 
-<p>
 (Remotesystem im Browser / Lokaler Client)
    </td>
    <td>Browser-Anwendung/ \
@@ -529,19 +494,15 @@ web-basiert
   </tr>
   <tr>
    <td><strong>Kostenmodell</strong> 
-<p>
 (Kostenübersicht/Open Source)
    </td>
    <td>Layouterkennung und Training von Layout- und Texterkennungsmodellen, Upload, manuelle Transkription, Anreicherung und Download der Daten kostenfrei
-<p>
 Creditsystem für automatische Texterkennung (1 Credit = 1 handgeschriebene Seite oder 1 Credit = 6 gedruckte Seiten)
-<p>
 500 Credits bei Registrierung kostenlos (= 500 handgeschriebene oder 3000 gedruckte Seiten) \
-
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Anforderungen & Methoden</strong>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Anforderungen & Methoden</strong>
    </td>
   </tr>
   <tr>
@@ -564,7 +525,6 @@ Creditsystem für automatische Texterkennung (1 Credit = 1 handgeschriebene Seit
   </tr>
   <tr>
    <td><strong>Inkludierte Datenkonvertierung</strong>
-<p>
 (Im Preprocessing mögliche Anpassung der Daten an für die Software erforderliches Format )
    </td>
    <td>❌
@@ -584,7 +544,7 @@ Creditsystem für automatische Texterkennung (1 Credit = 1 handgeschriebene Seit
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Dokumentation und Support</strong>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Dokumentation und Support</strong>
    </td>
   </tr>
   <tr>
@@ -627,7 +587,6 @@ Creditsystem für automatische Texterkennung (1 Credit = 1 handgeschriebene Seit
    <td><strong>Verfügbarkeit von Tutorials</strong>
    </td>
    <td>✅ Schritt-für-Schritt-Anleitungen (HelpCenter, How-to-Guides), 
-<p>
 instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href="https://www.youtube.com/@transkribus/">YouTube</a> verfügbar  
    </td>
   </tr>
@@ -639,7 +598,7 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Nutzbarkeit & Nachhaltigkeit</strong>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Nutzbarkeit & Nachhaltigkeit</strong>
    </td>
   </tr>
   <tr>
@@ -650,7 +609,6 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
   </tr>
   <tr>
    <td><strong>Test</strong>
-<p>
 (Gibt es ein Test Suite, um zu überprüfen, ob die Installation erfolgreich war?)
    </td>
    <td>[nicht anwendbar]
@@ -675,12 +633,11 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Benutzerinteraktion & Benutzeroberfläche</strong>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Benutzerinteraktion & Benutzeroberfläche</strong>
    </td>
   </tr>
   <tr>
    <td><strong>Benutzerprofil</strong>
-<p>
 (Erwartete Nutzer:innen)
    </td>
    <td>Primär GeWi-Forschungsinstitutionen und Forschende als Tool-Nutzende
@@ -688,7 +645,6 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
   </tr>
   <tr>
    <td><strong>Benutzerinteraktion</strong>
-<p>
 (erwartete Nutzung)
    </td>
    <td>Anlegen von Sammlungen und Dokumenten, Hochladen von Dateien, KI-gestützte Layout- und Texterkennung, Training von Layout- und Texterkennungsmodellen, Anreicherung von Texten
@@ -702,14 +658,13 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
   </tr>
   <tr>
    <td><strong>Visualisierungen </strong>
-<p>
 (Analyse-, Input-, Outputkonfigurationen)
    </td>
    <td>❌
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Benutzerverwaltung</strong>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Benutzerverwaltung</strong>
    </td>
   </tr>
   <tr>
@@ -726,7 +681,7 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Daten- und Toolverwaltung</strong>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Daten- und Toolverwaltung</strong>
    </td>
   </tr>
   <tr>
@@ -743,7 +698,6 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
   </tr>
   <tr>
    <td><strong>Projektspezifische Einstellungen</strong>
-<p>
 (eigene Metadaten, Tags anlegbar etc.)
    </td>
    <td>✅
@@ -762,7 +716,7 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Datenupload</strong>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Datenupload</strong>
    </td>
   </tr>
   <tr>
@@ -802,12 +756,11 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Datenbearbeitung (Transkriptionstool)</strong>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Datenbearbeitung (Transkriptionstool)</strong>
    </td>
   </tr>
   <tr>
    <td><strong>Komplexitätsgrad beim Mark-Up</strong> 
-<p>
 (z.B. Verfügbarkeit von Buttons, Drag&Drop-Funktion)
    </td>
    <td>Strukturtags (Faksimilie) und Texttags, Formatauszeichnung (fett, kursiv usw.)
@@ -839,7 +792,6 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
   </tr>
   <tr>
    <td><strong>Layoutmöglichkeiten</strong> 
-<p>
 (z.B. Tabellendarstellung, Spalten wie in Zeitschriften …)
    </td>
    <td>❌
@@ -859,7 +811,6 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
   </tr>
   <tr>
    <td><strong>Ansichtsmöglichkeiten </strong>
-<p>
 (z. B. Bearbeitungsansicht, Vorschau, Synopsen-Ansicht …)
    </td>
    <td>Bild-Texteditor-Synopse
@@ -872,7 +823,7 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong>Datenexport</strong>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Datenexport</strong>
    </td>
   </tr>
   <tr>
@@ -883,7 +834,6 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
   </tr>
   <tr>
    <td><strong>Datenverlust </strong>
-<p>
 (nicht vollständiger Erhalt von Annotationen, die bereits vor Verwendung des Tools gemacht wurden)
    </td>
    <td>[nicht anwendbar]
