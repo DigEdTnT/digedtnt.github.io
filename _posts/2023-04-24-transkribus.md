@@ -446,7 +446,7 @@ Siehe Slides Workshop vom 23./24. Februar
 * Thompson, W. (2021). Using Handwritten Text Recognition (HTR) Tools to Transcribe Historical Multilingual Lexica. Scripta &amp; e-Scripta, 21, 217–231.
 * Vukčević, M. M. (2020). Turns of the centuries. The Transkribus automated tool for recognition, transcription and translation of handwritten historical documents: A German-Serbian case study. Babel. Revue Internationale de La Traduction / International Journal of Translation, 66(2), 294–310. https://doi.org/10.1075/babel.00159.vuk
 
-# Factsheet
+# Factsheet zum Tooldoc
 
 
 <table>
@@ -464,8 +464,7 @@ Siehe Slides Workshop vom 23./24. Februar
    <td><strong>Softwareumgebung/Softwaretyp</strong> 
 (Remotesystem im Browser / Lokaler Client)
    </td>
-   <td>Browser-Anwendung/ \
-web-basiert
+   <td>Browser-Anwendung/web-basiert
    </td>
   </tr>
   <tr>
@@ -498,7 +497,7 @@ web-basiert
    </td>
    <td>Layouterkennung und Training von Layout- und Texterkennungsmodellen, Upload, manuelle Transkription, Anreicherung und Download der Daten kostenfrei
 Creditsystem für automatische Texterkennung (1 Credit = 1 handgeschriebene Seite oder 1 Credit = 6 gedruckte Seiten)
-500 Credits bei Registrierung kostenlos (= 500 handgeschriebene oder 3000 gedruckte Seiten) \
+500 Credits bei Registrierung kostenlos (= 500 handgeschriebene oder 3000 gedruckte Seiten)
    </td>
   </tr>
   <tr>
@@ -531,7 +530,7 @@ Creditsystem für automatische Texterkennung (1 Credit = 1 handgeschriebene Seit
    </td>
   </tr>
   <tr>
-   <td><strong>Abhängigkeit von anderer Software \
+   <td><strong>Abhängigkeit von anderer Software
 </strong>(Falls ja, wird diese Software automatisch mitinstalliert?)
    </td>
    <td>❌
@@ -591,7 +590,7 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
    </td>
   </tr>
   <tr>
-   <td><strong>Aktiver Support/Community  \
+   <td><strong>Aktiver Support/Community
 </strong>(Forum, Slack, Issue Tracker etc.) 
    </td>
    <td>✅ Kontaktformular, aktive, aber nicht von Transkribus administrierte <a href="https://www.facebook.com/groups/614090738935143/">Facebook-Gruppe</a>
@@ -674,7 +673,7 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
    </td>
   </tr>
   <tr>
-   <td><strong>Interne Kommunikationsmöglichkeiten  \
+   <td><strong>Interne Kommunikationsmöglichkeiten
 </strong>(z. B. Annotationsrichtlinien, Kommentarfunktionen …) 
    </td>
    <td>❌
