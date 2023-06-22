@@ -6,6 +6,8 @@ title: Transkribus Lite
 
 categories: [tool, text recognition, layout recognition, transcription, annotation, Transkribus Lite, TEI]
 
+factsheet: "https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_2/transkribus/data/DigEdTnT_FactSheet_Transkribus.pdf"
+
 excerpt: Transkribus Lite ist eine Plattform für KI-gestützte Layout- und Texterkennung
 
 last_modified_at:   2023-05-03
