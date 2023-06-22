@@ -445,3 +445,460 @@ Siehe Slides Workshop vom 23./24. Februar
 * Spina, S. (2022). The Biscari Archive. A case study of the application of Transkribus tool (arXiv:2210.14498). arXiv. https://doi.org/10.48550/arXiv.2210.14498
 * Thompson, W. (2021). Using Handwritten Text Recognition (HTR) Tools to Transcribe Historical Multilingual Lexica. Scripta &amp; e-Scripta, 21, 217–231.
 * Vukčević, M. M. (2020). Turns of the centuries. The Transkribus automated tool for recognition, transcription and translation of handwritten historical documents: A German-Serbian case study. Babel. Revue Internationale de La Traduction / International Journal of Translation, 66(2), 294–310. https://doi.org/10.1075/babel.00159.vuk
+
+# Factsheet
+
+
+<table>
+  <tr>
+   <td colspan="2" ><strong>Tool</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Tool-Name</strong>
+   </td>
+   <td>Transkribus Lite
+   </td>
+  </tr>
+  <tr>
+   <td><strong>URI</strong>
+   </td>
+   <td><a href="https://app.transkribus.eu/">https://app.transkribus.eu/</a>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Letzter Zugriff</strong>
+   </td>
+   <td>22.06.2023
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Reviewer:in</strong>
+   </td>
+   <td>Georg Maximilian Reiter
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Scope</strong>
+   </td>
+   <td>Review als Tool-Nutzer
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>System</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Scope des Tools</strong>
+   </td>
+   <td>Primär KI-gestützte Layout- und Texterkennung von gedruckten und handgeschriebenen Texten, Training von Layout- und Texterkennungsmodellen.  Annotationen mit Einschränkungen möglich
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Softwareumgebung/Softwaretyp</strong> 
+<p>
+(Remotesystem im Browser / Lokaler Client)
+   </td>
+   <td>Browser-Anwendung/ \
+web-basiert
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützte Plattformen</strong>
+   </td>
+   <td>Windows, Linux, Mac
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Geräte</strong>
+   </td>
+   <td>Desktop
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Einbindung anderer Systeme (Interoperabilität)</strong>
+   </td>
+   <td>❌(Private FTP, IIIF Manifest und DFG Viewer METS derzeit nur bei Transkribus eXpert)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Accountsystem</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Kostenmodell</strong> 
+<p>
+(Kostenübersicht/Open Source)
+   </td>
+   <td>Layouterkennung und Training von Layout- und Texterkennungsmodellen, Upload, manuelle Transkription, Anreicherung und Download der Daten kostenfrei
+<p>
+Creditsystem für automatische Texterkennung (1 Credit = 1 handgeschriebene Seite oder 1 Credit = 6 gedruckte Seiten)
+<p>
+500 Credits bei Registrierung kostenlos (= 500 handgeschriebene oder 3000 gedruckte Seiten) \
+
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Anforderungen & Methoden</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Erforderte Code Literacy</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Interface-Sprachen (ISO 639-1)</strong>
+   </td>
+   <td>de, en, es, et, fi, fr, it, nl, pl, pt, sl, sv
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützte Zeichenkodierung</strong>
+   </td>
+   <td>UTF-8
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Inkludierte Datenkonvertierung</strong>
+<p>
+(Im Preprocessing mögliche Anpassung der Daten an für die Software erforderliches Format )
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Abhängigkeit von anderer Software \
+</strong>(Falls ja, wird diese Software automatisch mitinstalliert?)
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Erforderliche Plug-Ins </strong>(bei web-basierten Anwendungen)
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Dokumentation und Support</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Wartung und ständige Erweiterung</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Einbindung der Community</strong>
+   </td>
+   <td>✅ Privatpersonen und Institutionen können Mitglied der Genossenschaft READ-COOP SCE und damit Miteigentümer des Unternehmens werden (Vorteile: Rabatte, 500 freie Credits pro Jahr, Erhalt privilegierter Informationen, Stimmrecht u. a.)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dokumentation</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dokumentationssprache</strong>
+   </td>
+   <td>HelpCenter (Englisch, Deutsch, Italienisch), How-to-Guides (Englisch), Glossar (Englisch), FAQ (Englisch, Deutsch, Italienisch)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dokumentationsformat</strong>
+   </td>
+   <td>HTML
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dokumentationsabschnitte</strong>
+   </td>
+   <td>Ausführliche Dokumentation im <a href="https://help.transkribus.com/">HelpCenter</a> (Erste Schritte, Texterkennung, Layouterkennung, Händisch transkribieren, Modelltraining, Tagging, Suchen, Verwalten, Herunterladen), <a href="https://readcoop.eu/transkribus/resources/how-to-guides/">How-to-Guides</a>, <a href="https://readcoop.eu/glossary/">Glossar</a>, <a href="https://readcoop.eu/transkribus/questions/">FAQ</a> 
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Verfügbarkeit von Tutorials</strong>
+   </td>
+   <td>✅ Schritt-für-Schritt-Anleitungen (HelpCenter, How-to-Guides), 
+<p>
+instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href="https://www.youtube.com/@transkribus/">YouTube</a> verfügbar  
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Aktiver Support/Community  \
+</strong>(Forum, Slack, Issue Tracker etc.) 
+   </td>
+   <td>✅ Kontaktformular, aktive, aber nicht von Transkribus administrierte <a href="https://www.facebook.com/groups/614090738935143/">Facebook-Gruppe</a>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Nutzbarkeit & Nachhaltigkeit</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Installationsablauf</strong>
+   </td>
+   <td>keine Installation nötig
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Test</strong>
+<p>
+(Gibt es ein Test Suite, um zu überprüfen, ob die Installation erfolgreich war?)
+   </td>
+   <td>[nicht anwendbar]
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Lizenz, unter der das Tool veröffentlicht wurde</strong>
+   </td>
+   <td>Proprietäre Software
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Registrierung in einem Repository</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Möglichkeit, zur Software-Entwicklung beizutragen</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Benutzerinteraktion & Benutzeroberfläche</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Benutzerprofil</strong>
+<p>
+(Erwartete Nutzer:innen)
+   </td>
+   <td>Primär GeWi-Forschungsinstitutionen und Forschende als Tool-Nutzende
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Benutzerinteraktion</strong>
+<p>
+(erwartete Nutzung)
+   </td>
+   <td>Anlegen von Sammlungen und Dokumenten, Hochladen von Dateien, KI-gestützte Layout- und Texterkennung, Training von Layout- und Texterkennungsmodellen, Anreicherung von Texten
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Benutzeroberfläche</strong>
+   </td>
+   <td>Webbasiertes GUI
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Visualisierungen </strong>
+<p>
+(Analyse-, Input-, Outputkonfigurationen)
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Benutzerverwaltung</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Personenverwaltung</strong>
+   </td>
+   <td>✅Hinzufügen/Einschränkung von Mitarbeitenden möglich
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Interne Kommunikationsmöglichkeiten  \
+</strong>(z. B. Annotationsrichtlinien, Kommentarfunktionen …) 
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Daten- und Toolverwaltung</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Zentrale/dezentrale Verwaltungsmöglichkeit</strong>
+   </td>
+   <td>✅ Mehrere Sammlungseigentümer:innen möglich möglich
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Versionskontrolle</strong>
+   </td>
+   <td>✅ Bei den einzelnen transkribierten Seiten
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Projektspezifische Einstellungen</strong>
+<p>
+(eigene Metadaten, Tags anlegbar etc.)
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>API</strong>
+   </td>
+   <td>✅ MetagraphoAPI
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Möglichkeit des simultanen Arbeitens</strong>
+   </td>
+   <td>✅ Nicht simultan an einzelnen Seiten, aber Dokumenten und Sammlungen
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Datenupload</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützte Dateiformate</strong>
+   </td>
+   <td>Bilder (JPEG, PNG) oder PDFs
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Informationen zur Datensicherheit</strong>
+   </td>
+   <td>Alle hochgeladenen Dokumente sind standardmäßig privat. Die Daten werden auf Servern in Innsbruck (Österreich) in DSGVO-konformer Weise gespeichert und können gemäß den <a href="https://readcoop.eu/terms-and-conditions/">Terms & Conditions</a> der READ-COOP SCE verarbeitet werden
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Zugänglichkeit von verschiedenen Standorten/Geräten</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Einschränkungen hinsichtlich der Datenmenge</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Verlustfreier Upload von bereits bearbeiteten Dokumenten </strong>
+   </td>
+   <td>[nicht anwendbar, da noch keine Annotation stattgefunden hat]
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützung von IIIF-Import</strong>
+   </td>
+   <td>❌ (derzeit IIIF Manifest nur in Transkribus eXpert unterstützt)
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Datenbearbeitung (Transkriptionstool)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Komplexitätsgrad beim Mark-Up</strong> 
+<p>
+(z.B. Verfügbarkeit von Buttons, Drag&Drop-Funktion)
+   </td>
+   <td>Strukturtags (Faksimilie) und Texttags, Formatauszeichnung (fett, kursiv usw.)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Standardeinstellungen entsprechend bestimmten Standards für Digitale Editionen </strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Anpassungsmöglichkeit und Validierung entsprechend projektspezifischen Konventionen/Schemata</strong>
+   </td>
+   <td>✅ Tags an TEI anpassbar, allerdings keine Validierungsmöglichkeit
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Definition eigener/projektspezifischer Tags</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Metadaten-Anreicherung</strong>
+   </td>
+   <td>✅ (Sammlungs- und Dokumentmetadaten)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Layoutmöglichkeiten</strong> 
+<p>
+(z.B. Tabellendarstellung, Spalten wie in Zeitschriften …)
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Eigene Indexierung </strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Möglichkeit von Textvergleich bzw. Arbeit an Variantenapparat</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Ansichtsmöglichkeiten </strong>
+<p>
+(z. B. Bearbeitungsansicht, Vorschau, Synopsen-Ansicht …)
+   </td>
+   <td>Bild-Texteditor-Synopse
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Verlinkung von Entitäten, NER</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Datenexport</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützte Dateiformate</strong>
+   </td>
+   <td>PAGE XML, ALTO XML, TEI XML, PDF (Bild- und Transkriptionslayer), Docx, Tags XLSX, Table XLSX
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Datenverlust </strong>
+<p>
+(nicht vollständiger Erhalt von Annotationen, die bereits vor Verwendung des Tools gemacht wurden)
+   </td>
+   <td>[nicht anwendbar]
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Validierungsmöglichkeit für TEI-XML vor Export</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Datenaufbewahrung nach Export</strong>
+   </td>
+   <td>Sammlungen, in denen 120 keine Aktivität stattfand, werden archiviert und an die Eigentümer:innen wird ein Mail versandt. Finden dann innerhalb der nächsten 21 Tag keine Aktivitäten statt, werden die Sammlungen gelöscht
+   </td>
+  </tr>
+</table>
