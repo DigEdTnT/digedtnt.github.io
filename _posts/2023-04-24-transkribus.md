@@ -6,6 +6,8 @@ title: Transkribus Lite
 
 categories: [tool, text recognition, layout recognition, transcription, annotation, Transkribus Lite, TEI]
 
+factsheet: "https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_2/transkribus/data/DigEdTnT_FactSheet_Transkribus.pdf"
+
 excerpt: Transkribus Lite ist eine Plattform für KI-gestützte Layout- und Texterkennung
 
 last_modified_at:   2023-05-03
@@ -208,7 +210,7 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 
 ## 2. Transkribus Lite - Benutzeroberfläche
-* **Dashboard:** Nach dem Einloggen findet man sich im Transkribus-Lite-Dashboard wieder. Hier können die Tabs “Workdesk” und Training ausgewählt werden, wobei per default “Workdesk” selektiert ist.
+* **Dashboard:** Nach dem Einloggen findet man sich im Transkribus-Lite-Dashboard wieder. Hier können die Tabs “Workdesk” und “Training” ausgewählt werden, wobei per default “Workdesk” selektiert ist.
     * **“Workdesk” (Abb. 3: a):** Der Workdesk ist die Arbeitsumgebung, die Zugang zu den elementaren Funktionen von Transkribus bietet: 
         * Linke Menüleiste: “Tools” (Abb. X - c) (“Text-Erkennung”, “Sammlung erstellen”, “Hochladen”, “Hilfe”) und “Transkribus Organizer” (Abb. 3: d) (“Sammlungen”, “Jobs”, “Tag Manager”, “Aktuelle Dokumente”) 
         * Rechte Menüleiste: Schnelle Texterkennung und Übersicht über das Creditsaldo (Abb. 3: e)
@@ -227,7 +229,7 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 
 ## 4.  Erste Aktionen innerhalb einer Sammlung
-* **Upload von Dokumenten:** Wir navigieren nun über die linke Toolbar, bei der wir auf “Sammlungen” klicken, zur neu angelegten Sammlung. Die erste Aktion innerhalb einer Sammlung ist das Hochladen von Dokumenten, die in weiterer Folge transkribiert oder auf die die Layout- und Texterkennung angewandt werden. Ein Dokument ist in Transkribus Lite eine Menge an Bildern, die in einem bestimmten Zusammenhang stehen (z. B. ein Manuskript, ein Vertrag, ein Brief). Möglich ist der Upload von Bildern (JPEG/PNG) oder PDFs. Alle gemeinsam hochgeladenen Dateien werden als ein einzelnes Dokument angesehen, jedes einzelne Bild bzw. jede Seite eines PDFs wird zu einer Seite des Dokuments. Für unsere Zwecke ist jeder Brief Schuchardts, der aus mehreren Bildern besteht, ein Dokument, deshalb laden wir die jeweils zusammengehörigen Bilddateien separat hoch (“H1_1” bis “H1_4”, “H2_1 bis “H2_6” usw.). Wir geben den einzelnen Dokumenten die Namen “Brief 1”, “Brief 2” usw. Durch einen Klick auf die drei Punkte kann der Dokumentname nachträglich geändert werden, ebenso können Metadaten wie etwa “Autor” hinzugefügt werden.
+* **Upload von Dokumenten:** Wir navigieren nun über die linke Toolbar, bei der wir auf “Sammlungen” klicken, zur neu angelegten Sammlung. Die erste Aktion innerhalb einer Sammlung ist das Hochladen von Dokumenten, die in weiterer Folge transkribiert oder auf die die Layout- und Texterkennung angewandt werden. Ein Dokument ist in Transkribus Lite eine Menge an Bildern, die in einem bestimmten Zusammenhang stehen (z. B. ein Manuskript, ein Vertrag, ein Brief). Möglich ist der Upload von Bildern (JPEG/PNG) oder PDFs. Alle gemeinsam hochgeladenen Dateien werden als ein einzelnes Dokument angesehen, jedes einzelne Bild bzw. jede Seite eines PDFs wird zu einer Seite des Dokuments. Für unsere Zwecke ist jeder Brief Schuchardts, der aus mehreren Bildern besteht, ein Dokument, deshalb laden wir die jeweils zusammengehörigen Bilddateien separat hoch (“H1_1” bis “H1_4”, “H2_1 bis “H2_18” usw.). Wir geben den einzelnen Dokumenten die Namen “Brief 1”, “Brief 2” usw. Durch einen Klick auf die drei Punkte kann der Dokumentname nachträglich geändert werden, ebenso können Metadaten wie etwa “Autor” hinzugefügt werden.
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/upload_documents.jpg" description="Hochladen von Dokumenten" %}
 
@@ -269,7 +271,8 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 
 
-* Da es also kein geeignetes öffentliches Modell gibt, das mit einer für uns annehmbaren CER die Briefe Hugo Schuchardts transkribiert, werden wir ein eigenes Modell trainieren, um seine Briefe optimal transkribieren zu können.
+* Die Texterkennung mittels des Modells "Trankribus German handwriting M1" fallen zwar nicht sehr schlecht aus, dennoch wollen wir erproben, ob es möglich ist, ein eigenes Modell zu trainieren, mit dem die Briefe Schuchardts mit einer möglichst niedrigen CER transkribiert werden können.
+  
 ## 6. Training eines Texterkennungsmodells
 
 * Zum Erstellen von Trainingsdaten gibt es, wie es im Flowchart ersichtlich ist, also 2 Wege:
@@ -295,15 +298,28 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 
 
-* In den nächsten beiden Schritten müssen die Dokumente bzw. Seiten unserer Sammlung, mit denen wir unser Modell trainieren, in ein “Training Set” und ein “Validation Set” aufgeteilt werden. Das Training Set umfasst jene Menge an Material, mit denen das Modell trainiert wird. Die Dokumente des Validation Set werden nicht im Training berücksichtigt, sondern dazu verwendet, die Genauigkeit des Modells zu überprüfen.
-* Zunächst wählen wir die Trainingsdaten aus. Hier können wir die Dokumente gesamt auswählen oder uns für einzelne Seiten innerhalb der Dokumente entscheiden. Wir wählen Brief 1 bis 6 aus, da wir so die von Transkribus empfohlene Anforderung von mindestens 10.000 transkribierten Wörtern bei handgeschriebenen Texten erreichen und klicken auf “Weiter”.
-* Im nächsten Schritt wählen wir die Validierungsdaten aus. Die Validierungsdaten sollten nach Empfehlungen von Transkribus 10 % der Trainingsdaten umfassen und repräsentativ für die Dokumente in unserer Sammlung sein, denn sonst könnte es zu einem Bias bei der Messung der Performance des Modells kommen. Die Dokumente bzw. Seiten für die Validierungsdaten können händisch ausgewählt oder automatisch (2 %, 5 % oder 10 %) zugewiesen werden. Nur Seiten, die nicht bereits den Trainingsdaten zugewiesen wurden, können ausgewählt werden. Wir folgen den Empfehlungen von Transkribus und entscheiden uns für eine automatische Zuweisung von 10 % und klicken auf “Weiter”.
+* **Auswahl der Trainings- und Validierungsdaten:** In den nächsten beiden Schritten müssen die Dokumente bzw. Seiten unserer Sammlung, mit denen wir unser Modell trainieren, in ein “Training Set” und ein “Validation Set” aufgeteilt werden. Das Training Set umfasst jene Menge an Material, mit denen das Modell trainiert wird. Die Dokumente des Validation Set werden nicht im Training berücksichtigt, sondern dazu verwendet, die Genauigkeit des Modells zu überprüfen.
+  * Zunächst wählen wir die Trainingsdaten aus. Hier können wir die Dokumente gesamt auswählen oder uns für einzelne Seiten innerhalb der Dokumente entscheiden. Wir wählen Brief 1 bis 18 aus, da wir so die von Transkribus empfohlene Anforderung von mindestens 10.000 transkribierten Wörtern bei handgeschriebenen Texten erreichen und klicken auf “Weiter”.
+  * Im nächsten Schritt wählen wir die Validierungsdaten aus. Die Validierungsdaten sollten nach Empfehlungen von Transkribus 10 % der Trainingsdaten umfassen und repräsentativ für die Dokumente in unserer Sammlung sein, denn sonst könnte es zu einem Bias bei der Messung der Performance des Modells kommen. Die Dokumente bzw. Seiten für die Validierungsdaten können händisch ausgewählt oder automatisch (2 %, 5 % oder 10 %) zugewiesen werden. Nur Seiten, die nicht bereits den Trainingsdaten zugewiesen wurden, können ausgewählt werden. Wir folgen den Empfehlungen von Transkribus und entscheiden uns für eine automatische Zuweisung von 10 % und klicken auf “Weiter”.
 * **Erweiterte Einstellungen:** In der letzten Ansicht vor dem Start des Trainings sehen auf einer Seite nochmals die Metadaten unseres Modells und können sie gegebenenfalls ändern, ebenso werden die ausgewählten Trainings- und Validierungsdaten nochmals gegenübergestellt angezeigt. Darunter findet sich ein mit “Erweitert” betitelter Reiter, der noch einige Einstellungen verbirgt:
-    * **Anzahl an “Epochs”:** Zunächst können wir die Anzahl an ‘Epochen’ (“Epochs”) verändern, die standardmäßig auf 250 eingestellt ist. Diese Zahl gibt an, wie oft Trainings- und Validierungsset maximal evaluiert werden. Das Training wird automatisch gestoppt, wenn die niedrigstmögliche Zeichenfehlerrate (“Character Error Rate” (CER)) erreicht wurde. Transkribus empfiehlt, zunächst den Wert auf 250 zu belassen.
-    * **Early Stopping:** Weiters können wir den “Early Stopping”-Parameter modifizieren, der standardmäßig auf 20 eingestellt ist. Ein Wert von 20 bedeutet, dass, falls nach 20 Epochen die CER nicht mehr sinkt, das Training beendet wird. Transkribus empfiehlt an diesem Punkt ein heterogenes Validierungsset, das repräsentativ für das Trainingsset ist, da sonst das Training zu früh abbrechen könnte. Außerdem wird empfohlen, diesen Wert nur dann zu erhöhen, wenn das Validierungsset klein ist, um zu verhindern, dass das Training abgebrochen wird, bevor das Modell alle Trainingsdaten verarbeitet hat. Auch hier empfiehlt Transkribus, den Wert zunächst einmal beizubehalten.
-    * **Auswahl eines Basismodells:** Wir können auch ein Basismodell auswählen, das als Ausgangspunkt für das Training verwendet werden soll, was bedeuten würde, dass das Modell nicht von Grund auf lernen muss. Wird mit einem Basismodell trainiert, genügen möglicherweise weniger Trainingsdaten. Es ist allerdings nicht immer garantiert, dass die Verwendung eines Basismodells zu besseren Ergebnissen führt, sondern es muss im spezifischen Fall getestet werden. 
-    * **“Reverse Text (RTL)”:** Zuletzt könnten wir noch wir noch “Reverse Text (RTL)” auswählen, falls die Schreibrichtung unseres Materials von rechts nach links ist.
+   * **Anzahl an “Epochs”:** Zunächst können wir die Anzahl an ‘Epochen’ (“Epochs”) verändern, die standardmäßig auf 250 eingestellt ist. Diese Zahl gibt an, wie oft Trainings- und Validierungsset maximal evaluiert werden. Das Training wird automatisch gestoppt, wenn die niedrigstmögliche Zeichenfehlerrate (“Character Error Rate” (CER)) erreicht wurde. Transkribus empfiehlt, zunächst den Wert auf 250 zu belassen.
+   * **Early Stopping:** Weiters können wir den “Early Stopping”-Parameter modifizieren, der standardmäßig auf 20 eingestellt ist. Ein Wert von 20 bedeutet, dass, falls nach 20 Epochen die CER nicht mehr sinkt, das Training beendet wird. Transkribus empfiehlt an diesem Punkt ein heterogenes Validierungsset, das repräsentativ für das Trainingsset ist, da sonst das Training zu früh abbrechen könnte. Außerdem wird empfohlen, diesen Wert nur dann zu erhöhen, wenn das Validierungsset klein ist, um zu verhindern, dass das Training abgebrochen wird, bevor das Modell alle Trainingsdaten verarbeitet hat. Auch hier empfiehlt Transkribus, den Wert zunächst beizubehalten.
+   * **Auswahl eines Basismodells:** Wir können auch ein Basismodell auswählen, das als Ausgangspunkt für das Training verwendet werden soll, was bedeuten würde, dass das Modell nicht von Grund auf lernen muss. Wird mit einem Basismodell trainiert, genügen möglicherweise weniger Trainingsdaten. Es ist allerdings nicht immer garantiert, dass die Verwendung eines Basismodells zu besseren Ergebnissen führt, sondern es muss im spezifischen Fall getestet werden. Wir entscheiden uns voerst gegen ein Baselinemodell als Trainingsgrundlage, werden aber zum Vergleich auch zwei weitere Modelle mit jeweils unterschiedliche Baselinemodellen trainieren (siehe unten).
+   * **“Reverse Text (RTL)”:** Zuletzt können wir noch wir noch “Reverse Text (RTL)” auswählen, falls die Schreibrichtung unseres Materials von rechts nach links ist.
 * Wir behalten also alle erweiterten Einstellungen bei und klicken auf “Training starten".
+* **Ergebnis des Modelltrainings:** Um die Trainingsergebnisse zu betrachten, wechseln wir zum Modell-Manager. Dazu klicken wir auf das Tab "Training" und wählen dann links unter "Tools" diesen aus (Abb. 15). 
+
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/model_manager.PNG" description="Modellmanager" %}
+
+Im Modellmanager gelangen wir schließlich über das Tab "Private Modelle" zu den von uns trainierten Modellen. Insgesamt haben wir, um zu überprüfen, ob bei der Verwendung von Baselinemodellen als Trainingsgrundlage eine niedrigere CER erreicht werden kann, 3 Modelle trainiert. Bei ersten Modell wurde auf ein Baselinemodell verzichtet, bei den anderen wurden die beiden großen öffentlichen und für deutschsprachige handgeschriebene Texte ausgelegten Modelle "Transkribus German handwriting M1" bzw. "The German Giant I" als Baselinemodelle ausgewählt. In unserem Fall erzielt die Verwendung von Baselinemodellen ein deutlich besseres Ergebnis: Die CER ist im Vergleich zum baselinefreien Modell im besten Ergebnis mehr als halbiert: 2,4 % vs. 5,1 % (siehe Abbildung 16). Allgemein fallen die Ergebnisse sehr gut aus, gemäß der Angaben von Transkribus können Modelle mit einer geringeren CER als 10 % als sehr effizient für die automatische Transkription angesehen werden. Als eine gute CER im Fall von mit handgeschriebenen Texten trainierten Modelle wird ein Intervall zwischen 2 % und 8 % angegeben, d. h. unsere Modelle erzielen durchwegs gute Ergebnisse. 
+
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/model_training_results.PNG" description="Modelltrainingsergebnisse (auf der rechten Seite der Abbildung die CER in Prozent" %}
+
+Wenn wir ein Modell auswählen, können wir durch einen Klick auf "Beschreibung" die Lernkurve anzeigen lassen (Abb. 17). Auf der Y-Achse ist die CER in Prozent angegeben, auf der X-Achse die Anzahl an 
+‘Epochen’ (“Epochs”). In unserem Fall wurde das Training kurz nach 96 Epochs abgebrochen, da sich die CER nicht mehr verringerte. Die blaue Linie des Graphen zeigt den Trainingsfortschritt an, die grüne den Fortschritt der Evaluation der Validierungsdaten. Die grüne Linie des Graphen ist gemäß der Angaben von Transkribus repräsentativer, da sie anzeigt, wie gut das Modell bei neuen Seiten, die nicht im Trainingsmaterial inkludiert waren, abschneiden sollte.
+
+{% include image.html url="../data/pipelines/pipeline_2/transkribus/img/model_training_learning_curve.PNG" description="Lernkurve" %}
+
 ## 7. Die Texteditoransicht
 * Nachdem wir unser Modell trainiert, wollen wir zunächst noch den Texteditor von Transkribus erproben und unsere Dokumente annotieren. Zum Texteditor gelangen wir, indem wir über die linke Menüleiste “Sammlungen” auswählen, in unsere Sammlung navigieren, ein Dokument (z. B. “Brief 1”) öffnen und dann eine Seite des Dokuments anklicken. Nun öffnet sich der Editor mit Bild-Text-Synopse. 
 
@@ -313,11 +329,11 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 * In der Defaultansicht findet sich links im Bild das Faksimile und rechts der Texteditor. Die Ansicht kann über die untere Menüleiste umgestellt werden, sodass sich oben das Faksimile und unten der Texteditor findet.
 * **Wichtige Optionen im Editorfenster** (rechts):
-    * **Festlegen des Bearbeitungsstatus:** Im rechten oberen Eck kann Bearbeitungsstatus der Seite festgelegt werden (Abb. 16: a): “In Bearbeitung”, “Erledigt” (die Seite wurde transkribiert), “Final” (die Seite wurde transkribiert und einem Review unterzogen) und “Trainingsdaten” (die Transkription ist so korrekt wie möglich und wird zum Modelltraining verwendet).
-    * **Speichern:** Mit dem dem Diskettensymbol (Abb. 16: b) kann gespeichert werden 	
+    * **Festlegen des Bearbeitungsstatus:** Im rechten oberen Eck kann Bearbeitungsstatus der Seite festgelegt werden (Abb. 18: a): “In Bearbeitung”, “Erledigt” (die Seite wurde transkribiert), “Final” (die Seite wurde transkribiert und einem Review unterzogen) und “Trainingsdaten” (die Transkription ist so korrekt wie möglich und wird zum Modelltraining verwendet).
+    * **Speichern:** Mit dem dem Diskettensymbol (Abb. 18: b) kann gespeichert werden 	
     * **Versionskontrolle:** Die Schaltfläche mit Datums- und Zeitangabe (Abb. 16: c) dient der Versionskontrolle. Mittels ‘Speicherständen’ kann zwischen auf frühere und von dort aus dann spätere Versionen zugegriffen werden werden.
-    * **Konfiguration:** Über das Zahnradsymbol (Abb. 16: d) können verschiedene Einstellungen vorgenommen werden und so z. B. das Verhalten und Layout des Editors an die eigenen Bedürfnisse angepasst werden. Es ist aber hier auch möglich, eigene Texttags hinzuzufügen oder bereits vorhandene zu entfernen. Ebenso kann die Sichtbarkeit der Strukturtags gesteuert werden.
-    * **Virtuelles Keyboard:**  Das Keyboardsymbol (Abb. 16: e) blendet das Virtuelle Keyboard ein, über das Unicode-Zeichen eingefügt werden können . Dazu müssen die gewünschten Unicode-Bereiche zunächst über die Konfigurationsschaltfläche (Zahnradsymbol) ausgewählt werden.
+    * **Konfiguration:** Über das Zahnradsymbol (Abb. 18: d) können verschiedene Einstellungen vorgenommen werden und so z. B. das Verhalten und Layout des Editors an die eigenen Bedürfnisse angepasst werden. Es ist aber hier auch möglich, eigene Texttags hinzuzufügen oder bereits vorhandene zu entfernen. Ebenso kann die Sichtbarkeit der Strukturtags gesteuert werden.
+    * **Virtuelles Keyboard:**  Das Keyboardsymbol (Abb. 18: e) blendet das Virtuelle Keyboard ein, über das Unicode-Zeichen eingefügt werden können . Dazu müssen die gewünschten Unicode-Bereiche zunächst über die Konfigurationsschaltfläche (Zahnradsymbol) ausgewählt werden.
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/text_editor_options.png" description="Optionen im Texteditor-Fenster" %}
 
 * **Wichtige Optionen im Faksimilefenster** (links):
@@ -326,12 +342,12 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 
 
-* **Hinzufügen von Zeilenlinien:** Über das Füllfedersymbol (Abb. 17: a) können Zeilenlinien hinzugefügt werden. Wird eine Linie hinzugefügt, erscheint die mit ihr korrespondierende Zeile rechts im Editorfenster. Ausgewählte Zeilen können auch über die Entfernen-Taste auf der Tastatur gelöscht werden.
+* **Hinzufügen von Zeilenlinien:** Über das Füllfedersymbol (Abb. 19: a) können Zeilenlinien hinzugefügt werden. Wird eine Linie hinzugefügt, erscheint die mit ihr korrespondierende Zeile rechts im Editorfenster. Ausgewählte Zeilen können auch über die Entfernen-Taste auf der Tastatur gelöscht werden.
     * **Aktionen mit Regionen:**
-        * Mittels Button (Abb. 17: b) können Regionen hinzugefügt werden
+        * Mittels Button (Abb. 19: b) können Regionen hinzugefügt werden
         * Bereits bestehende Regionen können geteilt werden: Dazu muss die Region mittels Klick ausgewählt werden, nach einem Rechtsklick erscheinen können dann die Teilungsoptionen ausgewählt werden: Horizontal, vertikal oder benutzerdefiniert (Im letzten Fall kann mittels Pfeiltasten die Teilungslinie gedreht werden).
         * Zusammenfügen von Regionen: Dazu werden mit Strg und Mausklick mehrere Regionen markiert, nach einem Rechtsklick können sie mit “Merge shapes” zusammengeführt werden.
-    * **Layoutbutton:** Nach einem Klick auf den Layoutbutton (Abb. 17: c) öffnet sich ein Fenster, in dem die Struktur des Dokuments (Regionen und Zeilen) angezeigt wird. Hier können - was durchaus wichtig sein kann - Regionen und Zeilen miteinander ausgetauscht werden.
+    * **Layoutbutton:** Nach einem Klick auf den Layoutbutton (Abb. 19: c) öffnet sich ein Fenster, in dem die Struktur des Dokuments (Regionen und Zeilen) angezeigt wird. Hier können - was durchaus wichtig sein kann - Regionen und Zeilen miteinander ausgetauscht werden.
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/layout_regions_lines.PNG" description="Optionen zum Verschieben von Regionen und Zeilen" %}
 
@@ -422,4 +438,432 @@ Siehe Slides Workshop vom 23./24. Februar
 
 ## Literatur
 
-Literaturliste von Zotero
+* Alvermann, D., & Gut, P. (2021). Transkribus im Archiv – Ein polnisch-deutsches Projekt zur Handschriftentexterkennung an historischen Dokumenten. Archeion, 122, 129–153. https://doi.org/10.4467/26581264ARC.21.00614486
+* Chambat, A., & Taaffe, C. (2022). ABBYY FineReader and Transkribus as philological tools: Digitizing multilingual and dialphabetic ancient medical dictionaries (16th–18th centuries). https://hal-cyu.archives-ouvertes.fr/hal-03852198
+* Colutto, S., Kahle, P., Guenter, H., & Muehlberger, G. (2019). Transkribus. A Platform for Automated Text Recognition and Searching of Historical Documents. 2019 15th International Conference on eScience (eScience), 463–466. https://doi.org/10.1109/eScience.2019.00060
+* Jakob Böhm, A. G. (2019, Oktober 11). Transkribus auf dem Prüfstand (II) [Billet]. Mittelalter. https://mittelalter.hypotheses.org/22600
+* Kahle, P., Colutto, S., Hackl, G., & Mühlberger, G. (2017). Transkribus—A Service Platform for Transcription, Recognition and Retrieval of Historical Documents. 2017 14th IAPR International Conference on Document Analysis and Recognition (ICDAR), 04, 19–24. https://doi.org/10.1109/ICDAR.2017.307
+* Kokaze, A. (2022). Using Transkribus to Transcribe Eighteenth-Century French Historical Manuscripts. Historical Studies of the Western World, 1, 9. https://doi.org/10.57271/hsww.1.0_9
+* Massot, M.-L., Sforzini, A., & Ventresque, V. (2019). Transcribing Foucault’s handwriting with Transkribus. Journal of Data Mining and Digital Humanities, Atelier Digit_Hum. https://doi.org/10.46298/jdmdh.5043
+* Milioni, N. (2020). Automatic Transcription of Historical Documents: Transkribus as a Tool for Libraries, Archives and Scholars. https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-412565
+* Muehlberger, G., Seaward, L., Terras, M., Ares Oliveira, S., Bosch, V., Bryan, M., Colutto, S., Déjean, H., Diem, M., Fiel, S., Gatos, B., Greinoecker, A., Grüning, T., Hackl, G., Haukkovaara, V., Heyer, G., * Hirvonen, L., Hodel, T., Jokinen, M., … Zagoris, K. (2019). Transforming scholarship in the archives through handwritten text recognition: Transkribus as a case study. Journal of Documentation, 75(5), 954–976. https://doi.org/10.1108/JD-07-2018-0114
+* Nockels, J., Gooding, P., Ames, S., & Terras, M. (2022). Understanding the application of handwritten text recognition technology in heritage contexts: A systematic review of Transkribus in published research. Archival Science, 22(3), 367–392. https://doi.org/10.1007/s10502-022-09397-0
+* Ó Raghallaigh, B., Palandri, A., & Mac Cárthaigh, C. (2022). Handwritten Text Recognition (HTR) for Irish-Language Folklore. Proceedings of the 4th Celtic Language Technology Workshop within LREC2022, 121–126. https://aclanthology.org/2022.cltw-1.17
+* Perdiki, E. (2022). Transkribus: Reviewing HTR training on (Greek) manuscripts. 15. https://doi.org/10.18716/ride.a.15.6
+* Perdiki, E. (2023). Preparing Big Manuscript Data for auto Collation with minimal HTR training. https://hal.science/hal-03880102
+* Polomac, V. (2022). Serbian Early Printed Books from Venice: Creating Models for Automatic Text Recognition Using Transkribus. Scripta &amp; e-Scripta, 22, 11–29.
+* Polomac, V., & Lutovac Kaznovac, T. (2021). Automatic Recognition of Serbian Medieval Manuscripts by Applying the Transkribus Software Platform: Current Situation and Future Perspectives. Зборник Матице српске за филологију и лингвистику, 64(2), 7–26. https://doi.org/10.18485/ms_zmsfil.2021.64.2.1
+* Prell, M. (2018). Erfahrungs- und Ergebnisbericht zum Transkribus-Projekt: »ps: Ich bitt noch mahl umb ver gebung meines confusen und üblen schreibens wegen«. Frühneuzeitliche Briefe als Herausforderung automatisierter Handschriftenerkennung. https://www.academia.edu/36792560/ERFAHRUNGS_UND_ERGEBNISBERICHT_ZUM_TRANSKRIBUS_PROJEKT
+* Rabus, A. (o. J.). Training generic models for Handwritten Text Recognition using Transkribus: Opportunities and pitfalls. To appear in Proceedings of the Dark Archives Conference, Oxford 2019. Abgerufen 22. Juni 2023, von https://www.academia.edu/49356690/Training_generic_models_for_Handwritten_Text_Recognition_using_Transkribus_Opportunities_and_pitfalls
+* Rabus, A. (2019). Recognizing Handwritten Text in Slavic Manuscripts: A Neural-Network Approach Using Transkribus. Scripta &amp; e-Scripta, 19, 9–32.
+* Schlagdenhauffen, R. (2020). Optical Recognition Assisted Transcription with Transkribus: The Experiment concerning Eugène Wilhelm’s Personal Diary (1885-1951). Journal of Data Mining & Digital Humanities, Atelier Digit_Hum(Digital humanities in...), 6249. https://doi.org/10.46298/jdmdh.6249
+* Serif, I. (2019). Ein Wolpertinger für die Vormoderne: Zu Nutzungs- und Forschungsmöglichkeiten von Transkribus bei der Arbeit mit mittelalterlichen und frühneuzeitlichen Handschriften und Drucken. In Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte (Bd. 2, S. 125–166) [Working Paper]. Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte. https://edoc.unibas.ch/70997/
+* Spina, S. (2022). The Biscari Archive. A case study of the application of Transkribus tool (arXiv:2210.14498). arXiv. https://doi.org/10.48550/arXiv.2210.14498
+* Thompson, W. (2021). Using Handwritten Text Recognition (HTR) Tools to Transcribe Historical Multilingual Lexica. Scripta &amp; e-Scripta, 21, 217–231.
+* Vukčević, M. M. (2020). Turns of the centuries. The Transkribus automated tool for recognition, transcription and translation of handwritten historical documents: A German-Serbian case study. Babel. Revue Internationale de La Traduction / International Journal of Translation, 66(2), 294–310. https://doi.org/10.1075/babel.00159.vuk
+
+# Factsheet zum Tooldoc
+
+
+<table>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>System</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Scope des Tools</strong>
+   </td>
+   <td>Primär KI-gestützte Layout- und Texterkennung von gedruckten und handgeschriebenen Texten, Training von Layout- und Texterkennungsmodellen.  Annotationen mit Einschränkungen möglich
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Softwareumgebung/Softwaretyp</strong> 
+(Remotesystem im Browser / Lokaler Client)
+   </td>
+   <td>Browser-Anwendung/web-basiert
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützte Plattformen</strong>
+   </td>
+   <td>Windows, Linux, Mac
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Geräte</strong>
+   </td>
+   <td>Desktop
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Einbindung anderer Systeme (Interoperabilität)</strong>
+   </td>
+   <td>❌(Private FTP, IIIF Manifest und DFG Viewer METS derzeit nur bei Transkribus eXpert)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Accountsystem</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Kostenmodell</strong> 
+(Kostenübersicht/Open Source)
+   </td>
+   <td>Layouterkennung und Training von Layout- und Texterkennungsmodellen, Upload, manuelle Transkription, Anreicherung und Download der Daten kostenfrei
+Creditsystem für automatische Texterkennung (1 Credit = 1 handgeschriebene Seite oder 1 Credit = 6 gedruckte Seiten)
+500 Credits bei Registrierung kostenlos (= 500 handgeschriebene oder 3000 gedruckte Seiten)
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Anforderungen & Methoden</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Erforderte Code Literacy</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Interface-Sprachen (ISO 639-1)</strong>
+   </td>
+   <td>de, en, es, et, fi, fr, it, nl, pl, pt, sl, sv
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützte Zeichenkodierung</strong>
+   </td>
+   <td>UTF-8
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Inkludierte Datenkonvertierung</strong>
+(Im Preprocessing mögliche Anpassung der Daten an für die Software erforderliches Format )
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Abhängigkeit von anderer Software
+</strong>(Falls ja, wird diese Software automatisch mitinstalliert?)
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Erforderliche Plug-Ins </strong>(bei web-basierten Anwendungen)
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Dokumentation und Support</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Wartung und ständige Erweiterung</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Einbindung der Community</strong>
+   </td>
+   <td>✅ Privatpersonen und Institutionen können Mitglied der Genossenschaft READ-COOP SCE und damit Miteigentümer des Unternehmens werden (Vorteile: Rabatte, 500 freie Credits pro Jahr, Erhalt privilegierter Informationen, Stimmrecht u. a.)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dokumentation</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dokumentationssprache</strong>
+   </td>
+   <td>HelpCenter (Englisch, Deutsch, Italienisch), How-to-Guides (Englisch), Glossar (Englisch), FAQ (Englisch, Deutsch, Italienisch)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dokumentationsformat</strong>
+   </td>
+   <td>HTML
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dokumentationsabschnitte</strong>
+   </td>
+   <td>Ausführliche Dokumentation im <a href="https://help.transkribus.com/">HelpCenter</a> (Erste Schritte, Texterkennung, Layouterkennung, Händisch transkribieren, Modelltraining, Tagging, Suchen, Verwalten, Herunterladen), <a href="https://readcoop.eu/transkribus/resources/how-to-guides/">How-to-Guides</a>, <a href="https://readcoop.eu/glossary/">Glossar</a>, <a href="https://readcoop.eu/transkribus/questions/">FAQ</a> 
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Verfügbarkeit von Tutorials</strong>
+   </td>
+   <td>✅ Schritt-für-Schritt-Anleitungen (HelpCenter, How-to-Guides), 
+instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href="https://www.youtube.com/@transkribus/">YouTube</a> verfügbar  
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Aktiver Support/Community
+</strong>(Forum, Slack, Issue Tracker etc.) 
+   </td>
+   <td>✅ Kontaktformular, aktive, aber nicht von Transkribus administrierte <a href="https://www.facebook.com/groups/614090738935143/">Facebook-Gruppe</a>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Nutzbarkeit & Nachhaltigkeit</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Installationsablauf</strong>
+   </td>
+   <td>keine Installation nötig
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Test</strong>
+(Gibt es ein Test Suite, um zu überprüfen, ob die Installation erfolgreich war?)
+   </td>
+   <td>[nicht anwendbar]
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Lizenz, unter der das Tool veröffentlicht wurde</strong>
+   </td>
+   <td>Proprietäre Software
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Registrierung in einem Repository</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Möglichkeit, zur Software-Entwicklung beizutragen</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Benutzerinteraktion & Benutzeroberfläche</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Benutzerprofil</strong>
+(Erwartete Nutzer:innen)
+   </td>
+   <td>Primär GeWi-Forschungsinstitutionen und Forschende als Tool-Nutzende
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Benutzerinteraktion</strong>
+(erwartete Nutzung)
+   </td>
+   <td>Anlegen von Sammlungen und Dokumenten, Hochladen von Dateien, KI-gestützte Layout- und Texterkennung, Training von Layout- und Texterkennungsmodellen, Anreicherung von Texten
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Benutzeroberfläche</strong>
+   </td>
+   <td>Webbasiertes GUI
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Visualisierungen </strong>
+(Analyse-, Input-, Outputkonfigurationen)
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Benutzerverwaltung</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Personenverwaltung</strong>
+   </td>
+   <td>✅Hinzufügen/Einschränkung von Mitarbeitenden möglich
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Interne Kommunikationsmöglichkeiten
+</strong>(z. B. Annotationsrichtlinien, Kommentarfunktionen …) 
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Daten- und Toolverwaltung</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Zentrale/dezentrale Verwaltungsmöglichkeit</strong>
+   </td>
+   <td>✅ Mehrere Sammlungseigentümer:innen möglich möglich
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Versionskontrolle</strong>
+   </td>
+   <td>✅ Bei den einzelnen transkribierten Seiten
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Projektspezifische Einstellungen</strong>
+(eigene Metadaten, Tags anlegbar etc.)
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>API</strong>
+   </td>
+   <td>✅ MetagraphoAPI
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Möglichkeit des simultanen Arbeitens</strong>
+   </td>
+   <td>✅ Nicht simultan an einzelnen Seiten, aber Dokumenten und Sammlungen
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Datenupload</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützte Dateiformate</strong>
+   </td>
+   <td>Bilder (JPEG, PNG) oder PDFs
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Informationen zur Datensicherheit</strong>
+   </td>
+   <td>Alle hochgeladenen Dokumente sind standardmäßig privat. Die Daten werden auf Servern in Innsbruck (Österreich) in DSGVO-konformer Weise gespeichert und können gemäß den <a href="https://readcoop.eu/terms-and-conditions/">Terms & Conditions</a> der READ-COOP SCE verarbeitet werden
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Zugänglichkeit von verschiedenen Standorten/Geräten</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Einschränkungen hinsichtlich der Datenmenge</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Verlustfreier Upload von bereits bearbeiteten Dokumenten </strong>
+   </td>
+   <td>[nicht anwendbar, da noch keine Annotation stattgefunden hat]
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützung von IIIF-Import</strong>
+   </td>
+   <td>❌ (derzeit IIIF Manifest nur in Transkribus eXpert unterstützt)
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Datenbearbeitung (Transkriptionstool)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Komplexitätsgrad beim Mark-Up</strong> 
+(z.B. Verfügbarkeit von Buttons, Drag&Drop-Funktion)
+   </td>
+   <td>Strukturtags (Faksimilie) und Texttags, Formatauszeichnung (fett, kursiv usw.)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Standardeinstellungen entsprechend bestimmten Standards für Digitale Editionen </strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Anpassungsmöglichkeit und Validierung entsprechend projektspezifischen Konventionen/Schemata</strong>
+   </td>
+   <td>✅ Tags an TEI anpassbar, allerdings keine Validierungsmöglichkeit
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Definition eigener/projektspezifischer Tags</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Metadaten-Anreicherung</strong>
+   </td>
+   <td>✅ (Sammlungs- und Dokumentmetadaten)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Layoutmöglichkeiten</strong> 
+(z.B. Tabellendarstellung, Spalten wie in Zeitschriften …)
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Eigene Indexierung </strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Möglichkeit von Textvergleich bzw. Arbeit an Variantenapparat</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Ansichtsmöglichkeiten </strong>
+(z. B. Bearbeitungsansicht, Vorschau, Synopsen-Ansicht …)
+   </td>
+   <td>Bild-Texteditor-Synopse
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Verlinkung von Entitäten, NER</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Datenexport</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützte Dateiformate</strong>
+   </td>
+   <td>PAGE XML, ALTO XML, TEI XML, PDF (Bild- und Transkriptionslayer), Docx, Tags XLSX, Table XLSX
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Datenverlust </strong>
+(nicht vollständiger Erhalt von Annotationen, die bereits vor Verwendung des Tools gemacht wurden)
+   </td>
+   <td>[nicht anwendbar]
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Validierungsmöglichkeit für TEI-XML vor Export</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Datenaufbewahrung nach Export</strong>
+   </td>
+   <td>Sammlungen, in denen 120 keine Aktivität stattfand, werden archiviert und an die Eigentümer:innen wird ein Mail versandt. Finden dann innerhalb der nächsten 21 Tag keine Aktivitäten statt, werden die Sammlungen gelöscht
+   </td>
+  </tr>
+</table>
