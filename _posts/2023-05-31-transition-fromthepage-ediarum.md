@@ -10,8 +10,8 @@ excerpt: Die Transition von FromThePage zu ediarum beinhaltet die Anpassung des 
 
 transitionsheet: bla.com/bla.pdf
 
-xslt: https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/ftp_export_to_dta.xsl
-
+xslt: https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/transition_1/data/ftp-export_to_dta.xsl
+    
 last_modified_at: 2023-05-31
 
 ---
