@@ -8,7 +8,7 @@ categories: [transition, fromthepage, ediarum, xslt, dta-basisformat]
 
 excerpt: Die Transition von FromThePage zu ediarum beinhaltet die Anpassung des TEI/XML-Exports von FromThePage an das DTA-Basisformat, das in ediarum als Standard verwendet wird.
 
-transitiondoc: bla.com/bla.pdf
+transitionsheet: bla.com/bla.pdf
 
 xslt: bla.com/bla.xslt
 
