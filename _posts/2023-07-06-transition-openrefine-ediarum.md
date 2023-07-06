@@ -86,11 +86,11 @@ In unserem Projekt sind wir mit folgender Herausforderung konfrontiert: Der Expo
 </item>
 …
 ```
-Um die `<item>`-Elemente mit der gleichen `@xml:id, die außerdem auch die gleiche QID und die gleiche deutsche Übersetzung im `<label type=”reg”>`-Element enthalten, in einem `<item>`-Element mit den verschiedenen frühneuhochdeutschen Varianten mit mehreren  `<label type=”alt”>`-Elementen zusammenzuführen, transformieren wir die Daten mittels XSLT. Dabei gehen wir wie folgt vor:
+Um die `<item>`-Elemente mit der gleichen `@xml:id`, die außerdem auch die gleiche QID und die gleiche deutsche Übersetzung im `<label type=”reg”>`-Element enthalten, in einem `<item>`-Element mit den verschiedenen frühneuhochdeutschen Varianten mit mehreren  `<label type=”alt”>`-Elementen zusammenzuführen, transformieren wir die Daten mittels XSLT. Dabei gehen wir wie folgt vor:
 
 * Der in OpenRefine mittels Template in eine XML-Struktur überführte Datensatz wird beim Export als [Plaintext-Datei](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/transition_2/data/output_openrefine.txt) zum Download bereitgestellt. Daher kopieren wir zunächst die Liste und fügen diese in das Register ein, das wir in ediarum für unser Projekt erstellt haben. Dafür wechseln wir in die Text-Ansicht und kopieren den Inhalt der TXT-Datei in den vorerst noch leeren `<body>`. 
 {% include image.html url="../data/pipelines/pipeline_1/transition_2/img/copy-openrefine-output.PNG" description="Befüllen des ediarum-Registers mit den Daten aus OpenRefine" %} 
-→ Wie wir sehen können, ist das Dokument nicht valide, da die englische Übersetzung, die wir als `@xml:id nutzen, mehrfach vorhanden ist, diese aber eindeutig sein muss. 
+→ Wie wir sehen können, ist das Dokument nicht valide, da die englische Übersetzung, die wir als `@xml:id` nutzen, mehrfach vorhanden ist, diese aber eindeutig sein muss. 
 * Im nächsten Schritt wenden wir ein Transformationsszenario mit dem für die Listenadaptierung erstellten[ XSL-Dokument](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/transition_2/data/openrefine-output_to_ediarum.xsl)  auf unser Register (Sachbegriffe.xml) an. 
 * Unser transformiertes Register enthält nun zu jedem standarddeutschen Begriff alle frühneuhochdeutschen Varianten. In der Autor-Ansicht sieht dies folgendermaßen aus: 
 {% include image.html url="../data/pipelines/pipeline_1/transition_2/img/clean-register.PNG" description="Transformiertes Register mit Zutatenliste" %}
