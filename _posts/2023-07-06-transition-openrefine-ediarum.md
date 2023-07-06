@@ -12,7 +12,7 @@ transitionsheet: bla.com/bla.pdf
 
 xslt: https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/transition_2/data/openrefine-output_to_ediarum.xsl
     
-last_modified_at: 
+last_modified_at: 2023-07-06
 
 ---
 
