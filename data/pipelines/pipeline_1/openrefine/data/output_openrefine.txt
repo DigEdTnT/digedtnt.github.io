@@ -1,0 +1,2682 @@
+<list>
+<item xml:id="verjuice">
+   <idno type="uri">https://www.wikidata.org/entity/Q1060458</idno>
+   <label type="reg">Agraz</label>
+   <label type="alt">agraeß</label> 
+</item>
+<item xml:id="verjuice">
+   <idno type="uri">https://www.wikidata.org/entity/Q1060458</idno>
+   <label type="reg">Agraz</label>
+   <label type="alt">agras</label> 
+</item>
+<item xml:id="verjuice">
+   <idno type="uri">https://www.wikidata.org/entity/Q1060458</idno>
+   <label type="reg">Agraz</label>
+   <label type="alt">agraz</label> 
+</item>
+<item xml:id="verjuice">
+   <idno type="uri">https://www.wikidata.org/entity/Q1060458</idno>
+   <label type="reg">Agraz</label>
+   <label type="alt">agres</label> 
+</item>
+<item xml:id="verjuice">
+   <idno type="uri">https://www.wikidata.org/entity/Q1060458</idno>
+   <label type="reg">Agraz</label>
+   <label type="alt">agresß</label> 
+</item>
+<item xml:id="verjuice">
+   <idno type="uri">https://www.wikidata.org/entity/Q1060458</idno>
+   <label type="reg">Agraz</label>
+   <label type="alt">agrest</label> 
+</item>
+<item xml:id="verjuice">
+   <idno type="uri">https://www.wikidata.org/entity/Q1060458</idno>
+   <label type="reg">Agraz</label>
+   <label type="alt">agreste</label> 
+</item>
+<item xml:id="verjuice">
+   <idno type="uri">https://www.wikidata.org/entity/Q1060458</idno>
+   <label type="reg">Agraz</label>
+   <label type="alt">agroße</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">apfel</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">äpfelen</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">apfell</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">apffel</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">äpffel</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">apffell</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">apffl</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">aphel</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">aphell</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">aphfel</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">aphfell</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">aphl</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">appel</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">appfel</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">äppfel</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">appfelen</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">appfell</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">appfeln</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">äppfeln</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">appffel</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">äppffel</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">appffell</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">apphel</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">apphell</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">apphellen</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">apphels</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbais</label> 
+</item>
+<item xml:id="pea blossom">
+   <idno type="uri">https://www.wikidata.org/entity/Q107263051</idno>
+   <label type="reg">Erbsenblüte</label>
+   <label type="alt">arbais pluee</label> 
+</item>
+<item xml:id="pea stock">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246700</idno>
+   <label type="reg">Erbsengrundbrühe</label>
+   <label type="alt">arbais prue</label> 
+</item>
+<item xml:id="pea stock">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246700</idno>
+   <label type="reg">Erbsengrundbrühe</label>
+   <label type="alt">arbais pruee</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbaiss</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbaiß</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">ärbaiss</label> 
+</item>
+<item xml:id="pea blossom">
+   <idno type="uri">https://www.wikidata.org/entity/Q107263051</idno>
+   <label type="reg">Erbsenblüte</label>
+   <label type="alt">arbaiß plue</label> 
+</item>
+<item xml:id="pea stock">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246700</idno>
+   <label type="reg">Erbsengrundbrühe</label>
+   <label type="alt">arbaiss prue</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbaissen</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbaissn</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbaisz</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbaiz</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbas</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbass</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbaß</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbassen</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbasz</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbays</label> 
+</item>
+<item xml:id="pea flour">
+   <idno type="uri">https://www.wikidata.org/entity/Q57657174</idno>
+   <label type="reg">Erbsenmehl</label>
+   <label type="alt">arbays mell</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbayss</label> 
+</item>
+<item xml:id="pea blossom">
+   <idno type="uri">https://www.wikidata.org/entity/Q107263051</idno>
+   <label type="reg">Erbsenblüte</label>
+   <label type="alt">arbayß plue</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbayssen</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbayzzen</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbeis</label> 
+</item>
+<item xml:id="pea blossom">
+   <idno type="uri">https://www.wikidata.org/entity/Q107263051</idno>
+   <label type="reg">Erbsenblüte</label>
+   <label type="alt">arbeis bluost</label> 
+</item>
+<item xml:id="pea flour">
+   <idno type="uri">https://www.wikidata.org/entity/Q57657174</idno>
+   <label type="reg">Erbsenmehl</label>
+   <label type="alt">arbeis mehl</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbeisen</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbeiss</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbeiß</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbeissen</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbeißen</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbeißenn</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbeissenn</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbeissn</label> 
+</item>
+<item xml:id="pea stock">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246700</idno>
+   <label type="reg">Erbsengrundbrühe</label>
+   <label type="alt">arbeissuppen</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbeisz</label> 
+</item>
+<item xml:id="wild strawberry">
+   <idno type="uri">https://www.wikidata.org/entity/Q107262469</idno>
+   <label type="reg">Walderdbeere</label>
+   <label type="alt">ärber</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbes</label> 
+</item>
+<item xml:id="pea stock">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246700</idno>
+   <label type="reg">Erbsengrundbrühe</label>
+   <label type="alt">arbes pruee</label> 
+</item>
+<item xml:id="pea stock">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246700</idno>
+   <label type="reg">Erbsengrundbrühe</label>
+   <label type="alt">arbespruee</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbeyß</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbeysz</label> 
+</item>
+<item xml:id="garden pea">
+   <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+   <label type="reg">Erbse</label>
+   <label type="alt">arbiß</label> 
+</item>
+<item xml:id="pea stock">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246700</idno>
+   <label type="reg">Erbsengrundbrühe</label>
+   <label type="alt">arbiß pruee</label> 
+</item>
+<item xml:id="medication">
+   <idno type="uri">https://www.wikidata.org/entity/Q12140</idno>
+   <label type="reg">Arznei</label>
+   <label type="alt">arcenie</label> 
+</item>
+<item xml:id="chicken egg">
+   <idno type="uri">https://www.wikidata.org/entity/Q15260613</idno>
+   <label type="reg">Hühnerei</label>
+   <label type="alt">aren</label> 
+</item>
+<item xml:id="medication">
+   <idno type="uri">https://www.wikidata.org/entity/Q12140</idno>
+   <label type="reg">Arznei</label>
+   <label type="alt">artzenie</label> 
+</item>
+<item xml:id="medication">
+   <idno type="uri">https://www.wikidata.org/entity/Q12140</idno>
+   <label type="reg">Arznei</label>
+   <label type="alt">artzny</label> 
+</item>
+<item xml:id="calabash">
+   <idno type="uri">https://www.wikidata.org/entity/Q1277255</idno>
+   <label type="reg">Flaschenkürbis</label>
+   <label type="alt">churbis</label> 
+</item>
+<item xml:id="calabash">
+   <idno type="uri">https://www.wikidata.org/entity/Q1277255</idno>
+   <label type="reg">Flaschenkürbis</label>
+   <label type="alt">churibis</label> 
+</item>
+<item xml:id="calabash">
+   <idno type="uri">https://www.wikidata.org/entity/Q1277255</idno>
+   <label type="reg">Flaschenkürbis</label>
+   <label type="alt">cucurbite</label> 
+</item>
+<item xml:id="medication">
+   <idno type="uri">https://www.wikidata.org/entity/Q12140</idno>
+   <label type="reg">Arznei</label>
+   <label type="alt">ercznei</label> 
+</item>
+<item xml:id="medication">
+   <idno type="uri">https://www.wikidata.org/entity/Q12140</idno>
+   <label type="reg">Arznei</label>
+   <label type="alt">erczney</label> 
+</item>
+<item xml:id="medication">
+   <idno type="uri">https://www.wikidata.org/entity/Q12140</idno>
+   <label type="reg">Arznei</label>
+   <label type="alt">ertzney</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">esich</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">esseych</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">eßich</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">essich</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">essichs</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">essick</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">essig</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">eßig</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">essige</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">essiges</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">essighe</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">essigk</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">essigs</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">essik</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">essych</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">essyg</label> 
+</item>
+<item xml:id="vinegar">
+   <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+   <label type="reg">Essig</label>
+   <label type="alt">esszig</label> 
+</item>
+<item xml:id="chicken egg">
+   <idno type="uri">https://www.wikidata.org/entity/Q15260613</idno>
+   <label type="reg">Hühnerei</label>
+   <label type="alt">eyernn</label> 
+</item>
+<item xml:id="chicken egg">
+   <idno type="uri">https://www.wikidata.org/entity/Q15260613</idno>
+   <label type="reg">Hühnerei</label>
+   <label type="alt">eyerr</label> 
+</item>
+<item xml:id="chicken egg">
+   <idno type="uri">https://www.wikidata.org/entity/Q15260613</idno>
+   <label type="reg">Hühnerei</label>
+   <label type="alt">eyes</label> 
+</item>
+<item xml:id="chicken egg">
+   <idno type="uri">https://www.wikidata.org/entity/Q15260613</idno>
+   <label type="reg">Hühnerei</label>
+   <label type="alt">eyg</label> 
+</item>
+<item xml:id="chicken egg">
+   <idno type="uri">https://www.wikidata.org/entity/Q15260613</idno>
+   <label type="reg">Hühnerei</label>
+   <label type="alt">eyge</label> 
+</item>
+<item xml:id="chicken egg">
+   <idno type="uri">https://www.wikidata.org/entity/Q15260613</idno>
+   <label type="reg">Hühnerei</label>
+   <label type="alt">eyger</label> 
+</item>
+<item xml:id="goat milk">
+   <idno type="uri">https://www.wikidata.org/entity/Q1418287</idno>
+   <label type="reg">Ziegenmilch</label>
+   <label type="alt">gais milch</label> 
+</item>
+<item xml:id="spice">
+   <idno type="uri">https://www.wikidata.org/entity/Q42527</idno>
+   <label type="reg">Gewürz</label>
+   <label type="alt">gestipp</label> 
+</item>
+<item xml:id="spice">
+   <idno type="uri">https://www.wikidata.org/entity/Q42527</idno>
+   <label type="reg">Gewürz</label>
+   <label type="alt">gestuep</label> 
+</item>
+<item xml:id="spice">
+   <idno type="uri">https://www.wikidata.org/entity/Q42527</idno>
+   <label type="reg">Gewürz</label>
+   <label type="alt">gestuepp</label> 
+</item>
+<item xml:id="spice">
+   <idno type="uri">https://www.wikidata.org/entity/Q42527</idno>
+   <label type="reg">Gewürz</label>
+   <label type="alt">gestuepp</label> 
+</item>
+<item xml:id="spice">
+   <idno type="uri">https://www.wikidata.org/entity/Q42527</idno>
+   <label type="reg">Gewürz</label>
+   <label type="alt">gestuept</label> 
+</item>
+<item xml:id="spice">
+   <idno type="uri">https://www.wikidata.org/entity/Q42527</idno>
+   <label type="reg">Gewürz</label>
+   <label type="alt">gestup</label> 
+</item>
+<item xml:id="spice">
+   <idno type="uri">https://www.wikidata.org/entity/Q42527</idno>
+   <label type="reg">Gewürz</label>
+   <label type="alt">gestupp</label> 
+</item>
+<item xml:id="spice">
+   <idno type="uri">https://www.wikidata.org/entity/Q42527</idno>
+   <label type="reg">Gewürz</label>
+   <label type="alt">gestüpp</label> 
+</item>
+<item xml:id="goat milk">
+   <idno type="uri">https://www.wikidata.org/entity/Q1418287</idno>
+   <label type="reg">Ziegenmilch</label>
+   <label type="alt">geys milch</label> 
+</item>
+<item xml:id="goat milk">
+   <idno type="uri">https://www.wikidata.org/entity/Q1418287</idno>
+   <label type="reg">Ziegenmilch</label>
+   <label type="alt">geyß milch</label> 
+</item>
+<item xml:id="chicken">
+   <idno type="uri">https://www.wikidata.org/entity/Q864693</idno>
+   <label type="reg">Huhn</label>
+   <label type="alt">hen</label> 
+</item>
+<item xml:id="chicken">
+   <idno type="uri">https://www.wikidata.org/entity/Q864693</idno>
+   <label type="reg">Huhn</label>
+   <label type="alt">hener</label> 
+</item>
+<item xml:id="chicken">
+   <idno type="uri">https://www.wikidata.org/entity/Q864693</idno>
+   <label type="reg">Huhn</label>
+   <label type="alt">henern</label> 
+</item>
+<item xml:id="honey">
+   <idno type="uri">https://www.wikidata.org/entity/Q10987</idno>
+   <label type="reg">Honig</label>
+   <label type="alt">henig</label> 
+</item>
+<item xml:id="chicken">
+   <idno type="uri">https://www.wikidata.org/entity/Q864693</idno>
+   <label type="reg">Huhn</label>
+   <label type="alt">henn</label> 
+</item>
+<item xml:id="chicken egg">
+   <idno type="uri">https://www.wikidata.org/entity/Q15260613</idno>
+   <label type="reg">Hühnerei</label>
+   <label type="alt">henn ay</label> 
+</item>
+<item xml:id="chicken">
+   <idno type="uri">https://www.wikidata.org/entity/Q864693</idno>
+   <label type="reg">Huhn</label>
+   <label type="alt">henndlein</label> 
+</item>
+<item xml:id="chicken">
+   <idno type="uri">https://www.wikidata.org/entity/Q864693</idno>
+   <label type="reg">Huhn</label>
+   <label type="alt">henne</label> 
+</item>
+<item xml:id="chicken">
+   <idno type="uri">https://www.wikidata.org/entity/Q864693</idno>
+   <label type="reg">Huhn</label>
+   <label type="alt">hennen</label> 
+</item>
+<item xml:id="chicken">
+   <idno type="uri">https://www.wikidata.org/entity/Q864693</idno>
+   <label type="reg">Huhn</label>
+   <label type="alt">henrn</label> 
+</item>
+<item xml:id="rose hip">
+   <idno type="uri">https://www.wikidata.org/entity/Q46740</idno>
+   <label type="reg">Hagebutte</label>
+   <label type="alt">hieffenn</label> 
+</item>
+<item xml:id="honey">
+   <idno type="uri">https://www.wikidata.org/entity/Q10987</idno>
+   <label type="reg">Honig</label>
+   <label type="alt">hoenigs</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holaer</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holär</label> 
+</item>
+<item xml:id="crab-apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q47161</idno>
+   <label type="reg">Holzapfel</label>
+   <label type="alt">holcz appfel</label> 
+</item>
+<item xml:id="crab-apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q47161</idno>
+   <label type="reg">Holzapfel</label>
+   <label type="alt">holcz ephel</label> 
+</item>
+<item xml:id="crab-apple juice">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246473</idno>
+   <label type="reg">Holzapfelsaft</label>
+   <label type="alt">holcz eppfell saff</label> 
+</item>
+<item xml:id="crab-apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q47161</idno>
+   <label type="reg">Holzapfel</label>
+   <label type="alt">holcz oeppfel</label> 
+</item>
+<item xml:id="crab-apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q47161</idno>
+   <label type="reg">Holzapfel</label>
+   <label type="alt">holcz öppfel</label> 
+</item>
+<item xml:id="crab-apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q47161</idno>
+   <label type="reg">Holzapfel</label>
+   <label type="alt">holczapfel</label> 
+</item>
+<item xml:id="crab-apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q47161</idno>
+   <label type="reg">Holzapfel</label>
+   <label type="alt">holczepfeln</label> 
+</item>
+<item xml:id="crab-apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q47161</idno>
+   <label type="reg">Holzapfel</label>
+   <label type="alt">holczeppfelnn</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holder</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holder bere</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holder bern beren</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holder berrienn beren</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holder bluete</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holder bluomen</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holder bluost</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holder plu</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holder plüd</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holderbere</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holderberen</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holderbluost</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holderplued</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holderplust</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holderplut</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holderplüt</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holderr</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holderr plut</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">hole</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holear plued</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holer</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holer plue</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holer plüed</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holer pluee</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holer plueed</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holer plueet</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holer plüet</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">hölerplüe</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holerpluet</label> 
+</item>
+<item xml:id="elder flower">
+   <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+   <label type="reg">Schwarzer Holunder</label>
+   <label type="alt">holerpluod</label> 
+</item>
+<item xml:id="honey">
+   <idno type="uri">https://www.wikidata.org/entity/Q10987</idno>
+   <label type="reg">Honig</label>
+   <label type="alt">hong</label> 
+</item>
+<item xml:id="honey">
+   <idno type="uri">https://www.wikidata.org/entity/Q10987</idno>
+   <label type="reg">Honig</label>
+   <label type="alt">hongs</label> 
+</item>
+<item xml:id="honey">
+   <idno type="uri">https://www.wikidata.org/entity/Q10987</idno>
+   <label type="reg">Honig</label>
+   <label type="alt">hongy</label> 
+</item>
+<item xml:id="honey">
+   <idno type="uri">https://www.wikidata.org/entity/Q10987</idno>
+   <label type="reg">Honig</label>
+   <label type="alt">honic</label> 
+</item>
+<item xml:id="honey">
+   <idno type="uri">https://www.wikidata.org/entity/Q10987</idno>
+   <label type="reg">Honig</label>
+   <label type="alt">honich</label> 
+</item>
+<item xml:id="honey">
+   <idno type="uri">https://www.wikidata.org/entity/Q10987</idno>
+   <label type="reg">Honig</label>
+   <label type="alt">honicht</label> 
+</item>
+<item xml:id="honey">
+   <idno type="uri">https://www.wikidata.org/entity/Q10987</idno>
+   <label type="reg">Honig</label>
+   <label type="alt">honick</label> 
+</item>
+<item xml:id="honey">
+   <idno type="uri">https://www.wikidata.org/entity/Q10987</idno>
+   <label type="reg">Honig</label>
+   <label type="alt">honig</label> 
+</item>
+<item xml:id="honey">
+   <idno type="uri">https://www.wikidata.org/entity/Q10987</idno>
+   <label type="reg">Honig</label>
+   <label type="alt">honigs</label> 
+</item>
+<item xml:id="chicken">
+   <idno type="uri">https://www.wikidata.org/entity/Q864693</idno>
+   <label type="reg">Huhn</label>
+   <label type="alt">hunerr</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">ingwer</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">Ingwerr</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">ingwerr</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">ingwerrs</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">ingwers</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">ingwerß</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">inigber</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">innber</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">inngber</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">inngewer</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">inngper</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">inngwer</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">innver</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">innwear</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">innwer</label> 
+</item>
+<item xml:id="ginger">
+   <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+   <label type="reg">Ingwer</label>
+   <label type="alt">innwers</label> 
+</item>
+<item xml:id="veal">
+   <idno type="uri">https://www.wikidata.org/entity/Q957434</idno>
+   <label type="reg">Kalbfleisch</label>
+   <label type="alt">kalb flaisch</label> 
+</item>
+<item xml:id="veal">
+   <idno type="uri">https://www.wikidata.org/entity/Q957434</idno>
+   <label type="reg">Kalbfleisch</label>
+   <label type="alt">kalb fleisch</label> 
+</item>
+<item xml:id="veal">
+   <idno type="uri">https://www.wikidata.org/entity/Q957434</idno>
+   <label type="reg">Kalbfleisch</label>
+   <label type="alt">kalb fleysch</label> 
+</item>
+<item xml:id="veal">
+   <idno type="uri">https://www.wikidata.org/entity/Q957434</idno>
+   <label type="reg">Kalbfleisch</label>
+   <label type="alt">kalb fleysch</label> 
+</item>
+<item xml:id="pip">
+   <idno type="uri">https://www.wikidata.org/entity/Q3121375</idno>
+   <label type="reg">Fruchtkern</label>
+   <label type="alt">kernn</label> 
+</item>
+<item xml:id="cow milk">
+   <idno type="uri">https://www.wikidata.org/entity/Q10988133</idno>
+   <label type="reg">Kuhmilch</label>
+   <label type="alt">kuee milch</label> 
+</item>
+<item xml:id="beef">
+   <idno type="uri">https://www.wikidata.org/entity/Q192628</idno>
+   <label type="reg">Rindfleisch</label>
+   <label type="alt">kueefleysch</label> 
+</item>
+<item xml:id="beef">
+   <idno type="uri">https://www.wikidata.org/entity/Q192628</idno>
+   <label type="reg">Rindfleisch</label>
+   <label type="alt">kueen</label> 
+</item>
+<item xml:id="cattle lung">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246461</idno>
+   <label type="reg">Rinderlunge</label>
+   <label type="alt">kuelungelen</label> 
+</item>
+<item xml:id="caraway">
+   <idno type="uri">https://www.wikidata.org/entity/Q26811</idno>
+   <label type="reg">Echter Kümmel</label>
+   <label type="alt">kuem</label> 
+</item>
+<item xml:id="caraway">
+   <idno type="uri">https://www.wikidata.org/entity/Q26811</idno>
+   <label type="reg">Echter Kümmel</label>
+   <label type="alt">kuemb</label> 
+</item>
+<item xml:id="caraway">
+   <idno type="uri">https://www.wikidata.org/entity/Q26811</idno>
+   <label type="reg">Echter Kümmel</label>
+   <label type="alt">kuemebel</label> 
+</item>
+<item xml:id="caraway">
+   <idno type="uri">https://www.wikidata.org/entity/Q26811</idno>
+   <label type="reg">Echter Kümmel</label>
+   <label type="alt">kuemel</label> 
+</item>
+<item xml:id="cumin">
+   <idno type="uri">https://www.wikidata.org/entity/Q57328174</idno>
+   <label type="reg">Kreuzkümmel</label>
+   <label type="alt">kuemel walischen</label> 
+</item>
+<item xml:id="caraway">
+   <idno type="uri">https://www.wikidata.org/entity/Q26811</idno>
+   <label type="reg">Echter Kümmel</label>
+   <label type="alt">kuemels</label> 
+</item>
+<item xml:id="caraway">
+   <idno type="uri">https://www.wikidata.org/entity/Q26811</idno>
+   <label type="reg">Echter Kümmel</label>
+   <label type="alt">kuemich</label> 
+</item>
+<item xml:id="cow milk">
+   <idno type="uri">https://www.wikidata.org/entity/Q10988133</idno>
+   <label type="reg">Kuhmilch</label>
+   <label type="alt">kuemilch</label> 
+</item>
+<item xml:id="caraway">
+   <idno type="uri">https://www.wikidata.org/entity/Q26811</idno>
+   <label type="reg">Echter Kümmel</label>
+   <label type="alt">kuemmel</label> 
+</item>
+<item xml:id="caraway">
+   <idno type="uri">https://www.wikidata.org/entity/Q26811</idno>
+   <label type="reg">Echter Kümmel</label>
+   <label type="alt">kuemmell</label> 
+</item>
+<item xml:id="caraway">
+   <idno type="uri">https://www.wikidata.org/entity/Q26811</idno>
+   <label type="reg">Echter Kümmel</label>
+   <label type="alt">kuemmich</label> 
+</item>
+<item xml:id="lettuce">
+   <idno type="uri">https://www.wikidata.org/entity/Q83193</idno>
+   <label type="reg">Lattich</label>
+   <label type="alt">lactuken</label> 
+</item>
+<item xml:id="apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+   <label type="reg">Apfel</label>
+   <label type="alt">mala</label> 
+</item>
+<item xml:id="pomegranate">
+   <idno type="uri">https://www.wikidata.org/entity/Q13222088</idno>
+   <label type="reg">Granatapfel</label>
+   <label type="alt">mala punica</label> 
+</item>
+<item xml:id="pomegranate">
+   <idno type="uri">https://www.wikidata.org/entity/Q13222088</idno>
+   <label type="reg">Granatapfel</label>
+   <label type="alt">malagram</label> 
+</item>
+<item xml:id="pomegranate">
+   <idno type="uri">https://www.wikidata.org/entity/Q13222088</idno>
+   <label type="reg">Granatapfel</label>
+   <label type="alt">malagranat</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">maldl</label> 
+</item>
+<item xml:id="pomegranate">
+   <idno type="uri">https://www.wikidata.org/entity/Q13222088</idno>
+   <label type="reg">Granatapfel</label>
+   <label type="alt">malegranat</label> 
+</item>
+<item xml:id="pomegranate">
+   <idno type="uri">https://www.wikidata.org/entity/Q13222088</idno>
+   <label type="reg">Granatapfel</label>
+   <label type="alt">malgran</label> 
+</item>
+<item xml:id="pomegranate">
+   <idno type="uri">https://www.wikidata.org/entity/Q13222088</idno>
+   <label type="reg">Granatapfel</label>
+   <label type="alt">malignate</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mändel</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel cheren</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel cherenn</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel chern</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel cherne</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel chernen</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel chernn</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel ckernn</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel keren</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel kern</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel kerne</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel kernen</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandel kernn</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandelkernn</label> 
+</item>
+<item xml:id="almond">
+   <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+   <label type="reg">Mandel</label>
+   <label type="alt">mandeln kernen</label> 
+</item>
+<item xml:id="mint">
+   <idno type="uri">https://www.wikidata.org/entity/Q47859</idno>
+   <label type="reg">Minzen</label>
+   <label type="alt">menta</label> 
+</item>
+<item xml:id="mint">
+   <idno type="uri">https://www.wikidata.org/entity/Q47859</idno>
+   <label type="reg">Minzen</label>
+   <label type="alt">mente</label> 
+</item>
+<item xml:id="horse radish">
+   <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+   <label type="reg">Meerrettich</label>
+   <label type="alt">mer rettich</label> 
+</item>
+<item xml:id="horse radish">
+   <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+   <label type="reg">Meerrettich</label>
+   <label type="alt">merechtig</label> 
+</item>
+<item xml:id="horse radish">
+   <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+   <label type="reg">Meerrettich</label>
+   <label type="alt">meret</label> 
+</item>
+<item xml:id="horse radish">
+   <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+   <label type="reg">Meerrettich</label>
+   <label type="alt">merettich</label> 
+</item>
+<item xml:id="horse radish">
+   <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+   <label type="reg">Meerrettich</label>
+   <label type="alt">merich</label> 
+</item>
+<item xml:id="horse radish">
+   <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+   <label type="reg">Meerrettich</label>
+   <label type="alt">merrech</label> 
+</item>
+<item xml:id="horse radish">
+   <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+   <label type="reg">Meerrettich</label>
+   <label type="alt">merrech</label> 
+</item>
+<item xml:id="horse radish">
+   <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+   <label type="reg">Meerrettich</label>
+   <label type="alt">merredch</label> 
+</item>
+<item xml:id="horse radish">
+   <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+   <label type="reg">Meerrettich</label>
+   <label type="alt">merredich</label> 
+</item>
+<item xml:id="horse radish">
+   <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+   <label type="reg">Meerrettich</label>
+   <label type="alt">merretich</label> 
+</item>
+<item xml:id="horse radish">
+   <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+   <label type="reg">Meerrettich</label>
+   <label type="alt">merrettich</label> 
+</item>
+<item xml:id="horse radish">
+   <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+   <label type="reg">Meerrettich</label>
+   <label type="alt">merrich</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">müscaden</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">müscaden</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">muscat</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">müscat</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">müscat</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">muscat nus</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">muscat nus</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">muscatenn</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">muscatnues</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">müscatnus</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">muscatnuss</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">muscatnuß</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">neegel</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">neegelein</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negel</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negela</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negelach</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negele</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negelein</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negeleinn</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negelen</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negeleyn</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negelin</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negell</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negellein</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negelleyn</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negelli</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negellin</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negellnn</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negeln</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negelyn</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negili</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negilin</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negl</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">neglein</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">neglenn</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">neglichen</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">neglin</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negllein</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">negln</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">neglyn</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">neilken</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">nelcken</label> 
+</item>
+<item xml:id="clove">
+   <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+   <label type="reg">Gewürznelke</label>
+   <label type="alt">nelken</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nues</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nues cherenn</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nues kernen</label> 
+</item>
+<item xml:id="nut milk">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246657</idno>
+   <label type="reg">Nussmilch</label>
+   <label type="alt">nues milich</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nueskerenn</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nueskern</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuess</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nueß</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuessen</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nueßen</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuesss</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuesz</label> 
+</item>
+<item xml:id="nut milk">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246657</idno>
+   <label type="reg">Nussmilch</label>
+   <label type="alt">nuesz milch</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuesze</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nueszen</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuez</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuezz</label> 
+</item>
+<item xml:id="nut milk">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246657</idno>
+   <label type="reg">Nussmilch</label>
+   <label type="alt">nuezz milich</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuezze</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuezze kern</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuezzen</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">nugatt</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuoß</label> 
+</item>
+<item xml:id="nut milk">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246657</idno>
+   <label type="reg">Nussmilch</label>
+   <label type="alt">nuosz milich</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nus</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nus kerne</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nus kernen</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nus kernn</label> 
+</item>
+<item xml:id="nut milk">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246657</idno>
+   <label type="reg">Nussmilch</label>
+   <label type="alt">nus milch</label> 
+</item>
+<item xml:id="nut milk">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246657</idno>
+   <label type="reg">Nussmilch</label>
+   <label type="alt">nus milich</label> 
+</item>
+<item xml:id="mace">
+   <idno type="uri">https://www.wikidata.org/entity/Q1882876</idno>
+   <label type="reg">Macis</label>
+   <label type="alt">nuscatt bluede</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuscherenn</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">nusgat</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">nusgattnus</label> 
+</item>
+<item xml:id="nutmeg apple">
+   <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+   <label type="reg">Muskatnuss</label>
+   <label type="alt">nusget</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuskeren</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuskern</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuskernn</label> 
+</item>
+<item xml:id="nut milk">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246657</idno>
+   <label type="reg">Nussmilch</label>
+   <label type="alt">nusmilich</label> 
+</item>
+<item xml:id="nut oil">
+   <idno type="uri">https://www.wikidata.org/entity/Q41150815</idno>
+   <label type="reg">Nussöl</label>
+   <label type="alt">nusol</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuss</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuß</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nüss</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nüß</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuss kern</label> 
+</item>
+<item xml:id="nut oil">
+   <idno type="uri">https://www.wikidata.org/entity/Q41150815</idno>
+   <label type="reg">Nussöl</label>
+   <label type="alt">nuß oley</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nusse</label> 
+</item>
+<item xml:id="nut">
+   <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+   <label type="reg">Nussfrucht</label>
+   <label type="alt">nuszkernn</label> 
+</item>
+<item xml:id="pepper">
+   <idno type="uri">https://www.wikidata.org/entity/Q43084</idno>
+   <label type="reg">Echter Pfeffer</label>
+   <label type="alt">pefer</label> 
+</item>
+<item xml:id="pepper">
+   <idno type="uri">https://www.wikidata.org/entity/Q43084</idno>
+   <label type="reg">Echter Pfeffer</label>
+   <label type="alt">peffer</label> 
+</item>
+<item xml:id="pepper">
+   <idno type="uri">https://www.wikidata.org/entity/Q43084</idno>
+   <label type="reg">Echter Pfeffer</label>
+   <label type="alt">peffern</label> 
+</item>
+<item xml:id="pepper">
+   <idno type="uri">https://www.wikidata.org/entity/Q43084</idno>
+   <label type="reg">Echter Pfeffer</label>
+   <label type="alt">peper</label> 
+</item>
+<item xml:id="elderberry">
+   <idno type="uri">https://www.wikidata.org/entity/Q96333359</idno>
+   <label type="reg">Holunderbeere</label>
+   <label type="alt">pernn</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">perterlin</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">pertersilgen</label> 
+</item>
+<item xml:id="pellitory">
+   <idno type="uri">https://www.wikidata.org/entity/Q7161585</idno>
+   <label type="reg">Bertram</label>
+   <label type="alt">pertram</label> 
+</item>
+<item xml:id="pes_unsolved">
+   null
+   <label type="reg">ungelöst(pes)</label>
+   <label type="alt">pes</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peteersil</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peter sil</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peter silg</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peter sill</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peter sylienn</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peter syll</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petercilien</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterczimel chrawt</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterczymel</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterczymel pletter</label> 
+</item>
+<item xml:id="parsley juice">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246694</idno>
+   <label type="reg">Petersiliensaft</label>
+   <label type="alt">peterczymel saff</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterczymell</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterczymellpletter</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterczymelpletter</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterczymil pletter</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterczymmel</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterczymmel pletter</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterczymmelpletter</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterlein</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">peterlein same</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterlein wurzel</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterlen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterli</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterlin</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterlin krut</label> 
+</item>
+<item xml:id="parsley juice">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246694</idno>
+   <label type="reg">Petersiliensaft</label>
+   <label type="alt">peterlin saft</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">peterlin samen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterling</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">peterling samen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterlins</label> 
+</item>
+<item xml:id="parsley juice">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246694</idno>
+   <label type="reg">Petersiliensaft</label>
+   <label type="alt">peterlinsaft</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterllein</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterly</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterlyn</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">peterlyn samen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterrsill</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterselige</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">peterseligen</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">peterseligen samen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersell</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersielien</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersigil</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersil</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersil blat</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersil bletter</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">petersil samen</label> 
+</item>
+<item xml:id="parsley root">
+   <idno type="uri">https://www.wikidata.org/entity/Q68220931</idno>
+   <label type="reg">Petersilienwurzel</label>
+   <label type="alt">petersil wrczen</label> 
+</item>
+<item xml:id="parsley root">
+   <idno type="uri">https://www.wikidata.org/entity/Q68220931</idno>
+   <label type="reg">Petersilienwurzel</label>
+   <label type="alt">petersil wuerczen</label> 
+</item>
+<item xml:id="parsley root">
+   <idno type="uri">https://www.wikidata.org/entity/Q68220931</idno>
+   <label type="reg">Petersilienwurzel</label>
+   <label type="alt">petersil wurczen</label> 
+</item>
+<item xml:id="parsley root">
+   <idno type="uri">https://www.wikidata.org/entity/Q68220931</idno>
+   <label type="reg">Petersilienwurzel</label>
+   <label type="alt">petersil wurz</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersilb</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersilg</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersilge</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersilgen</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">petersilgen zomen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersili</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersilie</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersilien</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">petersilien some</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">petersilien somen</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">petersilien zamen</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">petersilien zomen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersilienn</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersilienn</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersilig</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersilige</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersiligenn</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersill</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">petersill sam</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">petersill samen</label> 
+</item>
+<item xml:id="parsley root">
+   <idno type="uri">https://www.wikidata.org/entity/Q68220931</idno>
+   <label type="reg">Petersilienwurzel</label>
+   <label type="alt">petersill wurczen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersilligen grunes</label> 
+</item>
+<item xml:id="parsley root">
+   <idno type="uri">https://www.wikidata.org/entity/Q68220931</idno>
+   <label type="reg">Petersilienwurzel</label>
+   <label type="alt">petersilligen wurtzell</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersillin</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersily</label> 
+</item>
+<item xml:id="parsley juice">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246694</idno>
+   <label type="reg">Petersiliensaft</label>
+   <label type="alt">petersily saft</label> 
+</item>
+<item xml:id="parsley root">
+   <idno type="uri">https://www.wikidata.org/entity/Q68220931</idno>
+   <label type="reg">Petersilienwurzel</label>
+   <label type="alt">petersily wurcz</label> 
+</item>
+<item xml:id="parsley juice">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246694</idno>
+   <label type="reg">Petersiliensaft</label>
+   <label type="alt">petersimel saff</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersyl</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersyli</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersylien</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petersymil</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petirlin</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petirsilligen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petlein</label> 
+</item>
+<item xml:id="pellitory">
+   <idno type="uri">https://www.wikidata.org/entity/Q7161585</idno>
+   <label type="reg">Bertram</label>
+   <label type="alt">petram</label> 
+</item>
+<item xml:id="parsley seed">
+   <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+   <label type="reg">Petersiliensamen</label>
+   <label type="alt">petrisilgen zomen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petrocilinus</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petrocilius</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petrosil</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petrosill</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petrosill</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petrosillum</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petsil</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petsill</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petter sil</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petter sill</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petter zimel</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petterlein</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petterleinn</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petterlen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petterlenn</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petterlin</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petterling</label> 
+</item>
+<item xml:id="parsley juice">
+   <idno type="uri">https://www.wikidata.org/entity/Q107246694</idno>
+   <label type="reg">Petersiliensaft</label>
+   <label type="alt">petterling saft</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">petterly</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">pettersihl</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">pettersil</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">pettersilge</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">pettersilgen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">pettersilgenn</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">pettersilgennn</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">pettersilien</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">pettersill</label> 
+</item>
+<item xml:id="parsley root">
+   <idno type="uri">https://www.wikidata.org/entity/Q68220931</idno>
+   <label type="reg">Petersilienwurzel</label>
+   <label type="alt">pettersill der mit sampt der wurczen</label> 
+</item>
+<item xml:id="parsley root">
+   <idno type="uri">https://www.wikidata.org/entity/Q68220931</idno>
+   <label type="reg">Petersilienwurzel</label>
+   <label type="alt">pettersill wurczen</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">pettersylgenn</label> 
+</item>
+<item xml:id="spice">
+   <idno type="uri">https://www.wikidata.org/entity/Q42527</idno>
+   <label type="reg">Gewürz</label>
+   <label type="alt">pewuercz</label> 
+</item>
+<item xml:id="pepper">
+   <idno type="uri">https://www.wikidata.org/entity/Q43084</idno>
+   <label type="reg">Echter Pfeffer</label>
+   <label type="alt">pfefferr</label> 
+</item>
+<item xml:id="pepper">
+   <idno type="uri">https://www.wikidata.org/entity/Q43084</idno>
+   <label type="reg">Echter Pfeffer</label>
+   <label type="alt">pfeffers</label> 
+</item>
+<item xml:id="bread">
+   <idno type="uri">https://www.wikidata.org/entity/Q7802</idno>
+   <label type="reg">Brot</label>
+   <label type="alt">prot</label> 
+</item>
+<item xml:id="bread">
+   <idno type="uri">https://www.wikidata.org/entity/Q7802</idno>
+   <label type="reg">Brot</label>
+   <label type="alt">prots</label> 
+</item>
+<item xml:id="bread">
+   <idno type="uri">https://www.wikidata.org/entity/Q7802</idno>
+   <label type="reg">Brot</label>
+   <label type="alt">protss</label> 
+</item>
+<item xml:id="bread">
+   <idno type="uri">https://www.wikidata.org/entity/Q7802</idno>
+   <label type="reg">Brot</label>
+   <label type="alt">prott</label> 
+</item>
+<item xml:id="bread">
+   <idno type="uri">https://www.wikidata.org/entity/Q7802</idno>
+   <label type="reg">Brot</label>
+   <label type="alt">protts</label> 
+</item>
+<item xml:id="bread">
+   <idno type="uri">https://www.wikidata.org/entity/Q7802</idno>
+   <label type="reg">Brot</label>
+   <label type="alt">protz</label> 
+</item>
+<item xml:id="bread">
+   <idno type="uri">https://www.wikidata.org/entity/Q7802</idno>
+   <label type="reg">Brot</label>
+   <label type="alt">prowtt</label> 
+</item>
+<item xml:id="parsley">
+   <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+   <label type="reg">Petersilie</label>
+   <label type="alt">pterlin</label> 
+</item>
+<item xml:id="chicken">
+   <idno type="uri">https://www.wikidata.org/entity/Q864693</idno>
+   <label type="reg">Huhn</label>
+   <label type="alt">pulli</label> 
+</item>
+<item xml:id="pear">
+   <idno type="uri">https://www.wikidata.org/entity/Q13099586</idno>
+   <label type="reg">Birne</label>
+   <label type="alt">puren</label> 
+</item>
+<item xml:id="pear">
+   <idno type="uri">https://www.wikidata.org/entity/Q13099586</idno>
+   <label type="reg">Birne</label>
+   <label type="alt">püren</label> 
+</item>
+<item xml:id="pear">
+   <idno type="uri">https://www.wikidata.org/entity/Q13099586</idno>
+   <label type="reg">Birne</label>
+   <label type="alt">pürn</label> 
+</item>
+<item xml:id="purslane">
+   <idno type="uri">https://www.wikidata.org/entity/Q159554</idno>
+   <label type="reg">Portulak</label>
+   <label type="alt">purtzellen</label> 
+</item>
+<item xml:id="butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q34172</idno>
+   <label type="reg">Butter</label>
+   <label type="alt">puter</label> 
+</item>
+<item xml:id="clarified butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q2789594</idno>
+   <label type="reg">Butterschmalz</label>
+   <label type="alt">puter schmaltz</label> 
+</item>
+<item xml:id="butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q34172</idno>
+   <label type="reg">Butter</label>
+   <label type="alt">puteren</label> 
+</item>
+<item xml:id="butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q34172</idno>
+   <label type="reg">Butter</label>
+   <label type="alt">putern</label> 
+</item>
+<item xml:id="butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q34172</idno>
+   <label type="reg">Butter</label>
+   <label type="alt">puterrn</label> 
+</item>
+<item xml:id="butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q34172</idno>
+   <label type="reg">Butter</label>
+   <label type="alt">putten</label> 
+</item>
+<item xml:id="butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q34172</idno>
+   <label type="reg">Butter</label>
+   <label type="alt">putter</label> 
+</item>
+<item xml:id="clarified butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q2789594</idno>
+   <label type="reg">Butterschmalz</label>
+   <label type="alt">putter schmaltz</label> 
+</item>
+<item xml:id="butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q34172</idno>
+   <label type="reg">Butter</label>
+   <label type="alt">putteren</label> 
+</item>
+<item xml:id="butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q34172</idno>
+   <label type="reg">Butter</label>
+   <label type="alt">puttern</label> 
+</item>
+<item xml:id="butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q34172</idno>
+   <label type="reg">Butter</label>
+   <label type="alt">püttern</label> 
+</item>
+<item xml:id="butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q34172</idno>
+   <label type="reg">Butter</label>
+   <label type="alt">putternn</label> 
+</item>
+<item xml:id="core">
+   <idno type="uri">https://www.wikidata.org/entity/Q152882</idno>
+   <label type="reg">Kerngehäuse</label>
+   <label type="alt">putzen</label> 
+</item>
+<item xml:id="core">
+   <idno type="uri">https://www.wikidata.org/entity/Q152882</idno>
+   <label type="reg">Kerngehäuse</label>
+   <label type="alt">putzenn</label> 
+</item>
+<item xml:id="butter">
+   <idno type="uri">https://www.wikidata.org/entity/Q34172</idno>
+   <label type="reg">Butter</label>
+   <label type="alt">pvtern</label> 
+</item>
+<item xml:id="beer">
+   <idno type="uri">https://www.wikidata.org/entity/Q44</idno>
+   <label type="reg">Bier</label>
+   <label type="alt">pyer</label> 
+</item>
+<item xml:id="pear">
+   <idno type="uri">https://www.wikidata.org/entity/Q13099586</idno>
+   <label type="reg">Birne</label>
+   <label type="alt">pyeren</label> 
+</item>
+<item xml:id="pear">
+   <idno type="uri">https://www.wikidata.org/entity/Q13099586</idno>
+   <label type="reg">Birne</label>
+   <label type="alt">pyern</label> 
+</item>
+<item xml:id="chard">
+   <idno type="uri">https://www.wikidata.org/entity/Q157954</idno>
+   <label type="reg">Mangold</label>
+   <label type="alt">pyessen</label> 
+</item>
+<item xml:id="chard">
+   <idno type="uri">https://www.wikidata.org/entity/Q157954</idno>
+   <label type="reg">Mangold</label>
+   <label type="alt">pyessen pleter</label> 
+</item>
+<item xml:id="pimpinella">
+   <idno type="uri">https://www.wikidata.org/entity/Q1473991</idno>
+   <label type="reg">Kleine Bibernelle</label>
+   <label type="alt">pypnel</label> 
+</item>
+<item xml:id="pear">
+   <idno type="uri">https://www.wikidata.org/entity/Q13099586</idno>
+   <label type="reg">Birne</label>
+   <label type="alt">pyre</label> 
+</item>
+<item xml:id="pear">
+   <idno type="uri">https://www.wikidata.org/entity/Q13099586</idno>
+   <label type="reg">Birne</label>
+   <label type="alt">pyren</label> 
+</item>
+<item xml:id="pellitory">
+   <idno type="uri">https://www.wikidata.org/entity/Q7161585</idno>
+   <label type="reg">Bertram</label>
+   <label type="alt">pyretrum</label> 
+</item>
+<item xml:id="pear">
+   <idno type="uri">https://www.wikidata.org/entity/Q13099586</idno>
+   <label type="reg">Birne</label>
+   <label type="alt">pyrn</label> 
+</item>
+<item xml:id="dough">
+   <idno type="uri">https://www.wikidata.org/entity/Q178024</idno>
+   <label type="reg">Teig</label>
+   <label type="alt">teic</label> 
+</item>
+<item xml:id="dough">
+   <idno type="uri">https://www.wikidata.org/entity/Q178024</idno>
+   <label type="reg">Teig</label>
+   <label type="alt">teick</label> 
+</item>
+<item xml:id="dough">
+   <idno type="uri">https://www.wikidata.org/entity/Q178024</idno>
+   <label type="reg">Teig</label>
+   <label type="alt">teig</label> 
+</item>
+<item xml:id="dough">
+   <idno type="uri">https://www.wikidata.org/entity/Q178024</idno>
+   <label type="reg">Teig</label>
+   <label type="alt">teig</label> 
+</item>
+<item xml:id="dough">
+   <idno type="uri">https://www.wikidata.org/entity/Q178024</idno>
+   <label type="reg">Teig</label>
+   <label type="alt">teige</label> 
+</item>
+<item xml:id="dough">
+   <idno type="uri">https://www.wikidata.org/entity/Q178024</idno>
+   <label type="reg">Teig</label>
+   <label type="alt">teigk</label> 
+</item>
+<item xml:id="dough">
+   <idno type="uri">https://www.wikidata.org/entity/Q178024</idno>
+   <label type="reg">Teig</label>
+   <label type="alt">teigl</label> 
+</item>
+<item xml:id="sour cherry">
+   <idno type="uri">https://www.wikidata.org/entity/Q68438267</idno>
+   <label type="reg">Sauerkirsche</label>
+   <label type="alt">weichel</label> 
+</item>
+<item xml:id="sour cherry">
+   <idno type="uri">https://www.wikidata.org/entity/Q68438267</idno>
+   <label type="reg">Sauerkirsche</label>
+   <label type="alt">weichell</label> 
+</item>
+<item xml:id="sour cherry">
+   <idno type="uri">https://www.wikidata.org/entity/Q68438267</idno>
+   <label type="reg">Sauerkirsche</label>
+   <label type="alt">weichsel</label> 
+</item>
+<item xml:id="sour cherry">
+   <idno type="uri">https://www.wikidata.org/entity/Q68438267</idno>
+   <label type="reg">Sauerkirsche</label>
+   <label type="alt">weichselen</label> 
+</item>
+<item xml:id="sour cherry">
+   <idno type="uri">https://www.wikidata.org/entity/Q68438267</idno>
+   <label type="reg">Sauerkirsche</label>
+   <label type="alt">weichsell</label> 
+</item>
+<item xml:id="sour cherry">
+   <idno type="uri">https://www.wikidata.org/entity/Q68438267</idno>
+   <label type="reg">Sauerkirsche</label>
+   <label type="alt">weichsellen</label> 
+</item>
+<item xml:id="sour cherry">
+   <idno type="uri">https://www.wikidata.org/entity/Q68438267</idno>
+   <label type="reg">Sauerkirsche</label>
+   <label type="alt">weichseln</label> 
+</item>
+<item xml:id="sour cherry">
+   <idno type="uri">https://www.wikidata.org/entity/Q68438267</idno>
+   <label type="reg">Sauerkirsche</label>
+   <label type="alt">weichselnn</label> 
+</item>
+<item xml:id="wine">
+   <idno type="uri">https://www.wikidata.org/entity/Q282</idno>
+   <label type="reg">Wein</label>
+   <label type="alt">wein</label> 
+</item>
+<item xml:id="parsley root">
+   <idno type="uri">https://www.wikidata.org/entity/Q68220931</idno>
+   <label type="reg">Petersilienwurzel</label>
+   <label type="alt">wurtzeln</label> 
+</item>
+</list>

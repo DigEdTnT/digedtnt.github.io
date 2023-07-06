@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:telota="http://www.telota.de"
+     telota:doctype="register">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Sachbegriffe</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Gehört zur ediarum-App für eXist.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Hybrid: consult project description and document history for details.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <list>
+            <item xml:id="verjuice">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q1060458</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Agraz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">agraeß</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">agras</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">agraz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">agres</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">agresß</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">agrest</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">agreste</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">agroße</label>
+            </item>
+            <item xml:id="apple">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q89</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Apfel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">apfel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">äpfelen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">apfell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">apffel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">äpffel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">apffell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">apffl</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">aphel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">aphell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">aphfel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">aphfell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">aphl</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">appel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">appfel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">äppfel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">appfelen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">appfell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">appfeln</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">äppfeln</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">appffel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">äppffel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">appffell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">apphel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">apphell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">apphellen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">apphels</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mala</label>
+            </item>
+            <item xml:id="garden_pea">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q25237</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Erbse</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbais</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbaiss</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbaiß</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">ärbaiss</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbaissen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbaissn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbaisz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbaiz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbas</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbass</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbaß</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbassen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbasz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbays</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbayss</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbayssen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbayzzen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeis</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeisen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeiss</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeiß</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeissen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeißen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeißenn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeissenn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeissn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeisz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbes</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeyß</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeysz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbiß</label>
+            </item>
+            <item xml:id="pea_blossom">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q107263051</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Erbsenblüte</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbais pluee</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbaiß plue</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbayß plue</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeis bluost</label>
+            </item>
+            <item xml:id="pea_stock">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q107246700</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Erbsengrundbrühe</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbais prue</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbais pruee</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbaiss prue</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeissuppen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbes pruee</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbespruee</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbiß pruee</label>
+            </item>
+            <item xml:id="pea_flour">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q57657174</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Erbsenmehl</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbays mell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arbeis mehl</label>
+            </item>
+            <item xml:id="wild_strawberry">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q107262469</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Walderdbeere</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">ärber</label>
+            </item>
+            <item xml:id="medication">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q12140</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Arznei</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">arcenie</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">artzenie</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">artzny</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">ercznei</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">erczney</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">ertzney</label>
+            </item>
+            <item xml:id="chicken_egg">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q15260613</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Hühnerei</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">aren</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">eyernn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">eyerr</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">eyes</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">eyg</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">eyge</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">eyger</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">henn ay</label>
+            </item>
+            <item xml:id="calabash">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q1277255</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Flaschenkürbis</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">churbis</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">churibis</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">cucurbite</label>
+            </item>
+            <item xml:id="vinegar">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q41354</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Essig</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">esich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">esseych</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">eßich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">essich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">essichs</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">essick</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">essig</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">eßig</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">essige</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">essiges</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">essighe</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">essigk</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">essigs</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">essik</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">essych</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">essyg</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">esszig</label>
+            </item>
+            <item xml:id="goat_milk">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q1418287</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Ziegenmilch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">gais milch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">geys milch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">geyß milch</label>
+            </item>
+            <item xml:id="spice">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q42527</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Gewürz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">gestipp</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">gestuep</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">gestuepp</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">gestuepp</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">gestuept</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">gestup</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">gestupp</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">gestüpp</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pewuercz</label>
+            </item>
+            <item xml:id="chicken">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q864693</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Huhn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">hen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">hener</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">henern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">henn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">henndlein</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">henne</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">hennen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">henrn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">hunerr</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pulli</label>
+            </item>
+            <item xml:id="honey">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q10987</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Honig</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">henig</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">hoenigs</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">hong</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">hongs</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">hongy</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">honic</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">honich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">honicht</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">honick</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">honig</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">honigs</label>
+            </item>
+            <item xml:id="rose_hip">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q46740</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Hagebutte</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">hieffenn</label>
+            </item>
+            <item xml:id="elder_flower">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Schwarzer Holunder</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holaer</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holär</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holder</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holder bere</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holder bern beren</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holder berrienn beren</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holder bluete</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holder bluomen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holder bluost</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holder plu</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holder plüd</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holderbere</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holderberen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holderbluost</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holderplued</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holderplust</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holderplut</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holderplüt</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holderr</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holderr plut</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">hole</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holear plued</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holer</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holer plue</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holer plüed</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holer pluee</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holer plueed</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holer plueet</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holer plüet</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">hölerplüe</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holerpluet</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holerpluod</label>
+            </item>
+            <item xml:id="crab-apple">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q47161</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Holzapfel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holcz appfel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holcz ephel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holcz oeppfel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holcz öppfel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holczapfel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holczepfeln</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holczeppfelnn</label>
+            </item>
+            <item xml:id="crab-apple_juice">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q107246473</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Holzapfelsaft</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">holcz eppfell saff</label>
+            </item>
+            <item xml:id="ginger">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Ingwer</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">ingwer</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">Ingwerr</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">ingwerr</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">ingwerrs</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">ingwers</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">ingwerß</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">inigber</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">innber</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">inngber</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">inngewer</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">inngper</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">inngwer</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">innver</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">innwear</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">innwer</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">innwers</label>
+            </item>
+            <item xml:id="veal">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q957434</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Kalbfleisch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kalb flaisch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kalb fleisch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kalb fleysch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kalb fleysch</label>
+            </item>
+            <item xml:id="pip">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q3121375</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Fruchtkern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kernn</label>
+            </item>
+            <item xml:id="cow_milk">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q10988133</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Kuhmilch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuee milch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuemilch</label>
+            </item>
+            <item xml:id="beef">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q192628</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Rindfleisch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kueefleysch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kueen</label>
+            </item>
+            <item xml:id="cattle_lung">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q107246461</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Rinderlunge</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuelungelen</label>
+            </item>
+            <item xml:id="caraway">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q26811</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Echter Kümmel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuem</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuemb</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuemebel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuemel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuemels</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuemich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuemmel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuemmell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuemmich</label>
+            </item>
+            <item xml:id="cumin">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q57328174</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Kreuzkümmel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">kuemel walischen</label>
+            </item>
+            <item xml:id="lettuce">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q83193</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Lattich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">lactuken</label>
+            </item>
+            <item xml:id="pomegranate">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q13222088</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Granatapfel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mala punica</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">malagram</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">malagranat</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">malegranat</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">malgran</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">malignate</label>
+            </item>
+            <item xml:id="almond">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q184357</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Mandel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">maldl</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mändel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel cheren</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel cherenn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel chern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel cherne</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel chernen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel chernn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel ckernn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel keren</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel kern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel kerne</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel kernen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandel kernn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandelkernn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mandeln kernen</label>
+            </item>
+            <item xml:id="mint">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q47859</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Minzen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">menta</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mente</label>
+            </item>
+            <item xml:id="horse_radish">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Meerrettich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">mer rettich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">merechtig</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">meret</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">merettich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">merich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">merrech</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">merrech</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">merredch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">merredich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">merretich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">merrettich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">merrich</label>
+            </item>
+            <item xml:id="nutmeg_apple">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q83165</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Muskatnuss</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">müscaden</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">müscaden</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">muscat</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">müscat</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">müscat</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">muscat nus</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">muscat nus</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">muscatenn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">muscatnues</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">müscatnus</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">muscatnuss</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">muscatnuß</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nugatt</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nusgat</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nusgattnus</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nusget</label>
+            </item>
+            <item xml:id="clove">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Gewürznelke</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">neegel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">neegelein</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negela</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negelach</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negele</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negelein</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negeleinn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negelen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negeleyn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negelin</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negellein</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negelleyn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negelli</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negellin</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negellnn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negeln</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negelyn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negili</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negilin</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negl</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">neglein</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">neglenn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">neglichen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">neglin</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negllein</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">negln</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">neglyn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">neilken</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nelcken</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nelken</label>
+            </item>
+            <item xml:id="nut">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Nussfrucht</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nues</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nues cherenn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nues kernen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nueskerenn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nueskern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuess</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nueß</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuessen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nueßen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuesss</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuesz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuesze</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nueszen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuez</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuezz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuezze</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuezze kern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuezzen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuoß</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nus</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nus kerne</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nus kernen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nus kernn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuscherenn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuskeren</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuskern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuskernn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuss</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuß</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nüss</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nüß</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuss kern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nusse</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuszkernn</label>
+            </item>
+            <item xml:id="nut_milk">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q107246657</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Nussmilch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nues milich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuesz milch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuezz milich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuosz milich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nus milch</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nus milich</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nusmilich</label>
+            </item>
+            <item xml:id="mace">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q1882876</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Macis</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuscatt bluede</label>
+            </item>
+            <item xml:id="nut_oil">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q41150815</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Nussöl</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nusol</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">nuß oley</label>
+            </item>
+            <item xml:id="pepper">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q43084</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Echter Pfeffer</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pefer</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peffer</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peffern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peper</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pfefferr</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pfeffers</label>
+            </item>
+            <item xml:id="elderberry">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q96333359</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Holunderbeere</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pernn</label>
+            </item>
+            <item xml:id="parsley">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Petersilie</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">perterlin</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pertersilgen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peteersil</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peter sil</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peter silg</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peter sill</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peter sylienn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peter syll</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petercilien</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterczimel chrawt</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterczymel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterczymel pletter</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterczymell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterczymellpletter</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterczymelpletter</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterczymil pletter</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterczymmel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterczymmel pletter</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterczymmelpletter</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterlein</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterlein wurzel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterlen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterli</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterlin</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterlin krut</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterling</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterlins</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterllein</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterly</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterlyn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterrsill</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterselige</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterseligen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersielien</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersigil</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersil</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersil blat</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersil bletter</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilb</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilg</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilge</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilgen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersili</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilie</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilien</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilienn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilienn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilig</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilige</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersiligenn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersill</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilligen grunes</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersillin</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersily</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersyl</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersyli</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersylien</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersymil</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petirlin</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petirsilligen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petlein</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petrocilinus</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petrocilius</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petrosil</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petrosill</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petrosill</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petrosillum</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petsil</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petsill</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petter sil</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petter sill</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petter zimel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petterlein</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petterleinn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petterlen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petterlenn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petterlin</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petterling</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petterly</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pettersihl</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pettersil</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pettersilge</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pettersilgen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pettersilgenn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pettersilgennn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pettersilien</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pettersill</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pettersylgenn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pterlin</label>
+            </item>
+            <item xml:id="pellitory">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q7161585</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Bertram</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pertram</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petram</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pyretrum</label>
+            </item>
+            <item xml:id="pes_unsolved">
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">ungelöst(pes)</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pes</label>
+            </item>
+            <item xml:id="parsley_juice">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q107246694</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Petersiliensaft</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterczymel saff</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterlin saft</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterlinsaft</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersily saft</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersimel saff</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petterling saft</label>
+            </item>
+            <item xml:id="parsley_seed">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Petersiliensamen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterlein same</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterlin samen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterling samen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterlyn samen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">peterseligen samen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersil samen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilgen zomen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilien some</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilien somen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilien zamen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilien zomen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersill sam</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersill samen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petrisilgen zomen</label>
+            </item>
+            <item xml:id="parsley_root">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q68220931</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Petersilienwurzel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersil wrczen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersil wuerczen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersil wurczen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersil wurz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersill wurczen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersilligen wurtzell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">petersily wurcz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pettersill der mit sampt der wurczen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pettersill wurczen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">wurtzeln</label>
+            </item>
+            <item xml:id="bread">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q7802</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Brot</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">prot</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">prots</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">protss</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">prott</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">protts</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">protz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">prowtt</label>
+            </item>
+            <item xml:id="pear">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q13099586</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Birne</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">puren</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">püren</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pürn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pyeren</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pyern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pyre</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pyren</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pyrn</label>
+            </item>
+            <item xml:id="purslane">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q159554</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Portulak</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">purtzellen</label>
+            </item>
+            <item xml:id="butter">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q34172</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Butter</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">puter</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">puteren</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">putern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">puterrn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">putten</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">putter</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">putteren</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">puttern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">püttern</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">putternn</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pvtern</label>
+            </item>
+            <item xml:id="clarified_butter">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q2789594</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Butterschmalz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">puter schmaltz</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">putter schmaltz</label>
+            </item>
+            <item xml:id="core">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q152882</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Kerngehäuse</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">putzen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">putzenn</label>
+            </item>
+            <item xml:id="beer">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q44</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Bier</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pyer</label>
+            </item>
+            <item xml:id="chard">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q157954</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Mangold</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pyessen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pyessen pleter</label>
+            </item>
+            <item xml:id="pimpinella">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q1473991</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Kleine Bibernelle</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">pypnel</label>
+            </item>
+            <item xml:id="dough">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q178024</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Teig</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">teic</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">teick</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">teig</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">teig</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">teige</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">teigk</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">teigl</label>
+            </item>
+            <item xml:id="sour_cherry">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q68438267</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Sauerkirsche</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">weichel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">weichell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">weichsel</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">weichselen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">weichsell</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">weichsellen</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">weichseln</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">weichselnn</label>
+            </item>
+            <item xml:id="wine">
+               <idno xmlns="http://www.tei-c.org/ns/1.0" type="uri">https://www.wikidata.org/entity/Q282</idno>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="reg">Wein</label>
+               <label xmlns="http://www.tei-c.org/ns/1.0" type="alt">wein</label>
+            </item>
+         </list>
+      </body>
+   </text>
+</TEI>

@@ -6,9 +6,10 @@
 	xmlns:telota="http://www.telota.de"
 	version="2.0" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="tei xsi">
 	
+	<!-- Scope of stylesheet: Transforms the invalid output from FromThePage to the structure of the 
+		 DTA-Basisformat in order to be able to edit the transformed XML in ediarum. -->
+	
 	<xsl:output method="xml" indent="yes" />
-
-
 
 		<!-- Embedding of RNG and SCHEMATRON of the DTA-Basisformat for manuscripts-->
 		<xsl:template match="/">
