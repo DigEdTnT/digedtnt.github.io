@@ -107,7 +107,7 @@ Weiters fügen wir das sogenannte “identity transform”-Template ein, um - zu
 ```
 
 ## 2. Transformation der Metadaten
-* **Anlegen eines validen und minimalen TEI-Headers:** Bei dem automatisch beim TEI-Export aus Transkribus generierten TEI-Header fehlt das obligatorische `publicationStatement`, dafür ist ein `seriesStatement`, das aufgrund des fehlenden `publicationStatement` an dieser Stelle noch nicht erlaubt ist, vorhanden. Da wir den TEI-Header erst später mit Metadaten befüllen werden, fügen wir zunächst einen minimalen, aber validen Header ein.
+* **Anlegen eines validen und minimalen TEI-Headers:** Bei dem automatisch beim TEI-Export aus Transkribus generierten TEI-Header fehlt das obligatorische `<publicationStatement>`, dafür ist ein `<seriesStatement>`, das aufgrund des fehlenden `<publicationStatement>` an dieser Stelle noch nicht erlaubt ist, vorhanden. Da wir den TEI-Header erst später mit Metadaten befüllen werden, fügen wir zunächst einen minimalen, aber validen Header ein.
 
 ```xml
 <xsl:template match="teiHeader">
@@ -127,7 +127,7 @@ Weiters fügen wir das sogenannte “identity transform”-Template ein, um - zu
 </xsl:template>
 ```
 
-* **Anpassung des `facsimile`-Elements:** Im Transkribus-Export enthält das `facsimile`-Element vier `surface`-Elemente, die jeweils einer Seite der in Transkribus importierten Faksimileseiten unseres vierseitigen Briefes entsprechen. Diese haben wiederum `graphic`- und `zone`-Kindelemente, von denen wir nur erstere beibehalten wollen. Weiters verfügen die `surface`- und `graphic`-Elemente über eine Reihe von Attributen (wie z. B. die Angabe der Höhe und Breite der importierten Bilder), die wir nicht weiter benötigen und die durch unser Template entfernt werden. Als neue Attribute fügen wir den `graphic`-Elementen einen Mime-Typ (“image/jpeg”) hinzu und eine XML-ID, die wir mittels `position()` generieren lassen. 
+* **Anpassung des `<facsimile>`-Elements:** Im Transkribus-Export enthält das `<facsimile>`-Element vier `<surface>`-Elemente, die jeweils einer Seite der in Transkribus importierten Faksimileseiten unseres vierseitigen Briefes entsprechen. Diese haben wiederum `<graphic>`- und `<zone>`-Kindelemente, von denen wir nur erstere beibehalten wollen. Weiters verfügen die `<surface>`- und `<graphic>`-Elemente über eine Reihe von Attributen (wie z. B. die Angabe der Höhe und Breite der importierten Bilder), die wir nicht weiter benötigen und die durch unser Template entfernt werden. Als neue Attribute fügen wir den `<graphic>`-Elementen `@mimeType` (“image/jpeg”) hinzu und eine XML-ID, die wir mittels `position()` generieren lassen. 
 
 ```xml
 <xsl:template match="//facsimile">
@@ -147,7 +147,7 @@ Weiters fügen wir das sogenannte “identity transform”-Template ein, um - zu
 
 ## 3. Transformation des transkribierten Briefs
 
-* **Bearbeitung der `ab`-Elemente:** Wir wollen die `ab`-Elemente durch `p`-Elemente ersetzen und auch deren `facs`- und ihre (bzw. alle im Dokument vorkommenden) `type`-Attribute entfernen, da wir sie hier nicht benötigen und letztere außerdem, da sie leer sind, dazu führen, dass unser Dokument nicht valide ist.
+* **Bearbeitung der `<ab>`-Elemente:** Wir wollen die `<ab>`-Elemente durch `<p>`-Elemente ersetzen und auch die `@facs` und (bzw. alle im Dokument vorkommenden) `@type`-Attribute entfernen, da wir sie hier nicht benötigen und letztere außerdem, da sie leer sind, dazu führen, dass unser Dokument nicht valide ist.
 
 ```xml
 <xsl:template match="ab">
@@ -159,7 +159,7 @@ Weiters fügen wir das sogenannte “identity transform”-Template ein, um - zu
 <xsl:template match="@type"/>
 ```
 
-* **Bearbeitung der `lb`-Elemente:** Auch bei den `lb`-Elementen möchten wir die `facs`-Attribute entfernen, zusätzlich wollen wir die Zählung der Zeilen im `n`-Attribut geringfügig anpassen (von n=”N001” → n=”1”).
+* **Bearbeitung der `<lb>`-Elemente:** Auch bei den `<lb>`-Elementen möchten wir die `@facs` entfernen, zusätzlich wollen wir die Zählung der Zeilen im `@n`-Attribut geringfügig anpassen (von n=”N001” → n=”1”).
 
 ```xml
 <xsl:template match="lb/@facs"/>
@@ -173,7 +173,7 @@ Weiters fügen wir das sogenannte “identity transform”-Template ein, um - zu
 </xsl:template>
 ```
 
-* **Bearbeitung der `pb`-Elemente:** Hier passen wir zunächst das `facs`-Attribut an, sodass ein richtiger Verweis auf die Faksimiles gesichert ist. Dann kopieren wir alle weiteren Attribute außer dem neu erstellten `facs`-Element (in diesem Fall nur das `n`-Attribut) und entfernen in einem letzten Schritt noch alle `xml:id`-Attribute.
+* **Bearbeitung der `<pb>`-Elemente:** Hier passen wir zunächst das `@facs` an, sodass ein richtiger Verweis auf die Faksimiles gesichert ist. Dann kopieren wir alle weiteren Attribute außer dem neu erstellten `<facs>`-Element (in diesem Fall nur das `@n`) und entfernen in einem letzten Schritt noch alle `@xml:id`.
 
 ```xml
 <xsl:template match="pb">
