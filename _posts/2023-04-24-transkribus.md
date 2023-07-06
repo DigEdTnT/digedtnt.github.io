@@ -382,11 +382,18 @@ Wenn wir ein Modell auswählen, können wir uns durch einen Klick auf "Beschreib
 
 
 
-* Nun legen wir noch die neuen Tags “opener” an “salute” und taggen damit die Datumszeile und die Grußformel. Zuletzt taggen wir noch die sich weiter unten befindliche, zweite Datumsangabe auf der ersten Seite des Briefs. Auf den nächsten beiden Seiten zeichnen wir mit den Formatoptionen die unterstrichenen und höhergestellten Wörter aus, während wir auf der letzten Seite für die Passage am Briefende noch die Tags “closer” und “name” anlegen und die Verabschiedung samt Grußformel und Namen des Briefschreibers taggen (Abb. 26).
-
+* Nun legen wir noch die neuen Tags “opener” an “salute” und taggen damit die Datumszeile und die Grußformel. In unserem Fall umfasst der Opener zwei Zeilen (abb. 26, grüne Linie) und enthält eben ein dateline-Element (abb. 26, orange Linie) und ein salute-Element (Abb. 26, gelbe Linie). 
+    
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/tags_nested.PNG" description="Die getaggte erste Seite des ersten Briefs" %}
 
+* Es zeigt sich allerdings gleich, dass die Annotationsmöglichkeiten von Transkribus stark eingeschränkt sind. Während der Editor durch die zwei Zeilen umspannende grüne Linie suggeriert, dass die gesamten zwei Zeilen  von einem Tag umgeben würden, zeigt sich im TEI/XML-Export, dass dies leider nicht der Fall ist. Stattdessen wird jede der beiden Zeilen von einem seperaten opener-Tag umschlossen, das zudem auch in der ersten Zeile innerhalb des dateline-Tags platziert wird. Es gibt in Transkribus keine Möglichkeit festzulegen, wobei es sich um das innere und wobei es sich um das äußere Tag handelt. 
 
+``` xml
+<lb facs="#facs_1_tr_4_tl_1" n="N001"/><dateline><opener>Graz <date when="1893-10-19">19 Okt. 93.</date></opener></dateline>
+<lb facs="#facs_1_tr_1_tl_1" n="N002"/><opener><salute>Verehrter Herr,</salute></opener>
+```
+
+* Wir verzichten daher auf eine Annotation des Openers und taggen lediglich Textpassagen, die nicht mehrere Zeilen umfassen. Dabei handelt es sich um die sich weiter unten befindliche, zweite Datumsangabe auf der ersten Seite des Briefs. Auf den nächsten beiden Seiten zeichnen wir mit den Formatoptionen die unterstrichenen und höhergestellten Wörter aus, bei der letzten Seite stoßen wir wieder auf dasselbe Problem: Sowohl salute als auch der closer würden mehr als eine Zeile umspannen. Wir zeichnen diese also nicht aus, sondern legen lediglich ein "name"-Tag an, um den Namen des Briefschreibers taggen (Abb. 26).
 
 ## 9. Export der Dokumente
 * **Downloadfunktion in der Sammlungsübersicht:** Da wir unsere Daten noch weiter annotieren und anreichern wollen, ist es für uns am sinnvollsten, sie als TEI-XML zu exportieren. Innerhalb unserer Sammlung können wir die Dokumente selektieren, die wir herunterladen wollen. Wir selektieren unseren bereits testweise annotierten ersten Brief und klicken auf “Download”. Im Popup wählen wir bei den unterschiedlichen Exportformaten lediglich “TEI” aus (Abb. 27). Wir bekommen nun auf unsere E-Mail-Adresse einen Downloadlink zugeschickt, mit dem wir eine ZIP-Datei herunterladen können.
