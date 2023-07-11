@@ -10,7 +10,7 @@ excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
 
 factsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf
 
-tooldoc: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-03-27-fromthepage.pdf
+tooldoc: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-03-27-fromthepage-td.pdf
 
 last_modified_at:   2023-05-09
 
@@ -165,7 +165,7 @@ Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolg
     * Einschränkung auf bestimmten Kreis an Mitarbeitende möglich
     * Einstellungen für eine strikte Qualitätskontrolle: Obligatorische Reviews können angefordert und Validierungen auf bestimmten Kreis an Reviewer:innen eingeschränkt werden
     * Fertiggestellte Unterprojekte können eingeschränkt und nur für bestimmte Mitarbeitende für die Revision bearbeitbar gemacht werden
-    * Textpassagen können vor Webcrawlern oder Eingriffen von unregistrierten Nutzer:innen geschützt werden (nur Transkribierenden mit entsprechender Erlaubnis - über &lt;sensitive>-Tag - dürfen markierte Textpassage bearbeiten)
+    * Textpassagen können vor Webcrawlern oder Eingriffen von unregistrierten Nutzer:innen geschützt werden (nur Transkribierenden mit entsprechender Erlaubnis - über `<sensitive>`-Tag - dürfen markierte Textpassage bearbeiten)
 * Community für Transkription: Bewerbung des Projekts über den Newsletter von FromThePage oder über Social Media (z. B. Twitter)
 
 
@@ -286,7 +286,7 @@ Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobe
     Wir können hier also direkt mit der zeilenweisen Transkription beginnen und die verschiedenen Funktionen von FromThePage nutzen:
     * **Auszeichnung unserer Transkription**: FromThePage ermöglicht es, unsere Auszeichnungen mittels Markdown entsprechend [Wiki-Text-Konventionen](https://www.mediawiki.org/wiki/Wikitext/de) zu gestalten sowie außerdem all jene Mark-up-Buttons zu verwenden, deren Anzeige wir zuvor in den Projekt-Einstellungen aktiviert haben.
         {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-view.PNG" description="Transkriptionsarbeit" %}
-        Sollte es unter unseren Transkribierenden Personen geben, die Tags lieber ausschreiben statt Textbereiche mittels Klick auf Button zu markieren, ist dies ebenfalls möglich. Strukturierungen wie Zeilenumbrüche oder Absätze werden automatisch übernommen. Wenn wir die Möglichkeiten der TEI nutzen wollen, haben wir dafür zwar keine Buttons, wir können aber z. B. editorische Eingriffe - in der Abbildung durch das Element &lt;supplied> realisiert - trotzdem mit dem entsprechenden Tag auszeichnen.
+        Sollte es unter unseren Transkribierenden Personen geben, die Tags lieber ausschreiben statt Textbereiche mittels Klick auf Button zu markieren, ist dies ebenfalls möglich. Strukturierungen wie Zeilenumbrüche oder Absätze werden automatisch übernommen. Wenn wir die Möglichkeiten der TEI nutzen wollen, haben wir dafür zwar keine Buttons, wir können aber z. B. editorische Eingriffe - in der Abbildung durch das Element `<supplied>` realisiert - trotzdem mit dem entsprechenden Tag auszeichnen.
         {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Mark-up-Möglichkeiten" %}
         Das Element wird zwar in der allgemeinen Darstellung auf FromThePage nicht unterstützt, es befindet sich aber am Ende in unserem TEI-Export. Ein Nachteil dieses Workarounds ist aber, dass auf diese Weise angelegte Tags nicht validiert werden und wir bei einer falschen Schreibweise oder unzulässigen Positionierung des Elements keinen Hinweis darauf bekommen. Da wir FromThePage aber ohnehin nur für unsere Transkription und nicht für die Annotation verwenden wollen, setzen wir uns mit dieser Form der Auszeichnung nicht weiter auseinander.
         {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-overview.PNG" description="Allgemeine Ansicht" %}
@@ -417,7 +417,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
         </teiHeader>
         ```
         → Die individuellen Werk-Metadaten (Material, Sprache usw.), die wir für jedes Manuskript einzeln angelegt haben, sind hier aber leider nicht abgebildet - diese befinden sich aber später im CSV-Metadaten-Export. Leider müssen wir an dieser Stelle außerdem feststellen, dass unser TEI nicht valide ist, da in den Metadaten eine xml:id an zwei Stellen vergeben wurde.
-    * **Entitäten & Kategorien:** Unsere Taxonomie für Zutaten und Gerichte wird in ein &lt;taxonomy>-Element verpackt, wo wir all unsere angelegten Daten und Kategoriezuordnungen wiederfinden.
+    * **Entitäten & Kategorien:** Unsere Taxonomie für Zutaten und Gerichte wird in ein `<taxonomy>`-Element verpackt, wo wir all unsere angelegten Daten und Kategoriezuordnungen wiederfinden.
         ```xml
         <encodingDesc>
             <classDecl>
@@ -485,8 +485,8 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
             </classDecl>
         </encodingDesc>
         ```
-    → Auch hier treffen wir auf ein Problem hinsichtlich der Validität unseres TEI-Dokuments, da in der Taxonomie innerhalb der &lt;catDesc>-Elemente &lt;notes>-Elemente erzeugt wurden, die dort nicht zugelassen sind. Zudem steht die mit einem &lt;head>-Element ausgezeichnete Überschrift von einem der Faksimiles unzulässigerweise innerhalb eines &lt;p>-Elementes.
-    * **Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem &lt;div>-Element wiedergegeben, wobei das vorangehende &lt;pb>-Element einen Link zur Bilddatei im IIIF-Format beinhaltet.
+    → Auch hier treffen wir auf ein Problem hinsichtlich der Validität unseres TEI-Dokuments, da in der Taxonomie innerhalb der `<catDesc>`-Elemente `<notes>`-Elemente erzeugt wurden, die dort nicht zugelassen sind. Zudem steht die mit einem `<head>`-Element ausgezeichnete Überschrift von einem der Faksimiles unzulässigerweise innerhalb eines `<p>`-Elementes.
+    * **Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem `<div>`-Element wiedergegeben, wobei das vorangehende `<pb>`-Element einen Link zur Bilddatei im IIIF-Format beinhaltet.
         ```xml    
         <text>
             <body>
@@ -752,7 +752,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
             </body>
         </text>
         ```
-    Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüchen, unklaren Stellen, Erweiterungen von Abkürzungen sowie Referenzen zu unserer Taxonomie wiederfinden. Außerdem finden wir auch die Anmerkungen der Transkribierenden in einem &lt;note>-Element am Ende des &lt;div>-Elements.
+    Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüchen, unklaren Stellen, Erweiterungen von Abkürzungen sowie Referenzen zu unserer Taxonomie wiederfinden. Außerdem finden wir auch die Anmerkungen der Transkribierenden in einem `<note>`-Element am Ende des `<div>`-Elements.
 * **Export der Metadaten**: Viele der Metadaten, die wir im Header des XML/TEIs finden, sowie zusätzlich die eigens für jedes Projekt angelegten Metadaten (Material, Sprache & zeitliche Einordnung) können wir auch per CSV exportieren ([Link zum CSV-Export](https://github.com/DigEdTnT/digedtnt.github.io/blob/95d465f768eff02fdcd74f8e5248d8eea9e94586/data/pipelines/pipeline_1/fromthepage/export/fromthepage_work_metadata_export_32000501_2023-04-13T11_28_04Z.csv)).
 → Man beachte jedoch, dass bei diesem Export nur die allgemeinen Projekt-Metadaten und Statistiken wiederzufinden sind, nicht aber die von uns per YAML-Datei importierten Metadaten wie beispielsweise die physische Beschreibung oder historische Dokumentation der Manuskripte.
 

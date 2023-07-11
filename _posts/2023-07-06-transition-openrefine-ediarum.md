@@ -8,7 +8,7 @@ categories: [transition, openrefine, ediarum, xslt]
 
 excerpt: Die Transition von OpenRefine zu ediarum beinhaltet die Anpassung des Exports von OpenRefine an die XML-Registerstruktur für ediarum.
 
-transitionsheet: bla.com/bla.pdf
+transitionsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-05-31-transition-openrefine-ediarum-td.pdf
 
 xslt: https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/transition_2/data/openrefine-output_to_ediarum.xsl
     
@@ -31,7 +31,7 @@ Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kom
 
 ### Erforderliche Kenntnisse
 
-* Einrichten einer Oxygen Transformation (in dieser Transition erklärt)
+* Einrichten einer [Oxygen-Transformation](https://digedtnt.github.io/xsl-transformation)
 * Grundlegende XSLT-Kenntnisse (für erweiterte Anpassungen)
 
 ### Benötigte Software
@@ -86,7 +86,11 @@ In unserem Projekt sind wir mit folgender Herausforderung konfrontiert: Der Expo
 </item>
 …
 ```
-Um die `<item>`-Elemente mit der gleichen `@xml:id`, die außerdem auch die gleiche QID und die gleiche deutsche Übersetzung im `<label type=”reg”>`-Element enthalten, in einem `<item>`-Element mit den verschiedenen frühneuhochdeutschen Varianten mit mehreren  `<label type=”alt”>`-Elementen zusammenzuführen, transformieren wir die Daten mittels XSLT. Dabei gehen wir wie folgt vor:
+Um die `<item>`-Elemente mit der gleichen `@xml:id`, die außerdem auch die gleiche QID und die gleiche deutsche Übersetzung im `<label type=”reg”>`-Element enthalten, in einem `<item>`-Element mit den verschiedenen frühneuhochdeutschen Varianten mit mehreren  `<label type=”alt”>`-Elementen zusammenzuführen, transformieren wir die Daten mittels XSLT. 
+
+Eine Kurzanleitung für das Einrichten eines Transformationsszenarios findet sich [hier](https://digedtnt.github.io/xsl-transformation). 
+
+Nach der Transformation sind noch folgende Schritte zu setzen:
 
 * Der in OpenRefine mittels Template in eine XML-Struktur überführte Datensatz wird beim Export als [Plaintext-Datei](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/transition_2/data/output_openrefine.txt) zum Download bereitgestellt. Daher kopieren wir zunächst die Liste und fügen diese in das Register ein, das wir in ediarum für unser Projekt erstellt haben. Dafür wechseln wir in die Text-Ansicht und kopieren den Inhalt der TXT-Datei in den vorerst noch leeren `<body>`. 
    {% include image.html url="../data/pipelines/pipeline_1/transition_2/img/copy-openrefine-output.PNG" description="Befüllen des ediarum-Registers mit den Daten aus OpenRefine" %} 
@@ -97,7 +101,7 @@ Um die `<item>`-Elemente mit der gleichen `@xml:id`, die außerdem auch die glei
 * Nun müssen wir in ediarum nur mehr das Register-XML austauschen oder den Inhalt der transformierten Datei in das alte Register übernehmen, und können dann mit der [Annotation der Zutaten](https://digedtnt.github.io/ediarum/#d-annotation-mit-registereintr%C3%A4gen) anhand unseres Datensatzes fortfahren. 
 
 
-[Allgemeines Video-Tutorial zu XSLT](https://github.com/chpollin/Teaching/blob/master/TTT/TTT_6_XSLT/XSLT.md)
+
 
 
 # XSLT Dokumentation

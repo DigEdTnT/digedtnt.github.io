@@ -8,7 +8,7 @@ categories: [transition, fromthepage, ediarum, xslt, dta-basisformat]
 
 excerpt: Die Transition von FromThePage zu ediarum beinhaltet die Anpassung des TEI/XML-Exports von FromThePage an das DTA-Basisformat, das in ediarum als Standard verwendet wird.
 
-transitionsheet: bla.com/bla.pdf
+transitionsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-05-31-transition-fromthepage-ediarum-td.pdf
 
 xslt: https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/transition_1/data/ftp-export_to_dta.xsl
     
@@ -32,7 +32,7 @@ Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kom
 
 
 
-* Einrichten einer Oxygen Transformation (in dieser Transition erklärt)
+* Einrichten einer [Oxygen-Transformation](https://digedtnt.github.io/xsl-transformation)
 * Grundlegende XSLT-Kenntnisse (für erweiterte Anpassungen)
 
 
@@ -60,7 +60,6 @@ Der Übergang von einem Tool zu einem anderen lässt sich verschieden gestalten.
 ## Herausforderungen & Probleme
 
 
-
 * Einschränkung hinsichtlich der Möglichkeiten an Metadaten-Elementen im DTA-Basisformat 
 * Entscheidung für einen DTA-konformen XML-Output führt zu Informationsverlust
 * Verpflichtende Attribute bei Elementen gemäß DTABf, die zuvor in FromThePage nicht hinzugefügt wurden, führen zu einem nicht validen Dokument
@@ -73,7 +72,7 @@ Für eine Transformation des aus FromThePage exportierten TEIs in ein für ediar
 
 Hier ist die [XSLT-Ressource](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/ftp_export_to_dta.xsl) für unsere FromThePage-ediarum-Transformation.
 
-Eine Beschreibung für das Einrichten eines Transformationsszenarios findet sich [hier](https://digedtnt.github.io/XSL Transformation). 
+Eine Kurzanleitung für das Einrichten eines Transformationsszenarios findet sich [hier](https://digedtnt.github.io/xsl-transformation). 
 
 
 # XSLT Dokumentation
