@@ -29,12 +29,12 @@ In OpenRefine lässt sich der Export über die Templating-Option bereits sehr gu
 ## Voraussetzungen
 Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kompetenzen der Benutzer:innen voraus, sondern stellen auch hinsichtlich der Software-Umgebung gewisse Anforderungen.
 
-### **Erforderliche Kenntnisse**
+### Erforderliche Kenntnisse
 
 * Einrichten einer Oxygen Transformation (in dieser Transition erklärt)
 * Grundlegende XSLT-Kenntnisse (für erweiterte Anpassungen)
 
-### **Benötigte Software**
+### Benötigte Software
 
 * Oxygen Editor
 
