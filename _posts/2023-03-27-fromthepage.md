@@ -8,7 +8,7 @@ categories: [tool, transkription, FromThePage, opensource]
 
 excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
 
-factsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/fromthepage/data/DigEdTnT_FactSheet_FromThePage.pdf
+factsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/fromthepage/factsheet/DigEdTnT_FactSheet_FromThePage.pdf
 
 tooldoc: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-03-27-fromthepage-td.pdf
 
@@ -799,7 +799,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
 
 ## Tutorials
 
-[FromThePage Youtube Channel](https://www.youtube.com/@fromthepage)
+* [FromThePage Youtube Channel](https://www.youtube.com/@fromthepage)
 
 
 ## Projekte, die dieses Tool genutzt haben
@@ -812,20 +812,20 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
 
 ## Literatur
 
-* Blickhan, S., Krawczyk, C., Hanson, D., Boyer, A., Simenstad, A., & Hyning, V. van. (2019). Individual vs. Collaborative Methods of Crowdsourced Transcription. Journal of Data Mining and Digital Humanities, Special Issue on Collecting, Preserving, and Disseminating Endangered Cultural Heritage for New Understandings through Multilingual Approaches. https://doi.org/10.46298/jdmdh.5759
-* Brumfield, B. (o. J.). Collaborative Manuscript Transcription [Blog]. Collaborative Manuscript Transcription. Abgerufen 3. Mai 2023, von http://manuscripttranscription.blogspot.com/
-* Brumfield, B. (2012, Januar 7). FromThePage: A Web-Based Tool for Transcribing, Indexing, and Annotating Handwritten Material. 126th Annual Meeting American Historical Association, Chicago.
-* Brumfield, B. (2020, Januar 9). The Decade in Crowdsourcing Transcription. FromThePage Blog. From the Page. https://content.fromthepage.com/decade-in-crowdsourcing/
-* Causer, T., Tonra, J., & Wallace, V. (2012). Transcription maximized; expense minimized? Crowdsourcing and editing The Collected Works of Jeremy Bentham. Literary and Linguistic Computing, 27(2), 119–137. https://doi.org/10.1093/llc/fqs004
-* Christina Manzo et al. (o. J.). By the People, For the People: Assessing the Value of Crowdsourced, User-Generated Metadata [DHQ: Digital Humanities Quarterly:]. Abgerufen 24. September 2015, von http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html
-* del Rio Riande, G., Hernández, N., & De León, R. (2018, November). Manos en la masa (textual): Introducción al editatón colaborativo con FromThePage. III Congreso Internacional de la Asociación de Humanidades Digitales (AAHD). La cultura de los datos, Rosario, Santa Fe. http://hdl.handle.net/2133/13460
-* Finke, P., & Laszlo, E. (2014). Citizen Science: Das unterschätzte Wissen der Laien. oekom verlag.
-* Guzman, A. (2019, September 27). Challenges in Multilingual Transcription: An Overview of FromThePage and This Panel. Digital Frontiers Anual Conference, Austin, Texas. https://digital.library.txstate.edu/handle/10877/9479
-* Jarnecke, M. (2020). Crowdsource Indexing: Virtual Volunteering Means Big Index Projects Keep on Moving at the Indiana State Archives. The Hoosier Genealogist: Connections, 60(2), 62–68.
-* Okinina, N., Nicolas, L., & Lyding, V. (2018). Transc&Anno: A Graphical Tool for the Transcription and On-the-Fly Annotation of Handwritten Documents. 701–705.
-* Terras, M. (2016). Crowdsourcing in the Digital Humanities. In S. Schreibman, R. Siemens, & J. Unsworth (Hrsg.), A New Companion to Digital Humanities, 2nd Edition (S. 420–439). Wiley-Blackwell. https://doi.org/10.1002/9781118680605.ch29
-* Vrije Universiteit Amsterdam. (o. J.). Transcription of text. Digital Humanities Workbench. Abgerufen 9. Mai 2023, von https://www2.fgw.vu.nl/werkbanken/dighum/source_data/transcription/transcription_text.php
 
+* Blickhan, S., Krawczyk, C., Hanson, D., Boyer, A., Simenstad, A., & Hyning, V. van. (2019). Individual vs. Collaborative Methods of Crowdsourced Transcription. _Journal of Data Mining and Digital Humanities_, _Special Issue on Collecting, Preserving, and Disseminating Endangered Cultural Heritage for New Understandings through Multilingual Approaches_. [https://doi.org/10.46298/jdmdh.5759](https://doi.org/10.46298/jdmdh.5759) 
+* Brumfield, B. (o. J.). _Collaborative Manuscript Transcription_ [Blog]. Collaborative Manuscript Transcription. Abgerufen 3. Mai 2023, von [http://manuscripttranscription.blogspot.com/](http://manuscripttranscription.blogspot.com/) 
+* Brumfield, B. (2012, Jänner 7). _FromThePage: A Web-Based Tool for Transcribing, Indexing, and Annotating Handwritten Material_. 126th Annual Meeting American Historical Association, Chicago.
+* Brumfield, B. (2020, September 1). The Decade in Crowdsourcing Transcription | FromThePage Blog. _From the Page_. [https://content.fromthepage.com/decade-in-crowdsourcing/](https://content.fromthepage.com/decade-in-crowdsourcing/) 
+* Causer, T., Tonra, J., & Wallace, V. (2012). Transcription maximized; expense minimized? Crowdsourcing and editing The Collected Works of Jeremy Bentham. _Literary and Linguistic Computing_, _27_(2), 119–137. [https://doi.org/10.1093/llc/fqs004](https://doi.org/10.1093/llc/fqs004) 
+* Christina Manzo et al. (o. J.). _By the People, For the People: Assessing the Value of Crowdsourced, User-Generated Metadata_ [DHQ: Digital Humanities Quarterly:]. Abgerufen 24. September 2015, von [http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html](http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html) 
+* del Rio Riande, G., Hernández, N., & De León, R. (2018, November). _Manos en la masa (textual): introducción al editatón colaborativo con FromThePage_. III Congreso Internacional de la Asociación de Humanidades Digitales (AAHD). La cultura de los datos, Rosario, Santa Fe. [http://hdl.handle.net/2133/13460](http://hdl.handle.net/2133/13460) 
+* Finke, P., & Laszlo, E. (2014). _Citizen Science: Das unterschätzte Wissen der Laien_. oekom verlag.
+* Guzman, A. (2019, September 27). _Challenges in Multilingual Transcription: An Overview of FromThePage and This Panel_. Digital Frontiers Anual Conference, Austin, Texas. [https://digital.library.txstate.edu/handle/10877/9479](https://digital.library.txstate.edu/handle/10877/9479) 
+* Jarnecke, M. (2020). Crowdsource Indexing: Virtual Volunteering Means Big Index Projects Keep on Moving at the Indiana State Archives. _The Hoosier Genealogist: Connections_, _60_(2), 62–68. [https://go.gale.com/ps/i.do?p=AONE&sw=w&issn=10542175&v=2.1&it=r&id=GALE%7CA681543475&sid=googleScholar&linkaccess=abs](https://go.gale.com/ps/i.do?p=AONE&sw=w&issn=10542175&v=2.1&it=r&id=GALE%7CA681543475&sid=googleScholar&linkaccess=abs) 
+* Okinina, N., Nicolas, L., & Lyding, V. (2018). _Transc&Anno: A Graphical Tool for the Transcription and On-the-Fly Annotation of Handwritten Documents_. 701–705.
+* Terras, M. (2016). Crowdsourcing in the Digital Humanities. In S. Schreibman, R. Siemens, & J. Unsworth (Hrsg.), _A New Companion to Digital Humanities, 2nd Edition_ (S. 420–439). Wiley-Blackwell. [https://doi.org/10.1002/9781118680605.ch29](https://doi.org/10.1002/9781118680605.ch29) 
+* Vrije Universiteit Amsterdam. (o. J.). _Transcription of text_. Digital Humanities Workbench. Abgerufen 9. Mai 2023, von [https://www2.fgw.vu.nl/werkbanken/dighum/source_data/transcription/transcription_text.php](https://www2.fgw.vu.nl/werkbanken/dighum/source_data/transcription/transcription_text.php) 
 
 
 
@@ -855,7 +855,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
     <tr>
         <td><strong>Unterstützte Plattformen</strong>
         </td>
-        <td>Linux, Windows & macOS
+        <td>Linux, Windows & Mac
         </td>
     </tr>
     <tr>
