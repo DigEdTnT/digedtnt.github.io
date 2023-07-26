@@ -153,8 +153,8 @@ Anhand unseres Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalt
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/import-data.PNG" description="Projekteinstellungen beim Import" %}  
     → Für unser Projekt haben wir die vorausgewählten Einstellungen belassen und nur einen Projektnamen gewählt, bevor wir mit "Create project" fortgefahren sind.
 * Unsere Projektansicht sieht letztlich so aus: 
-        {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/project-view.PNG" description="Projektansicht in OpenRefine" %}  
-    → Unsere Einträge aus der CSV-Datei werden tabellarisch dargestellt. In der ersten Spalte sind verschiedene frühneuhochdeutsche Schreibvarianten einzelner Zutaten, in der zweiten Spalte die heutige Schreibweise und in der dritten Spalte Übersetzungen in modernes Englisch. Jede Spalte verfügt über ein Drop-Down-Menü, das uns verschiedene Bearbeitungsmöglichkeiten bietet, wobei für uns vor allem die Funktion, die eine Anreicherung mit Normdaten (Reconciliation) ermöglicht, von Interesse ist.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/project-view.PNG" description="Projektansicht in OpenRefine" %}  
+    → Die Einträge aus der CSV-Datei werden tabellarisch dargestellt. In der ersten Spalte sind verschiedene frühneuhochdeutsche Schreibvarianten einzelner Zutaten, in der zweiten Spalte die heutige Schreibweise und in der dritten Spalte Übersetzungen in modernes Englisch. Jede Spalte verfügt über ein Drop-Down-Menü, das uns verschiedene Bearbeitungsmöglichkeiten bietet, wobei für uns vor allem die Funktion, die eine Anreicherung mit Normdaten (Reconciliation) ermöglicht, von Interesse ist.
 
 
 ## 3. Bearbeitung der Dokumente
@@ -206,7 +206,7 @@ Anhand unseres Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalt
 In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wird. 
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/templating-export.PNG" description="Individuelle Anpassung des Outputs über die Templating-Möglichkeit" %} 
     → <span style="text-decoration:underline;">Erläuterungen zum Code im Textfeld "Row Template":</span> Unser Code, der über die einzelnen Zeilen unserer Tabelle iteriert, soll hier noch etwas genauer betrachtet werden. Mittels der [General Refined Expression Language (GREL)](https://openrefine.org/docs/manual/grel) haben wir unseren Code entsprechend unseren Anforderungen gestaltet. 
-    ```
+    ```django
     <item xml:id="{{ if(cells['eng'].value != 'unsolved', cells['eng'].value, cells['deu-enh'].value + '_unsolved') }}">
         {{ if(cells['wikidata-qid'].value != 'null', '<idno type="uri">https://www.wikidata.org/entity/' + cells['wikidata-qid'].value + '</idno>', '') }}
         {{ if(cells['deu'].value != 'ungelöst', '<label type="reg">' + cells['deu'].value + '</label>', '<label type="reg">' + cells['deu'].value + '(' + cells['deu-enh'].value + ')</label>') }}
@@ -357,8 +357,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
    </td>
   </tr>
   <tr>
-   <td><strong>Inkludierte Datenkonvertierung</strong>
-<p>
+   <td><strong>Inkludierte Datenkonvertierung</strong><br/>
 (Im Pre-Processing mögliche Anpassung der Daten an für die Software erforderliches Format )
    </td>
    <td>✅ 
@@ -442,7 +441,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
   </tr>
   <tr>
    <td><strong>Test</strong>
-<p>
+<br/>
 (Gibt es ein Test Suite, um zu überprüfen, ob die Installation erfolgreich war?)
    </td>
    <td>✅ 
@@ -492,7 +491,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
   </tr>
   <tr>
    <td><strong>Visualisierungen </strong>
-<p>
+<br/>
 (Analyse-, Input-, Outputkonfigurationen)
    </td>
    <td> ✅
@@ -557,7 +556,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
    <td><strong>Unterstützte Dateiformate</strong>
    </td>
    <td>CSV, TSV, TXT, JSON, XML, ODS, XLS, XLSX, PX, MARC, RDF(JSON-LD, N3, N-Triples, Turtle, RDF/XML), Wikitext
-<p>
+<br/>
 Importmöglichkeiten auch über Weblinks, SQL-Datenbank oder Google Drive
    </td>
   </tr>
