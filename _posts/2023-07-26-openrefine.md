@@ -8,9 +8,9 @@ categories: [tool, OpenRefine, normalisierung, opensource]
 
 excerpt: OpenRefine ist ein Open-Source-Tool zur Datenbereinigung und -transformation und zur Anreicherung eigener Daten mit Normdaten, kombiniert mit einer anwenderfreundlichen grafischen Oberfläche.
 
-factsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/fromthepage/factsheet/DigEdTnT_FactSheet_OpenRefine.pdf
+factsheet: https://github.com/DigEdTnT/digedtnt.github.io/blob/94bc95c4609c0ad3d53997d330691d28e5ba7cc2/data/pipelines/pipeline_1/openrefine/factsheet/DigEdTnT_FactSheet_OpenRefine.pdf
 
-tooldoc: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-03-27-openrefine-td.pdf
+tooldoc: 
 
 last_modified_at:   2023-07-26
 
@@ -206,7 +206,7 @@ Anhand unseres Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalt
 In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wird. 
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/templating-export.PNG" description="Individuelle Anpassung des Outputs über die Templating-Möglichkeit" %} 
     → <span style="text-decoration:underline;">Erläuterungen zum Code im Textfeld "Row Template":</span> Unser Code, der über die einzelnen Zeilen unserer Tabelle iteriert, soll hier noch etwas genauer betrachtet werden. Mittels der [General Refined Expression Language (GREL)](https://openrefine.org/docs/manual/grel) haben wir unseren Code entsprechend unseren Anforderungen gestaltet. 
-    ```django
+    ```plaintext
     <item xml:id="{{ if(cells['eng'].value != 'unsolved', cells['eng'].value, cells['deu-enh'].value + '_unsolved') }}">
         {{ if(cells['wikidata-qid'].value != 'null', '<idno type="uri">https://www.wikidata.org/entity/' + cells['wikidata-qid'].value + '</idno>', '') }}
         {{ if(cells['deu'].value != 'ungelöst', '<label type="reg">' + cells['deu'].value + '</label>', '<label type="reg">' + cells['deu'].value + '(' + cells['deu-enh'].value + ')</label>') }}
