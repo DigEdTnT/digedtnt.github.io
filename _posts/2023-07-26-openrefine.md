@@ -209,9 +209,9 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
     ```django
     
     <item xml:id="{% raw %}{{ if(cells['eng'].value != 'unsolved', cells['eng'].value, cells['deu-enh'].value + '_unsolved') }}{% endraw %}">
-        {{ if(cells['wikidata-qid'].value != 'null', '<idno type="uri">https://www.wikidata.org/entity/' + cells['wikidata-qid'].value + '</idno>', '') }}
-        {{ if(cells['deu'].value != 'ungelöst', '<label type="reg">' + cells['deu'].value + '</label>', '<label type="reg">' + cells['deu'].value + '(' + cells['deu-enh'].value + ')</label>') }}
-        <label type="alt">{{ cells['deu-enh'].value }}</label> 
+        {% raw %}{{ if(cells['wikidata-qid'].value != 'null', '<idno type="uri">https://www.wikidata.org/entity/' + cells['wikidata-qid'].value + '</idno>', '') }}{% endraw %}
+        {% raw %}{{ if(cells['deu'].value != 'ungelöst', '<label type="reg">' + cells['deu'].value + '</label>', '<label type="reg">' + cells['deu'].value + '(' + cells['deu-enh'].value + ')</label>') }}{% endraw %}
+        <label type="alt">{% raw %}{{ cells['deu-enh'].value }}{% endraw %}</label> 
     </item>
     ```
     Wir haben hier noch zusätzliche Bedingungen für folgende Spezialfälle eingeführt:
