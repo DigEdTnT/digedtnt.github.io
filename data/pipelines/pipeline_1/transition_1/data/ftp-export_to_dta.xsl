@@ -272,8 +272,11 @@
 	<xsl:template match="tei:head"/>
 
 
-	<!-- skip <rs> -->
-	<xsl:template match="tei:rs"/>
+	<!-- skip <rs> tags, but keep the content -->
+	<xsl:template match="tei:rs">
+		<!-- as there was a white space added in the course of the FromThePage export, the first character needs to be removed -->
+		<xsl:value-of select="substring(./text(), 2)"/>
+	</xsl:template>
 
 
 	<!-- skip <note> elements containing editor information from FTP -->

@@ -262,7 +262,8 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
 
 ## Projekte, die dieses Tool genutzt haben
 
-* [Corema - Cooking Recipes of the Middle Ages](https://gams.uni-graz.at/context:corema)
+* [CoReMa - Cooking Recipes of the Middle Ages](https://gams.uni-graz.at/context:corema): Das Projekt CoReMA beschäftigt sich mit mittel-
+alterlichen Kochrezepten. Der Fokus liegt dabei auf den Beziehungen zwischen Frankreich und den deutschsprachigen Ländern, auf die die französische Kultur von jeher einen großen Einfluss hatte. Um herauszufinden, ob und wie sich bestimmte Rezepte in Europa verbreiteten, wird die gesamte heute bekannte mittelalterliche Kochrezeptüberlieferung von Frankreich und den deutschsprachigen Ländern analysiert. Betrachtet werden dabei alle Rezeptexte in deutscher, französischer und lateinischer Sprache, die bis ca. 1500 aufgeschrieben wurden. In Summe sind das 93 Handschriften und ca. 8000 Kochrezepte.
 
 
 ## Literatur
