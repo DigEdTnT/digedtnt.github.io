@@ -273,9 +273,9 @@
 
 
 	<!-- skip <rs> tags, but keep the content -->
+	<!-- cleaning the FromThePage export from Subject Linking tags - if you want to keep them, delete the following 3 code lines -->
 	<xsl:template match="tei:rs">
-		<!-- as there was a white space added in the course of the FromThePage export, the first character needs to be removed -->
-		<xsl:value-of select="substring(./text(), 2)"/>
+		<xsl:value-of select="."/>
 	</xsl:template>
 
 
