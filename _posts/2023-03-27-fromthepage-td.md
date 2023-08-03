@@ -756,9 +756,6 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
 
 **Weblink:** [https://fromthepage.com/](https://fromthepage.com/)
 
-**Mail:**
-
-
 <table>
   <tr>
    <td>Allgemeiner Support
