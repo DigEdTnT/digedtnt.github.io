@@ -10,7 +10,7 @@ excerpt: OpenRefine ist ein Open-Source-Tool zur Datenbereinigung und -transform
 
 factsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/openrefine/factsheet/DigEdTnT_FactSheet_OpenRefine.pdf
 
-tooldoc: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-07-26-openrefine-td.md
+tooldoc: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-07-26-openrefine-td.pdf
 
 last_modified_at:   2023-08-03
 
