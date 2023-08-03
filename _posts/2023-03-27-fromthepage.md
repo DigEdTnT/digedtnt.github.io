@@ -80,13 +80,8 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 ### Erforderliche Kenntnisse
 
-* EDV-Grundkenntnisse
-    * Kenntnis des lokalen Datei-/Ordnersystems
-    * Bedienung eines Webbrowsers
-
-
-* Nicht unbedingt erforderlich, aber von Vorteil:
-    * Grundkenntnisse von Markup-Sprachen (HTML, TEI, MediaWiki)
+* [EDV-Grundkenntnisse](https://digedtnt.github.io/about/#grundvoraussetzungen)
+* Grundkenntnisse von Markup-Sprachen (HTML, TEI, MediaWiki) von Vorteil
 
 
 ### Benötigte Software
@@ -97,7 +92,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 ## Tool-Kompatibilität
 
-<div class="table-responsive">
+<div class="table-responsive tool-table">
 <table class="table">
   <tr>
    <td>
@@ -124,7 +119,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    </td>
    <td>✅
    </td>
-   <td>🦄
+   <td><a href="https://digedtnt.github.io/transition-fromthepage-ediarum/">🦄</a>
    </td>
    <td>❌
    </td>
@@ -151,7 +146,8 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 # Möglichkeiten & Grenzen
 
-Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolgend mögliche Vor- und Nachteile des getesteten Tools dargestellt werden.
+Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolgend mögliche Vor- und Nachteile des 
+Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1) festgestellt wurden. 
 
 
 ## Stärken
@@ -191,7 +187,7 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 
 # Einrichtung & Erste Schritte
 
-Anhand eines Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf mit dem Transkriptions- und Annotationstool FromThePage beschrieben werden.
+Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf beschrieben werden.
 
 
 ## 1.  Registrierung
@@ -911,7 +907,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
     <tr>
         <td><strong>Inkludierte Datenkonvertierung</strong>
             <br/>
-                (Im Preprocessing mögliche Anpassung der Daten an für die Software erforderliches Format )
+                (Im Preprocessing mögliche Anpassung der Daten an für die Software erforderliches Format)
         </td>
         <td>❌
         </td>
