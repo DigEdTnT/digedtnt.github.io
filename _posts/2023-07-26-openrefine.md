@@ -328,8 +328,8 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
    </td>
   </tr>
   <tr>
-   <td><strong>Kostenmodell  <br/>
-</strong>(Kostenübersicht / Open Source)
+   <td><strong>Kostenmodell</strong>  <br/>
+(Kostenübersicht / Open Source)
    </td>
    <td>kostenlos
    </td>
