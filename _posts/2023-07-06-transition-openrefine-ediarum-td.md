@@ -1,22 +1,3 @@
----
-
-layout: post
-
-title: OpenRefine → ediarum
-
-categories: [transition, openrefine, ediarum, xslt]
-
-excerpt: Die Transition von OpenRefine zu ediarum beinhaltet die Anpassung des Exports von OpenRefine an die XML-Registerstruktur für ediarum.
-
-transitionsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-05-31-transition-openrefine-ediarum-td.pdf
-
-xslt: https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/transition_2/data/openrefine-output_to_ediarum.xsl
-    
-last_modified_at: 2023-07-06
-
----
-
-
 # Allgemeine Beschreibung
 
 Die von OpenRefine exportierten TXT-Dokumente bedürfen noch einer kleinen Anpassung für die weitere Arbeit damit als Register in ediarum. Und zwar zielt die vorliegende Transition darauf ab, redundante Informationen im OpenRefine-Output zu reduzieren, um mit sinnvoll komprimierten Daten in ediarum weiterarbeiten zu können.
