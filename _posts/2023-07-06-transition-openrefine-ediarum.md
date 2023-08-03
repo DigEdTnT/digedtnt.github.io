@@ -8,7 +8,7 @@ categories: [transition, openrefine, ediarum, xslt]
 
 excerpt: Die Transition von OpenRefine zu ediarum beinhaltet die Anpassung des Exports von OpenRefine an die XML-Registerstruktur für ediarum.
 
-transitionsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-05-31-transition-openrefine-ediarum-td.pdf
+transitionsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-07-06-transition-openrefine-ediarum-td.pdf
 
 xslt: https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/transition_2/data/openrefine-output_to_ediarum.xsl
     
@@ -31,6 +31,7 @@ Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kom
 
 ### Erforderliche Kenntnisse
 
+* [EDV-Grundkenntnisse](https://digedtnt.github.io/about/#grundvoraussetzungen)
 * Einrichten einer [Oxygen-Transformation](https://digedtnt.github.io/xsl-transformation)
 * Grundlegende XSLT-Kenntnisse (für erweiterte Anpassungen)
 
@@ -54,7 +55,7 @@ Der Übergang von einem Tool zu einem anderen lässt sich verschieden gestalten.
 
 # XSL Transformation
 
-In unserem Projekt sind wir mit folgender Herausforderung konfrontiert: Der Export von OpenRefine enthält aufgrund der zeilenbasierten Struktur mehrere Listenelemente (`<item>`) mit der gleichen `@xml:id` und zudem redundante Informationen in Bezug auf die Q-Nummern der Wikidata-Einträge sowie hinsichtlich der deutschen Übersetzungen: 
+In unserem Beispielprojekt sind wir mit folgender Herausforderung konfrontiert: Der Export von OpenRefine enthält aufgrund der zeilenbasierten Struktur mehrere Listenelemente (`<item>`) mit der gleichen `@xml:id` und zudem redundante Informationen in Bezug auf die Q-Nummern der Wikidata-Einträge sowie hinsichtlich der deutschen Übersetzungen: 
 
 ```xml
 <list>
@@ -100,13 +101,9 @@ Die Transformation ist in unserem Workflow folgend eingebettet:
 
 
 
-
-
 # XSLT Dokumentation
 
 Die Transformation zur Bereinigung des OpenRefine-Outputs umfasst folgende Schritte: 
-
-
 
 * **Gruppierung der `<item>`-Elemente:**  Da alle frühneuhochdeutschen Varianten die gleiche englische Übersetzung haben und diese daher als `@xml:id` gewählt wurde, gruppieren wir alle Listeneinträge mit der gleichen `@xml:id`. 
 * **Inhalte der gruppierten** **`<item>`-Elemente:**  

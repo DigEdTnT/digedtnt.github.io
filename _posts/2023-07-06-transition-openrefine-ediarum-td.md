@@ -12,6 +12,7 @@ Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kom
 
 ### Erforderliche Kenntnisse
 
+* [EDV-Grundkenntnisse](https://digedtnt.github.io/about/#grundvoraussetzungen)
 * Einrichten einer [Oxygen-Transformation](https://digedtnt.github.io/xsl-transformation)
 * Grundlegende XSLT-Kenntnisse (für erweiterte Anpassungen)
 
@@ -35,7 +36,7 @@ Der Übergang von einem Tool zu einem anderen lässt sich verschieden gestalten.
 
 # XSL Transformation
 
-In unserem Projekt sind wir mit folgender Herausforderung konfrontiert: Der Export von OpenRefine enthält aufgrund der zeilenbasierten Struktur mehrere Listenelemente (`<item>`) mit der gleichen `@xml:id` und zudem redundante Informationen in Bezug auf die Q-Nummern der Wikidata-Einträge sowie hinsichtlich der deutschen Übersetzungen: 
+In unserem Beispielprojekt sind wir mit folgender Herausforderung konfrontiert: Der Export von OpenRefine enthält aufgrund der zeilenbasierten Struktur mehrere Listenelemente (`<item>`) mit der gleichen `@xml:id` und zudem redundante Informationen in Bezug auf die Q-Nummern der Wikidata-Einträge sowie hinsichtlich der deutschen Übersetzungen: 
 
 ```xml
 <list>

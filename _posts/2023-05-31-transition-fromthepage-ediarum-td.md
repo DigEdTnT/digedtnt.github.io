@@ -1,23 +1,3 @@
----
-
-layout: post
-
-title: FromThePage → ediarum
-
-categories: [transition, fromthepage, ediarum, xslt, dta-basisformat]
-
-excerpt: Die Transition von FromThePage zu ediarum beinhaltet die Anpassung des TEI/XML-Exports von FromThePage an das DTA-Basisformat, das in ediarum als Standard verwendet wird.
-
-transitionsheet: bla.com/bla.pdf
-
-xslt: https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/transition_1/data/ftp-export_to_dta.xsl
-    
-last_modified_at: 2023-07-11
-
----
-
-
-
 # Allgemeine Beschreibung
 
 Die von FromThePage exportierten TEI/XML-Dokumente sollen nun für die weitere Bearbeitung in ediarum an die Grundstruktur des DTA-Basisformat (DTABf) angepasst werden. Auch wenn für die Verarbeitung in ediarum kein valides DTABf-XML erzeugt werden muss, wird mit dem XSLT der vorliegenden Transition versucht, dem DTA-Basisformat in so vielen Bereichen wie möglich gerecht zu werden. 
@@ -30,15 +10,12 @@ Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kom
 
 ### Erforderliche Kenntnisse
 
-
-
+* [EDV-Grundkenntnisse](https://digedtnt.github.io/about/#grundvoraussetzungen)
 * Einrichten einer [Oxygen-Transformation](https://digedtnt.github.io/xsl-transformation)
 * Grundlegende XSLT-Kenntnisse (für erweiterte Anpassungen)
 
 
 ### Benötigte Software
-
-
 
 * Oxygen Editor
 
@@ -68,7 +45,7 @@ Der Übergang von einem Tool zu einem anderen lässt sich verschieden gestalten.
 # XSL Transformation
 
 
-Für eine Transformation des aus FromThePage exportierten TEIs in ein für ediarum weiterverarbeitbares Dokument, haben wir für unser Beispielprojekt die Daten transformiert. Wie unser Transformationsszenario genau funktioniert, ist dem Punkt [XSLT Dokumentation](#xslt-dokumentation) zu entnehmen. Dieses kann für andere Projekte angepasst und weiterverwendet werden.
+Für eine Transformation des aus FromThePage exportierten TEIs in ein für ediarum weiterverarbeitbares Dokument, haben wir für unser [Beispielprojekt](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1)die Daten transformiert. Wie unser Transformationsszenario genau funktioniert, ist dem Punkt [XSLT Dokumentation](#xslt-dokumentation) zu entnehmen. Dieses kann für andere Projekte angepasst und weiterverwendet werden.
 
 Hier ist die [XSLT-Ressource](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/ftp_export_to_dta.xsl) für unsere FromThePage-ediarum-Transformation.
 
@@ -76,7 +53,6 @@ Eine Kurzanleitung für das Einrichten eines Transformationsszenarios findet sic
 
 
 # XSLT Dokumentation
-
 
 
 ## 1. Einbindung des DTA-Basisformat
@@ -127,7 +103,7 @@ Die Überführung der Metadaten in das Schema des DTA-Basisformat ergab außerde
 
 ## 3. Transformation des transkribierten Manuskripts 
 
-Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in FromThePage teilweise ausgezeichneten Manuskript-Transkriptionen in eine DTABf-konforme Struktur zu übertragen. Dafür soll nun zuerst eine kurze Übersicht darüber gegeben werden, welche Annotationen bei unserem Beispielprojekt bei der Transkription über FromThePage bereits erfolgt sind, ob bzw. welche Entsprechung es dafür im DTA-Basisformat gibt, und mit welchen Problemen man bei der Transformation konfrontiert ist. 
+Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in FromThePage teilweise ausgezeichneten Manuskript-Transkriptionen in eine DTABf-konforme Struktur zu übertragen. Dafür soll nun zuerst eine kurze Übersicht darüber gegeben werden, welche Annotationen bei unserem [Beispielprojekt](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1) bei der Transkription über [FromThePage](https://digedtnt.github.io/fromthepage/) bereits erfolgt sind, ob bzw. welche Entsprechung es dafür im DTA-Basisformat gibt, und mit welchen Problemen man bei der Transformation konfrontiert ist. 
 
 <div class="table-responsive">
 <table class="table">
