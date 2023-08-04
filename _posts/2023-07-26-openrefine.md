@@ -10,21 +10,21 @@ excerpt: OpenRefine ist ein Open-Source-Tool zur Datenbereinigung und -transform
 
 factsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/openrefine/factsheet/DigEdTnT_FactSheet_OpenRefine.pdf
 
-tooldoc: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-07-26-openrefine-td.md
+tooldoc: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-07-26-openrefine-td.pdf
 
-last_modified_at:   2023-07-27
+last_modified_at:   2023-08-03
 
 ---
 
 
 # Allgemeine Beschreibung
 
-OpenRefine ist ein Open-Source-Tool zur Datenbereinigung und -transformation, das ursprünglich als Google Refine bekannt war. Es bietet eine anwenderfreundliche grafische Benutzeroberfläche, mit der Daten in verschiedenen Formaten analysiert, bereinigt und strukturiert werden können.
+OpenRefine ist ein Open-Source-Tool zur Datenbereinigung und Datentransformation, das ursprünglich als Google Refine bekannt war. Es bietet eine anwenderfreundliche grafische Benutzeroberfläche, mit der Daten in verschiedenen Formaten analysiert, bereinigt und strukturiert werden können.
 
 OpenRefine eignet sich besonders gut für die Arbeit mit großen und unstrukturierten Datensätzen, wobei es das Filtern, Sortieren und Gruppieren von Daten sowie das Erkennen und Beheben von Fehlern und Unregelmäßigkeiten ermöglicht. Das Tool unterstützt außerdem auch die Zusammenführung von Datensätzen aus verschiedenen Quellen und das Aufteilen von Zellen, um Daten besser zu organisieren.
 
 <div class="essence">
-Der Vorteil von OpenRefine hinsichtlich digitaler Editionen ist, dass es nicht nur die Datenbereinigung, - transformation und -organisation großer unstrukturierter Datenmengen erleichtert, sondern vor allem auch Funktionen zur Normalisierung von Daten sowie zur Konsolidierung von Informationen bietet. Beim Export der Daten muss man auf die Möglichkeit, eine XML-Datei herunterzuladen, verzichten und auch etwas komplexere Datentransformationen beim Export - wie beispielweise das Gruppieren von Daten - werden nicht unterstützt.
+In Hinblick auf digitale Editionen ist ein Vorteil von OpenRefine, dass es nicht nur die Datenbereinigung, - transformation und -organisation großer unstrukturierter Datenmengen erleichtert, sondern vor allem auch Funktionen zur Normalisierung von Daten sowie zur Konsolidierung von Informationen bietet. Beim Export der Daten muss man jedoch auf die Möglichkeit, direkt eine XML-Datei herunterzuladen, verzichten und auch komplexere Datentransformationen beim Export - wie beispielweise das Gruppieren von Daten - werden nicht unterstützt.
 </div>
 
 ## Anwendungsbereiche
@@ -51,6 +51,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 ### Erforderliche Kenntnisse
 
+* [EDV-Grundkenntnisse](https://digedtnt.github.io/about/#grundvoraussetzungen)
 * Ausdruckssprachen und Transformationstechniken von Vorteil
 
 
@@ -62,13 +63,12 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 ## Tool-Kompatibilität
 
 
-<div class="table-responsive">
+<div class="table-responsive tool-table">
 <table class="table">
   <tr>
    <td>
    </td>
-   <td>
-IIIF
+   <td>IIIF
    </td>
    <td>Transkribus
    </td>
@@ -112,36 +112,37 @@ IIIF
 
 # Möglichkeiten & Grenzen
 
-Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolgend mögliche Vor- und Nachteile des getesteten Tools dargestellt werden. 
+Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolgend mögliche Vor- und Nachteile des 
+Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1) festgestellt wurden. 
 
 ## Stärken
 
-* Benutzerfreundliche Bearbeitungsoberfläche und Wahrung der Datensicherheit durch die Bearbeitung am eigenen Rechner
-* Datenbereinigung: OpenRefine kann bei der Bereinigung von unstrukturierten und fehlerhaften Daten helfen, indem es Dubletten, Tippfehler, Inkonsistenzen und andere Unregelmäßigkeiten erkennt und korrigiert. Außerdem bietet es die Möglichkeit, Arbeitsschritte wieder rückgängig zu machen, aber auch bereits getätigte Schritte wiederherzustellen oder den Änderungsverlauf zu exportieren und auf neue Daten anzuwenden.
-* Datenerweiterung und -normalisierung: Über Reconciliation-Services können die Daten mit externen Datenbanken abgeglichen und mit Normdaten angereichert werden. 
-* Datentransformation: OpenRefine bietet Funktionen zur Transformation von Daten in andere Formate oder Strukturen. Dies kann nützlich sein, um Daten für bestimmte Anforderungen anzupassen oder in verschiedenen Datenbanken oder Plattformen zu verwenden.
-* Datenzusammenführung: Wenn eine digitale Edition aus mehreren Quellen oder Versionen besteht, kann OpenRefine verwendet werden, um diese Daten zusammenzuführen, Dubletten zu entfernen und eine einheitliche Version zu erstellen.
-* Strukturierung von Metadaten: OpenRefine ermöglicht die Organisation und Strukturierung von Metadaten, um eine bessere Durchsuchbarkeit und Navigation in der digitalen Edition zu gewährleisten. Dies kann die Indexierung und den Zugriff auf bestimmte Inhalte erleichtern.
-* Datenvisualisierung: Diagramme, Grafiken und andere visuelle Darstellungen können Muster und Zusammenhänge in den Daten verdeutlichen. 
-* Qualitätssicherung: OpenRefine unterstützt die Überprüfung der Datenqualität, indem es Inkonsistenzen und Fehler identifiziert. Dies ermöglicht es den Herausgebern, Probleme zu beheben und sicherzustellen, dass die digitale Edition genau und zuverlässig ist.
-* Automatisierung: OpenRefine kann auch bei der Automatisierung von wiederholten Datenbereinigungs- und Transformationsaufgaben helfen. Durch die Erstellung von Skripten oder Aktionen können bestimmte Aufgaben automatisiert werden, was Zeit und Mühe spart.
+* Benutzerfreundliche Bearbeitungsoberfläche und Wahrung der Datensicherheit Bearbeitung am eigenen Rechner
+* Bereinigung von unstrukturierten und fehlerhaften Daten (Dubletten, Tippfehler, Inkonsistenzen) helfen und damit Überprüfung der Datenqualität (Qualitätssicherung)
+* Versionskontrolle durch die Möglichkeit, Arbeitsschritte wieder rückgängig zu machen oder bereits getätigte Schritte wiederherzustellen
+* Datenerweiterung und Normalisierung über Reconciliation-Services, die den Datenabgleich mit externen Datenbanken ermöglichen 
+* Datentransformation in andere Formate oder Strukturen
+* Datenzusammenführung bei mehreren Quellen oder Versionen 
+* Organisation und Strukturierung von Metadaten 
+* Diagramme, Grafiken und andere visuelle Darstellungen zur Verdeutlichung von Mustern und Zusammenhänge in den Daten 
+* Automatisierung von wiederholten Datenbereinigungs- und Transformationsaufgaben durch die Möglichkeit, den Änderungsverlauf zu exportieren und auf neue Daten anzuwenden
 
 ## Herausforderungen & Probleme
 
-* Keine simultane Kollaborationsmöglichkeiten: Da OpenRefine für die lokale Verwendung konzipiert ist, können nicht mehrere Personen gleichzeitig an einem Projekt arbeiten. Die beste - aber bei vielen Mitarbeitenden relativ umständliche - Möglichkeit, mit einer anderen Person zusammenzuarbeiten, besteht daher darin, Projekte inklusive der gespeicherten Bearbeitungsschritte zu exportieren und daraufhin an einem anderen Rechner zu importieren, sodass man dort weitermachen kann, wo jemand anderes aufgehört hat.
-* Teilweise mühsame Bedienung: Bei der manuellen Zuordnung von passenden Wikidata-Einträgen springt das Programm nach jeder einzelnen Übernahme zum Start der Tabelle, wodurch jedes Mal ein Scrollen zum zuletzt bearbeiteten Begriff notwendig ist.
-* Keine direkte XML-Exportmöglichkeit: Der Export in ein XML-Dateiformat ist nicht vorgesehen. Über den Templating-Export können die Daten jedoch zumindest in einer XML-Struktur (als Plaintext-Datei) exportiert werden.
-* Komplexere Datentransformationen - wie beispielsweise das Gruppieren von Datensätzen anhand des Inhalts einer Zelle - sind beim Export nicht möglich, wodurch Redundanzen in den Daten auftreten können und eine Nachbearbeitung erforderlich sein kann.
+* Keine simultane Kollaborationsmöglichkeit, da OpenRefine für die lokale Verwendung konzipiert ist und nicht mehrere Personen gleichzeitig an einem Projekt arbeiten können (eine - aber bei einer Vielzahl von Projektmitarbeitenden relativ umständliche - Möglichkeit, mit anderen Personen zusammenzuarbeiten, besteht aber darin, Projekte inklusive der gespeicherten Bearbeitungsschritte zu exportieren und daraufhin an einem anderen Rechner zu importieren)
+* Teilweise mühsame Bedienung durch das Problem, dass OpenRefine bei der manuellen Zuordnung von passenden Wikidata-Einträgen nach jeder einzelnen Match-Bestätigung zum Start der Tabelle springt
+* Keine direkte Exportmöglichkeit in eine XML-Datei, wobei über den Templating-Export die Daten jedoch zumindest in einer XML-Struktur (als Plaintext-Datei) exportiert werden können
+* Komplexere Datentransformationen - wie beispielsweise das Gruppieren von Datensätzen anhand des Inhalts einer Zelle - sind beim Export nicht möglich, wodurch Redundanzen in den Daten auftreten können und eine Nachbearbeitung erforderlich sein kann
 
 
 # Einrichtung & Erste Schritte
 
-Anhand unseres Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf beschrieben werden. Die Manuskripte des Projektes wurden bereits mittels [FromThePage](https://digedtnt.github.io/fromthepage/) transkribiert und mit [ediarum](https://digedtnt.github.io/ediarum/) erfolgten bereits erste Annotationen. In dieser Kurzanleitung erfolgt nun die Aufbereitung der Zutatenliste, die wir von einem Historiker im CSV-Format erhalten haben. Unser Ziel ist es, die Daten zu normalisieren und sie zusätzlich mit [Q-Nummern](https://www.wikidata.org/wiki/Wikidata:Glossary/de) - auch QID genannt - von Wikidata-Einträgen anzureichern.
+Anhand unseres [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf beschrieben werden. Die Manuskripte des Projektes wurden bereits mittels [FromThePage](https://digedtnt.github.io/fromthepage/) transkribiert und mit [ediarum](https://digedtnt.github.io/ediarum/) wurden bereits erste Annotationen vorgenommen. In dieser Kurzanleitung erfolgt nun die Aufbereitung der Zutatenliste, die wir von einem Historiker im CSV-Format erhalten haben. Unser Ziel ist es, die Daten zu normalisieren und sie zusätzlich mit den [Q-Nummern](https://www.wikidata.org/wiki/Wikidata:Glossary/de) - auch QID genannt - von Wikidata-Einträgen anzureichern.
 
 
 ## 1. Installation 
 
-* Unser erster Schritt besteht darin, uns die entsprechende Version für unser Betriebssystem von [OpenRefine herunterzuladen](https://openrefine.org/download). Nach dem Entpacken der ZIP-Datei haben wir openrefine.exe ausgeführt und OpenRefine hat sich direkt in unserem Browser geöffnet. 
+* Unser erster Schritt besteht darin, uns die entsprechende Version für unser Betriebssystem von [OpenRefine herunterzuladen](https://openrefine.org/download). Nach dem Entpacken der ZIP-Datei führen wir openrefine.exe aus, wodruch sich OpenRefine direkt in unserem Browser öffnet. 
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/openrefine-start.PNG" description="Startbildschirm von OpenRefine" %} 
 
 
@@ -151,80 +152,78 @@ Anhand unseres Beispielprojekts, das zum Ziel hat, Kochrezepte aus dem Mittelalt
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/create-project.PNG" description="Upload der EXCEL-Datei" %} 
 * Mit dem Button "Next" kommen wir in die darauffolgende Ansicht und können einige Einstellungen vornehmen, bevor unser Projekt erstellt wird.  
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/import-data.PNG" description="Projekteinstellungen beim Import" %}  
-    → Für unser Projekt haben wir die vorausgewählten Einstellungen belassen und nur einen Projektnamen gewählt, bevor wir mit "Create project" fortgefahren sind.
+    → Für unser Projekt haben wir an den vorausgewählten Einstellungen nichts geändert und nur einen Projektnamen gewählt, bevor wir mit "Create project" fortgefahren sind.
 * Unsere Projektansicht sieht letztlich so aus: 
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/project-view.PNG" description="Projektansicht in OpenRefine" %}  
-    → Die Einträge aus der CSV-Datei werden tabellarisch dargestellt. In der ersten Spalte sind verschiedene frühneuhochdeutsche Schreibvarianten einzelner Zutaten, in der zweiten Spalte die heutige Schreibweise und in der dritten Spalte Übersetzungen in modernes Englisch. Jede Spalte verfügt über ein Drop-Down-Menü, das uns verschiedene Bearbeitungsmöglichkeiten bietet, wobei für uns vor allem die Funktion, die eine Anreicherung mit Normdaten (Reconciliation) ermöglicht, von Interesse ist.
+    → Die Einträge aus der CSV-Datei werden tabellarisch dargestellt. In der ersten Spalte sind verschiedene frühneuhochdeutsche Schreibvarianten einzelner Zutaten, in der zweiten Spalte die heutige Schreibweise und in der dritten Spalte befinden sich die Übersetzungen in modernes Englisch. Jede Spalte verfügt über ein Drop-Down-Menü, das uns verschiedene Bearbeitungsmöglichkeiten bietet, wobei für uns vor allem jene Funktion, die eine Anreicherung mit Normdaten (Reconciliation) ermöglicht, von Interesse ist.
 
 
 ## 3. Bearbeitung der Dokumente
 
-* Sollten wir zwischenzeitlich unser Projekt geschlossen haben, müssen wir für die Arbeit in OpenRefine zuerst wieder unsere Datei openrefine.exe starten, über die erneut der Browser geöffnet wird. Unter **Open Project** in der Navigation auf der linken Seite können wir schließlich unsere Projekte einsehen. Wir öffnen hier unser bereits angelegtes Projekt "MaRezepte". 
+* Sollten wir zwischenzeitlich unser Projekt geschlossen haben, müssen wir für die Arbeit in OpenRefine zuerst wieder unsere Datei openrefine.exe starten, über die erneut der Browser geöffnet wird. Unter **Open Project** in der linken Navigationleiste können wir schließlich unsere Projekte einsehen. Wir öffnen hier unser bereits angelegtes Projekt "MaRezepte". 
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/open-project.PNG" description="Einstieg zur Projektbearbeitung in OpenRefine" %} 
-* Um unsere Zutatenliste mit Einträgen aus einer Normdatenbank anzureichern, überprüfen wir zuerst, welche Einträge auf Basis der Spalte mit den englischen Begriffen gefunden werden. Wir wählen hier das Englische, weil die englische Wikidata-Datenbank mit der größten Abdeckung an Begriffen zu einer höheren Trefferquote führt. Dafür wählen wir im Dropdown der Spalte mit der Überschrift "en" die Option **Reconcile** und in der damit verbundenen Auswahl **Start Reconcile**. 
+* Um unsere Zutatenliste mit Einträgen aus einer Normdatenbank anzureichern, überprüfen wir zuerst, welche Einträge auf Basis der Spalte mit den englischen Begriffen gefunden werden. Wir wählen hier das Englische, weil die englische Wikidata-Datenbank mit der größten Abdeckung an Begriffen zu einer höheren Trefferquote führt. Dafür gehen wir auf die Spalte mit der Überschrift "eng", wählen im Dropdown die Option **Reconcile** und dann in der damit verbundenen Auswahl **Start Reconcile**. 
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/start-reconciliation.PNG" description="Auswahl an Datenbearbeitungsmöglichkeiten" %} 
 * In dem neuen Fenster, das sich daraufhin öffnet, klicken wir in der linken Menüleiste auf "Wikidata (en)". 
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/start-reconciliation.PNG" description="Start des Abgleichs mit den Normdaten von Wikidata" %} 
-* In dem sich daraufhin öffnenden Fenster wählen wir folgende Einstellungen:
+* In dem nachfolgenden Fenster wählen wir folgende Einstellungen:
     * Bei der Kategorienzuordnung, mit der festgelegt werden kann, dass die Begriffe nur mit Entitäten einer bestimmten Kategorie abgeglichen werden, möchten wir uns nicht zu sehr einschränken. Wir könnten natürlich nur "food ingredients" auswählen, aber erstens sind nicht alle Entitäten einer Kategorie zugewiesen und zweitens ist die Kategoriezuordnung nicht immer eindeutig, weshalb beispielsweise einer Zutat wie Petersilie anstelle der Kategorie "Zutat", auch einfach nur die Kategorie "Pflanze" zugeordnet sein könnte. Um zu verhindern, dass durch die Einschränkung auf eine bestimmte Kategorie möglicherweise unkategorisierte oder abweichend kategorisierte Entitäten nicht mit unseren Daten abgeglichen werden, nutzen wir die Option: "Reconcile against no particular type".
     * Zusätzlich gibt es die Möglichkeit, über die Checkbox "Auto-match candidates with high confidence" einzustellen, dass bei jenen Begriffen, für die mit hoher Wahrscheinlichkeit eine passende Wikidata-Entität gefunden wurde, eine automatische Zuordnung vorgenommen wird. 
-* Mit diesen Einstellungen für unsere Daten wurde schließlich der Reconciliation-Prozess gestartet.  
+* Mit diesen Einstellungen für unsere Daten starten wir schließlich den Reconciliation-Prozess.  
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconciliation-options.PNG" description="Diverse Einstellungen vor dem Start des Reconciliation-Prozesses" %}  
     → Dieser Prozess kann je nach Datenmenge ein paar Minuten dauern.  
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconciliation-processing.PNG" description="Unterschiedlich lange Wartezeiten je nach Datenmenge" %} 
-* **Kleiner Exkurs bei alternativen Daten:** Wenn wir die Begriffe nicht auch Englisch, sondern nur im Standarddeutsch hätten, müssten wir über den Button "Add standard service" ein weiteres Service  für das deutsche Wikidata anlegen, indem wir die entsprechende URL zur API eingeben. 
+* **Kleiner Exkurs bei alternativen Daten:** Wenn wir die Begriffe nicht auch Englisch, sondern nur im Standarddeutsch hätten, müssten wir über den Button "Add standard service" ein weiteres Service für das deutsche Wikidata anlegen, indem wir die entsprechende URL zur API eingeben. 
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/add-reconciliation-service.PNG" description="Verknüpfung mit der API zu den deutschsprachigen Wikidata-Einträgen" %} 
-    In unserer linken und über ein kleines Lesezeichen-Symbol ein- und ausklappbaren Liste erscheint nun ein Button für die Reconciliation von Begriffen mit deutschsprachigen Wikidata-Einträgen, die wir dann entsprechend für eine Spalte mit deutschsprachigen Begriffen auswählen könnten.  
+    In unserer linken (und über ein kleines Lesezeichen-Symbol ein- und ausklappbaren) Liste erscheint nun ein Button für die Reconciliation von Begriffen mit deutschsprachigen Wikidata-Einträgen, die wir dann entsprechend für eine Spalte mit deutschsprachigen Begriffen auswählen könnten.  
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/choose-reconciliation-service.PNG" description="Auswahl eines anderen Services" %} 
     → Hinter dem Button "Discover Services" verbergen sich außerdem [noch weitere Normdaten-Ressourcen](https://reconciliation-api.github.io/testbench/#/).
-* Sobald der Reconciliation-Prozess abgeschlossen ist, erhalten wir in der Header-Zeile der Spalte einen Überblick zu unserem Fortschritt in Form eines Balkens. Aus unserer Tabelle mit 536 Zeilen wurde knapp ein Fünftel automatisiert mit Normdaten angereichert und bei über 80% der Einträge ist noch eine manuelle Überprüfung nötig, da es hier mehrere Entitäten gibt, die mit dem Begriff aus der jeweiligen Zeile übereinstimmen.  
+* Sobald der Reconciliation-Prozess abgeschlossen ist, erhalten wir in der Header-Zeile der Spalte einen Überblick zu unserem Fortschritt in Form eines Balkens. Aus unserer Tabelle mit 536 Zeilen wurde knapp ein Fünftel automatisiert mit Normdaten angereichert und für über 80% der Einträge ist noch eine manuelle Überprüfung nötig, da es hier mehrere Entitäten gibt, die mit dem Begriff aus der jeweiligen Zeile übereinstimmen.  
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconciliation-result.PNG" description="Auswertung des Reconciliation-Prozesses" %} 
-    → Zusätzlich bekommen wir in der linken Leiste Informationen zu den Matches und haben auch die Möglichkeit, den Prozess rückgängig zumachen. 
+    → Zusätzlich bekommen wir in der linken Leiste Informationen zu den Matches und haben auch die Möglichkeit, den Prozess rückgängig zu machen. 
 * Bei allen Begriffen, für die nicht automatisch eine Entsprechung aus den Wikidata-Normaten übernommen wurde, müssen wir nun eine manuelle Zuordnung vornehmen. Durch die Übersetzung der verschiedenen Schreibweisen für einen konkreten Begriff haben wir im Englischen sehr viele gleiche Einträge. Damit wir nicht jeden Zeile einzeln durchgehen müssen, gibt es in OpenRefine die Möglichkeit, das Kästchen mit dem doppelten Häkchen zu verwenden, um den entsprechenden Wikidata-Eintrag für alle identischen Zellen zu übernehmen.  
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconcile-all-matches.PNG" description="Gleichzeitige Zuordnung eines Wikidata-Eintrages für alle identischen Zellen" %} 
-    → Etwas mühsam bei dieser manuellen Zuordnung ist, dass nach jeder Übernahme eines Wikidata-Eintrages das Programm anschließend zum Start der Tabelle hüpft, und man daher anschließend immer erneut zur nächsten, zur Bearbeitung ausstehenden Zeile scrollen muss.  
+    → Etwas mühsam bei dieser manuellen Zuordnung ist, dass nach jeder Übernahme eines Wikidata-Eintrags das Programm anschließend zum Start der Tabelle hüpft, und man daher anschließend immer erneut zur nächsten, zur Bearbeitung ausstehenden Zeile scrollen muss.  
 * Sollte in den Vorschlägen eine passende Wikidata-Entsprechung fehlen, gibt es am Ende der Liste die Möglichkeit, nach weiteren Übereinstimmungen zu suchen und im neuen Suchfenster schließlich weitere Eingaben, unter denen ein Begriff auch zu finden sein könnte, vorzunehmen. 
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/search-for-matches.PNG" description="Suche nach alternativen Wikidata-Einträgen" %} 
     → In unserem Datensatz wurde zum Beispiel das englische Wort "horse radish" mit einem Leerzeichen geschrieben, weshalb in der Liste mit Vorschlägen kein passender Eintrag zu finden war. 
-* Sollten wir mit einer unserer Zuordnungen nicht zufrieden sein, gibt es zwei Möglichkeiten, die Zuordnung wieder rückgängig zu machen. Entweder wir klicken einfach auf "Choose new match", direkt unter dem Begriff, der falsch zugeordnet wurde (a.), oder wir gehen in der linken Menüleiste in den Reiter **Undo/Redo** und wählen dort einen vorangegangen Schritt aus, um dort wieder weiterzumachen (b.).  
+* Sollten wir mit einer unserer Zuordnungen nicht zufrieden sein, gibt es zwei Möglichkeiten, die Zuordnung wieder rückgängig zu machen. Entweder wir klicken einfach auf "Choose new match", direkt unter dem Begriff, der falsch zugeordnet wurde (a.), oder wir gehen in der linken Menüleiste in den Reiter **Undo/Redo** und wählen einen vorangegangen Schritt aus, um dort wieder weiterzumachen (b.).  
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/undo-processes.PNG" description="Zwei Möglichkeiten, unpassende Zuordnungen zu ändern oder zurückzusetzen" %} 
-    → Mit dem "Extract"-Button in der linken Menüleiste ist es außerdem möglich, entweder alle oder einen Teil der bereits getätigten Schritte zu exportieren. Sollte sich die Liste beispielsweise erheblich verändern, so könnte man ein neues Projekt erstellen, und den bisherigen Arbeitsfortschritt über den Import der Arbeitsschritte (mittels "Apply"-Button) wiederherstellen. Es müssten anschließend nur mehr die neu hinzugekommenen Einträge mit Wikidata-Normdaten angereichert werden. 
-* Für Einträge, die man nicht mit normalisieren möchte oder nicht kann, weil wie in unserem Beispielprojekt mitunter nicht jede Zutat entschlüsselt wurde, gibt es die Möglichkeit, über die Ansicht, die unter "Search for match" erscheint, auszuwählen, dass der Zelle kein Eintrag zugeordnet werden soll.  
+    → Mit dem "Extract"-Button in der linken Menüleiste ist es außerdem möglich, entweder alle oder einen Teil der bereits getätigten Schritte zu exportieren. Sollte sich die Liste beispielsweise erheblich verändern, so könnte man ein neues Projekt erstellen, und den bisherigen Arbeitsfortschritt über den Import der Arbeitsschritte (mittels "Apply"-Button) wiederherstellen. Anschließend müsste man anschließend nur mehr die neu hinzugekommenen Einträge mit Wikidata-Normdaten angereichert werden. 
+* Für Einträge, die man nicht mit Normdaten anreichern möchte oder nicht kann, weil wie in unserem Beispielprojekt mitunter nicht jede Zutat entschlüsselt wurde, gibt es die Möglichkeit, über die Ansicht, die unter "Search for match" erscheint, auszuwählen, dass der Zelle kein Eintrag zugeordnet werden soll.  
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/unsolved-entries.PNG" description="Eintrag ohne Zuordnung einer Wikidata-Entität" %}
 * Sobald wir all unsere Einträge mit Wikidata-Einträgen angereichert haben, können wir uns die Q-Nummern der Wikidata-Einträge in einer eigenen Spalte anzeigen lassen.  
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/add-qid.PNG" description="Spalte mit Daten der Normalisierung hinzufügen" %} 
     Wir müssen dieser Spalte nur mehr einen Namen geben und jede Zeile erhält eine weitere Zelle mit der entsprechenden Q-Nummer. 
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/wikidata-column.PNG" description="Q-Nummern für jeden Eintrag in eigener Spalte" %} 
-    → Wir haben uns für commodity entschieden, da wir später beim Exportieren diesen Begriff direkt als Attributsbezeichnung übernehmen wollen und als Wert die entsprechende Q-Nummer eingefügt werden soll. 
+    → Wir haben uns für "idno" entschieden, da wir später beim Exportieren diesen Begriff direkt als Attributsbezeichnung übernehmen wollen und als Wert die entsprechende Q-Nummer eingefügt werden soll. 
 
 
 ## 4. Export der Dokumente
 
-* Um unsere angereicherte Tabelle bzw. normalisierten Daten zu exportieren, klicken wir auf den Button "Export" und wählen die Option "Templating…". Denn unser Ziel ist es, direkt eine XML-Struktur zu generieren, die wir in unser Register in ediarum übernehmen können.  
+* Um unsere angereicherte Tabelle bzw. normalisierten Daten zu exportieren, klicken wir auf den Button "Export" und wählen die Option "Templating". Denn unser Ziel ist es, direkt eine XML-Struktur zu generieren, die wir anschließend in unser Register in ediarum übernehmen können.  
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/export-data.PNG" description="Export der Daten über ein Template" %}
-* In der Ansicht für die Template-Erstellung haben wir nun die Möglichkeit, unsere Daten direkt in eine XML-Struktur zu überführen bzw. so zu gestalten, dass sie nur mehr in das ediarum-Sachregister kopiert werden müssen. Dafür tragen wir in das Prefix-Textfeld `<list>` und als Suffix  `</list>` ein. Entsprechend des Schemas für Register in ediarum möchten wir für jede Zeile einen eigenen `<item>`-Eintrag erhalten. Als @xml:id soll die englische Übersetzung übernommen werden. Den Wikidata-Link übernehmen wir in Form eines `<idno>`-Elemente innerhalb des `<item>`-Elements. Außerdem legen wir auch 1-2 `<label>`-Elemente an, einmal mit dem Wert "reg" im @type-Attribut für die Übersetzung in Standarddeutsch, und ein weiteres mit dem Wert "alt", das die frühneuhochdeutschen Bezeichnung enthält.  
+* In der Ansicht für die Template-Erstellung haben wir nun die Möglichkeit, unsere Daten so zu gestalten, dass sie nur mehr in das ediarum-Sachregister kopiert werden müssen. Dafür tragen wir in das Prefix-Textfeld `<list>` und als Suffix `</list>` ein. Entsprechend dem Schema für Register in ediarum möchten wir für jede Zeile einen eigenen `<item>`-Eintrag erhalten. Als @xml:id soll die englische Übersetzung übernommen werden. Den Wikidata-Link übernehmen wir in Form eines `<idno>`-Elemente innerhalb des `<item>`-Elements. Außerdem legen wir auch 1-2 `<label>`-Elemente an, einmal mit dem Wert "reg" im @type-Attribut für die Übersetzung in Standarddeutsch, und ein weiteres mit dem Wert "alt", das die frühneuhochdeutschen Bezeichnung enthält.  
 In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wird. 
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/templating-export.PNG" description="Individuelle Anpassung des Outputs über die Templating-Möglichkeit" %} 
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/templating-export.PNG" description="Individuelle Anpassung des Outputs über die Templating-Methode" %} 
     → <span style="text-decoration:underline;">Erläuterungen zum Code im Textfeld "Row Template":</span> Unser Code, der über die einzelnen Zeilen unserer Tabelle iteriert, soll hier noch etwas genauer betrachtet werden. Mittels der [General Refined Expression Language (GREL)](https://openrefine.org/docs/manual/grel) haben wir unseren Code entsprechend unseren Anforderungen gestaltet. 
     ```django
     
     <item xml:id="{% raw %}{{ if(cells['eng'].value != 'unsolved', cells['eng'].value, cells['deu-enh'].value + '_unsolved') }}{% endraw %}">
-        {% raw %}{{ if(cells['wikidata-qid'].value != 'null', '<idno type="uri">https://www.wikidata.org/entity/' + cells['wikidata-qid'].value + '</idno>', '') }}{% endraw %}
+        {% raw %}{{ if(cells['idno'].value != 'null', '<idno type="uri">https://www.wikidata.org/entity/' + cells['idno'].value + '</idno>', '') }}{% endraw %}
         {% raw %}{{ if(cells['deu'].value != 'ungelöst', '<label type="reg">' + cells['deu'].value + '</label>', '<label type="reg">' + cells['deu'].value + '(' + cells['deu-enh'].value + ')</label>') }}{% endraw %}
         <label type="alt">{% raw %}{{ cells['deu-enh'].value }}{% endraw %}</label> 
     </item>
     ```
-    Wir haben hier noch zusätzliche Bedingungen für folgende Spezialfälle eingeführt:
+    Wir haben für usnere Daten zusätzliche Bedingungen für folgende Spezialfälle eingeführt:
     * **Fehlende Übersetzungen:** Sollten Zellen in unserem Datensatz in der englischen Spalte "unsolved" bzw. in der deutschen Spalte "ungelöst" beinhalten, weil man nicht weiß, welche Bedeutung der frühneuhochdeutsche Begriff hat, nutzen wir das frühneuhochdeutsche Wort als @xml:id. 
     * **Fehlende Q-Nummer:** Sollte eine Zeile keine Q-Nummer besitzen, wird auch kein `<idno>`-Element angelegt. 
-* Wenn unser Output so aussieht wie wir ihn gerne hätten, müssen wir nur mehr auf den "Export"-Button klicken und eine [TXT-Datei](https://github.com/DigEdTnT/digedtnt.github.io/blob/bb032626aee08b43c4b36da5476ae9ce0d63bb2a/data/pipelines/pipeline_1/openrefine/data/output_openrefine.txt) wird heruntergeladen. Für unser Projekt müssen wir diesen Output aber noch ein wenig anpassen (siehe [Transition OpenRefine → ediarum](https://digedtnt.github.io/transition-openrefine-ediarum/)).
+* Wenn unser Output schließlich so aussieht wie wir ihn gerne hätten, müssen wir nur mehr auf den "Export"-Button klicken und eine [TXT-Datei](https://github.com/DigEdTnT/digedtnt.github.io/blob/bb032626aee08b43c4b36da5476ae9ce0d63bb2a/data/pipelines/pipeline_1/openrefine/data/output_openrefine.txt) wird heruntergeladen. Für unser Beispielprojekt müssen wir diesen Output aber im Anschluss noch ein wenig anpassen (siehe [Transition OpenRefine → ediarum](https://digedtnt.github.io/transition-openrefine-ediarum/)).
 
 
 # Kontakt
 
 **Weblink:** [https://openrefine.org/](https://openrefine.org/) 
-
-**Mail:**
 
 <table>
   <tr>
@@ -262,8 +261,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
 
 ## Projekte, die dieses Tool genutzt haben
 
-* [CoReMa - Cooking Recipes of the Middle Ages](https://gams.uni-graz.at/context:corema): Das Projekt CoReMA beschäftigt sich mit mittel-
-alterlichen Kochrezepten. Der Fokus liegt dabei auf den Beziehungen zwischen Frankreich und den deutschsprachigen Ländern, auf die die französische Kultur von jeher einen großen Einfluss hatte. Um herauszufinden, ob und wie sich bestimmte Rezepte in Europa verbreiteten, wird die gesamte heute bekannte mittelalterliche Kochrezeptüberlieferung von Frankreich und den deutschsprachigen Ländern analysiert. Betrachtet werden dabei alle Rezeptexte in deutscher, französischer und lateinischer Sprache, die bis ca. 1500 aufgeschrieben wurden. In Summe sind das 93 Handschriften und ca. 8000 Kochrezepte.
+* [CoReMa - Cooking Recipes of the Middle Ages](https://gams.uni-graz.at/context:corema): Das Projekt CoReMA beschäftigt sich mit mittelalterlichen Kochrezepten. Der Fokus liegt dabei auf den Beziehungen zwischen Frankreich und den deutschsprachigen Ländern, auf die die französische Kultur von jeher einen großen Einfluss hatte. Um herauszufinden, ob und wie sich bestimmte Rezepte in Europa verbreiteten, wird die gesamte heute bekannte mittelalterliche Kochrezeptüberlieferung von Frankreich und den deutschsprachigen Ländern analysiert. Betrachtet werden dabei alle Rezeptexte in deutscher, französischer und lateinischer Sprache, die bis ca. 1500 aufgeschrieben wurden. In Summe sind das 93 Handschriften und ca. 8000 Kochrezepte.
 
 
 ## Literatur
@@ -330,8 +328,8 @@ alterlichen Kochrezepten. Der Fokus liegt dabei auf den Beziehungen zwischen Fra
    </td>
   </tr>
   <tr>
-   <td><strong>Kostenmodell  <br/>
-</strong>(Kostenübersicht / Open Source)
+   <td><strong>Kostenmodell</strong>  <br/>
+(Kostenübersicht / Open Source)
    </td>
    <td>kostenlos
    </td>
@@ -360,7 +358,7 @@ alterlichen Kochrezepten. Der Fokus liegt dabei auf den Beziehungen zwischen Fra
   </tr>
   <tr>
    <td><strong>Inkludierte Datenkonvertierung</strong><br/>
-(Im Pre-Processing mögliche Anpassung der Daten an für die Software erforderliches Format )
+(Im Pre-Processing mögliche Anpassung der Daten an für die Software erforderliches Format)
    </td>
    <td>✅ 
    </td>
