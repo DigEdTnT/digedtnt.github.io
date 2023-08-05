@@ -20,7 +20,7 @@ last_modified_at:   2023-06-29
 Transkribus Lite ist eine Plattform primär für die KI-gestützte Layout- und Texterkennung von gedruckten oder handgeschriebenen Dokumenten, ermöglicht aber auch - mit Grenzen - die Annotation von Struktur und Inhalt. Die Plattform geht auf das 2016 ins Leben gerufene READ-Projekt zurück und wird von der 2019 gegründeten Europäischen Genossenschaft READ-COOP SCE zur Verfügung gestellt und beständig weiterentwickelt. Die Genossenschaft hat mittlerweile mehr als 130 Mitglieder (Institutionen und Privatpersonen) in 30 Ländern (Stand April 2023).
 
 <div class="essence">
-Transkribus Litee ist durch die Möglichkeit des Trainings eigener KI-Modelle zur Layout- und Handschriftenerkennung sehr gut an unterschiedliche Handschriften anpassbar. Basale Textauszeichnungen können zwar ebenfalls vorgenommen werden, für umfassendere und komplexere Annotationen nach den in der DH gültigen Standards empfiehlt es sich jedoch aufgrund der eingeschränkten Annotations- und Validierungsmöglichkeiten auf andere Tools zurückzugreifen.
+Transkribus Lite ist durch die Möglichkeit des Trainings eigener KI-Modelle zur Layout- und Handschriftenerkennung sehr gut an unterschiedliche Handschriften anpassbar. Basale Textauszeichnungen können zwar ebenfalls vorgenommen werden, für umfassendere und komplexere Annotationen nach den in der DH gültigen Standards empfiehlt es sich jedoch aufgrund der eingeschränkten Annotations- und Validierungsmöglichkeiten auf andere Tools zurückzugreifen.
 </div>
 
 
