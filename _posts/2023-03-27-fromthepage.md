@@ -103,6 +103,8 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    </td>
    <td>ediarum
    </td>
+   <td>FairCopy
+   </td>
    <td>OpenRefine
    </td>
    <td>ba[sic?]
@@ -120,6 +122,8 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    <td>✅
    </td>
    <td><a href="https://digedtnt.github.io/transition-fromthepage-ediarum/">🦄</a>
+   </td>
+   <td>❌
    </td>
    <td>❌
    </td>
@@ -187,7 +191,7 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 
 # Einrichtung & Erste Schritte
 
-Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf beschrieben werden.
+Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf für die Transkription mit FromThePage beschrieben werden.
 
 
 ## 1.  Registrierung

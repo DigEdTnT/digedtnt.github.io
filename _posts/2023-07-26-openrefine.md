@@ -76,6 +76,8 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    </td>
    <td>ediarum
    </td>
+   <td>FairCopy
+   </td>
    <td>ba[sic?]
    </td>
    <td>teiPublisher
@@ -93,6 +95,8 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    <td>❌
    </td>
    <td><a href="https://digedtnt.github.io/transition-openrefine-ediarum/">🦄</a>
+   </td>
+   <td>❌
    </td>
    <td>❌
    </td>
@@ -137,7 +141,7 @@ Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispie
 
 # Einrichtung & Erste Schritte
 
-Anhand unseres [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf beschrieben werden. Die Manuskripte des Projektes wurden bereits mittels [FromThePage](https://digedtnt.github.io/fromthepage/) transkribiert und mit [ediarum](https://digedtnt.github.io/ediarum/) wurden bereits erste Annotationen vorgenommen. In dieser Kurzanleitung erfolgt nun die Aufbereitung der Zutatenliste, die wir von einem Historiker im CSV-Format erhalten haben. Unser Ziel ist es, die Daten zu normalisieren und sie zusätzlich mit den [Q-Nummern](https://www.wikidata.org/wiki/Wikidata:Glossary/de) - auch QID genannt - von Wikidata-Einträgen anzureichern.
+Anhand unseres [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf für die Normdaten-Anreicherung mit OpenRefine beschrieben werden. Die Manuskripte des Projektes wurden bereits mittels [FromThePage](https://digedtnt.github.io/fromthepage/) transkribiert und mit [ediarum](https://digedtnt.github.io/ediarum/) wurden bereits erste Annotationen vorgenommen. In dieser Kurzanleitung erfolgt nun die Aufbereitung der Zutatenliste, die wir von einem Historiker im CSV-Format erhalten haben. Unser Ziel ist es, die Daten zu normalisieren und sie zusätzlich mit den [Q-Nummern](https://www.wikidata.org/wiki/Wikidata:Glossary/de) - auch QID genannt - von Wikidata-Einträgen anzureichern.
 
 
 ## 1. Installation 
