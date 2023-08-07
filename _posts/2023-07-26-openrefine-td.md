@@ -57,6 +57,8 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    </td>
    <td>ediarum
    </td>
+   <td>FairCopy
+   </td>
    <td>ba[sic?]
    </td>
    <td>teiPublisher
@@ -74,6 +76,8 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    <td>❌
    </td>
    <td><a href="https://digedtnt.github.io/transition-openrefine-ediarum/">🦄</a>
+   </td>
+   <td>❌
    </td>
    <td>❌
    </td>

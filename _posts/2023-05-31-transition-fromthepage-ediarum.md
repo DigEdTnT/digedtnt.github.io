@@ -8,7 +8,7 @@ categories: [transition, fromthepage, ediarum, xslt, dta-basisformat]
 
 excerpt: Die Transition von FromThePage zu ediarum beinhaltet die Anpassung des TEI/XML-Exports von FromThePage an das DTA-Basisformat, das in ediarum als Standard verwendet wird.
 
-transitionsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-05-31-transition-fromthepage-ediarum-td.pdf
+transitionsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/transition_1/transitiondoc/DigEdTnT_TransitionDoc_FromThePage-Ediarum.pdf
 
 xslt: https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/transition_1/data/ftp-export_to_dta.xsl
     

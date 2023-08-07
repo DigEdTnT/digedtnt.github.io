@@ -1,23 +1,3 @@
----
-
-layout: post
-
-title: FromThePage
-
-categories: [tool, transkription, FromThePage, opensource]
-
-excerpt: FromThePage ist eine Plattform für kollaborative Transkriptionen.
-
-factsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/fromthepage/factsheet/DigEdTnT_FactSheet_FromThePage.pdf
-
-tooldoc: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/_posts/2023-03-27-fromthepage-td.pdf
-
-last_modified_at:   2023-05-09
-
----
-
-
-
 # Allgemeine Beschreibung
 
 FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins Leben gerufen wurde, um die Arbeit bei der Transkription von Textsammlungen zu erleichtern. Die Software wurde 2009 unter einen Open-Source-Lizenz veröffentlicht und wird seit 2010 für die Transkription nach dem Crowdsourcing-Prinzip von Bibliotheken, Archiven und Museen genutzt. Durch die Anpassung an die besonderen Bedürfnisse der verschiedenen Institutionen wird die Software ständig weiterentwickelt. Seit 2014 liegt der Fokus vor allem auf wissenschaftlichen digitalen Editionen.
@@ -100,6 +80,8 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    </td>
    <td>ediarum
    </td>
+   <td>FairCopy
+   </td>
    <td>OpenRefine
    </td>
    <td>ba[sic?]
@@ -117,6 +99,8 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    <td>✅
    </td>
    <td><a href="https://digedtnt.github.io/transition-fromthepage-ediarum/">🦄</a>
+   </td>
+   <td>❌
    </td>
    <td>❌
    </td>
