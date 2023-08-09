@@ -92,7 +92,7 @@ Dies erzeugt im transformierten XML die entsprechende Einbindung der XML-Modelle
 
 Auf Grundlage eines als gültig validierten [DTA-Metadatenbeispiels](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/dta_example.xml) wurden schließlich die Metadaten des FromThePage-Exports in eine DTABf-konforme Struktur übertragen.
 
-<u>**Transformationsarten**</u>
+### Transformationsarten
 
 Bei der Übertragung der Metadaten wurden verschiedene Maßnahmen gesetzt:
 
@@ -107,7 +107,7 @@ Bei der Übertragung der Metadaten wurden verschiedene Maßnahmen gesetzt:
     ```
     Dass das Attribut `@telota:doctype` einen Validierungsfehler hervorruft, muss vorerst ignoriert werden.
 
-<u>**Einschränkungen**</u>
+### Einschränkungen
 
 Die Überführung der Metadaten in das Schema des DTA-Basisformat ergab außerdem Schwierigkeiten, deren Lösung nicht zu einem validen Output führt. Diesen Kompromiss muss man aber mitunter eingehen, um keine bereits vorhandenen Metadaten zu verlieren.
 
