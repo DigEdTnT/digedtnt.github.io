@@ -30,7 +30,7 @@ In Hinblick auf digitale Editionen ist ein Vorteil von OpenRefine, dass es nicht
 ## Anwendungsbereiche
 
 * Bereinigung unstrukturierter und fehlerhafter Daten
-* Zusammenführung und Konsolidierung von Daten aus verschiedenen Quellen 
+* Zusammenführung und Konsolidierung von Daten aus verschiedenen Quellen
 * Normalisierung von bestehenden Datenbeständen
 
 
@@ -41,7 +41,7 @@ In Hinblick auf digitale Editionen ist ein Vorteil von OpenRefine, dass es nicht
 * Datentransformation  (z. B. Excel/CSV-Input zu JSON oder XML-Struktur)
 * Datenzusammenführung, wenn verschiedene Quellen vorhanden sind
 * Möglichkeit der Strukturierung von Metadaten
-* Datenvisualisierung 
+* Datenvisualisierung
 * Automatisierung von wiederholten Datenbereinigungs- und Transformationsaufgaben durch die Erstellung von Skripten oder Aktionen für bestimmte Aufgaben
 
 
@@ -116,19 +116,19 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 # Möglichkeiten & Grenzen
 
-Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolgend mögliche Vor- und Nachteile des 
-Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1) festgestellt wurden. 
+Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolgend mögliche Vor- und Nachteile des
+Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1) festgestellt wurden.
 
 ## Stärken
 
 * Benutzerfreundliche Bearbeitungsoberfläche und Wahrung der Datensicherheit Bearbeitung am eigenen Rechner
 * Bereinigung von unstrukturierten und fehlerhaften Daten (Dubletten, Tippfehler, Inkonsistenzen) helfen und damit Überprüfung der Datenqualität (Qualitätssicherung)
 * Versionskontrolle durch die Möglichkeit, Arbeitsschritte wieder rückgängig zu machen oder bereits getätigte Schritte wiederherzustellen
-* Datenerweiterung und Normalisierung über Reconciliation-Services, die den Datenabgleich mit externen Datenbanken ermöglichen 
+* Datenerweiterung und Normalisierung über Reconciliation-Services, die den Datenabgleich mit externen Datenbanken ermöglichen
 * Datentransformation in andere Formate oder Strukturen
-* Datenzusammenführung bei mehreren Quellen oder Versionen 
-* Organisation und Strukturierung von Metadaten 
-* Diagramme, Grafiken und andere visuelle Darstellungen zur Verdeutlichung von Mustern und Zusammenhänge in den Daten 
+* Datenzusammenführung bei mehreren Quellen oder Versionen
+* Organisation und Strukturierung von Metadaten
+* Diagramme, Grafiken und andere visuelle Darstellungen zur Verdeutlichung von Mustern und Zusammenhänge in den Daten
 * Automatisierung von wiederholten Datenbereinigungs- und Transformationsaufgaben durch die Möglichkeit, den Änderungsverlauf zu exportieren und auf neue Daten anzuwenden
 
 ## Herausforderungen & Probleme
@@ -144,90 +144,90 @@ Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispie
 Anhand unseres [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf für die Normdaten-Anreicherung mit OpenRefine beschrieben werden. Die Manuskripte des Projektes wurden bereits mittels [FromThePage](https://digedtnt.github.io/fromthepage/) transkribiert und mit [ediarum](https://digedtnt.github.io/ediarum/) wurden bereits erste Annotationen vorgenommen. In dieser Kurzanleitung erfolgt nun die Aufbereitung der Zutatenliste, die wir von einem Historiker im CSV-Format erhalten haben. Unser Ziel ist es, die Daten zu normalisieren und sie zusätzlich mit den [Q-Nummern](https://www.wikidata.org/wiki/Wikidata:Glossary/de) - auch QID genannt - von Wikidata-Einträgen anzureichern.
 
 
-## 1. Installation 
+## 1. Installation
 
-* Unser erster Schritt besteht darin, uns die entsprechende Version für unser Betriebssystem von [OpenRefine herunterzuladen](https://openrefine.org/download). Nach dem Entpacken der ZIP-Datei führen wir openrefine.exe aus, wodruch sich OpenRefine direkt in unserem Browser öffnet. 
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/openrefine-start.PNG" description="Startbildschirm von OpenRefine" %} 
+* Unser erster Schritt besteht darin, uns die entsprechende Version für unser Betriebssystem von [OpenRefine herunterzuladen](https://openrefine.org/download). Nach dem Entpacken der ZIP-Datei führen wir openrefine.exe aus, wodruch sich OpenRefine direkt in unserem Browser öffnet.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/openrefine-start.PNG" description="Startbildschirm von OpenRefine" %}
 
 
 ## 2. Einrichtung des Projekts
 
-* Um ein Projekt erstellen zu können, werden wir aufgefordert, Daten zu importieren. Wir laden daher als erstes unsere [EXCEL-Datei mit der Zutatenliste](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/openrefine/data/list_of_ingredients.xlsx) hoch.  
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/create-project.PNG" description="Upload der EXCEL-Datei" %} 
-* Mit dem Button "Next" kommen wir in die darauffolgende Ansicht und können einige Einstellungen vornehmen, bevor unser Projekt erstellt wird.  
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/import-data.PNG" description="Projekteinstellungen beim Import" %}  
+* Um ein Projekt erstellen zu können, werden wir aufgefordert, Daten zu importieren. Wir laden daher als erstes unsere [EXCEL-Datei mit der Zutatenliste](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/openrefine/data/list_of_ingredients.xlsx) hoch.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/create-project.PNG" description="Upload der EXCEL-Datei" %}
+* Mit dem Button "Next" kommen wir in die darauffolgende Ansicht und können einige Einstellungen vornehmen, bevor unser Projekt erstellt wird.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/import-data.PNG" description="Projekteinstellungen beim Import" %}
     → Für unser Projekt haben wir an den vorausgewählten Einstellungen nichts geändert und nur einen Projektnamen gewählt, bevor wir mit "Create project" fortgefahren sind.
-* Unsere Projektansicht sieht letztlich so aus: 
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/project-view.PNG" description="Projektansicht in OpenRefine" %}  
+* Unsere Projektansicht sieht letztlich so aus:
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/project-view.PNG" description="Projektansicht in OpenRefine" %}
     → Die Einträge aus der CSV-Datei werden tabellarisch dargestellt. In der ersten Spalte sind verschiedene frühneuhochdeutsche Schreibvarianten einzelner Zutaten, in der zweiten Spalte die heutige Schreibweise und in der dritten Spalte befinden sich die Übersetzungen in modernes Englisch. Jede Spalte verfügt über ein Drop-Down-Menü, das uns verschiedene Bearbeitungsmöglichkeiten bietet, wobei für uns vor allem jene Funktion, die eine Anreicherung mit Normdaten (Reconciliation) ermöglicht, von Interesse ist.
 
 
 ## 3. Bearbeitung der Dokumente
 
-* Sollten wir zwischenzeitlich unser Projekt geschlossen haben, müssen wir für die Arbeit in OpenRefine zuerst wieder unsere Datei openrefine.exe starten, über die erneut der Browser geöffnet wird. Unter **Open Project** in der linken Navigationleiste können wir schließlich unsere Projekte einsehen. Wir öffnen hier unser bereits angelegtes Projekt "MaRezepte". 
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/open-project.PNG" description="Einstieg zur Projektbearbeitung in OpenRefine" %} 
-* Um unsere Zutatenliste mit Einträgen aus einer Normdatenbank anzureichern, überprüfen wir zuerst, welche Einträge auf Basis der Spalte mit den englischen Begriffen gefunden werden. Wir wählen hier das Englische, weil die englische Wikidata-Datenbank mit der größten Abdeckung an Begriffen zu einer höheren Trefferquote führt. Dafür gehen wir auf die Spalte mit der Überschrift "eng", wählen im Dropdown die Option **Reconcile** und dann in der damit verbundenen Auswahl **Start Reconcile**. 
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/start-reconciliation.PNG" description="Auswahl an Datenbearbeitungsmöglichkeiten" %} 
-* In dem neuen Fenster, das sich daraufhin öffnet, klicken wir in der linken Menüleiste auf "Wikidata (en)". 
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/start-reconciliation.PNG" description="Start des Abgleichs mit den Normdaten von Wikidata" %} 
+* Sollten wir zwischenzeitlich unser Projekt geschlossen haben, müssen wir für die Arbeit in OpenRefine zuerst wieder unsere Datei openrefine.exe starten, über die erneut der Browser geöffnet wird. Unter **Open Project** in der linken Navigationleiste können wir schließlich unsere Projekte einsehen. Wir öffnen hier unser bereits angelegtes Projekt "MaRezepte".
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/open-project.PNG" description="Einstieg zur Projektbearbeitung in OpenRefine" %}
+* Um unsere Zutatenliste mit Einträgen aus einer Normdatenbank anzureichern, überprüfen wir zuerst, welche Einträge auf Basis der Spalte mit den englischen Begriffen gefunden werden. Wir wählen hier das Englische, weil die englische Wikidata-Datenbank mit der größten Abdeckung an Begriffen zu einer höheren Trefferquote führt. Dafür gehen wir auf die Spalte mit der Überschrift "eng", wählen im Dropdown die Option **Reconcile** und dann in der damit verbundenen Auswahl **Start Reconcile**.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/start-reconciliation.PNG" description="Auswahl an Datenbearbeitungsmöglichkeiten" %}
+* In dem neuen Fenster, das sich daraufhin öffnet, klicken wir in der linken Menüleiste auf "Wikidata (en)".
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/start-reconciliation.PNG" description="Start des Abgleichs mit den Normdaten von Wikidata" %}
 * In dem nachfolgenden Fenster wählen wir folgende Einstellungen:
     * Bei der Kategorienzuordnung, mit der festgelegt werden kann, dass die Begriffe nur mit Entitäten einer bestimmten Kategorie abgeglichen werden, möchten wir uns nicht zu sehr einschränken. Wir könnten natürlich nur "food ingredients" auswählen, aber erstens sind nicht alle Entitäten einer Kategorie zugewiesen und zweitens ist die Kategoriezuordnung nicht immer eindeutig, weshalb beispielsweise einer Zutat wie Petersilie anstelle der Kategorie "Zutat", auch einfach nur die Kategorie "Pflanze" zugeordnet sein könnte. Um zu verhindern, dass durch die Einschränkung auf eine bestimmte Kategorie möglicherweise unkategorisierte oder abweichend kategorisierte Entitäten nicht mit unseren Daten abgeglichen werden, nutzen wir die Option: "Reconcile against no particular type".
-    * Zusätzlich gibt es die Möglichkeit, über die Checkbox "Auto-match candidates with high confidence" einzustellen, dass bei jenen Begriffen, für die mit hoher Wahrscheinlichkeit eine passende Wikidata-Entität gefunden wurde, eine automatische Zuordnung vorgenommen wird. 
-* Mit diesen Einstellungen für unsere Daten starten wir schließlich den Reconciliation-Prozess.  
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconciliation-options.PNG" description="Diverse Einstellungen vor dem Start des Reconciliation-Prozesses" %}  
-    → Dieser Prozess kann je nach Datenmenge ein paar Minuten dauern.  
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconciliation-processing.PNG" description="Unterschiedlich lange Wartezeiten je nach Datenmenge" %} 
-* **Kleiner Exkurs bei alternativen Daten:** Wenn wir die Begriffe nicht auch Englisch, sondern nur im Standarddeutsch hätten, müssten wir über den Button "Add standard service" ein weiteres Service für das deutsche Wikidata anlegen, indem wir die entsprechende URL zur API eingeben. 
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/add-reconciliation-service.PNG" description="Verknüpfung mit der API zu den deutschsprachigen Wikidata-Einträgen" %} 
-    In unserer linken (und über ein kleines Lesezeichen-Symbol ein- und ausklappbaren) Liste erscheint nun ein Button für die Reconciliation von Begriffen mit deutschsprachigen Wikidata-Einträgen, die wir dann entsprechend für eine Spalte mit deutschsprachigen Begriffen auswählen könnten.  
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/choose-reconciliation-service.PNG" description="Auswahl eines anderen Services" %} 
+    * Zusätzlich gibt es die Möglichkeit, über die Checkbox "Auto-match candidates with high confidence" einzustellen, dass bei jenen Begriffen, für die mit hoher Wahrscheinlichkeit eine passende Wikidata-Entität gefunden wurde, eine automatische Zuordnung vorgenommen wird.
+* Mit diesen Einstellungen für unsere Daten starten wir schließlich den Reconciliation-Prozess.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconciliation-options.PNG" description="Diverse Einstellungen vor dem Start des Reconciliation-Prozesses" %}
+    → Dieser Prozess kann je nach Datenmenge ein paar Minuten dauern.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconciliation-processing.PNG" description="Unterschiedlich lange Wartezeiten je nach Datenmenge" %}
+* **Kleiner Exkurs bei alternativen Daten:** Wenn wir die Begriffe nicht auch Englisch, sondern nur im Standarddeutsch hätten, müssten wir über den Button "Add standard service" ein weiteres Service für das deutsche Wikidata anlegen, indem wir die entsprechende URL zur API eingeben.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/add-reconciliation-service.PNG" description="Verknüpfung mit der API zu den deutschsprachigen Wikidata-Einträgen" %}
+    In unserer linken (und über ein kleines Lesezeichen-Symbol ein- und ausklappbaren) Liste erscheint nun ein Button für die Reconciliation von Begriffen mit deutschsprachigen Wikidata-Einträgen, die wir dann entsprechend für eine Spalte mit deutschsprachigen Begriffen auswählen könnten.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/choose-reconciliation-service.PNG" description="Auswahl eines anderen Services" %}
     → Hinter dem Button "Discover Services" verbergen sich außerdem [noch weitere Normdaten-Ressourcen](https://reconciliation-api.github.io/testbench/#/).
-* Sobald der Reconciliation-Prozess abgeschlossen ist, erhalten wir in der Header-Zeile der Spalte einen Überblick zu unserem Fortschritt in Form eines Balkens. Aus unserer Tabelle mit 536 Zeilen wurde knapp ein Fünftel automatisiert mit Normdaten angereichert und für über 80% der Einträge ist noch eine manuelle Überprüfung nötig, da es hier mehrere Entitäten gibt, die mit dem Begriff aus der jeweiligen Zeile übereinstimmen.  
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconciliation-result.PNG" description="Auswertung des Reconciliation-Prozesses" %} 
-    → Zusätzlich bekommen wir in der linken Leiste Informationen zu den Matches und haben auch die Möglichkeit, den Prozess rückgängig zu machen. 
-* Bei allen Begriffen, für die nicht automatisch eine Entsprechung aus den Wikidata-Normaten übernommen wurde, müssen wir nun eine manuelle Zuordnung vornehmen. Durch die Übersetzung der verschiedenen Schreibweisen für einen konkreten Begriff haben wir im Englischen sehr viele gleiche Einträge. Damit wir nicht jeden Zeile einzeln durchgehen müssen, gibt es in OpenRefine die Möglichkeit, das Kästchen mit dem doppelten Häkchen zu verwenden, um den entsprechenden Wikidata-Eintrag für alle identischen Zellen zu übernehmen.  
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconcile-all-matches.PNG" description="Gleichzeitige Zuordnung eines Wikidata-Eintrages für alle identischen Zellen" %} 
-    → Etwas mühsam bei dieser manuellen Zuordnung ist, dass nach jeder Übernahme eines Wikidata-Eintrags das Programm anschließend zum Start der Tabelle hüpft, und man daher anschließend immer erneut zur nächsten, zur Bearbeitung ausstehenden Zeile scrollen muss.  
-* Sollte in den Vorschlägen eine passende Wikidata-Entsprechung fehlen, gibt es am Ende der Liste die Möglichkeit, nach weiteren Übereinstimmungen zu suchen und im neuen Suchfenster schließlich weitere Eingaben, unter denen ein Begriff auch zu finden sein könnte, vorzunehmen. 
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/search-for-matches.PNG" description="Suche nach alternativen Wikidata-Einträgen" %} 
-    → In unserem Datensatz wurde zum Beispiel das englische Wort "horse radish" mit einem Leerzeichen geschrieben, weshalb in der Liste mit Vorschlägen kein passender Eintrag zu finden war. 
-* Sollten wir mit einer unserer Zuordnungen nicht zufrieden sein, gibt es zwei Möglichkeiten, die Zuordnung wieder rückgängig zu machen. Entweder wir klicken einfach auf "Choose new match", direkt unter dem Begriff, der falsch zugeordnet wurde (a.), oder wir gehen in der linken Menüleiste in den Reiter **Undo/Redo** und wählen einen vorangegangen Schritt aus, um dort wieder weiterzumachen (b.).  
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/undo-processes.PNG" description="Zwei Möglichkeiten, unpassende Zuordnungen zu ändern oder zurückzusetzen" %} 
-    → Mit dem "Extract"-Button in der linken Menüleiste ist es außerdem möglich, entweder alle oder einen Teil der bereits getätigten Schritte zu exportieren. Sollte sich die Liste beispielsweise erheblich verändern, so könnte man ein neues Projekt erstellen, und den bisherigen Arbeitsfortschritt über den Import der Arbeitsschritte (mittels "Apply"-Button) wiederherstellen. Anschließend müsste man anschließend nur mehr die neu hinzugekommenen Einträge mit Wikidata-Normdaten angereichert werden. 
-* Für Einträge, die man nicht mit Normdaten anreichern möchte oder nicht kann, weil wie in unserem Beispielprojekt mitunter nicht jede Zutat entschlüsselt wurde, gibt es die Möglichkeit, über die Ansicht, die unter "Search for match" erscheint, auszuwählen, dass der Zelle kein Eintrag zugeordnet werden soll.  
+* Sobald der Reconciliation-Prozess abgeschlossen ist, erhalten wir in der Header-Zeile der Spalte einen Überblick zu unserem Fortschritt in Form eines Balkens. Aus unserer Tabelle mit 536 Zeilen wurde knapp ein Fünftel automatisiert mit Normdaten angereichert und für über 80% der Einträge ist noch eine manuelle Überprüfung nötig, da es hier mehrere Entitäten gibt, die mit dem Begriff aus der jeweiligen Zeile übereinstimmen.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconciliation-result.PNG" description="Auswertung des Reconciliation-Prozesses" %}
+    → Zusätzlich bekommen wir in der linken Leiste Informationen zu den Matches und haben auch die Möglichkeit, den Prozess rückgängig zu machen.
+* Bei allen Begriffen, für die nicht automatisch eine Entsprechung aus den Wikidata-Normaten übernommen wurde, müssen wir nun eine manuelle Zuordnung vornehmen. Durch die Übersetzung der verschiedenen Schreibweisen für einen konkreten Begriff haben wir im Englischen sehr viele gleiche Einträge. Damit wir nicht jeden Zeile einzeln durchgehen müssen, gibt es in OpenRefine die Möglichkeit, das Kästchen mit dem doppelten Häkchen zu verwenden, um den entsprechenden Wikidata-Eintrag für alle identischen Zellen zu übernehmen.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconcile-all-matches.PNG" description="Gleichzeitige Zuordnung eines Wikidata-Eintrages für alle identischen Zellen" %}
+    → Etwas mühsam bei dieser manuellen Zuordnung ist, dass nach jeder Übernahme eines Wikidata-Eintrags das Programm anschließend zum Start der Tabelle hüpft, und man daher anschließend immer erneut zur nächsten, zur Bearbeitung ausstehenden Zeile scrollen muss.
+* Sollte in den Vorschlägen eine passende Wikidata-Entsprechung fehlen, gibt es am Ende der Liste die Möglichkeit, nach weiteren Übereinstimmungen zu suchen und im neuen Suchfenster schließlich weitere Eingaben, unter denen ein Begriff auch zu finden sein könnte, vorzunehmen.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/search-for-matches.PNG" description="Suche nach alternativen Wikidata-Einträgen" %}
+    → In unserem Datensatz wurde zum Beispiel das englische Wort "horse radish" mit einem Leerzeichen geschrieben, weshalb in der Liste mit Vorschlägen kein passender Eintrag zu finden war.
+* Sollten wir mit einer unserer Zuordnungen nicht zufrieden sein, gibt es zwei Möglichkeiten, die Zuordnung wieder rückgängig zu machen. Entweder wir klicken einfach auf "Choose new match", direkt unter dem Begriff, der falsch zugeordnet wurde (a.), oder wir gehen in der linken Menüleiste in den Reiter **Undo/Redo** und wählen einen vorangegangen Schritt aus, um dort wieder weiterzumachen (b.).
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/undo-processes.PNG" description="Zwei Möglichkeiten, unpassende Zuordnungen zu ändern oder zurückzusetzen" %}
+    → Mit dem "Extract"-Button in der linken Menüleiste ist es außerdem möglich, entweder alle oder einen Teil der bereits getätigten Schritte zu exportieren. Sollte sich die Liste beispielsweise erheblich verändern, so könnte man ein neues Projekt erstellen, und den bisherigen Arbeitsfortschritt über den Import der Arbeitsschritte (mittels "Apply"-Button) wiederherstellen. Anschließend müsste man anschließend nur mehr die neu hinzugekommenen Einträge mit Wikidata-Normdaten angereichert werden.
+* Für Einträge, die man nicht mit Normdaten anreichern möchte oder nicht kann, weil wie in unserem Beispielprojekt mitunter nicht jede Zutat entschlüsselt wurde, gibt es die Möglichkeit, über die Ansicht, die unter "Search for match" erscheint, auszuwählen, dass der Zelle kein Eintrag zugeordnet werden soll.
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/unsolved-entries.PNG" description="Eintrag ohne Zuordnung einer Wikidata-Entität" %}
-* Sobald wir all unsere Einträge mit Wikidata-Einträgen angereichert haben, können wir uns die Q-Nummern der Wikidata-Einträge in einer eigenen Spalte anzeigen lassen.  
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/add-qid.PNG" description="Spalte mit Daten der Normalisierung hinzufügen" %} 
-    Wir müssen dieser Spalte nur mehr einen Namen geben und jede Zeile erhält eine weitere Zelle mit der entsprechenden Q-Nummer. 
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/wikidata-column.PNG" description="Q-Nummern für jeden Eintrag in eigener Spalte" %} 
-    → Wir haben uns für "idno" entschieden, da wir später beim Exportieren diesen Begriff direkt als Attributsbezeichnung übernehmen wollen und als Wert die entsprechende Q-Nummer eingefügt werden soll. 
+* Sobald wir all unsere Einträge mit Wikidata-Einträgen angereichert haben, können wir uns die Q-Nummern der Wikidata-Einträge in einer eigenen Spalte anzeigen lassen.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/add-qid.PNG" description="Spalte mit Daten der Normalisierung hinzufügen" %}
+    Wir müssen dieser Spalte nur mehr einen Namen geben und jede Zeile erhält eine weitere Zelle mit der entsprechenden Q-Nummer.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/wikidata-column.PNG" description="Q-Nummern für jeden Eintrag in eigener Spalte" %}
+    → Wir haben uns für "idno" entschieden, da wir später beim Exportieren diesen Begriff direkt als Attributsbezeichnung übernehmen wollen und als Wert die entsprechende Q-Nummer eingefügt werden soll.
 
 
 ## 4. Export der Dokumente
 
-* Um unsere angereicherte Tabelle bzw. normalisierten Daten zu exportieren, klicken wir auf den Button "Export" und wählen die Option "Templating". Denn unser Ziel ist es, direkt eine XML-Struktur zu generieren, die wir anschließend in unser Register in ediarum übernehmen können.  
+* Um unsere angereicherte Tabelle bzw. normalisierten Daten zu exportieren, klicken wir auf den Button "Export" und wählen die Option "Templating". Denn unser Ziel ist es, direkt eine XML-Struktur zu generieren, die wir anschließend in unser Register in ediarum übernehmen können.
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/export-data.PNG" description="Export der Daten über ein Template" %}
-* In der Ansicht für die Template-Erstellung haben wir nun die Möglichkeit, unsere Daten so zu gestalten, dass sie nur mehr in das ediarum-Sachregister kopiert werden müssen. Dafür tragen wir in das Prefix-Textfeld `<list>` und als Suffix `</list>` ein. Entsprechend dem Schema für Register in ediarum möchten wir für jede Zeile einen eigenen `<item>`-Eintrag erhalten. Als @xml:id soll die englische Übersetzung übernommen werden. Den Wikidata-Link übernehmen wir in Form eines `<idno>`-Elemente innerhalb des `<item>`-Elements. Außerdem legen wir auch 1-2 `<label>`-Elemente an, einmal mit dem Wert "reg" im @type-Attribut für die Übersetzung in Standarddeutsch, und ein weiteres mit dem Wert "alt", das die frühneuhochdeutschen Bezeichnung enthält.  
-In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wird. 
-    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/templating-export.PNG" description="Individuelle Anpassung des Outputs über die Templating-Methode" %} 
-    → <span style="text-decoration:underline;">Erläuterungen zum Code im Textfeld "Row Template":</span> Unser Code, der über die einzelnen Zeilen unserer Tabelle iteriert, soll hier noch etwas genauer betrachtet werden. Mittels der [General Refined Expression Language (GREL)](https://openrefine.org/docs/manual/grel) haben wir unseren Code entsprechend unseren Anforderungen gestaltet. 
+* In der Ansicht für die Template-Erstellung haben wir nun die Möglichkeit, unsere Daten so zu gestalten, dass sie nur mehr in das ediarum-Sachregister kopiert werden müssen. Dafür tragen wir in das Prefix-Textfeld `<list>` und als Suffix `</list>` ein. Entsprechend dem Schema für Register in ediarum möchten wir für jede Zeile einen eigenen `<item>`-Eintrag erhalten. Als @xml:id soll die englische Übersetzung übernommen werden. Den Wikidata-Link übernehmen wir in Form eines `<idno>`-Elemente innerhalb des `<item>`-Elements. Außerdem legen wir auch 1-2 `<label>`-Elemente an, einmal mit dem Wert "reg" im @type-Attribut für die Übersetzung in Standarddeutsch, und ein weiteres mit dem Wert "alt", das die frühneuhochdeutschen Bezeichnung enthält.
+In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wird.
+    {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/templating-export.PNG" description="Individuelle Anpassung des Outputs über die Templating-Methode" %}
+    → <span style="text-decoration:underline;">Erläuterungen zum Code im Textfeld "Row Template":</span> Unser Code, der über die einzelnen Zeilen unserer Tabelle iteriert, soll hier noch etwas genauer betrachtet werden. Mittels der [General Refined Expression Language (GREL)](https://openrefine.org/docs/manual/grel) haben wir unseren Code entsprechend unseren Anforderungen gestaltet.
     ```django
-    
+
     <item xml:id="{% raw %}{{ if(cells['eng'].value != 'unsolved', cells['eng'].value, cells['deu-enh'].value + '_unsolved') }}{% endraw %}">
         {% raw %}{{ if(cells['idno'].value != 'null', '<idno type="uri">https://www.wikidata.org/entity/' + cells['idno'].value + '</idno>', '') }}{% endraw %}
         {% raw %}{{ if(cells['deu'].value != 'ungelöst', '<label type="reg">' + cells['deu'].value + '</label>', '<label type="reg">' + cells['deu'].value + '(' + cells['deu-enh'].value + ')</label>') }}{% endraw %}
-        <label type="alt">{% raw %}{{ cells['deu-enh'].value }}{% endraw %}</label> 
+        <label type="alt">{% raw %}{{ cells['deu-enh'].value }}{% endraw %}</label>
     </item>
     ```
     Wir haben für usnere Daten zusätzliche Bedingungen für folgende Spezialfälle eingeführt:
-    * **Fehlende Übersetzungen:** Sollten Zellen in unserem Datensatz in der englischen Spalte "unsolved" bzw. in der deutschen Spalte "ungelöst" beinhalten, weil man nicht weiß, welche Bedeutung der frühneuhochdeutsche Begriff hat, nutzen wir das frühneuhochdeutsche Wort als @xml:id. 
-    * **Fehlende Q-Nummer:** Sollte eine Zeile keine Q-Nummer besitzen, wird auch kein `<idno>`-Element angelegt. 
+    * **Fehlende Übersetzungen:** Sollten Zellen in unserem Datensatz in der englischen Spalte "unsolved" bzw. in der deutschen Spalte "ungelöst" beinhalten, weil man nicht weiß, welche Bedeutung der frühneuhochdeutsche Begriff hat, nutzen wir das frühneuhochdeutsche Wort als @xml:id.
+    * **Fehlende Q-Nummer:** Sollte eine Zeile keine Q-Nummer besitzen, wird auch kein `<idno>`-Element angelegt.
 * Wenn unser Output schließlich so aussieht wie wir ihn gerne hätten, müssen wir nur mehr auf den "Export"-Button klicken und eine [TXT-Datei](https://github.com/DigEdTnT/digedtnt.github.io/blob/bb032626aee08b43c4b36da5476ae9ce0d63bb2a/data/pipelines/pipeline_1/openrefine/data/output_openrefine.txt) wird heruntergeladen. Für unser Beispielprojekt müssen wir diesen Output aber im Anschluss noch ein wenig anpassen (siehe [Transition OpenRefine → ediarum](https://digedtnt.github.io/transition-openrefine-ediarum/)).
 
 
 # Kontakt
 
-**Weblink:** [https://openrefine.org/](https://openrefine.org/) 
+**Weblink:** [https://openrefine.org/](https://openrefine.org/)
 
 <table>
   <tr>
@@ -239,7 +239,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
   <tr>
    <td>Christian Steiner (DH Craft)
    </td>
-   <td><a href="mailto:christian.steiner@dhcraft.org">christian.steiner@dhcraft.org</a> 
+   <td><a href="mailto:christian.steiner@dhcraft.org">christian.steiner@dhcraft.org</a>
    </td>
   </tr>
 </table>
@@ -270,21 +270,21 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
 
 ## Literatur
 
-* Crossley, L. (2019, Oktober 29). _Text Mining Digital Humanities Blogs with APIs, OpenRefine, and R_. [https://mars.gmu.edu/handle/1920/11632](https://mars.gmu.edu/handle/1920/11632) 
-* Delpeuch, A. (2019). _A survey of OpenRefine reconciliation services_ (arXiv:1906.08092). arXiv. [https://doi.org/10.48550/arXiv.1906.08092](https://doi.org/10.48550/arXiv.1906.08092) 
-* Dreßen, A., & Sacher, E. (2023, März 6). _Querying Art History Data on the Web (5): Modelling Data with OpenRefine_. [https://www.db-thueringen.de/receive/dbt_mods_00055804](https://www.db-thueringen.de/receive/dbt_mods_00055804) 
-* Engelhardt, F., Freitag, N., & Wildermuth, M. (2023). Die Migration der Bibliographia Cartographica: Daten aufräumen mit OpenRefine. _Bibliotheksdienst_, _57_(2), 95–110. [https://doi.org/10.1515/bd-2023-0016](https://doi.org/10.1515/bd-2023-0016) 
-* Gallant, K., Lorang, E., & Ramirez, A. (2014). _Tools for the digital humanities : a librarian’s guide_ (Emerging Technologies in Libraries). [https://mospace.umsystem.edu/xmlui/handle/10355/44544](https://mospace.umsystem.edu/xmlui/handle/10355/44544) 
-* Gutiérrrez De la Torre, Silvia Eunice. (2021, Juni 15). _OpenRefine, Authority Control and Wikidata_. [https://zenodo.org/record/4950866](https://zenodo.org/record/4950866) 
-* Handelman, M. (2015). Digital Humanities as Translation: Visualizing Franz Rosenzweig’s Archive. _TRANSIT_, _10_(1). [https://doi.org/10.5070/T7101029573](https://doi.org/10.5070/T7101029573) 
-* Ikonić Nešić, M., Stanković, R., Schöch, C., & Skoric, M. (2022). From ELTeC Text Collection Metadata and Named Entities to Linked-data (and Back). _Proceedings of the 8th Workshop on Linked Data in Linguistics within the 13th Language Resources and Evaluation Conference_, 7–16. [https://aclanthology.org/2022.ldl-1.2](https://aclanthology.org/2022.ldl-1.2) 
-* Krimmel, Erica, & Walker, Lindsay J. (2022, Mai 11). _Using OpenRefine for natural history collections data_. Society for the Preservation of Natural History Collections (SPNHC), Edinburgh, Scotland, UK, 5-10 June 2022, Edinburgh, Scotland, UK,. [https://zenodo.org/record/6574729](https://zenodo.org/record/6574729) 
-* Mandal, S. (2022). Integration of Linked Open Data Authorities with OpenRefine : A Methodology for Libraries. _Library Philosophy and Practice (e-journal)_. [https://digitalcommons.unl.edu/libphilprac/7195](https://digitalcommons.unl.edu/libphilprac/7195) 
-* Myntti, J., & Neatrour, A. (2015). Use Existing Data First: Reconcile Metadata before Creating New Controlled Vocabularies. _Journal of Library Metadata_, _15_(3–4), 191–207. [https://doi.org/10.1080/19386389.2015.1099989](https://doi.org/10.1080/19386389.2015.1099989) 
-* Ransom, L., & Coladangelo, L. P. (2021, Dezember 3). Semantic Enrichment of the Schoenberg Database of Manuscripts Name Authority through Wikidata. _15th International Conference on Metadata and Semantics Research_. [https://www.academia.edu/63137370/Semantic_Enrichment_of_the_Schoenberg_Database_of_Manuscripts_Name_Authority_through_Wikidata](https://www.academia.edu/63137370/Semantic_Enrichment_of_the_Schoenberg_Database_of_Manuscripts_Name_Authority_through_Wikidata) 
-* Sohmen, L., & Rossenova, L. (2022). Open refine to wikibase: a new data upload pipeline. _Proceedings of the 22nd ACM/IEEE Joint Conference on Digital Libraries_, 1–2. [https://doi.org/10.1145/3529372.3530919](https://doi.org/10.1145/3529372.3530919) 
-* Steeg, F., & Pohl, A. (2021). Ein Protokoll für den Datenabgleich im Web am Beispiel von OpenRefine und der Gemeinsamen Normdatei (GND). In M. Franke-Maier, A. Kasprzik, A. Ledl, & H. Schürmann (Hrsg.), _Qualität in der Inhaltserschließung_ (S. 259–278). De Gruyter. [https://doi.org/10.1515/9783110691597-013](https://doi.org/10.1515/9783110691597-013) 
-* Woitas, Kathi. (2021, Dezember 13). _OpenRefine_. [https://zenodo.org/record/5776098](https://zenodo.org/record/5776098) 
+* Crossley, L. (2019, Oktober 29). _Text Mining Digital Humanities Blogs with APIs, OpenRefine, and R_. [https://mars.gmu.edu/handle/1920/11632](https://mars.gmu.edu/handle/1920/11632)
+* Delpeuch, A. (2019). _A survey of OpenRefine reconciliation services_ (arXiv:1906.08092). arXiv. [https://doi.org/10.48550/arXiv.1906.08092](https://doi.org/10.48550/arXiv.1906.08092)
+* Dreßen, A., & Sacher, E. (2023, März 6). _Querying Art History Data on the Web (5): Modelling Data with OpenRefine_. [https://www.db-thueringen.de/receive/dbt_mods_00055804](https://www.db-thueringen.de/receive/dbt_mods_00055804)
+* Engelhardt, F., Freitag, N., & Wildermuth, M. (2023). Die Migration der Bibliographia Cartographica: Daten aufräumen mit OpenRefine. _Bibliotheksdienst_, _57_(2), 95–110. [https://doi.org/10.1515/bd-2023-0016](https://doi.org/10.1515/bd-2023-0016)
+* Gallant, K., Lorang, E., & Ramirez, A. (2014). _Tools for the digital humanities : a librarian’s guide_ (Emerging Technologies in Libraries). [https://mospace.umsystem.edu/xmlui/handle/10355/44544](https://mospace.umsystem.edu/xmlui/handle/10355/44544)
+* Gutiérrrez De la Torre, Silvia Eunice. (2021, Juni 15). _OpenRefine, Authority Control and Wikidata_. [https://zenodo.org/record/4950866](https://zenodo.org/record/4950866)
+* Handelman, M. (2015). Digital Humanities as Translation: Visualizing Franz Rosenzweig’s Archive. _TRANSIT_, _10_(1). [https://doi.org/10.5070/T7101029573](https://doi.org/10.5070/T7101029573)
+* Ikonić Nešić, M., Stanković, R., Schöch, C., & Skoric, M. (2022). From ELTeC Text Collection Metadata and Named Entities to Linked-data (and Back). _Proceedings of the 8th Workshop on Linked Data in Linguistics within the 13th Language Resources and Evaluation Conference_, 7–16. [https://aclanthology.org/2022.ldl-1.2](https://aclanthology.org/2022.ldl-1.2)
+* Krimmel, Erica, & Walker, Lindsay J. (2022, Mai 11). _Using OpenRefine for natural history collections data_. Society for the Preservation of Natural History Collections (SPNHC), Edinburgh, Scotland, UK, 5-10 June 2022, Edinburgh, Scotland, UK,. [https://zenodo.org/record/6574729](https://zenodo.org/record/6574729)
+* Mandal, S. (2022). Integration of Linked Open Data Authorities with OpenRefine : A Methodology for Libraries. _Library Philosophy and Practice (e-journal)_. [https://digitalcommons.unl.edu/libphilprac/7195](https://digitalcommons.unl.edu/libphilprac/7195)
+* Myntti, J., & Neatrour, A. (2015). Use Existing Data First: Reconcile Metadata before Creating New Controlled Vocabularies. _Journal of Library Metadata_, _15_(3–4), 191–207. [https://doi.org/10.1080/19386389.2015.1099989](https://doi.org/10.1080/19386389.2015.1099989)
+* Ransom, L., & Coladangelo, L. P. (2021, Dezember 3). Semantic Enrichment of the Schoenberg Database of Manuscripts Name Authority through Wikidata. _15th International Conference on Metadata and Semantics Research_. [https://www.academia.edu/63137370/Semantic_Enrichment_of_the_Schoenberg_Database_of_Manuscripts_Name_Authority_through_Wikidata](https://www.academia.edu/63137370/Semantic_Enrichment_of_the_Schoenberg_Database_of_Manuscripts_Name_Authority_through_Wikidata)
+* Sohmen, L., & Rossenova, L. (2022). Open refine to wikibase: a new data upload pipeline. _Proceedings of the 22nd ACM/IEEE Joint Conference on Digital Libraries_, 1–2. [https://doi.org/10.1145/3529372.3530919](https://doi.org/10.1145/3529372.3530919)
+* Steeg, F., & Pohl, A. (2021). Ein Protokoll für den Datenabgleich im Web am Beispiel von OpenRefine und der Gemeinsamen Normdatei (GND). In M. Franke-Maier, A. Kasprzik, A. Ledl, & H. Schürmann (Hrsg.), _Qualität in der Inhaltserschließung_ (S. 259–278). De Gruyter. [https://doi.org/10.1515/9783110691597-013](https://doi.org/10.1515/9783110691597-013)
+* Woitas, Kathi. (2021, Dezember 13). _OpenRefine_. [https://zenodo.org/record/5776098](https://zenodo.org/record/5776098)
 
 
 # Factsheet
@@ -301,7 +301,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
    </td>
   </tr>
   <tr>
-   <td><strong>Softwareumgebung/Softwaretyp 
+   <td><strong>Softwareumgebung/Softwaretyp
 </strong>(Remotesystem im Browser / Lokaler Client)
    </td>
    <td>lokale Browser-Anwendung
@@ -364,7 +364,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
    <td><strong>Inkludierte Datenkonvertierung</strong><br/>
 (Im Pre-Processing mögliche Anpassung der Daten an für die Software erforderliches Format)
    </td>
-   <td>✅ 
+   <td>✅
    </td>
   </tr>
   <tr>
@@ -428,7 +428,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
   </tr>
   <tr>
    <td><strong>Aktiver Support/Community  <br/>
-</strong>(Forum, Slack, Issue Tracker etc.) 
+</strong>(Forum, Slack, Issue Tracker etc.)
    </td>
    <td>✅Forum, GitHub-Issues-Mechanismus
    </td>
@@ -448,7 +448,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
 <br/>
 (Gibt es ein Test Suite, um zu überprüfen, ob die Installation erfolgreich war?)
    </td>
-   <td>✅ 
+   <td>✅
    </td>
   </tr>
   <tr>
@@ -466,7 +466,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
   <tr>
    <td><strong>Möglichkeit zur Software-Entwicklung beizutragen</strong>
    </td>
-   <td>✅ 
+   <td>✅
    </td>
   </tr>
   <tr>
@@ -513,7 +513,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
   </tr>
   <tr>
    <td><strong>Interne Kommunikationsmöglichkeiten  <br/>
-</strong>(z. B. Annotationsrichtlinen, Kommentarfunktionen, …) 
+</strong>(z. B. Annotationsrichtlinen, Kommentarfunktionen, …)
    </td>
    <td>❌
    </td>
@@ -608,7 +608,7 @@ Importmöglichkeiten auch über Weblinks, SQL-Datenbank oder Google Drive
   <tr>
    <td><strong>Reconciliation-Möglichkeiten entsprechend bestimmten Standards für digitale Editionen </strong>
    </td>
-   <td>✅Wikidata, GND, GeoNames, Pleiades, etc. 
+   <td>✅Wikidata, GND, GeoNames, Pleiades, etc.
    </td>
   </tr>
   <tr>
