@@ -1006,7 +1006,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
         <td><strong>Benutzerprofil <br />
             </strong>(erwartete Nutzer:innen)
         </td>
-        <td>GeWi-Forschungsinstitutionen und Forschende als Tool-Nutzende
+        <td>GeWi-Forschungsinstitutionen und Forschende sowie an Transkription interessierte Personen als Tool-Nutzende
         </td>
     </tr>
     <tr>
