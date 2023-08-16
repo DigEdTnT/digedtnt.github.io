@@ -22,7 +22,6 @@ In Hinblick auf digitale Editionen ist ein Vorteil von OpenRefine, dass es nicht
 * Datentransformation  (z. B. Excel/CSV-Input zu JSON oder XML-Struktur)
 * Datenzusammenführung, wenn verschiedene Quellen vorhanden sind
 * Möglichkeit der Strukturierung von Metadaten
-* Datenvisualisierung
 * Automatisierung von wiederholten Datenbereinigungs- und Transformationsaufgaben durch die Erstellung von Skripten oder Aktionen für bestimmte Aufgaben
 
 
@@ -109,7 +108,6 @@ Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispie
 * Datentransformation in andere Formate oder Strukturen
 * Datenzusammenführung bei mehreren Quellen oder Versionen
 * Organisation und Strukturierung von Metadaten
-* Diagramme, Grafiken und andere visuelle Darstellungen zur Verdeutlichung von Mustern und Zusammenhänge in den Daten
 * Automatisierung von wiederholten Datenbereinigungs- und Transformationsaufgaben durch die Möglichkeit, den Änderungsverlauf zu exportieren und auf neue Daten anzuwenden
 
 ## Herausforderungen & Probleme
@@ -464,7 +462,7 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
    <td><strong>Benutzerinteraktion  <br/>
 </strong>(erwartete Nutzung)
    </td>
-   <td>Hochladen von Dateien, Datenzusammenführung, -bereinigung, -strukturierung, -normalisierung,-transformation und -visualisierung, Export von Dateien
+   <td>Hochladen von Dateien, Datenzusammenführung, -bereinigung, -strukturierung, -normalisierung und -transformation, Export von Dateien
    </td>
   </tr>
   <tr>
