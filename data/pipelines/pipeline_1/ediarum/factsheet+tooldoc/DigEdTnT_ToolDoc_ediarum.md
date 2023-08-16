@@ -123,6 +123,7 @@ Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispie
 * Implementierung und profejspezifische Konfiguration erfordert DH-Entwickler:in
 * Abhängigkeit von eXist-db und Oxygen
 * Datenbank-Technologie ist bei größeren Datenmengen noch suboptimal, da eXist-db viel Arbeitsspeicher benötigt - für eine stabile Funktion der Datenbank sollten zumindest 2 GB Arbeitsspeicher zur Verfügung stehen
+* Metadaten-Anreicherung bzw. -Ergänzung nur teilweise im benutzerfreundlicheren Autormodus möglich
 * Suche im Register bei der Annotation bietet keine Substring-Suchmöglichkeit und auch keine Suche nach alternativen Bezeichnungen eines Eintrags - Bezeichnungen der Registereinträge (z. B. Flaschenkürbis, Gewürznelke, Echter Pfeffer) werden nicht gefunden, wenn man Teilbezeichnungen sucht (z. B. Kürbis, Nelke, Pfeffer)
 
 
@@ -267,8 +268,19 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
   → Auf all diese Schritte soll nachfolgend genauer eingegangen werden.
 
 ### a. Bearbeitung der Manuskript-Metadaten
-* In unserem Beispielprojekt wäre es jetzt notwendig, den Projektmitarbeitenden, Metadaten zur Verfügung zu stellen, damit diese alle Felder, die während der [Transition von FromThePage zu ediarum](https://digedtnt.github.io/transition-fromthepage-ediarum/) mit einem Hinweis versehen wurden bzw. über einen Platzhalter in eckigen Klammern verfügen, entsprechend ausfüllen können.
+* Für die Bearbeitung der Metadaten ist es notwendig, den Projektmitarbeitenden, Metadaten zur Verfügung zu stellen, damit diese alle Felder, die während der [Transition von FromThePage zu ediarum](https://digedtnt.github.io/transition-fromthepage-ediarum/) mit einem Hinweis versehen wurden bzw. über einen Platzhalter in eckigen Klammern verfügen, entsprechend ausfüllen können.
   ![Ausfüllen von Platzhaltern](../img/editing-metadata.PNG)
+  Wir gehen hierzu einfach auf die zu bearbeitende Stelle, löschen den Platzhalter und überschreiben die Stelle mit den entsprechenden Metadaten. 
+  ![Befüllen der Metadaten](../img/edited-metadata.PNG)
+  → Anhand der oberen Leiste können wir auch stets nachvollziehen, in welchem Element wir uns befinden.
+* Leider werden nicht alle Elemente, die im Textmodus im `<teiHeader>` vorzufinden sind, im Autormodus angezeigt. So findet man im Autormodus das `<publicationStmt>` beispielsweise weder in der `<fileDesc>`, noch in der `<sourceDesc>`. Diese Metadatenfelder können somit also nur im Textmodus bearbeitet bzw. ergänzt werden.   
+* **Kleiner Exkurs hinsichtlich der Möglichkeiten einer Metadaten-Anreicherung über die ediarum-Werkzeugleiste:** Für die Erweiterung der Metadaten über die ediarum-Oberfläche klicken wir in der Werkzeugleiste auf "Metadaten" und wählen zu Demonstrationszwecken für unser Projekt den Punkt "Ungefährer Erstellungszeitraum". 
+  ![Neues Metadatenfeld einfügen](../img/metadata-additions.PNG)
+  Daraufhin erscheinen drei Eingabeaufforderungen zu dem frühest-möglichen Erstelldatum, dem spätest-möglichen Erstelldatum sowie einer Angabe, wie sicher man sich mit der Datierung ist. 
+  ![Eingabeaufforderungen zu den Metadaten](../img/metadata-extras.PNG)
+  In unserem Dokument finden wir schließlich eine neue Zeile mit dem entsprechenden Eintrag.
+  ![Anzeige der hinzugefügten Metadaten im Autormodus](../img/metadata-adds.PNG)
+  → Da wir das DTABf-Schema eingebunden haben, in dem das `<creation>`-Element im `<TEIHeader>` nicht vorgesehen ist, wird diese Metadaten-Erweiterung rot unterwellt. Es müsste also an dieser Stelle entweder das DTABf-Schema an unsere projektspezifischen Metadaten-Anforderungen angepasst werden oder wir ignorieren die fehlerhafte Validierung. Da wir in unserem Projekt nicht auf die Datierung verzichten wollen, aber auch das Schema nicht anpassen wollen, entfernen wir diese zusätzliche Metadaten-Angabe trotz fehlerhafter Validierung nicht. 
 ### b. Annotationen mit eigenem Button
 * Einige der Annotationen haben wir in unserem Beispielprojekt bereits mithilfe von [FromThePage](https://digedtnt.github.io/fromthepage/) vorgenommen. Nicht möglich war es uns jedoch, farbliche Hervorhebung - also in unserem Fall rote Textstellen - als solche auszuzeichnen. Dies können unsere Projektmitarbeitenden nun mittels des eigens dafür erstellten Rotstift-Buttons. Für die Bearbeitung der Transkripte benötigen wir in diesem Fall für die Annotation die Digitalisate der Manuskripte. Wir öffnen dafür im Oxygen XML Author einerseits unter **Fenster > Ansicht** **zeigen** die **Bildvorschau** und wählen andererseits für die Projektansicht den Menüpunkt **Projekt** unter demselben Pfad. In der Projektansicht navigieren wir zu unserem ediarum.MaRezepte.edit-Ordner und legen in diesem einen neuen Ordner mit der Bezeichnung "faksimile" an, in den wir unsere Faksimiles hineinkopieren. Wenn wir hier nun auf eine der Bilddateien klicken, öffnet sich diese in der Bildvorschau und wir verfügen somit über eine Bild-Text-Ansicht, die es uns erleichtert, die entsprechenden in roter Farbe geschriebenen Textstellen im Original zu finden und diese Passage entsprechend im Transkript zu markieren und mittels Rotstift-Button zu annotieren.
   ![Annotation von Textstellen mit roter Schrift](../img/red-highlighting.PNG)
