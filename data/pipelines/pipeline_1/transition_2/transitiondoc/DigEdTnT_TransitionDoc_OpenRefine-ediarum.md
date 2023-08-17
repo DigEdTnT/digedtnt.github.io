@@ -68,7 +68,7 @@ In unserem Beispielprojekt sind wir mit folgender Herausforderung konfrontiert: 
 </item>
 …
 ```
-Um die `<item>`-Elemente mit der gleichen `@xml:id`, die außerdem auch die gleiche QID und die gleiche deutsche Übersetzung im `<label type=”reg”>`-Element enthalten, in einem `<item>`-Element mit den verschiedenen frühneuhochdeutschen Varianten mit mehreren  `<label type=”alt”>`-Elementen zusammenzuführen, transformieren wir die Daten mittels XSLT.
+Um die `<item>`-Elemente mit der gleichen `@xml:id`, die außerdem auch die gleiche QID und die gleiche deutsche Übersetzung im `<label type="reg">`-Element enthalten, in einem `<item>`-Element mit den verschiedenen frühneuhochdeutschen Varianten mit mehreren  `<label type="alt">`-Elementen zusammenzuführen, transformieren wir die Daten mittels XSLT.
 
 Die Transformation ist in unserem Workflow folgend eingebettet:
 
@@ -93,5 +93,5 @@ Die Transformation zur Bereinigung des OpenRefine-Outputs umfasst folgende Schri
 * **Gruppierung der `<item>`-Elemente:**  Da alle frühneuhochdeutschen Varianten die gleiche englische Übersetzung haben und diese daher als `@xml:id` gewählt wurde, gruppieren wir alle Listeneinträge mit der gleichen `@xml:id`.
 * **Inhalte der gruppierten** **`<item>`-Elemente:**
     * **`<idno>`-Element:** Jeder Listen- bzw. Registereintrag, der im OpenRefine die gleiche englische Übersetzung hat, besitzt auch die gleiche Q-Nummer. Daher kopieren wir bei unserer Transformation nur das `<idno>`-Element des ersten Elements aus unserer Gruppierung.
-    * **`<label>`-Elemente:** Bei den `<label>`-Elementen haben wir einerseits jene die ein “reg” als Wert im `@type`-Attribut haben und die standarddeutsche Übersetzung beinhalten, sowie andererseits jene mit “alt”, die die frühneuhochdeutsche Schreibung umfassen. Da ersteres ebenfalls bei allen Listeneinträgen gleich ist, nehmen wir auch hier nur das erste Element aus dem gruppierten Set. Von den alternativen `<label>`-Elementen übernehmen wir nun aber das gesamte Gruppenset, da wir innerhalb von einem Listeneintrag alle vorhandenen frühneuhochdeutschen Schreibweisen zusammensammeln möchten.
+    * **`<label>`-Elemente:** Bei den `<label>`-Elementen haben wir einerseits jene, die ein "reg" als Wert im `@type`-Attribut haben und die standarddeutsche Übersetzung beinhalten, sowie andererseits jene mit "alt", die die frühneuhochdeutsche Schreibung umfassen. Da ersteres ebenfalls bei allen Listeneinträgen gleich ist, nehmen wir auch hier nur das erste Element aus dem gruppierten Set. Von den alternativen `<label>`-Elementen übernehmen wir nun aber das gesamte Gruppenset, da wir innerhalb von einem Listeneintrag alle vorhandenen frühneuhochdeutschen Schreibweisen zusammensammeln möchten.
 * **Übernahme der Metadaten:** Die Metadaten des Sachregisters möchten wir nicht verändern, weshalb wir hier kein eigenes Template für die Elemente im `<teiHeader>` anlegen.
