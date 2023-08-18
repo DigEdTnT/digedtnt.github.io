@@ -36,7 +36,7 @@ Der Übergang von einem Tool zu einem anderen lässt sich verschieden gestalten.
 
 # XSL Transformation
 
-In unserem Beispielprojekt sind wir mit folgender Herausforderung konfrontiert: Der Export von OpenRefine enthält aufgrund der zeilenbasierten Struktur mehrere Listenelemente (`<item>`) mit der gleichen `@xml:id` und zudem redundante Informationen in Bezug auf die Q-Nummern der Wikidata-Einträge sowie hinsichtlich der deutschen Übersetzungen:
+In unserem Beispielprojekt sind wir mit folgender Situation konfrontiert: Der Export von OpenRefine enthält aufgrund der zeilenbasierten Struktur mehrere Listenelemente (`<item>`) mit der gleichen `@xml:id` und zudem redundante Informationen in Bezug auf die Q-Nummern der Wikidata-Einträge sowie hinsichtlich der deutschen Übersetzungen:
 
 ```xml
 <list>
