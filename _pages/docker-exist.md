@@ -12,13 +12,11 @@ permalink: /docker-exist/
 ## ediarum
 
 * Wenn wir Docker Desktop installiert haben, öffnen wir im nächsten Schritt unser Terminal und installieren uns unsere lokale eXist-db mit dem Befehl: 
-    {% include codeHeader.html %}
     ```terminal
     docker pull existdb/existdb:5.2.0
     ```
     → Auch wenn ediarum bis zur Version 5.3.1 kompatibel, haben wir uns für 5.2.0 entshcieden, um mit einer stabilen Version zu arbeiten. 
 * Nach dem Pull-Vorgang müssen wir nun die eXist-db noch unter Angabe des Ports (8080:8080 für unseren Localhost) ausführen, indem wir folgende Eingabe in unserem Terminal machen: 
-    {% include codeHeader.html %}
     ```terminal
     docker run -it -d -p 8080:8080 -p 8443:8443 --name exist existdb/existdb:5.2.0
     ```
@@ -34,12 +32,10 @@ permalink: /docker-exist/
 ## TEI Publisher
 
 * Für den TEI Publisher legen wir einen (weiteren) eigenen Container in Docker Desktop an. Dafür geben wir folgenden Befehl in das Terminal unseres Rechners ein:
-    {% include codeHeader.html %}
     ```terminal
     docker pull existdb/teipublisher:latest
     ```
 * Sobald der Download des Docker Images für den TEI Publisher abgeschlossen ist, starten wir den Container vom Terminal aus: 
-    {% include codeHeader.html %}
     ```terminal
     docker run -p 8081:8080 -p 8444:8443 --name teipublisher -v exist-data:/exist-data existdb/teipublisher:latest
     ```
