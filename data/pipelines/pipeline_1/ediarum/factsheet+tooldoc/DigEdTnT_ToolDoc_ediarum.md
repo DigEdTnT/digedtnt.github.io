@@ -146,7 +146,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
       ```terminal
       docker run -it -d -p 8080:8080 -p 8443:8443 --name exist existdb/existdb:5.2.0
       ```
-      → Die aktuellste eXist-Version ist 5.4.1 (Stand Mai 2023) - zum Zeitpunkt dieses Projekts ist ediarum jedoch nur bis zur Version 5.3.1 kompatibel. Wir haben uns für 5.2.0 entschieden, um mit einer stabilen Version zu arbeiten.
+      → Die aktuellste eXist-Version ist 6.2.0 (Stand Mai 2023) - zum Zeitpunkt dieses Projekts ist ediarum jedoch nur bis zur Version 5.3.1 kompatibel. Wir haben uns für 5.2.0 entschieden, um mit einer stabilen Version zu arbeiten.
     * Wenn wir nun Docker Desktop erneut öffnen, finden wir dort einen exist-Container.
       ![eXist-db in Docker Desktop](../img/docker-existdb.PNG)
       Mit einem Klick auf den Localhost-Port (8080:8080) öffnet sich eXist im Browser.
