@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Docker & Exist 
+title: Docker & Exist
 permalink: /docker-exist/
 ---
 
@@ -11,12 +11,12 @@ permalink: /docker-exist/
 
 ## ediarum
 
-* Wenn wir Docker Desktop installiert haben, öffnen wir im nächsten Schritt unser Terminal und installieren uns unsere lokale eXist-db mit dem Befehl: 
+* Wenn wir Docker Desktop installiert haben, öffnen wir im nächsten Schritt unser Terminal und installieren uns unsere lokale eXist-db mit dem Befehl:
     ```terminal
     docker pull existdb/existdb:5.2.0
     ```
-    → Auch wenn ediarum bis zur Version 5.3.1 kompatibel, haben wir uns für 5.2.0 entshcieden, um mit einer stabilen Version zu arbeiten. 
-* Nach dem Pull-Vorgang müssen wir nun die eXist-db noch unter Angabe des Ports (8080:8080 für unseren Localhost) ausführen, indem wir folgende Eingabe in unserem Terminal machen: 
+    → Auch wenn ediarum bis zur Version 5.3.1 kompatibel, haben wir uns für 5.2.0 entshcieden, um mit einer stabilen Version zu arbeiten.
+* Nach dem Pull-Vorgang müssen wir nun die eXist-db noch unter Angabe des Ports (8080:8080 für unseren Localhost) ausführen, indem wir folgende Eingabe in unserem Terminal machen:
     ```terminal
     docker run -it -d -p 8080:8080 -p 8443:8443 --name exist existdb/existdb:5.2.0
     ```
@@ -35,14 +35,14 @@ permalink: /docker-exist/
     ```terminal
     docker pull existdb/teipublisher:latest
     ```
-* Sobald der Download des Docker Images für den TEI Publisher abgeschlossen ist, starten wir den Container vom Terminal aus: 
+* Sobald der Download des Docker Images für den TEI Publisher abgeschlossen ist, starten wir den Container vom Terminal aus:
     ```terminal
     docker run -p 8081:8080 -p 8444:8443 --name teipublisher -v exist-data:/exist-data existdb/teipublisher:latest
     ```
-    → Mit der Spezifikation `-v exist-data:/exist-data` stellen wir sicher, dass Docker ein Volume erstellt, um die Datenbank zu speichern, sodass wir beim Löschen oder Aktualisieren des TEI-Publisher-Containers nicht auch unsere Daten verlieren. 
-* Wenn wir Docker Desktop öffnen, sollten wir jetzt einerseits unter <strong>Containers</strong> (zusätzlich zum bereits angelegten exist-Container) einen Container für den TEI Publisher vorfinden. 
-    {% include image.html url="../data/pipelines/pipeline_1/ediarum/img/docker-existdb.PNG" description="TODO" %}
-    Außerdem sollte unter <strong>Volumes</strong> auch das Volume "exist-data" vorhanden sein. 
-     
+    → Mit der Spezifikation `-v exist-data:/exist-data` stellen wir sicher, dass Docker ein Volume erstellt, um die Datenbank zu speichern, sodass wir beim Löschen oder Aktualisieren des TEI-Publisher-Containers nicht auch unsere Daten verlieren.
+* Wenn wir Docker Desktop öffnen, sollten wir jetzt einerseits unter <strong>Containers</strong> (zusätzlich zum bereits angelegten exist-Container) einen Container für den TEI Publisher vorfinden.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/docker-teipublisher-container.PNG" description="TEI-Publisher-Container in Docker Desktop" %}
+    Außerdem sollte unter <strong>Volumes</strong> auch das Volume "exist-data" vorhanden sein.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/docker-existdata-volume.PNG" description="TEI-Publisher-Container in Docker Desktop" %}
 
-    
+
