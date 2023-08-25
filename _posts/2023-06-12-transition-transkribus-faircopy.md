@@ -27,8 +27,8 @@ Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kom
 ### Erforderliche Kenntnisse
 
 
-
-* Einrichten einer Oxygen-Transformation (in dieser Transition erklärt)
+* [EDV-Grundkenntnisse](https://digedtnt.github.io/about/#grundvoraussetzungen)
+* Einrichten einer [Oxygen-Transformation](https://digedtnt.github.io/xsl-transformation)
 * Grundlegende XSLT-Kenntnisse
 
 
@@ -36,7 +36,7 @@ Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kom
 
 * Oxygen Editor
 
-→ <span style="text-decoration:underline;">Hinweis:</span> Natürlich wäre es auch ohne Oxygen Editor möglich, über diverse frei zugängliche Online-Plattformen eine XSL-Transformation durchzuführen. Da aber einerseits für ediarum in dieser Pipeline ohnehin Oxygen benötigt wird und außerdem bei Online-Transformationen auch rechtliche Aspekte bei der Datenverarbeitung zu berücksichtigen wären, wird nachfolgend das Transformationsszenario im Oxygen-Editor beschrieben .
+→ <span style="font-size:0.8rem;">→ <u>Hinweis:</u>  Natürlich wäre es auch ohne Oxygen Editor möglich, über diverse frei zugängliche Online-Plattformen eine XSL-Transformation durchzuführen. Da aber einerseits für ediarum in der Pipeline 1 ohnehin Oxygen benötigt wird und außerdem bei Online-Transformationen auch rechtliche Aspekte bei der Datenverarbeitung zu berücksichtigen wären, wird nachfolgend das Transformationsszenario im Oxygen-Editor beschrieben </span>
 
 
 # Möglichkeiten & Grenzen
@@ -45,8 +45,6 @@ Der Übergang von einem Tool zu einem anderen lässt sich verschieden gestalten.
 
 
 ## Stärken
-
-
 
 * Nicht valider TEI/XML-Export von Transkribus wird in ein valides TEI-Dokument transformiert
 * Für unsere Zwecke nicht notwendige TEI-Elemente bzw. -Attribute werden entfernt
@@ -63,20 +61,11 @@ Der Übergang von einem Tool zu einem anderen lässt sich verschieden gestalten.
 # XSL-Transformation
 
 
-Für eine Transformation des ausTranskribus exportierten TEIs in ein für FairCopy weiterverarbeitbares Dokument, haben wir für unser Beispielprojekt die Daten transformiert. Wie unser Transformationsszenario genau funktioniert, ist dem Punkt [XSLT Dokumentation](#xslt-dokumentation) zu entnehmen. Dieses kann für andere Projekte angepasst und weiterverwendet werden.
+Für eine Transformation des aus Transkribus exportierten TEIs in ein für FairCopy weiterverarbeitbares Dokument, haben wir für unser Beispielprojekt die Daten transformiert. Wie unser Transformationsszenario genau funktioniert, ist dem Punkt [XSLT Dokumentation](#xslt-dokumentation) zu entnehmen. Dieses kann für andere Projekte angepasst und weiterverwendet werden.
 
+Hier ist die [XSLT-Ressource](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/ftp_export_to_dta.xsl) für unsere FromThePage-ediarum-Transformation.
 
-* Für die Transformation öffnen wir zuerst die zu transformierende XML-Datei, wählen dann den Button “Transformationsszenarios konfigurieren”, klicken auf Neu und wählen die Option “XML Transformation with XSLT”. 
- {% include image.html url="../data/pipelines/pipeline_2/transition_1/img/configure_transformation.png" description="XSL-Ressource für Transformation auswählen" %}
-* In dem neuen Fenster geben wir schließlich den Pfad zu unserer XSL-Datei an.  
-{% include image.html url="../data/pipelines/pipeline_2/transition_1/img/choose_files.png" description="XSL-Ressource für Transformation auswählen" %}
-
-→ <span style="text-decoration:underline;">Hinweis:</span> Wir haben dem Szenario auch gleich einen Namen gegeben, um das Transformationsszenario zu speichern und später weiterverwenden bzw. auch auf andere XML-Dateien anwenden zu können. 
-
-* Unter dem Reiter “Ausgabedatei” wählen wir außerdem noch, wo unser transformiertes XML gespeichert werden soll und setzen ein Häkchen bei der Option “Im Editor öffnen”, um uns das Ergebnis direkt anzusehen. 
-{% include image.html url="../data/pipelines/pipeline_2/transition_1/img/transformation_output.png" description="Dateiname für den Output wählen" %}
-
-[Allgemeines Video-Tutorial zu XSLT](https://github.com/chpollin/Teaching/blob/master/TTT/TTT_6_XSLT/XSLT.md)
+Eine Kurzanleitung für das Einrichten eines Transformationsszenarios findet sich [hier](https://digedtnt.github.io/xsl-transformation).
 
 
 # XSLT Dokumentation
