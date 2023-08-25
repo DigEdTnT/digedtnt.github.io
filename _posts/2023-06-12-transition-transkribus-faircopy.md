@@ -10,7 +10,9 @@ excerpt: Die Transition von Transkribus zu FairCopy umfasst die Transformation d
 
 transitiondoc: .
 
-last_modified_at: 2023-06-12
+xslt: https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_2/transition_1/data/transkribus_to_faircopy.xsl
+
+last_modified_at: 2023-08-25
 
 ---
 
@@ -36,7 +38,7 @@ Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kom
 
 * Oxygen Editor
 
-→ <span style="font-size:0.8rem;">→ <u>Hinweis:</u>  Natürlich wäre es auch ohne Oxygen Editor möglich, über diverse frei zugängliche Online-Plattformen eine XSL-Transformation durchzuführen. Da aber einerseits für ediarum in der Pipeline 1 ohnehin Oxygen benötigt wird und außerdem bei Online-Transformationen auch rechtliche Aspekte bei der Datenverarbeitung zu berücksichtigen wären, wird nachfolgend das Transformationsszenario im Oxygen-Editor beschrieben </span>
+<span style="font-size:0.8rem;">→ <u>Hinweis:</u>  Natürlich wäre es auch ohne Oxygen Editor möglich, über diverse frei zugängliche Online-Plattformen eine XSL-Transformation durchzuführen. Da aber einerseits für ediarum in der Pipeline 1 ohnehin Oxygen benötigt wird und außerdem bei Online-Transformationen auch rechtliche Aspekte bei der Datenverarbeitung zu berücksichtigen wären, wird nachfolgend das Transformationsszenario im Oxygen-Editor beschrieben </span>
 
 
 # Möglichkeiten & Grenzen
@@ -63,7 +65,7 @@ Der Übergang von einem Tool zu einem anderen lässt sich verschieden gestalten.
 
 Für eine Transformation des aus Transkribus exportierten TEIs in ein für FairCopy weiterverarbeitbares Dokument, haben wir für unser Beispielprojekt die Daten transformiert. Wie unser Transformationsszenario genau funktioniert, ist dem Punkt [XSLT Dokumentation](#xslt-dokumentation) zu entnehmen. Dieses kann für andere Projekte angepasst und weiterverwendet werden.
 
-Hier ist die [XSLT-Ressource](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/ftp_export_to_dta.xsl) für unsere FromThePage-ediarum-Transformation.
+Hier ist die [XSLT-Ressource](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_2/transition_1/data/transkribus_to_faircopy.xsl) für unsere FromThePage-ediarum-Transformation.
 
 Eine Kurzanleitung für das Einrichten eines Transformationsszenarios findet sich [hier](https://digedtnt.github.io/xsl-transformation).
 
