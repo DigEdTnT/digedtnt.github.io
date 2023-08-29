@@ -44,7 +44,7 @@ permalink: /docker-exist/
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/docker-teipublisher-container.PNG" description="TEI-Publisher-Container in Docker Desktop" %}
     Außerdem sollte unter <strong>Volumes</strong> auch das Volume "exist-data" vorhanden sein.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/docker-existdata-volume.PNG" description="TEI-Publisher-Container in Docker Desktop" %}
-    Zudem sollten wir bei einem Klick auf exist-data im Reiter <strong>Data</strong> auch eine Ordnerstrutkur vorfinden, in der die Daten der eXist-Datenbank gespeichert werden. 
+    Nach einem Klick auf exist-data finden wir im Reiter <strong>Data</strong> auch eine Ordnerstrutkur vor, in der die Daten der eXist-Datenbank gespeichert werden. 
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/docker-existdata-data.PNG" description="In Docker gespeicherte Daten der eXist-Datenbank" %}
 
 
