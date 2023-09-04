@@ -301,7 +301,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 ### d. Annotation mit Registereinträgen
 * Für die Annotation der Zutaten, die in den Manuskripten zu finden sind, gibt es nun zwei Möglichkeiten. Entweder besteht bereits eine Zutatenliste und man überführt diese in die für ediarum geeignete XML-Struktur oder man fügt erst während des Annotationsprozesses in ediarum die in den Rezepten auftretenden Zutaten dem Register nach und nach hinzu. In unserem Beispielprojekt besteht bereits eine Zutatenliste, die aber noch nicht über alle Zutaten-Einträge verfügt. Daher wird im Folgenden einerseits der Workflow mit einem bereits bestehenden Register sowie das nachträgliche Hinzufügen von Registereinträgen beschrieben.
 * Unsere (unvollständige) Zutatenliste, die zuerst nur als Exceltabelle verfügbar war, wurde über die [Transition OpenRefine → ediarum](https://digedtnt.github.io/transition-openrefine-ediarum/) mit Wikidata-Normdaten angereichert und schließlich in das Sachregister überführt, wodurch wir hier mit der Annotation der Zutaten fortsetzen können.
-* Da wir aufgrund des DTABf-Schemas, das wir im Zuge der [Transition FromThePage → ediarum](https://digedtnt.github.io/transition-fromthepage-ediarum/) eingebunden haben, aber das Problem haben, dass unsere `<term>`-Elemente, die wir für die Zutaten verwenden, im Fließtext nicht verwendet werden können und daher der Zutaten-Button noch nicht funktioniert, müssten wir nun entweder das eingebundene DTABf-Schema anpassen oder könnten als Workaround im Textmodus die ersten beiden `<?xml-model>`-Elemente entfernen. Wir haben uns im Rahmen unseres Projekts für letzteres entschieden.
+* Da wir aufgrund des DTABf-Schemas, das wir im Zuge der [Transition FromThePage → ediarum](https://digedtnt.github.io/transition-fromthepage-ediarum/) eingebunden haben, aber das Problem haben, dass unsere `<term>`-Elemente, die wir für die Zutaten verwenden, im Fließtext nicht verwendet werden können und daher der Zutaten-Button noch nicht funktioniert, müssten wir nun entweder das eingebundene DTABf-Schema anpassen oder könnten als Workaround im Textmodus die ersten beiden `<?xml-model>`-Elemente entfernen. Wir haben uns im Rahmen unseres Projekts für Letzteres entschieden.
   ![Entfernung der eingebundenen Schemata](../img/register-delete-schema.PNG)
 * Sobald wir anschließend im Text auf eine Zutat stoßen, klicken wir auf den Zutaten-Button und wählen aus der Registeransicht, den entsprechenden Eintrag.
   ![Annotation der Zutaten mit projektspezifischem Button](../img/ingredient-annotation.PNG)
@@ -314,7 +314,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
   ![Änderungen im Register-Framework](../img/register-new-action.PNG)
   Im Reiter **Autor** wählen wir schließlich **Aktionen** und suchen in der Spalte Name nach "Norm-ID", um schließlich über das Werkzeugsymbol zur Bearbeitungsansicht zu kommen.
   ![Bearbeitung des Norm-ID-Buttons](../img/register-id-action.PNG)
-  Unter Vorgänge gehen wir auf einen der 4 Vorgänge und duplizieren einen davon.
+  Unter Vorgänge gehen wir auf einen der 4 Vorgänge und duplizieren diesen.
   ![Kopie einer Aktion](../img/register-copy-action.PNG)
   Nun tauschen wir "org" mit "label" aus, um das Einfügen einer ID auch in unserem Sachregister zu ermöglichen, und speichern unsere Einstellungen. Hierbei sollte nicht vergessen werden, im Einstellungsfenster noch auf "Anwenden" zu klicken, damit unsere Änderungen auch wirklich übernommen werden.
   ![Anpassung der kopierten Aktion](../img/register-adapt-action.PNG)
@@ -331,7 +331,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
   ![Export der annotierten XML-Dateien](../img/export-data.PNG)
 * Im darauffolgenden Fenster geben wir den Speicherort an.
   ![Angabe des Speicherorts](../img/export-data-path.PNG)
-  → Die Dateien sollten jetzt in unser lokales Verzeichnissystem exportiert worden sein.
+  → Die Dateien befinden sich jetzt in unserem lokalen Verzeichnissystem.
 
 
 # Kontakt

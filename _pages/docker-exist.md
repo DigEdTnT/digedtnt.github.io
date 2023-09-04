@@ -15,7 +15,7 @@ permalink: /docker-exist/
     ```terminal
     docker pull existdb/existdb:5.2.0
     ```
-    → Auch wenn ediarum bis zur Version 5.3.1 kompatibel, haben wir uns für 5.2.0 entschieden, um mit einer stabilen Version zu arbeiten.
+    → Auch wenn ediarum bis zur Version 5.3.1 kompatibel ist, haben wir uns für 5.2.0 entschieden, um mit einer stabilen Version zu arbeiten.
 * Nach dem Pull-Vorgang müssen wir nun die eXist-db noch unter Angabe des Ports (8080:8080 für unseren Localhost) ausführen, indem wir folgende Eingabe in unserem Terminal machen:
     ```terminal
     docker run -it -d -p 8080:8080 -p 8443:8443 --name exist existdb/existdb:5.2.0

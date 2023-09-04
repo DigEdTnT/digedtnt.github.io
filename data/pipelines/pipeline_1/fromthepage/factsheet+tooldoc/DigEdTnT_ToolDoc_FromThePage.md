@@ -26,7 +26,7 @@ FromThePage zeichnet sich nicht nur darin aus, dass man bereits mit minimalen Co
     * Tags (inklusive farblicher Kennzeichnung) → hierfür gibt es eine Auswahl an unterstützten Mark-up-Tags (vorwiegend entsprechend TEI-Standard)
     * Buttons → die Auswahl der Buttons kann von den Projektinhaber:innen konfiguriert werden (es können jedoch keine eigenen Buttons kreiert werden)
 * Editorkonfigurationen
-    * projektspezifische Auswahl an unterstützten Tag-Buttons kann durch Projektinhaber:in zur Verfügung gestellt werden
+    * projektspezifische Auswahl an unterstützten Tag-Buttons kann durch Projektinhaber:innen zur Verfügung gestellt werden
     * projektspezifische Transkriptionsrichtlinien können festgelegt werden
 * Indexierung und spätere Indexansicht kanonischer Namen mittels Mouseover
 * Data Mining über Referenzierungen für Suchbegriffe/Stichworte
@@ -139,7 +139,7 @@ Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispie
 * Schneller und hilfreicher Support über Chat-Interface (Reaktion meist spätestens innerhalb von 24h)
 * Vielzahl an qualitätssichernden Maßnahmen:
     * Schutz vor Vandalismus durch Registrierungserfordernis
-    * Einschränkung auf bestimmten Kreis an Mitarbeitende möglich
+    * Einschränkung auf bestimmten Kreis an Mitarbeitenden möglich
     * Einstellungen für eine strikte Qualitätskontrolle: Obligatorische Reviews können angefordert und Validierungen auf bestimmten Kreis an Reviewer:innen eingeschränkt werden
     * Fertiggestellte Unterprojekte können eingeschränkt und nur für bestimmte Mitarbeitende für die Revision bearbeitbar gemacht werden
     * Textpassagen können vor Webcrawlern oder Eingriffen von unregistrierten Nutzer:innen geschützt werden (nur Transkribierenden mit entsprechender Erlaubnis - über `<sensitive>`-Tag - dürfen markierte Textpassage bearbeiten)
@@ -158,7 +158,6 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 * Eingeschränkte Mark-up-Möglichkeiten durch Beschränkung auf unterstützte Tags (derzeit 30 Tags)
 * Für detaillierte Annotationen entsprechend TEI-Konventionen eher weniger praktisch, da es keine Möglichkeit einer TEI-Validierung innerhalb des Transkriptionseditors gibt
 * Farbliche Markierungen, Ergänzungen durch Transkribierende und einige andere Textmerkmale, die selbst von editionswissenschaftlich ungeschulten Transkribierenden einfach ausgezeichnet werden könnten, werden nicht mit eigenen Tag-Buttons unterstützt. Auch wenn ein Workaround möglich ist und Tags entsprechend den TEI-Standards verwendet werden könnten, werden diese aber in der Transkriptionsansicht nicht validiert. Dadurch besteht grundsätzlich immer das Risiko einer intensiven Nachbearbeitung im TEI/XML-Export (z.B. bei Tippfehlern in den Tags oder Positionierung der Tags an unzulässigen Stellen)
-* Probleme mit der Zeichenkodierung beim Export: Buchstaben mit Diakritika werden im TEI nicht korrekt dargestellt
 * Tabellarische Darstellungen nur über Mark-Down (Pipes und Dashes) möglich
 * Metadaten-Beschreibung in den Projekt-Einstellungen teilweise unklar - aus den Bezeichnungen im Eingabeformular geht nicht klar hervor, welchen TEI-Header-Elementen diese im Output entsprechen könnten (siehe Export)
 * Metadaten aus den Werk-Einstellungen werden nicht in den TEI-Export integriert
@@ -227,7 +226,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 * **Allgemeine Einstellungen:** In den Einstellungen am Projekt-Dashboard konfigurieren wir schließlich die Ansicht, die den Transkribierenden zur Verfügung steht. Wir können unserer Projektseite zum Beispiel eine eigene URL zuweisen (Abb. 8: a), einen eigenen Einladungslink zum Transkriptionsprojekt erstellen (Abb. 8: f), ein Projektbild (Abb. 8: e) sowie einen eigenen Footer gestalten (Abb. 8: c), um z. B. direkten Kontakt zur Projektleitung zu ermöglichen. Die Beschreibung, die wir beim Anlegen der Sammlung eingefügt haben, scheint hier bereits auf und kann noch weiter adaptiert werden (Abb. 8: b).
     ![Konfiguration des Projekts ](../img/project-setup1.PNG)
 * **Einschränkung der Projektmitarbeitenden:** Da wir unser Projekt nur einem eingeschränkten Kreis an Mitarbeitenden zur Verfügung stellen wollen, nutzen wir außerdem die Möglichkeit, unsere Sammlung auf privat zu stellen (Abb. 8: g) sowie den Transkribierendenkreis einzuschränken (Abb. 8: h) und nur bestimmte registrierte Mitarbeitende über ihre E-Mail-Adresse hinzuzufügen.
-* **Adaptierung der Hilfestellungen für das Projektteam:** FromThePage ermöglicht uns, auch diverse Hilfestellungen für unsere Transkribierenden anzupassen. Es können hier also noch mal Transkriptionsrichtlinien festgelegt werden (Abb. 8: d), die für alle Werke dieser Sammlung gelten. In unserem Fall haben wir mit der YAML-Datei bereits unsere Richtlinien hochgeladen und finden diese nun in den entsprechenden Feldern. Die englischen Vorlagen für den allgemeinen Hilfetext sowie für das Subject Linking ändern wir vorerst nichts (Abb. 9: a).
+* **Adaptierung der Hilfestellungen für das Projektteam:** FromThePage ermöglicht uns, auch diverse Hilfestellungen für unsere Transkribierenden anzupassen. Es können hier also noch mal Transkriptionsrichtlinien festgelegt werden (Abb. 8: d), die für alle Werke dieser Sammlung gelten. In unserem Fall haben wir mit der YAML-Datei bereits unsere Richtlinien hochgeladen und finden diese nun in den entsprechenden Feldern. Die englischen Vorlagen für den allgemeinen Hilfetext sowie für das Subject Linking ändern wir vorerst nicht (Abb. 9: a).
 * **API-Aktivierung:** Die Zugänglichkeit des Projekts über eine API lassen wir für unser Projekt vorerst deaktiviert (Abb. 9: b).
 * **Erweiterung der Projektleitung:** Nachdem wir in unserem Projekt zwei Projektleiter:innen haben, fügen wir außerdem noch einen zweiten Projektleiter hinzu (Abb. 9: c). Hierzu muss die zweite Person ebenfalls registriert sein und die Mailadresse muss bekannt sein.
     ![Weitere Projektkonfigurationen](../img/project-setup2.PNG)
@@ -733,6 +732,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
 * **Export der Metadaten**: Viele der Metadaten, die wir im Header des XML/TEIs finden, sowie zusätzlich die eigens für jedes Projekt angelegten Metadaten (Material, Sprache & zeitliche Einordnung) können wir auch per CSV exportieren ([Link zum CSV-Export](https://github.com/DigEdTnT/digedtnt.github.io/blob/95d465f768eff02fdcd74f8e5248d8eea9e94586/data/pipelines/pipeline_1/fromthepage/export/fromthepage_work_metadata_export_32000501_2023-04-13T11_28_04Z.csv)).
 → Man beachte jedoch, dass bei diesem Export nur die allgemeinen Projekt-Metadaten und Statistiken wiederzufinden sind, nicht aber die von uns per YAML-Datei importierten Metadaten wie beispielsweise die physische Beschreibung oder historische Dokumentation der Manuskripte.
 
+<span style="font-size:0.8rem;">→ <u>Hinweis:</u> Beim Öffnen des exportierten TEI-XML im Oxygen Editor könnte es zu Problemen mit der Zeichenkodierung kommen. Buchstaben mit Diakritika werden in der Standard-Schriftart (Monospaced) des Editors im TEI nicht korrekt dargestellt. Für ein korrektes Rendering müsste daher die Schriftart (z.B. auf Corbel) umgestellt werden.</span>
 
 # Kontakt
 
@@ -917,7 +917,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
     <tr>
         <td><strong>Einbindung der Community</strong>
         </td>
-        <td>✅via Github
+        <td>✅ via Github
         </td>
     </tr>
     <tr>
@@ -949,7 +949,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
     <tr>
         <td><strong>Verfügbarkeit von Tutorials</strong>
         </td>
-        <td>✅Keine Schritt-für-Schritt-Anleitungen, aber Videomaterial zu Features und Projekten
+        <td>✅ Keine Schritt-für-Schritt-Anleitungen, aber Videomaterial zu Features und Projekten
         </td>
     </tr>
     <tr>
@@ -981,8 +981,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
     <tr>
         <td><strong>Lizenz, unter der das Tool veröffentlicht wurde</strong>
         </td>
-        <td><a href="https://www.gnu.org/licenses/agpl-3.0.de.html">Affero GP</a><span
-                style="text-decoration:underline;">L</span>
+        <td><a href="https://www.gnu.org/licenses/agpl-3.0.de.html">Affero GPL</a>
         </td>
     </tr>
     <tr>
@@ -1029,7 +1028,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
             <br/>
                 (Analyse-, Input-, Outputkonfigurationen)
         </td>
-        <td>✅Projektstatistik, Vorschau-Ansichten
+        <td>✅ Projektstatistik, Vorschau-Ansichten
         </td>
     </tr>
     <tr>

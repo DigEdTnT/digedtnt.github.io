@@ -19,7 +19,7 @@ last_modified_at: 2023-07-26
 
 # Allgemeine Beschreibung
 
-Die von OpenRefine exportierten TXT-Dokumente bedürfen noch einer kleinen Anpassung für die weitere Arbeit damit als Register in ediarum. Die vorliegende Transition zielt daher darauf ab, redundante Informationen im OpenRefine-Output zu reduzieren, um mit sinnvoll komprimierten Daten in ediarum weiterarbeiten zu können.
+Die von OpenRefine exportierten TXT-Dokumente bedürfen noch einer kleinen Anpassung für die Benutzung als Register in ediarum. Die vorliegende Transition zielt daher darauf ab, redundante Informationen im OpenRefine-Output zu reduzieren, um mit sinnvoll komprimierten Daten in ediarum weiterarbeiten zu können.
 
 <div class="essence">
 In OpenRefine lässt sich der Export über die Templating-Option bereits sehr gut an die Registerstruktur von ediarum anpassen. Bei Dopplungen im Datensatz bedarf es aber mitunter noch kleineren Anpassungen, die über ein kurzes XSLT vorgenommen werden können.
@@ -108,5 +108,5 @@ Die Transformation zur Bereinigung des OpenRefine-Outputs umfasst folgende Schri
 * **Gruppierung der `<item>`-Elemente:**  Da alle frühneuhochdeutschen Varianten die gleiche englische Übersetzung haben und diese daher als `@xml:id` gewählt wurde, gruppieren wir alle Listeneinträge mit der gleichen `@xml:id`.
 * **Inhalte der gruppierten** **`<item>`-Elemente:**
     * **`<idno>`-Element:** Jeder Listen- bzw. Registereintrag, der im OpenRefine die gleiche englische Übersetzung hat, besitzt auch die gleiche Q-Nummer. Daher kopieren wir bei unserer Transformation nur das `<idno>`-Element des ersten Elements aus unserer Gruppierung.
-    * **`<label>`-Elemente:** Bei den `<label>`-Elementen haben wir einerseits jene, die ein "reg" als Wert im `@type`-Attribut haben und die standarddeutsche Übersetzung beinhalten, sowie andererseits jene mit "alt", die die frühneuhochdeutsche Schreibung umfassen. Da ersteres ebenfalls bei allen Listeneinträgen gleich ist, nehmen wir auch hier nur das erste Element aus dem gruppierten Set. Von den alternativen `<label>`-Elementen übernehmen wir nun aber das gesamte Gruppenset, da wir innerhalb von einem Listeneintrag alle vorhandenen frühneuhochdeutschen Schreibweisen zusammensammeln möchten.
+    * **`<label>`-Elemente:** Bei den `<label>`-Elementen haben wir einerseits jene, die ein "reg" als Wert im `@type`-Attribut haben und die standarddeutsche Übersetzung beinhalten, sowie andererseits jene mit "alt", welche die frühneuhochdeutsche Schreibung beinhalten. Da ersteres ebenfalls bei allen Listeneinträgen gleich ist, nehmen wir auch hier nur das erste Element aus dem gruppierten Set. Von den alternativen `<label>`-Elementen übernehmen wir nun aber das gesamte Gruppenset, da wir innerhalb von einem Listeneintrag alle vorhandenen frühneuhochdeutschen Schreibweisen zusammensammeln möchten.
 * **Übernahme der Metadaten:** Die Metadaten des Sachregisters möchten wir nicht verändern, weshalb wir hier kein eigenes Template für die Elemente im `<teiHeader>` anlegen.

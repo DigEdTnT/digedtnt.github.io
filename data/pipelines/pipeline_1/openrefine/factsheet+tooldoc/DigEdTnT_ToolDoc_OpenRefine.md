@@ -101,8 +101,8 @@ Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispie
 
 ## Stärken
 
-* Benutzerfreundliche Bearbeitungsoberfläche und Wahrung der Datensicherheit Bearbeitung am eigenen Rechner
-* Bereinigung von unstrukturierten und fehlerhaften Daten (Dubletten, Tippfehler, Inkonsistenzen) helfen und damit Überprüfung der Datenqualität (Qualitätssicherung)
+* Benutzerfreundliche Bearbeitungsoberfläche und Wahrung der Datensicherheit durch die lokale Bearbeitung und Speicherung
+* Bereinigung von unstrukturierten und fehlerhaften Daten (Dubletten, Tippfehler, Inkonsistenzen) und damit Überprüfung der Datenqualität (Qualitätssicherung)
 * Versionskontrolle durch die Möglichkeit, Arbeitsschritte wieder rückgängig zu machen oder bereits getätigte Schritte wiederherzustellen
 * Datenerweiterung und Normalisierung über Reconciliation-Services, die den Datenabgleich mit externen Datenbanken ermöglichen
 * Datentransformation in andere Formate oder Strukturen
@@ -148,7 +148,7 @@ Anhand unseres [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlu
 * Um unsere Zutatenliste mit Einträgen aus einer Normdatenbank anzureichern, überprüfen wir zuerst, welche Einträge auf Basis der Spalte mit den englischen Begriffen gefunden werden. Wir wählen hier das Englische, weil die englische Wikidata-Datenbank mit der größten Abdeckung an Begriffen zu einer höheren Trefferquote führt. Dafür gehen wir auf die Spalte mit der Überschrift "eng", wählen im Dropdown die Option **Reconcile** und dann in der damit verbundenen Auswahl **Start Reconcile**.
    ![Auswahl an Datenbearbeitungsmöglichkeiten](../img/start-reconciliation.PNG)
 * In dem neuen Fenster, das sich daraufhin öffnet, klicken wir in der linken Menüleiste auf "Wikidata (en)".
-   ![Start des Abgleichs mit den Normdaten von Wikidata](../img/start-reconciliation.PNG)
+   ![Start des Abgleichs mit den Normdaten von Wikidata](../img/reconciliation-service.PNG)
 * In dem nachfolgenden Fenster wählen wir folgende Einstellungen:
     * Bei der Kategorienzuordnung, mit der festgelegt werden kann, dass die Begriffe nur mit Entitäten einer bestimmten Kategorie abgeglichen werden, möchten wir uns nicht zu sehr einschränken. Wir könnten natürlich nur "food ingredients" auswählen, aber erstens sind nicht alle Entitäten einer Kategorie zugewiesen und zweitens ist die Kategoriezuordnung nicht immer eindeutig, weshalb beispielsweise einer Zutat wie Petersilie anstelle der Kategorie "Zutat", auch einfach nur die Kategorie "Pflanze" zugeordnet sein könnte. Um zu verhindern, dass durch die Einschränkung auf eine bestimmte Kategorie möglicherweise unkategorisierte oder abweichend kategorisierte Entitäten nicht mit unseren Daten abgeglichen werden, nutzen wir die Option: "Reconcile against no particular type".
     * Zusätzlich gibt es die Möglichkeit, über die Checkbox "Auto-match candidates with high confidence" einzustellen, dass bei jenen Begriffen, für die mit hoher Wahrscheinlichkeit eine passende Wikidata-Entität gefunden wurde, eine automatische Zuordnung vorgenommen wird.
@@ -243,7 +243,8 @@ In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wi
 
 ## Projekte, die dieses Tool genutzt haben
 
-* [CoReMa - Cooking Recipes of the Middle Ages](https://gams.uni-graz.at/context:corema): Das Projekt CoReMA beschäftigt sich mit mittelalterlichen Kochrezepten. Der Fokus liegt dabei auf den Beziehungen zwischen Frankreich und den deutschsprachigen Ländern, auf die die französische Kultur von jeher einen großen Einfluss hatte. Um herauszufinden, ob und wie sich bestimmte Rezepte in Europa verbreiteten, wird die gesamte heute bekannte mittelalterliche Kochrezeptüberlieferung von Frankreich und den deutschsprachigen Ländern analysiert. Betrachtet werden dabei alle Rezeptexte in deutscher, französischer und lateinischer Sprache, die bis ca. 1500 aufgeschrieben wurden. In Summe sind das 93 Handschriften und ca. 8000 Kochrezepte.
+* [CoReMa - Cooking Recipes of the Middle Ages](https://gams.uni-graz.at/context:corema): Im Projekt CoReMA wurden mittelalterliche Kochrezepte ediert. Mit den zugrundeliegenden Forschungsfragen sollten die kulinarischen Beziehungen zwischen Frankreich und den deutschsprachigen Ländern untersucht werden, auf welche die französische Kultur von jeher einen großen Einfluss hatte. Das Projekt stellt die transkribierten und annotierten Kochrezepte der deutschsprachigen Überlieferung vor 1500 zur Verfügung. In den historischen Texten sind Zutaten, Küchengeräte und Speisegattungen mit modernen Normdaten annotiert. Diese werden für unterschiedliche Analyse- und Auswertungsmethoden herangezogen.
+
 
 
 ## Literatur
