@@ -40,7 +40,7 @@ Transkribus Lite ist durch die Möglichkeit des Trainings eigener KI-Modelle zur
 
 1. **Digitalisierung** ([scantent](https://readcoop.eu/de/scantent/)): Mittels LED beleuchtetes, tragbares Scanzelt zum Digitalisieren von Dokumenten z. B. in Archiven und Bibliotheken über Smartphones und App-Unterstützung (DocScan-App)
 2. **Bearbeitung/Transkription und Datenerfassung und Annotation und KI-Training** ([Transkribus lite](https://app.transkribus.eu/) & [eXpert](https://readcoop.eu/de/transkribus/download/), citizen&science)
-3. **KI-gestützte Texterkennung** (Transkribus lite & eXpert, [metagrapho&lt;api&gt](https://readcoop.eu/de/api/), [Transkribus.ai](https://transkribus.ai/))
+3. **KI-gestützte Texterkennung** (Transkribus lite & eXpert, [metagrapho&lt;api&gt;](https://readcoop.eu/de/api/), [Transkribus.ai](https://transkribus.ai/))
 4. **Publikation** ([read&search](https://readcoop.eu/de/readsearch/)): Mittels read&search können die Dokumente aus den Transkribus-Sammlungen öffentlich zugänglich gemacht werden. 
 
 
