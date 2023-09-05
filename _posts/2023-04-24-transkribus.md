@@ -40,7 +40,7 @@ Transkribus Lite ist durch die Möglichkeit des Trainings eigener KI-Modelle zur
 
 1. **Digitalisierung** ([scantent](https://readcoop.eu/de/scantent/)): Mittels LED beleuchtetes, tragbares Scanzelt zum Digitalisieren von Dokumenten z. B. in Archiven und Bibliotheken über Smartphones und App-Unterstützung (DocScan-App)
 2. **Bearbeitung/Transkription und Datenerfassung und Annotation und KI-Training** ([Transkribus lite](https://app.transkribus.eu/) & [eXpert](https://readcoop.eu/de/transkribus/download/), citizen&science)
-3. **KI-gestützte Texterkennung** (Transkribus lite & eXpert, [metagrapho&lt;api](https://readcoop.eu/de/api/t)>, [Transkribus.ai](https://transkribus.ai/))
+3. **KI-gestützte Texterkennung** (Transkribus lite & eXpert, [metagrapho&lt;api&gt](https://readcoop.eu/de/api/), [Transkribus.ai](https://transkribus.ai/))
 4. **Publikation** ([read&search](https://readcoop.eu/de/readsearch/)): Mittels read&search können die Dokumente aus den Transkribus-Sammlungen öffentlich zugänglich gemacht werden. 
 
 
@@ -152,10 +152,10 @@ Aufgrund der großen Akzeptanz der Webversion wird nur mehr diese weiterentwicke
 * Eigene Struktur- und Texttags definierbar, sodass Konformität mit den TEI-Guidelines erreicht werden kann
     * Einbindung von Normdaten möglich (Wikidata ID) 
 * Schreibrichtung rechts-links wird unterstützt
-* Smart Search (höherer Creditverbrauch): Es wird nicht nur ein erkanntes Wort, sondern auch Alternativen gespeichert, sodass nach gut nach (falsch) erkannten Wörtern gesucht werden kann
+* Smart Search (höherer Creditverbrauch): Es werden nicht nur ein erkanntes Wort, sondern auch Alternativen gespeichert, sodass nach gut nach (falsch) erkannten Wörtern gesucht werden kann
 * Nur Creditverbrauch bei Texterkennung, alle anderen Funktionalitäten (siehe "Kostenübersicht") sind kostenfrei
 * 10 % Discount beim Kauf von Credits als READ-COOP-SCE-Mitglied
-* Erhalt von kostenfreien Credits für Studierende und Lehrende durch das Transkribus-Scholarship-Programm möglich 
+* Erhalt von kostenfreien Credits für Studierende und Lehrende durch das [Transkribus-Scholarship-Programm](https://readcoop.eu/transkribus/scholarship/) möglich, Möglichkeit des Erhalts eines [CLARIAH-Stipendiums](https://readcoop.eu/transkribus/scholarship/clariah/) für Jungforscher:innen
 * Teilen von Seiten mit Personen möglich, die nicht registriert sind
 
 
@@ -253,7 +253,7 @@ Der allgemeine Transkribus-Workflow kann wie folgt visualisiert werden:
 
 
 
-* Da über 100 öffentliche Modelle zur Auswahl stehen, wenden wir die links selektierbaren Filterkriterien an, um die Anzahl an potentiell applikablen Modellen einzuschränken. Bei “Sprache” wählen wir “Deutsch”, bei “Typ” “Handschriftlich” und bei “Jahrhunderte” den Zeitraum 19. bis 20. Jahrhundert. Es ist wichtig, dass diese auf das jeweilige Textmaterial zugeschnittene Auswahl getroffen wird, damit die Auswahl auf die am besten geeigneten Modelle eingeschränkt wird. Nun werden nur mehr wenige Modelle angezeigt (Abb. 9), wir entscheiden uns für das Modell “Transkribus German handwriting M1”, da die anderen Modelle primär für Kurrentschrift ausgelegt zu sein scheinen (Weiterführende Informationen zu den Modellen erhält man durch einen Klick auf “Beschreibung). Das Modell weist eine Zeichenfehlerrate (Character Error Rate (CER)) von 4,7 % auf, d. h. es würden von 100 Zeichen ca. 5 falsch erkannt werden. Nach dem Klick auf “Start” wird der Job ausgeführt und wir können unter der Schaltfläche “Jobs” seinen Fortschritt verfolgen.
+* Da über 100 öffentliche Modelle zur Auswahl stehen, wenden wir die links selektierbaren Filterkriterien an, um die Anzahl an potentiell applikablen Modellen einzuschränken. Bei “Sprache” wählen wir “Deutsch”, bei “Typ” “Handschriftlich” und bei “Jahrhunderte” den Zeitraum 19. bis 20. Jahrhundert. Es ist wichtig, dass diese auf das jeweilige Textmaterial zugeschnittene Auswahl getroffen wird, damit die Auswahl auf die am besten geeigneten Modelle eingeschränkt wird. Nun werden nur mehr wenige Modelle angezeigt (Abb. 9), wir entscheiden uns für das Modell “Transkribus German handwriting M1”, da die anderen Modelle primär für Kurrentschrift ausgelegt zu sein scheinen (Weiterführende Informationen zu den Modellen erhält man durch einen Klick auf “Beschreibung"). Das Modell weist eine Zeichenfehlerrate (Character Error Rate (CER)) von 4,7 % auf, d. h. es würden von 100 Zeichen ca. 5 falsch erkannt werden. Nach dem Klick auf “Start” wird der Job ausgeführt und wir können unter der Schaltfläche “Jobs” seinen Fortschritt verfolgen.
 
 {% include image.html url="../data/pipelines/pipeline_2/transkribus/img/recognition_model_selection.PNG" description="Auswahl eines Texterkennungsmodells" %}
 
@@ -345,7 +345,7 @@ Wenn wir ein Modell auswählen, können wir uns durch einen Klick auf "Beschreib
 * **Hinzufügen von Zeilenlinien:** Über das Füllfedersymbol (Abb. 19: a) können Zeilenlinien hinzugefügt werden. Wird eine Linie hinzugefügt, erscheint die mit ihr korrespondierende Zeile rechts im Editorfenster. Ausgewählte Zeilen können auch über die Entfernen-Taste auf der Tastatur gelöscht werden.
     * **Aktionen mit Regionen:**
         * Mittels Button (Abb. 19: b) können Regionen hinzugefügt werden
-        * Bereits bestehende Regionen können geteilt werden: Dazu muss die Region mittels Klick ausgewählt werden, nach einem Rechtsklick erscheinen können dann die Teilungsoptionen ausgewählt werden: Horizontal, vertikal oder benutzerdefiniert (Im letzten Fall kann mittels Pfeiltasten die Teilungslinie gedreht werden).
+        * Bereits bestehende Regionen können geteilt werden: Dazu muss die Region mittels Klick ausgewählt werden, nach einem Rechtsklick können dann die Teilungsoptionen ausgewählt werden: Horizontal, vertikal oder benutzerdefiniert (Im letzten Fall kann mittels Pfeiltasten die Teilungslinie gedreht werden.).
         * Zusammenfügen von Regionen: Dazu werden mit Strg und Mausklick mehrere Regionen markiert, nach einem Rechtsklick können sie mit “Merge shapes” zusammengeführt werden.
     * **Layoutbutton:** Nach einem Klick auf den Layoutbutton (Abb. 19: c) öffnet sich ein Fenster, in dem die Struktur des Dokuments (Regionen und Zeilen) angezeigt wird (Abb. 21). Hier können - was durchaus wichtig sein kann - Regionen und Zeilen miteinander ausgetauscht werden.
 
@@ -663,7 +663,7 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
    <td><strong>Benutzerprofil</strong>
 (Erwartete Nutzer:innen)
    </td>
-   <td>Primär GeWi-Forschungsinstitutionen und Forschende als Tool-Nutzende
+   <td>Primär GeWi-Forschungsinstitutionen, Forschende und Bibliotheken (Smart Search) als Tool-Nutzende
    </td>
   </tr>
   <tr>
@@ -871,7 +871,7 @@ instruktive mehrsprachige Einführungswebinare sowie weitere Videos auf <a href=
   <tr>
    <td><strong>Datenaufbewahrung nach Export</strong>
    </td>
-   <td>Sammlungen, in denen 120 keine Aktivität stattfand, werden archiviert und an die Eigentümer:innen wird ein Mail versandt. Finden dann innerhalb der nächsten 21 Tag keine Aktivitäten statt, werden die Sammlungen gelöscht
+   <td>Sammlungen, in denen 120 Tage keine Aktivität stattfand, werden archiviert und an die Eigentümer:innen wird ein Mail versandt. Finden dann innerhalb der nächsten 21 Tag keine Aktivitäten statt, werden die Sammlungen gelöscht
    </td>
   </tr>
 </table>
