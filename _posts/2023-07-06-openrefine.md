@@ -36,7 +36,7 @@ In Hinblick auf digitale Editionen ist ein Vorteil von OpenRefine, dass es nicht
 
 ## Funktionsübersicht
 
-* Datenbereinigung bei unstrukturierten und fehlerhaften Daten; erkennt Dubletten, Tippfehler, Inkonsistenzen und andere Unregelmäßigkeiten
+* Datenbereinigung bei unstrukturierten und fehlerhaften Daten (Dubletten, Tippfehler, Inkonsistenzen und andere Unregelmäßigkeiten)
 * Datennormalisierung
 * Datentransformation  (z. B. Excel/CSV-Input zu JSON oder XML-Struktur)
 * Datenzusammenführung, wenn verschiedene Quellen vorhanden sind
@@ -203,9 +203,9 @@ Anhand unseres [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlu
 
 ## 4. Export der Dokumente
 
-* Um unsere angereicherte Tabelle bzw. normalisierten Daten zu exportieren, klicken wir auf den Button "Export" und wählen die Option "Templating". Denn unser Ziel ist es, direkt eine XML-Struktur zu generieren, die wir anschließend in unser Register in ediarum übernehmen können.
+* Um unsere angereicherte Tabelle bzw. normalisierten Daten zu exportieren, klicken wir auf den Button "Export" und wählen die Option "Templating". Denn unser Ziel ist es, direkt eine XML-Struktur zu generieren, die wir anschließend in unser Register in _ediarum_ übernehmen können.
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/export-data.PNG" description="Export der Daten über ein Template" %}
-* In der Ansicht für die Template-Erstellung haben wir nun die Möglichkeit, unsere Daten so zu gestalten, dass sie nur mehr in das ediarum-Sachregister kopiert werden müssen. Dafür tragen wir in das Prefix-Textfeld `<list>` und als Suffix `</list>` ein. Entsprechend dem Schema für Register in ediarum möchten wir für jede Zeile einen eigenen `<item>`-Eintrag erhalten. Als @xml:id soll die englische Übersetzung übernommen werden. Den Wikidata-Link übernehmen wir in Form eines `<idno>`-Elemente innerhalb des `<item>`-Elements. Außerdem legen wir auch 1-2 `<label>`-Elemente an, einmal mit dem Wert "reg" im @type-Attribut für die Übersetzung in Standarddeutsch, und ein weiteres mit dem Wert "alt", das die frühneuhochdeutschen Bezeichnung enthält.
+* In der Ansicht für die Template-Erstellung haben wir nun die Möglichkeit, unsere Daten so zu gestalten, dass sie nur mehr in das _ediarum_-Sachregister kopiert werden müssen. Dafür tragen wir in das Prefix-Textfeld `<list>` und als Suffix `</list>` ein. Entsprechend dem Schema für Register in _ediarum_ möchten wir für jede Zeile einen eigenen `<item>`-Eintrag erhalten. Als @xml:id soll die englische Übersetzung übernommen werden. Den Wikidata-Link übernehmen wir in Form eines `<idno>`-Elemente innerhalb des `<item>`-Elements. Außerdem legen wir auch 1-2 `<label>`-Elemente an, einmal mit dem Wert "reg" im @type-Attribut für die Übersetzung in Standarddeutsch, und ein weiteres mit dem Wert "alt", das die frühneuhochdeutschen Bezeichnung enthält.
 In der Vorschau rechts sehen wir auch, wie unser Output schließlich aussehen wird.
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/templating-export.PNG" description="Individuelle Anpassung des Outputs über die Templating-Methode" %}
     → <span style="text-decoration:underline;">Erläuterungen zum Code im Textfeld "Row Template":</span> Unser Code, der über die einzelnen Zeilen unserer Tabelle iteriert, soll hier noch etwas genauer betrachtet werden. Mittels der [General Refined Expression Language (GREL)](https://openrefine.org/docs/manual/grel) haben wir unseren Code entsprechend unseren Anforderungen gestaltet.

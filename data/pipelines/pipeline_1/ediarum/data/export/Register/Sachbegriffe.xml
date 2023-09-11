@@ -15,11 +15,6 @@
    <text>
       <body>
          <list>
-            <item xml:id="clove">
-               <idno type="uri">https://www.wikidata.org/wiki/Q15622897</idno>
-               <label type="reg">Nelke</label>
-               <label type="alt">negelleyn</label>
-            </item>
             <item xml:id="verjuice">
                <idno type="uri">https://www.wikidata.org/entity/Q1060458</idno>
                <label type="reg">Agraz</label>
@@ -317,7 +312,7 @@
                <label type="alt">kalb fleysch</label>
                <label type="alt">kalb fleysch</label>
             </item>
-            <item xml:id="pip">
+            <item xml:id="fruit-pip">
                <idno type="uri">https://www.wikidata.org/entity/Q3121375</idno>
                <label type="reg">Fruchtkern</label>
                <label type="alt">kernn</label>
@@ -519,7 +514,7 @@
                <label type="reg">Salbei</label>
                <label type="alt">Saluia</label>
             </item>
-            <item xml:id="ed_jpr_v41_3yb">
+            <item xml:id="fruit">
                <idno type="uri">https://www.wikidata.org/entity/Q3314483</idno>
                <label type="reg">Frucht</label>
                <label type="alt">frucht</label>
@@ -729,7 +724,7 @@
                <label type="reg">Fettnetz</label>
                <label type="alt">netz</label>
             </item>
-            <item xml:id="ed_nlk_qz1_3yb">
+            <item xml:id="yolk">
                <idno type="uri">https://www.wikidata.org/wiki/Q16336079</idno>
                <label type="reg">Eidotter</label>
                <label type="alt">exer totternn</label>
