@@ -19,12 +19,12 @@ last_modified_at:   2023-08-03
 
 # Allgemeine Beschreibung
 
-OpenRefine ist ein Open-Source-Tool zur Datenbereinigung und Datentransformation, das ursprünglich als Google Refine bekannt war. Es bietet eine anwenderfreundliche grafische Benutzeroberfläche, mit der Daten in verschiedenen Formaten analysiert, bereinigt und strukturiert werden können.
+_OpenRefine_ ist ein Open-Source-Tool zur Datenbereinigung und Datentransformation, das ursprünglich als Google Refine bekannt war. Es bietet eine anwenderfreundliche grafische Benutzeroberfläche, mit der Daten in verschiedenen Formaten analysiert, bereinigt und strukturiert werden können.
 
-OpenRefine eignet sich besonders gut für die Arbeit mit großen und unstrukturierten Datensätzen, wobei es das Filtern, Sortieren und Gruppieren von Daten sowie das Erkennen und Beheben von Fehlern und Unregelmäßigkeiten ermöglicht. Das Tool unterstützt außerdem auch die Zusammenführung von Datensätzen aus verschiedenen Quellen und das Aufteilen von Zellen, um Daten besser zu organisieren.
+_OpenRefine_ eignet sich besonders gut für die Arbeit mit großen und unstrukturierten Datensätzen, wobei es das Filtern, Sortieren und Gruppieren von Daten sowie das Erkennen und Beheben von Fehlern und Unregelmäßigkeiten ermöglicht. Das Tool unterstützt außerdem auch die Zusammenführung von Datensätzen aus verschiedenen Quellen und das Aufteilen von Zellen, um Daten besser zu organisieren.
 
 <div class="essence">
-In Hinblick auf digitale Editionen ist ein Vorteil von OpenRefine, dass es nicht nur die Datenbereinigung, - transformation und -organisation großer unstrukturierter Datenmengen erleichtert, sondern vor allem auch Funktionen zur Normalisierung von Daten sowie zur Konsolidierung von Informationen bietet. Beim Export der Daten muss man jedoch auf die Möglichkeit, direkt eine XML-Datei herunterzuladen, verzichten und auch komplexere Datentransformationen beim Export - wie beispielweise das Gruppieren von Daten - werden nicht unterstützt.
+In Hinblick auf digitale Editionen ist ein Vorteil von <span style="font-style:italic;">OpenRefine</span>, dass es nicht nur die Datenbereinigung, - transformation und -organisation großer unstrukturierter Datenmengen erleichtert, sondern vor allem auch Funktionen zur Normalisierung von Daten sowie zur Konsolidierung von Informationen bietet. Beim Export der Daten muss man jedoch auf die Möglichkeit, direkt eine XML-Datei herunterzuladen, verzichten und auch komplexere Datentransformationen beim Export - wie beispielweise das Gruppieren von Daten - werden nicht unterstützt.
 </div>
 
 ## Anwendungsbereiche
@@ -131,20 +131,20 @@ Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispie
 
 ## Herausforderungen & Probleme
 
-* Keine simultane Kollaborationsmöglichkeit, da OpenRefine für die lokale Verwendung konzipiert ist und nicht mehrere Personen gleichzeitig an einem Projekt arbeiten können (eine - aber bei einer Vielzahl von Projektmitarbeitenden relativ umständliche - Möglichkeit, mit anderen Personen zusammenzuarbeiten, besteht aber darin, Projekte inklusive der gespeicherten Bearbeitungsschritte zu exportieren und daraufhin an einem anderen Rechner zu importieren)
-* Teilweise mühsame Bedienung durch das Problem, dass OpenRefine bei der manuellen Zuordnung von passenden Wikidata-Einträgen nach jeder einzelnen Match-Bestätigung zum Start der Tabelle springt
+* Keine simultane Kollaborationsmöglichkeit, da _OpenRefine_ für die lokale Verwendung konzipiert ist und nicht mehrere Personen gleichzeitig an einem Projekt arbeiten können (eine - aber bei einer Vielzahl von Projektmitarbeitenden relativ umständliche - Möglichkeit, mit anderen Personen zusammenzuarbeiten, besteht aber darin, Projekte inklusive der gespeicherten Bearbeitungsschritte zu exportieren und daraufhin an einem anderen Rechner zu importieren)
+* Teilweise mühsame Bedienung durch das Problem, dass _OpenRefine_ bei der manuellen Zuordnung von passenden Wikidata-Einträgen nach jeder einzelnen Match-Bestätigung zum Start der Tabelle springt
 * Keine direkte Exportmöglichkeit in eine XML-Datei, wobei über den Templating-Export die Daten jedoch zumindest in einer XML-Struktur (als Plaintext-Datei) exportiert werden können
 * Komplexere Datentransformationen - wie beispielsweise das Gruppieren von Datensätzen anhand des Inhalts einer Zelle - sind beim Export nicht möglich, wodurch Redundanzen in den Daten auftreten können und eine Nachbearbeitung erforderlich sein kann
 
 
 # Einrichtung & Erste Schritte
 
-Anhand unseres [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf für die Normdaten-Anreicherung mit OpenRefine beschrieben werden. Die Manuskripte des Projektes wurden bereits mittels [FromThePage](https://digedtnt.github.io/fromthepage/) transkribiert und mit [ediarum](https://digedtnt.github.io/ediarum/) wurden bereits erste Annotationen vorgenommen. In dieser Kurzanleitung erfolgt nun die Aufbereitung der Zutatenliste, die wir von einem Historiker im CSV-Format erhalten haben. Unser Ziel ist es, die Daten zu normalisieren und sie zusätzlich mit den [Q-Nummern](https://www.wikidata.org/wiki/Wikidata:Glossary/de) - auch QID genannt - von Wikidata-Einträgen anzureichern.
+Anhand unseres [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf für die Normdaten-Anreicherung mit _OpenRefine_ beschrieben werden. Die Manuskripte des Projektes wurden bereits mittels [FromThePage](https://digedtnt.github.io/fromthepage/) transkribiert und mit [ediarum](https://digedtnt.github.io/ediarum/) wurden bereits erste Annotationen vorgenommen. In dieser Kurzanleitung erfolgt nun die Aufbereitung der Zutatenliste, die wir von einem Historiker im CSV-Format erhalten haben. Unser Ziel ist es, die Daten zu normalisieren und sie zusätzlich mit den [Q-Nummern](https://www.wikidata.org/wiki/Wikidata:Glossary/de) - auch QID genannt - von Wikidata-Einträgen anzureichern.
 
 
 ## 1. Installation
 
-* Unser erster Schritt besteht darin, uns die entsprechende Version für unser Betriebssystem von [OpenRefine herunterzuladen](https://openrefine.org/download). Nach dem Entpacken der ZIP-Datei führen wir openrefine.exe aus, wodruch sich OpenRefine direkt in unserem Browser öffnet.
+* Unser erster Schritt besteht darin, uns die entsprechende Version für unser Betriebssystem von [OpenRefine herunterzuladen](https://openrefine.org/download). Nach dem Entpacken der ZIP-Datei führen wir openrefine.exe aus, wodruch sich _OpenRefine_ direkt in unserem Browser öffnet.
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/openrefine-start.PNG" description="Startbildschirm von OpenRefine" %}
 
 
@@ -162,7 +162,7 @@ Anhand unseres [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlu
 
 ## 3. Bearbeitung der Dokumente
 
-* Sollten wir zwischenzeitlich unser Projekt geschlossen haben, müssen wir für die Arbeit in OpenRefine zuerst wieder unsere Datei openrefine.exe starten, über die erneut der Browser geöffnet wird. Unter **Open Project** in der linken Navigationleiste können wir schließlich unsere Projekte einsehen. Wir öffnen hier unser bereits angelegtes Projekt "MaRezepte".
+* Sollten wir zwischenzeitlich unser Projekt geschlossen haben, müssen wir für die Arbeit in _OpenRefine_ zuerst wieder unsere Datei openrefine.exe starten, über die erneut der Browser geöffnet wird. Unter **Open Project** in der linken Navigationleiste können wir schließlich unsere Projekte einsehen. Wir öffnen hier unser bereits angelegtes Projekt "MaRezepte".
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/open-project.PNG" description="Einstieg zur Projektbearbeitung in OpenRefine" %}
 * Um unsere Zutatenliste mit Einträgen aus einer Normdatenbank anzureichern, überprüfen wir zuerst, welche Einträge auf Basis der Spalte mit den englischen Begriffen gefunden werden. Wir wählen hier das Englische, weil die englische Wikidata-Datenbank mit der größten Abdeckung an Begriffen zu einer höheren Trefferquote führt. Dafür gehen wir auf die Spalte mit der Überschrift "eng", wählen im Dropdown die Option **Reconcile** und dann in der damit verbundenen Auswahl **Start Reconcile**.
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/start-reconciliation.PNG" description="Auswahl an Datenbearbeitungsmöglichkeiten" %}
@@ -183,7 +183,7 @@ Anhand unseres [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlu
 * Sobald der Reconciliation-Prozess abgeschlossen ist, erhalten wir in der Header-Zeile der Spalte einen Überblick zu unserem Fortschritt in Form eines Balkens. Aus unserer Tabelle mit 536 Zeilen wurde knapp ein Fünftel automatisiert mit Normdaten angereichert und für über 80% der Einträge ist noch eine manuelle Überprüfung nötig, da es hier mehrere Entitäten gibt, die mit dem Begriff aus der jeweiligen Zeile übereinstimmen.
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconciliation-result.PNG" description="Auswertung des Reconciliation-Prozesses" %}
     → Zusätzlich bekommen wir in der linken Leiste Informationen zu den Matches und haben auch die Möglichkeit, den Prozess rückgängig zu machen.
-* Bei allen Begriffen, für die nicht automatisch eine Entsprechung aus den Wikidata-Normaten übernommen wurde, müssen wir nun eine manuelle Zuordnung vornehmen. Durch die Übersetzung der verschiedenen Schreibweisen für einen konkreten Begriff haben wir im Englischen sehr viele gleiche Einträge. Damit wir nicht jeden Zeile einzeln durchgehen müssen, gibt es in OpenRefine die Möglichkeit, das Kästchen mit dem doppelten Häkchen zu verwenden, um den entsprechenden Wikidata-Eintrag für alle identischen Zellen zu übernehmen.
+* Bei allen Begriffen, für die nicht automatisch eine Entsprechung aus den Wikidata-Normaten übernommen wurde, müssen wir nun eine manuelle Zuordnung vornehmen. Durch die Übersetzung der verschiedenen Schreibweisen für einen konkreten Begriff haben wir im Englischen sehr viele gleiche Einträge. Damit wir nicht jeden Zeile einzeln durchgehen müssen, gibt es in _OpenRefine_ die Möglichkeit, das Kästchen mit dem doppelten Häkchen zu verwenden, um den entsprechenden Wikidata-Eintrag für alle identischen Zellen zu übernehmen.
     {% include image.html url="../data/pipelines/pipeline_1/openrefine/img/reconcile-all-matches.PNG" description="Gleichzeitige Zuordnung eines Wikidata-Eintrages für alle identischen Zellen" %}
     → Etwas mühsam bei dieser manuellen Zuordnung ist, dass nach jeder Übernahme eines Wikidata-Eintrags das Programm anschließend zum Start der Tabelle hüpft, und man daher anschließend immer erneut zur nächsten, zur Bearbeitung ausstehenden Zeile scrollen muss.
 * Sollte in den Vorschlägen eine passende Wikidata-Entsprechung fehlen, gibt es am Ende der Liste die Möglichkeit, nach weiteren Übereinstimmungen zu suchen und im neuen Suchfenster schließlich weitere Eingaben, unter denen ein Begriff auch zu finden sein könnte, vorzunehmen.

@@ -3,7 +3,7 @@
 Die von _OpenRefine_ exportierten TXT-Dokumente bedürfen noch einer kleinen Anpassung für die Benutzung als Register in _ediarum_. Die vorliegende Transition zielt daher darauf ab, redundante Informationen im _OpenRefine_-Output zu reduzieren, um mit sinnvoll komprimierten Daten in _ediarum_ weiterarbeiten zu können.
 
 <div class="essence">
-In _OpenRefine_ lässt sich der Export über die Templating-Option bereits sehr gut an die Registerstruktur von _ediarum_ anpassen. Bei Dopplungen im Datensatz bedarf es aber mitunter noch kleineren Anpassungen, die über ein kurzes XSLT vorgenommen werden können.
+In <span style="font-style:italic;">OpenRefine</span> lässt sich der Export über die Templating-Option bereits sehr gut an die Registerstruktur von <span style="font-style:italic;">ediarum</span> anpassen. Bei Dopplungen im Datensatz bedarf es aber mitunter noch kleineren Anpassungen, die über ein kurzes XSLT vorgenommen werden können.
 </div>
 
 
