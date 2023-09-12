@@ -516,6 +516,7 @@ pre {
 .wrapper-container {
   min-height: 100%;
   position: relative;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.1), /* Red */ rgba(255, 165, 0, 0.1), /* Orange */ rgba(255, 255, 0, 0.1), /* Yellow */ rgba(0, 128, 0, 0.1), /* Green */ rgba(0, 0, 255, 0.1), /* Blue */ rgba(75, 0, 130, 0.1), /* Indigo */ rgba(143, 0, 255, 0.1));
 }
 
 .wrapper-main {
