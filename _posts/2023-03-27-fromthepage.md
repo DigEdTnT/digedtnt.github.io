@@ -43,15 +43,15 @@ FromThePage zeichnet sich nicht nur darin aus, dass man bereits mit minimalen Co
 
 
 * Transkription in Editoransicht mit Bild-Text-Synopse
-* Multilinguales Interface (DE momentan in Arbeit)
+* Multilinguales Interface
 * Versionskontrolle (Tracking bei jedem Abspeichern, Versionen öffentlich einsehbar)
 * Textuelles Mark-up (auf 3 Arten)
     * Silent Mark-up → Zeilenumbrüche, Absatzmarkierungen bedürfen keiner zusätzlichen Auszeichnung, sondern werden direkt übernommen und in entsprechende Codes umgewandelt
     * Tags (inklusive farblicher Kennzeichnung) → hierfür gibt es eine Auswahl an unterstützten Mark-up-Tags (vorwiegend entsprechend TEI-Standard)
     * Buttons → die Auswahl der Buttons kann von den Projektinhaber:innen konfiguriert werden (es können jedoch keine eigenen Buttons kreiert werden)
 * Editorkonfigurationen
-    * projektspezifische Auswahl an unterstützten Tag-Buttons kann durch Projektinhaber:in zur Verfügung gestellt werden
-    * projektspezifische Transkriptionsrichtlinien können festgelegt werden
+    * Bereitsstellung projektspezifischer Auswahl an unterstützten Tag-Buttons durch Projektinhaber:in
+    * Erstellung projektspezifischer Transkriptionsrichtlinien
 * Indexierung und spätere Indexansicht kanonischer Namen mittels Mouseover
 * Data Mining über Referenzierungen für Suchbegriffe/Stichworte
 * Metadaten-Anreicherung zur Beschreibung des gesamten Projektmaterials und einzelner Werke
@@ -62,11 +62,11 @@ FromThePage zeichnet sich nicht nur darin aus, dass man bereits mit minimalen Co
 * Unterschiedliche Darstellung des Mark-ups je nach Umgebung:
     * _Single-Page-Darstellung:_ 1:1-Darstellung (Zeilenumbrüche werden beibehalten)
     * _Multi-Page-Darstellung:_ nur Thumbnail-Bilder für die Faksimiles, zur Darstellung von Suchergebnissen (Absatzumbrüche werden beibehalten)
-* Übersicht über Projektfortschritt durch die Möglichkeit Bearbeitungsstati für einzelne Dokumente und Werke zu setzen (z.B. “Needs Review”)
-* Diskussionsmöglichkeit für Mitarbeitende am Ende jeder Transkription
+* Übersicht über Projektfortschritt durch die Möglichkeit Bearbeitungsstati für einzelne Dokumente und Werke zu setzen (z. B. "Needs Review")
+* Diskussionsmöglichkeit für Mitarbeitende am Ende jeder Transkriptionsseite
 * Diverse Exportformate: TEI, PDF, DOCX, Plain Text, HTML etc.
 * Integrative Workflows mit Transkribus, Omeka-S und FairCopy
-* Direkte Verknüpfung zu Voyant, Verbatim, IIIF
+* Direkte Verknüpfung zu Voyant oder IIIF
 * API für die automatisierte Veröffentlichung bei Fertigstellung einer Transkription
 
 
@@ -150,22 +150,22 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 # Möglichkeiten & Grenzen
 
-Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolgend mögliche Vor- und Nachteile des 
-Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1) festgestellt wurden. 
+Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolgend mögliche Vor- und Nachteile des
+Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1) festgestellt wurden.
 
 
 ## Stärken
 
 * Remote Kollaboration möglich
 * Subject-Tagging zur Erstellung von Registern und nach einem gewissen Projektfortschritt auch automatische Verlinkungen
-* User- bzw. Projekt-Management: Überblick über Statistiken (Dauer, Umfang, etc.)
+* User- bzw. Projekt-Management: Überblick über Statistiken (Dauer, Umfang etc.)
 * Schneller und hilfreicher Support über Chat-Interface (Reaktion meist spätestens innerhalb von 24h)
 * Vielzahl an qualitätssichernden Maßnahmen:
     * Schutz vor Vandalismus durch Registrierungserfordernis
     * Einschränkung auf bestimmten Kreis an Mitarbeitende möglich
     * Einstellungen für eine strikte Qualitätskontrolle: Obligatorische Reviews können angefordert und Validierungen auf bestimmten Kreis an Reviewer:innen eingeschränkt werden
     * Fertiggestellte Unterprojekte können eingeschränkt und nur für bestimmte Mitarbeitende für die Revision bearbeitbar gemacht werden
-    * Textpassagen können vor Webcrawlern oder Eingriffen von unregistrierten Nutzer:innen geschützt werden (nur Transkribierenden mit entsprechender Erlaubnis - über `<sensitive>`-Tag - dürfen markierte Textpassage bearbeiten)
+    * Textpassagen können vor Webcrawlern oder Eingriffen von unregistrierten Nutzer:innen geschützt werden (nur Transkribierende mit entsprechender Erlaubnis - mittels `<sensitive>`-Tag - dürfen markierte Textpassage bearbeiten)
 * Community für Transkription: Bewerbung des Projekts über den Newsletter von FromThePage oder über Social Media (z. B. Twitter)
 
 
@@ -180,8 +180,7 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 
 * Eingeschränkte Mark-up-Möglichkeiten durch Beschränkung auf unterstützte Tags (derzeit 30 Tags)
 * Für detaillierte Annotationen entsprechend TEI-Konventionen eher weniger praktisch, da es keine Möglichkeit einer TEI-Validierung innerhalb des Transkriptionseditors gibt
-* Farbliche Markierungen, Ergänzungen durch Transkribierende und einige andere Textmerkmale, die selbst von editionswissenschaftlich ungeschulten Transkribierenden einfach ausgezeichnet werden könnten, werden nicht mit eigenen Tag-Buttons unterstützt. Auch wenn ein Workaround möglich ist und Tags entsprechend den TEI-Standards verwendet werden könnten, werden diese aber in der Transkriptionsansicht nicht validiert. Dadurch besteht grundsätzlich immer das Risiko einer intensiven Nachbearbeitung im TEI/XML-Export (z.B. bei Tippfehlern in den Tags oder Positionierung der Tags an unzulässigen Stellen)
-* Probleme mit der Zeichenkodierung beim Export: Buchstaben mit Diakritika werden im TEI nicht korrekt dargestellt
+* Farbliche Markierungen, Ergänzungen durch Transkribierende und einige andere Textmerkmale, die selbst von editionswissenschaftlich ungeschulten Transkribierenden einfach ausgezeichnet werden könnten, werden nicht mit eigenen Tag-Buttons unterstützt. Auch wenn ein Workaround möglich ist und Tags entsprechend den TEI-Standards verwendet werden könnten, werden diese aber in der Transkriptionsansicht nicht validiert. Dadurch besteht grundsätzlich immer das Risiko einer intensiven Nachbearbeitung im TEI/XML-Export (z. B. bei Tippfehlern in den Tags oder Positionierung der Tags an unzulässigen Stellen)
 * Tabellarische Darstellungen nur über Mark-Down (Pipes und Dashes) möglich
 * Metadaten-Beschreibung in den Projekt-Einstellungen teilweise unklar - aus den Bezeichnungen im Eingabeformular geht nicht klar hervor, welchen TEI-Header-Elementen diese im Output entsprechen könnten (siehe Export)
 * Metadaten aus den Werk-Einstellungen werden nicht in den TEI-Export integriert
@@ -487,7 +486,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
         ```
     → Auch hier treffen wir auf ein Problem hinsichtlich der Validität unseres TEI-Dokuments, da in der Taxonomie innerhalb der `<catDesc>`-Elemente `<notes>`-Elemente erzeugt wurden, die dort nicht zugelassen sind. Zudem steht die mit einem `<head>`-Element ausgezeichnete Überschrift von einem der Faksimiles unzulässigerweise innerhalb eines `<p>`-Elementes.
     * **Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem `<div>`-Element wiedergegeben, wobei das vorangehende `<pb>`-Element einen Link zur Bilddatei im IIIF-Format beinhaltet.
-        ```xml    
+        ```xml
         <text>
             <body>
             <pb xml:id="F33038493" n="1"
@@ -810,19 +809,19 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
 ## Literatur
 
 
-* Blickhan, S., Krawczyk, C., Hanson, D., Boyer, A., Simenstad, A., & Hyning, V. van. (2019). Individual vs. Collaborative Methods of Crowdsourced Transcription. _Journal of Data Mining and Digital Humanities_, _Special Issue on Collecting, Preserving, and Disseminating Endangered Cultural Heritage for New Understandings through Multilingual Approaches_. [https://doi.org/10.46298/jdmdh.5759](https://doi.org/10.46298/jdmdh.5759) 
-* Brumfield, B. (o. J.). _Collaborative Manuscript Transcription_ [Blog]. Collaborative Manuscript Transcription. Abgerufen 3. Mai 2023, von [http://manuscripttranscription.blogspot.com/](http://manuscripttranscription.blogspot.com/) 
+* Blickhan, S., Krawczyk, C., Hanson, D., Boyer, A., Simenstad, A., & Hyning, V. van. (2019). Individual vs. Collaborative Methods of Crowdsourced Transcription. _Journal of Data Mining and Digital Humanities_, _Special Issue on Collecting, Preserving, and Disseminating Endangered Cultural Heritage for New Understandings through Multilingual Approaches_. [https://doi.org/10.46298/jdmdh.5759](https://doi.org/10.46298/jdmdh.5759)
+* Brumfield, B. (o. J.). _Collaborative Manuscript Transcription_ [Blog]. Collaborative Manuscript Transcription. Abgerufen 3. Mai 2023, von [http://manuscripttranscription.blogspot.com/](http://manuscripttranscription.blogspot.com/)
 * Brumfield, B. (2012, Jänner 7). _FromThePage: A Web-Based Tool for Transcribing, Indexing, and Annotating Handwritten Material_. 126th Annual Meeting American Historical Association, Chicago.
-* Brumfield, B. (2020, September 1). The Decade in Crowdsourcing Transcription. FromThePage Blog. _From the Page_. [https://content.fromthepage.com/decade-in-crowdsourcing/](https://content.fromthepage.com/decade-in-crowdsourcing/) 
-* Causer, T., Tonra, J., & Wallace, V. (2012). Transcription maximized; expense minimized? Crowdsourcing and editing The Collected Works of Jeremy Bentham. _Literary and Linguistic Computing_, _27_(2), 119–137. [https://doi.org/10.1093/llc/fqs004](https://doi.org/10.1093/llc/fqs004) 
-* Christina Manzo et al. (o. J.). _By the People, For the People: Assessing the Value of Crowdsourced, User-Generated Metadata_ [DHQ: Digital Humanities Quarterly:]. Abgerufen 24. September 2015, von [http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html](http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html) 
-* del Rio Riande, G., Hernández, N., & De León, R. (2018, November). _Manos en la masa (textual): introducción al editatón colaborativo con FromThePage_. III Congreso Internacional de la Asociación de Humanidades Digitales (AAHD). La cultura de los datos, Rosario, Santa Fe. [http://hdl.handle.net/2133/13460](http://hdl.handle.net/2133/13460) 
+* Brumfield, B. (2020, September 1). The Decade in Crowdsourcing Transcription. FromThePage Blog. _From the Page_. [https://content.fromthepage.com/decade-in-crowdsourcing/](https://content.fromthepage.com/decade-in-crowdsourcing/)
+* Causer, T., Tonra, J., & Wallace, V. (2012). Transcription maximized; expense minimized? Crowdsourcing and editing The Collected Works of Jeremy Bentham. _Literary and Linguistic Computing_, _27_(2), 119–137. [https://doi.org/10.1093/llc/fqs004](https://doi.org/10.1093/llc/fqs004)
+* Christina Manzo et al. (o. J.). _By the People, For the People: Assessing the Value of Crowdsourced, User-Generated Metadata_ [DHQ: Digital Humanities Quarterly:]. Abgerufen 24. September 2015, von [http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html](http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html)
+* del Rio Riande, G., Hernández, N., & De León, R. (2018, November). _Manos en la masa (textual): introducción al editatón colaborativo con FromThePage_. III Congreso Internacional de la Asociación de Humanidades Digitales (AAHD). La cultura de los datos, Rosario, Santa Fe. [http://hdl.handle.net/2133/13460](http://hdl.handle.net/2133/13460)
 * Finke, P., & Laszlo, E. (2014). _Citizen Science: Das unterschätzte Wissen der Laien_. oekom verlag.
-* Guzman, A. (2019, September 27). _Challenges in Multilingual Transcription: An Overview of FromThePage and This Panel_. Digital Frontiers Anual Conference, Austin, Texas. [https://digital.library.txstate.edu/handle/10877/9479](https://digital.library.txstate.edu/handle/10877/9479) 
-* Jarnecke, M. (2020). Crowdsource Indexing: Virtual Volunteering Means Big Index Projects Keep on Moving at the Indiana State Archives. _The Hoosier Genealogist: Connections_, _60_(2), 62–68. [https://go.gale.com/ps/i.do?p=AONE&sw=w&issn=10542175&v=2.1&it=r&id=GALE%7CA681543475&sid=googleScholar&linkaccess=abs](https://go.gale.com/ps/i.do?p=AONE&sw=w&issn=10542175&v=2.1&it=r&id=GALE%7CA681543475&sid=googleScholar&linkaccess=abs) 
+* Guzman, A. (2019, September 27). _Challenges in Multilingual Transcription: An Overview of FromThePage and This Panel_. Digital Frontiers Anual Conference, Austin, Texas. [https://digital.library.txstate.edu/handle/10877/9479](https://digital.library.txstate.edu/handle/10877/9479)
+* Jarnecke, M. (2020). Crowdsource Indexing: Virtual Volunteering Means Big Index Projects Keep on Moving at the Indiana State Archives. _The Hoosier Genealogist: Connections_, _60_(2), 62–68. [https://go.gale.com/ps/i.do?p=AONE&sw=w&issn=10542175&v=2.1&it=r&id=GALE%7CA681543475&sid=googleScholar&linkaccess=abs](https://go.gale.com/ps/i.do?p=AONE&sw=w&issn=10542175&v=2.1&it=r&id=GALE%7CA681543475&sid=googleScholar&linkaccess=abs)
 * Okinina, N., Nicolas, L., & Lyding, V. (2018). _Transc&Anno: A Graphical Tool for the Transcription and On-the-Fly Annotation of Handwritten Documents_. 701–705.
-* Terras, M. (2016). Crowdsourcing in the Digital Humanities. In S. Schreibman, R. Siemens, & J. Unsworth (Hrsg.), _A New Companion to Digital Humanities, 2nd Edition_ (S. 420–439). Wiley-Blackwell. [https://doi.org/10.1002/9781118680605.ch29](https://doi.org/10.1002/9781118680605.ch29) 
-* Vrije Universiteit Amsterdam. (o. J.). _Transcription of text_. Digital Humanities Workbench. Abgerufen 9. Mai 2023, von [https://www2.fgw.vu.nl/werkbanken/dighum/source_data/transcription/transcription_text.php](https://www2.fgw.vu.nl/werkbanken/dighum/source_data/transcription/transcription_text.php) 
+* Terras, M. (2016). Crowdsourcing in the Digital Humanities. In S. Schreibman, R. Siemens, & J. Unsworth (Hrsg.), _A New Companion to Digital Humanities, 2nd Edition_ (S. 420–439). Wiley-Blackwell. [https://doi.org/10.1002/9781118680605.ch29](https://doi.org/10.1002/9781118680605.ch29)
+* Vrije Universiteit Amsterdam. (o. J.). _Transcription of text_. Digital Humanities Workbench. Abgerufen 9. Mai 2023, von [https://www2.fgw.vu.nl/werkbanken/dighum/source_data/transcription/transcription_text.php](https://www2.fgw.vu.nl/werkbanken/dighum/source_data/transcription/transcription_text.php)
 
 
 
