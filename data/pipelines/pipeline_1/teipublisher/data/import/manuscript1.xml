@@ -18,7 +18,7 @@
          </titleStmt>
          <publicationStmt>
             <publisher><!-- HINWEIS: Das nachfolgende Element ist obligatorisch und sollte daher ausgefüllt werden! -->
-               <orgName>[Name der publizierenden Institution]</orgName>
+               <orgName>Zentrum für Informationsmodellierung</orgName>
             </publisher>
             <pubPlace>Graz</pubPlace>
             <date type="publication">Oktober 2023</date>
@@ -107,114 +107,121 @@
             <p xml:id="OTP33038493P0"><hi rendition="#red">Hienach volgenn Etlich ertzneÿ vonn
                   mangerlaÿ dingenn zu sammenn gesammet<lb/> Als du danne hernach wol vindenn
                   wurdest<lb/> Ein purgatz Zu der zeÿtt des herbstes furr allenn gebrechenn</hi><lb/>
-               <supplied>N</supplied>ym <term type="ingredient" key="rose_hip">hieffenn</term> die
-               zeÿttig sein vnd mit dem reÿff wol beczwungenn<lb/> vnd nÿm die mit <term type="ingredient" key="pip">kernn</term> vnd mit all vnd derre die in eynem ofenn
+               <supplied>N</supplied>ym <term type="ingredient" key="#rose_hip">hieffenn</term> die
+               zeÿttig sein vnd mit dem reÿff wol beczwungenn<lb/> vnd nÿm die mit <term type="ingredient" key="#pip">kernn</term> vnd mit all vnd derre die in eynem ofenn
                vnd<lb/> lege sie danne herauß vnd laß den windt dar durch genn vnd<lb/> nÿm dann
-               einen moerserr vnd stoß die <term type="ingredient" key="rose_hip">hieffenn</term>
-               vnd misch die mit <term type="ingredient" key="honey">honig</term><lb/> vnd das isse
-               das des morgens nüchternn<lb/> Meßigkeit Ist ein aufenthaltung des ganntzen
-               leichnams . Vnd ein starck<lb/> aller gelider . Vnd ein außderung aller boesenn
-               duenst Wann meßigkeit ist<lb/> ein zustoerung aller lasterr<lb/> Wiltu gut lekuchenn
-               machenn <choice>
+               einen moerserr vnd stoß die <term type="ingredient" key="#rose_hip">hieffenn</term>
+               vnd misch die mit <term type="ingredient" key="#honey">honig</term><lb/> vnd das isse
+               das des morgens nüchternn<lb/>
+               <hi rendition="#red">Meßigkeit</hi> Ist ein aufenthaltung des ganntzen leichnams .
+               Vnd ein starck<lb/> aller gelider . Vnd ein außderung aller boesenn duenst Wann
+               meßigkeit ist<lb/> ein zustoerung aller lasterr<lb/>
+               <hi rendition="#red">Wiltu gut lekuchenn machenn</hi>
+               <choice>
                   <expan>Recipe</expan>
                   <abbr>R</abbr>
-               </choice> zu einem seÿdlein <term type="ingredient" key="honey">hoenigs</term> 1/2
-               lot <term type="ingredient" key="clove">negelleyn</term><lb/> 1/2 lot <term type="ingredient" key="nutmeg_apple">muscat</term> 1/2 lot <term type="ingredient" key="ginger">Ingwerr </term>1/2 lot <term type="ingredient" key="pepper">pfeffers</term> vnd stoß das zu sammenn vnd dar<lb/> auß mach einen <term type="ingredient" key="dough">teig</term> vnd zu <choice>
+               </choice> zu einem seÿdlein <term type="ingredient" key="#honey">hoenigs</term> 1/2
+               lot <term type="ingredient" key="#clove">negelleyn</term><lb/> 1/2 lot <term type="ingredient" key="#nutmeg_apple">muscat</term> 1/2 lot <term type="ingredient" key="#ginger">Ingwerr </term>1/2 lot <term type="ingredient" key="#pepper">pfeffers</term> vnd stoß das zu sammenn vnd dar<lb/> auß mach einen <term type="ingredient" key="#dough">teig</term> vnd zu <choice>
                   <expan>einer</expan>
                   <abbr>ein</abbr>
-               </choice> moß <term type="ingredient" key="honey">honigs</term> nÿm zwirr souil als
-               vor be=<lb/> zeichent stett<lb/> Wiltu ein gutte salsen machen in der fastenn Nÿm
-                  <term type="ingredient" key="horse_radish">merrech</term> vnd <term type="ingredient" key="almond">mandel<lb/> kernn</term> vnd stoß die in einem
-               moerserr vnd thue <term type="ingredient" key="wine">wein</term> dar zu das ist
-               gut<lb/> Die vier kunigreich der werlt <lb/> Orientalis [que est] Calida et
-               humida<lb/> Meridionalis [que est] Calida et sicca<lb/> Occidentalis que est frigida
-               et humida<lb/> Septembrionalis [que est] Frigida et sicca<lb/> Der lentz ist hitzig
-               vnd feucht Die Zeit ist gemischet vnd dem lufft<lb/> geleich . Vnd in der Zeit so
-               wirt bewegt das plut . Vnd in der Zeit ist<lb/> gesund alles das einen linden
-               Complexion vnd naturr ist Als Iunge <term type="ingredient" key="chicken">hunerr</term><lb/> vnd <term type="ingredient" key="chicken_egg">eÿerr</term>
-               doch soltu ir auch nit zu vil niessenn Vnd <term type="ingredient" key="lettuce">lactuken</term> vnd <term type="ingredient" key="verjuice">agreste</term><lb/>
-               vnd <term type="ingredient" key="goat_milk">geÿß milch</term> Es ist kein zeit des
-               ganntzen Iars die nutzerr ist dem<lb/> aderlassenn danne dise zeit vnd ist nutz die
-               bewegung des leÿbes<lb/> vnd die entschliessung des leÿbs vnd padenn Auch ist in
-               diser Zeit<lb/> gut <term type="ingredient" key="medication">Ertzneÿ</term> vnd
-               getranck zu nemmen<lb/> Der Summer Ist hitzig vnd durrr In der Zeit wirt verzert das
-               plut<lb/> vnd wechst in dem menschen die rot Colera . Vnd in der Zeit soll man<lb/>
-               sich huttenn vor allenn dingenn die hitzig vnd durr sein Auch sol man<lb/> sich
-               huttenn vor v̈brigem essenn vnd trinckenn das nit auß geleschet werd<lb/> die
+               </choice> moß <term type="ingredient" key="##honey">honigs</term> nÿm zwirr souil als
+               vor be=<lb/> zeichent stett<lb/><hi rendition="#red"> Wiltu ein gutte salsen machen
+                  in der fastenn</hi> Nÿm <term type="ingredient" key="#horse_radish">merrech</term>
+               vnd <term type="ingredient" key="#almond">mandel<lb/> kernn</term> vnd stoß die in
+               einem moerserr vnd thue <term type="ingredient" key="#wine">wein</term> dar zu das ist gut<lb/>
+               <hi rendition="#red">Die vier kunigreich der werlt</hi>
+               <lb/> Orientalis [que est] Calida et humida<lb/> Meridionalis [que est] Calida et
+               sicca<lb/> Occidentalis que est frigida et humida<lb/> Septembrionalis [que est]
+               Frigida et sicca<lb/>
+               <hi rendition="#red">Der lentz ist hitzig vnd feucht</hi> Die Zeit ist gemischet vnd
+               dem lufft<lb/> geleich . Vnd in der Zeit so wirt bewegt das plut . Vnd in der Zeit
+               ist<lb/> gesund alles das einen linden Complexion vnd naturr ist Als Iunge <term type="ingredient" key="#chicken">hunerr</term><lb/> vnd <term type="ingredient" key="#chicken_egg">eÿerr</term> doch soltu ir auch nit zu vil niessenn Vnd <term type="ingredient" key="#lettuce">lactuken</term> vnd <term type="ingredient" key="#verjuice">agreste</term><lb/> vnd <term type="ingredient" key="#goat_milk">geÿß milch</term> Es ist kein zeit des ganntzen Iars die nutzerr ist dem<lb/>
+               aderlassenn danne dise zeit vnd ist nutz die bewegung des leÿbes<lb/> vnd die
+               entschliessung des leÿbs vnd padenn Auch ist in diser Zeit<lb/> gut <term type="ingredient" key="#medication">Ertzneÿ</term> vnd getranck zu nemmen<lb/>
+               <hi rendition="#red">Der Summer Ist hitzig vnd durrr</hi> In der Zeit wirt verzert
+               das plut<lb/> vnd wechst in dem menschen die rot Colera . Vnd in der Zeit soll
+               man<lb/> sich huttenn vor allenn dingenn die hitzig vnd durr sein Auch sol man<lb/>
+               sich huttenn vor v̈brigem essenn vnd trinckenn das nit auß geleschet werd<lb/> die
                naturlich hitze . Inn der zeÿt des Summers soll man sich gerbrauchen<lb/> aller ding
-               die kalter naturr sein Als <term type="ingredient" key="veal">kalb fleÿsch</term>
-               vnd <term type="ingredient" key="vinegar">essig</term> et <term type="ingredient" key="calabash">cucurbite</term><lb/> et <term type="ingredient" key="chicken">pulli</term> saginati ex farina ordeacea Vnd von der <term type="ingredient" key="ed_jpr_v41_3yb">frucht</term> die eins guttenn<lb/> geschmacks ist Et <term type="ingredient" key="apple">mala</term> atra et malignata similer aerea Vnd die
+               die kalter naturr sein Als <term type="ingredient" key="#veal">kalb fleÿsch</term>
+               vnd <term type="ingredient" key="#vinegar">essig</term> et <term type="ingredient" key="#calabash">cucurbite</term><lb/> et <term type="ingredient" key="#chicken">pulli</term> saginati ex farina ordeacea Vnd von der <term type="ingredient" key="#fruit">frucht</term> die eins guttenn<lb/> geschmacks ist Et <term type="ingredient" key="#apple">mala</term> atra et malignata similer aerea Vnd die
                do sein in den<lb/>
             </p>
          </div>
          <pb xml:id="F33038494" n="UB_Augsburg_Cod_III_1_2_43_059r" facs="#f0002"/>
          <div xml:id="OTP33038494">
-            <p xml:id="OTP33038494P0">Hienach volgt vonn dem kochenn vnd hat gemacht meyster
-               Eberhart Ein koch<lb/> herczog heinrichs zu lands hut Zum Ein salsenn von <term type="ingredient" key="sour_cherry">weichselnn</term> zu machen<lb/> Item Wiltu
-               machen ein gutte salsenn von <term type="ingredient" key="sour_cherry">weichselnn</term> So <del rendition="#s">?</del> thue die <term type="ingredient" key="sour_cherry">weich=<lb/> sell</term> in einen hafen vnd setz die auff ein
-               glut vnd laß sie siedenn vnd<lb/> laß dann wider erkaltenn vnd streich sie durch ein
-               tuch vnd thue sie<lb/> dann wider in den hafenn vnd setz sie auff ein glut vnd laß
-               sie wol sieden<lb/> vnd rurr sie piß sie dick wirt vnd thue dann <term type="ingredient" key="honey">honig</term> dar an vnd geribens<lb/>
-               <term type="ingredient" key="bread">prot</term> vnd <term type="ingredient" key="clove">negellein</term> vnd gut <term type="ingredient" key="spice">gestüp</term> vnd thue sie in ein feßlein sie pleibt<lb/> dir gut drew oder vier
-               iarr<lb/> Ein gutte salsen zu machen in der fastenn<lb/>
+            <p xml:id="OTP33038494P0"><hi rendition="#red">Hienach volgt vonn dem kochenn vnd hat
+                  gemacht meyster Eberhart Ein koch<lb/> herczog heinrichs zu lands hut Zum Ein
+                  salsenn von <term type="ingredient" key="#sour_cherry">weichselnn</term> zu
+                  machen</hi><lb/> Item Wiltu machen ein gutte salsenn von <term type="ingredient" key="#sour_cherry">weichselnn</term> So <del rendition="#s">?</del> thue die <term type="ingredient" key="#sour_cherry">weich=<lb/> sell</term> in einen hafen vnd
+               setz die auff ein glut vnd laß sie siedenn vnd<lb/> laß dann wider erkaltenn vnd
+               streich sie durch ein tuch vnd thue sie<lb/> dann wider in den hafenn vnd setz sie
+               auff ein glut vnd laß sie wol sieden<lb/> vnd rurr sie piß sie dick wirt vnd thue
+               dann <term type="ingredient" key="#honey">honig</term> dar an vnd geribens<lb/>
+               <term type="ingredient" key="#bread">prot</term> vnd <term type="ingredient" key="#clove">negellein</term> vnd gut <term type="ingredient" key="#spice">gestüp</term> vnd thue sie in ein feßlein sie pleibt<lb/> dir gut drew oder vier iarr<lb/>
+               <hi rendition="#red">Ein gutte salsen zu machen in der fastenn</hi><lb/>
                <choice>
                   <expan>Item</expan>
                   <abbr>It</abbr>
-               </choice> Nÿm <term type="ingredient" key="horse_radish">merrich</term> vnd zustoß
-               den in einem moerserr vnd nÿm <term type="ingredient" key="almond">mandelkernn</term><lb/> oder <term type="ingredient" key="nut">nuß</term> vnd
-               zustoß die auch vnd geuß ein <term type="ingredient" key="wine">wein</term> dar an
-                  <term type="ingredient" key="horse_radish">Merrich</term><lb/> bricht den stein
+               </choice> Nÿm <term type="ingredient" key="#horse_radish">merrich</term> vnd zustoß
+               den in einem moerserr vnd nÿm <term type="ingredient" key="#almond">mandelkernn</term><lb/> oder <term type="ingredient" key="#nut">nuß</term> vnd
+               zustoß die auch vnd geuß ein <term type="ingredient" key="#wine">wein</term> dar an
+                  <term type="ingredient" key="#horse_radish">Merrich</term><lb/> bricht den stein
                garr serr wenn man in isset in der kost<lb/>
                <choice>
                   <expan>Item</expan>
                   <abbr>It</abbr>
-               </choice> Ein andre salsenn <term type="ingredient" key="sage">Saluia</term>
-               <term type="ingredient" key="parsley">petrocilius</term>
-               <term type="ingredient" key="mint">menta</term> vnd <term type="ingredient" key="pepper">pfefferr</term> das soll<lb/> man zustossenn mit <term type="ingredient" key="vinegar">essig</term> das ist ein salsen die macht lustig
-               zu essenn<lb/> Item Ein essenn von gebratenn <term type="ingredient" key="garden_pea">arbeissenn</term> Nÿm gesotenn <term type="ingredient" key="garden_pea">arbeÿß</term> vnd<lb/> slach sie durch ein tuch oder durch ein sib vnd slach vil
-                  <term type="ingredient" key="chicken_egg">eÿerr</term><lb/> darzu als vil der
-                  <term type="ingredient" key="garden_pea">arbeiß</term> sein vnd seud es in <term type="ingredient" key="butter">putternn</term> vnd steck es<lb/> an einen spiß vnd
-               brot sie wol vnd beslach sie mit <term type="ingredient" key="chicken_egg">eÿernn</term> vnd mit<lb/>
-               <term type="ingredient" key="spice">kraut</term> vnd gib es hin <choice>
+               </choice> Ein andre salsenn <term type="ingredient" key="#sage">Saluia</term>
+               <term type="ingredient" key="#parsley">petrocilius</term>
+               <term type="ingredient" key="#mint">menta</term> vnd <term type="ingredient" key="#pepper">pfefferr</term> das soll<lb/> man zustossenn mit <term type="ingredient" key="#vinegar">essig</term> das ist ein salsen die macht lustig
+               zu essenn<lb/> Item Ein essenn von gebratenn <term type="ingredient" key="#garden_pea">arbeissenn</term> Nÿm gesotenn <term type="ingredient" key="#garden_pea">arbeÿß</term> vnd<lb/> slach sie durch ein tuch oder durch ein sib vnd slach vil
+                  <term type="ingredient" key="#chicken_egg">eÿerr</term><lb/> darzu als vil der
+                  <term type="ingredient" key="#garden_pea">arbeiß</term> sein vnd seud es in <term type="ingredient" key="#butter">putternn</term> vnd steck es<lb/> an einen spiß vnd
+               brot sie wol vnd beslach sie mit <term type="ingredient" key="#chicken_egg">eÿernn</term> vnd mit<lb/>
+               <term type="ingredient" key="#spice">kraut</term> vnd gib es hin <choice>
                   <expan>versaltz</expan>
                   <abbr>vsaltz</abbr>
-               </choice> es nit<lb/> Ein <term type="ingredient" key="elderberry">holder</term> muß
-               zu machenn Nÿm <term type="ingredient" key="elderberry">holderplut</term> vnd zureib
-               die in <term type="ingredient" key="cow_milk">kuee<lb/> milch</term> vnd nÿm <term type="ingredient" key="flour">mel</term> vnd mach ein mus dar auß das ist gut
-               zu<lb/> dem haubt vnd den sÿnnenn<lb/> Ein gut mus zu machenn So nÿm <term type="ingredient" key="pip">nuß kernn</term> vnd stoß die clein vnd<lb/> streich
-               die durch mit einerr sussenn <term type="ingredient" key="cow_milk">milch</term> vnd
-               mit susser <term type="ingredient" key="white-breadcrumb">semell<lb/> brosem</term>
-               die wol gesotenn sein vnd thue <term type="ingredient" key="clarified_butter">schmaltz</term> dar an genug vnd<lb/> rurr es ab mit <term type="ingredient" key="chicken_egg">eÿer totternn</term> vnd <term type="ingredient" key="spice">wurtz </term>es wol vnd <choice>
+               </choice> es nit<lb/>
+               <hi rendition="#red">Ein <term type="ingredient" key="#elderberry">holder</term> muß
+                  zu machenn</hi> Nÿm <term type="ingredient" key="#elderberry">holderplut</term>
+               vnd zureib die in <term type="ingredient" key="#cow_milk">kuee<lb/> milch</term> vnd
+               nÿm <term type="ingredient" key="#flour">mel</term> vnd mach ein mus dar auß das ist
+               gut zu<lb/> dem haubt vnd den sÿnnenn<lb/> Ein gut mus zu machenn So nÿm <term type="ingredient" key="#pip">nuß kernn</term> vnd stoß die clein vnd<lb/> streich
+               die durch mit einerr sussenn <term type="ingredient" key="#cow_milk">milch</term> vnd
+               mit susser <term type="ingredient" key="#white-breadcrumb">semell<lb/> brosem</term>
+               die wol gesotenn sein vnd thue <term type="ingredient" key="#clarified_butter">schmaltz</term> dar an genug vnd<lb/> rurr es ab mit <term type="ingredient" key="#chicken_egg">eÿer totternn</term> vnd <term type="ingredient" key="#spice">wurtz </term>es wol vnd <choice>
                   <expan>versaltz</expan>
                   <abbr>vsaltz</abbr>
-               </choice> es nit<lb/> Wiltu machen ein gebraten muß vonn <term type="ingredient" key="fish">vischennn</term> So nÿm per <term type="ingredient" key="fish">visch</term><lb/> die peÿß in <term type="ingredient" key="vinegar">essig</term>
-               vnd wurff die in ein <term type="ingredient" key="almond-milk">mandel milch</term>
-               die mit <term type="ingredient" key="rice">reÿß</term><lb/> sein wol gemengt vnd ein
-               wenig <term type="ingredient" key="butter">schmaltz</term> dar an das wellig sej<lb/>
+               </choice> es nit<lb/>
+               <hi rendition="#red">Wiltu machen ein gebraten muß vonn <term type="ingredient" key="#fish">vischennn</term></hi> So nÿm per <term type="ingredient" key="#fish">visch</term><lb/> die peÿß in <term type="ingredient" key="#vinegar">essig</term>
+               vnd wurff die in ein <term type="ingredient" key="#almond-milk">mandel milch</term>
+               die mit <term type="ingredient" key="#rice">reÿß</term><lb/> sein wol gemengt vnd ein
+               wenig <term type="ingredient" key="#butter">schmaltz</term> dar an das wellig sej<lb/>
                versaltz es nit<lb/>
                <choice>
                   <expan>Item</expan>
                   <abbr>It</abbr>
-               </choice> Ein essenn vonn einer <term type="ingredient" key="calf-liver">lebernn eins
-                  kalbs</term> Nÿm ein <term type="ingredient" key="calf-liver">lebernn von
-                  einem<lb/> kalb</term> vnd hack sie clein vnd <term type="ingredient" key="spice">würtz</term> sie wol vnd nÿm dann einen<lb/> hewrigenn <term type="ingredient" key="bacon">speck</term> vnd <term type="ingredient" key="grape">weinperr</term>
-               vnd leg das <term type="ingredient" key="caul-fat">netz</term> furr dich vnd be=<lb/>
-               streich es wol mit <term type="ingredient" key="ed_nlk_qz1_3yb">totternn</term> vnd
-               nÿm dann die <term type="ingredient" key="calf-liver">lebernn</term> vnd slach<lb/>
-               ein <term type="ingredient" key="caul-fat">netz</term> dar veberr vnd <choice>
+               </choice> Ein essenn vonn einer <term type="ingredient" key="#calf-liver">lebernn eins
+                  kalbs</term> Nÿm ein <term type="ingredient" key="#calf-liver">lebernn von
+                  einem<lb/> kalb</term> vnd hack sie clein vnd <term type="ingredient" key="#spice">würtz</term> sie wol vnd nÿm dann einen<lb/> hewrigenn <term type="ingredient" key="#bacon">speck</term> vnd <term type="ingredient" key="#grape">weinperr</term>
+               vnd leg das <term type="ingredient" key="#caul-fat">netz</term> furr dich vnd be=<lb/>
+               streich es wol mit <term type="ingredient" key="#yolk">totternn</term> vnd
+               nÿm dann die <term type="ingredient" key="#calf-liver">lebernn</term> vnd slach<lb/>
+               ein <term type="ingredient" key="#caul-fat">netz</term> dar veberr vnd <choice>
                   <expan>verspeil</expan>
                   <abbr>vspeil</abbr>
                </choice> das wol vnd leg sie auff ein rost<lb/> vnd laß sie pratenn vnd beslach sie
-               halb mit <term type="ingredient" key="ed_nlk_qz1_3yb">totternn</term> die rot sein
+               halb mit <term type="ingredient" key="#yolk">totternn</term> die rot sein
                dar </p>
          </div>
          <pb xml:id="F33038495" n="UB_Augsburg_Cod_III_1_2_43_059v" facs="#f0003"/>
          <div xml:id="OTP33038495">
-            <p xml:id="OTP33038495P0">nach an der andernn seittenn mit grunen <term type="ingredient" key="ed_nlk_qz1_3yb">totternn</term> vnd <term type="ingredient" key="parsley">peterlein</term> vnd <choice>
+            <p xml:id="OTP33038495P0">nach an der andernn seittenn mit grunen <term type="ingredient" key="#yolk">totternn</term> vnd <term type="ingredient" key="#parsley">peterlein</term> vnd <choice>
                   <expan>versaltz</expan>
                   <abbr>vsaltz</abbr>
-               </choice> es nit<lb/> Wiltu machen ein meyschen kuchenn So nÿm auff zehen eÿer vnd
-               zuslach<lb/> sie wol vnd nÿm darzu peterlein vnd rurr es <choice>
+               </choice> es nit<lb/>
+               <hi rendition="#red">Wiltu machen ein meyschen kuchenn</hi> So nÿm auff zehen eÿer
+               vnd zuslach<lb/> sie wol vnd nÿm darzu peterlein vnd rurr es <choice>
                   <expan>vndereinander</expan>
                   <abbr>vndeinand</abbr>
                </choice> vnd nÿm einen<lb/> morserr vnd setz auff ein kolenn vnd thue dar ein einen
@@ -235,19 +242,20 @@
                laß es pachenn vnd <choice>
                   <expan>versalcz</expan>
                   <abbr>vsalcz</abbr>
-               </choice> es nit<lb/> Wiltu machen morchen vmb weihennachtenn So nÿm ein teick<lb/>
-               auß weissem brot vnd auß ein wenig melbs vnd schla eÿer dar an<lb/> vnd mach zwen
-               knebel vnd wurff die in den teick vnd zeuch<lb/> sie darInnen vmb vnd leg sie in ein
-               schmaltz das nit zu heÿß<lb/> sej vnd wenn es ein wenig gepack So nÿm es her wider
-               auß<lb/> vnd schneÿd es dann mitten auff dem knebel auff von <choice>
+               </choice> es nit<lb/>
+               <hi rendition="#red">Wiltu machen morchen vmb weihennachtenn</hi> So nÿm ein
+               teick<lb/> auß weissem brot vnd auß ein wenig melbs vnd schla eÿer dar an<lb/> vnd
+               mach zwen knebel vnd wurff die in den teick vnd zeuch<lb/> sie darInnen vmb vnd leg
+               sie in ein schmaltz das nit zu heÿß<lb/> sej vnd wenn es ein wenig gepack So nÿm es
+               her wider auß<lb/> vnd schneÿd es dann mitten auff dem knebel auff von <choice>
                   <expan>einander</expan>
                   <abbr>einand</abbr>
                </choice>
                <lb/> vnd full es danne mit ein geruntenn eÿernn vnd zeuch es durch<lb/> einen
                lindenn straubenn teick leg es in ein schmaltz vnd laß es<lb/> pachenn vnd setz die
-               morchen dar ein vnd laß sie pachenn<lb/> Wiltu machen ein gestrocztes gepachens So
-               mach ein teÿck von<lb/> eÿtell eÿernn vnd wurtz in wol vnd mach in gel vnd warmm
-                  <supplied cert="low">du</supplied>
+               morchen dar ein vnd laß sie pachenn<lb/><hi rendition="#red"> Wiltu machen ein
+                  gestrocztes gepachens</hi> So mach ein teÿck von<lb/> eÿtell eÿernn vnd wurtz
+               in wol vnd mach in gel vnd warmm <supplied cert="low">du</supplied>
                <note place="foot" n="*">Lesart nach Feyl: dutzend</note>
                <lb/>
                <choice>
@@ -257,8 +265,9 @@
                pack es in einem schmaltz vnd <choice>
                   <expan>versaltz</expan>
                   <abbr>vsaltz</abbr>
-               </choice> nit<lb/> Wiltu machen gut kuchenn vonn eÿernn So nÿm eÿer wie vil<lb/>
-               du wilt vnd zu slach die wol vnd schneid semel funf lot dar<lb/>
+               </choice> nit<lb/>
+               <hi rendition="#red">Wiltu machen gut kuchenn vonn eÿernn</hi> So nÿm eÿer wie
+               vil<lb/> du wilt vnd zu slach die wol vnd schneid semel funf lot dar<lb/>
                <choice>
                   <expan>vnter</expan>
                   <abbr>vnt</abbr>
@@ -281,15 +290,15 @@
             <p xml:id="OTP33038496P0">
                <note place="foot" n="*">Rezept beginnt inmitten des Textes</note>hafen vnd geuß ein
                wasserr dar an vnd deck es zu vnd laß siedenn so wirt<lb/> es sich strecken in dem
-               glaß das man sicht sein fuß vnd flügel vnd<lb/> den ganntzen pöttich so ist es
-               gerecht<lb/> Wiltu machenn dreÿerlej essens an einem visch So nÿm ein hecht
-               vnd<lb/> slach vmb das mittel teÿl ein naß tuch vnd leg in auff ein rost vnd<lb/>
-               saltz in vnd laß in pratenn vnd das foderr teil bespreng mit melb<lb/> vnd begeuß mit
-               schmaltz das heÿß sej vnd das tuch begeuß mit<lb/> heissem wein vnd das hinder teÿl
-               prett sich selbs auff dem rost<lb/> Item vt scito coquantur carnes Recipe aliquas
-               pecias de <note place="foot" n="*Laut Feyl hier: vino">vitro</note> Et pone in
-               ollam<lb/> ad carnes crudas et sic coquantur<lb/> Item ad extrahendum sal de cibo
-               nimis salsato Recipe de farina frumenti in vna<lb/> pecia lini panni et dimitte
+               glaß das man sicht sein fuß vnd flügel vnd<lb/> den ganntzen pöttich so ist es gerecht<lb/>
+               <hi rendition="#red">Wiltu machenn dreÿerlej essens an einem visch</hi> So nÿm ein
+               hecht vnd<lb/> slach vmb das mittel teÿl ein naß tuch vnd leg in auff ein rost
+               vnd<lb/> saltz in vnd laß in pratenn vnd das foderr teil bespreng mit melb<lb/> vnd
+               begeuß mit schmaltz das heÿß sej vnd das tuch begeuß mit<lb/> heissem wein vnd das
+               hinder teÿl prett sich selbs auff dem rost<lb/> Item vt scito coquantur carnes
+               Recipe aliquas pecias de <note place="foot" n="*Laut Feyl hier: vino">vitro</note> Et
+               pone in ollam<lb/> ad carnes crudas et sic coquantur<lb/> Item ad extrahendum sal de
+               cibo nimis salsato Recipe de farina frumenti in vna<lb/> pecia lini panni et dimitte
                bulire intus<lb/> Item Ad appetitum comedendi valet illa salsa facta cum aleo Et
                appone piper<lb/> ad triginta grana et hoc simul tunde Et Ieiunus per duos dies
                comede<lb/> etiam appone de saluia tria folia cum sale modico Vel accipe aleum
@@ -304,7 +313,8 @@
                   <expan>Item</expan>
                   <abbr>It </abbr>
                </choice> Vonn hechtenn wirt garr schoenns vnd lawters gestanndenn<lb/> also das es
-               durchsichtig wirt<lb/> Wiltu einen gutten stockfisch machenn So laß in siedenn als
+               durchsichtig wirt<lb/>
+               <hi rendition="#red">Wiltu einen gutten stockfisch machenn</hi> So laß in siedenn als
                ein kalb<lb/> fleisch vnd laß in ein siedenn auff halben <choice>
                   <reg>wegk</reg>
                   <orig>wogk</orig>
@@ -316,10 +326,10 @@
                   <expan>veber</expan>
                   <abbr>veb</abbr>
                </choice>
-               <lb/> den stock <del rendition="#s">in die</del> visch in die pfannen vnd
-               laß es ein wal oder<lb/> drej thun so ist er gerecht<lb/> Item Hienach volgt wie man
-               ein ganß pratenn soll So laß sie<lb/> vor zwenn oder drej tag wol hungernn das die
-               bösen predenn<lb/> die in ir sein her auß genn vnd soll sie dann nernn mit kornn vnd
+               <lb/> den stock <del rendition="#s">in die</del> visch in die pfannen vnd laß es ein
+               wal oder<lb/> drej thun so ist er gerecht<lb/> Item Hienach volgt wie man ein ganß
+               pratenn soll So laß sie<lb/> vor zwenn oder drej tag wol hungernn das die bösen
+               predenn<lb/> die in ir sein her auß genn vnd soll sie dann nernn mit kornn vnd
                dar<lb/> nach tötte sie vnd prate sie pej dem fewerr vnd du solt dar ein<lb/>
                stossen saluia vnd ander gut wuertz das der safft dardurch gee<lb/> vnd man soll sie
                besprengenn mit wein oder mit essigk das <choice>
@@ -334,8 +344,8 @@
                feuchtigkeit<lb/> vnd wer gesund ist der soll die gans also gebratenn essenn so
                schadt<lb/> sie dester mÿnderr Wer aber krannck ist der soll wenig do von
                essenn<lb/> Wenn man sie kocht vnd seudt in wasser so ist sie vngesund wann dann<lb/>
-               so mügenn die boesen preden nit herauß genn von verhinderung wegen<lb/> des
-               wassers<lb/> Hienach volgt vonn den kuchenspeisen warr zu sie gut sein<lb/>
+               so mügenn die boesen preden nit herauß genn von verhinderung wegen<lb/> des wassers<lb/>
+               <hi rendition="#red">Hienach volgt vonn den kuchenspeisen warr zu sie gut sein</hi><lb/>
                <choice>
                   <expan>Item</expan>
                   <abbr>It </abbr>
@@ -345,21 +355,23 @@
                   <expan>verdewt</expan>
                   <abbr> vdewt</abbr>
                </choice>
-               <lb/> Hirß zu essenn kelt vnd derrt vnd stopffet vnd speist nit wol<lb/> vnd das selb
-               thut auch der habernn vnd spelt<lb/> Gerstenn Blewet vnd keltet vnd speist nit wol
-               vnd schadt allen<lb/> den lewtenn die geprestenn habenn vnd von kalter natur kumbt
-               oder<lb/> das grymmenn in dem leib hat Aber hitzigenn lewtenn vnd die do <choice>
+               <lb/><hi rendition="#red"> Hirß</hi> zu essenn kelt vnd derrt vnd stopffet vnd speist
+               nit wol<lb/> vnd das selb thut auch der habernn vnd spelt<lb/>
+               <hi rendition="#red">Gerstenn</hi> Blewet vnd keltet vnd speist nit wol vnd schadt
+               allen<lb/> den lewtenn die geprestenn habenn vnd von kalter natur kumbt oder<lb/> das
+               grymmenn in dem leib hat Aber hitzigenn lewtenn vnd die do <choice>
                   <expan>gern</expan>
                   <abbr>gn</abbr>
                </choice>
                <lb/> cleiner wurdenn den ist sie gut vnd wenn man sie isset oderr trincket<lb/> mit
                venchel samenn so ist sie gut furr etlichenn gebresten an der<lb/> brust vnd spricht
                Auicenna das gerstenn wasserr schadet dem magen<lb/> der do kalt ist Es ist auch
-               Rittigenn lewtenn garr nuetz<lb/> Linßenn Sein bescheidenlich heÿß vnd derren vnd
-               machenn vil plutz<lb/> vnd so man sie seudt mit essig so erleschenn sie die
-               enzuendung des<lb/> plutz Vnd wer sie dick isset dem machen sie vinsterr awgenn
-               do<lb/> vonn sie vast derrent Auicenna spricht das sie schadenn dem magenn<lb/> vnd
-               blewend vnd stopffend<lb/> Die kichernn Hitzenn vnd plewend vnd machenn pruntzen vnd
+               Rittigenn lewtenn garr nuetz<lb/>
+               <hi rendition="#red">Linßenn</hi> Sein bescheidenlich heÿß vnd derren vnd machenn
+               vil plutz<lb/> vnd so man sie seudt mit essig so erleschenn sie die enzuendung
+               des<lb/> plutz Vnd wer sie dick isset dem machen sie vinsterr awgenn do<lb/> vonn sie
+               vast derrent Auicenna spricht das sie schadenn dem magenn<lb/> vnd blewend vnd stopffend<lb/>
+               <hi rendition="#red">Die kichernn</hi> Hitzenn vnd plewend vnd machenn pruntzen vnd
                machenn<lb/> den frawenn ire Recht zu vier wochenn einß komenn als es sein soll<lb/>
                vnd spricht <choice>
                   <expan>Auerrois</expan>
@@ -371,8 +383,9 @@
                   <abbr>Galien </abbr>
                </choice>spricht das bru von kichernn so<lb/> man sie seudt die ist der lebernn gut
                wann es reinigt sie vnd die<lb/> nÿren do der stein wechst den schleim vnd treibt
-               vil vnflatz<lb/> vonn dem menschenn<lb/> Arbeißenn Brüe hat die selben krafft aber
-               nit als krefftigklichenn<lb/> do vonn so man kichernn nit hat so seudt man arbeiß
+               vil vnflatz<lb/> vonn dem menschenn<lb/>
+               <hi rendition="#red">Arbeißenn</hi> Brüe hat die selben krafft aber nit als
+               krefftigklichenn<lb/> do vonn so man kichernn nit hat so seudt man arbeiß
                kichernn<lb/> oder arbeiß die grun sein so soll man <add place="superlinear">nit</add> essenn wann sie machenn<lb/> em menschenn boese feuchtigkeit </p>
          </div>
       </body>

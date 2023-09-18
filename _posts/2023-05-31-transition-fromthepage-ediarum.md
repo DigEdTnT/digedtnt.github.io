@@ -6,7 +6,7 @@ title: FromThePage → ediarum
 
 categories: [transition, fromthepage, ediarum, xslt, dta-basisformat]
 
-excerpt: Die Transition von FromThePage zu ediarum beinhaltet die Anpassung des TEI/XML-Exports von FromThePage an das DTA-Basisformat, das in ediarum als Standard verwendet wird.
+excerpt: Die Transition von FromThePage zu ediarum beinhaltet die Anpassung des TEI-XML-Exports von FromThePage an das DTA-Basisformat, das in ediarum als Standard verwendet wird.
 
 transitionsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/transition_1/transitiondoc/DigEdTnT_TransitionDoc_FromThePage-ediarum.pdf
 
@@ -20,7 +20,7 @@ last_modified_at: 2023-07-11
 
 # Allgemeine Beschreibung
 
-Die von FromThePage exportierten TEI/XML-Dokumente sollen nun für die weitere Bearbeitung in ediarum an die Grundstruktur des DTA-Basisformat (DTABf) angepasst werden. Auch wenn für die Verarbeitung in ediarum kein valides DTABf-XML erzeugt werden muss, wird mit dem XSLT der vorliegenden Transition versucht, dem DTA-Basisformat in so vielen Bereichen wie möglich gerecht zu werden.
+Die von  _FromThePage_ exportierten TEI-XML-Dokumente sollen nun für die weitere Bearbeitung in _ediarum_ an die Grundstruktur des DTA-Basisformat (DTABf) angepasst werden. Auch wenn für die Verarbeitung in _ediarum_ kein valides DTABf-XML erzeugt werden muss, wird mit dem XSLT der vorliegenden Transition versucht, dem DTA-Basisformat in so vielen Bereichen wie möglich gerecht zu werden.
 
 
 ## Voraussetzungen
@@ -39,7 +39,7 @@ Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kom
 
 * Oxygen Editor
 
-<span style="font-size:0.8rem;">→ <u>Hinweis:</u> Natürlich wäre es auch ohne Oxygen Editor möglich, über diverse frei zugängliche Online-Plattformen eine XSL-Transformation durchzuführen. Da aber einerseits für ediarum in dieser Pipeline ohnehin Oxygen benötigt wird und außerdem bei Online-Transformationen auch rechtliche Aspekte bei der Datenverarbeitung zu berücksichtigen wären, wird nachfolgend das Transformationsszenario im Oxygen Editor beschrieben.</span>
+<span style="font-size:0.8rem;">→ <u>Hinweis:</u> Natürlich wäre es auch ohne Oxygen Editor möglich, über diverse frei zugängliche Online-Plattformen eine XSL-Transformation durchzuführen. Da aber einerseits für _ediarum_ in dieser Pipeline ohnehin Oxygen benötigt wird, wird nachfolgend das Transformationsszenario im Oxygen Editor beschrieben.</span>
 
 
 # Möglichkeiten & Grenzen
@@ -49,21 +49,21 @@ Der Übergang von einem Tool zu einem anderen lässt sich verschieden gestalten.
 
 ## Stärken
 
-* Nicht valider TEI/XML-Export von FromThePage wird in anerkannten Standard (DTA-Basisformat) überführt
+* Nicht valider TEI-XML-Export von  _FromThePage_ wird in anerkannten Standard (DTA-Basisformat) überführt
 
 
 ## Herausforderungen & Probleme
 
 * Einschränkung hinsichtlich der Möglichkeiten an Metadaten-Elementen im DTA-Basisformat
 * Entscheidung für einen DTA-konformen XML-Output führt zu Informationsverlust
-* Verpflichtende Attribute bei Elementen gemäß DTABf, die zuvor in FromThePage nicht hinzugefügt wurden, führen zu einem nicht validen Dokument
+* Verpflichtende Attribute bei Elementen gemäß DTABf, die zuvor in  _FromThePage_ nicht hinzugefügt wurden, führen zu einem nicht validen Dokument
 
 
 # XSL Transformation
 
-Für eine Transformation des aus FromThePage exportierten TEIs in ein für ediarum weiterverarbeitbares Dokument, haben wir für unser [Beispielprojekt](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1) die Daten transformiert. Wie unser Transformationsszenario genau funktioniert, ist dem Punkt [XSLT Dokumentation](#xslt-dokumentation) zu entnehmen. Dieses kann für andere Projekte angepasst und weiterverwendet werden.
+Für eine Transformation des aus  _FromThePage_ exportierten TEIs in ein für _ediarum_ weiterverarbeitbares Dokument, haben wir für unser [Beispielprojekt](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1) die Daten transformiert. Wie unser Transformationsszenario genau funktioniert, ist dem Punkt [XSLT Dokumentation](#xslt-dokumentation) zu entnehmen. Dieses kann für andere Projekte angepasst und weiterverwendet werden.
 
-Hier ist die [XSLT-Ressource](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/ftp_export_to_dta.xsl) für unsere FromThePage-ediarum-Transformation.
+Hier ist die [XSLT-Ressource](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/ftp_export_to_dta.xsl) für unsere  FromThePage-ediarum-Transformation.
 
 Eine Kurzanleitung für das Einrichten eines Transformationsszenarios findet sich [hier](https://digedtnt.github.io/xsl-transformation).
 
@@ -90,7 +90,7 @@ Dies erzeugt im transformierten XML die entsprechende Einbindung der XML-Modelle
 
 ## 2. Transformation der Metadaten
 
-Auf Grundlage eines als gültig validierten [DTA-Metadatenbeispiels](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/dta_example.xml) wurden schließlich die Metadaten des FromThePage-Exports in eine DTABf-konforme Struktur übertragen.
+Auf Grundlage eines als gültig validierten [DTA-Metadatenbeispiels](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/transition_1/data/dta_example.xml) wurden schließlich die Metadaten des  _FromThePage_-Exports in eine DTABf-konforme Struktur übertragen.
 
 ### Transformationsarten
 
@@ -98,10 +98,10 @@ Bei der Übertragung der Metadaten wurden verschiedene Maßnahmen gesetzt:
 
 * **Übertragung von Inhalten:** Nach einer Gegenüberstellung des exportierten TEIs und dem DTABf-Beispiel wurden zuerst Inhalte wie Titel, Autor, Lizenzen sowie die Beschreibung des Manuskripts übernommen und in entsprechende zulässige bzw. obligatorische [Elemente im Header-Bereich](https://www.deutschestextarchiv.de/doku/basisformat/uebersichtHeader.html) überführt.
     {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/ftp-to-dta.png" description="Übertragung von Elementen in die DTABf-Struktur" %}
-* **Einfügen von Platzhaltern:** Einige obligatorische Felder im DTABf-XML, für die es keine entsprechenden Metadatenbeschreibungen im TEI-Export von FromThePage gibt, wurden schließlich mit beschreibenden Platzhaltern in eckigen Klammern gefüllt. Diese erfordern noch eine projektspezifische Anpassung.
+* **Einfügen von Platzhaltern:** Einige obligatorische Felder im DTABf-XML, für die es keine entsprechenden Metadatenbeschreibungen im TEI-Export von  _FromThePage_ gibt, wurden schließlich mit beschreibenden Platzhaltern in eckigen Klammern gefüllt. Diese erfordern noch eine projektspezifische Anpassung.
     {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/placeholder.png" description="Einsatz von Platzhaltern, die nach der Transformation angepasst werden müssen" %}
-* **Entfernen von (vorerst) irrelevanten Elementen:** Einige der Elemente im FromThePage-Export wurden außerdem ignoriert und nicht in das neue DTA-XML überführt, da diese im Zuge der Edition eine unwesentliche Rolle spielen oder ohnehin am Ende des Projekts noch ergänzt werden müssen. Als nicht weiter relevante Information im TEI-Export von FromThePage wurden zum Beispiel Angaben zu Änderungen während der Transkription identifiziert. Aber auch die in den `<respStmt>` enthaltenen Mitarbeitenden wurden nicht übernommen, da der teiHeader ohnehin am Ende des Projektes noch einmal überarbeitet werden muss.
-* **Hinzufügen von speziellen Inhalten für ediarum:** Damit es beim Importieren der XML-Dokumente in ediarum zu keinen Schwierigkeiten kommt, ist es außerdem notwendig, dass mit dem XSLT im `<TEI>`-Element ein Attribut zur Namespace-Deklaration von telota sowie ein weiteres Attribut zur Dokumententypbestimmung eingefügt werden. In den für den ediarum-Import transformierten XML-Dokumenten sieht das `<TEI>`-Element letztlich folgend aus:
+* **Entfernen von (vorerst) irrelevanten Elementen:** Einige der Elemente im  _FromThePage_-Export wurden außerdem ignoriert und nicht in das neue DTA-XML überführt, da diese im Zuge der Edition eine unwesentliche Rolle spielen oder ohnehin am Ende des Projekts noch ergänzt werden müssen. Als nicht weiter relevante Information im TEI-Export von  _FromThePage_ wurden zum Beispiel Angaben zu Änderungen während der Transkription identifiziert. Aber auch die in den `<respStmt>` enthaltenen Mitarbeitenden wurden nicht übernommen, da der teiHeader ohnehin am Ende des Projektes noch einmal überarbeitet werden muss.
+* **Hinzufügen von speziellen Inhalten für ediarum:** Damit es beim Importieren der XML-Dokumente in _ediarum_ zu keinen Schwierigkeiten kommt, ist es außerdem notwendig, dass mit dem XSLT im `<TEI>`-Element ein Attribut zur Namespace-Deklaration von telota sowie ein weiteres Attribut zur Dokumententypbestimmung eingefügt werden. In den für den _ediarum_-Import transformierten XML-Dokumenten sieht das `<TEI>`-Element letztlich folgend aus:
     ```xml
     <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:telota="http://www.telota.de" xml:id="dtabf" telota:doctype="document">
     ```
@@ -111,15 +111,15 @@ Bei der Übertragung der Metadaten wurden verschiedene Maßnahmen gesetzt:
 
 Die Überführung der Metadaten in das Schema des DTA-Basisformat ergab außerdem Schwierigkeiten, deren Lösung nicht zu einem validen Output führt. Diesen Kompromiss muss man aber mitunter eingehen, um keine bereits vorhandenen Metadaten zu verlieren.
 
-* **Fehlende Elemente:** Würde man sich strikt an das DTABf-Schema halten, müsste man auf bereits in FromThePage hinzugefügte Metadaten verzichten. was zu einem Datenverlust führen würde. So gibt es beispielsweise weder das `<history>`-Element zur Beschreibung der geschichtlichen Hintergründe wie Herkunft und Entstehung eines Manuskripts im DTA-Basisformat, noch gibt es ein anderes passendes Element, in das die historischen Metadaten übertragen werden können. Im Rahmen dieses Projekts wurde daher entschieden, das `<history>`-Element dennoch beizubehalten, auch wenn dies zu einem nicht validen Output führt. \
+* **Fehlende Elemente:** Würde man sich strikt an das DTABf-Schema halten, müsste man auf bereits in  _FromThePage_ hinzugefügte Metadaten verzichten. was zu einem Datenverlust führen würde. So gibt es beispielsweise weder das `<history>`-Element zur Beschreibung der geschichtlichen Hintergründe wie Herkunft und Entstehung eines Manuskripts im DTA-Basisformat, noch gibt es ein anderes passendes Element, in das die historischen Metadaten übertragen werden können. Im Rahmen dieses Projekts wurde daher entschieden, das `<history>`-Element dennoch beizubehalten, auch wenn dies zu einem nicht validen Output führt. \
     {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/history-metadata.png" description="Beibehalten von Elementen, die im DTA-Basisformat unzulässig sind" %}
-* **Einbindung der Faksimiles:** Im DTA-Basisformat sind keine `<facsimile>`-Elemente zulässig. Es gibt zwar die Möglichkeit, die `<pb>`-Elemente zu Beginn jeder transkribierten Seite mit einem `@facs`-Attribut zu ergänzen, der Wert dieses Attributs darf jedoch keine URL sein. Der Wert des ersten `@facs` in einem `<pb>` muss gemäß Schematron “#f0001” entsprechen. Da es für unser Projekt aber im weiteren Verlauf wichtig ist, die URLs, die zu den Bildressourcen führen, beizubehalten, sieht unsere Transformation die Aufnahme von `<facsimile>`-Elementen vor. Die im FromThePage-Export enthaltenen Links auf die Bilddateien (dort im `@facs`-Attribut des `<pb>`-Elements) finden sich im transformierten DTABf-XML im `@target`-Attribut der `<facsimile>`-Elemente wieder.  \
+* **Einbindung der Faksimiles:** Im DTA-Basisformat sind keine `<facsimile>`-Elemente zulässig. Es gibt zwar die Möglichkeit, die `<pb>`-Elemente zu Beginn jeder transkribierten Seite mit einem `@facs`-Attribut zu ergänzen, der Wert dieses Attributs darf jedoch keine URL sein. Der Wert des ersten `@facs` in einem `<pb>` muss gemäß Schematron “#f0001” entsprechen. Da es für unser Projekt aber im weiteren Verlauf wichtig ist, die URLs, die zu den Bildressourcen führen, beizubehalten, sieht unsere Transformation die Aufnahme von `<facsimile>`-Elementen vor. Die im  _FromThePage_-Export enthaltenen Links auf die Bilddateien (dort im `@facs`-Attribut des `<pb>`-Elements) finden sich im transformierten DTABf-XML im `@target`-Attribut der `<facsimile>`-Elemente wieder.  \
     {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/facsimile.png" description="Einbinden von Facsimiles" %} \
-    → Auch wenn das Einbinden der `<facsimile>`-Elemente zu einem nicht validen XML führt, lässt sich das Dokument ohne Probleme mit ediarum weiterverarbeiten. Es wäre aber auch möglich, das DTABf um `<facsimile>`-Elemente oder andere projektspezifisch relevante Elemente zu erweitern.
+    → Auch wenn das Einbinden der `<facsimile>`-Elemente zu einem nicht validen XML führt, lässt sich das Dokument ohne Probleme mit _ediarum_ weiterverarbeiten. Es wäre aber auch möglich, das DTABf um `<facsimile>`-Elemente oder andere projektspezifisch relevante Elemente zu erweitern.
 
 ## 3. Transformation des transkribierten Manuskripts
 
-Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in FromThePage teilweise ausgezeichneten Manuskript-Transkriptionen in eine DTABf-konforme Struktur zu übertragen. Dafür soll nun zuerst eine kurze Übersicht darüber gegeben werden, welche Annotationen bei unserem [Beispielprojekt](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1) bei der Transkription über [FromThePage](https://digedtnt.github.io/fromthepage/) bereits erfolgt sind, ob bzw. welche Entsprechung es dafür im DTA-Basisformat gibt, und mit welchen Problemen man bei der Transformation konfrontiert ist.
+Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in  _FromThePage_ teilweise ausgezeichneten Manuskript-Transkriptionen in eine DTABf-konforme Struktur zu übertragen. Dafür soll nun zuerst eine kurze Übersicht darüber gegeben werden, welche Annotationen bei unserem [Beispielprojekt](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1) bei der Transkription über [FromThePage](https://digedtnt.github.io/fromthepage/) bereits erfolgt sind, ob bzw. welche Entsprechung es dafür im DTA-Basisformat gibt, und mit welchen Problemen man bei der Transformation konfrontiert ist.
 
 <div class="table-responsive">
 <table class="table">
@@ -301,7 +301,7 @@ Der wichtigste Abschnitt unserer Transformation besteht letztlich darin, die in 
 
 
 Wie aus der Tabelle ersichtlich wird, können die meisten Elemente entweder ohne weitere Bearbeitung übernommen werden oder benötigen nur geringe Anpassungen, um dem DTA-Basisformat zu entsprechen.
-Nachfolgend eine transkribierte und von FromThePage als TEI exportierte Seite von einem der Manuskripte:
+Nachfolgend eine transkribierte und von  _FromThePage_ als TEI exportierte Seite von einem der Manuskripte:
 ```xml
 <pb xml:id="F33038495" n="3"
 facs="http://fromthepage.com/image-service/33038495/full/full/0/default.jpg"/>
@@ -442,9 +442,9 @@ Bei der Transformation können einige Elemente in ihrer ursprünglichen Form erh
 </div>
 ```
 
-Die einzigen beiden Elemente, die in unserem Projekt im Textbereich für Probleme sorgen, sind Hinzufügungen (`<add>`) sowie Tilgungen (`<del>`) durch den/die ursprüngliche:n Schreiber:in. Denn während diese bei der Transkription in FromThePage keine Attribute erhalten haben, sind für das DTA-Basisformat Angaben zur Lokalisierung der Hinzufügung bzw. zur Art der Tilgung (Durchstreichen, Überschreiben, Radieren oder Auskratzen etc.) obligatorisch.
+Die einzigen beiden Elemente, die in unserem Projekt im Textbereich für Probleme sorgen, sind Hinzufügungen (`<add>`) sowie Tilgungen (`<del>`) durch den/die ursprüngliche:n Schreiber:in. Denn während diese bei der Transkription in  _FromThePage_ keine Attribute erhalten haben, sind für das DTA-Basisformat Angaben zur Lokalisierung der Hinzufügung bzw. zur Art der Tilgung (Durchstreichen, Überschreiben, Radieren oder Auskratzen etc.) obligatorisch.
 {% include image.html url="../data/pipelines/pipeline_1/transition_1/img/del-add.png" description="Probleme bei der Überführung einzelner Elemente ins DTA-Basisformat" %}
-Da wir über diese Informationen aber nicht verfügen und daher die Manuskripte erneut durchgehen müssten, belassen wir das transformierte XML vorerst ohne Attribute und widmen uns diesem Problem bei der Annotation in ediarum.
+Da wir über diese Informationen aber nicht verfügen und daher die Manuskripte erneut durchgehen müssten, belassen wir das transformierte XML vorerst ohne Attribute und widmen uns diesem Problem bei der Annotation in _ediarum_.
 
-→ Die semantischen Tags, die im Rahmen der [Subject-Linking-Exploration in FromThePage](https://digedtnt.github.io/fromthepage/#4--bearbeitung-der-dokumente) hinzugefügt wurden, haben wir im Zuge der Transformation wieder entfernt, da wir einerseits die semantische Annotation ausschließlich über ediarum vornehmen wollen und in unserem Projekt zudem nicht die in FromThePage dafür angelegten `<rs>`-Elemente genutzt werden sollen.
+→ Die semantischen Tags, die im Rahmen der [Subject-Linking-Exploration in FromThePage](https://digedtnt.github.io/fromthepage/#4--bearbeitung-der-dokumente) hinzugefügt wurden, haben wir im Zuge der Transformation wieder entfernt, da wir einerseits die semantische Annotation ausschließlich über _ediarum_ vornehmen wollen und in unserem Projekt zudem nicht die in  _FromThePage_ dafür angelegten `<rs>`-Elemente genutzt werden sollen.
 

@@ -1,11 +1,11 @@
 # Allgemeine Beschreibung
 
-ediarum ist eine seit 2012 entwickelte digitale Arbeits- und Publikationsumgebung, die aus mehreren Softwarekomponenten besteht und im Grunde ein Werkzeugkasten aus verschiedenen auf TEI-Standard basierenden Modulen ist. Damit bietet ediarum eine Schnittstelle zwischen Editionsumgebung, XML-Datenbank und Rechercheportal, wobei die Kernfähigkeit jedenfalls in der Aufbereitung von XML-Dateien besteht. Die digitale Arbeitsumgebung basiert auf einer eXist-db und ermöglicht nicht nur die Transkription von Manuskripten und Drucken, sondern vor allem auch die TEI-konforme Annotation und Erstellung von Text- und Sachapparaten sowie Registern.
+_ediarum_ ist eine seit 2012 entwickelte digitale Arbeits- und Publikationsumgebung, die aus mehreren Softwarekomponenten besteht und im Grunde ein Werkzeugkasten aus verschiedenen auf TEI-Standard basierenden Modulen ist. Damit bietet _ediarum_ eine Schnittstelle zwischen Editionsumgebung, XML-Datenbank und Rechercheportal, wobei die Kernfähigkeit jedenfalls in der Aufbereitung von XML-Dateien besteht. Die digitale Arbeitsumgebung basiert auf einer eXist-db und ermöglicht nicht nur die Transkription von Manuskripten und Drucken, sondern vor allem auch die TEI-konforme Annotation und Erstellung von Text- und Sachapparaten sowie Registern.
 
-ediarum ist als ein Add-On für Oxygen konzipiert und seit 2015 gibt es eine generalisierte Eingabeoberfläche. Zu beachten ist, dass ediarum keine Plug-and-Play-Software ist, da immer ein:e DH-Entwickler:in für die Implementierung und den Betrieb von ediarum nötig ist. In laufenden Projekten werden nicht immer alle Module, sondern mitunter auch nur Frameworks eingesetzt.
+_ediarum_ ist als ein Add-On für Oxygen konzipiert und seit 2015 gibt es eine generalisierte Eingabeoberfläche. Zu beachten ist, dass _ediarum_ keine Plug-and-Play-Software ist, da immer ein:e DH-Entwickler:in für die Implementierung und den Betrieb von _ediarum_ nötig ist. In laufenden Projekten werden nicht immer alle Module, sondern mitunter auch nur Frameworks eingesetzt.
 
 <div class="essence">
-Der größte Vorteil von ediarum liegt darin, dass Transkripte sehr benutzerfreundlich mit TEI-konformem XML in einer gut individualisierbaren Editionsumgebung ausgezeichnet werden können. Die Einrichtung von projektspezifischen Bearbeitungsmöglichkeiten bzw. Buttons erfordert aber jedenfalls Programmierkenntnisse oder die Betreuung durch eine:n DH-Entwickler:in. Die Suchmöglichkeiten im Autormodus des Register-Moduls sind außerdem leider auf wortwörtliche Eingaben beschränkt, die von den Editionsmitarbeitenden eine genaue Kenntnis der Daten verlangen.
+Der größte Vorteil von <span style="font-style:italic">ediarum</span> liegt darin, dass Transkripte sehr benutzerfreundlich mit TEI-konformem XML in einer gut individualisierbaren Editionsumgebung ausgezeichnet werden können. Die Einrichtung von projektspezifischen Bearbeitungsmöglichkeiten bzw. Buttons erfordert aber jedenfalls Programmierkenntnisse oder die Betreuung durch eine:n DH-Entwickler:in. Die Suchmöglichkeiten im Autormodus des Register-Moduls sind außerdem leider auf wortwörtliche Eingaben beschränkt, die von den Editionsmitarbeitenden eine genaue Kenntnis der Daten verlangen.
 </div>
 
 <span style="font-size:0.8rem;"><u>Hinweis:</u> Die nachfolgenden Ausführungen beschränken sich auf die Module ediarum.BASE.edit und ediarum.REGISTER.edit.</span>
@@ -129,7 +129,7 @@ Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolg
 
 # Einrichtung & Erste Schritte
 
-Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf für die Annotation mit ediarum beschrieben werden. Die dafür verwendeten Daten wurden bereits mit dem Tool [FromThePage](https://digedtnt.github.io/fromthepage/) transkribiert und daraufhin für die weitere Bearbeitung vorbereitet (siehe [Transition](https://digedtnt.github.io/transition-fromthepage-ediarum/)). In dieser Kurzanleitung soll nun mit ediarum die weitere Annotation und Indexierung der Kochrezepte des Beispielprojektes erfolgen und beschrieben werden.
+Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf für die Annotation mit _ediarum_ beschrieben werden. Die dafür verwendeten Daten wurden bereits mit dem Tool [FromThePage](https://digedtnt.github.io/fromthepage/) transkribiert und daraufhin für die weitere Bearbeitung vorbereitet (siehe [Transition](https://digedtnt.github.io/transition-fromthepage-ediarum/)). In dieser Kurzanleitung soll nun mit _ediarum_ die weitere Annotation und Indexierung der Kochrezepte des Beispielprojektes erfolgen und beschrieben werden.
 
 
 
@@ -146,19 +146,19 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
       ```terminal
       docker run -it -d -p 8080:8080 -p 8443:8443 --name exist existdb/existdb:5.2.0
       ```
-      → Die aktuellste eXist-Version ist 6.2.0 (Stand Mai 2023) - zum Zeitpunkt dieses Projekts ist ediarum jedoch nur bis zur Version 5.3.1 kompatibel. Wir haben uns für 5.2.0 entschieden, um mit einer stabilen Version zu arbeiten.
+      → Die aktuellste eXist-Version ist 6.2.0 (Stand Mai 2023) - zum Zeitpunkt dieses Projekts ist _ediarum_ jedoch nur bis zur Version 5.3.1 kompatibel. Wir haben uns für 5.2.0 entschieden, um mit einer stabilen Version zu arbeiten.
     * Wenn wir nun Docker Desktop erneut öffnen, finden wir dort einen exist-Container.
       ![eXist-db in Docker Desktop](../img/docker-existdb.PNG)
       Mit einem Klick auf den Localhost-Port (8080:8080) öffnet sich eXist im Browser.
       ![eXist im Browser](../img/existdb-dashboard.PNG)
     * Im Dashboard können wir uns nun als "admin" ohne Passwort-Eingabe anmelden.
       ![Dashboard von eXist im Browser](../img/existdb-dashboard.PNG)
-* **Installation von ediarum.DB in eXist-db:** Um später unser eigenes Projekt generieren zu können, müssen wir nun ediarum in eXist einrichten.
+* **Installation von ediarum.DB in eXist-db:** Um später unser eigenes Projekt generieren zu können, müssen wir nun _ediarum_ in eXist einrichten.
     * Dafür laden wir aus dem [ediarum-Github-Repository](https://github.com/ediarum/ediarum.DB/releases) die aktuellste Version von ediarum.DB als XAR-Datei herunter.
       ![Download von ediarum auf Github](../img/github-ediarum.PNG)
     * Im eXist-Dashboard können wir nun über den Package Manager die XAR-Datei hochladen.
       ![Upload von ediarum im Package Manager von eXist](../img/ediarum-upload.PNG)
-      → Nach erfolgreichem Upload finden wir nun eine eigene Kachel mit der ediarum-App, die ab sofort außerdem auch im Dashboard über einen Link verfügbar ist.
+      → Nach erfolgreichem Upload finden wir nun eine eigene Kachel mit der _ediarum_-App, die ab sofort außerdem auch im Dashboard über einen Link verfügbar ist.
       ![ediarum-Applikation in eXist](../img/ediarum-app.PNG)
 * **Installation des Oxygen XML-Editors:** Abschließend fehlt nur mehr der Download und die Installation des [Oxygen XML Author](https://www.oxygenxml.com/documentation.html) - und zwar mindestens in Version 20.1. Alternativ kann auch der Oxygen XML Editor installiert bzw. genutzt werden.
 
@@ -166,23 +166,23 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 ## 2. Einrichtung des Projekts
 
 * Zuerst wollen wir in unserer eXist-Datenbank für unsere Edition ein Projekt mit standardisierter Ablagestruktur sowie bestimmten Settings einrichten. Damit diese Standards korrekt angelegt werden, nutzen wir die ediarum.DB-App.
-* Wir klicken also zunächst auf ediarum in unserem eXist-Dashboard.
+* Wir klicken also zunächst auf "ediarum" in unserem eXist-Dashboard.
   ![ediarum.DB in eXist](../img/ediarum-dashboard.PNG)
-* Die ediarum-App öffnet sich nun in einem weiteren Fenster im Browser, wo wir im Menü zu **Verwaltung > Projekte** navigieren und dort im Feld "Neues Projekt" einen Projektnamen für unsere Edition eingeben und abschließend auf "Anlegen" klicken.
+* Die _ediarum_-App öffnet sich nun in einem weiteren Fenster im Browser, wo wir im Menü zu **Verwaltung > Projekte** navigieren und dort im Feld "Neues Projekt" einen Projektnamen für unsere Edition eingeben und abschließend auf "Anlegen" klicken.
   ![Einrichten eines Projektes in der ediarum-App](../img/ediarum-project-setup.PNG)
   → Es dürfen keine Umlaute, Leer- oder Sonderzeichen verwendet werden.
-* Außerdem möchten wir für unser Projekt in der Datenbank noch ein ediarum-Register aktivieren. In der geöffneten ediarum-App wählen wir dafür wieder unser Projekt aus und gelangen so auf die Projekt-Übersichtsseite.
+* Außerdem möchten wir für unser Projekt in der Datenbank noch ein _ediarum_-Register aktivieren. In der geöffneten _ediarum_-App wählen wir dafür wieder unser Projekt aus und gelangen so auf die Projekt-Übersichtsseite.
   ![Projektkonfiguration in der ediarum-App](../img/ediarum-register.PNG)
   Dort legen wir ein neues Register an, indem wir neben **Neues Register** auf "Aktivieren" klicken. Für unser Beispielprojekt wählen wir hier "Sachbegriffe" aus dem Drop-Down-Menü des Ediarum-Registers und wählen bei Registeraufbau die Option "Register in einer Datei".
   ![Einrichten eines projektspezifischen Registers](../img/ediarum-register-setup.PNG)
-* Wir können nun als Admin mit dem admin-Benutzernamen (ohne Passwort-Eingabe) eine Verbindung unseres Oxygen-Editors zur eXist-db herstellen. Für unsere Projektmitarbeitenden wollen wir aber noch weitere Benutzer:innen in der ediarum-App anlegen. Dafür gehen wir wieder auf die Übersichtsseite unseres Projekts und wählen in dem Menüpunkt **Projektkonfiguration > Benutzer** aus. Dort haben wir bereits *zim-digedtnt* als User angelegt und fügen jetzt noch *zim-student* als weiteres Projektmitglied hinzu.
+* Wir können nun als Admin mit dem admin-Benutzernamen (ohne Passwort-Eingabe) eine Verbindung unseres Oxygen-Editors zur eXist-db herstellen. Für unsere Projektmitarbeitenden wollen wir aber noch weitere Benutzer:innen in der _ediarum_-App anlegen. Dafür gehen wir wieder auf die Übersichtsseite unseres Projekts und wählen in dem Menüpunkt **Projektkonfiguration > Benutzer** aus. Dort haben wir bereits *zim-digedtnt* als User angelegt und fügen jetzt noch *zim-student* als weiteres Projektmitglied hinzu.
   ![Anlegen von Projektmitgliedern in der ediarum-App](../img/ediarum-user.PNG)
   → Damit auch andere Benutzer:innen bzw. Projektmitarbeitende die Register nutzen können, müssen wir im User Manager der eXist-db entsprechende Zugriffsrechte vergeben. Dafür gehen wir zum eXist-db-Dashboard, wählen dort **User Manager** und klicken jenen Benutzernamen an, dem wir Zugriffsrechte einräumen wollen.
   ![User-Manager in der eXist-db](../img/user-manager.PNG)
   Am Ende der User-Ansicht gibt es ein Gruppenverwaltungssystem, wo wir unserem/unserer Benutzer:in auch Zugriff auf die Gruppe "oxygen" gewähren sollten, wenn wir unseren Projektmitarbeitenden Zugriff auf die erstellten Projekt-Register einräumen wollen.
   ![Einstellung der Zugriffsrechte für Benutzer:innen](../img/user-permissions.PNG)
   Damit hat der/die ausgewählte Projektmitarbeitende nun ebenfalls Zugriff auf das zuvor angelegte Register und kann dieses bei der Annotation nutzen.
-* Im nächsten Schritt stellen wir im Oxygen XML Author eine Verbindung zu unserem soeben eingerichteten Projekt her, um alle in ediarum enthaltenen Funktionalitäten verfügbar zu machen. Wir öffnen dafür den Oxygen XML Author und wählen im Menü **Optionen > Einstellungen**, um anschließend in der linken Spalte "Datenquellen" anzuklicken und unter der Tabelle zu den Verbindungen auf das Plus zu klicken. Dort geben wir nun unsere Projektdaten an.
+* Im nächsten Schritt stellen wir im Oxygen XML Author eine Verbindung zu unserem soeben eingerichteten Projekt her, um alle in _ediarum_ enthaltenen Funktionalitäten verfügbar zu machen. Wir öffnen dafür den Oxygen XML Author und wählen im Menü **Optionen > Einstellungen**, um anschließend in der linken Spalte "Datenquellen" anzuklicken und unter der Tabelle zu den Verbindungen auf das Plus zu klicken. Dort geben wir nun unsere Projektdaten an.
   ![Erstellen einer Datenverbindung zu unserer ediarum-Datenbank](../img/oxygen-author.PNG)
   Ob unsere Datenbankverbindung erfolgreich war, können wir herausfinden, indem wir im Menü **Fenster > Ansicht zeigen > Datenquellen Explorer** auswählen. Dort sollte unser Projekt mit der darin angelegten Ordnerstruktur aufscheinen.
   ![Erfolgreiche Datenbank-Verbindung im Oxygen XML Author](../img/oxygen-dataexplorer.PNG)
@@ -190,11 +190,11 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
   ![Projektspezifischen Ordner erstellen und Dateien importieren](../img/dataexplorer-manuscripts.PNG)
   Wenn wir nun alle Verzeichnisse ausklappen, sieht die Ordnerstruktur und der Ordnerinhalt folgendermaßen aus:
   ![Projektspezifische Datenstruktur](../img/dataexplorer-new-project.PNG)
-* Als nächstes richten wir uns nun noch die grundlegenden ediarum-Frameworks in unserer Arbeitsumgebung ein. Dafür legen wir zuerst einen Ordner für diese Frameworks auf unserem lokalen Dateisystem an und legen dort die GitHub-Repositorien [ediarum.BASE.edit](https://github.com/ediarum/ediarum.BASE.edit/releases) und [ediarum.REGISTER.edit](https://github.com/ediarum/ediarum.REGISTER.edit/releases) ab, indem wir jeweils die ZIP-Dateien mit dem Source Code des letzten Releases herunterladen und diese dann entpacken. Da wir später auch ein editionsspezifisches Framework für unsere eigene Edition benötigen, legen wir zusätzlich noch einen projektspezifischen Ordner zur Erweiterung des Basis-Frameworks an.
+* Als nächstes richten wir uns nun noch die grundlegenden _ediarum_-Frameworks in unserer Arbeitsumgebung ein. Dafür legen wir zuerst einen Ordner für diese Frameworks auf unserem lokalen Dateisystem an und legen dort die GitHub-Repositorien [ediarum.BASE.edit](https://github.com/ediarum/ediarum.BASE.edit/releases) und [ediarum.REGISTER.edit](https://github.com/ediarum/ediarum.REGISTER.edit/releases) ab, indem wir jeweils die ZIP-Dateien mit dem Source Code des letzten Releases herunterladen und diese dann entpacken. Da wir später auch ein editionsspezifisches Framework für unsere eigene Edition benötigen, legen wir zusätzlich noch einen projektspezifischen Ordner zur Erweiterung des Basis-Frameworks an.
   ![Anlegen der ediarum-Frameworks](../img/folder-frameworks.PNG)
   In Oxygen müssen wir nun noch unter **Optionen > Einstellungen** in der linken Spalte zu **Dokumenttypen-Zuordnung > Orte** navigieren, dort "Benutzerdefiniert" aktivieren und dann den Dateipfad zu unserem Framework-Ordner angeben.
   ![Framework-Konfiguration in Oxygen](../img/oxygen-framework-connection.PNG)
-  Nach einem Neustart des Oxygen XML Author sollten nun unter **Optionen > Einstellungen > Dokumenttypen-Zuordnung** die ediarum-Frameworks aufscheinen. Hier wählen wir "ediarum.BASE.edit" aus und klicken "Erweitern" an, um unser eigenes Erweiterungsframework für unsere Edition einzubinden. Wir geben hierfür den Namen für unser editionsspezifisches Framework an, aktivieren beim Speicherort die Option "Extern" und geben dann den Pfad zu unserem zuvor angelegten Framework-Ordner an.
+  Nach einem Neustart des Oxygen XML Author sollten nun unter **Optionen > Einstellungen > Dokumenttypen-Zuordnung** die _ediarum_-Frameworks aufscheinen. Hier wählen wir "ediarum.BASE.edit" aus und klicken "Erweitern" an, um unser eigenes Erweiterungsframework für unsere Edition einzubinden. Wir geben hierfür den Namen für unser editionsspezifisches Framework an, aktivieren beim Speicherort die Option "Extern" und geben dann den Pfad zu unserem zuvor angelegten Framework-Ordner an.
   ![Framework-Zuordnung](../img/oxygen-own-framework.PNG)
 * Abschließend richten wir uns im Oxygen XML Author ein Projekt ein. Dafür navigieren wir in Oxygen auf **Projekt > Neues Projekt** und wählen dort den Ordner unseres projektspezifischen Frameworks aus.
   ![Erstellen eines Projekts in Oxygen](../img/oxygen-project.PNG)
@@ -243,8 +243,8 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 * Im Fenster zur Bearbeitung der Aktion ändern wir die ID von rs[term] auf term, fügen neue Icons hinzu, die wir lokal im Ordner für das projektspezifische Framework gespeichert haben, wählen ein Tastenkürzel (Strg + I) für jene Projektmitarbeiter:innen, die die Arbeit mit der Tastatur bevorzugen, und ändern die XPath-Aktivierung dahingehend, dass wir bei der Annotation die entsprechende Textstelle nun anstelle mit einem `<rs>`-Element mit einem `<term>`-Element auszeichnen.
   ![Gestaltung des neuen Buttons für Registereinträge](../img/register-action-changes.PNG)
   In der Argumente-Tabelle wählen wir außerdem noch das Argument "element", um diese Anpassungen auch dort vorzunehmen.
-* Bei der Bearbeitung des Argumentwerts ersetzen wir das `<rs>`-Element mit einem `<term>`-Element und wählen als Wert des Attributs `@type` die Bezeichnung "ingredient".
-  ![Änderung des Elements für Annotation](../img/register-action-changes.PNG)
+* Bei der Bearbeitung des Argumentwerts ersetzen wir das `<rs>`-Element mit einem `<term>`-Element und wählen als Wert des Attributs `@type` die Bezeichnung "ingredient". Außerdem stellen wir vor die `$ITEMS`-Variable des `@key`-Attributs, das später auf die `@xml:id` im Register verweist, ein "#".  
+  ![Änderung des Elements für Annotation](../img/register-action-term.PNG)
 * Damit der adaptierte Button auch in der Symbolleiste aufzufinden ist, wählen wir nun im Dokumenttyp-Fenster die Aktion Sachbegriff aus und fügen sie unter "Text(Benutzerdefinierten Author-Aktionen)" als Kindelement hinzu.
   ![Hinzufügen der adaptierten Aktion zur Symbolleiste im Autormodus](../img/register-action-menu.PNG)
 → Im Einstellungsfenster unter Dokumenttypen-Zuordnung sollte man im Übrigen nicht vergessen, auf "Anwenden" zu klicken, damit alle Änderungen auch tatsächlich übernommen werden.
@@ -257,10 +257,10 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 
 * Bei jedem Start unserer Arbeitsroutine müssen wir zuerst Docker Desktop aktivieren und anschließend den exist-Container starten, indem wir auf die Play-Schaltfläche klicken.
   ![Starten des exist-Containers in Docker Desktop](../img/exist-container-run.PNG)
-  → Mit einem Klick auf den Port (8080:8080) öffnet sich schließlich im Browser das eXist-db-Dashboard, über das wir uns anmelden können, falls wir Anpassungen an den Projektkonfigurationen in der ediarum-App vornehmen wollen.
+  → Mit einem Klick auf den Port (8080:8080) öffnet sich schließlich im Browser das eXist-db-Dashboard, über das wir uns anmelden können, falls wir Anpassungen an den Projektkonfigurationen in der _ediarum_-App vornehmen wollen.
 * Wenn uns das Status-Feld unseres exist-Containers "Running" anzeigt, wurde die Verbindung zur eXist-Datenbank hergestellt und wir haben auch im Oxygen XML Author über den Datenquellen-Explorer Zugriff auf unsere Dateien. Wir öffnen das erste Manuskript und müssen nur mehr sicherstellen, dass wir uns im Autormodus befinden, um direkt mit der Bearbeitung beginnen zu können.
   ![Start der Editionsarbeit im Autormodus](../img/author-mode-start.PNG)
-* Einige einfache Annotationen, die in unserem Workflow bereits über [FromThePage](https://digedtnt.github.io/fromthepage/) möglich waren, haben wir übernommen bzw. im Zuge unserer [Transition](https://digedtnt.github.io/transition-fromthepage-ediarum/) für die weitere Bearbeitung in ediarum transformiert. Für unser Beispielprojekt ergeben sich daher noch folgende Bearbeitungsschritte:
+* Einige einfache Annotationen, die in unserem Workflow bereits über [FromThePage](https://digedtnt.github.io/fromthepage/) möglich waren, haben wir übernommen bzw. im Zuge unserer [Transition](https://digedtnt.github.io/transition-fromthepage-ediarum/) für die weitere Bearbeitung in _ediarum_ transformiert. Für unser Beispielprojekt ergeben sich daher noch folgende Bearbeitungsschritte:
   * Bearbeitung der nach DTABf obligatorischen Metadaten
   * Ergänzung von Annotationen, die in FromThePage vorgenommen wurden, aber in ediarum (bzw. gemäß DTABf) bei der Validierung aufgrund eines fehlenden Attributs eine Fehlermeldung werfen
   * Annotation von Textstellen mit roter Schrift, für die es in FromThePage keine Annotationsmöglichkeit gab
@@ -274,7 +274,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
   ![Befüllen der Metadaten](../img/edited-metadata.PNG)
   → Anhand der oberen Leiste können wir auch stets nachvollziehen, in welchem Element wir uns befinden.
 * Leider werden nicht alle Elemente, die im Textmodus im `<teiHeader>` vorzufinden sind, im Autormodus angezeigt. So findet man im Autormodus das `<publicationStmt>` beispielsweise weder in der `<fileDesc>`, noch in der `<sourceDesc>`. Diese Metadatenfelder können somit also nur im Textmodus bearbeitet bzw. ergänzt werden.
-* **Kleiner Exkurs hinsichtlich der Möglichkeiten einer Metadaten-Anreicherung über die ediarum-Werkzeugleiste:** Für die Erweiterung der Metadaten über die ediarum-Oberfläche klicken wir in der Werkzeugleiste auf "Metadaten" und wählen zu Demonstrationszwecken für unser Projekt den Punkt "Ungefährer Erstellungszeitraum".
+* **Kleiner Exkurs hinsichtlich der Möglichkeiten einer Metadaten-Anreicherung über die ediarum-Werkzeugleiste:** Für die Erweiterung der Metadaten über die _ediarum_-Oberfläche klicken wir in der Werkzeugleiste auf "Metadaten" und wählen zu Demonstrationszwecken für unser Projekt den Punkt "Ungefährer Erstellungszeitraum".
   ![Neues Metadatenfeld einfügen](../img/metadata-additions.PNG)
   Daraufhin erscheinen drei Eingabeaufforderungen zu dem frühest-möglichen Erstelldatum, dem spätest-möglichen Erstelldatum sowie einer Angabe, wie sicher man sich mit der Datierung ist.
   ![Eingabeaufforderungen zu den Metadaten](../img/metadata-extras.PNG)
@@ -284,11 +284,11 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 ### b. Annotationen mit eigenem Button
 * Einige der Annotationen haben wir in unserem Beispielprojekt bereits mithilfe von [FromThePage](https://digedtnt.github.io/fromthepage/) vorgenommen. Nicht möglich war es uns jedoch, farbliche Hervorhebung - also in unserem Fall rote Textstellen - als solche auszuzeichnen. Dies können unsere Projektmitarbeitenden nun mittels des eigens dafür erstellten Rotstift-Buttons. Für die Bearbeitung der Transkripte benötigen wir in diesem Fall für die Annotation die Digitalisate der Manuskripte. Wir öffnen dafür im Oxygen XML Author einerseits unter **Fenster > Ansicht** **zeigen** die **Bildvorschau** und wählen andererseits für die Projektansicht den Menüpunkt **Projekt** unter demselben Pfad. In der Projektansicht navigieren wir zu unserem ediarum.MaRezepte.edit-Ordner und legen in diesem einen neuen Ordner mit der Bezeichnung "faksimile" an, in den wir unsere Faksimiles hineinkopieren. Wenn wir hier nun auf eine der Bilddateien klicken, öffnet sich diese in der Bildvorschau und wir verfügen somit über eine Bild-Text-Ansicht, die es uns erleichtert, die entsprechenden in roter Farbe geschriebenen Textstellen im Original zu finden und diese Passage entsprechend im Transkript zu markieren und mittels Rotstift-Button zu annotieren.
   ![Annotation von Textstellen mit roter Schrift](../img/red-highlighting.PNG)
-* Sollten wir einmal aus Versehen eine Textstelle falsch ausgezeichnet haben, gibt es in ediarum auch die Möglichkeit, die Auszeichnung wieder zu entfernen. Da der Button hierfür aber nicht standardmäßig in der Werkzeugleiste aufscheint, müssen wir zuerst in dem Fenster, das sich über einen Rechtsmausklick auf den Freibereich im Menü öffnet, die Option "Werkzeugleisten konfigurieren..." auswählen.
+* Sollten wir einmal aus Versehen eine Textstelle falsch ausgezeichnet haben, gibt es in _ediarum_ auch die Möglichkeit, die Auszeichnung wieder zu entfernen. Da der Button hierfür aber nicht standardmäßig in der Werkzeugleiste aufscheint, müssen wir zuerst in dem Fenster, das sich über einen Rechtsmausklick auf den Freibereich im Menü öffnet, die Option "Werkzeugleisten konfigurieren..." auswählen.
   ![Änderungen an der Werkzeugleiste vornehmen](../img/configure-menu-view.PNG")
   In dem darauf erscheinenden Bearbeitungsfenster haken wir die Checkbox "Auszeichnung" an und klicken anschließend auf "OK", um die Änderungen zu übernehmen.
   ![Auswahl weiterer Buttons für die Werkzeugleiste](..img/delete-annotation.PNG)
-  Nun erscheint die Button-Leiste zu den Auszeichnungen in der ediarum-Werkzeugleiste. Wenn wir unseren Cursor in eine annotierte Textstelle setzen und den entsprechenden Button betätigen, wird die bereits getätigte Annotation wieder entfernt.
+  Nun erscheint die Button-Leiste zu den Auszeichnungen in der _ediarum_-Werkzeugleiste. Wenn wir unseren Cursor in eine annotierte Textstelle setzen und den entsprechenden Button betätigen, wird die bereits getätigte Annotation wieder entfernt.
   ![Erweiterte Werkzeugleiste](..img/delete-annotation-menu.PNG)
 ### c. Ergänzung von nicht validen Annotationen
 * Außerdem befinden sich in den bereits teilweise über FromThePage annotierten Transkriptionen einige Auszeichnungen, die noch nicht dem DTA-Basisformat entsprechen. Dies trifft in unserem Beispielprojekt auf Tilgungen und Ergänzungen durch die ursprüngliche Schreiber:in zu, da wir hier über FromThePage mit den vorgegebenen Buttons nur Auszeichnungen mit `<del>`- und `<add>`-Elementen vornehmen, aber keine Attribute setzen konnten. Im Oxygen XML Author sind diese nicht validen Stellen rot unterwellt. Mit einem Klick auf die nicht valide Textstelle erscheint links ein kleines Glühbirnen-Symbol mit Sofort-Lösungsvorschlägen.
@@ -299,9 +299,9 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 * Das Gleiche machen wir nun auch für die `<add>`-Elemente, die ebenfalls unterwellt sind, da diesen für ihre DTABf-Konformität das `@place`-Attribut fehlt.
   ![Ergänzung von Attributen zur gültigen Validierung nach dem DTABf](../img/attribute-problem2.PNG)
 ### d. Annotation mit Registereinträgen
-* Für die Annotation der Zutaten, die in den Manuskripten zu finden sind, gibt es nun zwei Möglichkeiten. Entweder besteht bereits eine Zutatenliste und man überführt diese in die für ediarum geeignete XML-Struktur oder man fügt erst während des Annotationsprozesses in ediarum die in den Rezepten auftretenden Zutaten dem Register nach und nach hinzu. In unserem Beispielprojekt besteht bereits eine Zutatenliste, die aber noch nicht über alle Zutaten-Einträge verfügt. Daher wird im Folgenden einerseits der Workflow mit einem bereits bestehenden Register sowie das nachträgliche Hinzufügen von Registereinträgen beschrieben.
+* Für die Annotation der Zutaten, die in den Manuskripten zu finden sind, gibt es nun zwei Möglichkeiten. Entweder besteht bereits eine Zutatenliste und man überführt diese in die für _ediarum_ geeignete XML-Struktur oder man fügt erst während des Annotationsprozesses in _ediarum_ die in den Rezepten auftretenden Zutaten dem Register nach und nach hinzu. In unserem Beispielprojekt besteht bereits eine Zutatenliste, die aber noch nicht über alle Zutaten-Einträge verfügt. Daher wird im Folgenden einerseits der Workflow mit einem bereits bestehenden Register sowie das nachträgliche Hinzufügen von Registereinträgen beschrieben.
 * Unsere (unvollständige) Zutatenliste, die zuerst nur als Exceltabelle verfügbar war, wurde über die [Transition OpenRefine → ediarum](https://digedtnt.github.io/transition-openrefine-ediarum/) mit Wikidata-Normdaten angereichert und schließlich in das Sachregister überführt, wodurch wir hier mit der Annotation der Zutaten fortsetzen können.
-* Da wir aufgrund des DTABf-Schemas, das wir im Zuge der [Transition FromThePage → ediarum](https://digedtnt.github.io/transition-fromthepage-ediarum/) eingebunden haben, aber das Problem haben, dass unsere `<term>`-Elemente, die wir für die Zutaten verwenden, im Fließtext nicht verwendet werden können und daher der Zutaten-Button noch nicht funktioniert, müssten wir nun entweder das eingebundene DTABf-Schema anpassen oder könnten als Workaround im Textmodus die ersten beiden `<?xml-model>`-Elemente entfernen. Wir haben uns im Rahmen unseres Projekts für letzteres entschieden.
+* Da wir aufgrund des DTABf-Schemas, das wir im Zuge der [Transition FromThePage → ediarum](https://digedtnt.github.io/transition-fromthepage-ediarum/) eingebunden haben, aber das Problem haben, dass unsere `<term>`-Elemente, die wir für die Zutaten verwenden, im Fließtext nicht verwendet werden können und daher der Zutaten-Button noch nicht funktioniert, müssten wir nun entweder das eingebundene DTABf-Schema anpassen oder könnten als Workaround im Textmodus die ersten beiden `<?xml-model>`-Elemente entfernen. Wir haben uns im Rahmen unseres Projekts für Letzteres entschieden.
   ![Entfernung der eingebundenen Schemata](../img/register-delete-schema.PNG)
 * Sobald wir anschließend im Text auf eine Zutat stoßen, klicken wir auf den Zutaten-Button und wählen aus der Registeransicht, den entsprechenden Eintrag.
   ![Annotation der Zutaten mit projektspezifischem Button](../img/ingredient-annotation.PNG)
@@ -310,11 +310,11 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 * Über den Punkt **Sachregister** in der untersten Menüleiste ist es uns außerdem möglich, eine "Alternative Bezeichnung" anzulegen (oder sogar Unterlisten zu erstellen). Dafür müssen wir auf das Label klicken, um nicht den gesamten Eintrag angewählt zu haben.
   ![Weitere Bezeichnungen für einen Eintrag hinzufügen](../img/register-label-alt.PNG)
   → An dieser Stelle fügen wir im Sinne unseres Beispielprojekts die frühneuhochdeutsche Bezeichnung ein.
-* In der Menüleiste unter **Allgemein** gibt es die Möglichkeit, eine Norm-ID hinzuzufügen. Diese ist im Register-Framework von ediarum vorerst aber nicht für Sachbegriffe aktiviert und daher ausgegraut. Um dies zu ändern, wählen wir unter **Optionen > Einstellungen >Dokumenttypen-Zuordnung** "ediarum.REGISTER.edit" und gehen auf "Bearbeiten".
+* In der Menüleiste unter **Allgemein** gibt es die Möglichkeit, eine Norm-ID hinzuzufügen. Diese ist im Register-Framework von _ediarum_ vorerst aber nicht für Sachbegriffe aktiviert und daher ausgegraut. Um dies zu ändern, wählen wir unter **Optionen > Einstellungen >Dokumenttypen-Zuordnung** "ediarum.REGISTER.edit" und gehen auf "Bearbeiten".
   ![Änderungen im Register-Framework](../img/register-new-action.PNG)
   Im Reiter **Autor** wählen wir schließlich **Aktionen** und suchen in der Spalte Name nach "Norm-ID", um schließlich über das Werkzeugsymbol zur Bearbeitungsansicht zu kommen.
   ![Bearbeitung des Norm-ID-Buttons](../img/register-id-action.PNG)
-  Unter Vorgänge gehen wir auf einen der 4 Vorgänge und duplizieren einen davon.
+  Unter Vorgänge gehen wir auf einen der 4 Vorgänge und duplizieren diesen.
   ![Kopie einer Aktion](../img/register-copy-action.PNG)
   Nun tauschen wir "org" mit "label" aus, um das Einfügen einer ID auch in unserem Sachregister zu ermöglichen, und speichern unsere Einstellungen. Hierbei sollte nicht vergessen werden, im Einstellungsfenster noch auf "Anwenden" zu klicken, damit unsere Änderungen auch wirklich übernommen werden.
   ![Anpassung der kopierten Aktion](../img/register-adapt-action.PNG)
@@ -331,7 +331,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
   ![Export der annotierten XML-Dateien](../img/export-data.PNG)
 * Im darauffolgenden Fenster geben wir den Speicherort an.
   ![Angabe des Speicherorts](../img/export-data-path.PNG)
-  → Die Dateien sollten jetzt in unser lokales Verzeichnissystem exportiert worden sein.
+  → Die Dateien befinden sich jetzt in unserem lokalen Verzeichnissystem.
 
 
 # Kontakt
@@ -378,7 +378,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 
 ## Projekte, die dieses Tool genutzt haben
 
-* [edition humboldt digital](https://edition-humboldt.de/): Das Editionsvorhaben "Alexander von Humboldt auf Reisen - Wissenschaft aus der Bewegung" ediert und publiziert Reisetagebücher, Briefe sowie andere Dokumente seit 2015 mit ediarum. In der edition humboldt digital werden die edierten Texte nicht nur präsentiert, sondern auch über Personen-, Orts-, Werk-, Institutions- und Pflanzenregister erschlossen.
+* [edition humboldt digital](https://edition-humboldt.de/): Das Editionsvorhaben "Alexander von Humboldt auf Reisen - Wissenschaft aus der Bewegung" ediert und publiziert Reisetagebücher, Briefe sowie andere Dokumente seit 2015 mit _ediarum_. In der edition humboldt digital werden die edierten Texte nicht nur präsentiert, sondern auch über Personen-, Orts-, Werk-, Institutions- und Pflanzenregister erschlossen.
 * [Schleiermacher in Berlin 1808-1834:](https://schleiermacher-digital.de/) In diesem Projekt werden Briefwechsel, Tageskalender sowie Vorlesungen von Friedrich Schleiermacher während seiner Zeit in Berlin ediert und die Edition durch Personen-, Orts-, Werkregister und ein Verzeichnis zu den erwähnten Bibelstellen erschlossen.
 
 
@@ -670,7 +670,7 @@ Annotation von Texten, Indexierung, Export
    <tr>
    <td><strong>Unterstützte Dateiformate</strong>
    </td>
-   <td>XML, TEI/XML
+   <td>XML, TEI-XML
    </td>
    </tr>
   <tr>
@@ -773,7 +773,7 @@ Synopsen-Ansicht
    <tr>
    <td><strong>Unterstützte Dateiformate</strong>
    </td>
-   <td>XML, TEI/XML
+   <td>XML, TEI-XML
    </td>
    </tr>
   <tr>

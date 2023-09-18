@@ -20,10 +20,10 @@ last_modified_at:   2023-05-09
 
 # Allgemeine Beschreibung
 
-FromThePage ist eine Plattform für kollaborative Transkriptionen, die 2005 ins Leben gerufen wurde, um die Arbeit bei der Transkription von Textsammlungen zu erleichtern. Die Software wurde 2009 unter einen Open-Source-Lizenz veröffentlicht und wird seit 2010 für die Transkription nach dem Crowdsourcing-Prinzip von Bibliotheken, Archiven und Museen genutzt. Durch die Anpassung an die besonderen Bedürfnisse der verschiedenen Institutionen wird die Software ständig weiterentwickelt. Seit 2014 liegt der Fokus vor allem auf wissenschaftlichen digitalen Editionen.
+ _FromThePage_ ist eine Plattform für kollaborative Transkriptionen, die 2005 ins Leben gerufen wurde, um die Arbeit bei der Transkription von Textsammlungen zu erleichtern. Die Software wurde 2009 unter einen Open-Source-Lizenz veröffentlicht und wird seit 2010 für die Transkription nach dem Crowdsourcing-Prinzip von Bibliotheken, Archiven und Museen genutzt. Durch die Anpassung an die besonderen Bedürfnisse der verschiedenen Institutionen wird die Software ständig weiterentwickelt. Seit 2014 liegt der Fokus vor allem auf wissenschaftlichen digitalen Editionen.
 
 <div class="essence">
-FromThePage zeichnet sich nicht nur darin aus, dass man bereits mit minimalen Computerkenntnissen bei der Transkription von Manuskripten mithelfen kann, sondern vor allem auch durch den Zugriff auf eine große transkriptionsfreudige Community sowie die Möglichkeit der Kollaboration bei umfangreichen Sammlungen. Für umfassende und tiefergehende Annotationen nach den in der DH gültigen Standards empfiehlt es sich jedoch aufgrund der eingeschränkten Annotations- und Validierungsmöglichkeiten auf andere Tools zurückzugreifen.
+ <span style="font-style:italic;">FromThePage</span> zeichnet sich nicht nur darin aus, dass man bereits mit minimalen Computerkenntnissen bei der Transkription von Manuskripten mithelfen kann, sondern vor allem auch durch den Zugriff auf eine große transkriptionsfreudige Community sowie die Möglichkeit der Kollaboration bei umfangreichen Sammlungen. Für umfassende und tiefergehende Annotationen nach den in der DH gültigen Standards empfiehlt es sich jedoch aufgrund der eingeschränkten Annotations- und Validierungsmöglichkeiten auf andere Tools zurückzugreifen.
 </div>
 
 
@@ -50,7 +50,7 @@ FromThePage zeichnet sich nicht nur darin aus, dass man bereits mit minimalen Co
     * Tags (inklusive farblicher Kennzeichnung) → hierfür gibt es eine Auswahl an unterstützten Mark-up-Tags (vorwiegend entsprechend TEI-Standard)
     * Buttons → die Auswahl der Buttons kann von den Projektinhaber:innen konfiguriert werden (es können jedoch keine eigenen Buttons kreiert werden)
 * Editorkonfigurationen
-    * Bereitsstellung projektspezifischer Auswahl an unterstützten Tag-Buttons durch Projektinhaber:in
+    * Bereitsstellung projektspezifischer Auswahl an unterstützten Tag-Buttons durch Projektinhaber:innen
     * Erstellung projektspezifischer Transkriptionsrichtlinien
 * Indexierung und spätere Indexansicht kanonischer Namen mittels Mouseover
 * Data Mining über Referenzierungen für Suchbegriffe/Stichworte
@@ -162,25 +162,25 @@ Tools aufgelistet werden, die während der Durchführung des jeweiligen [Beispie
 * Schneller und hilfreicher Support über Chat-Interface (Reaktion meist spätestens innerhalb von 24h)
 * Vielzahl an qualitätssichernden Maßnahmen:
     * Schutz vor Vandalismus durch Registrierungserfordernis
-    * Einschränkung auf bestimmten Kreis an Mitarbeitende möglich
+    * Einschränkung auf bestimmten Kreis an Mitarbeitenden möglich
     * Einstellungen für eine strikte Qualitätskontrolle: Obligatorische Reviews können angefordert und Validierungen auf bestimmten Kreis an Reviewer:innen eingeschränkt werden
     * Fertiggestellte Unterprojekte können eingeschränkt und nur für bestimmte Mitarbeitende für die Revision bearbeitbar gemacht werden
-    * Textpassagen können vor Webcrawlern oder Eingriffen von unregistrierten Nutzer:innen geschützt werden (nur Transkribierende mit entsprechender Erlaubnis - mittels `<sensitive>`-Tag - dürfen markierte Textpassage bearbeiten)
-* Community für Transkription: Bewerbung des Projekts über den Newsletter von FromThePage oder über Social Media (z. B. Twitter)
+    * Textpassagen können vor Webcrawlern oder Eingriffen von unregistrierten Nutzer:innen geschützt werden (nur Transkribierenden mit entsprechender Erlaubnis - mittels `<sensitive>`-Tag - dürfen markierte Textpassage bearbeiten)
+* Community für Transkription: Bewerbung des Projekts über den Newsletter von  _FromThePage_ oder über Social Media (z. B. Twitter)
 
 
 Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integrationen:
 * FromThePage → IIIF → TEI-XML → FairCopy
 * Transkribus (HTR) → Plain Text → FromThePage
 * FromThePage → Plain Text → Transkribus (Ground Truth/Training)
-* FromThePage → TEI/XML → teiPublisher/EVT (Publikationstool)
+* FromThePage → TEI-XML → teiPublisher/EVT (Publikationstool)
 
 
 ## Herausforderungen & Probleme
 
 * Eingeschränkte Mark-up-Möglichkeiten durch Beschränkung auf unterstützte Tags (derzeit 30 Tags)
 * Für detaillierte Annotationen entsprechend TEI-Konventionen eher weniger praktisch, da es keine Möglichkeit einer TEI-Validierung innerhalb des Transkriptionseditors gibt
-* Farbliche Markierungen, Ergänzungen durch Transkribierende und einige andere Textmerkmale, die selbst von editionswissenschaftlich ungeschulten Transkribierenden einfach ausgezeichnet werden könnten, werden nicht mit eigenen Tag-Buttons unterstützt. Auch wenn ein Workaround möglich ist und Tags entsprechend den TEI-Standards verwendet werden könnten, werden diese aber in der Transkriptionsansicht nicht validiert. Dadurch besteht grundsätzlich immer das Risiko einer intensiven Nachbearbeitung im TEI/XML-Export (z. B. bei Tippfehlern in den Tags oder Positionierung der Tags an unzulässigen Stellen)
+* Farbliche Markierungen, Ergänzungen durch Transkribierende und einige andere Textmerkmale, die selbst von editionswissenschaftlich ungeschulten Transkribierenden einfach ausgezeichnet werden könnten, werden nicht mit eigenen Tag-Buttons unterstützt. Auch wenn ein Workaround möglich ist und Tags entsprechend den TEI-Standards verwendet werden könnten, werden diese aber in der Transkriptionsansicht nicht validiert. Dadurch besteht grundsätzlich immer das Risiko einer intensiven Nachbearbeitung im TEI-XML-Export (z. B. bei Tippfehlern in den Tags oder Positionierung der Tags an unzulässigen Stellen)
 * Tabellarische Darstellungen nur über Mark-Down (Pipes und Dashes) möglich
 * Metadaten-Beschreibung in den Projekt-Einstellungen teilweise unklar - aus den Bezeichnungen im Eingabeformular geht nicht klar hervor, welchen TEI-Header-Elementen diese im Output entsprechen könnten (siehe Export)
 * Metadaten aus den Werk-Einstellungen werden nicht in den TEI-Export integriert
@@ -190,11 +190,11 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 
 # Einrichtung & Erste Schritte
 
-Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf für die Transkription mit FromThePage beschrieben werden.
+Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung-pipeline-1), das zum Ziel hat, Kochrezepte aus dem Mittelalter computergestützt zu analysieren und später über eine Forschungsplattform zur Verfügung zu stellen, soll nachfolgend ein möglicher Arbeitsablauf für die Transkription mit  _FromThePage_ beschrieben werden.
 
 
 ## 1.  Registrierung
-* Um in FromThePage ein Projekt anzulegen, muss man sich jedenfalls registrieren. Für unsere Testzwecke haben wir ein zweiwöchiges Probe-Benutzerkonto eingerichtet, das uns ermöglicht, bis zu 200 Seiten zur Transkription hochzuladen. Erforderlich ist dafür lediglich eine E-Mail-Adresse.
+* Um in  _FromThePage_ ein Projekt anzulegen, muss man sich jedenfalls registrieren. Für unsere Testzwecke haben wir ein zweiwöchiges Probe-Benutzerkonto eingerichtet, das uns ermöglicht, bis zu 200 Seiten zur Transkription hochzuladen. Erforderlich ist dafür lediglich eine E-Mail-Adresse.
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/registration.PNG" description="Registrierung" %}
 ## 2.  Projekteinrichtung
 * In der Dashboard-Ansicht ist es sinnvoll, zu Beginn eine Sammlung (“create a collection”) anzulegen, indem ein Titel sowie eine Beschreibung der Sammlung erstellt wird.
@@ -249,7 +249,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 * **Allgemeine Einstellungen:** In den Einstellungen am Projekt-Dashboard konfigurieren wir schließlich die Ansicht, die den Transkribierenden zur Verfügung steht. Wir können unserer Projektseite zum Beispiel eine eigene URL zuweisen (Abb. 8: a), einen eigenen Einladungslink zum Transkriptionsprojekt erstellen (Abb. 8: f), ein Projektbild (Abb. 8: e) sowie einen eigenen Footer gestalten (Abb. 8: c), um z. B. direkten Kontakt zur Projektleitung zu ermöglichen. Die Beschreibung, die wir beim Anlegen der Sammlung eingefügt haben, scheint hier bereits auf und kann noch weiter adaptiert werden (Abb. 8: b).
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup1.PNG" description="Konfiguration des Projekts " %}
 * **Einschränkung der Projektmitarbeitenden:** Da wir unser Projekt nur einem eingeschränkten Kreis an Mitarbeitenden zur Verfügung stellen wollen, nutzen wir außerdem die Möglichkeit, unsere Sammlung auf privat zu stellen (Abb. 8: g) sowie den Transkribierendenkreis einzuschränken (Abb. 8: h) und nur bestimmte registrierte Mitarbeitende über ihre E-Mail-Adresse hinzuzufügen.
-* **Adaptierung der Hilfestellungen für das Projektteam:** FromThePage ermöglicht uns, auch diverse Hilfestellungen für unsere Transkribierenden anzupassen. Es können hier also noch mal Transkriptionsrichtlinien festgelegt werden (Abb. 8: d), die für alle Werke dieser Sammlung gelten. In unserem Fall haben wir mit der YAML-Datei bereits unsere Richtlinien hochgeladen und finden diese nun in den entsprechenden Feldern. Die englischen Vorlagen für den allgemeinen Hilfetext sowie für das Subject Linking ändern wir vorerst nichts (Abb. 9: a).
+* **Adaptierung der Hilfestellungen für das Projektteam:**  _FromThePage_ ermöglicht uns, auch diverse Hilfestellungen für unsere Transkribierenden anzupassen. Es können hier also noch mal Transkriptionsrichtlinien festgelegt werden (Abb. 8: d), die für alle Werke dieser Sammlung gelten. In unserem Fall haben wir mit der YAML-Datei bereits unsere Richtlinien hochgeladen und finden diese nun in den entsprechenden Feldern. Die englischen Vorlagen für den allgemeinen Hilfetext sowie für das Subject Linking ändern wir vorerst nicht (Abb. 9: a).
 * **API-Aktivierung:** Die Zugänglichkeit des Projekts über eine API lassen wir für unser Projekt vorerst deaktiviert (Abb. 9: b).
 * **Erweiterung der Projektleitung:** Nachdem wir in unserem Projekt zwei Projektleiter:innen haben, fügen wir außerdem noch einen zweiten Projektleiter hinzu (Abb. 9: c). Hierzu muss die zweite Person ebenfalls registriert sein und die Mailadresse muss bekannt sein.
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/project-setup2.PNG" description="Weitere Projektkonfigurationen" %}
@@ -282,12 +282,12 @@ Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobe
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/progress.PNG" description="Statusübersicht" %}
 * **Transkriptionsansicht:** Im Transkriptionseditor wird uns eine synoptische Ansicht unseres Faksimiles und des Bearbeitungsbereiches geboten.
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/image-text-synopsis.PNG" description="Bild-Text-Synopse" %}
-    Wir können hier also direkt mit der zeilenweisen Transkription beginnen und die verschiedenen Funktionen von FromThePage nutzen:
-    * **Auszeichnung unserer Transkription**: FromThePage ermöglicht es, unsere Auszeichnungen mittels Markdown entsprechend [Wiki-Text-Konventionen](https://www.mediawiki.org/wiki/Wikitext/de) zu gestalten sowie außerdem all jene Mark-up-Buttons zu verwenden, deren Anzeige wir zuvor in den Projekt-Einstellungen aktiviert haben.
+    Wir können hier also direkt mit der zeilenweisen Transkription beginnen und die verschiedenen Funktionen von  _FromThePage_ nutzen:
+    * **Auszeichnung unserer Transkription**:  _FromThePage_ ermöglicht es, unsere Auszeichnungen mittels Markdown entsprechend [Wiki-Text-Konventionen](https://www.mediawiki.org/wiki/Wikitext/de) zu gestalten sowie außerdem all jene Mark-up-Buttons zu verwenden, deren Anzeige wir zuvor in den Projekt-Einstellungen aktiviert haben.
         {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-view.PNG" description="Transkriptionsarbeit" %}
         Sollte es unter unseren Transkribierenden Personen geben, die Tags lieber ausschreiben statt Textbereiche mittels Klick auf Button zu markieren, ist dies ebenfalls möglich. Strukturierungen wie Zeilenumbrüche oder Absätze werden automatisch übernommen. Wenn wir die Möglichkeiten der TEI nutzen wollen, haben wir dafür zwar keine Buttons, wir können aber z. B. editorische Eingriffe - in der Abbildung durch das Element `<supplied>` realisiert - trotzdem mit dem entsprechenden Tag auszeichnen.
         {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/markup.PNG" description="Mark-up-Möglichkeiten" %}
-        Das Element wird zwar in der allgemeinen Darstellung auf FromThePage nicht unterstützt, es befindet sich aber am Ende in unserem TEI-Export. Ein Nachteil dieses Workarounds ist aber, dass auf diese Weise angelegte Tags nicht validiert werden und wir bei einer falschen Schreibweise oder unzulässigen Positionierung des Elements keinen Hinweis darauf bekommen. Da wir FromThePage aber ohnehin nur für unsere Transkription und nicht für die Annotation verwenden wollen, setzen wir uns mit dieser Form der Auszeichnung nicht weiter auseinander.
+        Das Element wird zwar in der allgemeinen Darstellung auf  _FromThePage_ nicht unterstützt, es befindet sich aber am Ende in unserem TEI-Export. Ein Nachteil dieses Workarounds ist aber, dass auf diese Weise angelegte Tags nicht validiert werden und wir bei einer falschen Schreibweise oder unzulässigen Positionierung des Elements keinen Hinweis darauf bekommen. Da wir  _FromThePage_ aber ohnehin nur für unsere Transkription und nicht für die Annotation verwenden wollen, setzen wir uns mit dieser Form der Auszeichnung nicht weiter auseinander.
         {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/transcription-overview.PNG" description="Allgemeine Ansicht" %}
         → An dieser Stelle hervorzuheben ist auch, dass es im Rahmen unseres Beispielsprojekts es leider nicht auf sichere und einfache Weise möglich war, farbliche Hervorhebungen, Hinzufügungen durch den/die Editor:in (und nicht den/die Autor:in) oder die Gründe für eine unleserliche Stelle zu annotieren.
     * **Anmerkungen und Fragen:** Sollten Mitarbeitende auf Probleme stoßen, zu denen es in den Transkriptionsrichtlinien keine Anhaltspunkte gibt, so haben sie die Möglichkeit, für jedes Faksimile und die dazugehörige Transkription eine Anmerkung zu hinterlassen oder Fragen zu stellen. Diese Notizen werden auch in den TEI-Export übernommen und können somit nützlich sein, um damit Problemstellen zu kennzeichnen oder Kommentare für die spätere Annotation einzufügen. In unserem Beispiel wurde diese Funktion genutzt, um jene Transkriptionen zu markieren, in denen es Probleme mit der Darstellung von diakritischen Zeichen gab.
@@ -304,7 +304,7 @@ Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobe
         {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-autolink.PNG" description="Automatische Verlinkung von Entitäten" %}
         Beim Hinzufügen neuer Entitäten können diese danach direkt einer Kategorie zugeordnet werden.
         {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/subject-linking-categorization-transcription.PNG" description="Zuordnung von Entitäten zu Kategorien" %}
-        Die Transkribierenden können in ihrem Projekt-Dashboard die von der Projektleitung angelegten Entitäten einsehen und auch bearbeiten. Sie können jedoch keine weiteren Kategorien anlegen. Auch hier gilt wieder, dass FromThePage für unser Projekt nur als Transkriptionstool genutzt wird, weshalb wir versuchsweise nur auf der ersten Seite ein paar Entitäten verlinkt und innerhalb aller weiteren Transkriptionen die Auto-Link-Funktion ausprobiert, die auch tatsächlich zu ein paar Treffern führte.
+        Die Transkribierenden können in ihrem Projekt-Dashboard die von der Projektleitung angelegten Entitäten einsehen und auch bearbeiten. Sie können jedoch keine weiteren Kategorien anlegen. Auch hier gilt wieder, dass  _FromThePage_ für unser Projekt nur als Transkriptionstool genutzt wird, weshalb wir versuchsweise nur auf der ersten Seite ein paar Entitäten verlinkt und innerhalb aller weiteren Transkriptionen die Auto-Link-Funktion ausprobiert, die auch tatsächlich zu ein paar Treffern führte.
     * **Zwischenspeichern oder Abschließen**: Wenn wir ein paar Zeilen transkribiert haben und zwischenspeichern wollen, klicken wir auf “Save”. Wenn die Transkription vollständig abgeschlossen ist, klicken wir auf “Done”. Danach wird aus dem “Done”-Button ein “Approve”-Button gemäß unserer zuvor festgelegten Einstellung, dass jedes Dokument einer Revision unterzogen werden muss.
     → Achtung: Sobald man den Tab mit der Transkriptionsansicht verlässt, verliert man ohne Vorwarnung seinen Arbeitsfortschritt - daher nicht vergessen, regelmäßig abzuspeichern.
     * **Metadaten-Anreicherung:** Nachdem wir für unser Projekt festgelegt haben, dass zu jedem Werk auch Metadaten angelegt werden können, steht unseren Transkribierenden ein Button zur Erstellung von Metadaten zur Verfügung.
@@ -315,13 +315,13 @@ Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobe
 * **Versionsansicht:** Im Tab “Versions” können wir nachverfolgen, wer wann welche Änderungen vorgenommen hat.
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/versions.PNG" description="Versionskontrolle" %}
 ## 5.  Export der Dokumente
-Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf FromThePage im Downloadbereich des Projekt-Dashboards (und nicht in den Werkübersichten) zu finden sind: Da wir unsere Daten in anderen Tools weiter annotieren und mit Normalisierungen anreichern wollen, soll der Output in einer XML/TEI-Datei exportiert werden. Dafür bietet uns FromThePage die Möglichkeit, entweder jedes Projekt einzeln oder die einzelnen Werke als Sammelexport in einer gewissen Ordnerstruktur herunterzuladen.
+Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf  _FromThePage_ im Downloadbereich des Projekt-Dashboards (und nicht in den Werkübersichten) zu finden sind: Da wir unsere Daten in anderen Tools weiter annotieren und mit Normalisierungen anreichern wollen, soll der Output in einer TEI-XML-Datei exportiert werden. Dafür bietet uns  _FromThePage_ die Möglichkeit, entweder jedes Projekt einzeln oder die einzelnen Werke als Sammelexport in einer gewissen Ordnerstruktur herunterzuladen.
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export.png" description="Exportmöglichkeiten" %}
     → Wir sehen hier für all unsere Werke den Bearbeitungsfortschritt und haben direkt die Möglichkeit, unsere Arbeit als TEI zu exportieren. Für etwas feinere Einstellungen nutzen wir jedoch die erste Option für einen Sammelexport ("Export All Works").
 * **Export der Werke:** Über den Button “Export All Works” können wir nun verschiedene Formate und Einstellungen wählen und unsere gesamte Sammlung als ZIP-Datei exportieren.
     {% include image.html url="../data/pipelines/pipeline_1/fromthepage/img/export-all-works.PNG" description="Export aller Werke in ZIP-Datei" %}
-    Wir wählen dabei einen Ordner pro Werk und stellen ein, dass unsere Export-Ordner den Namen der Import-Ordner übernehmen bzw. beibehalten sollen. Bei den Exportformaten wählen wir nur TEI/XML aus. In den exportierten TEI-Dateien ([Link zum vollständigen Export](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/fromthepage/export)) finden wir für jedes Werk einen Ordner mit je einer Readme-Datei, in der die verschiedenen Exportformate beschrieben sind, und für jedes Werk einen weiteren Ordner, in dem unsere TEI-Dateien enthalten sind, in denen unsere Bearbeitungsschritte des vorangegangenen Abschnittes nun folgende Form angenommen haben:
-    * **Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, Informationen zu den Versionen sind - wie hier auszugsweise dargestellt - im TEI Header wiederzufinden.
+    Wir wählen dabei einen Ordner pro Werk und stellen ein, dass unsere Export-Ordner den Namen der Import-Ordner übernehmen bzw. beibehalten sollen. Bei den Exportformaten wählen wir nur TEI-XML aus. In den exportierten TEI-Dateien ([Link zum vollständigen Export](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/fromthepage/export)) finden wir für jedes Werk einen Ordner mit je einer Readme-Datei, in der die verschiedenen Exportformate beschrieben sind, und für jedes Werk einen weiteren Ordner, in dem unsere TEI-Dateien enthalten sind, in denen unsere Bearbeitungsschritte des vorangegangenen Abschnittes nun folgende Form angenommen haben:
+    * **Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, Informationen zu den Versionen sind - wie hier auszugsweise dargestellt - im `<teiHeader>` wiederzufinden.
         ```xml
         <teiHeader>
             <fileDesc>
@@ -752,9 +752,10 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
         </text>
         ```
     Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüchen, unklaren Stellen, Erweiterungen von Abkürzungen sowie Referenzen zu unserer Taxonomie wiederfinden. Außerdem finden wir auch die Anmerkungen der Transkribierenden in einem `<note>`-Element am Ende des `<div>`-Elements.
-* **Export der Metadaten**: Viele der Metadaten, die wir im Header des XML/TEIs finden, sowie zusätzlich die eigens für jedes Projekt angelegten Metadaten (Material, Sprache & zeitliche Einordnung) können wir auch per CSV exportieren ([Link zum CSV-Export](https://github.com/DigEdTnT/digedtnt.github.io/blob/95d465f768eff02fdcd74f8e5248d8eea9e94586/data/pipelines/pipeline_1/fromthepage/export/fromthepage_work_metadata_export_32000501_2023-04-13T11_28_04Z.csv)).
+* **Export der Metadaten**: Viele der Metadaten, die wir im Header des TEI-XMLs finden, sowie zusätzlich die eigens für jedes Projekt angelegten Metadaten (Material, Sprache & zeitliche Einordnung) können wir auch per CSV exportieren ([Link zum CSV-Export](https://github.com/DigEdTnT/digedtnt.github.io/blob/95d465f768eff02fdcd74f8e5248d8eea9e94586/data/pipelines/pipeline_1/fromthepage/export/fromthepage_work_metadata_export_32000501_2023-04-13T11_28_04Z.csv)).
 → Man beachte jedoch, dass bei diesem Export nur die allgemeinen Projekt-Metadaten und Statistiken wiederzufinden sind, nicht aber die von uns per YAML-Datei importierten Metadaten wie beispielsweise die physische Beschreibung oder historische Dokumentation der Manuskripte.
 
+<span style="font-size:0.8rem;">→ <u>Hinweis:</u> Beim Öffnen des exportierten TEI-XML im Oxygen Editor könnte es zu Problemen mit der Zeichenkodierung kommen. Buchstaben mit Diakritika werden in der Standard-Schriftart (Monospaced) des Editors im TEI nicht korrekt dargestellt. Für ein korrektes Rendering müsste daher die Schriftart (z.B. auf Corbel) umgestellt werden.</span>
 
 # Kontakt
 
@@ -803,7 +804,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
 
 
 * [Wilford Woodruff Papers](https://wilfordwoodruffpapers.org/): In diesem Projekt wurde die Transkription durch Freiwillige vorgenommen, die Revision und Annotation durch Projektmitarbeiter:innen, und die Publikation der annotierten Dokumente letztlich via API.
-* [Civil War and Reconstruction Governors of Mississippi](https://cwrgm.org/): Die Bilder & Metadaten bei diesem Projekt sind im Mississippi Digital Library gespeichert, während Transkription und Annotation ohne zusätzlichen Export/Import auf FromThePage erfolgen und die  Publikation schließlich - ohne zusätzlichen Import/Export-Aufwand - über Server des Projekts (CWRGM.org) erfolgt.
+* [Civil War and Reconstruction Governors of Mississippi](https://cwrgm.org/): Die Bilder & Metadaten bei diesem Projekt sind im Mississippi Digital Library gespeichert, während Transkription und Annotation ohne zusätzlichen Export/Import auf  _FromThePage_ erfolgen und die  Publikation schließlich - ohne zusätzlichen Import/Export-Aufwand - über Server des Projekts (CWRGM.org) erfolgt.
 
 
 ## Literatur
@@ -938,7 +939,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
     <tr>
         <td><strong>Einbindung der Community</strong>
         </td>
-        <td>✅via Github
+        <td>✅ via Github
         </td>
     </tr>
     <tr>
@@ -970,7 +971,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
     <tr>
         <td><strong>Verfügbarkeit von Tutorials</strong>
         </td>
-        <td>✅Keine Schritt-für-Schritt-Anleitungen, aber Videomaterial zu Features und Projekten
+        <td>✅ Keine Schritt-für-Schritt-Anleitungen, aber Videomaterial zu Features und Projekten
         </td>
     </tr>
     <tr>
@@ -1002,8 +1003,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
     <tr>
         <td><strong>Lizenz, unter der das Tool veröffentlicht wurde</strong>
         </td>
-        <td><a href="https://www.gnu.org/licenses/agpl-3.0.de.html">Affero GP</a><span
-                style="text-decoration:underline;">L</span>
+        <td><a href="https://www.gnu.org/licenses/agpl-3.0.de.html">Affero GPL</a>
         </td>
     </tr>
     <tr>
@@ -1050,7 +1050,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf Fr
             <br/>
                 (Analyse-, Input-, Outputkonfigurationen)
         </td>
-        <td>✅Projektstatistik, Vorschau-Ansichten
+        <td>✅ Projektstatistik, Vorschau-Ansichten
         </td>
     </tr>
     <tr>

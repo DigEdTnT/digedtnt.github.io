@@ -98,7 +98,7 @@ Weiters fügen wir das sogenannte “identity transform”-Template ein, um - zu
 ```
 
 ## 2. Transformation der Metadaten
-* **Anlegen eines validen und minimalen TEI-Headers:** Bei dem automatisch beim TEI-Export aus Transkribus generierten TEI-Header fehlt das obligatorische `<publicationStatement>`, dafür ist ein `<seriesStatement>`, das aufgrund des fehlenden `<publicationStatement>` an dieser Stelle noch nicht erlaubt ist, vorhanden. Da wir den TEI-Header erst später mit Metadaten befüllen werden, fügen wir zunächst einen minimalen, aber validen Header ein.
+* **Anlegen eines validen und minimalen TEI-Headers:** Bei dem automatisch beim TEI-Export aus Transkribus generierten TEI-Header fehlt das obligatorische `<publicationStatement>`, dafür ist ein `<seriesStatement>` vorhanden, das aufgrund des fehlenden `<publicationStatement>` an dieser Stelle noch nicht erlaubt ist. Da wir den TEI-Header erst später mit Metadaten befüllen werden, fügen wir zunächst einen minimalen, aber validen Header ein.
 
 ```xml
 <xsl:template match="teiHeader">
