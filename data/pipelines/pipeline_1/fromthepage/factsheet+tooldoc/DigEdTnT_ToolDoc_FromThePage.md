@@ -114,6 +114,13 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 </table>
 </div>
 
+<div style="font-size:0.8rem;">
+<span style="font-weight:bold;">Legende</span><br/>
+<p>✅ Integrationen vorhanden und Entwickler:innen bewerben Übergänge<br/>
+❌ Kein Entwicklung einer Transition im DigEdTnT-Projekt, keine Entwicklerintegration beschrieben<br/>
+🦄 Transition im DigEdTnT-Projekt erstellt
+</div>
+
 
 
 ## Kostenübersicht
@@ -218,8 +225,8 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
    document_set: ''
    #you can also put multiple document sets in arrays like ['Diaries', 'Public']
    ```
-    → Leider sind wir hier hinsichtlich unserer Metadaten etwas eingeschränkt und können den Werken nur jene Metadaten mitgeben, für die es in der Vorlage auch eine entsprechende Vorgabe gibt. Sollten die Metadaten erst im Zuge des Projekts erforscht werden, können diese auch erst später in den allgemeinen Einstellungen zur Sammlung sowie in den Einstellungen zum Werk ergänzt werden. Für Nutzer:innen, die lieber mit einer grafischen Oberfläche arbeiten, empfiehlt sich ebenfalls die Metadaten in den allgemeinen Einstellungen einzutragen (siehe unter [Metadaten-Anreicherung](#32-einstellungen-für-das-jeweilige-werk)).
-* Nach erfolgreichem Upload kann man die Werke in der “Works List” einsehen und für die einzelnen Werke noch weitere Einstellungen vornehmen. Auf unserem Dashboard sollten wir nun unsere Werke einsehen können.
+    → Leider sind wir hier hinsichtlich unserer Metadaten etwas eingeschränkt und können den Werken nur jene Metadaten mitgeben, für die es in der Vorlage auch eine entsprechende Vorgabe gibt. Sollten die Metadaten erst im Zuge des Projekts erforscht werden, können diese auch zu einem späteren Zeitpunkt in den allgemeinen Einstellungen zur Sammlung sowie in den Einstellungen zum Werk ergänzt werden. Für Nutzer:innen, die lieber mit einer grafischen Oberfläche arbeiten, empfiehlt sich ebenfalls, die Metadaten in den allgemeinen Einstellungen einzutragen (siehe unter [Metadaten-Anreicherung](#32-einstellungen-für-das-jeweilige-werk)).
+* Nach erfolgreichem Upload kann man die Werke in der “Works List” einsehen und für die einzelnen Werke noch weitere Einstellungen vornehmen. Auf unserem Dashboard können wir nun unsere Werke einsehen.
     ![Dashboard-Ansicht der Werke einer Sammlung](../img/project-dashboard.PNG)
 ## 3.  Projektkonfigurationen
 ### 3.1. Einstellungen im Projekt-Dashboard
@@ -232,24 +239,24 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
     ![Weitere Projektkonfigurationen](../img/project-setup2.PNG)
 * **Aktivierung der Indexierung (Subject Indexing):** Wir möchten unser Team außerdem motivieren, in den Rezepten Zutaten und Speisen zu annotieren und aktivieren daher die Möglichkeit der Indexierung von Entitäten (Abb. 10: a). Die Kategorien und Entitäten können nur von Projektinhaber:innen angelegt werden. Die Transkribierenden können dann in ihrem Projekt-Dashboard die Entitäten einsehen und bearbeiten, nicht aber neue Entitäten anlegen.
     ![Weitere Projektkonfigurationen](../img/project-setup3.PNG)
-Es ist auch möglich, die Entitäten (in einem CSV) hochzuladen, wobei sich diese in unserem Projekt erst im Laufe der Transkription ergeben werden.
+→ Es ist auch möglich, die Entitäten (in einem CSV) hochzuladen, wobei sich diese in unserem Projekt erst im Laufe der Transkription ergeben werden.
 * **Sprachauswahl:** In den Projekteinstellungen lässt sich außerdem die Sprache und für Transkriptionen in Standardsprache auch eine Rechtschreibprüfung einstellen. Da wir es in unserem Projekt bei jedem Manuskript bzw. Werk mit diversen mittelalterlichen Varianten der deutschen Sprache zu tun haben, wählen wir hier “Germanic languages” (Abb. 10: b). Auf eine Aktivierung der Speech-to-text-Funktion verzichten wir vorerst, da wir nicht davon ausgehen, dass unsere Mitarbeitenden fließend Frühneuhochdeutsch sprechen; und auch die Rechtschreibprüfung wird nicht aktiviert, da diese für unsere Texte mit großer Wahrscheinlichkeit wenig hilfreich ist.
     ![Sprachauswahl](../img/language-options-ger.PNG)
-* **Einstellung des Revisionstyps**: Da wir in unserem Editionsprojekt nach dem 4-Augen-Prinzip arbeiten, stellen wir den Review type auf “restricted”, so dass alle fertiggestellten Transkriptionen unbedingt von einem autorisierten Reviewer noch einmal gelesen und gegebenenfalls korrigiert werden (Abb. 10: c).
+* **Einstellung des Revisionstyps**: Da wir in unserem Editionsprojekt nach dem 4-Augen-Prinzip arbeiten, stellen wir den Review type auf “restricted”, so dass alle fertiggestellten Transkriptionen unbedingt von einem/einer autorisierten Reviewer:in noch einmal gelesen und gegebenenfalls korrigiert werden (Abb. 10: c).
 * **Erstellung von Metadaten für einzelne Werke**: Damit unsere Transkribierenden uns auch bei der Anreicherung mit Metadaten helfen können, aktivieren wir die Metadaten-Beschreibung in den Einstellungen (Abb. 10: d). Auch hierfür erscheint in der Navigation nun ein neuer Reiter (Metadata Fields), in dem die entsprechenden Voreinstellungen getroffen werden können.
     ![Metadaten-Felder](../img/metadata-fields.PNG)
 * **Einrichtung eines Forums:** Um auch eine aktive Diskussion zwischen den Mitarbeitenden in unserem Projekt zu ermöglichen, eröffnen wir zudem ein Forum (Abb. 10: e).
 → Durch das An- oder Abwählen von diversen Funktionalitäten in den Projekteinstellungen erweitert sich übrigens das Navigationsmenü um entsprechende Tabs. Das Aktivieren des Buttons “Enable Forum” führt also dazu, dass im Projekt-Dashboard der Reiter “Forum” zur Verfügung steht.
     ![Tab-Erweiterung im Projektdashboard](../img/project-dashboard-tabs.PNG)
-* **Anpassungen des Transkriptionseditors**: Um auch für Transkribierende, die bisher noch nie oder nur wenig mit spitzen Klammern gearbeitet haben, die Transkriptionsarbeit möglichst einfach zu gestalten, nutzen wir die Möglichkeit, die vordefinierten Editor-Buttons (derzeit sind 21[ Tags ](https://content.fromthepage.com/project-owner-documentation/advanced-editor/)verfügbar) zu aktivieren (Abb. 10: f).
+* **Anpassungen des Transkriptionseditors**: Um die Transkriptionsarbeit auch für Transkribierende, die bisher noch nie oder nur wenig mit spitzen Klammern gearbeitet haben, möglichst einfach zu gestalten, nutzen wir die Möglichkeit, die vordefinierten Editor-Buttons (derzeit sind 21[ Tags ](https://content.fromthepage.com/project-owner-documentation/advanced-editor/)verfügbar) zu aktivieren (Abb. 10: f).
     ![Editor-Buttons](../img/editor-buttons.PNG)
 ### 3.2. Einstellungen für das jeweilige Werk
-* **Allgemeine Einstellungen**: Auch für jedes Werk - also in unserem Fall für jedes Manuskript selbst - können wir diverse Voreinstellungen vornehmen. Darunter fallen die Vergabe eines Titels, die Zuordnung zu einer Sammlung bzw. einem Projekt, die Anpassung der URL sowie die Vergabe eines Identifiers von einem externen System (Abb. i: a).
+* **Allgemeine Einstellungen**: Auch für jedes Werk - also in unserem Fall für jedes Manuskript selbst - können wir diverse Voreinstellungen vornehmen. Darunter fallen die Vergabe eines Titels, die Zuordnung zu einer Sammlung bzw. einem Projekt, die Anpassung der URL sowie die Vergabe eines Identifiers von einem externen System (Abb. 15:a).
     ![Konfigurationen in den Einstellungen zu den einzelnen Werken](../img/work-setup.PNG)
 Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobei in unserem Fall unsere Seiten weder als semantische Einheiten zu betrachten sind, noch eine [OCR](https://de.wikipedia.org/wiki/Texterkennung)-Korrektur anwendbar ist, und wir diese Optionen daher deaktiviert lassen.
-* **Beschreibung des Werkes:** Um unseren Transkribierenden einen Anhaltspunkt zu bieten, mit welcher Hand und welcher Sprache bzw. welchem Dialekt sie konfrontiert werden, halten wir diese Informationen bereits in den jeweiligen Werkbeschreibungen bereit (Abb. i: b).
-* **Transkriptionsrichtlinien:** Diese werden grundsätzlich von den Projekt-Einstellungen übernommen, können aber hier noch weiter angepasst werden. In unserem Fall verzichten wir auf Änderungen, da für alle Manuskripte die gleichen Richtlinien gelten sollen (Abb. i: c).
-* **Einschränkung der Mitarbeitenden:** Auch für die einzelnen Werke ist es möglich, den Personenkreis (nur registrierte Nutzer:innen) einzuschränken (Abb. i: d).
+* **Beschreibung des Werkes:** Um unseren Transkribierenden einen Anhaltspunkt zu bieten, mit welcher Hand und welcher Sprache bzw. welchem Dialekt sie konfrontiert werden, halten wir diese Informationen bereits in den jeweiligen Werkbeschreibungen bereit (Abb. 15:b).
+* **Transkriptionsrichtlinien:** Diese werden grundsätzlich von den Projekt-Einstellungen übernommen, können aber hier noch weiter angepasst werden. In unserem Fall verzichten wir auf Änderungen, da für alle Manuskripte die gleichen Richtlinien gelten sollen (Abb. 15:c).
+* **Einschränkung der Mitarbeitenden:** Auch für die einzelnen Werke ist es möglich, den Personenkreis (nur registrierte Nutzer:innen) einzuschränken (Abb. 15:d).
 → Dabei ist zu beachten, dass Personen, die als Mitarbeitende zu einem Werk hinzugefügt werden, zuvor auch in den übergeordneten Projekteinstellungen als Mitarbeitende hinzugefügt werden müssen.
 * **Metadaten-Anreicherung:** In diesem Bereich sollten unsere zuvor mit der YAML-Datei hochgeladenen Metadaten ersichtlich sein. Diese können hier aber auch noch erweitert oder angepasst werden.
     ![Werk-Metadaten](../img/work-metadata.PNG)
@@ -264,12 +271,12 @@ Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobe
         ![Transkriptionsarbeit](../img/transcription-view.PNG)
         Sollte es unter unseren Transkribierenden Personen geben, die Tags lieber ausschreiben statt Textbereiche mittels Klick auf Button zu markieren, ist dies ebenfalls möglich. Strukturierungen wie Zeilenumbrüche oder Absätze werden automatisch übernommen. Wenn wir die Möglichkeiten der TEI nutzen wollen, haben wir dafür zwar keine Buttons, wir können aber z. B. editorische Eingriffe - in der Abbildung durch das Element `<supplied>` realisiert - trotzdem mit dem entsprechenden Tag auszeichnen.
         ![Mark-up-Möglichkeiten](../img/markup.PNG)
-        Das Element wird zwar in der allgemeinen Darstellung auf  _FromThePage_ nicht unterstützt, es befindet sich aber am Ende in unserem TEI-Export. Ein Nachteil dieses Workarounds ist aber, dass auf diese Weise angelegte Tags nicht validiert werden und wir bei einer falschen Schreibweise oder unzulässigen Positionierung des Elements keinen Hinweis darauf bekommen. Da wir  _FromThePage_ aber ohnehin nur für unsere Transkription und nicht für die Annotation verwenden wollen, setzen wir uns mit dieser Form der Auszeichnung nicht weiter auseinander.
+        Das Element wird zwar in der allgemeinen Darstellung auf  _FromThePage_ nicht unterstützt, es befindet sich aber am Ende in unserem TEI-Export. Ein Nachteil dieses Workarounds ist jedoch, dass auf diese Weise angelegte Tags nicht validiert werden und wir bei einer falschen Schreibweise oder unzulässigen Positionierung des Elements keinen Hinweis darauf bekommen. Da wir  _FromThePage_ aber ohnehin nur für unsere Transkription und nicht für die Annotation verwenden wollen, setzen wir uns mit dieser Form der Auszeichnung nicht weiter auseinander.
         ![Allgemeine Ansicht](../img/transcription-overview.PNG)
-        → An dieser Stelle hervorzuheben ist auch, dass es im Rahmen unseres Beispielsprojekts es leider nicht auf sichere und einfache Weise möglich war, farbliche Hervorhebungen, Hinzufügungen durch den/die Editor:in (und nicht den/die Autor:in) oder die Gründe für eine unleserliche Stelle zu annotieren.
+        → An dieser Stelle hervorzuheben ist auch, dass es im Rahmen unseres Beispielsprojekts leider nicht auf sichere und einfache Weise möglich war, farbliche Hervorhebungen, Hinzufügungen durch den/die Editor:in (und nicht den/die Schreiber:in) oder die Gründe für eine unleserliche Stelle zu annotieren.
     * **Anmerkungen und Fragen:** Sollten Mitarbeitende auf Probleme stoßen, zu denen es in den Transkriptionsrichtlinien keine Anhaltspunkte gibt, so haben sie die Möglichkeit, für jedes Faksimile und die dazugehörige Transkription eine Anmerkung zu hinterlassen oder Fragen zu stellen. Diese Notizen werden auch in den TEI-Export übernommen und können somit nützlich sein, um damit Problemstellen zu kennzeichnen oder Kommentare für die spätere Annotation einzufügen. In unserem Beispiel wurde diese Funktion genutzt, um jene Transkriptionen zu markieren, in denen es Probleme mit der Darstellung von diakritischen Zeichen gab.
         ![Austausch mit und zwischen Projektmitarbeitenden](../img/notes-and-questions.PNG)
-    * **Subject Linking:** Während der Transkription eines Dokumentes können auch Entitäten wie Personen, Orte oder eigens angelegte Kategorien (inklusive Unterkategorien) - in unserem Beispiel Zutaten und Speisen - ausgezeichnet werden.
+    * **Kleiner Exkurs - Subject Linking:** Während der Transkription eines Dokumentes können auch Entitäten wie Personen, Orte oder eigens angelegte Kategorien (inklusive Unterkategorien) - in unserem Beispiel Zutaten und Speisen - ausgezeichnet werden.
         ![Subject Linking](../img/subject-linking.PNG)
         Projektinhaber:innen können dafür im Projekt-Dashboard die nötigen Vorbereitungen treffen, indem sie die entsprechenden Kategorien erstellen.
         ![Subject Linking Übersicht](../img/subject-linking-overview.png)
@@ -283,7 +290,7 @@ Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobe
         ![Zuordnung von Entitäten zu Kategorien](../img/subject-linking-categorization-transcription.PNG)
         Die Transkribierenden können in ihrem Projekt-Dashboard die von der Projektleitung angelegten Entitäten einsehen und auch bearbeiten. Sie können jedoch keine weiteren Kategorien anlegen. Auch hier gilt wieder, dass  _FromThePage_ für unser Projekt nur als Transkriptionstool genutzt wird, weshalb wir versuchsweise nur auf der ersten Seite ein paar Entitäten verlinkt und innerhalb aller weiteren Transkriptionen die Auto-Link-Funktion ausprobiert, die auch tatsächlich zu ein paar Treffern führte.
     * **Zwischenspeichern oder Abschließen**: Wenn wir ein paar Zeilen transkribiert haben und zwischenspeichern wollen, klicken wir auf “Save”. Wenn die Transkription vollständig abgeschlossen ist, klicken wir auf “Done”. Danach wird aus dem “Done”-Button ein “Approve”-Button gemäß unserer zuvor festgelegten Einstellung, dass jedes Dokument einer Revision unterzogen werden muss.
-    → Achtung: Sobald man den Tab mit der Transkriptionsansicht verlässt, verliert man ohne Vorwarnung seinen Arbeitsfortschritt - daher nicht vergessen, regelmäßig abzuspeichern.
+    → Achtung: Sobald man den Tab mit der Transkriptionsansicht verlässt, verliert man ohne Vorwarnung seinen Arbeitsfortschritt - daher sollte man nicht vergessen, regelmäßig abzuspeichern.
     * **Metadaten-Anreicherung:** Nachdem wir für unser Projekt festgelegt haben, dass zu jedem Werk auch Metadaten angelegt werden können, steht unseren Transkribierenden ein Button zur Erstellung von Metadaten zur Verfügung.
         ![Metadaten-Button für Bearbeitende](../img/create-metadata-button.PNG)
         Über die damit aufgerufene Ansicht können schließlich die zuvor von der Projektleitung angelegten Felder (siehe [Metadaten-Erstellung für einzelne Werke](#32-einstellungen-für-das-jeweilige-werk)) befüllt werden.
@@ -294,11 +301,11 @@ Zudem können wir diverse Häkchen für unterschiedliche Funktionen setzen, wobe
 ## 5.  Export der Dokumente
 Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf  _FromThePage_ im Downloadbereich des Projekt-Dashboards (und nicht in den Werkübersichten) zu finden sind: Da wir unsere Daten in anderen Tools weiter annotieren und mit Normalisierungen anreichern wollen, soll der Output in einer TEI-XML-Datei exportiert werden. Dafür bietet uns  _FromThePage_ die Möglichkeit, entweder jedes Projekt einzeln oder die einzelnen Werke als Sammelexport in einer gewissen Ordnerstruktur herunterzuladen.
     ![Exportmöglichkeiten](../img/export.png)
-    → Wir sehen hier für all unsere Werke den Bearbeitungsfortschritt und haben direkt die Möglichkeit, unsere Arbeit als TEI zu exportieren. Für etwas feinere Einstellungen nutzen wir jedoch die erste Option für einen Sammelexport ("Export All Works").
+    → Wir sehen hier für all unsere Werke den Bearbeitungsfortschritt und haben direkt die Möglichkeit, unsere Arbeit als TEI zu exportieren. Für etwas speziellere Einstellungen nutzen wir jedoch die erste Option für einen Sammelexport ("Export All Works").
 * **Export der Werke:** Über den Button “Export All Works” können wir nun verschiedene Formate und Einstellungen wählen und unsere gesamte Sammlung als ZIP-Datei exportieren.
     ![Export aller Werke in ZIP-Datei](../img/export-all-works.PNG)
     Wir wählen dabei einen Ordner pro Werk und stellen ein, dass unsere Export-Ordner den Namen der Import-Ordner übernehmen bzw. beibehalten sollen. Bei den Exportformaten wählen wir nur TEI-XML aus. In den exportierten TEI-Dateien ([Link zum vollständigen Export](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1/fromthepage/export)) finden wir für jedes Werk einen Ordner mit je einer Readme-Datei, in der die verschiedenen Exportformate beschrieben sind, und für jedes Werk einen weiteren Ordner, in dem unsere TEI-Dateien enthalten sind, in denen unsere Bearbeitungsschritte des vorangegangenen Abschnittes nun folgende Form angenommen haben:
-    * **Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, Informationen zu den Versionen sind - wie hier auszugsweise dargestellt - im `<teiHeader>` wiederzufinden.
+    * **Metadaten:** Unsere über die YML-Datei importierten Metadaten sowie diverse manuell hinzugefügte Metadaten, und Informationen zu den Versionen sind - wie hier auszugsweise dargestellt - im `<teiHeader>` wiederzufinden.
         ```xml
         <teiHeader>
             <fileDesc>
@@ -392,76 +399,7 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf  _
             ...
         </teiHeader>
         ```
-        → Die individuellen Werk-Metadaten (Material, Sprache usw.), die wir für jedes Manuskript einzeln angelegt haben, sind hier aber leider nicht abgebildet - diese befinden sich aber später im CSV-Metadaten-Export. Leider müssen wir an dieser Stelle außerdem feststellen, dass unser TEI nicht valide ist, da in den Metadaten eine xml:id an zwei Stellen vergeben wurde.
-    * **Entitäten & Kategorien:** Unsere Taxonomie für Zutaten und Gerichte wird in ein `<taxonomy>`-Element verpackt, wo wir all unsere angelegten Daten und Kategoriezuordnungen wiederfinden.
-        ```xml
-        <encodingDesc>
-            <classDecl>
-            <taxonomy>
-                <category xml:id="C32001131">
-                    <catDesc>Gericht</catDesc>
-                    <category xml:id="C32001132">
-                    <catDesc>Süßspeise</catDesc>
-                    <category xml:id="S32080907">
-                        <catDesc>
-                        <term>Lebkuchen </term>
-                        <idno>https://www.wikidata.org/wiki/Q2740122</idno>
-                        <note type="categorization">Categories:<ab><ptr ana="#category #root"
-                                target="#C32001131">Gericht</ptr> -- <ptr ana="#category #leaf"
-                                target="#C32001132">Süßspeise</ptr></ab>
-                        </note>
-                        </catDesc>
-                    </category>
-                    </category>
-                </category>
-                <category xml:id="C32001130">
-                    <catDesc>Zutaten</catDesc>
-                    <category xml:id="S32080908">
-                    <catDesc>
-                        <term>Honig </term>
-                        <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
-                            target="#C32001130">Zutaten</ptr></ab>
-                        </note>
-                    </catDesc>
-                    </category>
-                    <category xml:id="S32080911">
-                    <catDesc>
-                        <term>Ingwer </term>
-                        <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
-                            target="#C32001130">Zutaten</ptr></ab>
-                        </note>
-                    </catDesc>
-                    </category>
-                    <category xml:id="S32080910">
-                    <catDesc>
-                        <term>Muskatnuss </term>
-                        <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
-                            target="#C32001130">Zutaten</ptr></ab>
-                        </note>
-                    </catDesc>
-                    </category>
-                    <category xml:id="S32080909">
-                    <catDesc>
-                        <term>Nelken </term>
-                        <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
-                            target="#C32001130">Zutaten</ptr></ab>
-                        </note>
-                    </catDesc>
-                    </category>
-                    <category xml:id="S32080912">
-                    <catDesc>
-                        <term>Pfeffer </term>
-                        <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
-                            target="#C32001130">Zutaten</ptr></ab>
-                        </note>
-                    </catDesc>
-                    </category>
-                </category>
-            </taxonomy>
-            </classDecl>
-        </encodingDesc>
-        ```
-    → Auch hier treffen wir auf ein Problem hinsichtlich der Validität unseres TEI-Dokuments, da in der Taxonomie innerhalb der `<catDesc>`-Elemente `<notes>`-Elemente erzeugt wurden, die dort nicht zugelassen sind. Zudem steht die mit einem `<head>`-Element ausgezeichnete Überschrift von einem der Faksimiles unzulässigerweise innerhalb eines `<p>`-Elementes.
+        → Die individuellen Werk-Metadaten (Material, Sprache usw.), die wir für jedes Manuskript einzeln angelegt haben, sind hier leider nicht abgebildet - diese befinden sich aber später im CSV-Metadaten-Export. Leider müssen wir an dieser Stelle außerdem feststellen, dass unser TEI nicht valide ist, da in den Metadaten eine xml:id an zwei Stellen vergeben wurde.
     * **Transkription:** Jede transkribierte Seite unseres Werkes wird schließlich in einem `<div>`-Element wiedergegeben, wobei das vorangehende `<pb>`-Element einen Link zur Bilddatei im IIIF-Format beinhaltet.
         ```xml
         <text>
@@ -729,10 +667,79 @@ Die nachfolgenden Ausführungen beziehen sich auf die Möglichkeiten, die auf  _
         </text>
         ```
     Wie erwartet können wir innerhalb des Textes die Auszeichnung von Zeilenumbrüchen, unklaren Stellen, Erweiterungen von Abkürzungen sowie Referenzen zu unserer Taxonomie wiederfinden. Außerdem finden wir auch die Anmerkungen der Transkribierenden in einem `<note>`-Element am Ende des `<div>`-Elements.
+     * **Entitäten & Kategorien:** Unsere Taxonomie für Zutaten und Gerichte wird in ein `<taxonomy>`-Element verpackt, wo wir all unsere angelegten Daten und Kategoriezuordnungen wiederfinden.
+        ```xml
+        <encodingDesc>
+            <classDecl>
+            <taxonomy>
+                <category xml:id="C32001131">
+                    <catDesc>Gericht</catDesc>
+                    <category xml:id="C32001132">
+                    <catDesc>Süßspeise</catDesc>
+                    <category xml:id="S32080907">
+                        <catDesc>
+                        <term>Lebkuchen </term>
+                        <idno>https://www.wikidata.org/wiki/Q2740122</idno>
+                        <note type="categorization">Categories:<ab><ptr ana="#category #root"
+                                target="#C32001131">Gericht</ptr> -- <ptr ana="#category #leaf"
+                                target="#C32001132">Süßspeise</ptr></ab>
+                        </note>
+                        </catDesc>
+                    </category>
+                    </category>
+                </category>
+                <category xml:id="C32001130">
+                    <catDesc>Zutaten</catDesc>
+                    <category xml:id="S32080908">
+                    <catDesc>
+                        <term>Honig </term>
+                        <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
+                            target="#C32001130">Zutaten</ptr></ab>
+                        </note>
+                    </catDesc>
+                    </category>
+                    <category xml:id="S32080911">
+                    <catDesc>
+                        <term>Ingwer </term>
+                        <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
+                            target="#C32001130">Zutaten</ptr></ab>
+                        </note>
+                    </catDesc>
+                    </category>
+                    <category xml:id="S32080910">
+                    <catDesc>
+                        <term>Muskatnuss </term>
+                        <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
+                            target="#C32001130">Zutaten</ptr></ab>
+                        </note>
+                    </catDesc>
+                    </category>
+                    <category xml:id="S32080909">
+                    <catDesc>
+                        <term>Nelken </term>
+                        <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
+                            target="#C32001130">Zutaten</ptr></ab>
+                        </note>
+                    </catDesc>
+                    </category>
+                    <category xml:id="S32080912">
+                    <catDesc>
+                        <term>Pfeffer </term>
+                        <note type="categorization">Categories:<ab><ptr ana="#category #leaf #root"
+                            target="#C32001130">Zutaten</ptr></ab>
+                        </note>
+                    </catDesc>
+                    </category>
+                </category>
+            </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        ```
+    → Auch hier treffen wir auf ein Problem hinsichtlich der Validität unseres TEI-Dokuments, da in der Taxonomie innerhalb der `<catDesc>`-Elemente `<note>`-Elemente erzeugt wurden, die dort nicht zugelassen sind.
 * **Export der Metadaten**: Viele der Metadaten, die wir im Header des TEI-XMLs finden, sowie zusätzlich die eigens für jedes Projekt angelegten Metadaten (Material, Sprache & zeitliche Einordnung) können wir auch per CSV exportieren ([Link zum CSV-Export](https://github.com/DigEdTnT/digedtnt.github.io/blob/95d465f768eff02fdcd74f8e5248d8eea9e94586/data/pipelines/pipeline_1/fromthepage/export/fromthepage_work_metadata_export_32000501_2023-04-13T11_28_04Z.csv)).
 → Man beachte jedoch, dass bei diesem Export nur die allgemeinen Projekt-Metadaten und Statistiken wiederzufinden sind, nicht aber die von uns per YAML-Datei importierten Metadaten wie beispielsweise die physische Beschreibung oder historische Dokumentation der Manuskripte.
 
-<span style="font-size:0.8rem;">→ <u>Hinweis:</u> Beim Öffnen des exportierten TEI-XML im Oxygen Editor könnte es zu Problemen mit der Zeichenkodierung kommen. Buchstaben mit Diakritika werden in der Standard-Schriftart (Monospaced) des Editors im TEI nicht korrekt dargestellt. Für ein korrektes Rendering müsste daher die Schriftart (z.B. auf Corbel) umgestellt werden.</span>
+<span style="font-size:0.8rem;">→ <u>Hinweis:</u> Beim Öffnen des exportierten TEI-XML im Oxygen Editor könnte es zu Problemen mit der Zeichenkodierung kommen. Buchstaben mit Diakritika werden in der Standard-Schriftart (Monospaced) des Editors im TEI nicht korrekt dargestellt. Für ein korrektes Rendering müsste daher die Schriftart (z. B. auf Corbel) umgestellt werden.</span>
 
 # Kontakt
 
