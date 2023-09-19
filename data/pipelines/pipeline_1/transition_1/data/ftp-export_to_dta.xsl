@@ -302,5 +302,28 @@
 			<xsl:value-of select="."/>
 		</supplied>
 	</xsl:template>
+	
+	
+	<!-- add attribute to <del> elements -->
+	<xsl:template match="tei:del">
+		<del>
+		<xsl:attribute name="rendition">
+			<xsl:text></xsl:text>
+		</xsl:attribute>
+		<xsl:value-of select="."/>
+		</del>
+	</xsl:template>
+	
+	
+	<!-- add attribute to <add> elements -->
+	<xsl:template match="tei:add">
+		<add>
+		<xsl:attribute name="rendition">
+			<xsl:text></xsl:text>
+		</xsl:attribute>
+		<xsl:value-of select="."/>
+		</add>
+	</xsl:template>
+	
 
 </xsl:stylesheet>

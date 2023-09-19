@@ -22,6 +22,12 @@
                </resp>
             </respStmt>
          </titleStmt>
+         <editionStmt>
+            <edition>Weiterverarbeitung des FromThePageExports mit Ediarum</edition>
+         </editionStmt>
+         <extent>
+            <measure type="images">5</measure>
+         </extent>
          <publicationStmt>
             <publisher><!-- HINWEIS: Das nachfolgende Element ist obligatorisch und sollte daher ausgefüllt werden! -->
                <orgName>[Name der publizierenden Institution]</orgName>
@@ -125,7 +131,7 @@
           vnd stoß die hieffenn vnd misch die mit honig<lb/> vnd das isse das des morgens
           nüchternn<lb/> Meßigkeit Ist ein aufenthaltung des ganntzen leichnams . Vnd ein
           starck<lb/> aller gelider . Vnd ein außderung aller boesenn duenst Wann meßigkeit ist<lb/>
-          ein zustoerung aller lasterr<lb/> Wiltu gut lekuchenn machenn <choice>
+          ein zustoerung aller lasterr<lb/> Wiltu gut  lekuchenn machenn <choice>
                   <expan>Recipe</expan>
                   <abbr>R</abbr>
                </choice> zu einem seÿdlein hönigs 1/2 lot negelleyn<lb/> 1/2 lot muscat 1/2 lot
@@ -160,13 +166,13 @@
          <div xml:id="OTP33038494">
             <p xml:id="OTP33038494P0">Hienach volgt vonn dem kochenn vnd hat gemacht meyster Eberhart
           Ein koch<lb/> herczog heinrichs zu lands hut Zum Ein salsenn von weichselnn zu machen<lb/>
-          Item Wiltu machen ein gutte salsenn von weichselnn So <del>?</del> thue die weich=<lb/>
-          sell in einen hafen vnd setz die auff ein glut vnd laß sie siedenn vnd<lb/> laß dann wider
-          erkaltenn vnd streich sie durch ein tuch vnd thue sie<lb/> dann wider in den hafenn vnd
-          setz sie auff ein glut vnd laß sie wol sieden<lb/> vnd rurr sie piß sie dick wirt vnd thue
-          dann honig dar an vnd geribens<lb/> prot vnd negellein vnd gut
-          gestüp vnd thue sie in ein feßlein sie pleibt<lb/> dir gut drew oder vier iarr<lb/> Ein
-          gutte salsen zu machen in der fastenn<lb/>
+          Item Wiltu machen ein gutte salsenn von weichselnn So <del rendition="">?</del> thue die
+          weich=<lb/> sell in einen hafen vnd setz die auff ein glut vnd laß sie siedenn vnd<lb/>
+          laß dann wider erkaltenn vnd streich sie durch ein tuch vnd thue sie<lb/> dann wider in
+          den hafenn vnd setz sie auff ein glut vnd laß sie wol sieden<lb/> vnd rurr sie piß sie
+          dick wirt vnd thue dann honig dar an vnd geribens<lb/> prot vnd
+          negellein vnd gut gestüp vnd thue sie in ein feßlein sie pleibt<lb/> dir gut drew oder
+          vier iarr<lb/> Ein gutte salsen zu machen in der fastenn<lb/>
                <choice>
                   <expan>Item</expan>
                   <abbr>It</abbr>
@@ -176,7 +182,8 @@
                <choice>
                   <expan>Item</expan>
                   <abbr>It</abbr>
-               </choice> Ein andre salsenn Saluia petrocilius menta vnd             pfefferr das soll<lb/> man zustossenn mit essig das ist ein salsen die macht lustig
+               </choice> Ein andre salsenn Saluia petrocilius menta vnd 
+           pfefferr das soll<lb/> man zustossenn mit essig das ist ein salsen die macht lustig
           zu essenn<lb/> Item Ein essenn von gebratenn arbeissenn Nÿm gesotenn arbeÿß vnd<lb/>
           slach sie durch ein tuch oder durch ein sib vnd slach vil eÿerr<lb/> darzu als vil der
           arbeiß sein vnd seud es in putternn vnd steck es<lb/> an einen spiß vnd brot sie wol vnd
@@ -318,7 +325,7 @@
                   <expan>veber</expan>
                   <abbr>veb</abbr>
                </choice>
-               <lb/> den stock <del>in die</del> visch in die pfannen vnd laß es ein wal
+               <lb/> den stock <del rendition="">in die</del> visch in die pfannen vnd laß es ein wal
           oder<lb/> drej thun so ist er gerecht<lb/> Item Hienach volgt wie man ein ganß pratenn
           soll So laß sie<lb/> vor zwenn oder drej tag wol hungernn das die bösen predenn<lb/> die
           in ir sein her auß genn vnd soll sie dann nernn mit kornn vnd dar<lb/> nach tötte sie vnd
@@ -375,7 +382,7 @@
           es reinigt sie vnd die<lb/> nÿren do der stein wechst den schleim vnd treibt vil
           vnflatz<lb/> vonn dem menschenn<lb/> Arbeißenn Brüe hat die selben krafft aber nit als
           krefftigklichenn<lb/> do vonn so man kichernn nit hat so seudt man arbeiß kichernn<lb/>
-          oder arbeiß die grun sein so soll man <add>nit</add> essenn wann sie machenn<lb/> em
+          oder arbeiß die grun sein so soll man <add rendition="">nit</add> essenn wann sie machenn<lb/> em
           menschenn boese feuchtigkeit </p>
          </div>
       </body>
