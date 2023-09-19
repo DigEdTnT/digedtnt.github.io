@@ -296,7 +296,7 @@
 	</xsl:template>
 
 
-	<!-- convert <unclear> to <gap> -->
+	<!-- convert <unclear> to <supplied> -->
 	<xsl:template match="tei:unclear">
 		<supplied cert="low">
 			<xsl:value-of select="."/>
