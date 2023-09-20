@@ -1,0 +1,350 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="header">
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Hugo Schuchardt an Jan Baudouin de Courtenay (03-356)</title>
+                <author ana="marcrelator:aut">
+                    <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109"
+                            ><forename>Hugo</forename>
+                        <surname>Schuchardt</surname></persName>
+                </author>
+                <editor ana="marcrelator:edt">
+                    <persName><forename>Wolfgang</forename>
+                        <surname>Eismann</surname></persName>
+                </editor>
+                <editor ana="marcrelator:edt">
+                    <persName><forename>Bernhard</forename>
+                        <surname>Hurch</surname></persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher ana="marcrelator:pbl">
+                    <orgName corresp="https://sprachwissenschaft.uni-graz.at"
+                        ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
+                        Karl-Franzens-Universität Graz</orgName>
+                </publisher>
+                <authority ana="marcrelator:his">
+                    <orgName corresp="https://informationsmodellierung.uni-graz.at"
+                        ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung -
+                        Austrian Centre for Digital Humanities, Karl-Franzens-Universität
+                        Graz</orgName>
+                </authority>
+                <distributor ana="marcrelator:rps">
+                    <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset
+                        Management System</orgName>
+                </distributor>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative
+                        Commons BY-NC 4.0</licence>
+                </availability>
+                <ref>
+                    <date ana="dcterms:issued" when="2022">2022</date>
+                </ref>
+                <pubPlace ana="marcrelator:pup">Graz</pubPlace>
+                <idno corresp="http://schuchardt.uni-graz.at/id/letter/1181" type="PID"
+                    >o:hsa.letter.1181</idno>
+                <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">03-356</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
+                <respStmt ana="marcrelator:pbl">
+                    <resp>Herausgeber</resp>
+                    <persName ref="http://d-nb.info/gnd/111679893"><forename>Bernhard</forename>
+                        <surname>Hurch</surname>
+                        <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität
+                            Graz</orgName></persName>
+                </respStmt>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>Russland</country>
+                        <settlement>Sankt Petersburg</settlement>
+                        <repository ref="http://www.ras.ru/">Archiv der Petersburger Akademie der
+                            Wissenschaften</repository>
+                        <idno type="shelfmark">356</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang mainLang="de"/>
+                        <msItem>
+                            <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109"
+                                    ><forename>Hugo</forename>
+                                <surname>Schuchardt</surname></author>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support><material ref="http://vocab.getty.edu/aat/300014109"
+                                        >Papier</material>
+                                    <objectType>Brief</objectType></support>
+                                <extent>
+                                    <measure quantity="4" unit="pages">4 Seiten</measure>
+                                </extent>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                    <history>
+                        <origin><origPlace ana="marcrelator:prp"
+                                corresp="https://gams.uni-graz.at/o:hsa.places#PL.6"
+                                ref="http://sws.geonames.org/2778067">Graz</origPlace>
+                            <origDate ana="dcterms:created" when="1884-06-12"
+                            >1884-06-12</origDate></origin>
+                    </history>
+                </msDesc>
+                <bibl type="online"><author ana="marcrelator:aut"
+                                ><persName><forename>Wolfgang</forename>
+                            <surname>Eismann</surname></persName></author><author
+                        ana="marcrelator:aut"><persName><forename>Bernhard</forename>
+                            <surname>Hurch</surname></persName></author><date when="2014"
+                        >2014</date>
+                    <title>Die Korrespondenz zwischen Hugo Schuchardt und Jan Baudouin de
+                        Courtenay</title><series>Hugo Schuchardt
+                                Archiv<editor><forename>Bernhard</forename>
+                            <surname>Hurch</surname></editor></series></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Die Datenmodellierung orientiert sich am <ref
+                        target="https://www.deutschestextarchiv.de/doku/basisformat/"
+                        >DTA-Basisformat</ref>, <ref target="https://www.ediarum.org/">ediarum</ref>
+                    und der <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc"
+                        >CorrespDesc-SIG</ref>.</p>
+                <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst
+                    und befindet sich unter</p>
+            </editorialDecl>
+            <projectDesc>
+                <ab>
+                    <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt
+                        Archiv</ref>
+                </ab>
+                <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des
+                    Nachlasses von Hugo Schuchardt (1842-1927). Die Onlinepräsentation stellt alle
+                    Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung. Die
+                    Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der
+                    Korrespondenz, die zu großen Teilen bereits ediert vorliegt, und der
+                    Werkmanuskripte.</p>
+            </projectDesc>
+            <listPrefixDef>
+                <prefixDef ident="marcrelator" matchPattern="([a-z]+)"
+                    replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
+                    <p>Rollen-Taxonomie</p>
+                </prefixDef>
+                <prefixDef ident="dcterms" matchPattern="([a-z]+)"
+                    replacementPattern="http://purl.org/dc/terms/$1">
+                    <p>Datumstaxonomie</p>
+                </prefixDef>
+                <prefixDef ident="skos" matchPattern="([a-z]+)"
+                    replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
+                    <p>Thesaurustaxonomie</p>
+                </prefixDef>
+            </listPrefixDef>
+        </encodingDesc>
+        <profileDesc>
+            <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.1181">
+                <correspAction type="sent">
+                    <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109"
+                        ref="https://viaf.org/viaf/261931943"><forename>Hugo</forename>
+                        <surname>Schuchardt</surname></persName>
+                    <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1"
+                        ref="http://sws.geonames.org/2778067">Graz</placeName>
+                    <addName>
+                        <date when="1884-06-12">1884-06-12</date>
+                    </addName>
+                </correspAction>
+                <correspAction type="received">
+                    <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1097"
+                        ref="https://viaf.org/viaf/34465549"><forename>Jan</forename>
+                        <surname>Baudouin de Courtenay</surname></persName>
+                </correspAction>
+            </correspDesc>
+            <textClass>
+                <keywords scheme="cirilo:normalizedPlaceNames">
+                    <list>
+                        <item>
+                            <placeName xml:id="GID.1"><country>Austria</country>
+                                <settlement>Graz</settlement>
+                                <name ref="http://geonames.org/2778067" type="fcode:PPLA"
+                                    >Graz</name><location>
+                                    <geo>15.45,47.06667</geo>
+                                </location></placeName>
+                        </item>
+                    </list>
+                </keywords>
+                <keywords ana="correspondence">
+                    <list>
+                        <item>
+                            <ref target="info:fedora/context:hsa.letters.1097" type="context"
+                                >Korrespondenz Hugo Schuchardt - Jan Baudouin de Courtenay</ref>
+                        </item>
+                        <item>
+                            <ref target="info:fedora/context:hsa.letters" type="context"
+                                >Korrespondenz</ref>
+                        </item>
+                    </list>
+                </keywords>
+                <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
+                    <list>
+                        <item><term type="skos:prefLabel" xml:lang="de">Vergleichende
+                                Sprachwissenschaft</term>
+                            <term type="skos:prefLabel" xml:lang="de">Universität Graz</term>
+                            <term type="skos:prefLabel" xml:lang="de">Rossijskaja Akademija Nauk
+                                (St. Petersburg)</term></item>
+                    </list>
+                </keywords>
+                <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
+                    <list>
+                        <item><term type="skos:prefLabel" xml:lang="de">Maimatschin-Dialekt</term>
+                            <term type="skos:prefLabel" xml:lang="de">Russisch</term>
+                            <term type="skos:prefLabel" xml:lang="de">Französisch</term></item>
+                    </list>
+                </keywords>
+                <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation"
+                    >Wissenschaft</classCode>
+                <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation"
+                    >Sprachwissenschaft</classCode>
+                <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation"
+                    >Brief</classCode>
+            </textClass>
+            <langUsage>
+                <language ident="de">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text xml:id="text-1">
+        <body>
+            <div>
+                <pb facs="#IMG.1" n="1"/>
+                <dateline><lb n="1"/>Graz, 12. Juni 1884 </dateline>
+                <opener><lb n="2"/>Verehrter Herr Kollege, </opener>
+                <p><lb n="3"/>Empfangen Sie meinen herzlichsten Dank <lb n="4"/>für Ihren
+                    liebenswürdigen und inhalt¬ <lb n="5"/>reichen Brief. Was die Litteratur des <lb
+                        n="6"/>Chino-russischen anlangt so ist mir bis <lb n="7"/>jetzt Nichts davon
+                    zu Gesichte gekommen, <lb n="8"/>aber die Existenz einer solchen war mir <lb
+                        n="9"/>bekannt. <persName ref="#P.FM">Miklosich</persName> hatte mich schon
+                    vor <lb n="10"/>Jahren auf einen Aufsatz in den Izvêstija <lb n="11"/>der
+                    russischen Academie aufmerksam ge¬ <lb n="12"/>macht, doch entsann er sich des
+                    Näheren <lb n="13"/>nicht und ich konnte nicht ermitteln in <lb n="14"/>welchem
+                    Band er sich fände. Es ist also der <lb n="15"/>von Čerepanov, aus dem Sie die
+                    Güte <lb n="16"/>gehabt haben mir Auszüge mitzutheilen. <lb n="17"/>Es waren mir
+                    noch Reisebeschreibungen <lb n="18"/>in russischer Sprache genannt worden in <lb
+                        n="19"/>denen Angaben über den betreffenden Jargon <lb n="20"/>enthalten
+                    seien; diese sowie diejenigen <lb n="21"/>Schriften die Sie mir bezeichnen,
+                    werde ich <lb n="22"/>mir im Laufe der Zeit zu verschaffen suchen.</p>
+                <pb facs="#IMG.2" n="2"/>
+                <p><lb n="1"/>Da Sie mich auf meinen Kollegen <lb n="2"/><persName ref="#P.GK"
+                        >Krek</persName> verweisen so muss ich Ihnen <lb n="3"/>offen gestehen dass
+                    wir seit längerer <lb n="4"/>Zeit nicht miteinander verkehren; <lb n="5"/>und
+                    damit Sie nicht in eine bei den <lb n="6"/>jetzigen Zeitläuften sehr
+                    naheliegende <lb n="7"/>Vermuthung verfallen, muss ich hin¬ <lb n="8"/>zufügen
+                    dass das Zerwürfnis daher <lb n="9"/>kam dass ich die Ernennung des <lb n="10"
+                    />Prof. <persName ref="#P.GM">Gustav Meyer</persName> zum Ordinarius befür¬ <lb
+                        n="11"/>wortete, er sie bekämpfte. </p>
+                <p><lb n="12"/>Zu meinem Erstaunen erfahre ich <lb n="13"/>von Ihnen dass die
+                    Chinesen Handbücher <lb n="14"/> des Kjachtinischen Jargons besitzen. Ich <lb
+                        n="15"/>spüre den lebhaftesten Appetit danach <lb n="16"/>und da ich aus
+                    allen Theilen der Erde <lb n="17"/>mir schon alle möglichen Handschriften <lb
+                        n="18"/>im Drucke verschafft habe so würde <lb n="19"/> ich auch hier an der
+                    Erreichung meines <lb n="20"/>Wunsches nicht verzweifeln wenn ich <lb n="21"
+                    />irgend welche Adressen in <placeName ref="O.K">Kiachta</placeName>
+                    <lb n="22"/>hätte; zu diesem Zwecke würden auch <lb n="23"/>die von Kaufleuten
+                    ausreichen, voraus¬ <lb n="24"/>gesetzt dass Sie Anlage zur Gefälligkeit <lb
+                        n="25"/>besitzen. Freilich hege ich die Besorgniss <pb facs="#IMG.3"/><lb
+                        n="1"/>dass mir hierbei meine Stammes- <lb n="2"/>und Landesangehörigkeit im
+                    Wege stehen <lb n="3"/>könnte. Denn ich kann es nicht als <lb n="4"/>einen
+                    blossen Zufall betrachten dass <lb n="5"/>von allen Briefen die ich nach
+                    Sibirien <lb n="6"/>richtete (ich wünschte insbesondere Aus¬ <lb n="7"/>kunft
+                    über die Art und Weise wie <lb n="8"/>die einheimischen Völker etwa das <lb
+                        n="9"/>Russische corrumpiren) kein einziger <lb n="10"/>beantwortet worden
+                    ist, während ich <lb n="11"/>mit Leuten die für die faulsten <lb n="12"/>der
+                    Welt gelten, Indoportugiesen, Mu¬ <lb n="13"/>latten, Negern u. s. w., in
+                    Korrespondenz <lb n="14"/>stehe. </p>
+                <p><lb n="15"/>Ich sagte Ihnen schon dass ein Herr <lb n="16"/><persName ref="#P.TB"
+                        >Th. von Busse</persName> mir sehr bereitwillig versprach (ich <lb n="17"
+                    />habe ausführliche Briefe von ihm) Nachrich¬ <lb n="18"/>ten über das
+                    Chino-russische von Wladiwo¬ <lb n="19"/>stok zu senden, wohin er im August 1882
+                        <lb n="20"/>abzureisen gedachte. Er hatte dort irgend <lb n="21"/>eine
+                    officielle Stellung (er schrieb er sei durch <lb n="22"/>sein Amt an das
+                    Südussurigebiet ge¬ <lb n="23"/>bunden). Im Februar d.J. wandte ich mich an <lb
+                        n="24"/>Herrn <persName ref="#P.FS">F. Schmidt</persName> von der <orgName
+                        ref="#OR.RAN">Petersburger Aka¬ <lb n="25"/>demie</orgName> um zu erfahren
+                    was aus Herrn von <lb n="26"/>Busse – er hatte mich an diesen gewiesen –</p>
+                <pb facs="#IMG.4" n="4"/>
+                <p><lb n="1"/> geworden sei; aber auch hier erhielt <lb n="2"/>ich keine Antwort.
+                    Wenn Sie <lb n="3"/>meine wissen¬ <lb n="4"/>schaftlichen Interessen nach dieser
+                    Rich¬ <lb n="5"/>tung hin auch ferner zu fördern die <lb n="6"/>Güte haben
+                    wollten so würden Sie mich <lb n="7"/>insbesondere durch eine gelegentliche <lb
+                        n="8"/>Anfrage bei einem Ihrer Petersburger <lb n="9"/>Bekannten nach dem
+                    Verbleib des Herrn <lb n="10"/>von Busse lebhaftest verpflichten. Es <lb n="11"
+                    />scheint mir doch nicht unwichtig <lb n="12"/>von verschiedenen Punkten der
+                    russisch- <lb n="13"/>chinesischen Grenze Proben des Jargons <lb n="14"/>zu
+                    erhalten. </p>
+                <p><lb n="15"/>Wenn ich von hier aus Ihnen <lb n="16"/>mit irgend Etwas dienen kann,
+                        <lb n="17"/>so verfügen Sie über mich. </p>
+                <closer>
+                    <salute><lb n="18"/>Ich bin in vorzüglicher Hochachtung </salute>
+                    <salute><lb n="19"/>Ihr dankbarer und ergebener </salute>
+                    <signed>
+                        <lb n="20"/>
+                        <persName ref="#P.HS">Hugo Schuchardt</persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+    <standOff xml:id="standOff-1">
+        <listPerson>
+            <person>
+                <persName xml:id="P.FM">Franz von Miklosich</persName>
+            </person>
+            <person>
+                <persName xml:id="P.GK">Gregor Krek</persName>
+            </person>
+            <person>
+                <persName xml:id="P.GM">Gustav Meyer</persName>
+            </person>
+            <person>
+                <persName xml:id="P.TB">Theodor von Busse</persName>
+            </person>
+            <person>
+                <persName xml:id="P.FS">Friedrich Schmidt</persName>
+            </person>
+            <person>
+                <persName xml:id="P.HS">Hugo Schuchardt</persName>
+            </person>
+        </listPerson>
+        <listPlace>
+            <place>
+                <placeName xml:id="O.K">Kiachta</placeName>
+            </place>
+        </listPlace>
+        <listOrg>
+            <org>
+                <orgName xml:id="OR.RAN">Rossijskaja Akademija Nauk (St. Petersburg)</orgName>
+            </org>
+        </listOrg>
+    </standOff>
+    <facsimile xml:id="facs-1">
+        <surface xml:id="IMG.1" ulx="0" uly="0" lrx="964" lry="1488">
+            <label>o hsa.letter.1181_IMG.1.jpg</label>
+            <graphic sameAs="c7584084-381d-48c4-9c74-e1b3bedf3aa1" mimeType="image/jpeg"
+                url="IMG.1.jpg"/>
+        </surface>
+        <surface xml:id="IMG.2" ulx="0" uly="0" lrx="964" lry="1492">
+            <label>o hsa.letter.1181_IMG.2.jpg</label>
+            <graphic sameAs="a986b09c-050a-458f-b530-6179444ed6e4" mimeType="image/jpeg"
+                url="IMG.2.jpg"/>
+        </surface>
+        <surface xml:id="IMG.3" ulx="0" uly="0" lrx="964" lry="1488">
+            <label>o hsa.letter.1181_IMG.3.jpg</label>
+            <graphic sameAs="4d6db206-d6e3-4839-8abb-02e40577bcba" mimeType="image/jpeg"
+                url="IMG.3.jpg"/>
+        </surface>
+        <surface xml:id="IMG.4" ulx="0" uly="0" lrx="965" lry="1493">
+            <label>o hsa.letter.1181_IMG.4.jpg</label>
+            <graphic sameAs="fccbc4b6-2efc-4fa4-8d76-6e9c58625c3b" mimeType="image/jpeg"
+                url="IMG.4.jpg"/>
+        </surface>
+    </facsimile>
+</TEI>

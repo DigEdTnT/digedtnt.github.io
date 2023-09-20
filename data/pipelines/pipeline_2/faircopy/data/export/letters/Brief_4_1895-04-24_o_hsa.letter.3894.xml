@@ -1,0 +1,407 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="de">
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Hugo Schuchardt an Willem Jan van Eys (18-06)</title>
+				<author ana="marcrelator:aut">
+					<persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+						<forename>Hugo</forename>
+						<surname>Schuchardt</surname>
+					</persName>
+				</author>
+				<editor ana="marcrelator:edt">
+					<persName>
+						<forename>Bernhard</forename>
+						<surname>Hurch</surname>
+					</persName>
+				</editor>
+				<editor ana="marcrelator:edt">
+					<persName>
+						<forename>Andrea</forename>
+						<surname>Lackner</surname>
+					</persName>
+				</editor>
+				<editor ana="marcrelator:edt">
+					<persName>
+						<forename>Maria José</forename>
+						<surname>Kerejeta</surname>
+					</persName>
+				</editor>
+				<editor ana="marcrelator:edt">
+					<persName>
+						<forename>Thomas</forename>
+						<surname>Schwaiger</surname>
+					</persName>
+				</editor>
+				<editor ana="marcrelator:edt">
+					<persName>
+						<forename>Ursula</forename>
+						<surname>Stangl</surname>
+					</persName>
+				</editor>
+			</titleStmt>
+			<publicationStmt>
+				<publisher ana="marcrelator:pbl">
+					<orgName corresp="https://sprachwissenschaft.uni-graz.at"
+						ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
+						Karl-Franzens-Universität Graz</orgName>
+				</publisher>
+				<authority ana="marcrelator:his">
+					<orgName corresp="https://informationsmodellierung.uni-graz.at"
+						ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung -
+						Austrian Centre for Digital Humanities, Karl-Franzens-Universität
+						Graz</orgName>
+				</authority>
+				<distributor ana="marcrelator:rps">
+					<orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset
+						Management System</orgName>
+				</distributor>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative
+						Commons BY-NC 4.0</licence>
+				</availability>
+				<date ana="dcterms:issued" when="2022">2022</date>
+				<pubPlace ana="marcrelator:pup">Graz</pubPlace>
+				<idno corresp="http://schuchardt.uni-graz.at/id/letter/3894" type="PID"
+					>o:hsa.letter.3894</idno>
+				<idno source="http://schuchardt.uni-graz.at" type="altIdentifier">18-06</idno>
+			</publicationStmt>
+			<seriesStmt>
+				<title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
+				<respStmt ana="marcrelator:pbl">
+					<resp>Herausgeber</resp>
+					<persName ref="http://d-nb.info/gnd/111679893">
+						<forename>Bernhard</forename>
+						<surname>Hurch</surname>
+						<orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität
+							Graz</orgName>
+					</persName>
+				</respStmt>
+			</seriesStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<country>Spain</country>
+						<region>Bizkaia</region>
+						<settlement>Bilbao</settlement>
+						<institution>Euskaltzaindia - The Royal Academy of the Basque
+							Language</institution>
+						<repository
+							ref="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri"
+							>Azkue Biblioteka eta Artxiboa</repository>
+						<idno type="shelfmark">06</idno>
+					</msIdentifier>
+					<msContents>
+						<textLang mainLang="de"/>
+						<msItem>
+							<author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+								<forename>Hugo</forename>
+								<surname>Schuchardt</surname>
+							</author>
+						</msItem>
+					</msContents>
+					<physDesc>
+						<objectDesc>
+							<supportDesc>
+								<support>
+									<material ref="http://vocab.getty.edu/aat/300014109"
+										>Papier</material>
+									<objectType>Brief</objectType>
+								</support>
+								<extent>
+									<measure quantity="4" unit="pages">4 Seiten</measure>
+								</extent>
+							</supportDesc>
+						</objectDesc>
+					</physDesc>
+					<history>
+						<origin>
+							<origPlace ana="marcrelator:prp"
+								corresp="https://gams.uni-graz.at/o:hsa.places#PL.81"
+								ref="http://sws.geonames.org/2918752">Gotha</origPlace>
+							<origDate ana="dcterms:created" when="1895-04-24">1895-04-24</origDate>
+						</origin>
+					</history>
+				</msDesc>
+				<bibl type="online">
+					<author ana="marcrelator:aut">
+						<persName>
+							<forename>Bernhard</forename>
+							<surname>Hurch</surname>
+						</persName>
+					</author>
+					<author ana="marcrelator:aut">
+						<persName>
+							<forename>Andrea</forename>
+							<surname>Lackner</surname>
+						</persName>
+					</author>
+					<author ana="marcrelator:aut">
+						<persName>
+							<forename>Maria José</forename>
+							<surname>Kerejeta</surname>
+						</persName>
+					</author>
+					<author ana="marcrelator:aut">
+						<persName>
+							<forename>Thomas</forename>
+							<surname>Schwaiger</surname>
+						</persName>
+					</author>
+					<author ana="marcrelator:aut">
+						<persName>
+							<forename>Ursula</forename>
+							<surname>Stangl</surname>
+						</persName>
+					</author>
+					<date when="2016">2016</date>
+					<title>Die Korrespondenz zwischen Hugo Schuchardt und Willem Jan van Eys</title>
+					<series>
+						<title>Hugo Schuchardt Archiv</title>
+						<editor>
+							<forename>Bernhard</forename>
+							<surname>Hurch</surname>
+						</editor>
+					</series>
+					<ref target="http://schuchardt.uni-graz.at/id/letters/1466"/>
+				</bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<editorialDecl>
+				<p>Die Datenmodellierung orientiert sich am <ref
+						target="https://www.deutschestextarchiv.de/doku/basisformat/"
+						>DTA-Basisformat</ref>, <ref target="https://www.ediarum.org/">ediarum</ref>
+					und der <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc"
+						>CorrespDesc-SIG</ref>.</p>
+				<p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst
+					und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
+				</p>
+			</editorialDecl>
+			<projectDesc>
+				<ab>
+					<ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt
+						Archiv</ref>
+				</ab>
+				<p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des
+					Nachlasses von Hugo Schuchardt (1842-1927). Die Onlinepräsentation stellt alle
+					Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung. Die
+					Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der
+					Korrespondenz, die zu großen Teilen bereits ediert vorliegt, und der
+					Werkmanuskripte.</p>
+			</projectDesc>
+			<listPrefixDef>
+				<prefixDef ident="marcrelator" matchPattern="([a-z]+)"
+					replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
+					<p>Rollen-Taxonomie</p>
+				</prefixDef>
+				<prefixDef ident="dcterms" matchPattern="([a-z]+)"
+					replacementPattern="http://purl.org/dc/terms/$1">
+					<p>Datumstaxonomie</p>
+				</prefixDef>
+				<prefixDef ident="skos" matchPattern="([a-z]+)"
+					replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
+					<p>Thesaurustaxonomie</p>
+				</prefixDef>
+			</listPrefixDef>
+		</encodingDesc>
+		<profileDesc>
+			<correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3894">
+				<correspAction type="sent">
+					<persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109"
+						ref="https://viaf.org/viaf/261931943">
+						<forename>Hugo</forename>
+						<surname>Schuchardt</surname>
+					</persName>
+					<placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.81" key="#GID.1"
+						ref="http://sws.geonames.org/2918752">Gotha</placeName>
+					<date when="1895-04-24">1895-04-24</date>
+				</correspAction>
+				<correspAction type="received">
+					<persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1466"
+						ref="https://viaf.org/viaf/102330447">
+						<forename>Willem Jan van</forename>
+						<surname>Eys</surname>
+					</persName>
+				</correspAction>
+			</correspDesc>
+			<textClass>
+				<keywords scheme="cirilo:normalizedPlaceNames">
+					<list>
+						<item>
+							<placeName xml:id="GID.1">
+								<country>Germany</country>
+								<settlement>Gotha</settlement>
+								<name ref="http://geonames.org/2918752" type="fcode:PPLA3"
+									>Gotha</name>
+								<location>
+									<geo>10.70193,50.94823</geo>
+								</location>
+							</placeName>
+						</item>
+					</list>
+				</keywords>
+				<keywords ana="correspondence">
+					<list>
+						<item>
+							<ref target="info:fedora/context:hsa.letters.1466" type="context">
+								Korrespondenz Hugo Schuchardt - Willem Jan van Eys </ref>
+						</item>
+						<item>
+							<ref target="info:fedora/context:hsa.letters" type="context"
+								>Korrespondenz</ref>
+						</item>
+					</list>
+				</keywords>
+				<keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
+					<term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3489" type="skos:Concept">
+						<term type="skos:prefLabel" xml:lang="de">Verlag Karl J. Trübner</term>
+					</term>
+					<term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5517" type="skos:Concept">
+						<term type="skos:prefLabel" xml:lang="de">G. Otto’s Hof-Buchdruckerei
+							Darmstadt</term>
+					</term>
+					<term ref="https://gams.uni-graz.at/o:hsa.subjects#S.991" type="skos:Concept">
+						<term type="skos:prefLabel" xml:lang="de">Kaiserliche und Königliche
+							Hof-Bibliothek (Wien)</term>
+					</term>
+				</keywords>
+				<classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation"
+					>Wissenschaft</classCode>
+				<classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation"
+					>Sprachwissenschaft</classCode>
+				<classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation"
+					>Brief</classCode>
+			</textClass>
+			<langUsage>
+				<language ident="de">Deutsch</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<standOff>
+		<listPerson>
+			<person>
+				<persName xml:id="P.ED">Edward Spencer Dodgson</persName>
+			</person>
+			<person>
+				<persName xml:id="P.RB">Rudolf Beer</persName>
+			</person>
+			<person>
+				<persName xml:id="P.HS">Hugo Schuchardt</persName>
+			</person>
+		</listPerson>
+		<listPlace>
+			<place>
+				<placeName xml:id="O.SR">San Remo</placeName>
+			</place>
+			<place>
+				<placeName xml:id="O.C">Colla</placeName>
+			</place>
+			<place>
+				<placeName xml:id="O.W">Wien</placeName>
+			</place>
+		</listPlace>
+		<listOrg>
+			<org>
+				<orgName xml:id="OR.VKT">Verlag Karl J. Trübner</orgName>
+			</org>
+			<org>
+				<orgName xml:id="OR.OHD">G. Otto’s Hof-Buchdruckerei Darmstadt</orgName>
+			</org>
+		</listOrg>
+
+	</standOff>
+	<text xml:id="text-1">
+		<body>
+			<div>
+				<pb facs="#IMG.1" n="1"/>
+				<dateline><lb n="1"/>Gotha, 24 April 1895 </dateline>
+				<opener><lb n="2"/>Hochgehrter Herr, </opener>
+				<p><lb n="3"/>Also so viele "dunkle <lb n="4"/>Punkte" schweben noch zwischen <lb
+						n="5"/>uns? Nun, ich denke dass <lb n="6"/>wir über das Wesentliche <lb
+						n="7"/>jetzt auch brieflich uns werden <lb n="8"/>verständigen können; sind
+						<lb n="9"/>wir doch bei der mündlichen <lb n="10"/>Unterhaltung nicht ohne
+						<lb n="11"/>graphische Veranschaulichung <lb n="12"/>ausgekommen. Ich bin
+					aller¬ <lb n="13"/>dings am folgenden Tage abgereist <lb n="14"/>und hätte nicht
+					gut länger <pb facs="#IMG.2"/><lb n="1"/>in <placeName ref="#O.SR">San
+						Remo</placeName> bleiben können; <lb n="2"/>ich war einerseits wegen <lb
+						n="3"/>der Gesundheit Meiner Mama <lb n="4"/>sehr beunruhigt — glücklicher
+						<lb n="5"/>weise habe ich sie verhältniss¬ <lb n="6"/>mässig wohl gefunden —
+					anderseits <lb n="7"/>ging es mit meinen Nerven dort <lb n="8"/>von Tag zu Tag
+					bergab, und noch der <lb n="9"/>erste Theil meiner Hierherreise war <lb n="10"
+					/>für mich sehr unangenehm. <lb n="11"/>Von <persName ref="#P.ED"
+						>Dodgson</persName> erhalte ich eben <lb n="12"/>eine neue Karte, in der er
+						<lb n="13"/>mir erklärt meinen Artikel über <lb n="14"/>
+					<hi style="text-decoration: underline;">acheter </hi>nicht erhalten zu <lb
+						n="15"/>haben. Er scheint von der Existenz <lb n="16"/>einer Bibliothek in
+						<placeName ref="#O.C">Colla</placeName> keine <lb n="17"/>Ahnung zu haben;
+					ich begreife sonst <lb n="18"/>nicht warum er nicht gebeten hat <lb n="19"/>die
+					an uns beide gerichtete <lb n="20"/>Visitkarte dort — Baskische Manu¬ <pb
+						facs="#IMG.3"/><lb n="1"/>skripte I A - zu deponiren. <lb n="2"/>Wenn Sie an
+						<orgName ref="#OR.VKT">Trübner</orgName> und <lb n="3"/>an die <placeName
+						ref="#OR.OHD">grossherzogliche Hofbuch¬ <lb n="4"/>druckerei in
+						Darmstadt</placeName> zu gleicher Zeit geschrie¬ <lb n="5"/>ben haben, so
+					haben Sie eigentlich <lb n="6"/>- um das Sprichwort unzukehren - <lb n="7"
+					/>"eine Fliege mit zwei Klappen <lb n="8"/>geschlagen". Ich bin sehr begierig
+						<lb n="9"/>Weiteres darüber zu hören</p>
+				<p><lb n="10"/>Dr. Th. Gottlieb kenne ich nicht <lb n="11"/>einmal dem Namen nach.
+					Wenn <lb n="12"/>Sie über spanische Bibliotheken <lb n="13"/>irgend welche
+					Auskunft oder Re¬ <lb n="14"/>ferenzen für Nachforschungen in <lb n="15"
+					/>denselben haben wollen, so thun <lb n="16"/>Sie wohl am Besten sich — mit <lb
+						n="17"/>Berufung auf mich — an Dr. Rudolf <lb n="18"/><persName ref="#P.RB"
+						>Beer</persName> an der kais. Hofbibliothek <lb n="19"/>zu wenden.
+					Vielleicht beantwortet <lb n="20"/>er auch Ihre Frage wegen der bewussten <pb
+						facs="#IMG.4"/><lb n="1"/>Neuen Testamente. Ich komme zwar Ende <lb n="2"
+					/>Mai nach <placeName ref="#O.W">Wien</placeName>, aber auf wenige Tage und <lb
+						n="3"/>diese sind durch Sitzungen, ein Festsouper <lb n="4"/>und ein
+					Festdiner, sowie Besuche dergestalt <lb n="5"/>ausgefüllt, dass ich nicht ganz
+					sicher bin <lb n="6"/>ob es mir möglich sein wird, die Hofbiblio¬ <lb n="7"
+					/>thek zu betreten.</p>
+				<p><lb n="8"/>Ein einstiger Leipziger Kollege von mir <lb n="9"/>hat in einem zu
+					Anfang der 70<hi>er</hi> Jahre <lb n="10"/>erschienenen Buche u. A. die
+					Gelehrten davor <lb n="11"/>gewarnt in persönliche Beriehungen zu ihren <lb
+						n="12"/>Fachgenosson zu treten, weil sie durch deren <lb n="13"
+					/>Liebenswürdigkeit leicht in de Unbefangen¬ <lb n="14"/>heit ihres Urtheils
+					beirrt werden könnten <lb n="15"/>Seine Aeusserungen sind mir gerade in
+						<placeName ref="#O.SR">San <lb n="16"/>Remo</placeName> wieder eingefallen;
+					ich bestreite <lb n="17"/>auch jetzt (wie damals) ihre Richtigkeit, <lb n="18"
+					/>wenigstens für mich, nur gestehe ich dass <lb n="19"/>ich mich hie und da
+					etwas anders, etwas <lb n="20"/>weniger schroff- ablehnend ausgedrückt <lb
+						n="21"/>haben würde, wenn ich in Bonapartes <lb n="22"/>heissblütigem
+					Antagonisten den freundlichen <lb n="23"/>Herrn der Palmen- und Citronenidylle
+					geahnt <lb n="24"/>hätte, die mir - auch ohne das kostbare <lb n="25"/>Andenken
+					das ich daraus entführt habe - <lb n="26"/>eine der angenehmsten Erinnerungen
+					bleiben <lb n="27"/>wird. - Mit der Bitte mich Ihrer Frau <lb n="28"/>Gemahlin
+					ehrerbietigst zu empfehlen </p>
+				<closer>
+					<salute><lb n="29"/>Ihr ganz ergebener </salute>
+					<signed><lb n="30"/><persName ref="#P.HS">Hugo Schurchardt</persName>
+					</signed>
+					<dateline><lb n="31"/>(Graz, Elisabethstr. 6)</dateline>
+				</closer>
+			</div>
+		</body>
+	</text>
+	<facsimile xml:id="facs-1">
+		<surface xml:id="IMG.1" ulx="0" uly="0" lrx="931" lry="1414">
+			<label>o_hsa.letter.3894_IMG.1.jpg</label>
+			<graphic sameAs="3ebbbe99-ca5f-44e1-8790-c354e32b6809" mimeType="image/jpeg"
+				url="IMG.1.jpg"/>
+		</surface>
+		<surface xml:id="IMG.2" ulx="0" uly="0" lrx="931" lry="1414">
+			<label>o hsa.letter.3894_IMG.2.jpg</label>
+			<graphic sameAs="d3c649a3-9d78-4f5a-8f1d-dcd77fc573d7" mimeType="image/jpeg"
+				url="IMG.2.jpg"/>
+		</surface>
+		<surface xml:id="IMG.3" ulx="0" uly="0" lrx="931" lry="1414">
+			<label>o hsa.letter.3894_IMG.3.jpg</label>
+			<graphic sameAs="56a66167-6e5b-42cc-acbc-aaf4c289e174" mimeType="image/jpeg"
+				url="IMG.3.jpg"/>
+		</surface>
+		<surface xml:id="IMG.4" ulx="0" uly="0" lrx="931" lry="1414">
+			<label>o hsa.letter.3894_IMG.4.jpg</label>
+			<graphic sameAs="6338c470-8714-4fda-a84d-3d8140a39e5d" mimeType="image/jpeg"
+				url="IMG.4.jpg"/>
+		</surface>
+	</facsimile>
+</TEI>

@@ -1,0 +1,299 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="de">
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Hugo Schuchardt an Otto Hirschfeld (03-HSOH2)</title>
+				<author ana="marcrelator:aut">
+					<persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+						<forename>Hugo</forename>
+						<surname>Schuchardt</surname>
+					</persName>
+				</author>
+				<editor ana="marcrelator:edt">
+					<persName>
+						<forename>Hubert</forename>
+						<surname>Szemethy</surname>
+					</persName>
+				</editor>
+			</titleStmt>
+			<publicationStmt>
+				<publisher ana="marcrelator:pbl">
+					<orgName corresp="https://sprachwissenschaft.uni-graz.at"
+						ref="http://d-nb.info/gnd/807328-4"> Institut für Sprachwissenschaft,
+						Karl-Franzens-Universität Graz </orgName>
+				</publisher>
+				<authority ana="marcrelator:his">
+					<orgName corresp="https://informationsmodellierung.uni-graz.at"
+						ref="http://d-nb.info/gnd/1137284463"> Zentrum für Informationsmodellierung
+						- Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz
+					</orgName>
+				</authority>
+				<distributor ana="marcrelator:rps">
+					<orgName ref="https://gams.uni-graz.at"> GAMS - Geisteswissenschaftliches Asset
+						Management System </orgName>
+				</distributor>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative
+						Commons BY-NC 4.0</licence>
+				</availability>
+				<date ana="dcterms:issued" when="2022">2022</date>
+				<pubPlace ana="marcrelator:pup">Graz</pubPlace>
+				<idno corresp="http://schuchardt.uni-graz.at/id/letter/7720" type="PID"
+					>o:hsa.letter.7720</idno>
+				<idno source="http://schuchardt.uni-graz.at" type="altIdentifier">03-HSOH2</idno>
+			</publicationStmt>
+			<seriesStmt>
+				<title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
+				<respStmt ana="marcrelator:pbl">
+					<resp>Herausgeber</resp>
+					<persName ref="http://d-nb.info/gnd/111679893">
+						<forename>Bernhard</forename>
+						<surname>Hurch</surname>
+						<orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität
+							Graz</orgName>
+					</persName>
+				</respStmt>
+			</seriesStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<country>Deutschland</country>
+						<settlement>Berlin</settlement>
+						<institution>Staatsbibliothek zu Berlin</institution>
+						<repository ref="https://staatsbibliothek-berlin.de/"> Preussischer
+							Kulturbesitz (Nachl. Suchier XIII: Schuchardt, Hugo, Blatt 1-54 </repository>
+						<idno type="shelfmark">HSOH2</idno>
+					</msIdentifier>
+					<msContents>
+						<textLang mainLang="de"/>
+						<msItem>
+							<author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+								<forename>Hugo</forename>
+								<surname>Schuchardt</surname>
+							</author>
+						</msItem>
+					</msContents>
+					<physDesc>
+						<objectDesc>
+							<supportDesc>
+								<support>
+									<material ref="http://vocab.getty.edu/aat/300014109"
+										>Papier</material>
+									<objectType>Brief</objectType>
+								</support>
+								<extent>
+									<measure quantity="2" unit="pages">2 Seiten</measure>
+								</extent>
+							</supportDesc>
+						</objectDesc>
+					</physDesc>
+					<history>
+						<origin>
+							<origPlace ana="marcrelator:prp"
+								corresp="https://gams.uni-graz.at/o:hsa.places#PL.6"
+								ref="http://sws.geonames.org/2778067">Graz</origPlace>
+							<origDate ana="dcterms:created" when="1879-01-01">1879-01-01</origDate>
+						</origin>
+					</history>
+				</msDesc>
+				<bibl type="online">
+					<author ana="marcrelator:aut">
+						<persName>
+							<forename>Hubert</forename>
+							<surname>Szemethy</surname>
+						</persName>
+					</author>
+					<date when="2022">2022</date>
+					<title> Die Korrespondenz zwischen Hugo Schuchardt und Otto Hirschfeld </title>
+					<series>
+						<title>Hugo Schuchardt Archiv</title>
+						<editor>
+							<forename>Bernhard</forename>
+							<surname>Hurch</surname>
+						</editor>
+					</series>
+					<ref target="http://schuchardt.uni-graz.at/id/letters/1771"/>
+				</bibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<editorialDecl>
+				<p> Die Datenmodellierung orientiert sich am <ref
+						target="https://www.deutschestextarchiv.de/doku/basisformat/"
+						>DTA-Basisformat</ref> , <ref target="https://www.ediarum.org/"
+						>ediarum</ref> und der <ref
+						target="https://github.com/TEI-Correspondence-SIG/correspDesc"
+						>CorrespDesc-SIG</ref> . </p>
+				<p> Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst
+					und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
+				</p>
+			</editorialDecl>
+			<projectDesc>
+				<ab>
+					<ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt
+						Archiv</ref>
+				</ab>
+				<p> Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des
+					Nachlasses von Hugo Schuchardt (1842-1927). Die Onlinepräsentation stellt alle
+					Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung. Die
+					Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der
+					Korrespondenz, die zu großen Teilen bereits ediert vorliegt, und der
+					Werkmanuskripte. </p>
+			</projectDesc>
+			<listPrefixDef>
+				<prefixDef ident="marcrelator" matchPattern="([a-z]+)"
+					replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
+					<p>Rollen-Taxonomie</p>
+				</prefixDef>
+				<prefixDef ident="dcterms" matchPattern="([a-z]+)"
+					replacementPattern="http://purl.org/dc/terms/$1">
+					<p>Datumstaxonomie</p>
+				</prefixDef>
+				<prefixDef ident="skos" matchPattern="([a-z]+)"
+					replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
+					<p>Thesaurustaxonomie</p>
+				</prefixDef>
+			</listPrefixDef>
+		</encodingDesc>
+		<profileDesc>
+			<correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.7720">
+				<correspAction type="sent">
+					<persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109"
+						ref="https://viaf.org/viaf/261931943">
+						<forename>Hugo</forename>
+						<surname>Schuchardt</surname>
+					</persName>
+					<placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1"
+						ref="http://sws.geonames.org/2778067">Graz</placeName>
+					<date when="1879-01-01">1879-01-01</date>
+				</correspAction>
+				<correspAction type="received">
+					<persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1771"
+						ref="https://viaf.org/viaf/71550930">
+						<forename>Otto</forename>
+						<surname>Hirschfeld</surname>
+					</persName>
+				</correspAction>
+			</correspDesc>
+			<textClass>
+				<keywords scheme="cirilo:normalizedPlaceNames">
+					<list>
+						<item>
+							<placeName xml:id="GID.1">
+								<country>Austria</country>
+								<settlement>Graz</settlement>
+								<name ref="http://geonames.org/2778067" type="fcode:PPLA"
+									>Graz</name>
+								<location>
+									<geo>15.45,47.06667</geo>
+								</location>
+							</placeName>
+						</item>
+					</list>
+				</keywords>
+				<keywords ana="correspondence">
+					<list>
+						<item>
+							<ref target="info:fedora/context:hsa.letters.1771" type="context">
+								Korrespondenz Hugo Schuchardt - Otto Hirschfeld </ref>
+						</item>
+						<item>
+							<ref target="info:fedora/context:hsa.letters" type="context"
+								>Korrespondenz</ref>
+						</item>
+					</list>
+				</keywords>
+				<keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
+					<term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5048" type="skos:Concept">
+						<term type="skos:prefLabel" xml:lang="de">Collège de France</term>
+					</term>
+					<term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4727" type="skos:Concept">
+						<term type="skos:prefLabel" xml:lang="de">Revue celtique</term>
+					</term>
+				</keywords>
+				<classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation"
+					>Wissenschaft</classCode>
+				<classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation"
+					>Sprachwissenschaft</classCode>
+				<classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation"
+					>Brief</classCode>
+			</textClass>
+			<langUsage>
+				<language ident="de">Deutsch</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<standOff>
+		<listPerson>
+			<person>
+				<persName xml:id="P.HJ">Henry d´Arbois de Jubainville</persName>
+			</person>
+			<person>
+				<persName xml:id="P.OB">Friedrich August Otto Benndorf</persName>
+			</person>
+			<person>
+				<persName xml:id="P.HS">Hugo Schuchardt</persName>
+			</person>
+		</listPerson>
+		<listPlace>
+			<place>
+				<placeName xml:id="O.L">Lyon</placeName>
+			</place>
+		</listPlace>
+	</standOff>
+	<text xml:id="text-1">
+		<body>
+			<div>
+				<pb facs="#IMG.1" n="1"/>
+				<dateline><lb n="1"/>Graz 1 Jänner 79. </dateline>
+				<opener><lb n="2"/>Verehrter Herr Kollege! </opener>
+				<p><lb n="3"/>Seien Sie nicht allzu ärgerlich <lb n="4"/>darüber dass das neue Jahr
+					Ihnen <lb n="5"/>eine indiskrete wissenschaftliche <lb n="6"/>Frage meinerseits
+					bringt. Bei Ihrer <lb n="7"/>anhaltenden Beschäftigung mit <lb n="8"/>den
+					lateinischen Inschriften Galliens <lb n="9"/>haben Sie doch wohl einen
+					Ueberblick <lb n="10"/> über gewisse sprachliche Erscheinungen, <lb n="11"/>die
+					in ihnen vorkommen, gewonnen. <lb n="12"/>Es läge mir, der ich gerade mit
+					keltisch¬ <lb n="13"/>romanischen Studien beschäftigt bin, sehr <lb n="14"/>viel
+					daran zu wissen, ob auslautendes <lb n="15"/>s etwa in demselben Verhältniss
+					dies¬ <lb n="16"/>wie jenseits der Alpen der Unterdrückung <lb n="17"/>in der
+					Schrift ausgesetzt ist. Ich entsinne <lb n="18"/>mich einiger Beispiele von
+					fehlendem s des <lb n="19"/>Nom. Sg. in Inschriften von <placeName ref="#O.L"
+						>Lyon</placeName>; <lb n="20"/>wichtig sind mir auch die Dative <hi
+						style="text-decoration: underline;">matrebo</hi>
+					<hi style="text-decoration: underline;">namausicabo</hi><pb facs="#IMG.2"/><lb
+						n="1"/>mögen Sie nun der gallischen oder, <lb n="2"/>wie <persName
+						ref="#P.HJ">Arlois de Jubainville</persName> will, der <lb n="3"
+					/>lateinischen Sprache angehören. Für <lb n="4"/> den lateinischen, wie für den
+					Keltischen <lb n="5"/>Philologen hat der Schwund auslautenden <lb n="6"/>s’s
+					durchaus nichts Befremdendes, <lb n="7"/>wohl aber für den Romanisten, da im <lb
+						n="8"/>Französischen und Provençalischen <lb n="9"/>dieser Laut überall
+					gewahrt erscheint. – Haben <lb n="10"/>Sie auch mit den paar gallischen <lb
+						n="11"/>Inschriften, die wir haben, sich etwas <lb n="12"/>näher befasst,
+					vielleicht lässt doch <lb n="13"/>die bisherige Lesung der einen und <lb n="14"
+					/>andern noch zu wünschen übrig. </p>
+				<p><lb n="15"/>Für die gütige Mittheilung der <hi
+						style="text-decoration: underline;">Festschrift</hi>
+					<lb n="16"/>z. f. Gr. d. a. I. habe <lb n="17"/>ich Ihnen und <persName
+						ref="#P.OB">Benndorf</persName> noch meinen <lb n="18"/>besten Dank zu
+					sagen. </p>
+				<closer>
+					<salute><lb n="19"/>Mit hochachtungsvollstem Gruss </salute>
+					<salute><lb n="20"/>Ihr ergebenster </salute>
+					<signed><lb n="21"/>H. Schuchardt</signed>
+				</closer>
+			</div>
+		</body>
+	</text>
+	<facsimile xml:id="facs-1">
+		<surface xml:id="IMG.1" ulx="0" uly="0" lrx="1324" lry="2079">
+			<label>o hsa.letter.7720_IMG.1.jpg</label>
+			<graphic sameAs="70db6364-08e5-4b2f-bb4e-26b99000f1f8" mimeType="image/jpeg"
+				url="IMG.1.jpg"/>
+		</surface>
+		<surface xml:id="IMG.2" ulx="0" uly="0" lrx="1314" lry="2083">
+			<label>o hsa.letter.7720_IMG.2.jpg</label>
+			<graphic sameAs="6117f8c6-06a6-4908-9463-cb5bbfa23992" mimeType="image/jpeg"
+				url="IMG.2.jpg"/>
+		</surface>
+	</facsimile>
+</TEI>
