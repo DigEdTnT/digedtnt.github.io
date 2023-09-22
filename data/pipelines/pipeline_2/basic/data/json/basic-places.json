@@ -1,0 +1,203 @@
+{
+    "place": [
+        {
+            "id": "O.L",
+            "status": "safe",
+            "name": "Lyon",
+            "identifier": [
+                {
+                    "preferred": "YES",
+                    "#text": "https://www.geonames.org/2996944"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/6543969"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/6543973"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/6543974"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/2968254"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/6543972"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/6543975"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/2973317"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/2983536"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/3029931"
+                }
+            ]
+        },
+        {
+            "id": "O.K",
+            "status": "safe",
+            "name": "Kiachta",
+            "identifier": [
+                {
+                    "preferred": "YES",
+                    "#text": "https://www.geonames.org/2032960"
+                }
+            ]
+        },
+        {
+            "id": "O.SR",
+            "status": "safe",
+            "name": "San Remo",
+            "identifier": [
+                {
+                    "preferred": "YES",
+                    "#text": "https://www.geonames.org/3167777"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/2150234"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/8348168"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/3759620"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/8349423"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/3809409"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/1966424"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/8938634"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/11842472"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/8348288"
+                }
+            ]
+        },
+        {
+            "id": "O.C",
+            "status": "unsafe",
+            "name": "Colla",
+            "identifier": [
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/8970056"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/2524966"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/3443036"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/8963353"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/6697686"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/7700703"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/3478599"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/3919872"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/9033820"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/9034381"
+                }
+            ]
+        },
+        {
+            "id": "O.W",
+            "status": "safe",
+            "name": "Wien",
+            "identifier": [
+                {
+                    "preferred": "YES",
+                    "#text": "https://www.geonames.org/2761369"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/8063098"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/2779469"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/11903636"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/1651944"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/2765028"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/2769359"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/2782067"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/2771706"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://www.geonames.org/2776421"
+                }
+            ]
+        }
+    ]
+}

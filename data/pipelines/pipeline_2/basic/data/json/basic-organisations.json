@@ -1,0 +1,99 @@
+{
+    "organisation": [
+        {
+            "id": "OR.RAN",
+            "status": "safe",
+            "name": "Rossijskaja Akademija Nauk (St. Petersburg)",
+            "identifier": [
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/056103611"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/950926574"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/004726472"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/942387201"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/00014410X"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/004844262"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/050579185"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/050526464"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/007577141"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/008159564"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/004042662"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/956019404"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/956527728"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/004900618"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/950809004"
+                },
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/99166969X"
+                },
+                {
+                    "preferred": "YES",
+                    "#text": "https://d-nb.info/gnd/5052646-7"
+                }
+            ]
+        },
+        {
+            "id": "OR.VKT",
+            "status": "safe",
+            "name": "Verlag Karl J. Trübner",
+            "identifier": [
+                {
+                    "preferred": "NO",
+                    "#text": "https://d-nb.info/gnd/957035780"
+                },
+                {
+                    "preferred": "YES",
+                    "#text": "https://d-nb.info/gnd/1086225929"
+                }
+            ]
+        },
+        {
+            "id": "OR.OHD",
+            "status": "unavailable",
+            "name": "G. Otto’s Hof-Buchdruckerei Darmstadt"
+        }
+    ]
+}
