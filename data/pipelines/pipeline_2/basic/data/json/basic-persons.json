@@ -28,7 +28,7 @@
             "name": "Hugo Schuchardt",
             "identifier": [
                 {
-                    "preferred": "NO",
+                    "preferred": "YES",
                     "#text": "https://d-nb.info/gnd/118611046"
                 }
             ]
