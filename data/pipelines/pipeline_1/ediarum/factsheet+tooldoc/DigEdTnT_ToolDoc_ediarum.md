@@ -71,7 +71,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    <td>FairCopy</td>
    <td>OpenRefine</td>
    <td>ba[sic?]</td>
-   <td>teiPublisher</td>
+   <td>TEI Publisher</td>
    <td>ediarum.WEB</td>
   </tr>
   <tr>
@@ -327,7 +327,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 
 **Unternehmensgröße:**
 
-**Weblink:** [www.weblink.com](www.weblink.com)
+**Weblink:** [www.ediarum.org](https://www.ediarum.org/)
 
 <div class="table-responsive">
 <table class="table">

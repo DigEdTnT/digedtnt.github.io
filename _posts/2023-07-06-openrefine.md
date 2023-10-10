@@ -79,7 +79,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    </td>
    <td>ba[sic?]
    </td>
-   <td>teiPublisher
+   <td>TEI Publisher
    </td>
    <td>ediarum.WEB
    </td>

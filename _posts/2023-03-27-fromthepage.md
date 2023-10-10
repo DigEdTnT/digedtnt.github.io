@@ -109,7 +109,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    </td>
    <td>ba[sic?]
    </td>
-   <td>teiPublisher
+   <td>TEI Publisher
    </td>
    <td>ediarum.WEB
    </td>
@@ -180,7 +180,7 @@ Mögliche (von den Entwickler:innen vorgeschlagene) Transitions bzw. Integration
 * FromThePage → IIIF → TEI-XML → FairCopy
 * Transkribus (HTR) → Plain Text → FromThePage
 * FromThePage → Plain Text → Transkribus (Ground Truth/Training)
-* FromThePage → TEI-XML → teiPublisher/EVT (Publikationstool)
+* FromThePage → TEI-XML → TEI Publisher/EVT (Publikationstool)
 
 
 ## Herausforderungen & Probleme
