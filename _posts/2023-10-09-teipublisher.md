@@ -221,7 +221,6 @@ Für eine vollständige Publikationsansicht (Content View) benötigt man die TEI
     Wenn wir uns jetzt erneut unser aktualisiertes Dokument ansehen und die Maus über eine Zutat bewegen, sieht der Inhalt des Pop-Overs bereits anders aus.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/pop-over.PNG" description="Modifiziertes Pop-Over mit einem Link" %}
 
-    → Als bei uns im Zuge der Bearbeitung des ODD beim Speichern ein Fehler aufgetreten ist, mussten wir uns nur als "tei" mit dem Passwort "simple" anmelden, um schließlich die Änderungen im ODD speichern zu können. Dies hängt vermutlich mit den [unterschiedlichen Rechten](http://localhost:8081/exist/apps/tei-publisher/doc/documentation.xml?odd=docbook&view=div#upload) zusammen, die man mit den zwei verschiedenen Usern hat.
 
 
 ### b. Bearbeitung des Page Templates (+ weitere ODD-Anpassungen)
@@ -243,9 +242,7 @@ Für eine vollständige Publikationsansicht (Content View) benötigt man die TEI
     Nach erneutem Aktualisieren in der Dokumentansicht werden die entsprechenden Faksimiles nun zu jeder Manuskriptseite in den [OpenSeadragon](http://openseadragon.github.io/)-Viewer geladen.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/facsimile-viewer.PNG" description="Vollständige Bild-Text-Synopse" %}
 
-* Hinweis: Für das Speichern in eXide ist die Eingabe eines Passworts erforderlich, wobei hier ebenfalls der Nutzer "tei" mit dem entsprechenden Passwort genutzt werden kann (siehe TEI Publisher-Dokumentation).
 
-    → Durch die Vielzahl an Demo-Projekten in der Demo-Sammlung ist es durchaus möglich, auch nur durch "Copy-Paste" der gewünschten Webkomponenten inklusive kleineren Anpassungen das eigene projektspezifische Template aufzubauen. Dadurch muss man nicht die gesamte Dokumentation durchgehen bzw. die Webkomponenten nicht selbst schreiben.
 
 
 ## 4. Export der Dokumente
