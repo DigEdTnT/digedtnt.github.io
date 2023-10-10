@@ -1,0 +1,1233 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:telota="http://www.telota.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="dtabf">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">MS Augsburg, Universitätsbibl., Cod.III.1.2°43 (A1) - View</title>
+            <author>
+               <persName>Unknown</persName>
+            </author>
+            <respStmt>
+               <!-- HINWEIS: Das nachfolgende Element ist obligatorisch und sollte daher ausgefüllt werden! -->
+               <orgName>Zentrum für Informationsmodellierung</orgName>
+               <resp>
+                  <note type="remarkResponsibility">Erstellung der Transkription nach
+                     DTA-Richtlinien</note>
+                  <date type="importDTA" when="2023-05">Mai 2023</date>
+               </resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher><!-- HINWEIS: Das nachfolgende Element ist obligatorisch und sollte daher ausgefüllt werden! -->
+               <orgName>Zentrum für Informationsmodellierung</orgName>
+            </publisher>
+            <pubPlace>Graz</pubPlace>
+            <date type="publication">Oktober 2023</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0">
+                  <p>Text: Creative Commons BY 4.0</p>
+               </licence>
+               <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <p> Faksimiles: Creative Commons BY-NC-SA 4.0 </p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl type="M">MS Augsburg, Universitätsbibl., Cod.III.1.2°43 (A1)</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title level="m" type="main">MS Augsburg, Universitätsbibl., Cod.III.1.2°43
+                     (A1)</title>
+                  <author>
+                     <persName>Unknown</persName>
+                  </author>
+               </titleStmt>
+               <editionStmt>
+                  <edition n="1"/>
+               </editionStmt>
+               <publicationStmt>
+                  <!-- HINWEIS: Die nachfolgenden Elemente sind obligatorisch und sollten daher ausgefüllt werden! -->
+                  <publisher>
+                     <name>Zentrum für Informationsmodellierung</name>
+                  </publisher>
+                  <pubPlace>Graz</pubPlace>
+                  <date type="publication">2023</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Universitätsbibliothek Augsburg</repository>
+                  <idno>
+                     <idno type="shelfmark">Cod.III.1.2°43</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <p>Neue Blattzählung 1-84. Wortreklamanten meist abgeschnitten.Textverlust: 1
+                     Blatt fehlt zwischen fol. 59-60. Bastarda -durchgehend von einer Hand;
+                     Nachträge einiger jüngerer Hände, um 1500/Anfang 16. Jh.: 23r, 35r, 73r-79r an
+                     den Rändern; geübte Hand, sauberes  Schriftbild, Oberlängen orientieren sich am Mittelband. Alter Einband:
+                     starker Pergamentumschlag mit übergreifendem Rückendeckel.</p>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>[Hinweise zu den Transkriptions- und Annotationsrichtlinien]</p>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <date notAfter="1550" cert="high" notBefore="1500"/>
+         </creation>
+         <!-- HINWEIS: DTA-Bf erfordert Angabe des Language Codes gemäß ISO 639-3 - entsprechend anpassen! -->
+         <langUsage>
+            <language ident="deu">deu</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="scheme_pmh_2l1_myb">iftbild, Oberlängen orientieren sich am
+               Mittelband. Alter Einband: starker Pergamentumschlag mit übergreifendem Rückendeckel.
+               Das history-Element ist im DTA-Basisformat nicht vorgesehen, soll aber dennoch
+               erhalten bleiben.  Unknown 1475-01-01 4. Viertel 15. Jh. Entstehungsort unbekannt.
+               Alter Besitzvermerk fol. 1r durch Übermalen völlig getilgt; Erwerbung des Fürsten
+               Ludwig, vgl. 1r. Oettingisches Wappen und Erwerbsjahr: 1813. Bibliothekssignatur des
+               19. Jhs.  HINWEIS: Das nachfolgende Element ist obligatorisch und sollte daher
+               ausgefüllt werden! [Hinweise zu den Transkriptio</classCode>
+            <classCode scheme="http://www.deutschestextarchiv.de/doku/klassifikation#">Gebrauchsliteratur laut DTA-Klassifikation</classCode>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <!-- Faksimiles sind im DTA-Basisformat nicht vorgesehen, sollen aber dennoch erhalten bleiben. -->
+   <facsimile>
+   <graphic xml:id="f0001" url="http://fromthepage.com/image-service/33038493/full/full/0/default.jpg"/>
+   <graphic xml:id="f0002" url="http://fromthepage.com/image-service/33038494/full/full/0/default.jpg"/>
+   <graphic xml:id="f0003" url="http://fromthepage.com/image-service/33038495/full/full/0/default.jpg"/>
+   <graphic xml:id="f0004" url="http://fromthepage.com/image-service/33038496/full/full/0/default.jpg"/>
+   <graphic xml:id="f0005" url="http://fromthepage.com/image-service/33038497/full/full/0/default.jpg"/>
+   </facsimile>
+   <standOff>
+    <list>
+            <item xml:id="verjuice">
+               <idno type="uri">https://www.wikidata.org/entity/Q1060458</idno>
+               <label type="reg">Agraz</label>
+               <label type="alt">agraeß</label>
+               <label type="alt">agras</label>
+               <label type="alt">agraz</label>
+               <label type="alt">agres</label>
+               <label type="alt">agresß</label>
+               <label type="alt">agrest</label>
+               <label type="alt">agreste</label>
+               <label type="alt">agroße</label>
+            </item>
+            <item xml:id="apple">
+               <idno type="uri">https://www.wikidata.org/entity/Q89</idno>
+               <label type="reg">Apfel</label>
+               <label type="alt">apfel</label>
+               <label type="alt">äpfelen</label>
+               <label type="alt">apfell</label>
+               <label type="alt">apffel</label>
+               <label type="alt">äpffel</label>
+               <label type="alt">apffell</label>
+               <label type="alt">apffl</label>
+               <label type="alt">aphel</label>
+               <label type="alt">aphell</label>
+               <label type="alt">aphfel</label>
+               <label type="alt">aphfell</label>
+               <label type="alt">aphl</label>
+               <label type="alt">appel</label>
+               <label type="alt">appfel</label>
+               <label type="alt">äppfel</label>
+               <label type="alt">appfelen</label>
+               <label type="alt">appfell</label>
+               <label type="alt">appfeln</label>
+               <label type="alt">äppfeln</label>
+               <label type="alt">appffel</label>
+               <label type="alt">äppffel</label>
+               <label type="alt">appffell</label>
+               <label type="alt">apphel</label>
+               <label type="alt">apphell</label>
+               <label type="alt">apphellen</label>
+               <label type="alt">apphels</label>
+               <label type="alt">mala</label>
+            </item>
+            <item xml:id="garden_pea">
+               <idno type="uri">https://www.wikidata.org/entity/Q25237</idno>
+               <label type="reg">Erbse</label>
+               <label type="alt">arbais</label>
+               <label type="alt">arbaiss</label>
+               <label type="alt">arbaiß</label>
+               <label type="alt">ärbaiss</label>
+               <label type="alt">arbaissen</label>
+               <label type="alt">arbaissn</label>
+               <label type="alt">arbaisz</label>
+               <label type="alt">arbaiz</label>
+               <label type="alt">arbas</label>
+               <label type="alt">arbass</label>
+               <label type="alt">arbaß</label>
+               <label type="alt">arbassen</label>
+               <label type="alt">arbasz</label>
+               <label type="alt">arbays</label>
+               <label type="alt">arbayss</label>
+               <label type="alt">arbayssen</label>
+               <label type="alt">arbayzzen</label>
+               <label type="alt">arbeis</label>
+               <label type="alt">arbeisen</label>
+               <label type="alt">arbeiss</label>
+               <label type="alt">arbeiß</label>
+               <label type="alt">arbeissen</label>
+               <label type="alt">arbeißen</label>
+               <label type="alt">arbeißenn</label>
+               <label type="alt">arbeissenn</label>
+               <label type="alt">arbeissn</label>
+               <label type="alt">arbeisz</label>
+               <label type="alt">arbes</label>
+               <label type="alt">arbeyß</label>
+               <label type="alt">arbeysz</label>
+               <label type="alt">arbiß</label>
+            </item>
+            <item xml:id="pea_blossom">
+               <idno type="uri">https://www.wikidata.org/entity/Q107263051</idno>
+               <label type="reg">Erbsenblüte</label>
+               <label type="alt">arbais pluee</label>
+               <label type="alt">arbaiß plue</label>
+               <label type="alt">arbayß plue</label>
+               <label type="alt">arbeis bluost</label>
+            </item>
+            <item xml:id="pea_stock">
+               <idno type="uri">https://www.wikidata.org/entity/Q107246700</idno>
+               <label type="reg">Erbsengrundbrühe</label>
+               <label type="alt">arbais prue</label>
+               <label type="alt">arbais pruee</label>
+               <label type="alt">arbaiss prue</label>
+               <label type="alt">arbeissuppen</label>
+               <label type="alt">arbes pruee</label>
+               <label type="alt">arbespruee</label>
+               <label type="alt">arbiß pruee</label>
+            </item>
+            <item xml:id="pea_flour">
+               <idno type="uri">https://www.wikidata.org/entity/Q57657174</idno>
+               <label type="reg">Erbsenmehl</label>
+               <label type="alt">arbays mell</label>
+               <label type="alt">arbeis mehl</label>
+            </item>
+            <item xml:id="flour">
+               <idno type="uri">https://www.wikidata.org/entity/Q36465</idno>
+               <label type="reg">Mehl</label>
+               <label type="alt">mel</label>
+            </item>
+            <item xml:id="wild_strawberry">
+               <idno type="uri">https://www.wikidata.org/entity/Q107262469</idno>
+               <label type="reg">Walderdbeere</label>
+               <label type="alt">ärber</label>
+            </item>
+            <item xml:id="medication">
+               <idno type="uri">https://www.wikidata.org/entity/Q12140</idno>
+               <label type="reg">Arznei</label>
+               <label type="alt">arcenie</label>
+               <label type="alt">artzenie</label>
+               <label type="alt">artzny</label>
+               <label type="alt">ercznei</label>
+               <label type="alt">erczney</label>
+               <label type="alt">ertzney</label>
+            </item>
+            <item xml:id="chicken_egg">
+               <idno type="uri">https://www.wikidata.org/entity/Q15260613</idno>
+               <label type="reg">Hühnerei</label>
+               <label type="alt">aren</label>
+               <label type="alt">eyernn</label>
+               <label type="alt">eyerr</label>
+               <label type="alt">eyes</label>
+               <label type="alt">eyg</label>
+               <label type="alt">eyge</label>
+               <label type="alt">eyger</label>
+               <label type="alt">henn ay</label>
+            </item>
+            <item xml:id="calabash">
+               <idno type="uri">https://www.wikidata.org/entity/Q1277255</idno>
+               <label type="reg">Flaschenkürbis</label>
+               <label type="alt">churbis</label>
+               <label type="alt">churibis</label>
+               <label type="alt">cucurbite</label>
+            </item>
+            <item xml:id="vinegar">
+               <idno type="uri">https://www.wikidata.org/entity/Q41354</idno>
+               <label type="reg">Essig</label>
+               <label type="alt">esich</label>
+               <label type="alt">esseych</label>
+               <label type="alt">eßich</label>
+               <label type="alt">essich</label>
+               <label type="alt">essichs</label>
+               <label type="alt">essick</label>
+               <label type="alt">essig</label>
+               <label type="alt">eßig</label>
+               <label type="alt">essige</label>
+               <label type="alt">essiges</label>
+               <label type="alt">essighe</label>
+               <label type="alt">essigk</label>
+               <label type="alt">essigs</label>
+               <label type="alt">essik</label>
+               <label type="alt">essych</label>
+               <label type="alt">essyg</label>
+               <label type="alt">esszig</label>
+            </item>
+            <item xml:id="goat_milk">
+               <idno type="uri">https://www.wikidata.org/entity/Q1418287</idno>
+               <label type="reg">Ziegenmilch</label>
+               <label type="alt">gais milch</label>
+               <label type="alt">geys milch</label>
+               <label type="alt">geyß milch</label>
+            </item>
+            <item xml:id="spice">
+               <idno type="uri">https://www.wikidata.org/entity/Q42527</idno>
+               <label type="reg">Gewürz</label>
+               <label type="alt">gestipp</label>
+               <label type="alt">gestuep</label>
+               <label type="alt">gestuepp</label>
+               <label type="alt">gestuepp</label>
+               <label type="alt">gestuept</label>
+               <label type="alt">gestup</label>
+               <label type="alt">gestupp</label>
+               <label type="alt">gestüpp</label>
+               <label type="alt">pewuercz</label>
+            </item>
+            <item xml:id="chicken">
+               <idno type="uri">https://www.wikidata.org/entity/Q864693</idno>
+               <label type="reg">Huhn</label>
+               <label type="alt">hen</label>
+               <label type="alt">hener</label>
+               <label type="alt">henern</label>
+               <label type="alt">henn</label>
+               <label type="alt">henndlein</label>
+               <label type="alt">henne</label>
+               <label type="alt">hennen</label>
+               <label type="alt">henrn</label>
+               <label type="alt">hunerr</label>
+               <label type="alt">pulli</label>
+            </item>
+            <item xml:id="honey">
+               <idno type="uri">https://www.wikidata.org/entity/Q10987</idno>
+               <label type="reg">Honig</label>
+               <label type="alt">henig</label>
+               <label type="alt">hoenigs</label>
+               <label type="alt">hong</label>
+               <label type="alt">hongs</label>
+               <label type="alt">hongy</label>
+               <label type="alt">honic</label>
+               <label type="alt">honich</label>
+               <label type="alt">honicht</label>
+               <label type="alt">honick</label>
+               <label type="alt">honig</label>
+               <label type="alt">honigs</label>
+            </item>
+            <item xml:id="rose_hip">
+               <idno type="uri">https://www.wikidata.org/entity/Q46740</idno>
+               <label type="reg">Hagebutte</label>
+               <label type="alt">hieffenn</label>
+            </item>
+            <item xml:id="elder_flower">
+               <idno type="uri">https://www.wikidata.org/entity/Q67778134</idno>
+               <label type="reg">Schwarzer Holunder</label>
+               <label type="alt">holaer</label>
+               <label type="alt">holär</label>
+               <label type="alt">holder</label>
+               <label type="alt">holder bere</label>
+               <label type="alt">holder bern beren</label>
+               <label type="alt">holder berrienn beren</label>
+               <label type="alt">holder bluete</label>
+               <label type="alt">holder bluomen</label>
+               <label type="alt">holder bluost</label>
+               <label type="alt">holder plu</label>
+               <label type="alt">holder plüd</label>
+               <label type="alt">holderbere</label>
+               <label type="alt">holderberen</label>
+               <label type="alt">holderbluost</label>
+               <label type="alt">holderplued</label>
+               <label type="alt">holderplust</label>
+               <label type="alt">holderplut</label>
+               <label type="alt">holderplüt</label>
+               <label type="alt">holderr</label>
+               <label type="alt">holderr plut</label>
+               <label type="alt">hole</label>
+               <label type="alt">holear plued</label>
+               <label type="alt">holer</label>
+               <label type="alt">holer plue</label>
+               <label type="alt">holer plüed</label>
+               <label type="alt">holer pluee</label>
+               <label type="alt">holer plueed</label>
+               <label type="alt">holer plueet</label>
+               <label type="alt">holer plüet</label>
+               <label type="alt">hölerplüe</label>
+               <label type="alt">holerpluet</label>
+               <label type="alt">holerpluod</label>
+            </item>
+            <item xml:id="crab-apple">
+               <idno type="uri">https://www.wikidata.org/entity/Q47161</idno>
+               <label type="reg">Holzapfel</label>
+               <label type="alt">holcz appfel</label>
+               <label type="alt">holcz ephel</label>
+               <label type="alt">holcz oeppfel</label>
+               <label type="alt">holcz öppfel</label>
+               <label type="alt">holczapfel</label>
+               <label type="alt">holczepfeln</label>
+               <label type="alt">holczeppfelnn</label>
+            </item>
+            <item xml:id="crab-apple_juice">
+               <idno type="uri">https://www.wikidata.org/entity/Q107246473</idno>
+               <label type="reg">Holzapfelsaft</label>
+               <label type="alt">holcz eppfell saff</label>
+            </item>
+            <item xml:id="ginger">
+               <idno type="uri">https://www.wikidata.org/entity/Q15046077</idno>
+               <label type="reg">Ingwer</label>
+               <label type="alt">ingwer</label>
+               <label type="alt">Ingwerr</label>
+               <label type="alt">ingwerr</label>
+               <label type="alt">ingwerrs</label>
+               <label type="alt">ingwers</label>
+               <label type="alt">ingwerß</label>
+               <label type="alt">inigber</label>
+               <label type="alt">innber</label>
+               <label type="alt">inngber</label>
+               <label type="alt">inngewer</label>
+               <label type="alt">inngper</label>
+               <label type="alt">inngwer</label>
+               <label type="alt">innver</label>
+               <label type="alt">innwear</label>
+               <label type="alt">innwer</label>
+               <label type="alt">innwers</label>
+            </item>
+            <item xml:id="veal">
+               <idno type="uri">https://www.wikidata.org/entity/Q957434</idno>
+               <label type="reg">Kalbfleisch</label>
+               <label type="alt">kalb flaisch</label>
+               <label type="alt">kalb fleisch</label>
+               <label type="alt">kalb fleysch</label>
+               <label type="alt">kalb fleysch</label>
+            </item>
+            <item xml:id="fruit-pip">
+               <idno type="uri">https://www.wikidata.org/entity/Q3121375</idno>
+               <label type="reg">Fruchtkern</label>
+               <label type="alt">kernn</label>
+            </item>
+            <item xml:id="cow_milk">
+               <idno type="uri">https://www.wikidata.org/entity/Q10988133</idno>
+               <label type="reg">Kuhmilch</label>
+               <label type="alt">kuee milch</label>
+               <label type="alt">kuemilch</label>
+            </item>
+            <item xml:id="beef">
+               <idno type="uri">https://www.wikidata.org/entity/Q192628</idno>
+               <label type="reg">Rindfleisch</label>
+               <label type="alt">kueefleysch</label>
+               <label type="alt">kueen</label>
+            </item>
+            <item xml:id="cattle_lung">
+               <idno type="uri">https://www.wikidata.org/entity/Q107246461</idno>
+               <label type="reg">Rinderlunge</label>
+               <label type="alt">kuelungelen</label>
+            </item>
+            <item xml:id="caraway">
+               <idno type="uri">https://www.wikidata.org/entity/Q26811</idno>
+               <label type="reg">Echter Kümmel</label>
+               <label type="alt">kuem</label>
+               <label type="alt">kuemb</label>
+               <label type="alt">kuemebel</label>
+               <label type="alt">kuemel</label>
+               <label type="alt">kuemels</label>
+               <label type="alt">kuemich</label>
+               <label type="alt">kuemmel</label>
+               <label type="alt">kuemmell</label>
+               <label type="alt">kuemmich</label>
+            </item>
+            <item xml:id="cumin">
+               <idno type="uri">https://www.wikidata.org/entity/Q57328174</idno>
+               <label type="reg">Kreuzkümmel</label>
+               <label type="alt">kuemel walischen</label>
+            </item>
+            <item xml:id="lettuce">
+               <idno type="uri">https://www.wikidata.org/entity/Q83193</idno>
+               <label type="reg">Lattich</label>
+               <label type="alt">lactuken</label>
+            </item>
+            <item xml:id="pomegranate">
+               <idno type="uri">https://www.wikidata.org/entity/Q13222088</idno>
+               <label type="reg">Granatapfel</label>
+               <label type="alt">mala punica</label>
+               <label type="alt">malagram</label>
+               <label type="alt">malagranat</label>
+               <label type="alt">malegranat</label>
+               <label type="alt">malgran</label>
+               <label type="alt">malignate</label>
+            </item>
+            <item xml:id="almond">
+               <idno type="uri">https://www.wikidata.org/entity/Q184357</idno>
+               <label type="reg">Mandel</label>
+               <label type="alt">maldl</label>
+               <label type="alt">mandel</label>
+               <label type="alt">mändel</label>
+               <label type="alt">mandel cheren</label>
+               <label type="alt">mandel cherenn</label>
+               <label type="alt">mandel chern</label>
+               <label type="alt">mandel cherne</label>
+               <label type="alt">mandel chernen</label>
+               <label type="alt">mandel chernn</label>
+               <label type="alt">mandel ckernn</label>
+               <label type="alt">mandel keren</label>
+               <label type="alt">mandel kern</label>
+               <label type="alt">mandel kerne</label>
+               <label type="alt">mandel kernen</label>
+               <label type="alt">mandel kernn</label>
+               <label type="alt">mandelkernn</label>
+               <label type="alt">mandeln kernen</label>
+            </item>
+            <item xml:id="mint">
+               <idno type="uri">https://www.wikidata.org/entity/Q47859</idno>
+               <label type="reg">Minzen</label>
+               <label type="alt">menta</label>
+               <label type="alt">mente</label>
+            </item>
+            <item xml:id="horse_radish">
+               <idno type="uri">https://www.wikidata.org/entity/Q2964630</idno>
+               <label type="reg">Meerrettich</label>
+               <label type="alt">mer rettich</label>
+               <label type="alt">merechtig</label>
+               <label type="alt">meret</label>
+               <label type="alt">merettich</label>
+               <label type="alt">merich</label>
+               <label type="alt">merrech</label>
+               <label type="alt">merrech</label>
+               <label type="alt">merredch</label>
+               <label type="alt">merredich</label>
+               <label type="alt">merretich</label>
+               <label type="alt">merrettich</label>
+               <label type="alt">merrich</label>
+            </item>
+            <item xml:id="nutmeg_apple">
+               <idno type="uri">https://www.wikidata.org/entity/Q83165</idno>
+               <label type="reg">Muskatnuss</label>
+               <label type="alt">müscaden</label>
+               <label type="alt">müscaden</label>
+               <label type="alt">muscat</label>
+               <label type="alt">müscat</label>
+               <label type="alt">müscat</label>
+               <label type="alt">muscat nus</label>
+               <label type="alt">muscat nus</label>
+               <label type="alt">muscatenn</label>
+               <label type="alt">muscatnues</label>
+               <label type="alt">müscatnus</label>
+               <label type="alt">muscatnuss</label>
+               <label type="alt">muscatnuß</label>
+               <label type="alt">nugatt</label>
+               <label type="alt">nusgat</label>
+               <label type="alt">nusgattnus</label>
+               <label type="alt">nusget</label>
+            </item>
+            <item xml:id="pip">
+               <idno type="uri">https://www.wikidata.org/entity/Q3121375</idno>
+               <label type="reg">Kern</label>
+               <label type="alt">kernn</label>
+            </item>
+            <item xml:id="clove">
+               <idno type="uri">https://www.wikidata.org/entity/Q15622897</idno>
+               <label type="reg">Gewürznelke</label>
+               <label type="alt">neegel</label>
+               <label type="alt">neegelein</label>
+               <label type="alt">negel</label>
+               <label type="alt">negela</label>
+               <label type="alt">negelach</label>
+               <label type="alt">negele</label>
+               <label type="alt">negelein</label>
+               <label type="alt">negeleinn</label>
+               <label type="alt">negelen</label>
+               <label type="alt">negeleyn</label>
+               <label type="alt">negelin</label>
+               <label type="alt">negell</label>
+               <label type="alt">negellein</label>
+               <label type="alt">negelleyn</label>
+               <label type="alt">negelli</label>
+               <label type="alt">negellin</label>
+               <label type="alt">negellnn</label>
+               <label type="alt">negeln</label>
+               <label type="alt">negelyn</label>
+               <label type="alt">negili</label>
+               <label type="alt">negilin</label>
+               <label type="alt">negl</label>
+               <label type="alt">neglein</label>
+               <label type="alt">neglenn</label>
+               <label type="alt">neglichen</label>
+               <label type="alt">neglin</label>
+               <label type="alt">negllein</label>
+               <label type="alt">negln</label>
+               <label type="alt">neglyn</label>
+               <label type="alt">neilken</label>
+               <label type="alt">nelcken</label>
+               <label type="alt">nelken</label>
+            </item>
+            <item xml:id="nut">
+               <idno type="uri">https://www.wikidata.org/entity/Q3320037</idno>
+               <label type="reg">Nussfrucht</label>
+               <label type="alt">nues</label>
+               <label type="alt">nues cherenn</label>
+               <label type="alt">nues kernen</label>
+               <label type="alt">nueskerenn</label>
+               <label type="alt">nueskern</label>
+               <label type="alt">nuess</label>
+               <label type="alt">nueß</label>
+               <label type="alt">nuessen</label>
+               <label type="alt">nueßen</label>
+               <label type="alt">nuesss</label>
+               <label type="alt">nuesz</label>
+               <label type="alt">nuesze</label>
+               <label type="alt">nueszen</label>
+               <label type="alt">nuez</label>
+               <label type="alt">nuezz</label>
+               <label type="alt">nuezze</label>
+               <label type="alt">nuezze kern</label>
+               <label type="alt">nuezzen</label>
+               <label type="alt">nuoß</label>
+               <label type="alt">nus</label>
+               <label type="alt">nus kerne</label>
+               <label type="alt">nus kernen</label>
+               <label type="alt">nus kernn</label>
+               <label type="alt">nuscherenn</label>
+               <label type="alt">nuskeren</label>
+               <label type="alt">nuskern</label>
+               <label type="alt">nuskernn</label>
+               <label type="alt">nuss</label>
+               <label type="alt">nuß</label>
+               <label type="alt">nüss</label>
+               <label type="alt">nüß</label>
+               <label type="alt">nuss kern</label>
+               <label type="alt">nusse</label>
+               <label type="alt">nuszkernn</label>
+            </item>
+            <item xml:id="sage">
+               <idno type="uri">https://www.wikidata.org/entity/Q1111359</idno>
+               <label type="reg">Salbei</label>
+               <label type="alt">Saluia</label>
+            </item>
+            <item xml:id="fruit">
+               <idno type="uri">https://www.wikidata.org/entity/Q3314483</idno>
+               <label type="reg">Frucht</label>
+               <label type="alt">frucht</label>
+            </item>
+            <item xml:id="nut_milk">
+               <idno type="uri">https://www.wikidata.org/entity/Q107246657</idno>
+               <label type="reg">Nussmilch</label>
+               <label type="alt">nues milich</label>
+               <label type="alt">nuesz milch</label>
+               <label type="alt">nuezz milich</label>
+               <label type="alt">nuosz milich</label>
+               <label type="alt">nus milch</label>
+               <label type="alt">nus milich</label>
+               <label type="alt">nusmilich</label>
+            </item>
+            <item xml:id="mace">
+               <idno type="uri">https://www.wikidata.org/entity/Q1882876</idno>
+               <label type="reg">Macis</label>
+               <label type="alt">nuscatt bluede</label>
+            </item>
+            <item xml:id="nut_oil">
+               <idno type="uri">https://www.wikidata.org/entity/Q41150815</idno>
+               <label type="reg">Nussöl</label>
+               <label type="alt">nusol</label>
+               <label type="alt">nuß oley</label>
+            </item>
+            <item xml:id="pepper">
+               <idno type="uri">https://www.wikidata.org/entity/Q43084</idno>
+               <label type="reg">Echter Pfeffer</label>
+               <label type="alt">pefer</label>
+               <label type="alt">peffer</label>
+               <label type="alt">peffern</label>
+               <label type="alt">peper</label>
+               <label type="alt">pfefferr</label>
+               <label type="alt">pfeffers</label>
+            </item>
+            <item xml:id="elderberry">
+               <idno type="uri">https://www.wikidata.org/entity/Q96333359</idno>
+               <label type="reg">Holunderbeere</label>
+               <label type="alt">pernn</label>
+            </item>
+            <item xml:id="parsley">
+               <idno type="uri">https://www.wikidata.org/entity/Q65522500</idno>
+               <label type="reg">Petersilie</label>
+               <label type="alt">perterlin</label>
+               <label type="alt">pertersilgen</label>
+               <label type="alt">peteersil</label>
+               <label type="alt">peter sil</label>
+               <label type="alt">peter silg</label>
+               <label type="alt">peter sill</label>
+               <label type="alt">peter sylienn</label>
+               <label type="alt">peter syll</label>
+               <label type="alt">petercilien</label>
+               <label type="alt">peterczimel chrawt</label>
+               <label type="alt">peterczymel</label>
+               <label type="alt">peterczymel pletter</label>
+               <label type="alt">peterczymell</label>
+               <label type="alt">peterczymellpletter</label>
+               <label type="alt">peterczymelpletter</label>
+               <label type="alt">peterczymil pletter</label>
+               <label type="alt">peterczymmel</label>
+               <label type="alt">peterczymmel pletter</label>
+               <label type="alt">peterczymmelpletter</label>
+               <label type="alt">peterlein</label>
+               <label type="alt">peterlein wurzel</label>
+               <label type="alt">peterlen</label>
+               <label type="alt">peterli</label>
+               <label type="alt">peterlin</label>
+               <label type="alt">peterlin krut</label>
+               <label type="alt">peterling</label>
+               <label type="alt">peterlins</label>
+               <label type="alt">peterllein</label>
+               <label type="alt">peterly</label>
+               <label type="alt">peterlyn</label>
+               <label type="alt">peterrsill</label>
+               <label type="alt">peterselige</label>
+               <label type="alt">peterseligen</label>
+               <label type="alt">petersell</label>
+               <label type="alt">petersielien</label>
+               <label type="alt">petersigil</label>
+               <label type="alt">petersil</label>
+               <label type="alt">petersil blat</label>
+               <label type="alt">petersil bletter</label>
+               <label type="alt">petersilb</label>
+               <label type="alt">petersilg</label>
+               <label type="alt">petersilge</label>
+               <label type="alt">petersilgen</label>
+               <label type="alt">petersili</label>
+               <label type="alt">petersilie</label>
+               <label type="alt">petersilien</label>
+               <label type="alt">petersilienn</label>
+               <label type="alt">petersilienn</label>
+               <label type="alt">petersilig</label>
+               <label type="alt">petersilige</label>
+               <label type="alt">petersiligenn</label>
+               <label type="alt">petersill</label>
+               <label type="alt">petersilligen grunes</label>
+               <label type="alt">petersillin</label>
+               <label type="alt">petersily</label>
+               <label type="alt">petersyl</label>
+               <label type="alt">petersyli</label>
+               <label type="alt">petersylien</label>
+               <label type="alt">petersymil</label>
+               <label type="alt">petirlin</label>
+               <label type="alt">petirsilligen</label>
+               <label type="alt">petlein</label>
+               <label type="alt">petrocilinus</label>
+               <label type="alt">petrocilius</label>
+               <label type="alt">petrosil</label>
+               <label type="alt">petrosill</label>
+               <label type="alt">petrosill</label>
+               <label type="alt">petrosillum</label>
+               <label type="alt">petsil</label>
+               <label type="alt">petsill</label>
+               <label type="alt">petter sil</label>
+               <label type="alt">petter sill</label>
+               <label type="alt">petter zimel</label>
+               <label type="alt">petterlein</label>
+               <label type="alt">petterleinn</label>
+               <label type="alt">petterlen</label>
+               <label type="alt">petterlenn</label>
+               <label type="alt">petterlin</label>
+               <label type="alt">petterling</label>
+               <label type="alt">petterly</label>
+               <label type="alt">pettersihl</label>
+               <label type="alt">pettersil</label>
+               <label type="alt">pettersilge</label>
+               <label type="alt">pettersilgen</label>
+               <label type="alt">pettersilgenn</label>
+               <label type="alt">pettersilgennn</label>
+               <label type="alt">pettersilien</label>
+               <label type="alt">pettersill</label>
+               <label type="alt">pettersylgenn</label>
+               <label type="alt">pterlin</label>
+            </item>
+            <item xml:id="pellitory">
+               <idno type="uri">https://www.wikidata.org/entity/Q7161585</idno>
+               <label type="reg">Bertram</label>
+               <label type="alt">pertram</label>
+               <label type="alt">petram</label>
+               <label type="alt">pyretrum</label>
+            </item>
+            <item xml:id="pes_unsolved">
+               <label type="reg">ungelöst(pes)</label>
+               <label type="alt">pes</label>
+            </item>
+            <item xml:id="parsley_juice">
+               <idno type="uri">https://www.wikidata.org/entity/Q107246694</idno>
+               <label type="reg">Petersiliensaft</label>
+               <label type="alt">peterczymel saff</label>
+               <label type="alt">peterlin saft</label>
+               <label type="alt">peterlinsaft</label>
+               <label type="alt">petersily saft</label>
+               <label type="alt">petersimel saff</label>
+               <label type="alt">petterling saft</label>
+            </item>
+            <item xml:id="parsley_seed">
+               <idno type="uri">https://www.wikidata.org/entity/Q96756023</idno>
+               <label type="reg">Petersiliensamen</label>
+               <label type="alt">peterlein same</label>
+               <label type="alt">peterlin samen</label>
+               <label type="alt">peterling samen</label>
+               <label type="alt">peterlyn samen</label>
+               <label type="alt">peterseligen samen</label>
+               <label type="alt">petersil samen</label>
+               <label type="alt">petersilgen zomen</label>
+               <label type="alt">petersilien some</label>
+               <label type="alt">petersilien somen</label>
+               <label type="alt">petersilien zamen</label>
+               <label type="alt">petersilien zomen</label>
+               <label type="alt">petersill sam</label>
+               <label type="alt">petersill samen</label>
+               <label type="alt">petrisilgen zomen</label>
+            </item>
+            <item xml:id="parsley_root">
+               <idno type="uri">https://www.wikidata.org/entity/Q68220931</idno>
+               <label type="reg">Petersilienwurzel</label>
+               <label type="alt">petersil wrczen</label>
+               <label type="alt">petersil wuerczen</label>
+               <label type="alt">petersil wurczen</label>
+               <label type="alt">petersil wurz</label>
+               <label type="alt">petersill wurczen</label>
+               <label type="alt">petersilligen wurtzell</label>
+               <label type="alt">petersily wurcz</label>
+               <label type="alt">pettersill der mit sampt der wurczen</label>
+               <label type="alt">pettersill wurczen</label>
+               <label type="alt">wurtzeln</label>
+            </item>
+            <item xml:id="bread">
+               <idno type="uri">https://www.wikidata.org/entity/Q7802</idno>
+               <label type="reg">Brot</label>
+               <label type="alt">prot</label>
+               <label type="alt">prots</label>
+               <label type="alt">protss</label>
+               <label type="alt">prott</label>
+               <label type="alt">protts</label>
+               <label type="alt">protz</label>
+               <label type="alt">prowtt</label>
+            </item>
+            <item xml:id="grape">
+               <idno type="uri">https://www.wikidata.org/entity/Q10978</idno>
+               <label type="reg">Weintraube</label>
+               <label type="alt">weinperr</label>
+            </item>
+            <item xml:id="caul-fat">
+               <idno type="uri">https://www.wikidata.org/wiki/Q662490</idno>
+               <label type="reg">Fettnetz</label>
+               <label type="alt">netz</label>
+            </item>
+            <item xml:id="yolk">
+               <idno type="uri">https://www.wikidata.org/wiki/Q16336079</idno>
+               <label type="reg">Eidotter</label>
+               <label type="alt">exer totternn</label>
+               <label type="alt">totternn</label>
+            </item>
+            <item xml:id="calf-liver">
+               <idno type="uri">https://www.wikidata.org/entity/Q64065384</idno>
+               <label type="reg">Kalbsleber</label>
+               <label type="alt">öebernn von einem kalb</label>
+               <label type="alt">lebernn eins kalbs</label>
+            </item>
+            <item xml:id="bacon">
+               <idno type="uri">https://www.wikidata.org/entity/Q11106</idno>
+               <label type="reg">Speck</label>
+               <label type="alt">speck</label>
+            </item>
+            <item xml:id="almond-milk">
+               <idno type="uri">https://www.wikidata.org/entity/Q975953</idno>
+               <label type="reg">Mandelmilch</label>
+               <label type="alt">mandelmilch</label>
+            </item>
+            <item xml:id="rice">
+               <idno type="uri">https://www.wikidata.org/entity/Q5090</idno>
+               <label type="reg">Reis</label>
+               <label type="alt">reyß</label>
+            </item>
+            <item xml:id="fish">
+               <idno type="uri">https://www.wikidata.org/entity/Q600396</idno>
+               <label type="reg">Fisch</label>
+               <label type="alt">vishennn</label>
+            </item>
+            <item xml:id="white-breadcrumb">
+               <idno type="uri">https://www.wikidata.org/entity/Q107262394</idno>
+               <label type="reg">Semmelbrösel</label>
+               <label type="alt">semell brosem</label>
+            </item>
+            <item xml:id="pear">
+               <idno type="uri">https://www.wikidata.org/entity/Q13099586</idno>
+               <label type="reg">Birne</label>
+               <label type="alt">puren</label>
+               <label type="alt">püren</label>
+               <label type="alt">pürn</label>
+               <label type="alt">pyeren</label>
+               <label type="alt">pyern</label>
+               <label type="alt">pyre</label>
+               <label type="alt">pyren</label>
+               <label type="alt">pyrn</label>
+            </item>
+            <item xml:id="purslane">
+               <idno type="uri">https://www.wikidata.org/entity/Q159554</idno>
+               <label type="reg">Portulak</label>
+               <label type="alt">purtzellen</label>
+            </item>
+            <item xml:id="butter">
+               <idno type="uri">https://www.wikidata.org/entity/Q34172</idno>
+               <label type="reg">Butter</label>
+               <label type="alt">puter</label>
+               <label type="alt">puteren</label>
+               <label type="alt">putern</label>
+               <label type="alt">puterrn</label>
+               <label type="alt">putten</label>
+               <label type="alt">putter</label>
+               <label type="alt">putteren</label>
+               <label type="alt">puttern</label>
+               <label type="alt">püttern</label>
+               <label type="alt">putternn</label>
+               <label type="alt">pvtern</label>
+            </item>
+            <item xml:id="clarified_butter">
+               <idno type="uri">https://www.wikidata.org/entity/Q2789594</idno>
+               <label type="reg">Butterschmalz</label>
+               <label type="alt">puter schmaltz</label>
+               <label type="alt">putter schmaltz</label>
+            </item>
+            <item xml:id="core">
+               <idno type="uri">https://www.wikidata.org/entity/Q152882</idno>
+               <label type="reg">Kerngehäuse</label>
+               <label type="alt">putzen</label>
+               <label type="alt">putzenn</label>
+            </item>
+            <item xml:id="beer">
+               <idno type="uri">https://www.wikidata.org/entity/Q44</idno>
+               <label type="reg">Bier</label>
+               <label type="alt">pyer</label>
+            </item>
+            <item xml:id="chard">
+               <idno type="uri">https://www.wikidata.org/entity/Q157954</idno>
+               <label type="reg">Mangold</label>
+               <label type="alt">pyessen</label>
+               <label type="alt">pyessen pleter</label>
+            </item>
+            <item xml:id="pimpinella">
+               <idno type="uri">https://www.wikidata.org/entity/Q1473991</idno>
+               <label type="reg">Kleine Bibernelle</label>
+               <label type="alt">pypnel</label>
+            </item>
+            <item xml:id="dough">
+               <idno type="uri">https://www.wikidata.org/entity/Q178024</idno>
+               <label type="reg">Teig</label>
+               <label type="alt">teic</label>
+               <label type="alt">teick</label>
+               <label type="alt">teig</label>
+               <label type="alt">teig</label>
+               <label type="alt">teige</label>
+               <label type="alt">teigk</label>
+               <label type="alt">teigl</label>
+            </item>
+            <item xml:id="sour_cherry">
+               <idno type="uri">https://www.wikidata.org/entity/Q68438267</idno>
+               <label type="reg">Sauerkirsche</label>
+               <label type="alt">weichel</label>
+               <label type="alt">weichell</label>
+               <label type="alt">weichsel</label>
+               <label type="alt">weichselen</label>
+               <label type="alt">weichsell</label>
+               <label type="alt">weichsellen</label>
+               <label type="alt">weichseln</label>
+               <label type="alt">weichselnn</label>
+            </item>
+            <item xml:id="wine">
+               <idno type="uri">https://www.wikidata.org/entity/Q282</idno>
+               <label type="reg">Wein</label>
+               <label type="alt">wein</label>
+            </item>
+         </list>
+   </standOff>
+   <text>
+        <body>
+         <pb xml:id="F33038493" n="UB_Augsburg_Cod_III_1_2_43_002r" facs="#f0001"/>
+         <div xml:id="OTP33038493">
+            <p xml:id="OTP33038493P0"><hi rendition="#red">Hienach volgenn Etlich ertzneÿ vonn
+                  mangerlaÿ dingenn zu sammenn gesammet<lb/> Als du danne hernach wol vindenn
+                  wurdest<lb/> Ein purgatz Zu der zeÿtt des herbstes furr allenn gebrechenn</hi><lb/>
+               <supplied>N</supplied>ym <term type="ingredient" key="#rose_hip">hieffenn</term> die
+               zeÿttig sein vnd mit dem reÿff wol beczwungenn<lb/> vnd nÿm die mit <term type="ingredient" key="#pip">kernn</term> vnd mit all vnd derre die in eynem ofenn
+               vnd<lb/> lege sie danne herauß vnd laß den windt dar durch genn vnd<lb/> nÿm dann
+               einen moerserr vnd stoß die <term type="ingredient" key="#rose_hip">hieffenn</term>
+               vnd misch die mit <term type="ingredient" key="#honey">honig</term><lb/> vnd das isse
+               das des morgens nüchternn<lb/>
+               <hi rendition="#red">Meßigkeit</hi> Ist ein aufenthaltung des ganntzen leichnams .
+               Vnd ein starck<lb/> aller gelider . Vnd ein außderung aller boesenn duenst Wann
+               meßigkeit ist<lb/> ein zustoerung aller lasterr<lb/>
+               <hi rendition="#red">Wiltu gut lekuchenn machenn</hi>
+               <choice>
+                  <expan>Recipe</expan>
+                  <abbr>R</abbr>
+               </choice> zu einem seÿdlein <term type="ingredient" key="#honey">hoenigs</term> 1/2
+               lot <term type="ingredient" key="#clove">negelleyn</term><lb/> 1/2 lot <term type="ingredient" key="#nutmeg_apple">muscat</term> 1/2 lot <term type="ingredient" key="#ginger">Ingwerr </term>1/2 lot <term type="ingredient" key="#pepper">pfeffers</term> vnd stoß das zu sammenn vnd dar<lb/> auß mach einen <term type="ingredient" key="#dough">teig</term> vnd zu <choice>
+                  <expan>einer</expan>
+                  <abbr>ein</abbr>
+               </choice> moß <term type="ingredient" key="##honey">honigs</term> nÿm zwirr souil als
+               vor be=<lb/> zeichent stett<lb/><hi rendition="#red"> Wiltu ein gutte salsen machen
+                  in der fastenn</hi> Nÿm <term type="ingredient" key="#horse_radish">merrech</term>
+               vnd <term type="ingredient" key="#almond">mandel<lb/> kernn</term> vnd stoß die in
+               einem moerserr vnd thue <term type="ingredient" key="#wine">wein</term> dar zu das ist gut<lb/>
+               <hi rendition="#red">Die vier kunigreich der werlt</hi>
+               <lb/> Orientalis [que est] Calida et humida<lb/> Meridionalis [que est] Calida et
+               sicca<lb/> Occidentalis que est frigida et humida<lb/> Septembrionalis [que est]
+               Frigida et sicca<lb/>
+               <hi rendition="#red">Der lentz ist hitzig vnd feucht</hi> Die Zeit ist gemischet vnd
+               dem lufft<lb/> geleich . Vnd in der Zeit so wirt bewegt das plut . Vnd in der Zeit
+               ist<lb/> gesund alles das einen linden Complexion vnd naturr ist Als Iunge <term type="ingredient" key="#chicken">hunerr</term><lb/> vnd <term type="ingredient" key="#chicken_egg">eÿerr</term> doch soltu ir auch nit zu vil niessenn Vnd <term type="ingredient" key="#lettuce">lactuken</term> vnd <term type="ingredient" key="#verjuice">agreste</term><lb/> vnd <term type="ingredient" key="#goat_milk">geÿß milch</term> Es ist kein zeit des ganntzen Iars die nutzerr ist dem<lb/>
+               aderlassenn danne dise zeit vnd ist nutz die bewegung des leÿbes<lb/> vnd die
+               entschliessung des leÿbs vnd padenn Auch ist in diser Zeit<lb/> gut <term type="ingredient" key="#medication">Ertzneÿ</term> vnd getranck zu nemmen<lb/>
+               <hi rendition="#red">Der Summer Ist hitzig vnd durrr</hi> In der Zeit wirt verzert
+               das plut<lb/> vnd wechst in dem menschen die rot Colera . Vnd in der Zeit soll
+               man<lb/> sich huttenn vor allenn dingenn die hitzig vnd durr sein Auch sol man<lb/>
+               sich huttenn vor v̈brigem essenn vnd trinckenn das nit auß geleschet werd<lb/> die
+               naturlich hitze . Inn der zeÿt des Summers soll man sich gerbrauchen<lb/> aller ding
+               die kalter naturr sein Als <term type="ingredient" key="#veal">kalb fleÿsch</term>
+               vnd <term type="ingredient" key="#vinegar">essig</term> et <term type="ingredient" key="#calabash">cucurbite</term><lb/> et <term type="ingredient" key="#chicken">pulli</term> saginati ex farina ordeacea Vnd von der <term type="ingredient" key="#fruit">frucht</term> die eins guttenn<lb/> geschmacks ist Et <term type="ingredient" key="#apple">mala</term> atra et malignata similer aerea Vnd die
+               do sein in den<lb/>
+            </p>
+         </div>
+         <pb xml:id="F33038494" n="UB_Augsburg_Cod_III_1_2_43_059r" facs="#f0002"/>
+         <div xml:id="OTP33038494">
+            <p xml:id="OTP33038494P0"><hi rendition="#red">Hienach volgt vonn dem kochenn vnd hat
+                  gemacht meyster Eberhart Ein koch<lb/> herczog heinrichs zu lands hut Zum Ein
+                  salsenn von <term type="ingredient" key="#sour_cherry">weichselnn</term> zu
+                  machen</hi><lb/> Item Wiltu machen ein gutte salsenn von <term type="ingredient" key="#sour_cherry">weichselnn</term> So <del rendition="#s">?</del> thue die <term type="ingredient" key="#sour_cherry">weich=<lb/> sell</term> in einen hafen vnd
+               setz die auff ein glut vnd laß sie siedenn vnd<lb/> laß dann wider erkaltenn vnd
+               streich sie durch ein tuch vnd thue sie<lb/> dann wider in den hafenn vnd setz sie
+               auff ein glut vnd laß sie wol sieden<lb/> vnd rurr sie piß sie dick wirt vnd thue
+               dann <term type="ingredient" key="#honey">honig</term> dar an vnd geribens<lb/>
+               <term type="ingredient" key="#bread">prot</term> vnd <term type="ingredient" key="#clove">negellein</term> vnd gut <term type="ingredient" key="#spice">gestüp</term> vnd thue sie in ein feßlein sie pleibt<lb/> dir gut drew oder vier iarr<lb/>
+               <hi rendition="#red">Ein gutte salsen zu machen in der fastenn</hi><lb/>
+               <choice>
+                  <expan>Item</expan>
+                  <abbr>It</abbr>
+               </choice> Nÿm <term type="ingredient" key="#horse_radish">merrich</term> vnd zustoß
+               den in einem moerserr vnd nÿm <term type="ingredient" key="#almond">mandelkernn</term><lb/> oder <term type="ingredient" key="#nut">nuß</term> vnd
+               zustoß die auch vnd geuß ein <term type="ingredient" key="#wine">wein</term> dar an
+                  <term type="ingredient" key="#horse_radish">Merrich</term><lb/> bricht den stein
+               garr serr wenn man in isset in der kost<lb/>
+               <choice>
+                  <expan>Item</expan>
+                  <abbr>It</abbr>
+               </choice> Ein andre salsenn <term type="ingredient" key="#sage">Saluia</term>
+               <term type="ingredient" key="#parsley">petrocilius</term>
+               <term type="ingredient" key="#mint">menta</term> vnd <term type="ingredient" key="#pepper">pfefferr</term> das soll<lb/> man zustossenn mit <term type="ingredient" key="#vinegar">essig</term> das ist ein salsen die macht lustig
+               zu essenn<lb/> Item Ein essenn von gebratenn <term type="ingredient" key="#garden_pea">arbeissenn</term> Nÿm gesotenn <term type="ingredient" key="#garden_pea">arbeÿß</term> vnd<lb/> slach sie durch ein tuch oder durch ein sib vnd slach vil
+                  <term type="ingredient" key="#chicken_egg">eÿerr</term><lb/> darzu als vil der
+                  <term type="ingredient" key="#garden_pea">arbeiß</term> sein vnd seud es in <term type="ingredient" key="#butter">putternn</term> vnd steck es<lb/> an einen spiß vnd
+               brot sie wol vnd beslach sie mit <term type="ingredient" key="#chicken_egg">eÿernn</term> vnd mit<lb/>
+               <term type="ingredient" key="#spice">kraut</term> vnd gib es hin <choice>
+                  <expan>versaltz</expan>
+                  <abbr>vsaltz</abbr>
+               </choice> es nit<lb/>
+               <hi rendition="#red">Ein <term type="ingredient" key="#elderberry">holder</term> muß
+                  zu machenn</hi> Nÿm <term type="ingredient" key="#elderberry">holderplut</term>
+               vnd zureib die in <term type="ingredient" key="#cow_milk">kuee<lb/> milch</term> vnd
+               nÿm <term type="ingredient" key="#flour">mel</term> vnd mach ein mus dar auß das ist
+               gut zu<lb/> dem haubt vnd den sÿnnenn<lb/> Ein gut mus zu machenn So nÿm <term type="ingredient" key="#pip">nuß kernn</term> vnd stoß die clein vnd<lb/> streich
+               die durch mit einerr sussenn <term type="ingredient" key="#cow_milk">milch</term> vnd
+               mit susser <term type="ingredient" key="#white-breadcrumb">semell<lb/> brosem</term>
+               die wol gesotenn sein vnd thue <term type="ingredient" key="#clarified_butter">schmaltz</term> dar an genug vnd<lb/> rurr es ab mit <term type="ingredient" key="#chicken_egg">eÿer totternn</term> vnd <term type="ingredient" key="#spice">wurtz </term>es wol vnd <choice>
+                  <expan>versaltz</expan>
+                  <abbr>vsaltz</abbr>
+               </choice> es nit<lb/>
+               <hi rendition="#red">Wiltu machen ein gebraten muß vonn <term type="ingredient" key="#fish">vischennn</term></hi> So nÿm per <term type="ingredient" key="#fish">visch</term><lb/> die peÿß in <term type="ingredient" key="#vinegar">essig</term>
+               vnd wurff die in ein <term type="ingredient" key="#almond-milk">mandel milch</term>
+               die mit <term type="ingredient" key="#rice">reÿß</term><lb/> sein wol gemengt vnd ein
+               wenig <term type="ingredient" key="#butter">schmaltz</term> dar an das wellig sej<lb/>
+               versaltz es nit<lb/>
+               <choice>
+                  <expan>Item</expan>
+                  <abbr>It</abbr>
+               </choice> Ein essenn vonn einer <term type="ingredient" key="#calf-liver">lebernn eins
+                  kalbs</term> Nÿm ein <term type="ingredient" key="#calf-liver">lebernn von
+                  einem<lb/> kalb</term> vnd hack sie clein vnd <term type="ingredient" key="#spice">würtz</term> sie wol vnd nÿm dann einen<lb/> hewrigenn <term type="ingredient" key="#bacon">speck</term> vnd <term type="ingredient" key="#grape">weinperr</term>
+               vnd leg das <term type="ingredient" key="#caul-fat">netz</term> furr dich vnd be=<lb/>
+               streich es wol mit <term type="ingredient" key="#yolk">totternn</term> vnd
+               nÿm dann die <term type="ingredient" key="#calf-liver">lebernn</term> vnd slach<lb/>
+               ein <term type="ingredient" key="#caul-fat">netz</term> dar veberr vnd <choice>
+                  <expan>verspeil</expan>
+                  <abbr>vspeil</abbr>
+               </choice> das wol vnd leg sie auff ein rost<lb/> vnd laß sie pratenn vnd beslach sie
+               halb mit <term type="ingredient" key="#yolk">totternn</term> die rot sein
+               dar </p>
+         </div>
+         <pb xml:id="F33038495" n="UB_Augsburg_Cod_III_1_2_43_059v" facs="#f0003"/>
+         <div xml:id="OTP33038495">
+            <p xml:id="OTP33038495P0">nach an der andernn seittenn mit grunen <term type="ingredient" key="#yolk">totternn</term> vnd <term type="ingredient" key="#parsley">peterlein</term> vnd <choice>
+                  <expan>versaltz</expan>
+                  <abbr>vsaltz</abbr>
+               </choice> es nit<lb/>
+               <hi rendition="#red">Wiltu machen ein meyschen kuchenn</hi> So nÿm auff zehen eÿer
+               vnd zuslach<lb/> sie wol vnd nÿm darzu peterlein vnd rurr es <choice>
+                  <expan>vndereinander</expan>
+                  <abbr>vndeinand</abbr>
+               </choice> vnd nÿm einen<lb/> morserr vnd setz auff ein kolenn vnd thue dar ein einen
+               loeffel vol schmaltz<lb/> vnd laß es heÿß werdenn vnd geuß die eÿerr darein vnd laß
+               es kul pachen<lb/> vnd thu es also gantz auff ein schussel <choice>
+                  <expan>versaltz</expan>
+                  <abbr>vsaltz</abbr>
+               </choice> es nit<lb/> Item Wiltu machen ein essen in dem meÿen das heÿßt ein
+               gespoet So nym<lb/> einen fliessendenn keß vnd schneid den in vil schnittenn die
+               duenn sein<lb/> vnd nÿm darzu sechs eÿer vnd slach die auff den keß vnd nÿm<lb/>
+               meichßige putternn in ein pfannen vnd thue den keß mit den eÿernn<lb/> vber das
+               fewrr vnd zeuch es eÿ dar mit auff das es slecht werr vnd<lb/> richte es an vnd <choice>
+                  <expan>versaltz</expan>
+                  <abbr>vsaltz</abbr>
+               </choice> es nicht<lb/> Item einen fladenn zu machenn von fischenn velcherlej sie
+               sind So<lb/> nÿm ein dicke mandelmilch wol gemengt mit reiß mel vnd thue<lb/> dar
+               ein einen apffel oderr zwenn vnd ein wenig wurtz vnd seud<lb/> es in einem ofen vnd
+               laß es pachenn vnd <choice>
+                  <expan>versalcz</expan>
+                  <abbr>vsalcz</abbr>
+               </choice> es nit<lb/>
+               <hi rendition="#red">Wiltu machen morchen vmb weihennachtenn</hi> So nÿm ein
+               teick<lb/> auß weissem brot vnd auß ein wenig melbs vnd schla eÿer dar an<lb/> vnd
+               mach zwen knebel vnd wurff die in den teick vnd zeuch<lb/> sie darInnen vmb vnd leg
+               sie in ein schmaltz das nit zu heÿß<lb/> sej vnd wenn es ein wenig gepack So nÿm es
+               her wider auß<lb/> vnd schneÿd es dann mitten auff dem knebel auff von <choice>
+                  <expan>einander</expan>
+                  <abbr>einand</abbr>
+               </choice>
+               <lb/> vnd full es danne mit ein geruntenn eÿernn vnd zeuch es durch<lb/> einen
+               lindenn straubenn teick leg es in ein schmaltz vnd laß es<lb/> pachenn vnd setz die
+               morchen dar ein vnd laß sie pachenn<lb/><hi rendition="#red"> Wiltu machen ein
+                  gestrocztes gepachens</hi> So mach ein teÿck von<lb/> eÿtell eÿernn vnd wurtz
+               in wol vnd mach in gel vnd warmm <supplied cert="low">du</supplied>
+               <note place="foot" n="*">Lesart nach Feyl: dutzend</note>
+               <lb/>
+               <choice>
+                  <expan>gutter</expan>
+                  <abbr>gutt</abbr>
+               </choice> holmm in den teick das sie naß werdenn vnd nÿm sie dann<lb/> her auß vnd
+               pack es in einem schmaltz vnd <choice>
+                  <expan>versaltz</expan>
+                  <abbr>vsaltz</abbr>
+               </choice> nit<lb/>
+               <hi rendition="#red">Wiltu machen gut kuchenn vonn eÿernn</hi> So nÿm eÿer wie
+               vil<lb/> du wilt vnd zu slach die wol vnd schneid semel funf lot dar<lb/>
+               <choice>
+                  <expan>vnter</expan>
+                  <abbr>vnt</abbr>
+               </choice> vnd thue dar ein weinperr vnd schmaltz in ein pfannen des<lb/> genug sej
+               vnd geuß die eÿer dar ein vnd laß es packenn ÿnnenn<lb/> vnd aussenn do mit slach
+               es auff ein panck vnd hack dar <choice>
+                  <expan>vnter</expan>
+                  <abbr>vnt</abbr>
+               </choice>
+               <lb/> gut wurtz vnd schneid es zu scheubenn vnd richt es an<lb/> Item Ein essenn von
+               milch kuchenn So soltu sie clein <choice>
+                  <expan>schnëyden</expan>
+                  <abbr>schnëy</abbr>
+               </choice>
+               <note place="foot" n="*">Rezept endet hier</note>
+            </p>
+         </div>
+         <pb xml:id="F33038496" n="UB_Augsburg_Cod_III_1_2_43_060r" facs="#f0004"/>
+         <div xml:id="OTP33038496">
+            <p xml:id="OTP33038496P0">
+               <note place="foot" n="*">Rezept beginnt inmitten des Textes</note>hafen vnd geuß ein
+               wasserr dar an vnd deck es zu vnd laß siedenn so wirt<lb/> es sich strecken in dem
+               glaß das man sicht sein fuß vnd flügel vnd<lb/> den ganntzen pöttich so ist es gerecht<lb/>
+               <hi rendition="#red">Wiltu machenn dreÿerlej essens an einem visch</hi> So nÿm ein
+               hecht vnd<lb/> slach vmb das mittel teÿl ein naß tuch vnd leg in auff ein rost
+               vnd<lb/> saltz in vnd laß in pratenn vnd das foderr teil bespreng mit melb<lb/> vnd
+               begeuß mit schmaltz das heÿß sej vnd das tuch begeuß mit<lb/> heissem wein vnd das
+               hinder teÿl prett sich selbs auff dem rost<lb/> Item vt scito coquantur carnes
+               Recipe aliquas pecias de <note place="foot" n="*Laut Feyl hier: vino">vitro</note> Et
+               pone in ollam<lb/> ad carnes crudas et sic coquantur<lb/> Item ad extrahendum sal de
+               cibo nimis salsato Recipe de farina frumenti in vna<lb/> pecia lini panni et dimitte
+               bulire intus<lb/> Item Ad appetitum comedendi valet illa salsa facta cum aleo Et
+               appone piper<lb/> ad triginta grana et hoc simul tunde Et Ieiunus per duos dies
+               comede<lb/> etiam appone de saluia tria folia cum sale modico Vel accipe aleum
+               cum<lb/> bibenella et fac succum<lb/>
+               <choice>
+                  <expan>Item</expan>
+                  <abbr>It </abbr>
+               </choice> Wiltu swartz fisch machenn So laß die visch siedenn an die<lb/> stat vnd
+               nÿm dann gestossenn negellein vnd thue die dar an <supplied cert="low">?</supplied>
+               <lb/> vnd laß sie dann noch ein guttenn wal thun<lb/>
+               <choice>
+                  <expan>Item</expan>
+                  <abbr>It </abbr>
+               </choice> Vonn hechtenn wirt garr schoenns vnd lawters gestanndenn<lb/> also das es
+               durchsichtig wirt<lb/>
+               <hi rendition="#red">Wiltu einen gutten stockfisch machenn</hi> So laß in siedenn als
+               ein kalb<lb/> fleisch vnd laß in ein siedenn auff halben <choice>
+                  <reg>wegk</reg>
+                  <orig>wogk</orig>
+               </choice> vnd seig dann die<lb/> brue dar vonn vnd schuet den stockvisch herauß vnd
+               erclaub in<lb/> wol vnd nÿm dann ein pfannen vnd thue smaltz dar ein vnd laß<lb/> es
+               warmm werdenn vnd leg dann den stockvisch in die putternn<lb/> vnd laß sie dar ÿnnen
+               erhitzenn vnd nÿm dann Ingwerr vnd saffran<lb/> mit des visch brue vnd ferb das do
+               mit ein vnd geuß es <choice>
+                  <expan>veber</expan>
+                  <abbr>veb</abbr>
+               </choice>
+               <lb/> den stock <del rendition="#s">in die</del> visch in die pfannen vnd laß es ein
+               wal oder<lb/> drej thun so ist er gerecht<lb/> Item Hienach volgt wie man ein ganß
+               pratenn soll So laß sie<lb/> vor zwenn oder drej tag wol hungernn das die bösen
+               predenn<lb/> die in ir sein her auß genn vnd soll sie dann nernn mit kornn vnd
+               dar<lb/> nach tötte sie vnd prate sie pej dem fewerr vnd du solt dar ein<lb/>
+               stossen saluia vnd ander gut wuertz das der safft dardurch gee<lb/> vnd man soll sie
+               besprengenn mit wein oder mit essigk das <choice>
+                  <expan>daz</expan>
+                  <abbr>dz</abbr>
+               </choice> schmaltz </p>
+         </div>
+         <pb xml:id="F33038497" n="UB_Augsburg_Cod_III_1_2_43_060v" facs="#f0005"/>
+         <div xml:id="OTP33038497">
+            <p xml:id="OTP33038497P0">do vonn trieff Wann das genß schmaltz soll man nit essenn wann
+               es macht<lb/> den menschen krannck wann die feistenn kumbt vonn boeser
+               feuchtigkeit<lb/> vnd wer gesund ist der soll die gans also gebratenn essenn so
+               schadt<lb/> sie dester mÿnderr Wer aber krannck ist der soll wenig do von
+               essenn<lb/> Wenn man sie kocht vnd seudt in wasser so ist sie vngesund wann dann<lb/>
+               so mügenn die boesen preden nit herauß genn von verhinderung wegen<lb/> des wassers<lb/>
+               <hi rendition="#red">Hienach volgt vonn den kuchenspeisen warr zu sie gut sein</hi><lb/>
+               <choice>
+                  <expan>Item</expan>
+                  <abbr>It </abbr>
+               </choice> Reÿß kelt vnd hitzigt nit vnd speißt serr vnd wenn mans wol seudt<lb/> mit
+               milch so macht es vil plutz vnd doch so schadt es den lewten<lb/> die den grymmenn in
+               dem leib habenn vnd stupfft vnd wirt nit<lb/> schier<choice>
+                  <expan>verdewt</expan>
+                  <abbr> vdewt</abbr>
+               </choice>
+               <lb/><hi rendition="#red"> Hirß</hi> zu essenn kelt vnd derrt vnd stopffet vnd speist
+               nit wol<lb/> vnd das selb thut auch der habernn vnd spelt<lb/>
+               <hi rendition="#red">Gerstenn</hi> Blewet vnd keltet vnd speist nit wol vnd schadt
+               allen<lb/> den lewtenn die geprestenn habenn vnd von kalter natur kumbt oder<lb/> das
+               grymmenn in dem leib hat Aber hitzigenn lewtenn vnd die do <choice>
+                  <expan>gern</expan>
+                  <abbr>gn</abbr>
+               </choice>
+               <lb/> cleiner wurdenn den ist sie gut vnd wenn man sie isset oderr trincket<lb/> mit
+               venchel samenn so ist sie gut furr etlichenn gebresten an der<lb/> brust vnd spricht
+               Auicenna das gerstenn wasserr schadet dem magen<lb/> der do kalt ist Es ist auch
+               Rittigenn lewtenn garr nuetz<lb/>
+               <hi rendition="#red">Linßenn</hi> Sein bescheidenlich heÿß vnd derren vnd machenn
+               vil plutz<lb/> vnd so man sie seudt mit essig so erleschenn sie die enzuendung
+               des<lb/> plutz Vnd wer sie dick isset dem machen sie vinsterr awgenn do<lb/> vonn sie
+               vast derrent Auicenna spricht das sie schadenn dem magenn<lb/> vnd blewend vnd stopffend<lb/>
+               <hi rendition="#red">Die kichernn</hi> Hitzenn vnd plewend vnd machenn pruntzen vnd
+               machenn<lb/> den frawenn ire Recht zu vier wochenn einß komenn als es sein soll<lb/>
+               vnd spricht <choice>
+                  <expan>Auerrois</expan>
+                  <abbr>Aurois</abbr>
+               </choice> das sie prechenn den stein der do leÿt in den<lb/> lendenn oder der do
+               leit in der blosenn vnd auch die brüe mit<lb/> der sie gesotenn werdenn vnd darczu
+               sein die swartzen kichernn pesserr<lb/> dann die weissenn Vnd <choice>
+                  <expan>Galienus</expan>
+                  <abbr>Galien </abbr>
+               </choice>spricht das bru von kichernn so<lb/> man sie seudt die ist der lebernn gut
+               wann es reinigt sie vnd die<lb/> nÿren do der stein wechst den schleim vnd treibt
+               vil vnflatz<lb/> vonn dem menschenn<lb/>
+               <hi rendition="#red">Arbeißenn</hi> Brüe hat die selben krafft aber nit als
+               krefftigklichenn<lb/> do vonn so man kichernn nit hat so seudt man arbeiß
+               kichernn<lb/> oder arbeiß die grun sein so soll man <add place="superlinear">nit</add> essenn wann sie machenn<lb/> em menschenn boese feuchtigkeit </p>
+         </div>
+      </body>
+   </text>
+</TEI>
