@@ -13,19 +13,18 @@ excerpt: Im Zuge der Transition von FairCopy zu ba[sic?] werden die in FairCopy 
 
 # Allgemeine Beschreibung
 
-Im Zuge der Annotation der Briefe Hugo Schuchardts mit _[FairCopy ](https://digedtnt.github.io/faircopy/)_wurden Named Entities (Personen, Orte und Organisationen) ausgezeichnet und im `<standOff>` (z. B. in einer `<listPerson>`) verzeichnet. Im darauffolgenden Schritt der Normalisierung mit dem Tool _ba[sic?]_ sollen diese Named Entities mit Links auf Einträge von Normdatenanbietern angereichert werden. Um diese Normalisierung durchführen zu können, werden im Rahmen dieser mit der Programmiersprache Python durchgeführten Transition in einem ersten Schritt alle Named Entities aus den Briefen extrahiert und in einer Index-Datei gesammelt. Im zweiten Schritt wird diese in _[ba[sic?]](https://digedtnt.github.io/basic/)_ ingestiert und die Normdatenanreicherung durchgeführt. Der Export aus _ba[sic?]_ wird dann in einem dritten und letzten Schritt mit den Einträgen im `<standOff>` der Briefe zusammengeführt.
+Im Zuge der Annotation der Briefe Hugo Schuchardts mit _[FairCopy ](https://digedtnt.github.io/faircopy/)_ wurden Named Entities (Personen, Orte und Organisationen) ausgezeichnet und im `<standOff>` (z. B. in einer `<listPerson>`) verzeichnet. Im darauffolgenden Schritt der Normalisierung mit dem Tool _ba[sic?]_ sollen diese Named Entities mit Links auf Einträge von Normdatenanbietern angereichert werden. Um diese Normalisierung durchführen zu können, werden im Rahmen dieser mit der Programmiersprache Python durchgeführten Transition in einem [ersten Schritt](#1-erstellung-einer-indexdatei-der-in-den-briefen-annotierten-named-entities) alle Named Entities aus den Briefen extrahiert und in einer Index-Datei gesammelt. Im zweiten Schritt wird diese in _[ba[sic?]](https://digedtnt.github.io/basic/)_ ingestiert und die Normdatenanreicherung durchgeführt. Der Export aus _ba[sic?]_ wird dann in einem [dritten und letzten Schritt](#3-zusammenführung-der-normdaten-mit-den-in-den-briefen-annotierten-named-entities) mit den Einträgen im `<standOff>` der Briefe zusammengeführt.
 
-ESSENCE
-
-Um die Normalisierung der Named Entities mit _ba[sic?]_ durchführen zu können, müssen diese zunächst aus den Briefen extrahiert werden, ebenso muss das Resultat dieser Normalisierung wieder mit den Briefen zusammengeführt werden. Beide Schritte werden im Zuge dieser Transition mittels der Programmiersprache Python umgesetzt.
-
+<div class="essence">
+Um die Normalisierung der Named Entities mit <span style="font-style:italic;">ba[sic?]</span> durchführen zu können, müssen diese zunächst aus den Briefen extrahiert werden, ebenso muss das Resultat dieser Normalisierung wieder mit den Briefen zusammengeführt werden. Beide Schritte werden im Zuge dieser Transition mittels der Programmiersprache Python umgesetzt.
+</div>
 
 ## Voraussetzungen
 
 Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kompetenzen der Benutzer:innen voraus, sondern stellen auch hinsichtlich der Software-Umgebung gewisse Anforderungen.
 
 
-### **Erforderliche Kenntnisse **
+### **Erforderliche Kenntnisse**
 
 
 
@@ -66,12 +65,12 @@ Der in dieser Transition eingesetzte Python-Code ist auch in einem [Google-Colab
 * Zunächst lassen wir uns mittels Klick auf das Ordnersymbol in der linken Leiste die Ordner und Dateien anzeigen, da im Zuge der Ausführung des Codes Dateien von GitHub geladen, aber auch erstellt werden.
 * Danach können die einzelnen Codezellen per Klick auf das Play-Symbol ausgeführt werden. Über den Reiter “Laufzeit” können durch einen Klick auf “Alle ausführen” alle Codezellen automatisch hintereinander ausgeführt werden. Durch die Option “Verbindung trennen und Laufzeit löschen” kann das Notebook auf den Ursprungszustand zurückgesetzt werden.
 
-{% include image.html url="../data/pipelines/pipeline_2/basic/img/colab_notebook.png" description="Google-Colab-Notebook"%}
+{% include image.html url="../data/pipelines/pipeline_2/transition_2/data/img/colab_notebook.png" description="Google-Colab-Notebook"%}
 
 
 # 1. Erstellung einer Indexdatei der in den Briefen annotierten Named Entities
 
-Ziel des ersten Schrittes der Transition ist es, alle in den `<standOff>`-Elementen der Briefe verzeichneten Named Entities zu extrahieren und in einer Indexdatei zu sammeln. Die zugehörige Pythondatei kann auch von GitHub bezogen werden. Dabei soll folgendes Resultat erzielt werden:
+Ziel des ersten Schrittes der Transition ist es, alle in den `<standOff>`-Elementen der Briefe verzeichneten Named Entities zu extrahieren und in einer Indexdatei zu sammeln. Die zugehörige Pythondatei kann auch von [GitHub](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_2/transition_2/python/create_register.py) bezogen werden. Dabei soll folgendes Resultat erzielt werden:
 
 ```xml
 <standOff xmlns="http://www.tei-c.org/ns/1.0">
@@ -200,18 +199,17 @@ for file in os.listdir(input_directory):
 tree = ET.ElementTree(standoff)
 ET.indent(tree, space="\t", level=0)
 tree.write("ne_index.xml", encoding="UTF-8")
-
 ```
 
 
 # 2. Anreicherung der extrahierten Named Entities mit Normdaten
 
-Im zweiten Schritt der Transition werden die extrahierten Named Entities mittels des Tools _[ba[sic?]](basicdemo.saw-leipzig.de/)_ mit Normdaten angereichert. Die Umsetzung dieser Anreicherung ist im zugehörigen Tooldoc dokumentiert, die Resultate können als [JSON-Dateien](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_2/basic/data/json) bezogen werden, sodass diese für die Durchführung des nächsten Schrittes genutzt werden können.
+Im zweiten Schritt der Transition werden die extrahierten Named Entities mittels des Tools _[ba[sic?]](basicdemo.saw-leipzig.de/)_ mit Normdaten angereichert. Die Umsetzung dieser Anreicherung ist im zugehörigen [Tooldoc](https://digedtnt.github.io/basic/) dokumentiert, die Resultate können als [JSON-Dateien](https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_2/basic/data/json) bezogen werden, sodass diese für die Durchführung des nächsten Schrittes genutzt werden können.
 
 
-# 3. Anreicherung der extrahierten Named Entities
+# 3. Zusammenführung der Normdaten mit den in den Briefen annotierten Named Entities
 
-Im dritten und letzten Schritt der Transition wird den im ´<standOff>´ der Briefe verzeichneten Named Entities ein `<idno>`-Element mit Link auf den ihnen entsprechenden Eintrag in den Datenbanken der Normdatenanbieter (GND oder GeoNames) angefügt. Die Pythondatei kann von GitHub bezogen werden. Dabei soll folgendes Resultat erzielt werden, hier exemplarisch veranschaulich an einer Person:
+Im dritten und letzten Schritt der Transition wird den im `<standOff>` der Briefe verzeichneten Named Entities ein `<idno>`-Element mit Link auf den ihnen entsprechenden Eintrag in den Datenbanken der Normdatenanbieter (GND oder GeoNames) angefügt. Die Pythondatei kann von GitHub bezogen werden. Dabei soll folgendes Resultat erzielt werden, hier exemplarisch veranschaulich an einer Person:
 
 ```xml
 <standOff xml:id="standOff-1">
@@ -264,7 +262,7 @@ def read_json_file(filename: str) -> dict:
 
 
 
-    * Die zweite Funktion übernimmt die Hauptaufgabe in diesem Teil der Transition. Mit ihr wird auf das `@xml:id` der übergebenen Named Entities zugegriffen, danach wird die übergebene JSON-Datei nach einem Eintrag mit dieser ID durchsucht. Die JSON-Datei weist dabei folgende Struktur auf:
+* Die zweite Funktion übernimmt die Hauptaufgabe in diesem Teil der Transition. Mit ihr wird auf das `@xml:id` der übergebenen Named Entities zugegriffen, danach wird die übergebene JSON-Datei nach einem Eintrag mit dieser ID durchsucht. Die JSON-Datei weist dabei folgende Struktur auf:
 
 ```json
 {
