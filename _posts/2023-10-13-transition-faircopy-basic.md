@@ -66,7 +66,7 @@ Der in dieser Transition eingesetzte Python-Code ist auch in einem [Google-Colab
 * Zunächst lassen wir uns mittels Klick auf das Ordnersymbol in der linken Leiste die Ordner und Dateien anzeigen, da im Zuge der Ausführung des Codes Dateien von GitHub geladen, aber auch erstellt werden.
 * Danach können die einzelnen Codezellen per Klick auf das Play-Symbol ausgeführt werden. Über den Reiter “Laufzeit” können durch einen Klick auf “Alle ausführen” alle Codezellen automatisch hintereinander ausgeführt werden. Durch die Option “Verbindung trennen und Laufzeit löschen” kann das Notebook auf den Ursprungszustand zurückgesetzt werden.
 
-{% include image.html url="../data/pipelines/pipeline_2/basic/img/colab_notebook.png" description="Google-Colab-Notebook%}
+{% include image.html url="../data/pipelines/pipeline_2/basic/img/colab_notebook.png" description="Google-Colab-Notebook"%}
 
 
 # 1. Erstellung einer Indexdatei der in den Briefen annotierten Named Entities
