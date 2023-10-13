@@ -24,7 +24,7 @@ Um die Normalisierung der Named Entities mit <span style="font-style:italic;">ba
 Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kompetenzen der Benutzer:innen voraus, sondern stellen auch hinsichtlich der Software-Umgebung gewisse Anforderungen.
 
 
-### **Erforderliche Kenntnisse**
+### Erforderliche Kenntnisse
 
 
 
@@ -33,7 +33,7 @@ Die im DigEdTnT-Projekt vorgestellten Transitions setzen nicht nur bestimmte Kom
 * Grundlegende XML-Kenntnisse (v. a. XML-Struktur und XPath)
 
 
-### **Benötigte Software**
+### Benötigte Software
 
 
 
@@ -94,7 +94,7 @@ Ziel des ersten Schrittes der Transition ist es, alle in den `<standOff>`-Elemen
     </listOrg>
 ```
 
-Der für das Erzeugen dieser Indexdatei notwendige Code wird folgend Abschnitt für Abschnitt erläutert. Zusammengefasst wird der obige (leere) Baum erzeugt und an diesen jedes in den Briefen verzeichnete Named-Entity-Element angehängt, sofern es in ihm noch nicht vorhanden ist.
+Der für das Erzeugen dieser Indexdatei notwendige Code wird folgend Abschnitt für Abschnitt erläutert. Zusammengefasst wird zunächst der obige (leere) Baum erzeugt und an diesen jedes in den Briefen verzeichnete Named-Entity-Element angehängt, sofern es in ihm noch nicht vorhanden ist.
 
 
 
@@ -156,8 +156,7 @@ namespace = {"tei":"http://www.tei-c.org/ns/1.0", "xml": "http://www.w3.org/XML/
 
 
 
-*  **Anlegen des Index-Baumes:** In diesem Schritt wird der XML-Baum angelegt, in dem alle in den Briefen verzeichneten einzigartigen Named Entities gesammelt werden. Es wird ein `<standOff>`-Element mit `<listPerson>`-, `<listPlace>`- und `<listOrg>`-Kindelementen erzeugt, an die im nächsten Schritt über Aufruf der oben definierten Funktion die in den Briefen verzeichneten Named Entities angehängt werden.
-
+*  **Anlegen des Index-Baumes:** In diesem Schritt wird der XML-Baum angelegt, in dem alle in den Briefen verzeichneten einzigartigen Named Entities gesammelt werden. Es wird ein `<standOff>`-Element mit (leeren)`<listPerson>`-, `<listPlace>`- und `<listOrg>`-Kindelementen erzeugt.
 ```python
 # create the xml element "standOff" with child elements "listPerson", "listPlace" and "listOrg"
 standoff = ET.Element("standOff")
@@ -209,7 +208,7 @@ Im zweiten Schritt der Transition werden die extrahierten Named Entities mittels
 
 # 3. Zusammenführung der Normdaten mit den in den Briefen annotierten Named Entities
 
-Im dritten und letzten Schritt der Transition wird den im `<standOff>` der Briefe verzeichneten Named Entities ein `<idno>`-Element mit Link auf den ihnen entsprechenden Eintrag in den Datenbanken der Normdatenanbieter (GND oder GeoNames) angefügt. Die Pythondatei kann von GitHub bezogen werden. Dabei soll folgendes Resultat erzielt werden, hier exemplarisch veranschaulich an einer Person:
+Im dritten und letzten Schritt der Transition wird den im `<standOff>` der Briefe verzeichneten Named Entities ein `<idno>`-Element mit Link auf den ihnen entsprechenden Eintrag in den Datenbanken der Normdatenanbieter (GND oder GeoNames) angefügt. Die Pythondatei kann von [GitHub](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_2/transition_2/python/add_identifier.py) bezogen werden. Dabei soll folgendes Resultat erzielt werden, hier exemplarisch veranschaulich an einer Person:
 
 ```xml
 <standOff xml:id="standOff-1">
@@ -221,7 +220,7 @@ Im dritten und letzten Schritt der Transition wird den im `<standOff>` der Brief
     </listPerson>
 ```
 
-In diesem Schritt wird durch jeden Brief und dort durch jede im `<standOff>`-Element der Briefe verzeichnete Named Entity iteriert und auf den ihr entsprechenden Eintrag in der jeweiligen JSON-Datei zugegriffen. Nur wenn es sich dort um einen als “safe” markierten Treffer handelt, wird der Named Entity der in der JSON-Datei vorhandene Link hinzugefügt.
+Zusammegefasst wird in diesem Schritt durch jeden Brief und dort durch jede im `<standOff>`-Element der Briefe verzeichnete Named Entity iteriert und auf den ihr entsprechenden Eintrag in der jeweiligen JSON-Datei zugegriffen. Nur wenn es sich dort um einen als “safe” markierten Treffer handelt, wird der Named Entity der in der JSON-Datei vorhandene Link hinzugefügt.
 
 
 
@@ -239,7 +238,7 @@ from xml.etree import ElementTree as ET
 
 
 
-* **Funktionsdefinitionen:** Für diesen Teil der Transition haben definieren wir zwei Funktionen
+* **Funktionsdefinitionen:** Für diesen Teil der Transition definieren wir zwei Funktionen
     * Die erste Funktion dient dem Lesen von JSON-Dateien
 
 ```python
@@ -283,7 +282,7 @@ def read_json_file(filename: str) -> dict:
 ```
 
 
-Nur wenn der “status” der Entität als “safe” markiert ist, wird auf den Normdaten-Link zugegriffen, wobei der mit “preferred”: “YES” ausgezeichnete Link herausgegriffen wird. Dieser Link wird dann der Named Entity als `<idno>`-Element hinzugefügt.
+Nur wenn der `"status"` der Entität als `"safe"` markiert ist, wird auf den Normdaten-Link zugegriffen, wobei der mit `"preferred": "YES"` ausgezeichnete Link herausgegriffen wird. Dieser Link wird dann der Named Entity als `<idno>`-Element hinzugefügt.
 
 ```python
 def add_idno(ne_parent: ET.Element, ne_x_path: str, json_data: dict, json_key: str) -> None:
@@ -351,7 +350,7 @@ json_organisations = read_json_file("basic-organisations.json")
 
 
 
-* **Iteration durch alle Briefe:** Hier wird durch alle Briefe in dem Eingabeordner iteriert. Bei jedem Brief wird auf alle im `<standOff>` verzeichneten Named Entities (`<person>`-, `<place>`- und `<org>`-Elemente) zugegriffen. Sie werden der oben definierten Funktion als Argumente übergeben und um die in den JSON-Dateien vorhandenen Links auf die Einträge in den Normdatenbanken ergänzt. Zuletzt werden die überarbeiteten Briefe in den Ausgabeordner geschrieben.
+* **Iteration durch alle Briefe:** Hier wird durch alle Briefe in dem Eingabeordner iteriert. Bei jedem Brief wird auf alle im `<standOff>` verzeichneten Named Entities (`<person>`-, `<place>`- und `<org>`-Elemente) zugegriffen. Sie werden der eingangs definierten Funktion als Argumente übergeben und um die in den JSON-Dateien vorhandenen Links auf die Einträge in den Normdatenbanken ergänzt. Zuletzt werden die überarbeiteten Briefe in den Ausgabeordner geschrieben.
 
 ```python
 # adressing the directory on the disc on which the xml files are stored
