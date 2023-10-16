@@ -56,7 +56,6 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 ### Benötigte Software
 
-* Stabile Internetverbindung
 * Webbrowser
 
 ## Tool-Kompatibilität
