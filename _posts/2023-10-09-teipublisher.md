@@ -200,7 +200,7 @@ Für eine vollständige Publikationsansicht (Content View) benötigt man die TEI
     Wenn wir anschließend in einem anderen Browser-Tab die Manuskript-Ansicht öffnen (oder dieses aktualisieren), sehen wir unsere Änderungen bereits.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/publication-view.PNG" description="Ansicht der ODD-Änderung im Manuskript-XML" %}
     → Sollten die Änderungen nicht sichtbar sein, muss möglicherweise überprüft werden, ob das Dokument nach wie vor mit dem eigenen ODD verknüpft ist (da sich dies mitunter automatisch auf die Standardeinstellung zurücksetzt) oder ob man nach wie vor eingeloggt ist (da man oft selbst nach kürzeren Pausen automatisch ausgeloggt wird). Es kann auch nötig sein, mit F5 zu aktualisieren oder den Cache zu leeren, um die Änderungen zu sehen.
-* Wenn wir nun ein Element anlegen, dass im Standard-Template noch keine Modul-Spezifikationen besitzt, wie in diesem Fall das `<term>`-Element, dann müssen wir nach dem Hinzufügen des Elements außerdem das Plus-Zeichen  in der Elementansicht anklicken.
+* Wenn wir nun ein Element anlegen, das im Standard-ODD-Template noch keine Modul-Spezifikationen besitzt, wie in diesem Fall das `<term>`-Element, dann müssen wir nach dem Hinzufügen des Elements außerdem das Plus-Zeichen  in der Elementansicht anklicken.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/add-new-element.PNG" description="Weitere Modulspezifikation hinzufügen" %}
     Wir möchten unsere Zutaten mit einer punktierten Unterstreichung hervorheben und müssen daher in dem Eingabefeld für die Rendition den entsprechenden CSS-Code angeben:
     ```css

@@ -108,11 +108,18 @@
       </profileDesc>
    </teiHeader>
    <!-- Faksimiles sind im DTA-Basisformat nicht vorgesehen, sollen aber dennoch erhalten bleiben. -->
-   <facsimile xml:id="f0001" target="http://fromthepage.com/image-service/33038498/full/full/0/default.jpg"/>
-   <facsimile xml:id="f0002" target="http://fromthepage.com/image-service/33038499/full/full/0/default.jpg"/>
-   <facsimile xml:id="f0003" target="http://fromthepage.com/image-service/33038500/full/full/0/default.jpg"/>
-   <facsimile xml:id="f0004" target="http://fromthepage.com/image-service/33038501/full/full/0/default.jpg"/>
-   <facsimile xml:id="f0005" target="http://fromthepage.com/image-service/33038502/full/full/0/default.jpg"/>
+   <facsimile>
+      <graphic xml:id="f0001"
+         url="http://fromthepage.com/image-service/33038498/full/full/0/default.jpg"/>
+      <graphic xml:id="f0002"
+         url="http://fromthepage.com/image-service/33038499/full/full/0/default.jpg"/>
+      <graphic xml:id="f0003"
+         url="http://fromthepage.com/image-service/33038500/full/full/0/default.jpg"/>
+      <graphic xml:id="f0004"
+         url="http://fromthepage.com/image-service/33038501/full/full/0/default.jpg"/>
+      <graphic xml:id="f0005"
+         url="http://fromthepage.com/image-service/33038502/full/full/0/default.jpg"/>
+   </facsimile>
    <text>
       <body>
          <pb xml:id="F33038498" n="ZB_Solothurn_Cod_S_490_001v" facs="#f0001"/>

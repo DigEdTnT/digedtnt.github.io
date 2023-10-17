@@ -5,10 +5,10 @@
 	xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:telota="http://www.telota.de"
 	version="2.0" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="tei xsi">
-	
-	<!-- Scope of stylesheet: Transforms the invalid output from FromThePage to the structure of the 
+
+	<!-- Scope of stylesheet: Transforms the invalid output from FromThePage to the structure of the
 		 DTA-Basisformat in order to be able to edit the transformed XML in ediarum. -->
-	
+
 	<xsl:output method="xml" indent="yes" />
 
 		<!-- Embedding of RNG and SCHEMATRON of the DTA-Basisformat for manuscripts-->
@@ -46,16 +46,18 @@
 			<xsl:apply-templates select="@* | node()"/>
 		</xsl:copy>
 		<xsl:comment> Faksimiles sind im DTA-Basisformat nicht vorgesehen, sollen aber dennoch erhalten bleiben. </xsl:comment>
+		<facsimile>
 		<xsl:for-each select="./following-sibling::*//tei:pb/@facs">
-			<facsimile>
+			<graphic>
 			<xsl:attribute name="xml:id">
 				<xsl:value-of select="concat('f', format-number(../@n, '0000'))"></xsl:value-of>
 			</xsl:attribute>
-			<xsl:attribute name="target">
+			<xsl:attribute name="url">
 				<xsl:value-of select="."></xsl:value-of>
 			</xsl:attribute>
-		</facsimile>
+			</graphic>
 		</xsl:for-each>
+			</facsimile>
 	</xsl:template>
 
 
@@ -177,7 +179,7 @@
 				</idno>
 			</msIdentifier>
 			<xsl:copy-of select="./tei:physDesc"/>
-			
+
 			<!-- NICHT DTA_BF-KONFORM, ABER WICHTIG FÜR WEITERE EDITION -->
 			<!-- Include adapted <history> -->
 				<xsl:if test="./tei:history">
@@ -241,7 +243,7 @@
 		</xsl:for-each>
 	</xsl:template>
 
-	
+
 	<!-- change the values of @n attributes in <pb> -->
 	<xsl:template match="tei:pb/@n">
 		<xsl:for-each select=".">
@@ -302,8 +304,8 @@
 			<xsl:value-of select="."/>
 		</supplied>
 	</xsl:template>
-	
-	
+
+
 	<!-- add attribute to <del> elements -->
 	<xsl:template match="tei:del">
 		<del>
@@ -313,8 +315,8 @@
 		<xsl:value-of select="."/>
 		</del>
 	</xsl:template>
-	
-	
+
+
 	<!-- add attribute to <add> elements -->
 	<xsl:template match="tei:add">
 		<add>
@@ -324,6 +326,6 @@
 		<xsl:value-of select="."/>
 		</add>
 	</xsl:template>
-	
+
 
 </xsl:stylesheet>

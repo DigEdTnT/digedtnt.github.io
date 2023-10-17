@@ -22,12 +22,6 @@
                </resp>
             </respStmt>
          </titleStmt>
-         <editionStmt>
-            <edition>Weiterverarbeitung des FromThePageExports mit Ediarum</edition>
-         </editionStmt>
-         <extent>
-            <measure type="images">5</measure>
-         </extent>
          <publicationStmt>
             <publisher><!-- HINWEIS: Das nachfolgende Element ist obligatorisch und sollte daher ausgefüllt werden! -->
                <orgName>[Name der publizierenden Institution]</orgName>
@@ -106,16 +100,18 @@
       </profileDesc>
    </teiHeader>
    <!-- Faksimiles sind im DTA-Basisformat nicht vorgesehen, sollen aber dennoch erhalten bleiben. -->
-   <facsimile xml:id="f0001"
-              target="http://fromthepage.com/image-service/33038493/full/full/0/default.jpg"/>
-   <facsimile xml:id="f0002"
-              target="http://fromthepage.com/image-service/33038494/full/full/0/default.jpg"/>
-   <facsimile xml:id="f0003"
-              target="http://fromthepage.com/image-service/33038495/full/full/0/default.jpg"/>
-   <facsimile xml:id="f0004"
-              target="http://fromthepage.com/image-service/33038496/full/full/0/default.jpg"/>
-   <facsimile xml:id="f0005"
-              target="http://fromthepage.com/image-service/33038497/full/full/0/default.jpg"/>
+   <facsimile>
+      <graphic xml:id="f0001"
+               url="http://fromthepage.com/image-service/33038493/full/full/0/default.jpg"/>
+      <graphic xml:id="f0002"
+               url="http://fromthepage.com/image-service/33038494/full/full/0/default.jpg"/>
+      <graphic xml:id="f0003"
+               url="http://fromthepage.com/image-service/33038495/full/full/0/default.jpg"/>
+      <graphic xml:id="f0004"
+               url="http://fromthepage.com/image-service/33038496/full/full/0/default.jpg"/>
+      <graphic xml:id="f0005"
+               url="http://fromthepage.com/image-service/33038497/full/full/0/default.jpg"/>
+   </facsimile>
    <text>
       <body>
          <pb xml:id="F33038493"
@@ -134,8 +130,8 @@
           ein zustoerung aller lasterr<lb/> Wiltu gut  lekuchenn machenn <choice>
                   <expan>Recipe</expan>
                   <abbr>R</abbr>
-               </choice> zu einem seÿdlein hönigs 1/2 lot negelleyn<lb/> 1/2 lot muscat 1/2 lot
-            Ingwerr 1/2 lot pfeffers vnd stoß
+               </choice> zu einem seÿdlein hönigs 1/2 lot  negelleyn<lb/> 1/2 lot  muscat 1/2 lot
+             Ingwerr 1/2 lot  pfeffers vnd stoß
           das zu sammenn vnd dar<lb/> auß mach einen teig vnd zu <choice>
                   <expan>einer</expan>
                   <abbr>ein</abbr>
@@ -166,13 +162,13 @@
          <div xml:id="OTP33038494">
             <p xml:id="OTP33038494P0">Hienach volgt vonn dem kochenn vnd hat gemacht meyster Eberhart
           Ein koch<lb/> herczog heinrichs zu lands hut Zum Ein salsenn von weichselnn zu machen<lb/>
-          Item Wiltu machen ein gutte salsenn von weichselnn So <del rendition="">?</del> thue die
-          weich=<lb/> sell in einen hafen vnd setz die auff ein glut vnd laß sie siedenn vnd<lb/>
-          laß dann wider erkaltenn vnd streich sie durch ein tuch vnd thue sie<lb/> dann wider in
-          den hafenn vnd setz sie auff ein glut vnd laß sie wol sieden<lb/> vnd rurr sie piß sie
-          dick wirt vnd thue dann honig dar an vnd geribens<lb/> prot vnd
-          negellein vnd gut gestüp vnd thue sie in ein feßlein sie pleibt<lb/> dir gut drew oder
-          vier iarr<lb/> Ein gutte salsen zu machen in der fastenn<lb/>
+          Item Wiltu machen ein gutte salsenn von weichselnn So <del rendition="">?</del> thue die weich=<lb/>
+          sell in einen hafen vnd setz die auff ein glut vnd laß sie siedenn vnd<lb/> laß dann wider
+          erkaltenn vnd streich sie durch ein tuch vnd thue sie<lb/> dann wider in den hafenn vnd
+          setz sie auff ein glut vnd laß sie wol sieden<lb/> vnd rurr sie piß sie dick wirt vnd thue
+          dann honig dar an vnd geribens<lb/> prot vnd negellein vnd gut
+          gestüp vnd thue sie in ein feßlein sie pleibt<lb/> dir gut drew oder vier iarr<lb/> Ein
+          gutte salsen zu machen in der fastenn<lb/>
                <choice>
                   <expan>Item</expan>
                   <abbr>It</abbr>
@@ -183,7 +179,7 @@
                   <expan>Item</expan>
                   <abbr>It</abbr>
                </choice> Ein andre salsenn Saluia petrocilius menta vnd 
-           pfefferr das soll<lb/> man zustossenn mit essig das ist ein salsen die macht lustig
+            pfefferr das soll<lb/> man zustossenn mit essig das ist ein salsen die macht lustig
           zu essenn<lb/> Item Ein essenn von gebratenn arbeissenn Nÿm gesotenn arbeÿß vnd<lb/>
           slach sie durch ein tuch oder durch ein sib vnd slach vil eÿerr<lb/> darzu als vil der
           arbeiß sein vnd seud es in putternn vnd steck es<lb/> an einen spiß vnd brot sie wol vnd
@@ -296,7 +292,7 @@
           vnd<lb/> saltz in vnd laß in pratenn vnd das foderr teil bespreng mit melb<lb/> vnd begeuß
           mit schmaltz das heÿß sej vnd das tuch begeuß mit<lb/> heissem wein vnd das hinder teÿl
           prett sich selbs auff dem rost<lb/> Item vt scito coquantur carnes Recipe aliquas pecias
-          de <note place="foot" n="*Laut Feyl hier: vino">vitro</note> Et pone
+          de <supplied cert="low">vitro</supplied><note place="foot" n="*">Laut Feyl hier: vino</note> Et pone
           in ollam<lb/> ad carnes crudas et sic coquantur<lb/> Item ad extrahendum sal de cibo nimis
           salsato Recipe de farina frumenti in vna<lb/> pecia lini panni et dimitte bulire
           intus<lb/> Item Ad appetitum comedendi valet illa salsa facta cum aleo Et appone
