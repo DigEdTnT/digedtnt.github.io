@@ -98,16 +98,18 @@
       </profileDesc>
    </teiHeader>
    <!-- Faksimiles sind im DTA-Basisformat nicht vorgesehen, sollen aber dennoch erhalten bleiben. -->
-   <facsimile xml:id="f0001"
-      target="http://fromthepage.com/image-service/33038493/full/full/0/default.jpg"/>
-   <facsimile xml:id="f0002"
-      target="http://fromthepage.com/image-service/33038494/full/full/0/default.jpg"/>
-   <facsimile xml:id="f0003"
-      target="http://fromthepage.com/image-service/33038495/full/full/0/default.jpg"/>
-   <facsimile xml:id="f0004"
-      target="http://fromthepage.com/image-service/33038496/full/full/0/default.jpg"/>
-   <facsimile xml:id="f0005"
-      target="http://fromthepage.com/image-service/33038497/full/full/0/default.jpg"/>
+  <facsimile>
+      <graphic xml:id="f0001"
+         url="http://fromthepage.com/image-service/33038493/full/full/0/default.jpg"/>
+      <graphic xml:id="f0002"
+         url="http://fromthepage.com/image-service/33038494/full/full/0/default.jpg"/>
+      <graphic xml:id="f0003"
+         url="http://fromthepage.com/image-service/33038495/full/full/0/default.jpg"/>
+      <graphic xml:id="f0004"
+         url="http://fromthepage.com/image-service/33038496/full/full/0/default.jpg"/>
+      <graphic xml:id="f0005"
+         url="http://fromthepage.com/image-service/33038497/full/full/0/default.jpg"/>
+   </facsimile>
    <text>
       <body>
          <pb xml:id="F33038493" n="UB_Augsburg_Cod_III_1_2_43_002r" facs="#f0001"/>
