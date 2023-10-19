@@ -288,10 +288,10 @@ Wir nutzen diese Eigenschaft nun für unsere `<div>`-Elemente, die jeweils den a
     Die Seite ist nun in zwei Bereiche aufgeteilt, wobei die rechte Hälfte für unsere Faksimiles vorbereitet ist, die wir jedoch noch einbinden müssen.
 * Zum Einbinden der Faksimiles unserer Manusrkipte müssen wir im ODD eine Kommunikation zwischen den Webkomponenten herstellen. Wir gehen also zurück in den ODD-Editor, wo wir Ausgaberegeln für das `<div>`-Element spezifizieren wollen. Dafür werfen wir zuerst noch einen Blick auf das XML des Manuskripts. Dort befinden sich die Links zu den Faksimiles in den `<graphic>`-Elementen, und jedes `<pb>`-Element enthält eine Referenz.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/faksimile-xml.PNG" description="XML-Struktur für Faksimile" %}
-    Im ODD-Editor legen wir nun für das `<div>`-Element eine Modellspezifikation an, die nur für jene `<div>`-Elemente gelten soll, denen ein `<pb>`-Element mit einem `@facs`-Attribut vorausgeht. Als behaviour wählen wir in diesem Fall "webcomponent" aus und setzen für diese Komponente die entsprechenden Parameter. Das Verbindungselement zwischen dem Faksimile und dem Text trägt den Namen "pb-facs-link" und enthält die Attribute `@emit` mit dem Wert "transcription", das für den Kanal steht, über den kommuniziert wird. Der Pfad zum Faksimile, auf das verwiesen wird, befindet sich letztlich im `@facs`-Attribut des `<pb->`-Elements vor dem `<div>` - wobei wir über den Wert im `@facs` zur `@xml:id` in der `<graphic>` gelangen und dort die `@url` wählen, die die URI zu unseren Faksmilies enthält.
+    Die Modellspezifikation für die Webkomponente haben wir bereits im vorherigen Abschnitt während der Bearbeitung der Seitenangabe aus den `<pb>`-Elementen, die über das `<div>`-Element angesteuert werden, beschrieben. Hier sollen aber die einzelnen Schritte noch einmal wiederholt werden: Im ODD-Editor haben wir für jene `<div>`-Elemente, denen ein `<pb>`-Element mit einem `@facs`-Attribut vorausgeht, eine Modellspezifikation angelegt. Als behaviour haben wir in diesem Fall "webcomponent" ausgewählt und für diese Komponente die entsprechenden Parameter gesetzt. Das Verbindungselement zwischen dem Faksimile und dem Text trägt den Namen "pb-facs-link" und enthält die Attribute `@emit` mit dem Wert "transcription", das für den Kanal steht, über den kommuniziert wird. Der Pfad zum Faksimile, auf das verwiesen wird, befindet sich letztlich im `@facs`-Attribut des `<pb->`-Elements vor dem `<div>` - wobei wir über den Wert im `@facs` zur `@xml:id` in der `<graphic>` gelangen und dort die `@url` wählen, die die URI zu unseren Faksmilies enthält.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-div-odd.PNG" description="Einbinden der Webkomponente für die Faksimile-Ansicht" %}
     Nach erneutem Aktualisieren in der Dokumentansicht werden die entsprechenden Faksimiles nun zu jeder Manuskriptseite in den [OpenSeadragon](http://openseadragon.github.io/)-Viewer geladen.
-    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/facsimile-viewer.PNG" description="Vollständige Bild-Text-Synopse" %}
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/faksimile-viewer.PNG" description="Vollständige Bild-Text-Synopse" %}
 
 * Eine weitere Webkomponente, die uns die Seitennavigation im Manuskript erleichtert, ist [`<pb-navigation>`](https://cdn.tei-publisher.com/@2.12.6/dist/api.html#pb-navigation.0). Auch hier nutzen wir wieder die Beispielprojekte der Demo-Sammlung, in der wir gleich im ersten Beispiel (Adagia in Latine and English) die entsprechenden Navigationsbuttons finden. Wenn wir in der Seitenleiste nun überprüfen, welches Template eingebunden wurde, können wir sehen, dass dieses Beispielprojekt das **Default single text layout** nutzt.  
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/webcomponent-navigation.PNG" description="Demo-Projekt mit Navigationsbuttons" %} 
@@ -366,8 +366,8 @@ Wir nutzen diese Eigenschaft nun für unsere `<div>`-Elemente, die jeweils den a
 
 ## Projekte, die dieses Tool genutzt haben
 
-* Escher Briefedition (briefedition.alfred-escher.ch)
-* Sammlung Schweizerischer Rechtsquellen online (editio.ssrq-online.ch)
+* [Escher Briefedition](briefedition.alfred-escher.ch)
+* [Sammlung Schweizerischer Rechtsquellen online](editio.ssrq-online.ch)
 
 
 ## Literatur
