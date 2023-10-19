@@ -51,7 +51,7 @@ Daten(-stand) → <span style="text-decoration:underline;">Datenbank → Abfrage
 Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetzen und andererseits auch hinsichtlich der Software-Umgebung gewisse Anforderungen stellen.
 
 
-### **Erforderliche Kenntnisse**
+### Erforderliche Kenntnisse
 
 
 
@@ -60,7 +60,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 * HTML/CSS Grundkenntnisse
 
 
-### **Benötigte Software**
+### Benötigte Software
 
 
 
@@ -169,14 +169,13 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
     → Da das ODD vorerst noch leer ist, ergeben sich keine Änderungen. Im TEI Publisher wird aber auf das Base-ODD zurückgegriffen und alle dort gespeicherten Anpassungen gelten auch für unser Dokument.
 
 
-
 ## 3. Bearbeitung der Dokumente
 
 Für eine vollständige Publikationsansicht (Content View) benötigt man die TEI-XML-Ressource, die über den TEI Publisher in die eXist-db hochgeladen werden, sowie zumindest eine ODD mit Processing Instructions und ein Page Template. Das ODD wird dabei auf Grundlage eines Basis-ODD im TEI Publisher erstellt und kann nachfolgend für das eigene Projekt angepasst werden. Für das Page Template ist es sinnvoll, sich in der Demo-Sammlung des TEI Publisher die Beispielprojekte anzusehen, und sich daraufhin ein zum eigenen Projekt passendes Template zu kopieren und anzupassen.
 
 
 
-### a. Bearbeitung des ODD
+### a. Bearbeitung des ODD der Manuskripte
 * Bei jedem Start unserer Arbeitsroutine müssen wir zuerst Docker Desktop aktivieren und anschließend den teipublisher-Container starten, indem wir auf die Play-Schaltfläche klicken.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/teipublisher-container-run.PNG" description="Starten des TEI-Publisher-Containers in Docker Desktop" %}
     → Mit einem Klick auf den Port (8081:8080) öffnet sich schließlich im Browser das eXist-db-Dashboard, über das wir zum TEI Publisher gelangen, in dem wir uns einloggen müssen, um unsere Arbeit fortsetzen zu können.
@@ -198,28 +197,82 @@ Für eine vollständige Publikationsansicht (Content View) benötigt man die TEI
     Die vom Standard-ODD übernommene Kursivschreibung für das `<hi>`-Element, die im oberen Renditionfeld (font-style="italic") gespeichert ist, löschen wir. Zuletzt müssen wir zum Speichern unserer Modul-Spezifikation unbedingt noch auf das Diskettensymbol klicken.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/edit-module.PNG" description="Bearbeitung des Layouts einer Annotation" %}
     Wenn wir anschließend in einem anderen Browser-Tab die Manuskript-Ansicht öffnen (oder dieses aktualisieren), sehen wir unsere Änderungen bereits.
-    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/publication-view.PNG" description="Ansicht der ODD-Änderung im Manuskript-XML" %}
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/publication-view.PNG" description="Ansicht der ODD-Änderung im Manuskript" %}
     → Sollten die Änderungen nicht sichtbar sein, muss möglicherweise überprüft werden, ob das Dokument nach wie vor mit dem eigenen ODD verknüpft ist (da sich dies mitunter automatisch auf die Standardeinstellung zurücksetzt) oder ob man nach wie vor eingeloggt ist (da man oft selbst nach kürzeren Pausen automatisch ausgeloggt wird). Es kann auch nötig sein, mit F5 zu aktualisieren oder den Cache zu leeren, um die Änderungen zu sehen.
-* Wenn wir nun ein Element anlegen, das im Standard-ODD-Template noch keine Modul-Spezifikationen besitzt, wie in diesem Fall das `<term>`-Element, dann müssen wir nach dem Hinzufügen des Elements außerdem das Plus-Zeichen  in der Elementansicht anklicken.
+* Wenn wir nun ein Element anlegen, das im Standard-ODD-Template noch keine Modul-Spezifikationen besitzt, wie in diesem Fall das `<term>`-Element, dann müssen wir nach dem Hinzufügen des Elements außerdem das Plus-Zeichen  in der Elementansicht anklicken. 
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/add-new-element.PNG" description="Weitere Modulspezifikation hinzufügen" %}
-    Wir möchten unsere Zutaten mit einer punktierten Unterstreichung hervorheben und müssen daher in dem Eingabefeld für die Rendition den entsprechenden CSS-Code angeben:
+    Wir möchten unsere Zutaten mit einer punktierten Unterstreichung hervorheben und müssen daher in dem Eingabefeld für die Rendition den entsprechenden CSS-Code angeben: 
     ```css
-    text-decoration-line: underline; text-decoration-style: dotted;
-    ```
-    Außerdem möchten wir in der Webansicht ein Popover haben, in dem der Wikidata-Link aus dem Sachregister erscheint. Dafür setzen wir das behaviour auf "alternate" und geben zwei Parameter an. Einmal den "default"-Parameter, wo wir nur einen Punkt setzen, da wir standardmäßig den Inhalt des `<term>`-Elements angezeigt bekommen wollen, und als "alternate"-Parameter geben wir an, was im Popover angezeigt werden soll. Wir möchten hier gerne die Informationen aus dem Register anzeigen lassen und wählen daher den entsprechenden XPath dorthin:
+    text-decoration-line: underline; text-decoration-style: dotted; 
+    ``` 
+    Außerdem möchten wir in der Webansicht ein Popover über das `<term>`-Element legen, in dem einerseits der Wikidata-Link zu der in [OpenRefine erstellten normalisierten Entität](https://digedtnt.github.io/openrefine/) und andererseits eine Information mit Link zum Register erscheint. Zuerst stellen wir dafür das  behaviour auf "alternate" und geben zwei Parameter an. Einmal den "default"-Parameter, wo wir nur einen Punkt setzen, da wir standardmäßig den Inhalt des `<term>`-Elements angezeigt bekommen wollen, und als "alternate"-Parameter geben wir an, was im Popover angezeigt werden soll. Wir möchten hier gerne die Informationen aus dem Register anzeigen lassen und wählen daher den entsprechenden XPath dorthin:
     ```xml
-    id(substring-after(@key, '#'), root(.))
+    id(substring-after(@key, '#'), doc("/db/apps/tei-publisher/data/playground/Sachbegriffe.xml"))
     ```
-    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-term-odd.PNG" description="Bearbeitung des Models vom term-Element im ODD" %}
-    Wenn wir nun wieder zur Ansicht unseres Dokuments wechseln, sehen wir, dass die Zutaten unterstrichen sind und beim Bewegen des Mauszeigers über die Zutat ein Popover mit allen Informationen aus dem Register, die es für das `<item>`-Element, auf das das `<term>`-Element referenziert, erscheint. Da wir für die Kindelemente des `<item>`-Elements aus dem Register noch keine Modelle erstellt haben, werden die Inhalte dieser Elemente vorerst einfach im Ganzen ausgegeben.
-    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-term-pub.PNG" description="Vorerst unstruktierte Ausgabe der Informationen aus dem Register im Popover" %}
-* Als nächstes passen wir nun die Modellspezifikationen der Kindelemente der Registereinträge an. Die `<item>`-Elemente in unserem `<standOff>` beinhalten ein `<idno>`-Element mit der Wikidata-Referenz, ein `<label>`-Element mit dem Attribut `@type="reg"` für die reguläre Schreibweise sowie ein `<label>`-Element mit dem Attribut `@type="alt"` für die diversen frühneuhochdeutschen Varianten.
-    Das `<idno>`-Element soll als Link fungieren, weshalb wir für dieses Element in der neu angelegten Modellspezifikation (die wir nur auf  `<idno>`-Elemente mit dem Attribut Attribut `@type="uri"` beschränken) als behaviour "link" auswählen. Bei den Parametern wählen wir nun "uri" und verweisen dabei mit einem Punkt auf den Inhalt `<idno>`-Elementes.
-    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-idno-odd.PNG" description="Modellspezifikation für einen Link" %}
-    Nun soll die Darstellung der `<label>`-Elemente modifiziert werden. Dafür legen wir eine Modellspezifikation für alle  `<label>`-Elemente mit dem Attribut `@type="reg"` sowie eine für `@type="alt"` an. Erstere soll sich in HTML wie ein `<div>`-Element verhalten und bekommt daher als behaviour "block" und dem Parameter content wird wieder ein Punkt zugeordnet, damit der Textknoten angezeigt wird. Die alternativen Schreibweisen hingegen wollen wir ausblenden, weshalb wir für die @type-Attribute mit dem Wert "reg" als behaviour "omit" auswählen.
-    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-label-odd.PNG" description="Modellspezifikation für zwei verschieden attributierte label-Elemente" %}
-    Wenn wir uns jetzt erneut unser aktualisiertes Dokument ansehen und die Maus über eine Zutat bewegen, sieht der Inhalt des Pop-Overs bereits anders aus.
-    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/pop-over.PNG" description="Modifiziertes Pop-Over mit einem Link" %}
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-term-odd.PNG" description="Bearbeitung des Modells des `<term>`-Elements im ODD" %}
+    Wenn wir nun wieder zur Ansicht unseres Dokuments wechseln, sehen wir, dass die Zutaten unterstrichen sind und beim Bewegen des Mauszeigers über die Zutat ein Popover mit allen Informationen aus dem Register, die es für das `<item>`-Element, auf welches das `<term>`-Element referenziert, erscheint. Da wir für die Kindelemente des `<item>`-Elements aus dem Register noch keine Modelle erstellt haben, werden vorerst nur die Inhalte dieser Elemente in direkter Aneinanderreihung ausgegeben. 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-term-pub.PNG" description="Vorerst unstrukturierte Ausgabe der Informationen aus dem Register im Popover" %}
+    * Als nächstes passen wir die Modellspezifikationen der Kindelemente der Registereinträge an. Die `<item>`-Elemente in unserem Register (Sachbegriffe.xml), auf das wir verlinken,  beinhalten ein `<idno>`-Element mit der Wikidata-Referenz, ein `<label>`-Element mit dem Attribut `@type="reg"` für die reguläre Schreibweise sowie ein `<label>`-Element mit dem Attribut `@type="alt"` für die diversen frühneuhochdeutschen Varianten. 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/register-structure.PNG" description="Aufbau des item-Elements im Register" %}
+    Da wir einerseits den Inhalt des `<idno>`-Elements als Link im Popover haben möchten, zusätzlich aber noch eine Zeile mit einem Verweis auf das Register, müssen wir für diese zwei Aktionen zum gleichen Element zuerst eine Modellsequenz anlegen. Diese beschränken wir auf jene `<idno>`-Elemente mit dem Attribut `@type="uri"` und legen darin zwei weitere Modelle an.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-sequence-idno-odd.PNG" description="Modellsequenz für das idno-Element" %}
+    In der ersten neu angelegten Modellspezifikation wählen wir anschließend als behaviour "link" aus. Bei den Parametern wählen wir nun "uri" und verweisen dabei mit einem Punkt auf den Inhalt `<idno>`-Elementes. 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-idno-link-odd.PNG" description="Modellspezifikation für einen Link" %}
+    In der zweiten Modellspezifikation möchten wir nun einen kleinen Informationstext mit Link zum Zutatenregister erstellen. Dafür wählen wir als behaviour “block" und erstellen ein Template in HTML für diese Text, der in einem `<div>`-Element angezeigt werden soll: 
+    ```html
+    <div>Siehe weitere Schreibweisen dieser Zutat im <a href="[[register]]" traget="_blank">Register</a></div>
+    ```
+    Da wir das Wort Register gleich mit unserem Zutatenregister verlinken wollen, setzen wir hier einen Anker herum, und geben als Referenz den Parameter [[register]] an, den wir unter den Parametern dann mit dem entsprechenden XPath-Ausdruck näher spezifizieren. Damit sich das Register in einem neuen Tab im Browser öffnet, ergänzen wir das `<a>`-Element noch mit dem Attribut `target="_blank"`. Der Link zum Register wir schließlich im Parameter weiter ausgeführt:
+    ```xml
+    concat('Sachbegriffe.xml?view=div&#38;odd=ma-zutaten', '#’, parent::item/@xml:id')
+    ```
+    Um in unserem Zutatenregister direkt zu der Zutat zu springen, dessen Popover gerade betrachtet wird, müssen wir die entsprechende XML-Datei (Sachbegriffe.xml) angeben, die aufgerufen werden soll, und zudem welches ODD-Template (ma-zutaten.odd ohne Dateiendung) für die Darstellung gewählt werden soll. Wir geben zudem an, dass nach dem Aufrufen des Registers, jenes Element ausgewählt werden soll, das wir gerade angewählt haben. (Näheres zum ma-zutaten.odd siehe unter Abschnitt [b. Bearbeitung des ODD des Zutatenregisters](https://digedtnt.github.io/teipublisher/#b-bearbeitung-des-odd-des-zutatenregisters)) Dafür gehen wir von dem `<idno>`-Element ausgehend, in das übergeordnete `<item>`-Element, dessen `@xml:id` auf die Zutat im Sachregister verweist (parent::item/@xml:id). 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-idno-block-odd.PNG" description="Zweites Modell für das idno-Element" %}
+    Nun muss abschließend noch die Darstellung der `<label>`-Elemente modifiziert werden. Damit diese nicht alle im Popover erscheinen, legen wir eine Modellspezifikation für alle  `<label>`-Elemente, unabhängig von ihrem Attributwert an. Da wir alle Elementinhalte ausblenden wollen, wählen wir als behaviour "omit" aus. 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-label-odd.PNG" description="Modellspezifikation für das Unterdrücken von label-Elementen" %}
+    Wenn wir uns jetzt erneut unser aktualisiertes Dokument ansehen und die Maus über eine Zutat bewegen, sieht der Inhalt des Popovers bereits anders aus.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-term-idno-pop-over.PNG" description="Modifiziertes Popover mit einem Link zu Wikidata und zum projektspezifischen Register" %}
+    Während uns der obere Link direkt zur entsprechenden Wikidata-Entität führt, kommen wir über den Link zum Register direkt an die entsprechende Stelle im Zutatenregister, wo die ausgewählte Zutat in die Mitte des Browsertabs gerückt wird. 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/popover-to-register.PNG" description="Verknüpfung mit der Zutat im Register" %}
+* In der XML-Datei unseres Projektes haben wir nun außerdem noch Auszeichnungen  für Streichungen und Hinzufügungen durch die/den ursprüngliche:n Schreiber:in in Form von `<del>` und `<add>`, Abkürzungen und deren Langform im `<choice>`-Element, Hinzufügungen durch Editor:innen oder Transkribierende als `<supplied>` und Fußnoten als `<note>`. Unser projektspezifisches ODD wurde auf Basis eines Standard-ODD generiert, in dem bereits einige grundlegende Modellspezifikationen für jene Elemente angelegt wurden, die häufig in digitalen Editionen vorkommen. Dementsprechend gibt es auch für alle genannten Elemente bereits Modelle. Während einige dieser Standard-Darstellungen ganz gut für unser Projekt passen, möchten wir andere noch anpassen. 
+* Starten wir also der Reihe nach zuerst mit der Modellspezifikation für `<del>`. Diese sieht standardmäßig als Rendition einen durchgestrichenen Text vor. Da dieses Element laut [Auszeichnungsrichtlinien für Manuskripte im DTA-Basisformat](https://www.deutschestextarchiv.de/doku/basisformat/msAddDel.html) (dessen Schema wir im Zuge der [Annotation in ediarum](https://digedtnt.github.io/ediarum/) verwendet haben) jedoch verschiedene Werte im `@rendition`-Attribut haben kann, wollen wir im Modell für das `<del>`-Element etwas spezifischer sein und fügen dort hinzu, dass das Rendering als durchgestrichener Text nur für `<del>`-Elemente mit `@rendition="#s"` gelten soll. 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-del-odd.PNG" description="Angabe einer Bedingung (Predicate) im Model des del-Elements" %} 
+    In der Publikationsansicht des TEI Publisher sehen `<del>`-Elemente entsprechend so aus: 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-del-pub.PNG" description="Rendering des del-Elements in der Publikationsansicht" %}
+* Gehen wir im ODD-Editor nun zu den Spezifikationen des `<add>`-Elements. Auch dort nehmen wir ein paar Änderungen vor, indem wir das bestehende Modell auf das Attribut `@place="superlinear"`-Element beschränken und dort die Darstellung mit dem entsprechenden CSS Code insofern adaptieren, dass diese eingefügten Textstellen hochgestellt und in einem Braunton erscheinen. 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-add-odd.PNG" description="Anpassung der Modellspezifikation für add-Elemente" %} 
+    Nach dem Aktualisieren in der Publikationsansicht, wird das `<add>`-Element entsprechend unserer Änderungen dargestellt.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-del-pub.PNG" description="Rendering des add-Elements in der Publikationsansicht" %}
+* Für `<choice>`-Elemente gibt es ebenfalls bereits Voreinstellungen, die beim Generieren des projektspezifischen ODD mitübernommen wurden. Standardmäßig wird dabei die Langform ausgegeben und die Abkürzung in einem Popover angezeigt. Wir möchten dies jedoch umkehren und wie im Originaltext nur die Abkürzung anzeigen und diese farblich markieren, um Nutzer:innen unserer Edition anzuzeigen, dass diese Textstelle besonders ist und somit eine Erkundung der Stelle mit der Maus zu motivieren. Im Popover wird schließlich die Langform angezeigt. 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-choice-odd.PNG" description="Änderung der Modellspezifikation für choice-Elemente" %} 
+    Zurück in der Publikationsansicht können wir nun unsere Änderungen sehen. Außerdem ist in diesem Screenshot auch die voreingestellte Darstellung vom Basis-ODD des TEI Publishers für das `<supplied>`-Elemente ersichtlich, bei der die editorische Hinzufügung mittels eckigen Klammern um den Zusatz gekennzeichnet wird.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-choice-supplied-pub.PNG" description="Darstellung von choice- und supplied-Elemente" %}
+* Zuletzt haben wir noch die `<note>`-Elemente für Fußnoten, für die wir ebenfalls die bereits festgelegten Modellspezifikationen übernehmen und keine Änderungen vornehmen.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-footnote-pub.PNG" description="Übernahme der Standard-Modellspezifikation von Fußnoten" %}
+* Mitunter kann es sein, dass man mehrere Modelle für ein spezifisches Element anlegen möchte, ohne dass diese sich gegenseitig überschreiben. Dafür gibt es die Möglichkeit, mit `<modelSequence>` zu arbeiten, in dem alle darin befindlichen Modelle für ein Element nacheinander abgearbeitet werden. 
+Wir nutzen diese Eigenschaft nun für unsere `<div>`-Elemente, die jeweils den ausgezeichneten Text der einzelnen Manuskriptseiten beinhalten. Von diesen Elementen ausgehend wollen wir nämlich jeweils auf die `<pb>`-Elemente zugreifen wollen, um einerseits die Webkomponente zu erstellen, die die Faksimiles verlinkt, sowie die Seitenzahl auch anzeigen zu lassen, und andererseits aber auch den Inhalt des  `<div>`-Elements anzuzeigen. Wir erstellen also eine Modellsequenz für das `<div>`-Element und beschränken dieses mit dem Predicate `preceding-sibling::pb` auf jene  `<div>`-Elemente, denen ein  `<pb>`-Elemente auf gleicher Ebene vorangeht. In der Modellsequenz erstellen wir anschließend insgesamt 3 Modelle:
+    * Zuerst benötigen wir ein Modell mit dem behaviour "block", das in der Ausgabe des `<div>`-Elements auf das vorhergehende `<pb>`-Element zugreift und anschließend nur die letzten 4 Zeichen ausgibt, da diese die Seitenzahl sowie die zusätzliche Information, ob es sich bei der Manuskriptseite um eine Vorder- oder Rückseite handelt, enthält. Um die Seitenzahl möchten wir außerdem eckige Klammern legen, um anzuzeigen, dass dies ein editorischer Zusatz ist und kein Teil der Transkription. Für den content-Parameter fügen wir dabei folgenden XPath-Ausdruck ein: 
+        ```xml
+        root(.)//concat("[", substring(//pb[1]/@n, string-length(//pb[1]/@n)-3), "]")
+        ```
+        Außerdem geben wir hinsichtlich der Rendition an, dass die Seitenangabe grau und zentriert ausgegeben werden soll. 
+        {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-pb-block-odd.PNG" description="Modell zur Anzeige der Seitenzahl" %}
+    * Nun legen wir ein weiteres Modell mit dem behaviour “section" an, dass dafür sorgen soll, dass der Inhalt des `<div>`-Elements angezeigt wird. Da per default als content-Parameter der gesamte Inhalt des Elementes eingestellt ist, müssen hier keine weiteren Änderungen vorgenommen werden. Wichtig ist jedoch, dass wir das Modell unter das 1. Modell verschieben.
+        {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-pb-webcomponent-odd.PNG" description="Modell für die Anzeige der Manuskriptseiten" %}
+    * Das letzte Modell, das nun noch anzulegen ist, soll das Einbinden der Faksimiles regeln. Wir legen also ein weiteres Modell an, das wir nun an die letzte Stelle in der Sequenz verschieben, und nutzen einen XPath-Ausdruck im Predicate, um anzugeben, dass diese Spezifikation nur für jene `<div>`-Elemente gelten soll, denen ein `<pb>`-Element mit einem `@facs`-Attribut vorausgeht. Als behaviour wählen wir in diesem Fall "webcomponent" aus und setzen für diese Komponente die entsprechenden Parameter. Das Verbindungselement zwischen dem Faksimile und dem Text trägt den Namen "pb-facs-link" und enthält die Attribute `@emit` mit dem Wert "transcription", das für den Kanal steht, über den kommuniziert wird. Der Pfad zum Faksimile, auf das verwiesen wird, befindet sich letztlich im `@facs`-Attribut des `<pb->`-Elements vor dem `<div>` - wobei wir über den Wert im `@facs` zur `@xml:id` in der `<graphic>` gelangen und dort die `@url` wählen, die die URI zu unseren Faksmilies enthält. 
+        {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-pb-webcomponent-odd.PNG" description="Modell zur Einbindung der Faksimiles" %}
+        → Damit die Faksimiles tatsächlich angezeigt werden, müssen wir noch weitere Adaptionen vornehmen, die im Abschnitt [c.) Bearbeitung des Page Templates](https://digedtnt.github.io/teipublisher/#c-bearbeitung-des-page-templates--weitere-odd-anpassungen) näher ausgeführt sind. 
+* Mit all diesen Adaptionen haben wir in der Publikationsansicht nun jedenfalls eine zusätzliche Zeile vor Textbeginn erzeugt.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-pb-pub.PNG" description="Publikationsansicht mit zusätzlicher Seitenangabe" %}
+
+
+
+
+
+### c. Bearbeitung des ODD des Zutatenregisters
+
+[In Arbeit]
+
 
 
 
@@ -242,7 +295,29 @@ Für eine vollständige Publikationsansicht (Content View) benötigt man die TEI
     Nach erneutem Aktualisieren in der Dokumentansicht werden die entsprechenden Faksimiles nun zu jeder Manuskriptseite in den [OpenSeadragon](http://openseadragon.github.io/)-Viewer geladen.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/facsimile-viewer.PNG" description="Vollständige Bild-Text-Synopse" %}
 
-
+* Eine weitere Webkomponente, die uns die Seitennavigation im Manuskript erleichtert, ist [`<pb-navigation>`](https://cdn.tei-publisher.com/@2.12.6/dist/api.html#pb-navigation.0). Auch hier nutzen wir wieder die Beispielprojekte der Demo-Sammlung, in der wir gleich im ersten Beispiel (Adagia in Latine and English) die entsprechenden Navigationsbuttons finden. Wenn wir in der Seitenleiste nun überprüfen, welches Template eingebunden wurde, können wir sehen, dass dieses Beispielprojekt das **Default single text layout** nutzt.  
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/webcomponent-navigation.PNG" description="Demo-Projekt mit Navigationsbuttons" %} 
+    Wir öffnen daher in eXide das entsprechende Template (view.html) und können erneut per "Copy-Paste" die gewünschte Webkomponenten - in diesem Fall die jeweiligen `<pb-navigation>`-Komponenten des `<main>`-Abschnitts vor und nach der `<pb-view>`-Webkomponente - auswählen und in unser projektspezifisches Template an entsprechender Stelle vor und nach den anderen Webkomponenten des `<main>`-Abschnitts einbauen. Dadurch ersparen wir uns die Suche in der Dokumentation nach entsprechenden Komponenten bzw. müssen die Webkomponenten nicht selbst anlegen.  
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/webcomponent-nav-html.PNG" description="Wiederverwendung bereits bestehender Webkomponenten" %} 
+    In der Dokumentenansicht sehen wir nun, dass die Navigationsbutton noch nicht an gewünschter Stelle sind. 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/webcomponent-nav-view.PNG" description="Eingefügte Navigationsbuttons" %} 
+    Um diese Elemente entsprechend anzupassen, müssen wir die CSS-Informationen ändern. Hier können wir ebenfalls aus dem Template des Demo-Projekts die für das Styling der Navigationsbutton verantwortlichen Regeln übernehmen und in unser projektspezifisches Template übernehmen. 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/webcomponent-nav-style-html.PNG" description="Übernahme der Stylingregeln aus dem Basis-Template" %} 
+    Wir kopieren die Informationen unter die Styling-Informationen für die Faksimile-Webkomponente und ändern dabei noch die Farbe der Navigationsbutton. 
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/webcomponent-nav-style-html.PNG" description="Eingefügte Navigationsbuttons" %} 
+    Nach dem Aktualisieren der Publikationsansicht unseres Manuskripts, haben die Buttons nun eine andere Farbe und sind vertikal mittig ausgerichtet.  
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/webcomponent-nav-style-view.PNG" description="Angepasste Navigationsbuttons" %} 
+* In der Publikationsansicht möchten wir nun außerdem für die einzelnen Manuskripte auch die Metadaten darstellen. In der Demo-Sammlung haben wir dabei in dem Projekt "Mauritius Ferber" eine ein- und ausklappbare Metadaten-Darstellung gefunden, die wir für unser Projekt nachnutzen wollen. Wir navigieren dafür in eXide zu dem entsprechenden Page-Template (danticus.html). Dort finden wir innerhalb des `<app-header>`-Abschnitts sogar einen Hinweis darauf, dass in der entsprechenden Darstellung die Toolbar, die eigentlich nur das Inhaltsverzeichnis anzeigt, um ein Toggle-Element für die Metadaten ergänzt wurde.  
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/metadata-html-copy.PNG" description="Kopieren der Metadaten-Komponente" %} 
+    Um diesen Button in unsem Page-Template zu übernehmen, kopieren wir also die zweite `<app-toolbar>` im `<app-header>` und fügen diese an gleicher Stelle in unser projektspezifisches HTML-Template ein. Wie bei den Copy-Paste-Aktionen für andere Webkomponenten dürfen wir hier ebenfalls nicht vergessen, zusätzlich auch den CSS-Code für die ausklappbare Metadaten-Anzeige zu übernehmen.  
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/metadata-html-paste.PNG" description="Einfügen des Codes für den Metadatenbutton sowie Erweiterung des CSS" %} 
+    Wenn wir in der Publikationsansicht unser Browser-Fenster aktualisieren, erscheint nun oben links in der Navigationsleiste ein Metadaten-Button.  
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/metadata-button.PNG" description="Erweiterung der Navigationsleiste um einen Metadaten-Button" %} 
+    Um diesen ausklappbaren Seitenbereich mit Metadaten zu füllen, müssen wir jedoch noch ein paar Anpassungen in unserem ODD vornehmen. 
+* Wir wechseln also noch mal in den ODD-Editor und suchen dort nach den Modellspezifikationen für den `<teiHeader>`. Wir legen hier ein neues Inline-Modell an und weisen dieses Modell aber mit der XQuery-Angabe  `$parameters?mode=’commentary’`im Predicate darauf hin, dass dieses Modell für die zuvor im HTML-Template angelegte Metadaten-Toggle-Komponente gilt. Im Metadatenbereich möchten wir einerseits Informationen zum Repository, zur Signatur sowie zur physischen Beschreibung des Manuskripts anzeigen. Dementsprechend basteln wir ein Template in HTML mit Überschriften und geben in doppelten eckigen Klammern Platzhalter-Elemente an, denen wir darunter die entsprechenden Parameter zuordnen: Unter [[repository]] im Template sollen schließlich jene Daten angegeben werden, die wir im teiHeader im Element `<repository>` finden. Daher geben wir bei diesem Parameter vom `<teiHeader>` ausgehend den entsprechenden Pfad //repository an. Genauso gehen wir auch für die weiteren Parameter vor. Bei dem `<idno>`-Element müssen wir jedoch etwas genauer spezifizieren, da es einerseits die `<idno>`-Elemente in unserem Register im `<standOff>` gibt, und andererseits aber auch das `<idno>`-Element im `<teiHeader>`. Daher fügen wir hier als XPath-Bedingung noch das Attribut `@type="shelfmark"` hinzu. Zuletzt stellen wir noch sicher, dass es für all die in den Parametern angegebenen Elemente auch tatsächlich Modellspezifikationen gibt. Dabei reicht es, dass es für jedes Element, das wir in den Metadaten ausgeben wollen, ein Inline-Modell existiert.  
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-teiheader-odd.PNG" description="Anpassungen des teiHeader-Modells für die Metadatenausgabe" %} 
+    Wenn wir schließlich alle Modelle erstellt haben und die Publikationsansicht aktualisieren, erscheint nach einem Klick auf den Metadaten-Button nun auch ein Metadaten-Inhalt.  
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/metadata-toggle.PNG" description="" %}
 
 
 ## 4. Export der Dokumente
