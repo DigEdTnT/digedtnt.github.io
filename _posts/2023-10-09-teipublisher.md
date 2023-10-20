@@ -65,7 +65,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 
 * eXist-db
-* Docker Desktop (für eine weniger fehleranfällige Installation von eXist-db)
+* Docker Desktop (für eine einfachere Installation von eXist-db)
 
 
 ## Tool-Kompatibilität
@@ -260,8 +260,8 @@ Wir nutzen diese Eigenschaft nun für unsere `<div>`-Elemente, die jeweils den a
     * Das zweite Modell soll das Einbinden der Faksimiles regeln. Diese Modellspezifikation verschieben wir nach dem Anlegen nun an die letzte Stelle in der Sequenz, und nutzen einen XPath-Ausdruck im Predicate, um anzugeben, dass diese Spezifikation nur für jene `<div>`-Elemente gelten soll, denen ein `<pb>`-Element mit einem `@facs`-Attribut vorausgeht. Als behaviour wählen wir in diesem Fall "webcomponent" aus und setzen für diese Komponente die entsprechenden Parameter. Das Verbindungselement zwischen dem Faksimile und dem Text trägt den Namen "pb-facs-link" und enthält die Attribute `@emit` mit dem Wert "transcription", das für den Kanal steht, über den kommuniziert wird. Der Pfad zum Faksimile, auf das verwiesen wird, befindet sich letztlich im `@facs`-Attribut des `<pb->`-Elements vor dem `<div>` - wobei wir über den Wert im `@facs` zur `@xml:id` in der `<graphic>` gelangen und dort die `@url` wählen, die die URI zu unseren Faksmilies enthält.
         {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-pb-webcomponent-odd.PNG" description="Modell zur Einbindung der Faksimiles" %}
         → Damit die Faksimiles tatsächlich angezeigt werden, müssen wir noch weitere Adaptionen vornehmen, die im Abschnitt [c.) Bearbeitung des Page Templates](https://digedtnt.github.io/teipublisher/#c-bearbeitung-des-page-templates--weitere-odd-anpassungen) näher ausgeführt sind.
-    Mit all diesen Adaptionen haben wir aber jedenfalls in der Publikationsansicht eine zusätzliche Zeile vor Textbeginn erzeugt.
-    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-pb-pub.PNG" description="Publikationsansicht mit zusätzlicher Seitenangabe" %}
+        Mit all diesen Adaptionen haben wir aber jedenfalls in der Publikationsansicht eine zusätzliche Zeile vor Textbeginn erzeugt.
+        {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-pb-pub.PNG" description="Publikationsansicht mit zusätzlicher Seitenangabe" %}
 
 
 ### b. Bearbeitung des ODD des Zutatenregisters
