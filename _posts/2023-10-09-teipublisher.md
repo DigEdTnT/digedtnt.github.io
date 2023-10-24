@@ -65,7 +65,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 
 * eXist-db
-* Docker Desktop (für eine weniger fehleranfällige Installation von eXist-db)
+* Docker Desktop (für eine einfachere Installation von eXist-db)
 
 
 ## Tool-Kompatibilität
@@ -262,7 +262,7 @@ Für eine vollständige Publikationsansicht (Content View) benötigt man die TEI
         {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-pb-webcomponent-odd.PNG" description="Modell zur Einbindung der Faksimiles" %}
         → Damit die Faksimiles tatsächlich angezeigt werden, müssen wir noch weitere Adaptionen vornehmen, die im Abschnitt [c.) Bearbeitung des Page Templates](https://digedtnt.github.io/teipublisher/#c-bearbeitung-des-page-templates--weitere-odd-anpassungen) näher ausgeführt sind.
         Mit all diesen Adaptionen haben wir aber jedenfalls in der Publikationsansicht eine zusätzliche Zeile vor Textbeginn erzeugt.
-        {  % include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-pb-pub.PNG" description="Publikationsansicht mit zusätzlicher Seitenangabe" %}
+        {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/model-pb-pub.PNG" description="Publikationsansicht mit zusätzlicher Seitenangabe" %}
 
 
 ### b. Bearbeitung des ODD des Zutatenregisters
