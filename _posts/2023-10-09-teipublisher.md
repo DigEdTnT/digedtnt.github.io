@@ -314,6 +314,7 @@ In unserem Projekt gibt es aber nicht nur die XML-Dateien für das Manuskript, s
     Wir ändern in diesem Template nur im `<meta>`-Element mit dem Attribut `@name="description"` den Wert des Attributs `@content` auf "MA Rezepte Template" und entfernen weiter unten im Dokument im `<pb-facsimile>`-Element den Wert aus dem Attribut `@base-uri`, da wir in den `<graphic>`-Elementen in unserem XML, bereits den gesamten Pfad zum Faksimile angegeben haben.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/html-template.PNG" description="Anpassungen im DTA-Template" %}
     Wir speichern das HTML-Dokument anschließend unter "ma-rezepte.html" in der gleichen Ordnerstruktur ab.
+    → Für Änderungen in eXide ist die Eingabe eines Passworts erforderlich, wobei hier ebenfalls die User "tei" oder “tei-demo” mit dem jeweiligen Passwort genutzt werden kann. In manchen Ordnern kann es auch erforderlich sein, sich als “admin” einzuloggen, da dieser die umfangreichsten Schreibrechte hat.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/exide-new-template.PNG" description="Speichern des neuen Templates" %}
     Zurück in der Manuskript-Ansicht wählen wir im Menü in der zweiten Navigationsleiste, wo wir bereits unser projekteigenes ODD verknüpft haben, jetzt zusätzlich unser eigenes Template aus.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/apply-html-template.PNG" description="Verknüpfung des eigenen Templates" %}
@@ -352,9 +353,66 @@ In unserem Projekt gibt es aber nicht nur die XML-Dateien für das Manuskript, s
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/metadata-toggle.PNG" description="Ein- und ausklappbare Metdatenbeschreibung" %}
 
 
-## 4. Export der Dokumente
+## 4. Erstellung einer eigenen App
 
-[In Arbeit]
+Zuletzt möchten wir das erstellte ODD, die HTML Templates und Webkomponenten in einer eigenständigen Edition bzw. Applikation zusammenführen, sodass wir am Ende unsere Arbeit im TEI Publisher als eigene Website veröffentlichen können.
+
+* Um eine eigene App zu generieren, gehen wir in der Navigationsleiste auf **Administration** und wählen im Drop-Down “Anwendung generieren”.
+        {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-generator.PNG" description="Projektspezifische App erstellen" %}
+* In dem Tab, das sich daraufhin öffnet, können wir als erstes die ODDs auswählen, die für unsere App verwendet werden sollen. Dies ist in unserem Fall das ODD “MA Rezepte” sowie “MA Zutaten”. Außerdem geben wir hier die URL zur App sowie das gewünschte Kürzel an.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-details-1.PNG" description="Angaben zum Erstellen der App" %}
+    Bei den weiteren Feldern, lassen wir die Eingabezeile zum Namen der Subcollection frei, da wir hier die vordefinierte Struktur nutzen wollen. Außerdem geben wir den Titel unserer App an, und wählen unsere zuvor erstellte HTML-Vorlage. Die Strukturierung in der Standardansicht soll sich nach den `<div>`-Elementen richten und auch beim Standard-Volltextindex wählen wir wieder eine Organisation nach `<div>`-Elementen. Hinsichtlich des Benutzerkontos hat sich bei uns herausgestellt, dass wir nur mit dem Benutzer **tei-demo** und dem entsprechenden Passwort **demo** später auch ohne Schwierigkeiten Dokumente hochladen können, weshalb wir diesen Standardnutzer nun auch für unsere App anlegen.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-details-2.PNG" description="Weitere projektspezifische Angaben beim Erstellen der App" %}
+    Nachdem das Formular vollständig bearbeitet wurde und wir auf Speichern geklickt haben, erscheint ein kleines Dialogfenster, das uns bestätigt, dass unsere App erfolgreich erstellt wurde.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-open.PNG" description="Mitteilung zur App-Erstellung inklusive Direkt-Link zur App" %}
+* Wenn wir unsere App nun über den Link (oder andernfalls über die eXist-db, wo unsere App nun so wie der TEI Publisher in einer eigenen Kachel erscheint) geöffnet haben, sehen wir, dass unsere App im Grunde wie der TEI Publisher aufgebaut ist, wobei sie bereits unseren Projekttitel trägt. Zunächst müssen wir sichergehen, dass wir auch dort mit den zuvor eingetragenen Benutzerdaten angemeldet sind. Dann müssen wir unsere Projektdateien erneut hochladen, da diese nicht automatisch übernommen wurden.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-upload-docs.PNG" description="Hochladen der projektspezifischen XML-Dateien in die App" %}
+    Mit einem Klick auf unser erstes Manuskript sehen wir auch gleich, dass das ODD direkt mit unserem XML verknüpft wird. Unter Administration in der Navigationsleiste können wir uns außerdem einen Überblick darüber verschaffen, welche Optionen es für die Bearbeitung jetzt noch gibt.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-options.PNG" description="Bearbeitungsmöglichkeiten innerhalb der App" %}
+* Einzig das XML mit dem Zutatenregister wird noch nicht richtig dargestellt, da es ebenfalls standardmäßig mit dem ODD für die Manuskripte verknüpft wird und nicht mit dem eigens für die Zutaten erstellten ODD.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-register-odd-error.PNG" description="Fehlerhafte Darstellung des Zutatenregisters" %}
+    Wie in der Dokumentation des TEI Publishers beschrieben, kann man die ODD- und HTML-Verknüpfung für einzelne Dokumente aber über die Datei “config.xqm” im Ordner **module** unserer App konfigurieren. Dementsprechend haben wir für unser Projekt die Datei mit dem Zutatenregister mit dem ODD für die Zutaten und dem “view.html” anstelle des eigens angepassten HTML-Templates verknüpft.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-register-config.PNG" description="Sonderregelungen für das Zutatenregister" %}
+* Da wir nun aber jedenfalls das Logo sowie die Farben unserer App anpassen möchten, wechseln wir wieder in eXide. Wir öffnen dafür als erstes unsere App und finden dort unter im Ordner **templates/pages** die Datei “ma-rezepte.html”, in der wir auch alle weiteren Bausteine unserer Website finden. Im Element `<app-header>` sehen wir schließlich, dass die Toolbar über ein anderes Template geladen wird und zwar “menu.html”, das im übergeordneten Ordner **templates** innerhalb unserer App zu finden ist.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-config-logo.PNG" description="Pfad zum Logo in der Navigationsleiste" %}
+    In diesem HTML finden wir leider keine eingebundene Ressource, sondern nur das Attribut `@class=”logo”`. Um herauszufinden, wo das CSS abgelegt ist, scrollen wir in unserer Datei also noch mal an den Anfang.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-config-css.PNG" description="Pfad zum standardmäßig eingebundenen CSS" %}
+    Wir sehen uns also zunächst das standardmäßig eingebundene CSS (“theme.css”) an und suchen dort nach der entsprechenden Klasse.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-menu-html.PNG" description="Link zur Logo-Ressource im CSS" %}
+    Wie hier ersichtlich ist, befindet sich das Logo also im gleichen Ordner wie der Ordner mit den CSS-Dateien. Und zwar finden wir die Logos über den Pfad ‘db/apps/ma-rezepte-23/resources/images’. Dort laden wir nun unser eigenes Logo in den entsprechenden Ordner hoch.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-logo-upload.PNG" description="Projekteigene Logos hochladen" %}
+    Als nächstes müssen wir den Pfad im CSS auf unsere Bilddatei lenken. Bevor wir dies tun, suchen wir in dem “theme.css” aber auch jene Stelle, an der die Farbeigenschaften für die Menüleiste hinterlegt sind und sehen dort, dass vor allem mit Variablen gearbeitet wurde.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-css-overwrite.PNG" description="Zu überschreibender CSS-Code" %}
+    Um unsere projektspezifischen Änderungen aber separat zu bearbeiten, erstellen wir eine weitere CSS-Datei und überschreiben dort jene Klassen, die wir abändern möchten. Wir ändern einerseits die Bilddateien in der `.logo`-Klasse und zusätzlich auch in einer weiteren Klasse (.splash), die für die Übergangsbilder beim Laden verantwortlich ist.  Daraufhin passen wir die Text- und Hintergrundfarben in der Menüleiste und der darunterliegenden Navigationsleiste an, indem wir entsprechende Variablen einführen und die alten Variablen mit unseren Farbcodes überschreiben.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-css-colors.PNG" description="Austauschen des Logos sowie der Farbvariablen" %}
+    Wenn wir nun erneut in die Publikationsansicht gehen und die Seite aktualisieren, erscheint unsere App nun mit unserem eigenen Logo und in anderen Farben.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-css-pub.PNG" description="App-Erscheinung nach Anpassungen im CSS" %}
+* Nun möchten wir in unsere App noch eine weitere Seite, auf der das Projekt vorgestellt werden soll, einbinden. Wir haben dafür bereits eine About-Seite als XML vorbereitet. Diese externe Seite laden wir nun über die App im Dokumentebrowser hoch.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-external-html.PNG" description="Zusätzliches XML zur Erweiterung der App hinzufügen" %}
+    → Hier können wir auch sehen, dass noch nicht alle Bereiche farblich angepasst sind, und es dafür noch weiterer Nachbearbeitungsschritte im CSS bedarf.
+    Wenn wir das About-XML anwählen, verfügen wir aber jedenfalls über diese Ansicht:
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-about-pub.PNG" description="Publikationsansicht der About-Seite" %}
+    Da wir aber auf die Projektseite von der Navigationsleiste aus zugreifen möchten, und nicht von der Manuskriptliste, erstellen wir im HTML einen entsprechenden Link. Und zwar müssen wir dafür wieder in das “menu.HTML”, in dem sich die Navigationsleiste befindet und fügen dort nach dem Logo einen Link zur About-Seite hinzu.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-about-embed.PNG" description="Einbettung eines Links zur About-Seite im HTML" %}
+    Zurück im Dokumentebrowser, sehen wir nun, dass wir nach dem Logo über einen About-Link verfügen.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-about-link.PNG" description="Link zur About-Seite in der Navigationsleiste" %}
+    Um das XML zur Projektseite aus der Manuskriptliste zu entfernen, müssen wir nun noch entsprechende Änderungen in einer Konfigurationsdatei vornehmen - und zwar “config.xqm”, das wir im Ordner **modules** finden.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-config-doclist.PNG" description="Exklusion der XML-Datei mit der About-Seite aus Dateiansicht" %}
+    Dort fügen wir bei der Variablen `$config:data-exclude` unsere XML-Datei mit der About-Seite als nicht anzuzeigende Datei hinzu.
+* Zuletzt wollen wir vor dem Export noch das Icon ändern, das für unsere App in eXist aufscheinen soll. Dafür navigieren wir in eXide zum Ordner **packageservice** und überschreiben dort das bestehende Icon, indem wir unser Icon mit dem Dateinamen “icon.png” hochladen.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/exist-dashboard-app.PNG" description="Upload eines projekteigenen Icons für die App" %}
+
+
+## 5. Export
+
+Um die App nun endgültig zu exportieren und dann auf einem Webserver, auf dem eXist-db installiert ist, für die Öffentlichkeit zugänglich zu machen oder sie einem weiteren Projektmitarbeitenden zum Finalisieren zu übermitteln, können wir die App nun abschließend herunterladen.
+* Wir öffnen dafür das Dropdown-Menü unter **Administration** in der Navigationsleiste und wählen "Download App as .xar".
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-export.PNG" description="Export der App als XAR-Datei" %}
+* In einer anderen eXist-db-Installation können wir die XAR-Datei anschließend über den PackageManager hochladen.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-exist-upload.PNG" description="Upload der XAR-Datei in eine andere eXist-db" %}
+* Wenn wir daraufhin auf das eXist-Dashbord gehen, erscheint dort die App zu unserem Projekt.
+    {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/exist-dashboard-app.PNG" description="Eigene App im eXist-Dashboard" %}
+
 
 
 # Kontakt
