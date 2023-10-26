@@ -20,16 +20,16 @@
                 <head>Über das Projekt</head>
                 <p>Dieses Beispielprojekt beschäftigt sich mit der digitalen Edition von
                     frühneuhochdeutschen Manuskripten aus dem Mittelalter, die Rezepte beinhalten.
-                    Die Daten für das Beispielprojekt wurden vom Projekt CoReMa übernommen, wobei
+                    Die Daten für das Beispielprojekt wurden vom Projekt <link target="https://gams.uni-graz.at/context:corema">CoReMa</link> übernommen, wobei
                     sich die Zielsetzung im Rahmen des DigEdTnT-Projekts darauf beschränkt, nach der
                     Erstellung von Transkripten auf Grundlage der Manuskript-Digitalisate, die
                     textuelle Struktur sowie die in den Rezepten angeführten Zutaten TEI-konform zu
                     annotieren, und zusätzlich die Zutaten mit Wikidata-Normdaten anzureichern.
                     Abschließend sollen die annotierten und normalisierten Daten publiziert werden.
                     </p>
-                <p>Im Zuge der Umsetzung dieses Beispielprojekts in der Pipeline 1 wurden die
-                    Faksimiles der Manuskriptsammlungen A1 (Augsburg, Universitätsbibliothek,
-                    Cod.III.1.2°43) sowie So1 (Solothurn, Zentralbibliothek, Cod. S 490) für die
+                <p>Im Zuge der Umsetzung dieses Beispielprojekts in der <link target="https://github.com/DigEdTnT/digedtnt.github.io/tree/master/data/pipelines/pipeline_1">Pipeline 1</link> wurden die
+                    Faksimiles der Manuskriptsammlungen A1 (<link target="https://gams.uni-graz.at/o:corema.a1#A1_002r">Augsburg, Universitätsbibliothek,
+                    Cod.III.1.2°43</link>) sowie So1 (<link target="https://gams.uni-graz.at/o:corema.so1">Solothurn, Zentralbibliothek, Cod. S 490</link>) für die
                     Transkriptionsarbeit in FromThePage herangezogen und die in FromThePage
                     verfügbaren Annotationsmöglichkeiten getestet. Das Ziel war hierbei, Transkripte
                     der einzelnen Manuskriptseiten zu erstellen, die textuelle Merkmale wie
