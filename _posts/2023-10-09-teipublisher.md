@@ -417,6 +417,7 @@ Um die App nun endgültig zu exportieren und dann auf einem Webserver, auf dem e
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/app-exist-upload.PNG" description="Upload der XAR-Datei in eine andere eXist-db" %}
 * Wenn wir daraufhin zum eXist-Dashboard wechseln, steht die App zu unserer Edition dort zur Verfügung.
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/exist-dashboard-app.PNG" description="Eigene App im eXist-Dashboard" %}
+    → Hier der Link zur [XAR-Datei unseres Beispielprojekts auf Github](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/pipelines/pipeline_1/teipublisher/data/export/ma-rezepte-23.xar).
 
 
 
