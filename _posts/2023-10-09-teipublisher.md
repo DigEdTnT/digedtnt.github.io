@@ -8,6 +8,12 @@ categories: [tool, TEI Publisher, publikation, tei, odd, opensource]
 
 excerpt: Der _TEI Publisher_ ist ein auf Standards basierender Werkzeugkasten und bietet funktionale und nachnutzbare Bausteine, die die Auswertung und Präsentation von digitalen Editionen und den dazugehörigen Forschungsdaten unterstützen.
 
+factsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/teipublisher/factsheet+tooldoc/DigEdTnT_FactSheet_teipublisher.pdf
+
+tooldoc: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/teipublisher/factsheet+tooldoc/DigEdTnT_ToolDoc_teipublisher.pdf
+
+last_modified_at:   2023-10-30
+
 ---
 
 
@@ -483,7 +489,373 @@ Um die App nun endgültig zu exportieren und dann auf einem Webserver, auf dem e
 
 # Factsheet
 
-[In Arbeit]
+<table>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>System</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Scope des Tools</strong>
+   </td>
+   <td>Publikation
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Softwareumgebung/Softwaretyp</strong><br/>(Remotesystem im Browser / Lokaler Client)
+   </td>
+   <td>lokale Browser-Anwendung
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützte Plattformen</strong>
+   </td>
+   <td>Unix, Windows & Mac
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Geräte</strong>
+   </td>
+   <td>Desktop
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Einbindung anderer Systeme (Interoperabilität)</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Accountsystem</strong>
+   </td>
+   <td>✅Hinzufügen von mehreren Usern über eXist möglich
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Kostenmodell</strong><br/>(Kostenübersicht/Open Source)
+   </td>
+   <td><span style="text-decoration:underline;">TEI Publisher & eXist-db:</span> kostenlos
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Anforderungen & Methoden</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Erforderte Code Literacy</strong>
+   </td>
+   <td>fortgeschritten
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Interface-Sprachen (ISO 639-1)</strong>
+   </td>
+   <td>de, en + 18 weitere Sprachen
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützte Zeichenkodierung</strong>
+   </td>
+   <td>[keine Angaben]
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Inkludierte Datenkonvertierung</strong>
+<br/>
+(Im Preprocessing mögliche Anpassung der Daten an für die Software erforderliches Format)
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Abhängigkeit von anderer Software</strong><br/>(Falls ja, wird diese Software automatisch mitinstalliert?)
+   </td>
+   <td>✅eXist-db ist eigenständig zu installieren
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Erforderliche Plug-Ins </strong>
+   <br/>(bei web-basierten Anwendungen)
+   </td>
+   <td>[nicht anwendbar]
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Dokumentation & Support</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Wartung und ständige Erweiterung</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Einbindung der Community</strong>
+   </td>
+   <td>✅via GitHub
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dokumentation</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dokumentationssprache</strong>
+   </td>
+   <td>Englisch
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dokumentationsformat</strong>
+   </td>
+   <td>HTML
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Dokumentationsabschnitte</strong>
+   </td>
+   <td>Quickstart, Supported XML Vocabularies, Processing Model Transformations, CSS Styling, Page Templates and pb-componens, API, Best Practice Recommendations, Creating & Updating Apps, Facet Search Configuration, Creating Custom Web Components, Adding custom vocabulary, Embedding TEI Publisher in other systems, Annotating Documents, Configuring the Annotation Editor, TEI Publisher in Production
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Verfügbarkeit von Tutorials</strong>
+   </td>
+   <td>✅ Youtube-Videos für Nutzer:innen inkl. GitHub Workshop-Materiall
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Aktiver Support/Community  \
+</strong>(Forum, Slack, Issue Tracker etc.)
+   </td>
+   <td>✅Slack Channel, Mailingliste, Github-Issue-Mechanismus
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2"><strong>Nutzbarkeit & Nachhaltigkeit</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Installationsablauf </strong>
+   </td>
+   <td>fortgeschrittene Kenntnisse nötig
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Test</strong>
+<br/>
+(Gibt es ein Test Suite, um zu überprüfen, ob die Installation erfolgreich war?)
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Lizenz, unter der das Tool veröffentlicht wurde</strong>
+   </td>
+   <td><a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL 3.0</a>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Registrierung in einem Repository</strong>
+   </td>
+   <td>✅ Github
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Möglichkeit zur Software-Entwicklung beizutragen</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Benutzerinteraktion & Benutzeroberfläche</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Benutzerprofil</strong><br/>(erwartete Nutzer:innen)
+   </td>
+   <td>GeWi-Institutionen, Forschende und Editor:innen als Tool-Nutzende
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Benutzerinteraktion</strong><br/>(erwartete Nutzung)
+   </td>
+   <td>Hochladen von XML-Dateien, Dateimanagement (über eXide), Publikationsaufbereitung von XML-Dokumenten, Erstellung einer App
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Benutzeroberfläche</strong>
+   </td>
+   <td>browserbasiertes GUI
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Visualisierungen</strong><br/>
+(Analyse-, Input-, Outputkonfigurationen)
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Benutzerverwaltung</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Personenverwaltung</strong>
+   </td>
+   <td>✅ inklusive Rollenzuweisung (über eXist)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Interne Kommunikationsmöglichkeiten</strong><br/>(z. B. Annotationsrichtlinien, Kommentarfunktionen, …)
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Daten- und Toolverwaltung</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Zentrale/dezentrale Verwaltungsmöglichkeit</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Versionskontrolle</strong>
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Projektspezifische Einstellungen</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>API</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Möglichkeit auf simultanes Arbeiten </strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Datenupload</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützte Dateiformate</strong>
+   </td>
+   <td>Diverse XML-Formate: TEI, DocBook, MSWord (DOCX), JATS
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Informationen zur Datensicherheit</strong>
+   </td>
+   <td>[nicht anwendbar, da Datenbank und Daten auf einem von der Projektleitung selbst gewählten Server gespeichert sind]
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Zugänglichkeit von verschiedenen Standorten/Geräten</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Einschränkungen hinsichtlich der Datenmenge</strong>
+   </td>
+   <td>[keine Angaben]
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Verlustfreier Upload von bereits bearbeiteten Dokumenten </strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützung von IIIF-Import</strong>
+   </td>
+   <td>❌ ABER: eigene Webkomponente für die Anzeige von Faksimiles über den IIIF-Server
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Datenbearbeitung (Publikationstool)</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Komplexitätsgrad bei der Publikationsvorbereitung
+</strong><br/>(z. B. Verfügbarkeit von Buttons, Drag&Drop-Funktion, …)
+   </td>
+   <td>ODD-Editor und App-Erzeugung auf Formularbasis
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Standardeinstellungen entsprechend bestimmten Standards für Digitale Editionen   </strong>
+   </td>
+   <td>✅ TEI, XML, HTML
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Anpassungsmöglichkeit und Validierung </strong>
+<p>
+<strong>entsprechend projektspezifischen Konventionen/Schemata</strong>
+   </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Metadaten-Anreicherung</strong>
+   </td>
+   <td>✅ über eXide möglich
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Ansichtsmöglichkeiten</strong><br/>(z. B. Bearbeitungsansicht, Synopsen-Ansicht, Vorschauansicht …)
+   </td>
+   <td>✅ Publikationsvorschau
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>Datenexport</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Unterstützte Dateiformate</strong>
+   </td>
+   <td>Für Publikation: HTML, EPUB, PDF, LaTex<br/>
+    Allgemein: XML, ODD, CSS, XAR
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Datenverlust</strong><br/>(nicht vollständiger Erhalt von Annotationen, die bereits vor Verwendung des Tools gemacht wurden)
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Validierungsmöglichkeit für TEI-XML vor Export</strong>
+   </td>
+   <td>✅über eXide möglich
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Datenaufbewahrung nach Export</strong>
+   </td>
+   <td>[nicht anwendbar, da Datenbank und Daten auf einem von der Projektleitung selbst gewählten Server gespeichert sind]
+   </td>
+  </tr>
+</table>
+
+
 
 
 

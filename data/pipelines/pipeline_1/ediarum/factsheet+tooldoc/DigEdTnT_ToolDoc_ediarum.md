@@ -234,7 +234,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 * Im Fenster zur Bearbeitung der Aktion ändern wir die ID von rs[term] auf term, fügen neue Icons hinzu, die wir lokal im Ordner für das projektspezifische Framework gespeichert haben, wählen ein Tastenkürzel (Strg + I) für jene Projektmitarbeiter:innen, die die Arbeit mit der Tastatur bevorzugen, und ändern die XPath-Aktivierung dahingehend, dass wir bei der Annotation die entsprechende Textstelle nun anstatt mit einem `<rs>`-Element mit einem `<term>`-Element auszeichnen.
   ![Gestaltung des neuen Buttons für Registereinträge](../img/register-action-changes.PNG)
   In der Argumente-Tabelle wählen wir außerdem noch das Argument **element**, um diese Anpassungen auch dort vorzunehmen.
-* Bei der Bearbeitung des Argumentwerts ersetzen wir das `<rs>`-Element mit einem `<term>`-Element und wählen als Wert des Attributs `@type` die Bezeichnung "ingredient". Außerdem stellen wir vor die `$ITEMS`-Variable des `@key`-Attributs, das später auf die `@xml:id` im Register verweist, ein "#".  
+* Bei der Bearbeitung des Argumentwerts ersetzen wir das `<rs>`-Element mit einem `<term>`-Element und wählen als Wert des Attributs `@type` die Bezeichnung "ingredient". Außerdem stellen wir vor die `$ITEMS`-Variable des `@key`-Attributs, das später auf die `@xml:id` im Register verweist, ein "#".
   ![Änderung des Elements für Annotation](../img/register-action-term.PNG)
 * Damit der adaptierte Button auch in der Symbolleiste aufzufinden ist, wählen wir nun im Dokumenttyp-Fenster die Aktion Sachbegriff aus und fügen sie unter "Text(Benutzerdefinierte Author-Aktionen)" als Kindelement hinzu.
   ![Hinzufügen der adaptierten Aktion zur Symbolleiste im Autormodus](../img/register-action-menu.PNG)
@@ -390,7 +390,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 
 <table>
 <tr>
-   <td colspan="2" style="text-align: center;font-size: 1.2em" ><strong>System</strong>
+   <td colspan="2" style="text-align: center;font-size: 1.2em"><strong>System</strong>
    </td>
 </tr>
 <tr>
@@ -401,7 +401,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 </tr>
   <tr>
    <td><strong>Softwareumgebung/Softwaretyp
-</strong>(Remotesystem im Browser / Lokaler Client)
+</strong><br/>(Remotesystem im Browser / Lokaler Client)
    </td>
    <td>Applikation/Plug-In
    </td>
@@ -427,7 +427,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
   <tr>
    <td><strong>Accountsystem</strong>
    </td>
-   <td>✅Hinzufügen von mehreren Usern möglich
+   <td>✅Hinzufügen von mehreren Usern über eXist möglich
    </td>
   </tr>
   <tr>
@@ -477,7 +477,7 @@ $335 - 432/Jahres-Abo
    </td>
   </tr>
   <tr>
-   <td><strong>Erforderliche Plug-Ins</strong>(bei web-basierten Anwendungen)
+   <td><strong>Erforderliche Plug-Ins</strong><br/>(bei web-basierten Anwendungen)
    </td>
    <td>[nicht anwendbar]
    </td>
@@ -608,12 +608,12 @@ Annotation von Texten, Indexierung, Export
    <tr>
    <td><strong>Personenverwaltung</strong>
    </td>
-   <td>✅ inklusive Rollenzuweisung
+   <td>✅ inklusive Rollenzuweisung (über eXist)
    </td>
    </tr>
   <tr>
    <td><strong>Interne Kommunikationsmöglichkeiten
-</strong>(z. B. Annotationsrichtlinien, Kommentarfunktionen, …)
+</strong><br/>(z. B. Annotationsrichtlinien, Kommentarfunktionen, …)
    </td>
    <td>✅ Kommentarfunktion
    </td>
@@ -678,7 +678,7 @@ Standorten/Geräten</strong>
   <tr>
    <td><strong>Einschränkungen hinsichtlich der Datenmenge</strong>
    </td>
-   <td>[keine Angabe]
+   <td>[keine Angaben]
    </td>
   </tr>
   <tr>
@@ -767,7 +767,7 @@ Synopsen-Ansicht
    </tr>
   <tr>
    <td><strong>Datenverlust
-</strong>(nicht vollständiger Erhalt von Annotationen, die bereits vor Verwendung des Tools gemacht wurden)
+</strong><br/>(nicht vollständiger Erhalt von Annotationen, die bereits vor Verwendung des Tools gemacht wurden)
    </td>
    <td>❌   </td>
   </tr>
