@@ -130,7 +130,7 @@ Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolg
 
 ## Herausforderungen & Probleme
 
-* Implementierung und Konfiguration von Projekten mit komplexeren Publikationsansichten (z.B. verschiedene ODDs für verschiedene XML-Dateien oder bei erwünschter Verknüpfung von XML-Dateien, wie bspw. Manuskript und Register) erfordert DH-Entwickler:in, da mitunter viel technische Anpassungsarbeit notwendig ist
+* Implementierung und Konfiguration von Projekten mit komplexeren Publikationsansichten (z. B. verschiedene ODDs für verschiedene XML-Dateien oder bei erwünschter Verknüpfung von XML-Dateien, wie bspw. Manuskript und Register) erfordert DH-Entwickler:in, da mitunter viel technische Anpassungsarbeit notwendig ist
 * Abhängigkeit von eXist-db
 * Cache-Probleme im Browser, sodass Änderungen teilweise erst nach Leeren des Cache angezeigt werden
 * Informationsarme Fehlermeldungen im ODD-Editor (Fehlermeldung bei erfolglosem Speichern gibt nur "Error" an, nicht jedoch die Ursache)
