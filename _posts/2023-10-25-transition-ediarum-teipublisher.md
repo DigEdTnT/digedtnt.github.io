@@ -19,3 +19,8 @@ last_modified_at: 2023-10-25
 Die von [ediarum exportierten TEI-XML-Dokumente](https://digedtnt.github.io/ediarum/) bedürfen für die Bearbeitung im _TEI Publisher_ keiner weiteren Anpassung, da der _TEI Publisher_ eine nahtlose Weiterverwendung von TEI-XML-Dokumenten ermöglicht. 
 
 Diese Pipeline geht daher direkt im [TEI Publisher](https://digedtnt.github.io/teipublisher/) weiter.
+
+
+
+
+<p style="font-size:8rem; margin:5rem; text-align:center;"><a href="https://digedtnt.github.io/teipublisher/">🦄</a></p>
