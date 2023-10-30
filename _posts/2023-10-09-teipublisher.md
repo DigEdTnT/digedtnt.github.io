@@ -462,10 +462,10 @@ Um die App nun endgültig zu exportieren und dann auf einem Webserver, auf dem e
 ## Tutorials
 
 * [Customising TEI, ODD, Roma](https://www.teibyexample.org/exist/tutorials/TBED08v00.htm)
-* [Youtube - Learn _TEI Publisher_ - Session 1 of 3](https://www.youtube.com/watch?v=QuWrfAS2SWM&t=1s)
-* [Youtube - Learn _TEI Publisher_ - Session 2 of 3](https://www.youtube.com/watch?v=5qu94bhftpk)
-* [Youtube - Learn _TEI Publisher_ - Session 3 of 3](https://www.youtube.com/watch?v=FS36nYFlTbE)
-* [Learn _TEI Publisher_ From Scratch (Workshop Material)](https://github.com/eeditiones/workshop#slides)
+* [Youtube - Learn TEI Publisher - Session 1 of 3](https://www.youtube.com/watch?v=QuWrfAS2SWM&t=1s)
+* [Youtube - Learn TEI Publisher - Session 2 of 3](https://www.youtube.com/watch?v=5qu94bhftpk)
+* [Youtube - Learn TEI Publisher - Session 3 of 3](https://www.youtube.com/watch?v=FS36nYFlTbE)
+* [Learn TEI Publisher From Scratch (Workshop Material)](https://github.com/eeditiones/workshop#slides)
 
 
 ## Projekte, die dieses Tool genutzt haben
@@ -626,8 +626,7 @@ Um die App nun endgültig zu exportieren und dann auf einem Webserver, auf dem e
    </td>
   </tr>
   <tr>
-   <td><strong>Aktiver Support/Community  \
-</strong>(Forum, Slack, Issue Tracker etc.)
+   <td><strong>Aktiver Support/Community</strong><br/>(Forum, Slack, Issue Tracker etc.)
    </td>
    <td>✅Slack Channel, Mailingliste, Github-Issue-Mechanismus
    </td>
@@ -805,9 +804,7 @@ Um die App nun endgültig zu exportieren und dann auf einem Webserver, auf dem e
    </td>
   </tr>
   <tr>
-   <td><strong>Anpassungsmöglichkeit und Validierung </strong>
-<p>
-<strong>entsprechend projektspezifischen Konventionen/Schemata</strong>
+   <td><strong>Anpassungsmöglichkeit und Validierung entsprechend projektspezifischen Konventionen/Schemata</strong>
    </td>
    <td>✅
    </td>
