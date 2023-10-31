@@ -131,7 +131,7 @@ Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolg
 * Abhängigkeit von eXist-db und Oxygen
 * Datenbank-Technologie ist bei größeren Datenmengen noch suboptimal, da eXist-db viel Arbeitsspeicher benötigt - für eine stabile Funktion der Datenbank sollten zumindest 2 GB Arbeitsspeicher zur Verfügung stehen
 * Metadaten-Anreicherung bzw. -Ergänzung nur teilweise im benutzerfreundlicheren Autormodus möglich
-* Suche im Register bei der Annotation bietet keine Substring-Suchmöglichkeit und auch keine Suche nach alternativen Bezeichnungen eines Eintrags - Bezeichnungen der Registereinträge (z. B. Flaschenkürbis, Gewürznelke, Echter Pfeffer) werden nicht gefunden, wenn man Teilbezeichnungen sucht (z. B. Kürbis, Nelke, Pfeffer)
+* Suche im Register während der Annotation bietet keine Suche nach alternativen Bezeichnungen eines Eintrags
 
 
 # Einrichtung & Erste Schritte
@@ -313,7 +313,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
   ![Änderung der automatisch generierten xml:id](../img/register-add-xml-id.PNG)
   Wir geben hier unseren neuen Wert - in unserem Fall die englische Übersetzung - ein und speichern unsere Änderung.
   ![Eingabe einer individuellen xml:id](../img/register-xml-id.PNG)
-  → Während dieses Prozesses hat sich ein kleines Problem ergeben: Leider ist das Register nicht auf die alternativen Bezeichnungen durchsuchbar, sondern man muss den genauen Wortlaut des Eintrags wissen, der die reguläre Schreibweise abbildet. So, hatten wir beispielsweise nach dem Begriff "Nelke" gesucht, wurden aber aufgrund dessen, dass es keine Substring-Suche gibt, nicht fündig. Denn die Nelke ist in unserem Register unter "Gewürznelke" gespeichert, und erst als wir die xml:id mit dem Wert "clove" anlegen wollten, haben wir die Meldung bekommen, dass diese xml:id (für den Eintrag Gewürznelke) bereits besteht. Ein weiterer Nachteil ist, dass die `<label>`-Elementen mit `@alt`-Attribut der einzelnen Einträge, in denen die frühneuhochdeutschen Schreibweisen gespeichert sind, nicht während der Annotation durchsucht werden können. Dadurch müssten wir jedes Mal in die Registeransicht wechseln und manuell überprüfen, ob die im Manuskript auftretende Schreibung bereits im Register festgehalten ist.
+  → Falls man nur nach dem Begriff "Nelke" im Register sucht, wird die Substring-Suche im Übrigen nur durch das Betätigen des Buttons "Filtern" aktiviert und nur so kann wie in unserem Fall die Nelke, die unter "Gewürznelke" eingetragen ist, auch gefunden werden. Es hat sich während unserer Arbeit jedoch herausgestellt, dass dieser Button nicht immer angezeigt wird. Leider ist auch keine Suche nach den frühneuhochdeutschen Schreibweisen möglich, die im Eintrag in den `<label>`-Elementen mit dem `@alt`-Attribut gespeichert sind. Wenn wir unser Register also um alternative Schreibweisen erweitern wollen, müssten wir bei jedem Eintrag in die Registeransicht wechseln und manuell überprüfen, ob die im Manuskript auftretende Schreibung bereits festgehalten wurde.
 
 ## 5. Export der Dokumente
 * Um die XML-Dateien auf unserem lokalen Gerät zu speichern, gehen wir mit einem Rechtsmausklick auf jenen Ordner, dessen Inhalte wir herunterladen wollen, und klicken auf "Exportieren".
