@@ -252,6 +252,21 @@ Für eine vollständige Publikationsansicht benötigt man die TEI-XML-Ressource,
     In der Publikationsansicht sehen wir nach dem Aktualisieren schließlich das Ergebnis unserer Änderung.
     ![Publikationsansicht des fw-Elements mit Faksimile-Abgleich](../img/model-fw-head-pub.PNG)
 
+* **Kleiner Exkurs zum Annotationsmodul des TEI Publishers:** Seit Version 7.1.0 unterstützt der TEI Publisher auch rudimentäre Annotationsvorhaben. Im Rahmen unseres Beispielsprojekts wollen wir uns daher das Annotationsmodul ansehen, um herauszufinden, inwiefern uns dieses Modul bei der Erweiterung unserer bereits in [ediarum durchgeführten Annotation](https://digedtnt.github.io/ediarum/) behilflich sein kann. 
+Zuerst navigieren wir dazu auf die Startseite der TEI-Publisher-App und wählen dort “Annotation Samples”. 
+    ![Annotationsmodul im TEI Publisher](../img/annotation-editor.PNG)
+    Wir laden anschließend eines unserer Manuskripte hoch und öffnen dieses. 
+    ![Upload des Manuskripts für die Bearbeitung im Annotationseditor](../img/annotation-upload.PNG)
+    Im Annotationseditor öffnet sich daraufhin eine geteilte Ansicht mit einer kleinen Auswahlleiste an Annotationsbuttons, unserem Manuskript, in dem bereits bestehende Auszeichnungen hervorgehoben werden, und einem weiteren Bereich, in dem zwischen diversen Ansichtsmöglichkeiten (HTML, TEI, JSON und Änderungen) wechseln kann. Wir gehen in diesem Seitenbereich zum Tab **TEI**, um nachverfolgen zu können, wie sich etwaige Annotationen im XML auswirken. 
+    ![Annotationseditor im TEI Publisher](../img/annotation-options.PNG)
+    Erst wenn wir ein Wort markieren, haben wir die Möglichkeit, in der linken Annotationsmenüleiste mittels Mouse-Over festzustellen, welche Annotationen hinter den Symbolen stecken. Da diese Leiste auf die Annotationen von Personen, Organisationen, Orten, Termini, Daten, Links, Abkürzungen, Sic-Stellen, Regularisierungen, Apparaten, Hervorhebungen sowie auf die Möglichkeit, Änderungen am Text vorzunehmen, beschränkt ist, müssen wir unser Vorhaben, unsere Rezept auszuzeichnen vorerst aufgeben. Möglicherweise könnten wir uns eine eigene Annotationsapp basteln, um dort eine individuelle Annotation zu konfigurieren. Da unser Ziel vorerst aber nur darin besteht, eine Auszeichnung mit möglichst wenig Aufwand vorzunehmen, gehen wir dieser Möglichkeit nicht weiter nach. <br/>
+    Stattdessen widmen wir uns der Frage, wie eine Fortsetzung unserer Zutaten-Annotation im TEI Publisher aussehen könnte. Wir navigieren also auf jene Manuskriptseite, wo wir mit der Zutatenauszeichnung in _ediarum_ aufgehört haben, markieren dort eine Zutat (Petersilie), die noch nicht annotiert ist und klicken auf das entsprechende Symbol, das eine Term-Annotation vorsieht. 
+    ![Auszeichnung weiterer Zutaten im Manuskript](../img/annotation-term.PNG)
+    Daraufhin öffnet sich eine weitere Ansicht, wo wir nach weiteren Daten zu unserer Zutat suchen können. Wir können dabei sehen, dass es für die “Petersilie” eine GND-Verknüpfung gibt. Mit einem Klick auf das Plus-Symbol wählen wir den ersten Eintrag aus und verknüpfen diesen mit unserer Zutat. 
+    ![Verknüpfung mit GND für die Zutat Petersilie](../img/annotation-term-normalisation.PNG)
+    Ein Blick auf die TEI-Ansicht auf der rechten Seite zeigt uns, dass die soeben ausgezeichnete Zutat nun auf eine GND-Nummer referenziert. Auch wenn wir diese Annotationsmöglichkeit im TEI Publisher sehr spannend finden, ist sie für unser Beispielprojekt an dieser Stelle leider nicht optimal, da wir unsere Zutaten bereits über [OpenRefine](https://digedtnt.github.io/openrefine/) mit Wikidata-Einträgen verknüpft haben, und wir im Sinne einer konsistenten Normalisierung Zutaten nicht verschieden annotieren möchten. 
+    Da sich die weiteren vordefinierten Annotationsmöglichkeiten nicht für unsere Textsorte eignen, brechen wir unseren Exkurs an dieser Stelle ab.
+
 
 ### b. Bearbeitung des ODD des Zutatenregisters
 
@@ -410,8 +425,6 @@ Um die App nun endgültig zu exportieren und dann auf einem Webserver, auf dem e
 
 # Kontakt
 
-**Unternehmensgröße:** (nicht eruierbar)
-
 **Weblink:** [https://teipublisher.com](https://teipublisher.com)
 
 <div class="table-responsive">
@@ -451,9 +464,10 @@ Um die App nun endgültig zu exportieren und dann auf einem Webserver, auf dem e
 
 ## Projekte, die dieses Tool genutzt haben
 
-* [Escher Briefedition](briefedition.alfred-escher.ch)
-* [Sammlung Schweizerischer Rechtsquellen online](editio.ssrq-online.ch)
+* [Escher Briefedition](briefedition.alfred-escher.ch): Der heute bekannte Briefbestand umfasst über 5‘000 Briefe von und an Alfred Escher, die auf verschiedenste Archive und Bibliotheken verteilt sind. Mit der (nach einem Pilot 2012) im Jahr 2015 integral freigeschalteten digitalen Edition wurden sie erstmals zusammengeführt, transkribiert, bearbeitet, kommentiert und vernetzt erschlossen. Mit der Publikation sowohl der Transkriptionen als auch der digitalisierten Originale wurde die weitere Forschung mit den Escher-Briefen stark vereinfacht und eine Plattform zur Untersuchung vielfältiger Forschungsfragen geschaffen. 
+* [Sammlung Schweizerischer Rechtsquellen online](editio.ssrq-online.ch): In der Sammlung Schweizerischer Rechtsquellen (SSRQ) werden von der Rechtsquellenstiftung des Schweizerischen Juristenvereins seit 1898 rechtshistorisch relevante Dokumente aus der gesamten Schweiz herausgegeben. Die auf mehr als 140 Editionseinheiten angewachsene Sammlung bietet Forschenden unterschiedlicher Fachdisziplinen einen Anlaufpunkt für rechts-, sozial-, kultur- und sprachhistorische Fragestellungen. 
 
+→ Weitere Projektreferenzen sind auf der ["Map" von e-editiones](https://www.e-editiones.org/map/) zu finden.
 
 ## Literatur
 

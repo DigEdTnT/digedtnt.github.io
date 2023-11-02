@@ -313,7 +313,7 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
   ![Änderung der automatisch generierten xml:id](../img/register-add-xml-id.PNG)
   Wir geben hier unseren neuen Wert - in unserem Fall die englische Übersetzung - ein und speichern unsere Änderung.
   ![Eingabe einer individuellen xml:id](../img/register-xml-id.PNG)
-  → Falls man nur nach dem Begriff "Nelke" im Register sucht, wird die Substring-Suche im Übrigen nur durch das Betätigen des Buttons "Filtern" aktiviert und nur so kann wie in unserem Fall die Nelke, die unter "Gewürznelke" eingetragen ist, auch gefunden werden. Es hat sich während unserer Arbeit jedoch herausgestellt, dass dieser Button nicht immer angezeigt wird. Leider ist auch keine Suche nach den frühneuhochdeutschen Schreibweisen möglich, die im Eintrag in den `<label>`-Elementen mit dem `@alt`-Attribut gespeichert sind. Wenn wir unser Register also um alternative Schreibweisen erweitern wollen, müssten wir bei jedem Eintrag in die Registeransicht wechseln und manuell überprüfen, ob die im Manuskript auftretende Schreibung bereits festgehalten wurde.
+  → Falls man nur nach dem Begriff "Nelke" im Register sucht, wird die Substring-Suche im Übrigen nur durch das Betätigen des Buttons "Filtern" aktiviert und nur so kann wie in unserem Fall die Nelke, die unter "Gewürznelke" eingetragen ist, auch gefunden werden. Dieser Filter-Button wird jedoch nur angezeigt, wenn man das Fenster für die Suche nach Registereinträgen entsprechend vergrößert. Für unser Projekt hat sich hinsichtlich des Registers als nachteilig herausgestellt, dass keine Suche nach den frühneuhochdeutschen Schreibweisen möglich, die im Eintrag in den `<label>`-Elementen mit dem `@alt`-Attribut gespeichert sind. Wenn wir unser Register also um alternative Schreibweisen erweitern wollen, müssten wir bei jedem Eintrag in die Registeransicht wechseln und manuell überprüfen, ob die im Manuskript auftretende Schreibung bereits festgehalten wurde.
 
 ## 5. Export der Dokumente
 * Um die XML-Dateien auf unserem lokalen Gerät zu speichern, gehen wir mit einem Rechtsmausklick auf jenen Ordner, dessen Inhalte wir herunterladen wollen, und klicken auf "Exportieren".
@@ -324,8 +324,6 @@ Anhand eines [Beispielprojekts](https://digedtnt.github.io/about/#rezeptsammlung
 
 
 # Kontakt
-
-**Unternehmensgröße:**
 
 **Weblink:** [www.ediarum.org](https://www.ediarum.org/)
 
