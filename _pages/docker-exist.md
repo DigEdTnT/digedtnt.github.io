@@ -26,7 +26,7 @@ permalink: /docker-exist/
     {% include image.html url="../data/pipelines/pipeline_1/ediarum/img/existdb-dashboard.PNG" description="eXist im Browser" %}
 
 * Im Dashboard können wir uns nun als "admin" ohne Passwort-Eingabe anmelden.
-    {% include image.html url="../data/pipelines/pipeline_1/ediarum/img/existdb-dashboard.PNG" description="Dashboard von eXist im Browser" %}
+    {% include image.html url="../data/pipelines/pipeline_1/ediarum/img/existdb-login.PNG" description="Dashboard von eXist im Browser" %}
 
 
 ## TEI Publisher
@@ -47,4 +47,20 @@ permalink: /docker-exist/
     Nach einem Klick auf exist-data finden wir im Reiter <strong>Data</strong> auch eine Ordnerstrutkur vor, in der die Daten der eXist-Datenbank gespeichert werden. 
     {% include image.html url="../data/pipelines/pipeline_1/teipublisher/img/docker-existdata-data.PNG" description="In Docker gespeicherte Daten der eXist-Datenbank" %}
 
+## ediarum.WEB
 
+* Nach der Installation von Docker Desktop müssen wir noch ein Docker-Image von eXist-db installieren. ediarum.WEB wurde mit den eXist-db-Versionen 3.2.0, 4.6.1 und 5.2.0 getestet. Wir entscheiden uns dafür, die aktuellste dieser Version
+zu installieren und führen dazu folgenden Befehl im Terminal aus:
+    ```terminal
+    docker pull existdb/existdb:5.2.0
+    ```
+* Nach Abschluss des Pull-Vorgangs legen wir über das Terminal unter Angabe des des Ports (8080:8080 für unseren Localhost) und eines Namens (ediarum_web) den eXist-db-Container an:
+   ```terminal
+    docker run -it -d -p 8080:8080 -p 8443:8443 --name ediarum_web existdb/existdb:5.2.0
+    ```
+* Wenn wir nun Docker Desktop  öffnen, finden wir dort einen eXist-db-Container mit dem Namen "ediarum_web".
+    {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/eXist.PNG" description="eXist-db in Docker Desktop" %}
+* Mit einem Klick auf den Localhost-Port (8080:8080) öffnet sich eXist-bd nun im Browser.
+    {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/existdb-dashboard.PNG" description="eXist im Browser" %}    
+* Im Dashboard können wir uns nun als "admin" ohne Passwort-Eingabe anmelden.
+    {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/existdb-dashboard.PNG" description="Dashboard von eXist im Browser" %}
