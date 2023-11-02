@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Step 1: Add a "Copy" button to each code block.
   var codeBlocks = document.querySelectorAll(
-    ".language-xml .highlight .highlight"
+    ".highlighter-rouge .highlight .highlight"
   );
   codeBlocks.forEach(function (block) {
     var button = document.createElement("button");
