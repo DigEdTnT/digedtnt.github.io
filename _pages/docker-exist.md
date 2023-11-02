@@ -59,7 +59,7 @@ zu installieren und führen dazu folgenden Befehl im Terminal aus:
     docker run -it -d -p 8080:8080 -p 8443:8443 --name ediarum_web existdb/existdb:5.2.0
     ```
 * Wenn wir nun Docker Desktop  öffnen, finden wir dort einen eXist-db-Container mit dem Namen "ediarum_web".
-    {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/eXist.PNG" description="eXist-db in Docker Desktop" %}
+    {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/eXist.png" description="eXist-db in Docker Desktop" %}
 * Mit einem Klick auf den Localhost-Port (8080:8080) öffnet sich eXist-bd nun im Browser.
     {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/existdb-dashboard.PNG" description="eXist im Browser" %}    
 * Im Dashboard können wir uns nun als "admin" ohne Passwort-Eingabe anmelden.
