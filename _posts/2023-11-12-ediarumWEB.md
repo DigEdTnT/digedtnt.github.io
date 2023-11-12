@@ -161,11 +161,11 @@ Anhand eines[ eispielprojekts](https://digedtnt.github.io/about/#briefsammlung-p
 
     * Nach Starten von eXist-db und Einloggen als Admin kann die XAR-Datei über den Package Manager hochgeladen werden:
 
-        {url="../data/pipelines/pipeline_2/ediarum_web/img/upload_ediarum_web.png" description="Upload von ediarum.WEB in die eXist-db" %} 
+        {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/upload_ediarum_web.png" description="Upload von ediarum.WEB in die eXist-db" %} 
 
     * _ediarum.WEB_ wird nicht im Package Manager als App angezeigt, betätigt man aber die Launcher-Schaltfläche und startet dann die eXide-IDE, findet man _ediarum.WEB_ im Ordner “apps” vor.
 
-        {url="../data/pipelines/pipeline_2/ediarum_web/img/ediarum_web_installiert.png" description="ediarum.WEB in der eXide-IDE" %}
+        {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/ediarum_web_installiert.png" description="ediarum.WEB in der eXide-IDE" %}
 
 * **Erzeugen eines Projekttemplates mittels Apache Ant:** [In Bearbeitung]
 
