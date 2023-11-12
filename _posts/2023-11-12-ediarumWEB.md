@@ -2,7 +2,7 @@
 
 layout: post
 
-title: ediarum.web
+title: ediarum.WEB
 
 categories: [tool, ediarum.WEB, publikation, tei, opensource]
 
@@ -38,8 +38,7 @@ ediarum.WEB ist ein sich in Entwicklung befindliches Modul von [ediarum](https:/
     * Einbindung einer Suche möglich
 * API-Einbindung
 
-## 
-    Voraussetzungen
+##Voraussetzungen
 
 
 Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetzen und andererseits auch hinsichtlich der Software-Umgebung gewisse Anforderungen stellen.
@@ -136,8 +135,7 @@ Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolg
 * Kontinuierliche Weiterentwicklung (letztes Release im Mai 2023)
 * Hilfsbereiter und reaktionsschneller Support 
 
-## 
-    Herausforderungen & Probleme
+## Herausforderungen & Probleme
 
 * Höhere Einstiegsvoraussetzungen:
     * Zumindest Grundvertrautheit mit eXist-db erforderlich, idealerweise fortgeschrittene Kenntnisse
@@ -147,14 +145,14 @@ Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolg
 
 # Einrichtung & Erste Schritte
 
-Anhand eines[ Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-pipeline-2), in dem mit handgeschriebenen Briefen des Linguisten Hugo Schuchardt (1842-1927) aus dem 19. Jahrhundert bzw. 20. Jahrhundert gearbeitet wird, soll nachfolgend ein möglicher Arbeitsablauf mit dem Publikationstool _ediarum.WEB_beschrieben werden. In einem ersten Schritt wurden die handgeschriebenen Briefe bereits mittels des OCR/HTR-Tools[ Transkribus Lite](https://digedtnt.github.io/transkribus/) transkribiert. Danach wurde der TEI/XML-Export in den TEI/XML-Editor[ FairCopy](https://digedtnt.github.io/faircopy/) ingestiert und tiefergehend annotiert, wobei Named Entities(Personen, Orte und Organisationen) ausgezeichnet wurden. Diese Named Entities wurden im Zuge des ersten Teils der [Transition](https://digedtnt.github.io/transition-faircopy-basic/) aus den Briefen extrahiert und dann mittels des Normalisierungstools _[ba[sic?]](https://digedtnt.github.io/basic/)_ um Normdaten ergänzt (Links auf GND- und GeoNames-Einträge). Danach wurden diese erhobenen Informationen im zweiten Teil der [Transition](https://digedtnt.github.io/transition-faircopy-basic/) wieder mit den Briefen zusammengeführt. In der letzten, hier dokumentierten Phase des Beispielprojekts sollen nun die Möglichkeiten der Publikation der Briefe mittels des Tools _ediarum.WEB_ erprobt werden.
+Anhand eines[ eispielprojekts](https://digedtnt.github.io/about/#briefsammlung-pipeline-2), in dem mit handgeschriebenen Briefen des Linguisten Hugo Schuchardt (1842-1927) aus dem 19. Jahrhundert bzw. 20. Jahrhundert gearbeitet wird, soll nachfolgend ein möglicher Arbeitsablauf mit dem Publikationstool _ediarum.WEB_ beschrieben werden. In einem ersten Schritt wurden die handgeschriebenen Briefe bereits mittels des OCR/HTR-Tools[Transkribus Lite](https://digedtnt.github.io/transkribus/) transkribiert. Danach wurde der TEI/XML-Export in den TEI/XML-Editor[ FairCopy](https://digedtnt.github.io/faircopy/) ingestiert und tiefergehend annotiert, wobei Named Entities(Personen, Orte und Organisationen) ausgezeichnet wurden. Diese Named Entities wurden im Zuge des ersten Teils der [Transition](https://digedtnt.github.io/transition-faircopy-basic/) aus den Briefen extrahiert und dann mittels des Normalisierungstools _[ba[sic?]](https://digedtnt.github.io/basic/)_ um Normdaten ergänzt (Links auf GND- und GeoNames-Einträge). Danach wurden diese erhobenen Informationen im zweiten Teil der [Transition](https://digedtnt.github.io/transition-faircopy-basic/) wieder mit den Briefen zusammengeführt. In der letzten, hier dokumentierten Phase des Beispielprojekts sollen nun die Möglichkeiten der Publikation der Briefe mittels des Tools _ediarum.WEB_ erprobt werden.
 
 
 ## 1. Installation einzelner Komponenten
 
 
 
-* **Installation der XML-Datenbank eXist-db: **Da es sich bei ediarum.WEB um eine Bibliothek für eXist-db handelt, müssen wir diese Datenbank zunächst installieren. Wir entscheiden uns für die Installation via Docker Desktop, die [hier](https://digedtnt.github.io/docker-exist/) erläutert wird.
+* **Installation der XML-Datenbank eXist-db:** Da es sich bei ediarum.WEB um eine Bibliothek für eXist-db handelt, müssen wir diese Datenbank zunächst installieren. Wir entscheiden uns für die Installation via Docker Desktop, die [hier](https://digedtnt.github.io/docker-exist/) erläutert wird.
 * **Installation von _ediarum.WEB_ in _eXist-db_:** Im nächsten Schritt muss nun ediarum-WEB in eXist-db eingerichtet werden. 
     * Dafür laden wir aus dem _[ediarum.WEB-GitHub-Repository](https://github.com/ediarum/ediarum.WEB/releases)_ die aktuellste Version (2.1.1) von _ediarum.WEB_ als XAR-Datei herunter. 
 
@@ -162,30 +160,30 @@ Anhand eines[ Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-
 
     * Nach Starten von eXist-db und Einloggen als Admin kann die XAR-Datei über den Package Manager hochgeladen werden:
 
-        url="../data/pipelines/pipeline_2/ediarum_web/img/upload_ediarum_web.png" description="Upload von ediarum.WEB in die eXist-db" %} 
+        {url="../data/pipelines/pipeline_2/ediarum_web/img/upload_ediarum_web.png" description="Upload von ediarum.WEB in die eXist-db" %} 
 
     * _ediarum.WEB_ wird nicht im Package Manager als App angezeigt, betätigt man aber die Launcher-Schaltfläche und startet dann die eXide-IDE, findet man _ediarum.WEB_ im Ordner “apps” vor.
 
-        url="../data/pipelines/pipeline_2/ediarum_web/img/ediarum_web_installiert.png" description="ediarum.WEB in der eXide-IDE" %}
+        {url="../data/pipelines/pipeline_2/ediarum_web/img/ediarum_web_installiert.png" description="ediarum.WEB in der eXide-IDE" %}
 
-* **Erzeugen eines Projekttemplates mittels Apache Ant: **[In Bearbeitung]
+* **Erzeugen eines Projekttemplates mittels Apache Ant:** [In Bearbeitung]
 
 
 ## 2. Einrichtung des Projekts
 
 
 
-* Zunächst müssen wir unsere XML-Dateien, die Briefe Hugo Schuchardts und das Named-Entity-Register, in eXist-db hochladen. Dazu öffnen wir eXide, wählen im Reiter “File” und daraus “Manage” aus, woraufhin sich der Dateimanager öffnet. \
+* Zunächst müssen wir unsere XML-Dateien, die Briefe Hugo Schuchardts und das Named-Entity-Register, in eXist-db hochladen. Dazu öffnen wir eXide, wählen im Reiter “File” und daraus “Manage” aus, woraufhin sich der Dateimanager öffnet. 
 {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/exide_create_collection.png" description="Der eXide-Dateimanager" %}
 
-    Auf der Ebene der Ordner “apps” und “system” legen wir einen Ordner namens “projects” an und in diesem erzeugen wir folgende verschachtelte Struktur: \
+    Auf der Ebene der Ordner “apps” und “system” legen wir einen Ordner namens “projects” an und in diesem erzeugen wir folgende verschachtelte Struktur: 
 {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/folder_structure.png" description="Die neu angelegte Ordner-Struktur" %}
 
 
     Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol und laden die fünf Briefe Hugo Schuchardts hoch. Ist dies erledigt, kehren wir mittels Klick auf “done” zur Navigationsansicht zurück und laden in gleicher Weise das Named-Entity-Register in den Ordner “register” hoch.
 
 
-    {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/upload_xml.png" description="Das Hochladen der Briefe" %} \
+    {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/upload_xml.png" description="Das Hochladen der Briefe" %} 
  
 
 
@@ -247,7 +245,7 @@ Anhand eines[ Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-
 
     ```
 
-    * **Anlegen eines Objekts für die Briefe: **Um ein Objekt für die Briefe anzulegen, fügen wird folgendes XML-Snippet als Schwesternelement von `<project>` ein:
+    * **Anlegen eines Objekts für die Briefe:** Um ein Objekt für die Briefe anzulegen, fügen wird folgendes XML-Snippet als Schwesternelement von `<project>` ein:
 
         ```xml
         <object xml:id="briefe">
@@ -278,7 +276,7 @@ Anhand eines[ Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-
 
         {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/letters_list.png" description="Die Briefe in der Datenbank" %}
 
-    * **Anlegen der Objekte für Personen, Orte und Organisationen: **In gleicher Weise legen wir nun Objekte für die in unserem Named-Entity-Register verzeichneten Personen, Orte und Organisationen an. Zunächst passen wir den Pfad bei `<collection>` an, sodass er auf den Ordner verweist, in dem die Registerdatei abgelegt ist. Das `<root>`-Element wird ebenfalls abgeändert und lautet `tei:person`, `tei:place` oder `tei:org`. Ebenfalls muss noch der XPath-Ausdruck für das gewünschte Label angegeben werden, also z. B. “.//tei:persName/normalize-space()”
+    * **Anlegen der Objekte für Personen, Orte und Organisationen: **In gleicher Weise legen wir nun Objekte für die in unserem Named-Entity-Register verzeichneten Personen, Orte und Organisationen an. Zunächst passen wir den Pfad bei `<collection>` an, sodass er auf den Ordner verweist, in dem die Registerdatei abgelegt ist. Das `<root>`-Element wird ebenfalls abgeändert und lautet `tei:person`, `tei:place` oder `tei:org`. Ebenfalls muss noch der XPath-Ausdruck für das gewünschte Label angegeben werden, also z. B. `.//tei:persName/normalize-space()”`
 
         Personen:
 
@@ -334,9 +332,9 @@ Anhand eines[ Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-
 
         {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/named_entities.png" description="Die Indexseite mit den Schaltflächen für die Named Entities" %}
 
-    * **Anlegen von Properties (Filtern): **Im nächsten Schritt wollen wir Filter anlegen, sodass wir die Briefe z. B. nach Jahren oder Korrespondenzpartner:innen filtern können. Filter werden immer innerhalb von Objekten angelegt. Zunächst fügen wir innerhalb des Objekts “Briefe” folgenden XML-Block ein:
+    * **Anlegen von Properties (Filtern):** Im nächsten Schritt wollen wir Filter anlegen, sodass wir die Briefe z. B. nach Jahren oder Korrespondenzpartner:innen filtern können. Filter werden immer innerhalb von Objekten angelegt. Zunächst fügen wir innerhalb des Objekts “Briefe” folgenden XML-Block ein:
 
-        ```XML
+        ```xml
         <filters>
             <filter xml:id="correspYear">
                 <name>Jahr</name>
@@ -365,7 +363,7 @@ Anhand eines[ Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-
         In einem nächsten Schritt wollen wir einen Filter für die Personen anlegen, sodass wir diese alphabetisch nach Nachnamen filtern können. 
 
 
-        ```XML
+        ```xml
         <filters>
             <filter xml:id="alphabet">
                 <name>alphabetisch</name>
@@ -388,152 +386,62 @@ Anhand eines[ Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-
         **Anlegen der XSL-Transformation für die Briefe**: Um die Briefanzeige umzusetzen, muss zunächst ein XSLT-Stylesheet angelegt werden. Wir navigieren dazu in eXide innerhalb unserer App in den Ordner “resources” und danach in “xslt” und legen folgendes Stylesheet an:
 
 
-        ```XSLT
-       <xsl:stylesheet
-
-
+        ```xml
+        <xsl:stylesheet
             xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-
-
             xmlns:telota="http://www.telota.de"
-
-
             xmlns:tei="http://www.tei-c.org/ns/1.0" version="2.0" exclude-result-prefixes="tei">
-
-
-           <xsl:output method="html" doctype-system="http://www.w3.org/TR/html4/strict.dtd" doctype-public="-//W3C//DTD HTML 4.01//EN" indent="yes"/>
-
-
-           <xsl:template match="/tei:TEI">
-
-
-           	<div class="row">
-
-
-           		<div class="col-md-12">
-
-
-           			<xsl:apply-templates select="tei:text"/>
-
-
-           		</div>
-
-
-           	</div>
-
-
-           </xsl:template>
-
-
-           <xsl:template match="tei:p">
-
-
-           	<p>
-
-
-           		<xsl:apply-templates/>
-
-
-           	</p>
-
-
-           </xsl:template>
-
-
-           <xsl:template match="tei:dateline|tei:opener|tei:salute|tei:signed">
-
-
-           	<p>
-
-
-           		<xsl:apply-templates/>
-
-
-           	</p>
-
-
-           </xsl:template>
-
-
-               <xsl:template match="tei:hi">
-
-
-           	<hi style="text-decoration: underline;">
-
-
-           		<xsl:apply-templates/>
-
-
-           	</hi>
-
-
-           </xsl:template>
-
-
-           <xsl:template match="tei:persName">
-
-
-           	<a href="$base-url/personen/{@ref/substring-after(., '#')}">
-
-
-           		<xsl:apply-templates/>
-
-
-           	</a>
-
-
-           </xsl:template>
-
-
-           <xsl:template match="tei:placeName">
-
-
-           	<a href="$base-url/orte/{@ref/substring-after(., '#')}">
-
-
-           		<xsl:apply-templates/>
-
-
-           	</a>
-
-
-           </xsl:template>
-
-
-           <xsl:template match="tei:orgName">
-
-
-           	<a href="$base-url/organisationen/{@ref/substring-after(., '#')}">
-
-
-           		<xsl:apply-templates/>
-
-
-           	</a>
-
-
-           </xsl:template>
-
-
-       </xsl:stylesheet>
-
-
+            <xsl:output method="html" doctype-system="http://www.w3.org/TR/html4/strict.dtd" doctype-public="-//W3C//DTD HTML 4.01//EN" indent="yes"/>
+            <xsl:template match="/tei:TEI">
+                <div class="row">
+                    <div class="col-md-12">
+                        <xsl:apply-templates select="tei:text"/>
+                    </div>
+                </div>
+            </xsl:template>
+            <xsl:template match="tei:p">
+                <p>
+                    <xsl:apply-templates/>
+                </p>
+            </xsl:template>
+            <xsl:template match="tei:dateline|tei:opener|tei:salute|tei:signed">
+                <p>
+                    <xsl:apply-templates/>
+                </p>
+            </xsl:template>
+            <xsl:template match="tei:hi">
+                <hi style="text-decoration: underline;">
+                    <xsl:apply-templates/>
+                </hi>
+            </xsl:template>
+            <xsl:template match="tei:persName">
+                <a href="$base-url/personen/{@ref/substring-after(., '#')}">
+                    <xsl:apply-templates/>
+                </a>
+            </xsl:template>
+            <xsl:template match="tei:placeName">
+                <a href="$base-url/orte/{@ref/substring-after(., '#')}">
+                    <xsl:apply-templates/>
+                </a>
+            </xsl:template>
+            <xsl:template match="tei:orgName">
+                <a href="$base-url/organisationen/{@ref/substring-after(., '#')}">
+                    <xsl:apply-templates/>
+                </a>
+            </xsl:template>
+        </xsl:stylesheet>
         ```
 
 
         Wir belassen es zunächst bei einem basalen Stylesheet, in dem alle `<p>`-, `<dateline>`-, `<opener>`-, `<salute>`- und `<signed>`-Elemente in einem  eigenen Absatz  ausgegeben werden sollen. Zusätzlich wollen wir bei den in den Briefen vorkommenden Named Entities, also den Personen, Orten und Organisationen, eine Verlinkung zu den jeweiligen Einträgen in den Registern herstellen. Dazu nutzen wir bei den Personen folgendes Template:
 
 
-        ```XSLT
-
-
+        ```xml
        <xsl:template match="tei:persName">
            	<a href="$base-url/personen/{@ref/substring-after(., '#')}">
            		<xsl:apply-templates/>
            	</a>
         </xsl:template>
-
-
         ```
 
 
@@ -568,124 +476,54 @@ Anhand eines[ Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-
         **Anlegen der XSL-Transformation für die Personen**: Im nächsten Schritt legen wir im selben Ordner ein XSLT-Stylesheet namens “personen_details” an, um die Detailansicht der Personen einzurichten. Wir greifen hierbei auf das bereits vorhandene Stylesheet des Workshops zurück und passen es für unsere Zwecke an. Wir lassen Vor- und Nachnamen der Personen und den Verweis auf den Eintrag in der GND ausgeben. Wären in unserem Register noch weitere Informationen wie etwa Geburts- und Sterbedatum ebenfalls verzeichnet, könnten wir sie hier auch ausgeben lassen.
 
 
-        ```XSLT
-
-
-       <xsl:stylesheet
-
-
+        ```xml     
+        <xsl:stylesheet
             xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-
-
             xmlns:telota="http://www.telota.de"
-
-
             xmlns:tei="http://www.tei-c.org/ns/1.0" version="2.0" exclude-result-prefixes="tei">
-
-
-           <xsl:output method="html" doctype-system="http://www.w3.org/TR/html4/strict.dtd" doctype-public="-//W3C//DTD HTML 4.01//EN" indent="yes"/>
-
-
-           <xsl:template match="/tei:person">
-
-
-           	<div class="row">
-
-
-           		<div class="col-md-12">
-
-
-           			<h3>Grunddaten</h3>
-
-
-           			<div class="row">
-
-
-           				<label class="col-sm-2">Vorname:</label>
-
-
-           				<div class="col-sm-10">
-
-
-           					<xsl:value-of select="tei:persName/tei:forename"/>
-
-
-           				</div>
-
-
-           			</div>
-
-
-           			<div class="row">
-
-
-           				<label class="col-sm-2">Nachname:</label>
-
-
-           				<div class="col-sm-10">
-
-
-           					<xsl:value-of select="tei:persName/tei:surname"/>
-
-
-           				</div>
-
-
-           			</div>
-
-
-           			<h3>Verweise</h3>
-
-
-           			<ul>
-
-
-           				<xsl:apply-templates select="tei:idno"/>
-
-
-           			</ul>
-
-
-           		</div>
-
-
-           	</div>
-
-
-           </xsl:template>
-
-
-           <xsl:template match="tei:persName">
-
-
-           	<li>
-
-
-           		<xsl:value-of select="."/>
-
-
-           	</li>
-
-
-           </xsl:template>
-
-           <xsl:template match="tei:idno">
-           	<li>
-           		<a href="{.}">
-           			<xsl:value-of select="."/>
-           		</a>
-           	</li>
-           </xsl:template>
-       </xsl:stylesheet>
-
-
+            <xsl:output method="html" doctype-system="http://www.w3.org/TR/html4/strict.dtd" doctype-public="-//W3C//DTD HTML 4.01//EN" indent="yes"/>
+            <xsl:template match="/tei:person">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Grunddaten</h3>
+                        <div class="row">
+                            <label class="col-sm-2">Vorname:</label>
+                            <div class="col-sm-10">
+                                <xsl:value-of select="tei:persName/tei:forename"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-2">Nachname:</label>
+                            <div class="col-sm-10">
+                                <xsl:value-of select="tei:persName/tei:surname"/>
+                            </div>
+                        </div>
+                        <h3>Verweise</h3>
+                        <ul>
+                            <xsl:apply-templates select="tei:idno"/>
+                        </ul>
+                    </div>
+                </div>
+            </xsl:template>
+            <xsl:template match="tei:persName">
+                <li>
+                    <xsl:value-of select="."/>
+                </li>
+            </xsl:template>
+            <xsl:template match="tei:idno">
+                <li>
+                    <a href="{.}">
+                        <xsl:value-of select="."/>
+                    </a>
+                </li>
+            </xsl:template>
+        </xsl:stylesheet>
         ```
 
 
         Zuletzt müssen wir wiederum die `appconf.xml` adaptieren, um das Stylesheet mit den Personen zu verknüpfen. Dazu fügen wir folgendes XML-Snippet innerhalb des Personen-Objekts ein:
 
-        ```XSLT
-            
+        ```xml
         <views>
             <view id="default">
                 <xslt>resources/xslt/personen_details.xsl</xslt>
@@ -706,10 +544,7 @@ Anhand eines[ Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-
     * **Anpassen der Detailseite für Personen:** In einem nächsten Schritt wollen wir die Detailseite für Personen anpassen und bei jeder Person anzeigen lassen, in welchem Brief sie genannt wird.
         * Wir öffnen zunächst die Datei `controller.xql` und kommentieren folgende Codezeile ein:
 
-        ```XQuery 
-        edwebcontroller:view-with-feed("/personen/", "data-pages/personen-details.html", "object-type/personen/id/"),
-        ```
-
+        `edwebcontroller:view-with-feed("/personen/", "data-pages/personen-details.html", "object-type/personen/id/"),`
 
         {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/controller_persons.png" description="Bearbeitung der Datei “controller.xql”" %}
 
@@ -719,7 +554,7 @@ Anhand eines[ Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-
 
         * Um die Personen mit den Briefen zu verknüpfen, in denen sie genannt werden, muss eine relation (Beziehung) in der `appconf.xml` angelegt werden. Wir fügen folgendes XML-Snippet als Geschwisterlement von `<object>` ein, das wir dem [Dokumentation](https://github.com/ediarum/ediarum.WEB/blob/main/APPCONF.md#42-subject-and-object-condition) entnehmen und geringfügig für unsere Zwecke adaptieren:
 
-            ```XML
+            ```xml
             <relation xml:id="namensnennung" subject="personen" object="briefe">
                 <name>Namensnennung</name>
                 <collection>/letters</collection>
@@ -740,7 +575,7 @@ Anhand eines[ Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-
             ```
 
 
-            Mit `@xml:id` innerhalb von `<relation>` wird der Name der Beziehung angegeben, der auch von der API verwendet wird. Mit `@subject` wird die ID des Subjekts der Beziehung festgelegt, in unserem Fall die Personen, und mit `@object` das Objekt der Beziehung, in unserem Fall die Briefe. Mit `<name>` wird der Name des Beziehungstyps (“namensnennung”) definiert,<collection> gibt den relativen Pfad zur im `<project>` definierten Sammlung an, in der nach Beziehungen gesucht werden soll (im Ordner “letters”). Wiederum muss auch der TEI-Namespace in `<namespace>` angegeben werden. Mit `<root>` wird das Wurzelement jeder Beziehung angegeben, in unserem Fall bezieht sich der XPath-Ausdruck auf die im `<standOff>` der Briefe verzeichneten Personen. Bei `<label>` wird in unserem Fall ein XQuery-Ausdruck angegeben, um das Label der Beziehung zu festzulegen, in unserem Fall “Namensnennung”. Mit `<subject-condition>` und `<object-condition>` wird festgelegt, wie in einer Beziehung ein Subjekt mit einem Objekt verknüpft wird, dazu dienen XQuery-Funktionen, deren genauere Funktionsweise [hier](https://github.com/ediarum/ediarum.WEB/blob/main/APPCONF.md#4-definition-of-a-relation) dokumentiert ist. Wichtig ist, dass wir die in der Codezeile ´$this?xml/@key = $subject?id´ das `@key` durch `@xml:id` ersetzen, da dieses Attribut die ID der Personen enthält.
+            Mit `@xml:id` innerhalb von `<relation>` wird der Name der Beziehung angegeben, der auch von der API verwendet wird. Mit `@subject` wird die ID des Subjekts der Beziehung festgelegt, in unserem Fall die Personen, und mit `@object` das Objekt der Beziehung, in unserem Fall die Briefe. Mit `<name>` wird der Name des Beziehungstyps (“namensnennung”) definiert,<collection> gibt den relativen Pfad zur im `<project>` definierten Sammlung an, in der nach Beziehungen gesucht werden soll (im Ordner “letters”). Wiederum muss auch der TEI-Namespace in `<namespace>` angegeben werden. Mit `<root>` wird das Wurzelement jeder Beziehung angegeben, in unserem Fall bezieht sich der XPath-Ausdruck auf die im `<standOff>` der Briefe verzeichneten Personen. Bei `<label>` wird in unserem Fall ein XQuery-Ausdruck angegeben, um das Label der Beziehung zu festzulegen, in unserem Fall “Namensnennung”. Mit `<subject-condition>` und `<object-condition>` wird festgelegt, wie in einer Beziehung ein Subjekt mit einem Objekt verknüpft wird, dazu dienen XQuery-Funktionen, deren genauere Funktionsweise [hier](https://github.com/ediarum/ediarum.WEB/blob/main/APPCONF.md#4-definition-of-a-relation) dokumentiert ist. Wichtig ist, dass wir die in der Codezeile `$this?xml/@key = $subject?id` das `@key` durch `@xml:id` ersetzen, da dieses Attribut die ID der Personen enthält.
 
 
             {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/define_relation.png" description="Das Definieren einer Beziehung." %}
@@ -795,18 +630,16 @@ Anhand eines[ Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-
             {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/person_letters.png" description="Die mit der Person verknüpften Briefe" %}
 
     * **Anpassen der Detailseite der Briefe und Einrichtung eines seitenweisen Blätterns:**  Um ein seitenweises Blättern einzurichten, sind einige Schritte erforderlich.
-        * Zunächst öffnen wir die `controller.xql` und fügen folgendes Codesnippet ein
+        * Zunächst öffnen wir die `controller.xql` und fügen folgendes Codesnippet ein:
 
-        ```XQuery
-            edwebcontroller:view-with-feed("/personen/", "data-pages/briefe-details.html", "object-type/briefe/id/"),
-        ```
+        `edwebcontroller:view-with-feed("/personen/", "data-pages/briefe-details.html", "object-type/briefe/id/"),`
 
 
-            {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/controller_briefe.png" description="Einbinden der Detailseiten der Briefe" %}
+        {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/controller_briefe.png" description="Einbinden der Detailseiten der Briefe" %}
 
         * Als nächstes müssen wir die Referenzierung der einzelnen Teile des Brief-Objekts, in unserem Fall der Seiten, einrichten. Dazu kehren wir zur `appconf.xml` und fügen innerhalb des `<object>` der Briefe folgendes XML-Snippet ein:
 
-            ```XML
+            ```xml
             <parts separator="." prefix="-">
                 <part xml:id="page" starts-with="p">
                	    <root>tei:pb</root>
