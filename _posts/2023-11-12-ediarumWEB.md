@@ -176,14 +176,12 @@ Anhand eines[ eispielprojekts](https://digedtnt.github.io/about/#briefsammlung-p
 * Zunächst müssen wir unsere XML-Dateien, die Briefe Hugo Schuchardts und das Named-Entity-Register, in eXist-db hochladen. Dazu öffnen wir eXide, wählen im Reiter “File” und daraus “Manage” aus, woraufhin sich der Dateimanager öffnet. 
 {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/exide_create_collection.png" description="Der eXide-Dateimanager" %}
 
-    Auf der Ebene der Ordner “apps” und “system” legen wir einen Ordner namens “projects” an und in diesem erzeugen wir folgende verschachtelte Struktur: 
+Auf der Ebene der Ordner “apps” und “system” legen wir einen Ordner namens “projects” an und in diesem erzeugen wir folgende verschachtelte Struktur: 
 {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/folder_structure.png" description="Die neu angelegte Ordner-Struktur" %}
 
+Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol und laden die fünf Briefe Hugo Schuchardts hoch. Ist dies erledigt, kehren wir mittels Klick auf “done” zur Navigationsansicht zurück und laden in gleicher Weise das Named-Entity-Register in den Ordner “register” hoch.
 
-    Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol und laden die fünf Briefe Hugo Schuchardts hoch. Ist dies erledigt, kehren wir mittels Klick auf “done” zur Navigationsansicht zurück und laden in gleicher Weise das Named-Entity-Register in den Ordner “register” hoch.
-
-
-    {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/upload_xml.png" description="Das Hochladen der Briefe" %} 
+{% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/upload_xml.png" description="Das Hochladen der Briefe" %} 
  
 
 
