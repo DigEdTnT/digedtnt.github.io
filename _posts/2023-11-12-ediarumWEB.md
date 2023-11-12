@@ -6,8 +6,9 @@ title: ediarum.WEB
 
 categories: [tool, ediarum.WEB, publikation, tei, opensource]
 
-excerpt: 
+excerpt: ediarum.WEB ist eine Bibliothek für die eXist-db, die die schnelle und einfache Publikation von (TEI-)XML-Datein ermöglichen soll
 
+last_modified_at:   2023-11-12
 
 ---
 
@@ -38,7 +39,7 @@ ediarum.WEB ist ein sich in Entwicklung befindliches Modul von [ediarum](https:/
     * Einbindung einer Suche möglich
 * API-Einbindung
 
-##Voraussetzungen
+## Voraussetzungen
 
 
 Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetzen und andererseits auch hinsichtlich der Software-Umgebung gewisse Anforderungen stellen.
@@ -99,7 +100,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
    </td>
    <td>🦄
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -375,7 +376,6 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
 
         Als Wert von `<type>` geben wir diesmal “single” an, da immer nur ein Buchstabe des Alphabets ausgewählt werden soll. Da wir nach Nachnamen filtern wollen, geben wir den entsprechenden XPath-Ausdruck an. Damit im Filter lediglich der Anfangsbuchstabe der Nachnamen angezeigt werden soll, greifen wir diesen mittels Substring-Funktion im XQuery-Ausdruck heraus.
 
-    * asfaf
     * **Einrichten einer XSL-Transformation für Briefe und Personen:** Folgen wir momentan den Links auf der jeweiligen Indexseite der Briefe, Orte oder Personen, landen wir auf einer Detailansicht, bei der momentan lediglich der Hinweis angezeigt wird, dass eine XSL-Transformation eingerichtet werden soll. 
 
         {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/letter_detail.png" description="Die Detailansicht eines Briefes" %}
@@ -573,7 +573,7 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
             ```
 
 
-            Mit `@xml:id` innerhalb von `<relation>` wird der Name der Beziehung angegeben, der auch von der API verwendet wird. Mit `@subject` wird die ID des Subjekts der Beziehung festgelegt, in unserem Fall die Personen, und mit `@object` das Objekt der Beziehung, in unserem Fall die Briefe. Mit `<name>` wird der Name des Beziehungstyps (“namensnennung”) definiert,<collection> gibt den relativen Pfad zur im `<project>` definierten Sammlung an, in der nach Beziehungen gesucht werden soll (im Ordner “letters”). Wiederum muss auch der TEI-Namespace in `<namespace>` angegeben werden. Mit `<root>` wird das Wurzelement jeder Beziehung angegeben, in unserem Fall bezieht sich der XPath-Ausdruck auf die im `<standOff>` der Briefe verzeichneten Personen. Bei `<label>` wird in unserem Fall ein XQuery-Ausdruck angegeben, um das Label der Beziehung zu festzulegen, in unserem Fall “Namensnennung”. Mit `<subject-condition>` und `<object-condition>` wird festgelegt, wie in einer Beziehung ein Subjekt mit einem Objekt verknüpft wird, dazu dienen XQuery-Funktionen, deren genauere Funktionsweise [hier](https://github.com/ediarum/ediarum.WEB/blob/main/APPCONF.md#4-definition-of-a-relation) dokumentiert ist. Wichtig ist, dass wir die in der Codezeile `$this?xml/@key = $subject?id` das `@key` durch `@xml:id` ersetzen, da dieses Attribut die ID der Personen enthält.
+            Mit `@xml:id` innerhalb von `<relation>` wird der Name der Beziehung angegeben, der auch von der API verwendet wird. Mit `@subject` wird die ID des Subjekts der Beziehung festgelegt, in unserem Fall die Personen, und mit `@object` das Objekt der Beziehung, in unserem Fall die Briefe. Mit `<name>` wird der Name des Beziehungstyps (“namensnennung”) definiert, `<collection>` gibt den relativen Pfad zur im `<project>` definierten Sammlung an, in der nach Beziehungen gesucht werden soll (im Ordner “letters”). Wiederum muss auch der TEI-Namespace in `<namespace>` angegeben werden. Mit `<root>` wird das Wurzelement jeder Beziehung angegeben, in unserem Fall bezieht sich der XPath-Ausdruck auf die im `<standOff>` der Briefe verzeichneten Personen. Bei `<label>` wird in unserem Fall ein XQuery-Ausdruck angegeben, um das Label der Beziehung zu festzulegen, in unserem Fall “Namensnennung”. Mit `<subject-condition>` und `<object-condition>` wird festgelegt, wie in einer Beziehung ein Subjekt mit einem Objekt verknüpft wird, dazu dienen XQuery-Funktionen, deren genauere Funktionsweise [hier](https://github.com/ediarum/ediarum.WEB/blob/main/APPCONF.md#4-definition-of-a-relation) dokumentiert ist. Wichtig ist, dass wir die in der Codezeile `$this?xml/@key = $subject?id` das `@key` durch `@xml:id` ersetzen, da dieses Attribut die ID der Personen enthält.
 
 
             {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/define_relation.png" description="Das Definieren einer Beziehung." %}
