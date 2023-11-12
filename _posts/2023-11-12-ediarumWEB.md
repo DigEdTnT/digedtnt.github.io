@@ -193,7 +193,7 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
 
 * **Anpassen des Titels der Indexsseite:** Zuerst wollen wir den Titel unseres Projekts abändern und navigieren dazu über eXide in den Ordner “templates” und öffnen die Datei “page.html”. Dort ändern wir die beiden Vorkommnisse von “Workshop” auf “Hugo Schuchardt: Briefe” ab, speichern die Datei und laden dann die Indexseite neu. 
 
-    {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/upload_xml.png" description="Die neue Indexsseite" %} 
+    {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/landing_page_schuchardt.png" description="Die neue Indexsseite" %} 
 
 
     Den Footer und die Projektbeschreibung passen wir zunächst nicht an, beiden werden wir uns später zuwenden.
@@ -726,8 +726,7 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
 
 * [GitHub](https://github.com/ediarum/ediarum.WEB) (API.md, APPCONF.md, FEATURES.md, LIBRARIES.md, README.md)
 
-## 
-    Tutorials
+## Tutorials
 
 * [Erste Schritte](https://www.ediarum.org/docs/ediarum-web-step-by-step/index.html#/) 
 
