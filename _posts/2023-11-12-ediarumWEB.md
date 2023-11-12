@@ -146,7 +146,7 @@ Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolg
 
 # Einrichtung & Erste Schritte
 
-Anhand eines[ eispielprojekts](https://digedtnt.github.io/about/#briefsammlung-pipeline-2), in dem mit handgeschriebenen Briefen des Linguisten Hugo Schuchardt (1842-1927) aus dem 19. Jahrhundert bzw. 20. Jahrhundert gearbeitet wird, soll nachfolgend ein möglicher Arbeitsablauf mit dem Publikationstool _ediarum.WEB_ beschrieben werden. In einem ersten Schritt wurden die handgeschriebenen Briefe bereits mittels des OCR/HTR-Tools[Transkribus Lite](https://digedtnt.github.io/transkribus/) transkribiert. Danach wurde der TEI/XML-Export in den TEI/XML-Editor[ FairCopy](https://digedtnt.github.io/faircopy/) ingestiert und tiefergehend annotiert, wobei Named Entities(Personen, Orte und Organisationen) ausgezeichnet wurden. Diese Named Entities wurden im Zuge des ersten Teils der [Transition](https://digedtnt.github.io/transition-faircopy-basic/) aus den Briefen extrahiert und dann mittels des Normalisierungstools _[ba[sic?]](https://digedtnt.github.io/basic/)_ um Normdaten ergänzt (Links auf GND- und GeoNames-Einträge). Danach wurden diese erhobenen Informationen im zweiten Teil der [Transition](https://digedtnt.github.io/transition-faircopy-basic/) wieder mit den Briefen zusammengeführt. In der letzten, hier dokumentierten Phase des Beispielprojekts sollen nun die Möglichkeiten der Publikation der Briefe mittels des Tools _ediarum.WEB_ erprobt werden.
+Anhand eines[Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-pipeline-2), in dem mit handgeschriebenen Briefen des Linguisten Hugo Schuchardt (1842-1927) aus dem 19. Jahrhundert bzw. 20. Jahrhundert gearbeitet wird, soll nachfolgend ein möglicher Arbeitsablauf mit dem Publikationstool _ediarum.WEB_ beschrieben werden. In einem ersten Schritt wurden die handgeschriebenen Briefe bereits mittels des OCR/HTR-Tools [Transkribus Lite](https://digedtnt.github.io/transkribus/) transkribiert. Danach wurde der TEI/XML-Export in den TEI/XML-Editor [FairCopy](https://digedtnt.github.io/faircopy/) ingestiert und tiefergehend annotiert, wobei Named Entities (Personen, Orte und Organisationen) ausgezeichnet wurden. Diese Named Entities wurden im Zuge des ersten Teils der [Transition](https://digedtnt.github.io/transition-faircopy-basic/) aus den Briefen extrahiert und dann mittels des Normalisierungstools _[ba[sic?]](https://digedtnt.github.io/basic/)_ um Normdaten ergänzt (Links auf GND- und GeoNames-Einträge). Danach wurden diese erhobenen Informationen im zweiten Teil der [Transition](https://digedtnt.github.io/transition-faircopy-basic/) wieder mit den Briefen zusammengeführt. In der letzten, hier dokumentierten Phase des Beispielprojekts sollen nun die Möglichkeiten der Publikation der Briefe mittels des Tools _ediarum.WEB_ erprobt werden.
 
 
 ## 1. Installation einzelner Komponenten
@@ -275,7 +275,7 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
 
         {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/letters_list.png" description="Die Briefe in der Datenbank" %}
 
-    * **Anlegen der Objekte für Personen, Orte und Organisationen: **In gleicher Weise legen wir nun Objekte für die in unserem Named-Entity-Register verzeichneten Personen, Orte und Organisationen an. Zunächst passen wir den Pfad bei `<collection>` an, sodass er auf den Ordner verweist, in dem die Registerdatei abgelegt ist. Das `<root>`-Element wird ebenfalls abgeändert und lautet `tei:person`, `tei:place` oder `tei:org`. Ebenfalls muss noch der XPath-Ausdruck für das gewünschte Label angegeben werden, also z. B. `.//tei:persName/normalize-space()”`
+    * **Anlegen der Objekte für Personen, Orte und Organisationen:** In gleicher Weise legen wir nun Objekte für die in unserem Named-Entity-Register verzeichneten Personen, Orte und Organisationen an. Zunächst passen wir den Pfad bei `<collection>` an, sodass er auf den Ordner verweist, in dem die Registerdatei abgelegt ist. Das `<root>`-Element wird ebenfalls abgeändert und lautet `tei:person`, `tei:place` oder `tei:org`. Ebenfalls muss noch der XPath-Ausdruck für das gewünschte Label angegeben werden, also z. B. `.//tei:persName/normalize-space()”`
 
         Personen:
 
@@ -331,7 +331,7 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
 
         {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/named_entities.png" description="Die Indexseite mit den Schaltflächen für die Named Entities" %}
 
-    * **Anlegen von Properties (Filtern):** Im nächsten Schritt wollen wir Filter anlegen, sodass wir die Briefe z. B. nach Jahren oder Korrespondenzpartner:innen filtern können. Filter werden immer innerhalb von Objekten angelegt. Zunächst fügen wir innerhalb des Objekts “Briefe” folgenden XML-Block ein:
+    * **Anlegen von Properties (Filtern):** Im nächsten Schritt wollen wir Filter anlegen, sodass wir die Briefe z. B. nach Jahren oder die Personen alphabetisch filtern können. Filter werden immer innerhalb von Objekten angelegt, wir fügen also innerhalb des Objekts “Briefe” folgenden XML-Block ein:
 
         ```xml
         <filters>
@@ -343,14 +343,14 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
             </filter>
         </filters>
         ```
-
+        Die `appconf.xml` mit dem Filter nach Sendedatum der Briefe
 
         {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/filter.png" description="Anlegen des Jahreszahlen-Filters in der appconf.xml" %}
 
 
         Wiederum legen wir den Namen des Filters fest, der auch so im Frontend angezeigt wird und geben mittels XPath-Ausdruck an, wonach gefiltert werden soll. In unserem Fall wird mittels XPath auf das Sendedatum der Briefe zugegriffen (z. B. “1879-01-01”) und mittels Substring-Funktion das Jahr ausgewählt, das dann auch im Filter klickbar sein wird. Innerhalb des Filters finden sich auch zwei neue Elemente:
 
-        * `<type>`: Hier wird das Verhalten des Filters definiert, die möglichen Werte des Filter sind in der [Dokumentation](https://github.com/ediarum/ediarum.WEB/blob/main/APPCONF.md#base-information) einsehbar. Wir wählen “union”, das bedeutet, dass im Filter mehrere Eigenschaften auswählbar sind und nur Dokumente, die eine dieser Eigenschaften haben, angezeigt werden. Das heißt, wir können z. B. zwei (oder mehr) Jahre auswählen und es werden folgend nur die Briefe angezeigt, die in einem dieser Jahre abgeschickt wurden.
+        * `<type>`: Hier wird das Verhalten des Filters definiert, die möglichen Werte des Filter sind in der [Dokumentation](https://github.com/ediarum/ediarum.WEB/blob/main/APPCONF.md#base-information) einsehbar. Wir wählen “union”, das bedeutet, dass im Filter mehrere Eigenschaften auswählbar sind und nur Dokumente, die zumindest eine dieser Eigenschaften haben, angezeigt werden. Wir können also z. B. zwei (oder mehr) Jahre auswählen und es werden folgend nur die Briefe angezeigt, die in einem dieser Jahre abgeschickt wurden.
         * `<label-function>`: Hier kann optional eine XQuery-Funktion angegeben werden, mit der der im Filter angezeigte Wert (also z. B. die durch den XPath-Ausdruck ausgewählte Jahreszahl) noch weiter manipuliert werden könnte. Wir entscheiden gegen eine Manipulation und lassen den Wert durch die XQuery-Funktion unverändert zurückgeben.
 
         Nach dem Speichern und der Rückkehr zur Indexseite der Briefe finden wir rechts neben der Liste der Briefe unseren Jahreszahl-Filter, der beim Scrollen auf die Schaltfläche “Alle” aufklappt.
@@ -381,7 +381,7 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
         {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/letter_detail.png" description="Die Detailansicht eines Briefes" %}
 
 
-        **Anlegen der XSL-Transformation für die Briefe**: Um die Briefanzeige umzusetzen, muss zunächst ein XSLT-Stylesheet angelegt werden. Wir navigieren dazu in eXide innerhalb unserer App in den Ordner “resources” und danach in “xslt” und legen folgendes Stylesheet an:
+        **Anlegen der XSL-Transformation für die Briefe**: Um die Briefanzeige umzusetzen, muss zunächst ein XSLT-Stylesheet angelegt werden. Wir navigieren dazu in eXide innerhalb unserer App in den Ordner “resources” und danach in “xslt” und legen folgendes Stylesheet namens `briefe_details.xsl` an:
 
 
         ```xml
@@ -458,11 +458,12 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
         </views>
         ```
 
+        Die `appconf.xml` mit dem `<view>`-Element zum Einbinden des XSLT-Stylesheets:
 
         {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/xslt.png" description="Einbinden des XSLT-Stylesheets " %}
 
 
-        Mit `view/@id` wird die ID des Views angegeben, die auch von der API verwendet wird. Im `<xslt>`-Element wird der relative Pfad zum XSLT-Styleheet ausgehend von der App angegeben. Das `<label>`-Element bezeichnet wiederum die Bezeichnung der View, die im Frontend angezeigt werden könnte.
+        Mit `view/@id` wird die ID des Views angegeben, die auch von der API verwendet wird. Im `<xslt>`-Element wird der relative Pfad zum XSLT-Styleheet ausgehend von der App angegeben. Das `<label>`-Element gibt wiederum die Bezeichnung des Views, an die im Frontend angezeigt werden könnte.
 
 
         Rufen wir jetzt die Detailansicht eines Briefes auf, sehen wir, dass er gemäß dem Stylesheet transformiert und angezeigt wird:
@@ -471,7 +472,7 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
         {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/letter_stylesheet.png" description="Die Detailansicht eines Briefes" %}
 
 
-        **Anlegen der XSL-Transformation für die Personen**: Im nächsten Schritt legen wir im selben Ordner ein XSLT-Stylesheet namens “personen_details” an, um die Detailansicht der Personen einzurichten. Wir greifen hierbei auf das bereits vorhandene Stylesheet des Workshops zurück und passen es für unsere Zwecke an. Wir lassen Vor- und Nachnamen der Personen und den Verweis auf den Eintrag in der GND ausgeben. Wären in unserem Register noch weitere Informationen wie etwa Geburts- und Sterbedatum ebenfalls verzeichnet, könnten wir sie hier auch ausgeben lassen.
+        **Anlegen der XSL-Transformation für die Personen**: Im nächsten Schritt legen wir im selben Ordner ein XSLT-Stylesheet namens `personen_details.xsl` an, um die Detailansicht der Personen einzurichten. Wir greifen hierbei auf das bereits vorhandene Stylesheet des Workshops zurück und passen es für unsere Zwecke an. Wir lassen Vor- und Nachnamen der Personen und den Verweis auf den Eintrag in der GND ausgeben. Wären in unserem Register noch weitere Informationen wie etwa Geburts- und Sterbedatum ebenfalls verzeichnet, könnten wir sie hier auch ausgeben lassen.
 
 
         ```xml     
@@ -529,7 +530,8 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
             </view>
         </views>
         ```
-
+        
+        Die `appconf.xml` mit dem `<view>`-Element zum Einbinden des XSLT-Stylesheets für die Personen:
 
         {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/xslt_persons.png" description="Das XML-Snippet für die Personen" %}
 
@@ -617,17 +619,17 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
                 </div>
             </div>
             ```
-
+            Die Seite `personen-details.html` mit eingefügtem HTML-Snippet:
 
             {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/relation_persons.png" description="Anzeigen der Beziehung auf der Detailseite der Personen" %}
 
 
-            Öffnen wir jetzt eine Detailseite der Personen, werden die Briefe, in denen die Person genannt wird, in einer Tabelle angezeigt. 
+            Öffnen wir jetzt eine Detailseite der Personen, werden die Briefe, in denen die Person genannt wird, in einer Tabelle angezeigt. Durch Klick auf die Links können wir zu den jeweiligen Briefen navigieren.
 
 
             {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/person_letters.png" description="Die mit der Person verknüpften Briefe" %}
 
-    * **Anpassen der Detailseite der Briefe und Einrichtung eines seitenweisen Blätterns:**  Um ein seitenweises Blättern einzurichten, sind einige Schritte erforderlich.
+    * **Anpassen der Detailseite der Briefe und Einrichtung eines seitenweisen Blätterns:**  Momentan wird der gesamte Brieftext auf einer Seite angezeigt, was bei umfangreicheren Briefen ein längeres Scrollen bedeutet. Wir wollen deshalb ein seitenweises Blättern einzurichten, wozu einige Schritte erforderlich sind.
         * Zunächst öffnen wir die `controller.xql` und fügen folgendes Codesnippet ein:
 
         `edwebcontroller:view-with-feed("/personen/", "data-pages/briefe-details.html", "object-type/briefe/id/"),`
