@@ -654,8 +654,6 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
 
 # Kontakt
 
-**Unternehmensgröße:** 
-
 **Weblink:** [https://github.com/ediarum/ediarum.WEB](https://github.com/ediarum/ediarum.WEB)    
 
 
@@ -677,8 +675,3 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
 ## Tutorials
 
 * [Erste Schritte](https://www.ediarum.org/docs/ediarum-web-step-by-step/index.html#/) 
-
-
-# Factsheet
-
-[In Arbeit]
