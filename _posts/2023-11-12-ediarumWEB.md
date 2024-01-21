@@ -8,28 +8,20 @@ categories: [tool, ediarum.WEB, publikation, tei, opensource]
 
 excerpt: ediarum.WEB ist eine Bibliothek für die eXist-db, die die schnelle und einfache Publikation von (TEI-)XML-Datein ermöglichen soll
 
-last_modified_at:   2023-11-12
+last_modified_at:   2024-01-21
 
 ---
 
-
 # Allgemeine Beschreibung
-
-[In Bearbeitung]
 
 ediarum.WEB ist ein sich in Entwicklung befindliches Modul von [ediarum](https://www.ediarum.org/index.html), einem Open-Source-Softwareprojekt der TELOTA-Initiative der Berlin-Brandenburgischen Akademie der Wissenschaften. Bei ediarum.WEB handelt es sich um eine Bibliothek für die [eXist-db](http://www.exist-db.org), die es zum Ziel hat, das schnelle und einfache Publizieren von (TEI-)XML-Dateien zu ermöglichen.
 
 
 ## Anwendungsbereiche
 
-
-
 * Webpublikation von (TEI-)XML-Daten
 
-
 ## Funktionsübersicht
-
-
 
 * Erstellung von digitalen Editionen
     * Einfaches Anlegen von sogenannten Objekten (z. B. Briefen, Personen, Orte und Organisationen im Falle unserer Briefedition) und Beziehungen zwischen den Objekten (z. B. Person A als Absender von Brief B oder Nennung von Ort X in Brief Y)
@@ -41,32 +33,23 @@ ediarum.WEB ist ein sich in Entwicklung befindliches Modul von [ediarum](https:/
 
 ## Voraussetzungen
 
-
 Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetzen und andererseits auch hinsichtlich der Software-Umgebung gewisse Anforderungen stellen.
 
-
 ### **Erforderliche Kenntnisse**
-
-
 
 * TEI-XML
 * XPath
 * XQuery
 * XSLT
 * HTML/CSS-Grundkenntnisse
-* [Bootstrap](https://getbootstrap.com/)-Grundkenntnisse
-
+* JavaScript
 
 ### **Benötigte Software**
 
-
-
 * eXist-db 
-* Docker Desktop (für eine weniger fehleranfällige Installation von eXist-db)
-
+* Docker Desktop (für eine einfachere Installation von eXist-db)
 
 ## Tool-Kompatibilität
-
 
 <table>
   <tr>
@@ -112,10 +95,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 </table>
 
 
-
 ## Kostenübersicht
-
-
 
 * **_ediarum.WEB_ & _eXist-db_:** 
     * kostenlos
@@ -125,10 +105,7 @@ Jedes Tool kann einerseits bestimmte Vorkenntnisse der Benutzer:innen voraussetz
 
 Da jedes Projekt unterschiedliche Anforderungen mit sich bringt, sollen nachfolgend mögliche Vor- und Nachteile des getesteten Tools dargestellt werden. 
 
-
 ## Stärken
-
-
 
 * Vorkonfiguriertes Basislayout, das adaptiert werden kann
 * Basale digitale Editionen mit typischen Funktionalitäten (z. B. Filter bei Objekten wie Personen (z. B. alphabetisch) und Texten (z. B. nach Jahreszahl) schnell und relativ einfach umsetzbar
@@ -151,8 +128,6 @@ Anhand eines[Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-p
 
 ## 1. Installation einzelner Komponenten
 
-
-
 * **Installation der XML-Datenbank eXist-db:** Da es sich bei ediarum.WEB um eine Bibliothek für eXist-db handelt, müssen wir diese Datenbank zunächst installieren. Wir entscheiden uns für die Installation via Docker Desktop, die [hier](https://digedtnt.github.io/docker-exist/) erläutert wird.
 * **Installation von _ediarum.WEB_ in _eXist-db_:** Im nächsten Schritt muss nun ediarum-WEB in eXist-db eingerichtet werden. 
     * Dafür laden wir aus dem _[ediarum.WEB-GitHub-Repository](https://github.com/ediarum/ediarum.WEB/releases)_ die aktuellste Version (2.1.1) von _ediarum.WEB_ als XAR-Datei herunter. 
@@ -167,12 +142,7 @@ Anhand eines[Beispielprojekts](https://digedtnt.github.io/about/#briefsammlung-p
 
         {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/ediarum_web_installiert.png" description="ediarum.WEB in der eXide-IDE" %}
 
-* **Erzeugen eines Projekttemplates mittels Apache Ant:** [In Bearbeitung]
-
-
 ## 2. Einrichtung des Projekts
-
-
 
 * Zunächst müssen wir unsere XML-Dateien, die Briefe Hugo Schuchardts und das Named-Entity-Register, in eXist-db hochladen. Dazu öffnen wir eXide, wählen im Reiter “File” und daraus “Manage” aus, woraufhin sich der Dateimanager öffnet. 
 {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/exide_create_collection.png" description="Der eXide-Dateimanager" %}
@@ -183,13 +153,8 @@ Auf der Ebene der Ordner “apps” und “system” legen wir einen Ordner name
 Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol und laden die fünf Briefe Hugo Schuchardts hoch. Ist dies erledigt, kehren wir mittels Klick auf “done” zur Navigationsansicht zurück und laden in gleicher Weise das Named-Entity-Register in den Ordner “register” hoch.
 
 {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/upload_xml.png" description="Das Hochladen der Briefe" %} 
- 
-
-
 
 ## 3. Bearbeitung der Dokumente
-
-
 
 * **Anpassen des Titels der Indexsseite:** Zuerst wollen wir den Titel unseres Projekts abändern und navigieren dazu über eXide in den Ordner “templates” und öffnen die Datei “page.html”. Dort ändern wir die beiden Vorkommnisse von “Workshop” auf “Hugo Schuchardt: Briefe” ab, speichern die Datei und laden dann die Indexseite neu. 
 
@@ -202,9 +167,7 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
 
     {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/appconf.png" description="Die Datei appconf.xml" %}
 
-
     Wir ändern die dort im `<project>`-Element vorhandenen Daten wie folgt ab:
-
 
     ```xml
     <config
@@ -216,7 +179,6 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
         </project>
     </config>
     ```
-
 
     Folgende Informationen werden hier mittels XML-Elemente festgelegt:
 
@@ -648,7 +610,6 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
             </parts>
             ```
 
-
             Die Attribute `@separator` und `@prefix` müssen verpflichtend angegeben werden. Ersteres legt fest, wie Teile und Unterteile im Falle von Verschachtelung abgeteilt würden (also z. B. durch Punkt wie in unserem Fall). Zweiteres legt fest, wie die Namespaces (`@starts-with`) von den Werten getrennt werden (also z. B. durch Bindestrich in unserem Fall wie etwa “page-1”). `<root>` legt wieder das Wurzelelement des Teils fest, in unserem Fall die Seiten (`<tei:pb>`), `<id>` gibt die ID des Teils an, in unserem Fall das `@n`.
 
 
@@ -686,20 +647,10 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
                </div>
            </div>
             ```
-
-
             Navigieren wir nun zu der Detailansicht eines Briefes, zeigt sich, dass nur die erste Seite angezeigt wird und ein Navigationsmenü zur Verfügung steht, mit dem zwischen den einzelnen Seiten umgeschaltet werden kann.
 
 
             {% include image.html url="../data/pipelines/pipeline_2/ediarum_web/img/briefe_pages.png" description="Das Menü zum Umschalten zwischen den einzelnen Briefseiten" %}
-
-    * **Einfügen einer Suchfunktion:** [In Arbeit]
-
-
-## 5. Export 
-
-[In Arbeit]
-
 
 # Kontakt
 
@@ -717,34 +668,15 @@ Danach navigieren wir in den Ordner “letters”, klicken auf das Wolkensymbol 
   </tr>
 </table>
 
-
-
 # Ressourcen
 
-
 ## Dokumentation
-
-
 
 * [GitHub](https://github.com/ediarum/ediarum.WEB) (API.md, APPCONF.md, FEATURES.md, LIBRARIES.md, README.md)
 
 ## Tutorials
 
 * [Erste Schritte](https://www.ediarum.org/docs/ediarum-web-step-by-step/index.html#/) 
-
-
-## Projekte, die dieses Tool genutzt haben
-
-
-
-* 
-
-
-## Literatur
-
-
-
-* Derzeit ist keine Literatur zu _ediarum.WEB_ bekannt
 
 
 # Factsheet
