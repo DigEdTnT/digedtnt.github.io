@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "How to cite the workshop"
+authors:
+  - family-names: Pollin
+    given-names: Christopher
+    orcid: 0000-0002-4879-129X
+  - family-names: Strutz
+    given-names: Sabrina
+  - family-names: Reiter
+    given-names: Georg maximilian
+  - family-names: Steiner
+    given-names: Christian
+    orcid: 0000-0002-6658-4622
+  - family-names: Klug
+    given-names: Helmut W.
+    orcid: 0000-0002-7461-5820y
+title: 'Digital Edition Creation Pipelines: Tools and Transitions (DigEdTnT)'
+date-released: 2024-01-21
+version: 1.0
+License: CC-BY
+URL: https://digedtnt.github.io
+description: The DigEdTnT project, funded by the CLARIAH-AT 2022 call for Interoperability and Reusability of DH Data and Tools, aims to develop best practice pipelines and tutorials for selected tools. These tools will support different stages of digital edition creation, including image and text management, transcription, modelling of text phenomena using appropriate markup languages, semantic annotation and indexing. A key objective is to address transitions or challenges that arise when transferring output between tools, such as from FromThePage to ediarum for further annotation. The workshop repository, accessible at https://digedtnt.github.io, includes presentation slides, code samples, and additional resources, providing a comprehensive guide to applied generative AI in the digital humanities. The report is an essential resource for those involved in digital edition projects, providing insights into the use and transition between different digital tools.
+type: report
+keywords:
+  - Digital Humanities 
+  - Digital Editions 
+  - Tool Interoperability
+  - Workflows
+  - ediarum
+  - FromThePage
+  - FairCopy
+  - Transkribus
+  - TEI
+  - OpenRefine
+  - ba[sic]
+  - teiPublisher   
