@@ -77,12 +77,12 @@ Die Vorteile eines Custom GPT umfassen die Reduzierung von Halluzinationen, eine
 Die Beschreibung ist die Information, die auch anderen User:innen in ChatGPT Plus angezeigt wird. ChatGPT Plus ist die kostenpflichtige Version von ChatGPT und ermöglicht den Zugang zu GPT-4 und somit auch zu benutzerdefinierten GPTs.
 
 ```
-Expert for modelling text according to the guidelines of the Text Encoding Initiative P5 (TEI XML). tei modeler is an experimental tool and offers possible suggestions (It can hallucinate).
+Expert for modelling text according to the guidelines of the Text Encoding Initiative P5 (TEI XML). teiModeler is an experimental tool and offers possible suggestions (It can hallucinate).
 ```
 
 ### Der System Prompt (Instruction)
 
-Die Anweisungen des TEI Modelers zielen darauf ab, einen Inputtext Schritt für Schritt zu analysieren, die Textphänomene zunächst zu diskutieren und dann in einer Tabelle gegenüberzustellen. Dies ist notwendig, um das Mapping explizit auszudrücken. Es ist wichtig zu berücksichtigen, dass Elemente und Attribute halluziniert werden können. Eine Überprüfung der Elemente in den TEI Guidelines ist daher notwendig. Anschließend werden Erläuterungen zum Mapping und zur Auswahl der TEI-Elemente sowie zwei exemplarische TEI-XML-Snippets generiert: Dabei handelt es sich lediglich um Möglichkeitsräume, die, wie gesagt, auch Halluzinationen enthalten können. Ziel ist es vielmehr, mit diesen Vorschlägen weiterzuarbeiten, indem das Custom GPT mit weiteren Kontextinformationen, Beispielen und Fragen ergänzt wird.
+Die Anweisungen des teiModeler zielen darauf ab, einen Inputtext Schritt für Schritt zu analysieren, die Textphänomene zunächst zu diskutieren und dann in einer Tabelle gegenüberzustellen. Dies ist notwendig, um das Mapping explizit auszudrücken. Es ist wichtig zu berücksichtigen, dass Elemente und Attribute halluziniert werden können. Eine Überprüfung der Elemente in den TEI Guidelines ist daher notwendig. Anschließend werden Erläuterungen zum Mapping und zur Auswahl der TEI-Elemente sowie zwei exemplarische TEI-XML-Snippets generiert: Dabei handelt es sich lediglich um Möglichkeitsräume, die, wie gesagt, auch Halluzinationen enthalten können. Ziel ist es vielmehr, mit diesen Vorschlägen weiterzuarbeiten, indem das Custom GPT mit weiteren Kontextinformationen, Beispielen und Fragen ergänzt wird.
 
 Die weiteren im System Prompt definierten Regeln (“Rules”) dienen dazu, das Verhalten des Custom GPT zu stabilisieren und zu konkretisieren. Beispielsweise ist es nicht notwendig, Modellierungsvorschläge für Elemente wie body, text oder teiHeader zu generieren.
 
