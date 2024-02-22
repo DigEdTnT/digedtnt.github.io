@@ -8,6 +8,10 @@ categories: [tool, modeling, teiModeler, ai]
 
 excerpt: Der teiModeler ist ein experimentelles "Custom GPT", das die Konvertierung von Texten in das TEI-XML-Format erleichtern und gezielte Kodierungsvorschläge für Projekte der digitalen Geisteswissenschaften liefern soll.
 
+factsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/fromthepage/factsheet+tooldoc/DigEdTnT_FactSheet_FromThePage.pdf
+
+tooldoc: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/fromthepage/factsheet+tooldoc/DigEdTnT_ToolDoc_FromThePage.pdf
+
 last_modified_at:   2024-02-22
 
 ---
@@ -17,6 +21,15 @@ last_modified_at:   2024-02-22
 [https://chat.openai.com/g/g-Og92YNQKZ-teimodeler](https://chat.openai.com/g/g-Og92YNQKZ-teimodeler) 
 
 Modellierung von Textdaten in den (digitalen) Geisteswissenschaften mittels TEI-XML spielt eine entscheidende Rolle, insbesondere in Editionsprojekten. Die Transformation von Texten in das TEI XML Format ist jedoch aufgrund des komplexen Regelwerks eine Herausforderung. Der "teiModeler" ist ein Custom GPT, das diesen Prozess durch die Generierung effizienter TEI XML Kodierungsvorschläge unterstützt.
+
+<div class="essence">
+ Der <span style="font-style:italic;">teiModeler</span> ist ein Custom GPT, das speziell für die Optimierung der Konvertierung von Texten in das TEI XML-Format entwickelt wurde. Durch die Generierung präziser Kodierungsvorschläge erleichtert er den Modellierungsprozess für digitale geisteswissenschaftliche Projekte, die eine sorgfältige Anpassung an die Standards der Text Encoding Initiative (TEI) erfordern. Obwohl der teiModeler den Kodierungsprozess effektiv unterstützt, kann es sein, dass zusätzliche Werkzeuge für tiefgehende und komplexe Annotationen, wie sie in den Digital Humanities (DH) benötigt werden, notwendig sind, um spezifische Annotationen und Validierungen durchzuführen. Als experimentelles Werkzeug erfordert teiModeler ein gezieltes Prompt Engineering, um sein volles Potenzial auszuschöpfen.
+</div>
+
+## Anwendungsbereiche
+
+* TEI-Modellierung
+* Experimentelles Werkzeug zur Unterstützung der TEI Gudilines.
 
 ## Vorbereitung der Textdaten
 
