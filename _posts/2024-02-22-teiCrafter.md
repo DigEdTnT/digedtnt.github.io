@@ -52,12 +52,13 @@ Es ist darauf ausgerichtet, die Erstellung von TEI-konformen Dokumenten durch it
 #### Description
 
 ```
+
 Expert automaton for converting plain text to TEI XML (Text Encoding Initiative P5) based on a mapping rule. Returns only <body> and descendants for more focus. teiCrafter is an experimental tool (it can hallucinate; feed it context and explicit mapping rules; use it iteratively).
 ```
 
 ### Der System Prompt (Instruction)
 
-todo 
+Der System Prompt ist die Anweisung, die dem teiCrafter vorgibt, wie es mit dem Eingabetext umgehen soll und dienst als Anleitung für das Custom GPT.
 
 ```
 You are an expert automaton for converting plain text to TEI XML (Text Encoding Initiative P5) based on a mapping rule. As input you get plain text between delimiters and the mapping rules as a markdown list. 
@@ -79,6 +80,14 @@ Rules:
 This is very important for my career!
 ```
 
+Diese Eingabeaufforderung enthält klare Anweisungen für das Modell:
+
+* Das Modell muss den bereitgestellten Plaintext und die Mapping-Regeln sorgfältig analysieren, um einen Arbeitsplan zu erstellen.
+* Unter Berücksichtigung der detaillierten Regeln wird der Plaintext in TEI XML umgewandelt, wobei nur das <body>-Element und seine Unterelemente zurückgegeben werden.
+* Die Regeln betonen die Wichtigkeit, den Originaltext zu erhalten, wohlgeformtes TEI XML zu produzieren, die Komplexität der Ausgabe zu erhalten und die Ausgabe kompakt zu halten, ohne Leerzeichen oder Einrückungen in den Markdown-Codeblöcken.
+
+Der Hinweis am Ende fordert die User:innen auf, Feedback zu geben oder Fragen zu stellen, wodurch die iterative Natur des Prozesses und die Notwendigkeit, die Ergebnisse zu überprüfen und anzupassen, unterstrichen wird.
+
 ### Knowledge
 
 Das Wissen des teiCrafter liegt in einer möglichst kompakten Notation. Diese wird strukturiert in mehreren Markdown Files abgebildet, um die sehr umfangreichen TEI Guidelines stark zu komprimieren und gleichzeitig das Custom GPT “in die richtige Richtung” zu lenken.
@@ -93,7 +102,7 @@ Das Wissen des teiCrafter liegt in einer möglichst kompakten Notation. Diese wi
 
 Das Custom GPT kann nur mit ChatGPT Plus verwendet werden. Aus diesem Grund stehen Ihnen die Anleitung und alle Daten zur Verfügung, um dieses Tool bei Bedarf in Ihrem System nachzubilden: [https://chat.openai.com/g/g-FEUt7Fq48-teicrafter](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter).
 
-Hier ist ein Beispiel für die Verwendung: 
+Das folgende Beispiel zeigt die Konvertierung eines handschriftlichen Briefes von Friedrich August Otto Benndorf an Hugo Schuchardt. Der Brief enthält spezifische Elemente wie Seitenumbrüche, Datumsangaben, Anreden und Unterschriften, die gemäß den definierten Mapping-Regeln in TEI XML kodiert werden müssen.
 
 ```
 Context:
@@ -112,6 +121,7 @@ Bdf
 ´´´
 
 Mapping rules:
+´´´
 * <div> Entire letter
 * <pb> Marks page breaks e.g. "|{n}|", multiple appearance possible, always as child of <div>
 * <dateline> Date/time reference of the letter
@@ -130,35 +140,30 @@ Mapping rules:
 * <date> Dates; when={YYYY-MM-DD}
 * <term> Languages
 * <foreign> Words in the context of discussing the linguistic phenomenon
+´´´
 ```
 
+Der "Kontext" liefert wichtige Hintergrundinformationen zum Textmaterial, das in TEI XML konvertiert werden soll.In diesem Beispiel bezieht sich der Kontext auf mehrsprachige handschriftliche Briefe von oder an Hugo Schuchardt (1842-1927). Diese Information ist wichtig, da sie dem teiCrafter hilft, den historischen und sprachlichen Kontext zu prozessieren, in dem die Konvertierung stattfindet. Der Kontext kann auch Hinweise darauf geben, welche spezifischen Aspekte bei der TEI-Kodierung besonders berücksichtigt werden müssen, z.B. Mehrsprachigkeit oder hilft bei der Normalisierung von Datumsangaben. 
 
-Mapping rules:
-* <div> Entire letter
-* <pb> Marks page breaks e.g. "|{n}|", multiple appearance possible, always as child of <div>
-* <dateline> Date/time reference of the letter
-* <date> in <dateline>
-* <opener> Opening of the letter
-* <closer> Closing of the letter
-* <salute> Salutations within the letter
-* <lb> Line breaks
-* <signed> Signature section
-* <postscript> Represents a postscript
-* <bibl> Contains bibliographical references
-* <p> Paragraphs
-* <persName> Person
-* <placeName> Place
-* <orgName> Organisation
-* <date> Dates; when={YYYY-MM-DD}
-* <term> Languages
-* <foreign> Words in the context of discussing the linguistic phenomenon
+Die "Mapping-Regeln" sind Anweisungen, die definieren, wie bestimmte Teile des Textes in TEI XML-Elemente umgewandelt werden sollen.Diese Regeln sind essentiell für die korrekte und konsistente Annotation des Textes.Im Beispiel umfassen die Regeln:
 
+* <div>: Enthält den gesamten Brief und dient als Hauptcontainer.
+* <pb>: Markiert Seitenbrüche, was wichtig ist, um die Originalstruktur des Dokuments in der digitalen Version nachzubilden.
+* <dateline>: Bezeichnet die Zeile im Brief, die das Datum und den Ort enthält.
+* <date>: Das eigentliche Datum des Briefes, das in einem standardisierten Format innerhalb von <dateline> angegeben wird.
+* <opener> und <closer>: Kennzeichnen die Einleitung bzw. den Schluss des Briefes, einschließlich der Grußformel.
+* <salute>, <signed>: Anreden und Unterschrift des Verfassers.
+* <lb>: Zeilenumbrüche, die die Lesbarkeit des Textes in der digitalen Version erhalten.
+* Spezifische Elemente wie <persName>, <placeName>, <orgName> für personen-, orts- oder organisationsbezogene Namen und <foreign> für fremdsprachige Ausdrücke.
+
+Diese Regeln ermöglichen eine detaillierte und strukturierte Erfassung des Briefes in TEI XML, wobei jedes Element des Originaltextes durch entsprechende Tags repräsentiert wird. Die genaue Anwendung der Mapping-Regeln ist entscheidend, um die historischen Dokumente für digitale Geisteswissenschaften zugänglich und analysierbar zu machen.
 
 
 ## Beispiel einer Konversation mit dem teiCrafter
 
 **User:**
 
+```
 Context:
 * Multilingual handwritten letters from or to Hugo Schuchardt (1842-1927).
 
@@ -175,6 +180,7 @@ Bdf
 ´´´
 
 Mapping rules:
+´´´
 * <div> Entire letter
 * <pb> Marks page breaks e.g. "|{n}|", multiple appearance possible, always as child of <div>
 * <dateline> Date/time reference of the letter
@@ -193,7 +199,10 @@ Mapping rules:
 * <date> Dates; when={YYYY-MM-DD}
 * <term> Languages
 * <foreign> Words in the context of discussing the linguistic phenomenon
+´´´
+```
 
+**teiCrafter:**
 
 To accurately transform the given plain text into TEI XML format according to the provided mapping rules, I will follow these steps:
 
@@ -219,8 +228,6 @@ Let's proceed with the transformation:
   </div>
 </body>
 ```
-
-**teiCrafter:**
 
 This TEI XML representation follows the provided mapping rules, embedding the structural and semantic markup necessary for representing the original text within the TEI guidelines. Special attention was given to accurately mark up the date, place, personal names, and the structure of the letter including the opener, body, and closer as per the TEI P5 standards.
 
