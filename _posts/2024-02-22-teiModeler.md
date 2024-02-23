@@ -9,14 +9,14 @@ last_modified_at:   2024-02-22
 
 # Custom GPT "teiModeler"
 
-{% include image.html url="../data/ai/img/teiModeler.png" description="https://chat.openai.com/g/g-FEUt7Fq48-teicrafter " %}
+{% include image.html url="../data/ai/img/teiModeler.png" description="https://chat.openai.com/g/g-Og92YNQKZ-teimodeler" %}
 
 
 <div class="essence">
  Modellierung von Textdaten in den (digitalen) Geisteswissenschaften mittels TEI XML spielt eine entscheidende Rolle, insbesondere in Editionsprojekten. Die Transformation von Texten in das TEI XML Format ist jedoch aufgrund des komplexen Regelwerks eine Herausforderung. Der <span style="font-style:italic;">teiModeler</span> ist ein experimentelles Custom GPT, das diesen Prozess durch die Generierung effizienter TEI XML Kodierungsvorschläge unterstützt. Dabei ist ein gezieltes Prompt Engineering, sowie ein kritischer Umgang mit Halluzinationen notwendig.
 </div>
 
-* [teimodeler in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter)
+* [teimodeler in ChatGPT Plus](https://chat.openai.com/g/g-Og92YNQKZ-teimodeler)
 
 ## Anwendungsbereiche
 
@@ -192,7 +192,7 @@ To model the historical financial transactions from the "Laban Morey Wheaton Day
 5. **Monetary Amounts**: Financial values associated with each transaction.
 6. **Credit and Debit Entries**: Indications of credit (Cr) and debit (DR) to account for transactions.
 
-### **Mapping to TEI Elements and Attributes**
+### Mapping to TEI Elements and Attributes
 
 Given the analysis, we can map these phenomena to TEI elements and attributes as follows:
 
@@ -299,8 +299,7 @@ Given the analysis, we can map these phenomena to TEI elements and attributes as
 </table>
 ```
 
-
-### **Detailed Explanation and TEI XML Snippets**
+### Detailed Explanation and TEI XML Snippets
 
 For the text provided, we can model one of the transactions as follows:
 
@@ -328,7 +327,7 @@ For credit and debit entries:
 
 This models a credit entry for Pliny Puffer involving an ax and the associated amount.
 
-### **Alternative Modelling**
+### Alternative Modelling
 
 Another way to model these transactions could involve using `&lt;list>` for grouping transactions per day and `&lt;entry>` for individual transactions, providing a structured view of daily activities.
 

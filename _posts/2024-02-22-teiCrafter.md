@@ -1,7 +1,7 @@
 ---
 layout: post
 title: teiCrafter
-categories: [tei, tool, annotation, erzeugung, teiCrafter, ai]
+categories: [tei, tool, annotation, teiCrafter, ai]
 excerpt: Der teiCrafter ist ein experimentelles "Custom GPT", das die Transformation von Plaintext nach TEI-XML-Format auf Basis einer Mapping System Prompt durchführt. 
 last_modified_at: 2024-02-23
 ---
@@ -14,6 +14,7 @@ last_modified_at: 2024-02-23
 <div class="essence">
 Die Erstellung von TEI XML ist oft zeitintensiv. Sprachmodelle wie GPT-4 können diesen Prozess durch die automatische Generierung von TEI XML beschleunigen. Das Custom GPT <span style="font-style:italic;">teiCrafter</span>, ein experimentelles AI-Tool, das eine sorgfältige Qualitätskontrolle durch die Benutzer:innen erfordert ("Editor in the Loop"), erlaubt es, Plaintext auf der Basis von expliziten Mapping-Regeln nach TEI XML zu überführen. Nach der Generierung durch "teiCrafter" ist die Validierung (Schema und Editor:in) ein notwendiger Schritt. User:innen sollten die Daten auf Korrektheit überprüfen und gegebenenfalls manuelle Anpassungen vornehmen.
 </div>
+
 
 * [teicrafter in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter)
 
