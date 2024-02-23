@@ -1,37 +1,58 @@
 ---
-
 layout: post
-
 title: teiCrafter
-
 categories: [tei, tool, annotation, erzeugung, teiCrafter, ai]
-
 excerpt: Der teiCrafter ist ein experimentelles "Custom GPT", das die Transformation von Plaintext nach TEI-XML-Format auf Basis einer Mapping System Prompt durchführt. 
-
-last_modified_at:   2024-02-22
-
+last_modified_at: 2024-02-22
 ---
 
 # Custom GPT "teiCrafter"
 
+{% include image.html url="../data/ai/img/teiCrafter.png" description="teiCrafter Logo" %}
+
 [https://chat.openai.com/g/g-FEUt7Fq48-teicrafter](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) 
 
+Die Erstellung von TEI XML, einem Standard für die Kodierung von Texten in den Geisteswissenschaften, ist oft zeitaufwändig. Sprachmodelle wie GPT-4 können diesen Prozess durch die automatische Generierung von TEI XML beschleunigen. Das Custom GPT "teiCrafter" sollte als experimentelles Werkzeug betrachtet werden, das eine sorgfältige Überwachung durch den Benutzer erfordert, um die Genauigkeit der Annotationen zu gewährleisten. Der "Editor in the Loop"-Ansatz ist wesentlich, um die Qualität der generierten Daten durch menschliche Überprüfung und Validierung durch ein Schema sicherzustellen. Benutzer müssen Mapping-Regeln definieren, die festlegen, wie Textelemente in TEI XML-Strukturen umgewandelt werden. Nach der Generierung durch "teiCrafter" ist die Validierung ein kritischer Schritt. Anwender sollten die Daten auf Korrektheit überprüfen und gegebenenfalls manuelle Anpassungen vornehmen. Validierungstools können dabei helfen, Fehler zu identifizieren und die Datenqualität zu verbessern.
+
 <div class="essence">
- Der <span style="font-style:italic;">teiCrafter</span> ist ein Custom GPT, das
+ Der <span style="font-style:italic;">teiCrafter</span> ist ein experimentelles Custom GPT, das für die Generierung und Annotation von TEI XML aus Plaintext entwickelt wurde. Durch die Anwendung spezifischer Mapping-Regeln unterstützt der teiCrafter den TEI-Kodierungsprozess, indem er eine XML-Ausgabe liefert. Die Einbindung des Editors in den Kodierungsprozess bleibt jedoch neben der Validierung durch ein Schema unerlässlich ("Editor in the Loop"), um die Genauigkeit der Annotationen zu gewährleisten und die Komplexität der TEI-Strukturen vollständig abzubilden.
 </div>
 
 ## Anwendungsbereiche
  
 * Experimentelles Werkzeug zur Generierung von TEI XML
+* Durch Mapping-Regel an beliebige (kürzere) Texte anpassbar
 
 ## Aufbau des Custom GPTs “teiModeler”
 
-### Beschreibung des teiModeler (Description)
+### Custom GPTs Allgemein
 
-Die Beschreibung ist die Information, die auch anderen User:innen in ChatGPT Plus angezeigt wird. ChatGPT Plus ist die kostenpflichtige Version von ChatGPT und ermöglicht den Zugang zu GPT-4 und somit auch zu benutzerdefinierten GPTs.
+Ein Custom GPT ist eine spezialisierte Version eines GPT, das eigens entwickelt und angepasst wurde, um den spezifischen Anforderungen und Aufgabenstellungen eines Nutzers gerecht zu werden. Diese maßgeschneiderten Modelle bieten eine Vielzahl von Funktionen, die auf die individuellen Bedürfnisse der Benutzer zugeschnitten sind, und ermöglichen eine hohe Flexibilität in der Anwendung.
+
+Ein wesentlicher Bestandteil des Custom GPT sind die "Instructions", also Anweisungen für die Benutzer, wie sie mit dem Modell interagieren können. Diese reichen von einfachen Befehlen bis hin zu komplexeren Operationen. Die "Instructions" sind im Grunde System-Prompts, die sich im Kontextfenster des LLM befinden und spezifische Anweisungen zur Steuerung des Modells bieten. Sie definieren den Rahmen für die Art des zu erstellenden Textes, einschließlich Stil, Format und Tonalität, und dienen somit als Richtlinien, um die Generierung von Texten zu steuern und die Ergebnisse konsistenter und zielgerichteter zu gestalten.
+
+Zur Förderung der Benutzerinteraktion und -erkundung der Funktionalitäten des Tools dienen die "Conversation Starters". Diese vordefinierten Aufforderungen oder Fragen erleichtern den Einstieg in die Nutzung des Custom GPT.
+
+Ein wesentlicher Nutzen des Custom GPT ergibt sich aus der Integration von Wissen ("Knowledge") und der Möglichkeit, Aktionen ("Actions") durchzuführen. Das Wissen eines Custom GPT basiert auf einer Wissensbasis, die aus Dokumenten besteht, die von Benutzern hochgeladen und durch die Erstellung von Text-Embeddings für das Retrieval relevanter Dokumente verwendet werden können. Dieser als Retrieval Augmented Generation (RAG) bekannte Prozess verbessert die generativen Fähigkeiten von Sprachmodellen, indem sie mit kontextuell relevanten Informationen aus der eigenen Dokumentensammlung angereichert werden.
+
+Die Fähigkeit, Aktionen auszuführen, bezieht sich auf die Integration von externen Daten oder die Interaktion mit der realen Welt, wie etwa die Verbindung zu Datenbanken, die Integration in E-Mail-Systeme, API-Aufrufe oder das Durchsuchen von Webseiten. Diese Funktionen ermöglichen es Nutzern, das Custom GPT ohne umfangreiche Programmierkenntnisse an ihre spezifischen Bedürfnisse anzupassen.
+
+Zusätzlich zu diesen Kernfunktionen bieten Custom GPTs erweiterte Möglichkeiten wie die Integration von Bild- und Codegenerierung sowie Webbrowsing.
+
+Die Möglichkeit, ein Custom GPT über einen Link zu teilen und dabei zwischen öffentlichem und privatem Zugang zu wählen, bietet Ersteller:innen die Flexibilität, ihre Modelle entweder einer breiten Masse zugänglich zu machen oder den Zugriff auf einen ausgewählten Nutzerkreis zu beschränken.
+
+Die Vorteile eines Custom GPT umfassen die Reduzierung von Halluzinationen, eine starke Personalisierung des GPT auf Basis eigener Daten- und Wissensquellen, eine Anpassung der Benutzerinteraktion, die Integration eigener Skripte und APIs, eine Optimierung von Workflows und eine niederschwellige Entwicklungsumgebung für maßgeschneiderte Lösungen.
+
+### Beschreibung des teiCrafter(Description)
+
+Der [teiCrafter](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) ist ein Expert:innen Tool, das für die Umwandlung von Klartext in TEI XML gemäß spezifischer Mapping-Regeln konzipiert wurde. Er konzentriert sich auf die Generierung des `<body>`-Elements und seiner Unterelemente, um eine präzisere Bearbeitung zu ermöglichen. XML ist nicht sehr effizient tokenisiert, daher ist die Einsparung von Token von zentraler Bedeutung (dies wird sich mit größeren Context Windwos ändern). Mit ChatGPT Plus steht teiCrafter den Nutzer:innen als experimentelles Werkzeug zur Verfügung bzw. kann mit den Instructions und der Beschreibung der Arbeitsweise dieses Custom GPT nachgebaut werden. 
+
+Es ist darauf ausgerichtet, die Erstellung von TEI-konformen Dokumenten durch iterative Anwendung und die Einbeziehung expliziter Mapping-Regeln sowie Kontextinformationen zu unterstützen. Nutzer:innen sollten sich bewusst sein, dass teiCrafter, wie andere Modelle dieser Art, zu Halluzinationen neigen kann - das heißt, es kann Inhalte generieren, die im Originaltext nicht vorhanden sind. Eine sorgfältige Überprüfung und Anpassung der Ergebnisse ist daher unerlässlich, um die Genauigkeit und Qualität der TEI XML-Dokumentation zu gewährleisten.
+
+#### Description
 
 ```
-Expert automaton for converting plain text to TEI XML (Text Encoding Initiative P5) based on a mapping rule. Does only return <body> and descendants for more focus. teiCrafter is an experimental tool (it can hallucinate; feed it context and examples; use it iteratively).
+Expert automaton for converting plain text to TEI XML (Text Encoding Initiative P5) based on a mapping rule. Returns only <body> and descendants for more focus. teiCrafter is an experimental tool (it can hallucinate; feed it context and explicit mapping rules; use it iteratively).
 ```
 
 ### Der System Prompt (Instruction)

@@ -18,6 +18,8 @@ last_modified_at:   2024-02-22
 
 # Custom GPT "teiModeler"
 
+{% include image.html url="../data/ai/img/teiModeler.png" description="teiModeler Logo" %}
+
 [https://chat.openai.com/g/g-FEUt7Fq48-teicrafter](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) 
 
 Modellierung von Textdaten in den (digitalen) Geisteswissenschaften mittels TEI-XML spielt eine entscheidende Rolle, insbesondere in Editionsprojekten. Die Transformation von Texten in das TEI XML Format ist jedoch aufgrund des komplexen Regelwerks eine Herausforderung. Der "teiModeler" ist ein Custom GPT, das diesen Prozess durch die Generierung effizienter TEI XML Kodierungsvorschläge unterstützt.
@@ -52,6 +54,8 @@ Identifizieren Sie die spezifischen Textphänomene, die Sie modellieren möchten
 Wenn Ihr Fokus konzeptioneller ist, geben Sie eine kurze Beschreibung Ihrer Ziele in zwei oder drei Sätzen an. Zum Beispiel: „Ich beabsichtige, die narrative Struktur und thematische Elemente von Tagebüchern des 19. Jahrhunderts zu modellieren, mit besonderem Augenmerk auf Ausdrucksformen von Emotionen und sozialen Beziehungen.“
 
 
+## Aufbau des Custom GPTs “teiModeler”
+
 ### Custom GPTs Allgemein
 
 Ein Custom GPT ist eine spezialisierte Version eines GPT, das eigens entwickelt und angepasst wurde, um den spezifischen Anforderungen und Aufgabenstellungen eines Nutzers gerecht zu werden. Diese maßgeschneiderten Modelle bieten eine Vielzahl von Funktionen, die auf die individuellen Bedürfnisse der Benutzer zugeschnitten sind, und ermöglichen eine hohe Flexibilität in der Anwendung.
@@ -70,11 +74,11 @@ Die Möglichkeit, ein Custom GPT über einen Link zu teilen und dabei zwischen �
 
 Die Vorteile eines Custom GPT umfassen die Reduzierung von Halluzinationen, eine starke Personalisierung des GPT auf Basis eigener Daten- und Wissensquellen, eine Anpassung der Benutzerinteraktion, die Integration eigener Skripte und APIs, eine Optimierung von Workflows und eine niederschwellige Entwicklungsumgebung für maßgeschneiderte Lösungen.
 
-## Aufbau des Custom GPTs “teiModeler”
-
 ### Beschreibung des teiModeler (Description)
 
 Die Beschreibung ist die Information, die auch anderen User:innen in ChatGPT Plus angezeigt wird. ChatGPT Plus ist die kostenpflichtige Version von ChatGPT und ermöglicht den Zugang zu GPT-4 und somit auch zu benutzerdefinierten GPTs.
+
+#### Description
 
 ```
 Expert for modelling text according to the guidelines of the Text Encoding Initiative P5 (TEI XML). teiModeler is an experimental tool and offers possible suggestions (It can hallucinate).
