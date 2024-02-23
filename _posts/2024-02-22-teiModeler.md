@@ -1,26 +1,17 @@
 ---
-
 layout: post
-
 title: teiModeler
-
 categories: [tei, tool, modeling, teiModeler, ai]
-
 excerpt: Der teiModeler ist ein experimentelles "Custom GPT", das die Modellierung von Texten erleichtern und Kodierungsvorschläge liefern soll.
-
-factsheet: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/fromthepage/factsheet+tooldoc/DigEdTnT_FactSheet_FromThePage.pdf
-
-tooldoc: https://github.com/DigEdTnT/digedtnt.github.io/raw/master/data/pipelines/pipeline_1/fromthepage/factsheet+tooldoc/DigEdTnT_ToolDoc_FromThePage.pdf
-
-last_modified_at:   2024-02-22
+last_modified_at:   2024-02-23
 
 ---
 
 # Custom GPT "teiModeler"
 
-{% include image.html url="../data/ai/img/teiModeler.png" description="teiModeler Logo" %}
+{% include image.html url="../data/ai/img/teiModeler.png" %}
 
-[https://chat.openai.com/g/g-FEUt7Fq48-teicrafter](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) 
+[teimodeler in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) 
 
 Modellierung von Textdaten in den (digitalen) Geisteswissenschaften mittels TEI-XML spielt eine entscheidende Rolle, insbesondere in Editionsprojekten. Die Transformation von Texten in das TEI XML Format ist jedoch aufgrund des komplexen Regelwerks eine Herausforderung. Der "teiModeler" ist ein Custom GPT, das diesen Prozess durch die Generierung effizienter TEI XML Kodierungsvorschläge unterstützt.
 

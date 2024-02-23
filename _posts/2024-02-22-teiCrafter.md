@@ -3,14 +3,14 @@ layout: post
 title: teiCrafter
 categories: [tei, tool, annotation, erzeugung, teiCrafter, ai]
 excerpt: Der teiCrafter ist ein experimentelles "Custom GPT", das die Transformation von Plaintext nach TEI-XML-Format auf Basis einer Mapping System Prompt durchführt. 
-last_modified_at: 2024-02-22
+last_modified_at: 2024-02-23
 ---
 
 # Custom GPT "teiCrafter"
 
-{% include image.html url="../data/ai/img/teiCrafter.png" description="teiCrafter Logo" %}
+{% include image.html url="../data/ai/img/teiCrafter.png" %}
 
-[https://chat.openai.com/g/g-FEUt7Fq48-teicrafter](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) 
+[teicrafter in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) 
 
 Die Erstellung von TEI XML, einem Standard für die Kodierung von Texten in den Geisteswissenschaften, ist oft zeitaufwändig. Sprachmodelle wie GPT-4 können diesen Prozess durch die automatische Generierung von TEI XML beschleunigen. Das Custom GPT "teiCrafter" sollte als experimentelles Werkzeug betrachtet werden, das eine sorgfältige Überwachung durch den Benutzer erfordert, um die Genauigkeit der Annotationen zu gewährleisten. Der "Editor in the Loop"-Ansatz ist wesentlich, um die Qualität der generierten Daten durch menschliche Überprüfung und Validierung durch ein Schema sicherzustellen. Benutzer müssen Mapping-Regeln definieren, die festlegen, wie Textelemente in TEI XML-Strukturen umgewandelt werden. Nach der Generierung durch "teiCrafter" ist die Validierung ein kritischer Schritt. Anwender sollten die Daten auf Korrektheit überprüfen und gegebenenfalls manuelle Anpassungen vornehmen. Validierungstools können dabei helfen, Fehler zu identifizieren und die Datenqualität zu verbessern.
 
@@ -61,6 +61,7 @@ Expert automaton for converting plain text to TEI XML (Text Encoding Initiative 
 Der System Prompt ist die Anweisung, die dem teiCrafter vorgibt, wie es mit dem Eingabetext umgehen soll und dienst als Anleitung für das Custom GPT.
 
 ```
+
 You are an expert automaton for converting plain text to TEI XML (Text Encoding Initiative P5) based on a mapping rule. As input you get plain text between delimiters and the mapping rules as a markdown list. 
 
 You will do the following:
@@ -92,11 +93,9 @@ Der Hinweis am Ende fordert die User:innen auf, Feedback zu geben oder Fragen zu
 
 Das Wissen des teiCrafter liegt in einer möglichst kompakten Notation. Diese wird strukturiert in mehreren Markdown Files abgebildet, um die sehr umfangreichen TEI Guidelines stark zu komprimieren und gleichzeitig das Custom GPT “in die richtige Richtung” zu lenken.
 
-```
 * TEI Attributes.md
 * TEI Elements.md
 * Attribute Classes.md
-```
 
 ## Nutzung des "teiCrafter"
 
@@ -105,6 +104,7 @@ Das Custom GPT kann nur mit ChatGPT Plus verwendet werden. Aus diesem Grund steh
 Das folgende Beispiel zeigt die Konvertierung eines handschriftlichen Briefes von Friedrich August Otto Benndorf an Hugo Schuchardt. Der Brief enthält spezifische Elemente wie Seitenumbrüche, Datumsangaben, Anreden und Unterschriften, die gemäß den definierten Mapping-Regeln in TEI XML kodiert werden müssen.
 
 ```
+
 Context:
 * Multilingual handwritten letters from or to Hugo Schuchardt (1842-1927).
 
@@ -164,6 +164,7 @@ Diese Regeln ermöglichen eine detaillierte und strukturierte Erfassung des Brie
 **User:**
 
 ```
+
 Context:
 * Multilingual handwritten letters from or to Hugo Schuchardt (1842-1927).
 
@@ -213,6 +214,7 @@ To accurately transform the given plain text into TEI XML format according to th
 Let's proceed with the transformation:
 
 ```xml
+
 <body>
   <div>
     <dateline><date when="1879-02-14">Wien 14/2 79</date><placeName>IV Victorg. 5</placeName></dateline>
