@@ -8,9 +8,8 @@ last_modified_at: 2024-02-23
 
 # Custom GPT "teiCrafter"
 
-{% include image.html url="../data/ai/img/teiCrafter.png" %}
+{% include image.html url="../data/ai/img/teiCrafter.png" description="[teicrafter in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) " %}
 
-[teicrafter in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) 
 
 <div class="essence">
 Die Erstellung von TEI XML ist oft zeitintensiv. Sprachmodelle wie GPT-4 können diesen Prozess durch die automatische Generierung von TEI XML beschleunigen. Das Custom GPT <span style="font-style:italic;">teiCrafter</span>, ein experimentelles AI-Tool, das eine sorgfältige Qualitätskontrolle durch die Benutzer:innen erfordert ("Editor in the Loop"), erlaubt es, Plaintext auf der Basis von expliziten Mapping-Regeln nach TEI XML zu überführen. Nach der Generierung durch "teiCrafter" ist die Validierung (Schema und Editor:in) ein notwendiger Schritt. User:innen sollten die Daten auf Korrektheit überprüfen und gegebenenfalls manuelle Anpassungen vornehmen.
@@ -21,7 +20,7 @@ Die Erstellung von TEI XML ist oft zeitintensiv. Sprachmodelle wie GPT-4 können
 * Experimentelles Werkzeug zur Erzeugung von TEI XML
 * Durch Mapping-Regeln an beliebige (kürzere) Texte anpassbar
 
-## Aufbau des Custom GPTs “teiModeler”
+## Aufbau des Custom GPTs “teiCrafter”
 
 ### Custom GPTs Allgemein
 
@@ -91,9 +90,9 @@ Der Hinweis am Ende fordert die User:innen auf, Feedback zu geben oder Fragen zu
 
 Das Wissen des teiCrafter liegt in einer möglichst kompakten Notation. Diese wird strukturiert in mehreren Markdown Files abgebildet, um die sehr umfangreichen TEI Guidelines stark zu komprimieren und gleichzeitig das Custom GPT “in die richtige Richtung” zu lenken.
 
-* TEI Attributes.md
-* TEI Elements.md
-* Attribute Classes.md
+* [TEI-Attributes.md](../data/ai/knowledge/TEI-Attributes.md)
+* [TEI-Elements.md](../data/ai/knowledge/TEI-Attributes.md)
+* [Attribute Classes.md](../data/ai/knowledge/TEI-Attributes.md)
 
 ## Nutzung des "teiCrafter"
 

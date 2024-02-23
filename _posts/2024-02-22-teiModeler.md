@@ -9,9 +9,8 @@ last_modified_at:   2024-02-22
 
 # Custom GPT "teiModeler"
 
-{% include image.html url="../data/ai/img/teiModeler.png" %}
+{% include image.html url="../data/ai/img/teiModeler.png" description="[teimodeler in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) " %}
 
-[teimodeler in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) 
 
 <div class="essence">
  Modellierung von Textdaten in den (digitalen) Geisteswissenschaften mittels TEI XML spielt eine entscheidende Rolle, insbesondere in Editionsprojekten. Die Transformation von Texten in das TEI XML Format ist jedoch aufgrund des komplexen Regelwerks eine Herausforderung. Der <span style="font-style:italic;">teiModeler</span> ist ein experimentelles Custom GPT, das diesen Prozess durch die Generierung effizienter TEI XML Kodierungsvorschläge unterstützt. Dabei ist ein gezieltes Prompt Engineering, sowie ein kritischer Umgang mit Halluzinationen notwendig.
@@ -70,6 +69,7 @@ Die Beschreibung ist die Information, die auch anderen User:innen in ChatGPT Plu
 #### Description
 
 ```
+
 Expert for modelling text according to the guidelines of the Text Encoding Initiative P5 (TEI XML). teiModeler is an experimental tool and offers possible suggestions (It can hallucinate).
 ```
 
@@ -82,6 +82,7 @@ Die weiteren im System Prompt definierten Regeln (“Rules”) dienen dazu, das 
 Im Abschnitt “Always end with” wird schließlich eine Funktionalität eingebaut, um den User:innen die Arbeit zu erleichtern, indem die weitere Vorgehensweise skizziert wird.
 
 ```
+
 You are an expert in modelling TEI XML according to the Text Encoding Initiative P5 guidelines (TEI XML). Your main objective is to find the best text model for a given text using TEI XML.
 
 You will do the following:
@@ -108,11 +109,9 @@ This is just one approach to modelling. Feel free to elaborate on the modelling 
 
 Das Wissen des TEI Modelers liegt in einer möglichst kompakten Notation. Diese wird strukturiert in mehreren Markdown Files abgebildet, um die sehr umfangreichen TEI Guidelines stark zu komprimieren und gleichzeitig das Custom GPT “in die richtige Richtung” zu lenken.
 
-```
-* TEI Attributes.md
-* TEI Elements.md
-* Attribute Classes.md
-```
+* [TEI-Attributes.md](../data/ai/knowledge/TEI-Attributes.md)
+* [TEI-Elements.md](../data/ai/knowledge/TEI-Attributes.md)
+* [Attribute Classes.md](../data/ai/knowledge/TEI-Attributes.md)
 
 ## Nutzung des "teiModeler"
 
@@ -121,7 +120,8 @@ Das Custom GPT kann nur mit ChatGPT Plus verwendet werden. Aus diesem Grund steh
 Hier ist ein Beispiel für die Verwendung: 
 
 ```
-Modellierung Fokus: historische Finanztransaktionen
+
+Modelling focus: historische Finanztransaktionen
 
 Laban Morey Wheaton Day Book 1828-1829 & 1831-1832:
 '''
@@ -143,19 +143,13 @@ Beginnen Sie mit einer klaren Definition dessen, was genau modelliert werden sol
 
 Dann geben Sie den Texttyp oder auch den Titel des Dokuments mit dem Trennzeichen ''' ein. Die explizite Verwendung von Kontextinformationen wie “Laban Morey Wheaton Tagebuch 1828-1829 & 1831-1832” oder “Brief an Sigmund Freud vom 3. November 1920” verbessert die Qualität der Modellierungsmöglichkeiten. Es ist aber auch ausreichend, an dieser Stelle nur “Correspondence” oder “Day Book” zu schreiben. GPT ist in dieser Hinsicht sehr flexibel und bietet verschiedene Sprachen an.
 
-Sie können dann nach Belieben weitere Fragen stellen oder zusätzliche Kontexte berücksichtigen. Denkbar wären z.B. der Prompt 
 
-```
-use bing to look for <element|attribute> in the TEI Guidelines
-```
+Sie können dann nach Belieben weitere Fragen stellen oder zusätzliche Kontexte berücksichtigen. Weitere hilfreiche Prompts könnten sein: 
 
-für eine direkte Websuche nach einem Element in den TEI Guidelines. Bei Bedarf können Sie auch weitere Beispiele oder Beschreibungen der TEI Guidelines kopieren.
-
-Weitere hilfreiche Prompts könnten sein: 
-
-* Create two further modelling options
-* Compare the modelling options and return a markdown table
-* Can I use element X to do Y? 
+* `Use bing to look for <element|attribute> in the TEI Guidelines`, um eine direkte Websuche nach einem Element in den TEI Guidelines zu aktivieren.
+* `Create two further modelling options`
+* `Compare the modelling options and return a markdown table`
+* `Can I use element X to do Y?` 
 
 
 ## Beispiel einer Konversation mit dem teiModeler
@@ -163,6 +157,7 @@ Weitere hilfreiche Prompts könnten sein:
 **User:**
 
 ```
+
 Modelling focus:historische Finanztransaktionen
 
 Laban Morey Wheaton Day Book 1828-1829 & 1831-1832:
@@ -200,6 +195,7 @@ To model the historical financial transactions from the "Laban Morey Wheaton Day
 Given the analysis, we can map these phenomena to TEI elements and attributes as follows:
 
 ```
+
 <table>
   <tr>
    <td>
@@ -307,6 +303,7 @@ Given the analysis, we can map these phenomena to TEI elements and attributes as
 For the text provided, we can model one of the transactions as follows:
 
 ```xml
+
 <date when="1828-09-15">Monday September-15th-1828</date>
 <transaction type="settlement">
     <persName>Derius Drake</persName> <roleName>DR</roleName>
@@ -319,6 +316,7 @@ This snippet models the transaction on September 15, 1828, where Derius Drake is
 For credit and debit entries:
 
 ```xml
+
 <ab type="credit">
     <persName>Pliny Puffer</persName>
     <item n="1" unit="ax">ax dlv.d. Drake</item>
@@ -333,6 +331,7 @@ This models a credit entry for Pliny Puffer involving an ax and the associated a
 Another way to model these transactions could involve using `&lt;list>` for grouping transactions per day and `&lt;entry>` for individual transactions, providing a structured view of daily activities.
 
 ```xml
+
 <div type="dayBookEntry" n="1">
     <date when="1828-09-15">Monday September-15th-1828</date>
     <list>
@@ -359,6 +358,7 @@ Given the nature of the text, you might consider using a custom encoding strateg
 Here's an example of how you might encode a settled transaction:
 
 ```xml
+
 <item status="settled">
     <date when="1828-09-15">Monday September-15th-1828</date>
     <persName>Derius Drake</persName>
@@ -383,6 +383,7 @@ To express the status of a transaction in TEI, such as "Settled," you might cons
 Although the `@ana` attribute is versatile, its primary function in the context of marking the status of financial transactions would likely be classifying or tagging. You could define a custom classification scheme within your TEI header or in an external ontology that includes terms like "settled" to indicate the transaction's status. Here is an example of how you might use `@ana` to mark a transaction as settled:
 
 ```xml
+
 <ab ana="#settled">
     <date when="1828-09-15">Monday September-15th-1828</date>
     <persName>Derius Drake</persName>

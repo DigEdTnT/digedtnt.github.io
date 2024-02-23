@@ -1,0 +1,187 @@
+---
+title: TEI Attributes Overview
+keywords: Attributes
+---
+
+# TEI Attributes Overview
+
+TEI (Text Encoding Initiative) Guidelines specify a structured approach for text encoding, with attributes playing a crucial role in defining the semantics and relationships of elements. This Semantic Markdown distillation organizes 270 distinctly-named attributes uf TEI P5 Version 4.7.0, highlighting their associations with TEI elements. Distinct attributes classified by their application and association with elements.
+
+# Structured List of Terms
+
+## Attributes and Properties
+- `atts`: Specification Description
+- `autoPrefix`: Content
+- `baseForm`: Morphological base form
+- `baseTypes`: Feature Structure Declaration
+- `behaviour`: Model
+- `calendar`: Calendar System and related attributes
+- `cert`: Certainty and Responsibility
+- `class`: Manuscript Classification and Reference
+- `code`: Occupation and Socioeconomic Status
+- `confidence`: Ranging
+- `contemporary`: Binding and Seal
+- `cssClass`: Model
+- `datcat`: Data Category
+- `datum`: Geographical Declaration
+- `default`: Declarable
+- `degree`: Certainty, Node, Purpose
+- `dim`: Space
+- `docLang`: Schema Specification
+- `domains`: Pointing Group
+- `dur`, `dur-iso`: Duration (W3C and ISO)
+- `ed`, `edRef`: Edition
+- `encoding`: Binary Object
+- `end`: Timed
+- `extent`: Dimensions, Partials
+- `facs`: Facsimile
+- `feats`: Feature Structure
+- `flipping`: Surface
+- `force`: PC
+- `form`: Object Description
+- `from`, `from-custom`, `from-iso`: Datables and Custom/ISO dates
+- `full`: Personal
+- `function`: Segment-like, Material, Metamark
+- `gender`: Actor, Person, Person Group, Persona, Role
+- `generate`: Class Specification
+- `gi`: Tag Usage
+- `given`: Certainty
+- `gradual`: Writing
+- `group`: Damaged
+- `hand`, `hands`: Written, Hand Description
+- `height`: Media
+- `ident`: Identified, Application, Language, Prefix Definition, Remarks, Transcription Description, Value Item
+- `include`: Class Reference, Module Reference
+- `indexName`: Index
+- `inst`: Interpretation-like
+- `interval`: Timeline, When
+- `iterated`: Kinesic, Vocal
+- `key`: Canonical, Class Reference, Data Reference, Element Reference, Macro Reference, Member Of, Module Reference, Schema Reference, Specification Description
+- `lang`: Code
+- `length`: Reference State
+- `level`: Language Known, Sense, Title
+- `location`: Lexicographic, Variant Encoding
+- `locus`: Certainty, Responsibility
+- `mainLang`: Text Language
+- `marks`: Punctuation, Quotation
+- `material`: Support Description
+- `max`, `min`: Ranging, Member Of, Numeric
+- `medium`: Hand Features
+- `method`: Correction, Normalization, Variant Encoding
+- `mimeType`: Internet Media, Media
+- `mode`: Combinable, Alternative, Alternative Group, Channel, Classes, Member Of
+- `module`: Identified
+- `msd`: Linguistic
+- `n`: Global
+- `name`: Gaiji Property, Attribute Reference, Data Facet, Data Reference, Equiv, Feature, Feature Declaration, Namespace, Parameter, Relation, Unicode Property, Unihan Property, Value Label
+- `new`: Hand Shift, Shift
+- `norm`: Lexicographic, Normalized
+- `notAfter`, `notAfter-custom`, `notAfter-iso`: Datables and Custom/ISO dates
+- `notation`: Notated
+- `notBefore`, `notBefore-custom`, `notBefore-iso`: Datables and Custom/ISO dates
+- `nymRef`: Naming
+- `opt`: Lexicographic
+- `optional`: Feature Declaration
+- `order`: Graph, Tree
+- `ordered`: List Change
+- `org`: Division-like, Attribute List, Variant Collection, Variant Merge
+- `orig`: Lexicographic, Normalized
+- `otherLangs`: Text Language
+- `output`: Model, Model Group, Model Sequence
+- `parent`: Internal Node, Leaf
+- `part`: Fragmentable
+- `partial`: Tags Declaration
+- `parts`: Nym
+- `pattern`: Metrical Declaration
+- `perf`: Move, Tech
+- `period`: Datables
+- `place`: Placement
+- `placement`: Punctuation
+- `points`: Coordinated, Path
+- `pos`: Linguistic
+- `precision`: Dimensions, Precision
+- `pre`: PC
+- `predeclare`: Identified
+- `predicate`: Predicate, Model Sequence
+- `prefix`: Element Specification, Module Reference, Schema Specification
+- `preserveOrder`: Sequence
+- `property`: Cite Data
+- `quantity`: Dimensions, Measurement
+- `real`: Metrical
+- `ref`: Canonical, Data Reference, Global
+- `rend`, `rendition`: Global Rendition
+- `replacementPattern`: Pattern Replacement
+- `require`: Text Critical, Any Element
+- `resp`: Global Responsibility, Space
+- `restriction`: Data Reference
+- `result`: Join, Join Group
+- `role`: Naming, Table Decoration, Organization, Person, Person Group, Persona
+- `rows`: Table Decoration, Table
+- `ruledLines`: Layout
+- `sameAs`: Global Linking
+- `sample`: Division-like
+- `scale`: Media
+- `scheme`: Style Definition, Category Reference, Class Code, Constraint Specification, Global Identifier, Keywords, Locus, Locus Group, Occupation, Socioeconomic Status, Tag
+- `schemeVersion`: Style Definition
+- `scope`: Dimensions, Hand Features, Join, Output Rendition, Rendition
+- `scribe`: Hand Features
+- `scribeRef`: Hand Features
+- `script`, `scriptRef`: Hand Features
+- `select`: Global Linking
+- `selector`: Rendition
+- `seq`: Transcriptional
+- `sex`: Actor, Person, Person Group, Persona
+- `size`: Graph, Person Group
+- `social`: Distinct
+- `sort`: Personal
+- `sortKey`: Sortable
+- `source`: Global Source
+- `space`: Distinct
+- `spanTo`: Spanning
+- `split`: Lexicographic
+- `start`: Coordinated, Timed, Schema Specification
+- `status`: Document Status, Transcriptional, Availability, Correction
+- `stdDeviation`: Precision
+- `streams`: Layout
+- `style`: Global Rendition
+- `subtype`: Interpretation-like, Typed
+- `synch`: Global Linking
+- `tag`: Language Known
+- `tags`: Language Knowledge
+- `target`: Pointing, Scoping, Alternative, Annotation, Change, Feature Structure Link, Material, Metamark, Redo, Related Item, Relationship Type, Specification Group Reference, Undo
+- `targetDatcat`: Data Category
+- `targetEnd`: Anchoring
+- `targetLang`: Pointing, Schema Specification
+- `targFunc`: Pointing Group
+- `terminal`: Metrical Symbol
+- `time`: Distinct
+- `to`, `to-custom`, `to-iso`: Datables and Custom/ISO dates
+- `toUnit`: Conversion
+- `toWhom`: Ascribed, Directed
+- `trans`: Unicode
+- `trunc`: Numeric
+- `type`: Entry-like, Interpretation-like, Text Critical, Typed, Abbreviation, Affiliation, Age, Application, Birth, Cast Item, Certainty, Class Specification, Constitution, Constraint Specification, Correspondence Action, Death, Derivation, Description, Dimensions, Distinct, Division General, Domain, Education, Factuality, Faith, Form, Feature Structure, Feature Structure Link, Foreword, Grammar, Graph, Interaction Type, Language Knowledge, Label, List, List Forest, Measure, Metrical Declaration, Move, Nationality, Node, Number, Object Reference, Occupation, Orthography, Preparedness, Purpose, Question, Recording, Residence, Socioeconomic Status, Sound, Stage, Tag, Tech, Title, Title Page, Title Part, Usage, Value List, Witness Detail, Cross-reference
+- `ulx`, `uly`: Coordinated
+- `unit`: Citing, Dimensions, Measurement, Milestone Unit, Citation Structure, PC, Timeline, When
+- `unitRef`: Measurement
+- `uri`: Equiv
+- `url`: Resourced, Module Reference
+- `usage`: Attribute Definition, Language
+- `use`: Citation Structure Part
+- `useSourceRendition`: Model, Model Group, Model Sequence
+- `valid`: Example XML
+- `validUntil`: Deprecated
+- `value`: Gaiji Property, Lexicographic, Age, Binary, Data Facet, Leaf (Extended), Tree (Extended), Gender, Internal Node, Leaf, Metrical Symbol, Node, Number, Numeric, Parameter, Personal Pronouns, Root, Sex, Symbol, Triangle, Unicode Property, Unihan Property
+- `valueDatcat`: Data Category
+- `varSeq`: Text Critical
+- `version`: Gaiji Property, TEI, Application, TEI Corpus, Transcription Description
+- `versionDate`: Translatable
+- `weights`: Alternative
+- `when`, `when-custom`, `when-iso`: Datables and Custom/ISO dates
+- `where`: Locatable, Move
+- `who`: Ascribed
+- `width`: Media
+- `wit`: Reading Part, Witnessed, Witness Detail
+- `withId`: Tag Usage
+- `writtenLines`: Layout
+- `xml:base`, `xml:id`, `xml:lang`, `xml:space`: Global
