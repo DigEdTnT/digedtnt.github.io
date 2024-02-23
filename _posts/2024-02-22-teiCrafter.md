@@ -12,16 +12,14 @@ last_modified_at: 2024-02-23
 
 [teicrafter in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) 
 
-Die Erstellung von TEI XML, einem Standard für die Kodierung von Texten in den Geisteswissenschaften, ist oft zeitaufwändig. Sprachmodelle wie GPT-4 können diesen Prozess durch die automatische Generierung von TEI XML beschleunigen. Das Custom GPT "teiCrafter" sollte als experimentelles Werkzeug betrachtet werden, das eine sorgfältige Überwachung durch den Benutzer erfordert, um die Genauigkeit der Annotationen zu gewährleisten. Der "Editor in the Loop"-Ansatz ist wesentlich, um die Qualität der generierten Daten durch menschliche Überprüfung und Validierung durch ein Schema sicherzustellen. Benutzer müssen Mapping-Regeln definieren, die festlegen, wie Textelemente in TEI XML-Strukturen umgewandelt werden. Nach der Generierung durch "teiCrafter" ist die Validierung ein kritischer Schritt. Anwender sollten die Daten auf Korrektheit überprüfen und gegebenenfalls manuelle Anpassungen vornehmen. Validierungstools können dabei helfen, Fehler zu identifizieren und die Datenqualität zu verbessern.
-
 <div class="essence">
- Der <span style="font-style:italic;">teiCrafter</span> ist ein experimentelles Custom GPT, das für die Generierung und Annotation von TEI XML aus Plaintext entwickelt wurde. Durch die Anwendung spezifischer Mapping-Regeln unterstützt der teiCrafter den TEI-Kodierungsprozess, indem er eine XML-Ausgabe liefert. Die Einbindung des Editors in den Kodierungsprozess bleibt jedoch neben der Validierung durch ein Schema unerlässlich ("Editor in the Loop"), um die Genauigkeit der Annotationen zu gewährleisten und die Komplexität der TEI-Strukturen vollständig abzubilden.
+Die Erstellung von TEI XML ist oft zeitintensiv. Sprachmodelle wie GPT-4 können diesen Prozess durch die automatische Generierung von TEI XML beschleunigen. Das Custom GPT <span style="font-style:italic;">teiCrafter</span>, ein experimentelles AI-Tool, das eine sorgfältige Qualitätskontrolle durch die Benutzer:innen erfordert ("Editor in the Loop"), erlaubt es, Plaintext auf der Basis von expliziten Mapping-Regeln nach TEI XML zu überführen. Nach der Generierung durch "teiCrafter" ist die Validierung (Schema und Editor:in) ein notwendiger Schritt. User:innen sollten die Daten auf Korrektheit überprüfen und gegebenenfalls manuelle Anpassungen vornehmen.
 </div>
 
 ## Anwendungsbereiche
  
-* Experimentelles Werkzeug zur Generierung von TEI XML
-* Durch Mapping-Regel an beliebige (kürzere) Texte anpassbar
+* Experimentelles Werkzeug zur Erzeugung von TEI XML
+* Durch Mapping-Regeln an beliebige (kürzere) Texte anpassbar
 
 ## Aufbau des Custom GPTs “teiModeler”
 
