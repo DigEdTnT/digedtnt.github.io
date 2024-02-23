@@ -9,12 +9,14 @@ last_modified_at:   2024-02-22
 
 # Custom GPT "teiModeler"
 
-{% include image.html url="../data/ai/img/teiModeler.png" description="[teimodeler in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) " %}
+{% include image.html url="../data/ai/img/teiModeler.png" description="https://chat.openai.com/g/g-FEUt7Fq48-teicrafter " %}
 
 
 <div class="essence">
  Modellierung von Textdaten in den (digitalen) Geisteswissenschaften mittels TEI XML spielt eine entscheidende Rolle, insbesondere in Editionsprojekten. Die Transformation von Texten in das TEI XML Format ist jedoch aufgrund des komplexen Regelwerks eine Herausforderung. Der <span style="font-style:italic;">teiModeler</span> ist ein experimentelles Custom GPT, das diesen Prozess durch die Generierung effizienter TEI XML Kodierungsvorschläge unterstützt. Dabei ist ein gezieltes Prompt Engineering, sowie ein kritischer Umgang mit Halluzinationen notwendig.
 </div>
+
+* [teimodeler in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter)
 
 ## Anwendungsbereiche
 
@@ -109,9 +111,9 @@ This is just one approach to modelling. Feel free to elaborate on the modelling 
 
 Das Wissen des TEI Modelers liegt in einer möglichst kompakten Notation. Diese wird strukturiert in mehreren Markdown Files abgebildet, um die sehr umfangreichen TEI Guidelines stark zu komprimieren und gleichzeitig das Custom GPT “in die richtige Richtung” zu lenken.
 
-* [TEI-Attributes.md](../data/ai/knowledge/TEI-Attributes.md)
-* [TEI-Elements.md](../data/ai/knowledge/TEI-Attributes.md)
-* [Attribute Classes.md](../data/ai/knowledge/TEI-Attributes.md)
+* [TEI-Attributes.md](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/ai/knowledge/TEI-Attributes.md)
+* [TEI-Elements.md](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/ai/knowledge/TEI-Elements.md)
+* [Attribute Classes.md](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/ai/knowledge/Attribute-Classes.md)
 
 ## Nutzung des "teiModeler"
 

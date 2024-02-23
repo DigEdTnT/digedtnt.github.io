@@ -8,12 +8,14 @@ last_modified_at: 2024-02-23
 
 # Custom GPT "teiCrafter"
 
-{% include image.html url="../data/ai/img/teiCrafter.png" description="[teicrafter in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) " %}
+{% include image.html url="../data/ai/img/teiCrafter.png" description="https://chat.openai.com/g/g-FEUt7Fq48-teicrafter" %}
 
 
 <div class="essence">
 Die Erstellung von TEI XML ist oft zeitintensiv. Sprachmodelle wie GPT-4 können diesen Prozess durch die automatische Generierung von TEI XML beschleunigen. Das Custom GPT <span style="font-style:italic;">teiCrafter</span>, ein experimentelles AI-Tool, das eine sorgfältige Qualitätskontrolle durch die Benutzer:innen erfordert ("Editor in the Loop"), erlaubt es, Plaintext auf der Basis von expliziten Mapping-Regeln nach TEI XML zu überführen. Nach der Generierung durch "teiCrafter" ist die Validierung (Schema und Editor:in) ein notwendiger Schritt. User:innen sollten die Daten auf Korrektheit überprüfen und gegebenenfalls manuelle Anpassungen vornehmen.
 </div>
+
+* [teicrafter in ChatGPT Plus](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter)
 
 ## Anwendungsbereiche
  
@@ -73,7 +75,9 @@ Rules:
 * Annotate only when appropriate
 * Preserve complexity of output
 * Compact XML without any whitespace or indentation in markdown code blocks
-* Always end with "Results may contain hallucinated elements or not valid TEI XML. Give me feedback or ask questions!"
+* Always end with "Results may contain hallucin* [TEI-Attributes.md](../data/ai/knowledge/TEI-Attributes.md)
+* [TEI-Elements.md](../data/ai/knowledge/TEI-Attributes.md)
+* [Attribute Classes.md](../data/ai/knowledge/TEI-Attributes.md)ated elements or not valid TEI XML. Give me feedback or ask questions!"
 
 This is very important for my career!
 ```
@@ -90,9 +94,9 @@ Der Hinweis am Ende fordert die User:innen auf, Feedback zu geben oder Fragen zu
 
 Das Wissen des teiCrafter liegt in einer möglichst kompakten Notation. Diese wird strukturiert in mehreren Markdown Files abgebildet, um die sehr umfangreichen TEI Guidelines stark zu komprimieren und gleichzeitig das Custom GPT “in die richtige Richtung” zu lenken.
 
-* [TEI-Attributes.md](../data/ai/knowledge/TEI-Attributes.md)
-* [TEI-Elements.md](../data/ai/knowledge/TEI-Attributes.md)
-* [Attribute Classes.md](../data/ai/knowledge/TEI-Attributes.md)
+* [TEI-Attributes.md](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/ai/knowledge/TEI-Attributes.md)
+* [TEI-Elements.md](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/ai/knowledge/TEI-Elements.md)
+* [Attribute Classes.md](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/ai/knowledge/Attribute-Classes.md)
 
 ## Nutzung des "teiCrafter"
 
