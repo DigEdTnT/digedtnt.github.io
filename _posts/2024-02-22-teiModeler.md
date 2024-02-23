@@ -16,6 +16,7 @@ last_modified_at:   2024-02-22
  Modellierung von Textdaten in den (digitalen) Geisteswissenschaften mittels TEI XML spielt eine entscheidende Rolle, insbesondere in Editionsprojekten. Die Transformation von Texten in das TEI XML Format ist jedoch aufgrund des komplexen Regelwerks eine Herausforderung. Der <span style="font-style:italic;">teiModeler</span> ist ein experimentelles Custom GPT, das diesen Prozess durch die Generierung effizienter TEI XML Kodierungsvorschläge unterstützt. Dabei ist ein gezieltes Prompt Engineering, sowie ein kritischer Umgang mit Halluzinationen notwendig.
 </div>
 
+
 * [teimodeler in ChatGPT Plus](https://chat.openai.com/g/g-Og92YNQKZ-teimodeler)
 
 ## Anwendungsbereiche
@@ -183,7 +184,7 @@ By drawing two logs from Rogers
 
 To model the historical financial transactions from the "Laban Morey Wheaton Day Book 1828-1829 & 1831-1832" using TEI XML, we first identify the text phenomena and then map them to appropriate TEI elements and attributes. This text is a historical financial record that includes dates, transactions, names, and amounts, reflecting the economic activities and business transactions of individuals.
 
-### **Text Phenomena Analysis**
+### Text Phenomena Analysis
 
 1. **Dates**: Specific days are mentioned for the transactions.
 2. **Financial Transactions**: Includes settling of accounts, delivery of goods, and services rendered.
@@ -346,7 +347,7 @@ Another way to model these transactions could involve using `&lt;list>` for grou
 ```
 This approach offers a clear hierarchical structure for the document, making it easier to parse and analyze the entries by date and transaction.
 
-This is just one approach to modeling. Feel free to elaborate on the modeling strategy, including (copy-paste) discussion of the TEI guidelines and examples. Keep in mind that my answers may contain inaccuracies or fabricated information. Use this prompt: "You can use bing to search for [element| attribute] in the TEI Guidelines”
+This is just one approach to modeling. Feel free to elaborate on the modeling strategy, including (copy-paste) discussion of the TEI guidelines and examples. Keep in mind that my answers may contain inaccuracies or fabricated information. Use this prompt: "You can use bing to search for [element or attribute] in the TEI Guidelines”
 
 **User:** What can I use to express the status of the transaction? Settled is a status of the transaction.
 
@@ -371,7 +372,7 @@ This example uses the `&lt;item>` element to represent the transaction, leveragi
 
 Keep in mind that while TEI is highly flexible and extensible, ensuring that your encoding practices align with the broader goals of your project and the expectations of your target audience or research community is important. This might involve consulting with domain experts or referring to projects with similar subject matter for guidance on best practices.
 
-This is just one approach to modeling. Feel free to elaborate on the modeling strategy, including (copy-paste) discussion of the TEI guidelines and examples. Keep in mind that my answers may contain inaccuracies or fabricated information. Use this prompt: "You can use bing to search for [element| attribute] in the TEI Guidelines"
+This is just one approach to modeling. Feel free to elaborate on the modeling strategy, including (copy-paste) discussion of the TEI guidelines and examples. Keep in mind that my answers may contain inaccuracies or fabricated information. Use this prompt: "You can use bing to search for [element or attribute] in the TEI Guidelines"
 
 **User:**
 
@@ -401,4 +402,4 @@ Remember, the use of `@ana` for this purpose requires that you have a system or 
 
 This approach offers a structured and semantically rich method to encode and analyze historical financial transactions within a TEI framework, facilitating both the preservation of historical records and the extraction of meaningful data for research.
 
-This is just one approach to modeling. Feel free to elaborate on the modeling strategy, including (copy-paste) discussion of the TEI guidelines and examples. Keep in mind that my answers may contain inaccuracies or fabricated information. Use this prompt: "You can use bing to search for [element| attribute] in the TEI Guidelines"
+This is just one approach to modeling. Feel free to elaborate on the modeling strategy, including (copy-paste) discussion of the TEI guidelines and examples. Keep in mind that my answers may contain inaccuracies or fabricated information. Use this prompt: "You can use bing to search for [element or attribute] in the TEI Guidelines"
