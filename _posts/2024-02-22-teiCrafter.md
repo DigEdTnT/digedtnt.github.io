@@ -27,13 +27,13 @@ Die Erstellung von TEI XML ist oft zeitintensiv. Sprachmodelle wie GPT-4 können
 
 ### Custom GPTs Allgemein
 
-Ein Custom GPT ist eine spezialisierte Version eines GPT, das eigens entwickelt und angepasst wurde, um den spezifischen Anforderungen und Aufgabenstellungen eines Nutzers gerecht zu werden. Diese maßgeschneiderten Modelle bieten eine Vielzahl von Funktionen, die auf die individuellen Bedürfnisse der Benutzer zugeschnitten sind, und ermöglichen eine hohe Flexibilität in der Anwendung.
+Ein Custom GPT ist eine spezialisierte Version eines GPT, das eigens entwickelt und angepasst wurde, um den spezifischen Anforderungen und Aufgabenstellungen von Nutzer:innen gerecht zu werden. Diese adaptierten Modelle bieten eine Vielzahl von Funktionen, die auf die individuellen Bedürfnisse der Benutzer:innen zugeschnitten sind, und ermöglichen eine hohe Flexibilität in der Anwendung.
 
-Ein wesentlicher Bestandteil des Custom GPT sind die "Instructions", also Anweisungen für die Benutzer, wie sie mit dem Modell interagieren können. Diese reichen von einfachen Befehlen bis hin zu komplexeren Operationen. Die "Instructions" sind im Grunde System-Prompts, die sich im Kontextfenster des LLM befinden und spezifische Anweisungen zur Steuerung des Modells bieten. Sie definieren den Rahmen für die Art des zu erstellenden Textes, einschließlich Stil, Format und Tonalität, und dienen somit als Richtlinien, um die Generierung von Texten zu steuern und die Ergebnisse konsistenter und zielgerichteter zu gestalten.
+Ein wesentlicher Bestandteil des Custom GPT sind die "Instructions", also Anweisungen für die Benutzer:innen, wie sie mit dem Modell interagieren können. Diese reichen von einfachen Befehlen bis hin zu komplexeren Operationen. Die "Instructions" sind im Grunde System-Prompts, die sich im Kontextfenster des LLM befinden und spezifische Anweisungen zur Steuerung des Modells bieten. Sie definieren den Rahmen für die Art des zu erstellenden Textes, einschließlich Stil, Format und Tonalität, und dienen somit als Richtlinien, um die Generierung von Texten zu steuern und die Ergebnisse konsistenter und zielgerichteter zu gestalten.
 
 Zur Förderung der Benutzerinteraktion und -erkundung der Funktionalitäten des Tools dienen die "Conversation Starters". Diese vordefinierten Aufforderungen oder Fragen erleichtern den Einstieg in die Nutzung des Custom GPT.
 
-Ein wesentlicher Nutzen des Custom GPT ergibt sich aus der Integration von Wissen ("Knowledge") und der Möglichkeit, Aktionen ("Actions") durchzuführen. Das Wissen eines Custom GPT basiert auf einer Wissensbasis, die aus Dokumenten besteht, die von Benutzern hochgeladen und durch die Erstellung von Text-Embeddings für das Retrieval relevanter Dokumente verwendet werden können. Dieser als Retrieval Augmented Generation (RAG) bekannte Prozess verbessert die generativen Fähigkeiten von Sprachmodellen, indem sie mit kontextuell relevanten Informationen aus der eigenen Dokumentensammlung angereichert werden.
+Ein wesentlicher Nutzen des Custom GPT ergibt sich aus der Integration von Wissen ("Knowledge") und der Möglichkeit, Aktionen ("Actions") durchzuführen. Das Wissen eines Custom GPT basiert auf einer Wissensbasis, die aus Dokumenten besteht, die von Benutzern hochgeladen und durch die Erstellung von Text-Embeddings für das Retrieval relevanter Dokumente verwendet werden können. Dieser als Retrieval Augmented Generation (RAG) bekannte Prozess kann die Ergebnisse von Sprachmodellen verbessern, indem sie mit kontextuell relevanten Informationen aus der eigenen Dokumentensammlung angereichert werden.
 
 Die Fähigkeit, Aktionen auszuführen, bezieht sich auf die Integration von externen Daten oder die Interaktion mit der realen Welt, wie etwa die Verbindung zu Datenbanken, die Integration in E-Mail-Systeme, API-Aufrufe oder das Durchsuchen von Webseiten. Diese Funktionen ermöglichen es Nutzern, das Custom GPT ohne umfangreiche Programmierkenntnisse an ihre spezifischen Bedürfnisse anzupassen.
 
@@ -45,7 +45,7 @@ Die Vorteile eines Custom GPT umfassen die Reduzierung von Halluzinationen, eine
 
 ### Beschreibung des teiCrafter(Description)
 
-Der [teiCrafter](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) ist ein Expert:innen Tool, das für die Umwandlung von Klartext in TEI XML gemäß spezifischer Mapping-Regeln konzipiert wurde. Er konzentriert sich auf die Generierung des `<body>`-Elements und seiner Unterelemente, um eine präzisere Bearbeitung zu ermöglichen. XML ist nicht sehr effizient tokenisiert, daher ist die Einsparung von Token von zentraler Bedeutung (dies wird sich mit größeren Context Windwos ändern). Mit ChatGPT Plus steht teiCrafter den Nutzer:innen als experimentelles Werkzeug zur Verfügung bzw. kann mit den Instructions und der Beschreibung der Arbeitsweise dieses Custom GPT nachgebaut werden. 
+Der [teiCrafter](https://chat.openai.com/g/g-FEUt7Fq48-teicrafter) ist ein Expert:innen Tool, das für die Umwandlung von Plaintext in TEI XML gemäß spezifischer Mapping-Regeln konzipiert wurde. Er konzentriert sich auf die Generierung des `<body>`-Elements und seiner Unterelemente, um eine präzisere Bearbeitung zu ermöglichen. XML ist nicht sehr effizient tokenisiert, daher ist die Einsparung von Token von zentraler Bedeutung (dies wird sich mit größeren Context Windwos ändern). Mit ChatGPT Plus steht teiCrafter den Nutzer:innen als experimentelles Werkzeug zur Verfügung bzw. kann mit den Instructions und der Beschreibung der Arbeitsweise dieses Custom GPT nachgebaut werden. 
 
 Es ist darauf ausgerichtet, die Erstellung von TEI-konformen Dokumenten durch iterative Anwendung und die Einbeziehung expliziter Mapping-Regeln sowie Kontextinformationen zu unterstützen. Nutzer:innen sollten sich bewusst sein, dass teiCrafter, wie andere Modelle dieser Art, zu Halluzinationen neigen kann - das heißt, es kann Inhalte generieren, die im Originaltext nicht vorhanden sind. Eine sorgfältige Überprüfung und Anpassung der Ergebnisse ist daher unerlässlich, um die Genauigkeit und Qualität der TEI XML-Dokumentation zu gewährleisten.
 
@@ -58,7 +58,7 @@ Expert automaton for converting plain text to TEI XML (Text Encoding Initiative 
 
 ### Der System Prompt (Instruction)
 
-Der System Prompt ist die Anweisung, die dem teiCrafter vorgibt, wie es mit dem Eingabetext umgehen soll und dienst als Anleitung für das Custom GPT.
+Der System Prompt ist die Anweisung, die dem teiCrafter mitteilt, wie mit dem eingegebenen Text zu verfahren ist und dient als Anleitung für den Custom GPT.
 
 ```
 
@@ -85,7 +85,7 @@ This is very important for my career!
 
 Diese Eingabeaufforderung enthält klare Anweisungen für das Modell:
 
-* Das Modell muss den bereitgestellten Plaintext und die Mapping-Regeln sorgfältig analysieren, um einen Arbeitsplan zu erstellen.
+* Das Modell muss den bereitgestellten Plaintext und die Mapping-Regeln sorgfältig analysieren, um einen "Arbeitsplan" zu erstellen.
 * Unter Berücksichtigung der detaillierten Regeln wird der Plaintext in TEI XML umgewandelt, wobei nur das <body>-Element und seine Unterelemente zurückgegeben werden.
 * Die Regeln betonen die Wichtigkeit, den Originaltext zu erhalten, wohlgeformtes TEI XML zu produzieren, die Komplexität der Ausgabe zu erhalten und die Ausgabe kompakt zu halten, ohne Leerzeichen oder Einrückungen in den Markdown-Codeblöcken.
 
@@ -93,7 +93,7 @@ Der Hinweis am Ende fordert die User:innen auf, Feedback zu geben oder Fragen zu
 
 ### Knowledge
 
-Das Wissen des teiCrafter liegt in einer möglichst kompakten Notation. Diese wird strukturiert in mehreren Markdown Files abgebildet, um die sehr umfangreichen TEI Guidelines stark zu komprimieren und gleichzeitig das Custom GPT “in die richtige Richtung” zu lenken.
+Das "Wissen" des teiCrafters liegt in einer möglichst kompakten Notation. Diese wird strukturiert in mehreren Markdown-Dateien abgebildet, um die sehr umfangreichen TEI Guidelines stark zu komprimieren und gleichzeitig das Custom GPT “in die richtige Richtung” zu lenken. Es deckt nur einen Teil der TEI Guidelines ab, ist aber erweiterbar.
 
 * [TEI-Attributes.md](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/ai/knowledge/TEI-Attributes.md)
 * [TEI-Elements.md](https://github.com/DigEdTnT/digedtnt.github.io/blob/master/data/ai/knowledge/TEI-Elements.md)
@@ -145,9 +145,9 @@ Mapping rules:
 ´´´
 ```
 
-Der "Kontext" liefert wichtige Hintergrundinformationen zum Textmaterial, das in TEI XML konvertiert werden soll.In diesem Beispiel bezieht sich der Kontext auf mehrsprachige handschriftliche Briefe von oder an Hugo Schuchardt (1842-1927). Diese Information ist wichtig, da sie dem teiCrafter hilft, den historischen und sprachlichen Kontext zu prozessieren, in dem die Konvertierung stattfindet. Der Kontext kann auch Hinweise darauf geben, welche spezifischen Aspekte bei der TEI-Kodierung besonders berücksichtigt werden müssen, z.B. Mehrsprachigkeit oder hilft bei der Normalisierung von Datumsangaben. 
+Der "Kontext" liefert wichtige Hintergrundinformationen zum Textmaterial, das in TEI XML konvertiert werden soll. In diesem Beispiel bezieht sich der Kontext auf mehrsprachige handschriftliche Briefe von oder an Hugo Schuchardt (1842-1927). Diese Information ist wichtig, da sie dem teiCrafter hilft, den historischen und sprachlichen Kontext zu prozessieren, in dem die Konvertierung stattfindet. Der Kontext kann auch Hinweise darauf geben, welche spezifischen Aspekte bei der TEI-Kodierung besonders berücksichtigt werden müssen, z.B. Mehrsprachigkeit oder hilft bei der Normalisierung von Datumsangaben. 
 
-Die "Mapping-Regeln" sind Anweisungen, die definieren, wie bestimmte Teile des Textes in TEI XML-Elemente umgewandelt werden sollen.Diese Regeln sind essentiell für die korrekte und konsistente Annotation des Textes.Im Beispiel umfassen die Regeln:
+Die "Mapping-Regeln" sind Anweisungen, die definieren, wie bestimmte Teile des Textes in TEI XML-Elemente umgewandelt werden sollen. Diese Regeln sind essentiell für die korrekte und konsistente Annotation des Textes. Im folgenden Beispiel umfassen die Regeln:
 
 * <div>: Enthält den gesamten Brief und dient als Hauptcontainer.
 * <pb>: Markiert Seitenbrüche, was wichtig ist, um die Originalstruktur des Dokuments in der digitalen Version nachzubilden.
@@ -159,7 +159,6 @@ Die "Mapping-Regeln" sind Anweisungen, die definieren, wie bestimmte Teile des T
 * Spezifische Elemente wie <persName>, <placeName>, <orgName> für personen-, orts- oder organisationsbezogene Namen und <foreign> für fremdsprachige Ausdrücke.
 
 Diese Regeln ermöglichen eine detaillierte und strukturierte Erfassung des Briefes in TEI XML, wobei jedes Element des Originaltextes durch entsprechende Tags repräsentiert wird. Die genaue Anwendung der Mapping-Regeln ist entscheidend, um die historischen Dokumente für digitale Geisteswissenschaften zugänglich und analysierbar zu machen.
-
 
 ## Beispiel einer Konversation mit dem teiCrafter
 
