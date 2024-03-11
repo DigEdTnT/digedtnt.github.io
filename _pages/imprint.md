@@ -17,7 +17,7 @@ permalink: /imprint/
 
 ## Kontakt
 
-* Christopher Pollin, christopher.pollin@uni-graz.at
+* Christopher Pollin, christopher.pollin(at)uni-graz.at
 
 ## Cite this repository
 
